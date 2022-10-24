@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : Noodel OS - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : Noodel OS - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, mkII専用, QRコード, OSもどき" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FNoodel%20OS">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FNoodel%20OS">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FNoodel%20OS">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FNoodel%20OS">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : Noodel OS</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FNoodel%20OS">Noodel OS</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.097sec. -->
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#t6194b3b">  詳しい情報 </a>
+<ul><li><a href="#p68f9113">  動作環境 </a></li>
+<li><a href="#e8407834">  OSのVersion </a></li>
+<li><a href="#w4287ae7">  バグ情報 </a></li></ul></li>
+<li><a href="#p166d39f">  注意 </a></li>
+<li><a href="#bb0e167c">  操作方法 </a></li></ul></li>
+<li><a href="#sc93368f">  フォントについて </a></li>
+<li><a href="#l6327580">  初期内蔵されているアプリ </a>
+<ul><li><a href="#y21a61cf">  アプリの一覧 </a></li>
+<li><a href="#r1104c60">  時計 </a>
+<ul><li><a href="#b5a9c3c7">  概要 </a></li>
+<li><a href="#jc7bd6d7">  アプリを評価する </a></li></ul></li>
+<li><a href="#z6609ef8">  サイコロ </a>
+<ul><li><a href="#h722a560">  概要 </a></li>
+<li><a href="#b541a99b">  アプリを評価する </a></li></ul></li></ul></li>
+<li><a href="#me522611">  アプリ </a>
+<ul><li><a href="#q39e6cab">  イメージビュワー </a>
+<ul><li><a href="#lbd8ddce">  概要 </a></li>
+<li><a href="#s82dc77b">  注意 </a></li>
+<li><a href="#pbb4ee36">  QRコード </a></li>
+<li><a href="#wa0b7ea1">  サンプルのQRコード </a></li>
+<li><a href="#z31dfa7c">  「イメージビュワー」を評価する </a></li></ul></li>
+<li><a href="#m102dfe2">  アプリを実行 </a>
+<ul><li><a href="#ye0ae188">  概要 </a></li>
+<li><a href="#jfad8515">  ラベル名の一覧 </a></li>
+<li><a href="#s919eb8b">  QRコード </a></li>
+<li><a href="#ne6ec654">  「アプリを実行」を評価する </a></li></ul></li></ul></li>
+<li><a href="#w8f6a294">  アプリのインストールの方法 </a>
+<ul><li><a href="#b9394553">  アンケート </a></li></ul></li>
+<li><a href="#k89f44ab">  アプリの開発方法 </a>
+<ul><li><a href="#hc1db8e2">  その他 </a></li>
+<li><a href="#vcb2e642">  アンケート </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a>
+<ul><li><a href="#f723d0dc">  使ったツール </a>
+<ul><li><a href="#o5ecb06f">  QRコード </a></li>
+<li><a href="#t38818a1">  プログラムリスト </a></li>
+<li><a href="#j7822406">  「Noodel Camera」を評価する </a></li></ul></li></ul></li>
+<li><a href="#QR">  QR コード </a></li>
+<li><a href="#List">  プログラムリスト </a></li>
+<li><a href="#b4ce8300"> 「Noodel OS」を評価 </a>
+<ul><li><a href="#j586a13e">  皆さんの要望 </a></li></ul></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li>
+<li><a href="#de59456b">  「Noodel Software」の最新情報 </a>
+<ul><li><a href="#f293f972">  開発しているもの </a></li></ul></li>
+<li><a href="#bea3561a">  「Noodel OS 2(仮)」の最新情報 </a>
+<ul><li><a href="#y068ef24">  欲しいアプリのアンケート </a></li>
+<li><a href="#t353f24d">   皆さんの要望 </a></li></ul></li>
+<li><a href="#p550c8e5">  「Noodel OS DX」の最新情報 </a>
+<ul><li><a href="#q06e85d6">  ありそうな質問とその答え </a></li>
+<li><a href="#l70d2c48">  お願い </a></li></ul></li></ul>
+</div>
+
+</td></tr></table>
+<p>2014年4月5日投稿
+/ 投稿者 : Noodel Software
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> </span></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">このページの最後の更新日は2014/05/03 (土) 19:21:53です。</td></tr></tbody></table></div>
+<h3 id="Summary">概要</h3>
+<p>Noodelが作った、OSもどきです。<br /></p>
+
+<h4 id="t6194b3b">詳しい情報</h4>
+
+<h5 id="p68f9113">動作環境</h5>
+<p>動作を確認した環境です。<br /></p>
+<ul><li>プチコンmkII</li></ul>
+
+<h5 id="e8407834">OSのVersion</h5>
+<p>「Noodel OS」のVersionです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">現在のVersion</th><td class="style_td">Version 1</td></tr><tr><th class="style_th">Noodelエディション</th><td class="style_td">Noodel 1 One unit</td></tr></tbody></table></div>
+
+<h5 id="w4287ae7">バグ情報</h5>
+<p>今のところバグは確認されていません。<br /></p>
+
+<h4 id="p166d39f">注意</h4>
+<p>バグがあったらすみません。<br />
+報告してくださるとうれしいです。<br />
+<span style="color:red; background-color:white"><strong>【重要】</strong></span>「<span class="basic-text">ＣＨＲ：ＮＯＦＯＮＴ</span>」がないと、文字が読めません。必ず読み込んでおいてください。<br />
+QRコードは<a href="#QR">こちら</a>です。<br /></p>
+
+<h4 id="bb0e167c">操作方法</h4>
+<p>おまけアプリはXボタンで終了します。<br />
+あとは使ってみた方が早いです。<br /></p>
+
+<h3 id="sc93368f">フォントについて</h3>
+<p>公式サイトで配布されている「<a href="http://smileboom.com/special/ptcm2/co_present/html_present02.php" rel="nofollow">置き換えフォント</a>」をこあ/co.aさんの「<a href="/petc/?Toukou%2F%A4%AB%A4%CA%A5%D5%A5%A9%A5%F3%A5%C8PETIKANA" title="Toukou/かなフォントPETIKANA (2973d)">プチコン用ひらがなフォント「PETIKANA」</a>」の配置でミックスさせていただき使わせていただいています。<br />
+スマイルブームさん、こあ/co.aさん、ありがとうございます。<br /></p>
+
+<h3 id="l6327580">初期内蔵されているアプリ</h3>
+
+<h4 id="y21a61cf">アプリの一覧</h4>
+<ul><li>時計</li>
+<li>サイコロ</li></ul>
+
+<h4 id="r1104c60">時計</h4>
+
+<h5 id="b5a9c3c7">概要</h5>
+<p>時間を表示します。<br /></p>
+
+<h5 id="jc7bd6d7">アプリを評価する</h5>
+<p>「時計」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">6&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h4 id="z6609ef8">サイコロ</h4>
+
+<h5 id="h722a560">概要</h5>
+<p>サイコロです。<br />
+<del>宿題などが分からないときに使うといいかも。</del><br />
+<span style="color:red; background-color:white"><strong>【重要】</strong></span><strong>よい子は必ず考えて勉強をしましょう。</strong><br /></p>
+
+<h5 id="b541a99b">アプリを評価する</h5>
+<p>「サイコロ」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="1" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">3&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">2&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="me522611">アプリ</h3>
+<p>アプリです。<br />
+アプリのインストールの方法は<a href="#w8f6a294">ここ</a>に書いています。<br /></p>
+
+<h4 id="q39e6cab">イメージビュワー</h4>
+
+<h5 id="lbd8ddce">概要</h5>
+<p>画像(GRPとCOL)を読み込んで表示します。<br /></p>
+
+<h5 id="s82dc77b">注意</h5>
+<p>GRPファイルとCOLファイルの名前は同じにしてください。<br /></p>
+
+<h5 id="pbb4ee36">QRコード</h5>
+<p>プチコンmkII向けのQRコードです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＰＲＧ：ＮＯＯＳ１ＡＰＰ</span></th></tr><tr><th class="style_th">1/1</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-qr0.png" title="iv-qr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-qr0.png" alt="iv-qr0.png" title="iv-qr0.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h5 id="wa0b7ea1">サンプルのQRコード</h5>
+<p>プチコンmkII向けのQRコードです。<br />
+サンプルの画像(GRPとCOL)のQRコードです。<br /></p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="4"><span class="basic-text">ＧＲＰ：ＮＯＭＩＩ</span></th></tr><tr><th class="style_th">1/19</th><th class="style_th">2/19</th><th class="style_th">3/19</th><th class="style_th">4/19</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr0-2.png" title="iv-gqr0-2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr0-2.png" alt="iv-gqr0-2.png" title="iv-gqr0-2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr1.png" title="iv-gqr1.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr1.png" alt="iv-gqr1.png" title="iv-gqr1.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr2.png" title="iv-gqr2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr2.png" alt="iv-gqr2.png" title="iv-gqr2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr3.png" title="iv-gqr3.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr3.png" alt="iv-gqr3.png" title="iv-gqr3.png" width="210" height="210" /></a></td></tr><tr><th class="style_th">5/19</th><th class="style_th">6/19</th><th class="style_th">7/19</th><th class="style_th">8/19</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr4.png" title="iv-gqr4.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr4.png" alt="iv-gqr4.png" title="iv-gqr4.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr5.png" title="iv-gqr5.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr5.png" alt="iv-gqr5.png" title="iv-gqr5.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr6.png" title="iv-gqr6.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr6.png" alt="iv-gqr6.png" title="iv-gqr6.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr7.png" title="iv-gqr7.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr7.png" alt="iv-gqr7.png" title="iv-gqr7.png" width="210" height="210" /></a></td></tr><tr><th class="style_th">9/19</th><th class="style_th">10/19</th><th class="style_th">11/19</th><th class="style_th">12/19</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr8.png" title="iv-gqr8.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr8.png" alt="iv-gqr8.png" title="iv-gqr8.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr9.png" title="iv-gqr9.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr9.png" alt="iv-gqr9.png" title="iv-gqr9.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr10.png" title="iv-gqr10.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr10.png" alt="iv-gqr10.png" title="iv-gqr10.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr11.png" title="iv-gqr11.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr11.png" alt="iv-gqr11.png" title="iv-gqr11.png" width="210" height="210" /></a></td></tr><tr><th class="style_th">13/19</th><th class="style_th">14/19</th><th class="style_th">15/19</th><th class="style_th">16/19</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr12.png" title="iv-gqr12.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr12.png" alt="iv-gqr12.png" title="iv-gqr12.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr13.png" title="iv-gqr13.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr13.png" alt="iv-gqr13.png" title="iv-gqr13.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr14.png" title="iv-gqr14.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr14.png" alt="iv-gqr14.png" title="iv-gqr14.png" width="210" height="210" /></a></td><td class="style_td" rowspan="2"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr15.png" title="iv-gqr15.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr15.png" alt="iv-gqr15.png" title="iv-gqr15.png" width="210" height="210" /></a></td></tr><tr><th class="style_th">17/19</th><th class="style_th">18/19</th><th class="style_th">19/19</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr16.png" title="iv-gqr16.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr16.png" alt="iv-gqr16.png" title="iv-gqr16.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr17.png" title="iv-gqr17.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr17.png" alt="iv-gqr17.png" title="iv-gqr17.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-gqr18.png" title="iv-gqr18.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-gqr18.png" alt="iv-gqr18.png" title="iv-gqr18.png" width="210" height="210" /></a></td><td class="style_td"></td></tr></tbody></table></div>
+</td></tr></table>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button4" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary4').style.display!='none'){
+		document.getElementById('rgn_summary4').style.display='none';
+		document.getElementById('rgn_content4').style.display='block';
+		document.getElementById('rgn_bracket4').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button4').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary4').style.display='block';
+		document.getElementById('rgn_content4').style.display='none';
+		document.getElementById('rgn_bracket4').style.borderStyle='none';
+		document.getElementById('rgn_button4').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket4" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary4" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content4" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＣＯＬ：ＮＯＭＩＩ</span></th></tr><tr><th class="style_th">1/1</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=iv-cqr0.png" title="iv-cqr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=iv-cqr0.png" alt="iv-cqr0.png" title="iv-cqr0.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+</td></tr></table>
+</td></tr></table>
+
+<h5 id="z31dfa7c">「イメージビュワー」を評価する</h5>
+<p>「イメージビュワー」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="2" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">3&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h4 id="m102dfe2">アプリを実行</h4>
+
+<h5 id="ye0ae188">概要</h5>
+<p>アプリのラベル名を指定してアプリを実行します。<br /></p>
+
+<h5 id="jfad8515">ラベル名の一覧</h5>
+<ul><li>最初からインストールされているリストのラベル名の一覧</li></ul>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button5" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary5').style.display!='none'){
+		document.getElementById('rgn_summary5').style.display='none';
+		document.getElementById('rgn_content5').style.display='block';
+		document.getElementById('rgn_bracket5').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button5').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary5').style.display='block';
+		document.getElementById('rgn_content5').style.display='none';
+		document.getElementById('rgn_bracket5').style.borderStyle='none';
+		document.getElementById('rgn_button5').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket5" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary5" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content5" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ホームメニュー</th><td class="style_td"><span class="basic-text">＠ＨＯＭＥＭＥＮＵ</span></td></tr><tr><th class="style_th">おまけアプリの一覧</th><td class="style_td"><span class="basic-text">＠ＢＯＮＵＳＭＥＮＵ</span></td></tr></tbody></table></div>
+<ul><li>最初からインストールされているアプリのラベル名の一覧</li></ul>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">時計</th><td class="style_td"><span class="basic-text">＠ＣＬＯＣＫ</span></td></tr><tr><th class="style_th">サイコロ</th><td class="style_td"><span class="basic-text">＠ＤＩＣＥ</span></td></tr></tbody></table></div>
+<ul><li>システム</li></ul>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">シャットダウン</th><td class="style_td"><span class="basic-text">＠ＳＨＵＴＤＯＷＮ</span></td></tr><tr><th class="style_th">再起動</th><td class="style_td"><span class="basic-text">＠ＲＥＳＴＡＲＴ</span></td></tr></tbody></table></div>
+<ul><li>システムアプリ</li></ul>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">OSのプロパティ</th><td class="style_td"><span class="basic-text">＠ＰＲＯＰＥＲＴＹ</span></td></tr></tbody></table></div>
+</td></tr></table>
+
+<h5 id="s919eb8b">QRコード</h5>
+<p>プチコンmkII向けのQRコードです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">PRG:NOOS1APP</th></tr><tr><th class="style_th">1/1</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=run-qr0.png" title="run-qr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=run-qr0.png" alt="run-qr0.png" title="run-qr0.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h5 id="ne6ec654">「アプリを実行」を評価する</h5>
+<p>「アプリを実行」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="3" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="w8f6a294">アプリのインストールの方法</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button6" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary6').style.display!='none'){
+		document.getElementById('rgn_summary6').style.display='none';
+		document.getElementById('rgn_content6').style.display='block';
+		document.getElementById('rgn_bracket6').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button6').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary6').style.display='block';
+		document.getElementById('rgn_content6').style.display='none';
+		document.getElementById('rgn_bracket6').style.borderStyle='none';
+		document.getElementById('rgn_button6').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket6" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary6" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content6" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>スルメさんも説明を書いてくださりました。(<a href="http://surume.miraiserver.com/wiki/surume/index.php?NoodelOSdev" rel="nofollow">こちら</a>です)<br />
+スルメさん、ありがとうございます。<br /></p>
+<ol><li>実行モードで「<span class="basic-text">ＡＰＰＥＮＤ　”</span><em>アプリのファイル名</em><span class="basic-text">”</span>(Enter)」と入力してください。</li>
+<li>92行目の<span class="basic-text">ＤＡＴＡ</span>文の値を1つ増やしてください。</li>
+<li>93行目に<span class="basic-text">ＤＡＴＡ　”</span><em>アプリの名前</em><span class="basic-text">”，”</span><em>アプリのラベル名</em><span class="basic-text">”</span>を追加してください。
+<ul><li>アプリの名前はどんな名前を入力しても大丈夫です。</li>
+<li>アプリのラベル名は<span class="basic-text">＠</span>以降の部分だけを入力してください。
+<ul><li>【例】<span class="basic-text">＠ＴＥＳＴ</span>→<span class="basic-text">ＴＥＳＴ</span></li></ul></li></ul></li></ol>
+
+<h4 id="b9394553">アンケート</h4>
+<p>この情報は役に立ちましたか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="4" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">立った</td>
+   <td align="right" class="vote_td2">2&nbsp;&nbsp;
+    <input type="submit" name="vote_CEA9A4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">立たなかった</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CEA9A4BFA4CAA4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<p>そのほか質問がありましたら<a href="#lbc29ca7">こちら</a>にどうぞ。<br /></p>
+</td></tr></table>
+
+<h3 id="k89f44ab">アプリの開発方法</h3>
+<p>アプリを終了した後の行に、「<span class="basic-text">ＷＡＩＴ　５：ＧＯＴＯ　＠ＨＯＭＥＭＥＮＵ</span>」を書き足してください。<br />
+これだけでOKです。<br /></p>
+
+<h4 id="hc1db8e2">その他</h4>
+<ul><li>ラベル名、変数名がかぶらないようにしてください。</li></ul>
+
+<h4 id="vcb2e642">アンケート</h4>
+<p>この情報は役に立ちましたか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="5" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">立った</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CEA9A4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">立たなかった</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CEA9A4BFA4CAA4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<p>そのほか質問がありましたら<a href="#lbc29ca7">こちら</a>にどうぞ。<br /></p>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<p>「Noodel OS」はこんな感じです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ホームメニュー</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=ss0.png" title="ss0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=ss0.png" alt="ss0.png" title="ss0.png" width="256" height="192" /></a></td></tr></tbody></table></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button7" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary7').style.display!='none'){
+		document.getElementById('rgn_summary7').style.display='none';
+		document.getElementById('rgn_content7').style.display='block';
+		document.getElementById('rgn_bracket7').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button7').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary7').style.display='block';
+		document.getElementById('rgn_content7').style.display='none';
+		document.getElementById('rgn_bracket7').style.borderStyle='none';
+		document.getElementById('rgn_button7').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket7" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary7" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">おまけ
+</td><td valign="top" id="rgn_content7" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h4 id="f723d0dc">使ったツール</h4>
+<p>自作の「Noodel Camera」を忍ばせてスクリーンショットを撮りました。<br /></p>
+
+<h5 id="o5ecb06f">QRコード</h5>
+<p>プチコンmkII向けのQRコードです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">PRG:NOCAMERA</th></tr><tr><th class="style_th">1/1</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=cqr0.png" title="cqr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=cqr0.png" alt="cqr0.png" title="cqr0.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h5 id="t38818a1">プログラムリスト</h5>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button8" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary8').style.display!='none'){
+		document.getElementById('rgn_summary8').style.display='none';
+		document.getElementById('rgn_content8').style.display='block';
+		document.getElementById('rgn_bracket8').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button8').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary8').style.display='block';
+		document.getElementById('rgn_content8').style.display='none';
+		document.getElementById('rgn_bracket8').style.borderStyle='none';
+		document.getElementById('rgn_button8').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket8" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary8" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content8" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’Ｎｏｏｄｅｌ　Ｃａｍｅｒａ</li>
+<li>’ｂｙ　Ｎｏｏｄｅｌ　Ｓｏｆｔｗａｒｅ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>＠ＣＡＭＥＲＡ</li>
+<li>　ＦＯＲ　Ｙ＝０　ＴＯ　２３</li>
+<li>　　ＦＯＲ　Ｘ＝０　ＴＯ　３１</li>
+<li>　　　ＧＰＵＴＣＨＲ　８＊Ｘ，８＊Ｙ，”ＢＧＦ”，ＣＨＫＣＨＲ（Ｘ，Ｙ），０，１</li>
+<li>　　ＮＥＸＴ</li>
+<li>　ＮＥＸＴ</li>
+<li>　ＬＩＮＰＵＴ　””；Ａ＄</li>
+<li>　ＳＡＶＥ”ＧＲＰ：”＋Ａ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h5 id="j7822406">「Noodel Camera」を評価する</h5>
+<p>「Noodel Camera」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="6" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">5&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+</td></tr></table>
+
+<h3 id="QR">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+<p>本体のQRコードです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="2">PRG:NOOS1</th></tr><tr><th class="style_th">1/2</th><th class="style_th">2/2</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=qr0.png" title="qr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=qr0.png" alt="qr0.png" title="qr0.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=qr1.png" title="qr1.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=qr1.png" alt="qr1.png" title="qr1.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+<p>フォントのQRコードです。<br />
+<span style="color:red; background-color:white"><strong>【重要】</strong></span>これがないと、文字が読めません。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="3">CHR:NOFONT</th></tr><tr><th class="style_th">1/3</th><th class="style_th">2/3</th><th class="style_th">3/3</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=fqr0.png" title="fqr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=fqr0.png" alt="fqr0.png" title="fqr0.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=fqr1.png" title="fqr1.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=fqr1.png" alt="fqr1.png" title="fqr1.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FNoodel%20OS&amp;openfile=fqr2.png" title="fqr2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FNoodel%20OS&amp;src=fqr2.png" alt="fqr2.png" title="fqr2.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h3 id="List">プログラムリスト</h3>
+<p>暇で暇でたまらないときに載せます。<br />
+多分。<br /></p>
+
+<h3 id="b4ce8300">「Noodel OS」を評価</h3>
+<p>「Noodel OS」はどうですか?<br /></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Noodel OS" />
+    <input type="hidden" name="vote_no" value="7" />
+    <input type="hidden" name="digest"  value="5c50a5d92db99b9f29672c11495e2749" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">6&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">3&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h4 id="j586a13e">皆さんの要望</h4>
+<p>要望があれば書き込んでください。<br />
+できるだけ改善していこうと思います。(そのほかのコメントは<a href="#Comments">こちら</a>にどうぞ)<br /></p>
+<ul><li><strong>@0918nobita</strong> : バグを発見しました。僕の作ったアプリをインストールせて実行し、アプリを終了して@HOMEMENUに移行すると、「ゲームメニュー」の「ゲ」が手の記号になっていて、Aボタンを押すとエラーを起こし、[Subscript out of range (61)]と表示されてしまいます。 (<span class="comment_date">2014/05/06 (火) 14:27:17</span>)</li>
+<li><strong>@0918nobita</strong> : 「手の記号」というのは、左向きに指を指しているやつです (<span class="comment_date">2014/05/06 (火) 14:28:27</span>)</li>
+<li><strong>@0918nobita</strong> : 「ゲームメニュー」→「ホームメニュー」の間違いです、度々すいません^^; (<span class="comment_date">2014/05/06 (火) 14:30:28</span>)</li>
+<li><strong>@0918nobita</strong> : GOTO @STARTMENUでアプリを終了すれば、エラーは起こりませんでした。 (<span class="comment_date">2014/05/06 (火) 15:02:58</span>)
+<ul><li><strong>Noodel Software</strong> : 変数がかぶった可能性があります。変数<span class="basic-text">ＨＭＹ</span>を使っていませんか? (<span class="comment_date">2014/05/06 (火) 18:31:58</span>)</li></ul></li>
+<li><strong>@0918nobita</strong> : 使ってないですよ (<span class="comment_date">2014/05/06 (火) 22:25:11</span>)
+<ul><li><strong>Noodel Software</strong> : そうですか。僕には原因がわかりません。もう少し原因を考えてみます。あと、変数<span class="basic-text">ＨＭＹ</span>を使った、使っていないは関係ありませんでした。すみません。 (<span class="comment_date">2014/05/07 (水) 16:37:25</span>)</li></ul></li>
+<li><strong>名無しさん</strong> : ？ (<span class="comment_date">2014/05/07 (水) 16:45:34</span>)
+<ul><li><strong>Noodel Software</strong> : 誤ってエンターキーを押してしまい書きかけのままコメントが挿入されてしまいました。(<span class="comment_date">2014/05/07 (水) 16:51:22</span>)</li></ul></li>
+<li><strong>Noodel Software</strong> : &gt;皆さん 【お願い】@0918nobitaさんが報告してくださった、「作ったアプリをインストールして実行し、アプリを終了して<span class="basic-text">＠ＨＯＭＥＭＥＮＵ</span>に移動すると、「<span class="basic-text">ホームメニュー</span>」の「<span class="basic-text">ホ</span>」が左向きに指を指している記号(<span class="basic-text">Й</span>)になっていて、Aボタンを押すとエラー(<span class="basic-text">Ｓｕｂｓｃｒｉｐｔ　ｏｕｔ　ｏｆ　ｒａｎｇｅ　（６１）</span>)を起こす。」というバグの原因がNoodelにはわかりません。もしも、わかった方がいましたら、Noodelに連絡してくださるとうれしいです。 (<span class="comment_date">2014/05/07 (水) 16:45:07</span>)</li>
+<li><strong>天郷思音</strong> : デバック挑戦中 (<span class="comment_date">2015/01/03 (土) 19:40:41</span>)</li>
+<li><strong>天郷思音</strong> : おまけアプリでは発生しないならアプリに起因。HMMAXが異常値ならHMYの異常値を検知できない。HMMAXがアプリで使用されていないか確認。それ以外ではHMMAXの書き換えは唯一のREADしかない。その場合はDATAに不正がある。あと初歩的な質問だけどアプリにCLEAR使ってない？(<span class="comment_date">2015/01/03 (土) 19:47:53</span>)</li>
+<li><strong>hshjzookwwo</strong> : PwokZuSMQqeDFmi (<span class="comment_date">2016/05/18 (水) 16:46:43</span>)</li>
+<li><strong>ibwokbzuy</strong> : ywWvyTEN (<span class="comment_date">2016/05/19 (木) 04:32:57</span>)</li>
+<li><strong>yheiql</strong> : IXGwzOvIMXXfBri (<span class="comment_date">2016/05/19 (木) 16:26:34</span>)</li>
+<li><strong>fulombusptv</strong> : MqAFYkjtjzPYXtug (<span class="comment_date">2016/05/20 (金) 04:25:10</span>)</li>
+<li><strong>cfygbymhzm</strong> : bUJgsCYjfjcAaIuxY (<span class="comment_date">2016/05/20 (金) 17:23:27</span>)</li>
+<li><strong>nwjpvdjyk</strong> : NrlMjNGC (<span class="comment_date">2016/05/21 (土) 06:27:23</span>)</li>
+<li><strong>yhxbrhnr</strong> : cPtGwxpjsEOW (<span class="comment_date">2016/05/21 (土) 19:34:48</span>)</li>
+<li><strong>mkpiqxhi</strong> : VtbrptrGZvpN (<span class="comment_date">2016/05/22 (日) 08:38:32</span>)</li>
+<li><strong>ezjwoca</strong> : lQTAmbnqwJ (<span class="comment_date">2016/05/22 (日) 21:55:37</span>)</li>
+<li><strong>vximpiilnev</strong> : lRKkxdqaQ (<span class="comment_date">2016/05/23 (月) 11:01:27</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/Noodel OS" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="5c50a5d92db99b9f29672c11495e2749" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3381d)">掲示板</a>へ)</p>
+<ul><li><strong>Autoexec</strong> : うーむ、ちょっと機能が少ないですかね (<span class="comment_date">2014/04/05 (土) 20:15:27</span>)</li>
+<li><strong>Noodel Software</strong> : &gt;Autoexecさん 確かに機能が少ないのでアプリなどをできるだけたくさん追加した「Noodel OS Version 2 DX Edition」を開発中です。 (<span class="comment_date">2014/04/05 (土) 21:06:35</span>)</li>
+<li><strong>Citringo</strong> : スルメにアプリ開発してもらえば（提案） (<span class="comment_date">2014/04/05 (土) 21:37:34</span>)</li>
+<li><strong>Noodel Software</strong> : &gt;Citringoさん そうですね。でも、作ってもらったアプリを実行するための誰でも使える簡単な仕組みがないといけないのでその仕組みが完成してからスルメさんにお願いをしてみようと思います。提案、ありがとうございます。 (<span class="comment_date">2014/04/05 (土) 23:38:08</span>)</li>
+<li><strong>スルメ</strong> : hm、面白そうですな (<span class="comment_date">2014/04/06 (日) 07:59:16</span>)</li>
+<li><strong>スルメ</strong> : できた (<span class="comment_date">2014/04/06 (日) 08:07:14</span>)</li>
+<li><strong>スルメ</strong> : <a href="http://surume.miraiserver.com/wiki/surume/index.php?NoodelOSdev" rel="nofollow">http://surume.miraiserver.com/wiki/surume/index.php?NoodelOSdev</a> 問題があったら消しますのでお知らせくださいー。 (<span class="comment_date">2014/04/06 (日) 09:21:58</span>)</li>
+<li><strong>Noodel Software</strong> : &gt;スルメさん 見ました。本当にありがとうございます。 (<span class="comment_date">2014/04/06 (日) 09:42:57</span>)</li>
+<li><strong>かずえもん＠プチコン一時休止</strong> : 「Noodel OS 2(仮)」に欲しいアプリのアンケートを終了しました。じゃなくて「Noodel OS 2(仮)」の欲しいアプリのアンケートを終了しました。じゃないですか？ (<span class="comment_date">2014/04/19 (土) 10:04:15</span>)</li>
+<li><strong>Noodel Software</strong> : &gt;かずえもんさん そうですね。直しておきます。ご指摘、ありがとうございます。 (<span class="comment_date">2014/04/19 (土) 11:35:32</span>)</li>
+<li><strong>Noodel Software</strong> : &gt;↑×1の僕のコメント 直しておきました。 (<span class="comment_date">2014/04/19 (土) 11:37:47</span>)</li>
+<li><strong>@0918nobita</strong> : Noodel OSからもインストールして起動できるOSもどきを開発中です！もちろん単独でも動きますが、互換性を持たせて、さまざまなOSもどきと連携させたいと思います (<span class="comment_date">2014/05/06 (火) 08:46:01</span>)</li>
+<li><strong>@0918nobita</strong> : その他のアプリも作るので、気長に待っててくださいねー(´∀｀*) (<span class="comment_date">2014/05/06 (火) 08:47:34</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/Noodel OS" />
+  <input type="hidden" name="comment_no" value="1" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="5c50a5d92db99b9f29672c11495e2749" />
+  <label for="_p_comment_name_1" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_1" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_1" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="de59456b">「Noodel Software」の最新情報</h3>
+
+<h4 id="f293f972">開発しているもの</h4>
+<p>開発中止になるものがあるかも知れません。<br />
+「<a href="http://smileboom.com/special/ptcm2/html_third.php" rel="nofollow">プチコン3号 SMILEBASIC</a>」までには完成させたいです。<br /></p>
+<ul><li><del>「Noodel OS Version 2」を開発中。</del><br />
+1から作り直したので「Noodel OS 2」などの名称で新たに投稿します。
+<ul><li>今は「Noodel OS 2(仮)」って読んでください。</li></ul></li>
+<li>「Noodel OS DX」を開発中。</li></ul>
+
+<h3 id="bea3561a">「Noodel OS 2(仮)」の最新情報</h3>
+<p>ソースがぐちゃぐちゃになってきたので開発が遅れていました。<br />
+また、一からつくり直すのでますます遅れます。<br /></p>
+<p><br /></p>
+<ul><li>「Noodel OS 2(仮)」ではこんなことがでるようになります。(予定です)
+<ul><li><del>ガジェットもどき</del>
+<ul><li><del>ガジェットもどきは廃止になりました。</del><br />
+難しそうです…</li></ul></li>
+<li>セーフモードもどき
+<ul><li>一応、完成しました。<br />
+でも、「セーフモードもどきもどき」レベルです。</li></ul></li>
+<li>デバッグモードもどき
+<ul><li>一応、完成しました。<br />
+でも、「デバッグモードもどきもどき」レベルです。</li></ul></li>
+<li>プロセスもどき
+<ul><li>難しそうです…</li></ul></li></ul></li></ul>
+<p><br /></p>
+<ul><li>「Noodel OS 2(仮)」ではこんなアプリケーションが初期内蔵されています。(予定です)
+<ul><li>コマンドプロンプト
+<ul><li>半分ぐらい完成しました。</li></ul></li>
+<li>プロパティ
+<ul><li>できました。</li></ul></li>
+<li>Noodel Accessorys
+<ul><li>Clock<br />
+→ 一応、完成しました。</li></ul></li>
+<li>Stone(ブラウザもどき)
+<ul><li>まだ、「ブラウザもどきもどき」レベルです。</li></ul></li></ul></li></ul>
+<p><br /></p>
+<ul><li>「Noodel OS 2」以外に名前が思いつかないので、多分「Noodel OS 2」のままになります。</li></ul>
+
+<h4 id="y068ef24">欲しいアプリのアンケート</h4>
+<ul><li>欲しいアプリのアンケートを終了しました。(14年4月19日)</li></ul>
+
+<h4 id="t353f24d">皆さんの要望</h4>
+<p>「Noodel OS 2」への要望があれば書き込んでください。<br />
+(苦戦気味なので皆さんの要望に答えられないかも知れません。勿論、全て頑張って見ます)<br /></p>
+<ul><li><strong>魔神</strong> : ゲームを頼んだZE (<span class="comment_date">2014/05/03 (土) 06:11:26</span>)
+<ul><li><strong>Noodel Software</strong> : わかりました。頑張ってみます。(<span class="comment_date">2014/05/03 (土) 19:12:32</span>)</li></ul></li>
+<li><strong>魔神</strong> : ありがとうございますだZE (<span class="comment_date">2014/05/03 (土) 19:59:27</span>)</li>
+<li><strong>@0918nobita</strong> : グラフィックの命令も使って、見た目をモダンな感じにしてみては？ (<span class="comment_date">2014/05/06 (火) 08:49:29</span>)
+<ul><li><strong>Noodel Software</strong> : わかりました。頑張ってみます。(<span class="comment_date">2014/05/06 (火) 09:30:30</span>)</li></ul></li>
+<li><strong>魔神</strong> : BGM頼んだＺＥ (<span class="comment_date">2014/05/07 (水) 21:01:10</span>)
+<ul><li><strong>Nodel Software</strong> : わかりました。頑張ってみます。でも、作曲が下手くそなのでプチコンのプリセットBGMになると思います。 (<span class="comment_date">2014/05/07 (水) 21:25:54</span>)</li></ul></li>
+<li><strong>かずえもん</strong> : ミュージックエディッターVer2.0を使ってみてはどうでしょう？　<a href="http://wiki.hosiken.jp/petc/?Toukou%2F%A5%DF%A5%E5%A1%BC%A5%B8%A5%C3%A5%AF%A5%B7%A1%BC%A5%B1%A5%F3%A5%B5%A1%BCmkII" rel="nofollow">http://wiki.hosiken.jp/petc/?Toukou%2F%A5%DF%A5%E5%A1%BC%A5%B8%A5%C3%A5%AF%A5%B7%A1%BC%A5%B1%A5%F3%A5%B5%A1%BCmkII</a>　MMLに変換できますから、直感的にBGM作成が出来ますよ！ (<span class="comment_date">2014/06/25 (水) 18:16:12</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/Noodel OS" />
+  <input type="hidden" name="comment_no" value="2" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="5c50a5d92db99b9f29672c11495e2749" />
+  <label for="_p_comment_name_2" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_2" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_2" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="p550c8e5">「Noodel OS DX」の最新情報</h3>
+<p>「Noodel OS DX」でこんなことができるようにしたいです。<br /></p>
+<ul><li>マルチタスク</li></ul>
+<p>多分、「Noodel OS DX」は「<a href="http://smileboom.com/special/ptcm2/html_third.php" rel="nofollow">プチコン3号 SMILEBASIC</a>」で作ります。<br /></p>
+
+<h4 id="q06e85d6">ありそうな質問とその答え</h4>
+<ul><li>Q.NoodelにマルチタスクのOSもどき作れるの?
+<ul><li>A.<strong>できるようにしたい</strong>のです。(勿論、頑張っています)</li></ul></li></ul>
+
+<h4 id="l70d2c48">お願い</h4>
+<p>完成まで遅くなると思うので気長に待っていてください。<br /></p>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2028d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2971d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1903d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1914d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2365d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2566d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2136d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1226d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (584d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2359d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_5_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2565d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (8h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_5_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (115d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (56d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (72d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (87d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (110d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (115d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (139d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (139d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (204d)">Petit Slash II</a></li>
+</ul>
+<h4>2021/04/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (217d)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (271d)">編集の練習用ページ</a></li>
+</ul>
+</div>
+
+<h3 id="content_5_3">オンライン情報</h3>
+<p>現在同時に 3 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.101 秒  | このページの最終更新 : 2016/05/23 (月) 11:01:27  (2015d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

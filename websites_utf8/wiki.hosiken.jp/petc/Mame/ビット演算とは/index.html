@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>ビット演算とは - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="ビット演算とは - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Mame%2F%A5%D3%A5%C3%A5%C8%B1%E9%BB%BB%A4%C8%A4%CF">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Mame%2F%A5%D3%A5%C3%A5%C8%B1%E9%BB%BB%A4%C8%A4%CF">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2F%A5%D3%A5%C3%A5%C8%B1%E9%BB%BB%A4%C8%A4%CF">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Mame%2F%A5%D3%A5%C3%A5%C8%B1%E9%BB%BB%A4%C8%A4%CF">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>ビット演算とは</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Mame%2F%A5%D3%A5%C3%A5%C8%B1%E9%BB%BB%A4%C8%A4%CF">ビット演算とは</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.031sec. -->
+<div class="contents">
+<ul><li><a href="#lddafc3f"> ビット演算って? </a>
+<ul><li><a href="#h6aaef2f"> 二進数って? </a></li>
+<li><a href="#lce13c76"> ビットって? </a></li></ul></li>
+<li><a href="#efd77958"> ビット演算子 </a>
+<ul><li><a href="#ff17dafb"> NOT </a></li>
+<li><a href="#cc375b15"> OR </a></li>
+<li><a href="#u1526d10"> XOR </a></li>
+<li><a href="#ua39fe7a"> AND </a></li></ul></li>
+<li><a href="#dabdebd9"> 符号ビットって？ </a></li>
+<li><a href="#h197c010"> ビット演算の使用例 </a>
+<ul><li><a href="#sa61c955"> BUTTON()命令 </a></li></ul></li>
+<li><a href="#y7e6aa7e">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<h3 id="lddafc3f">ビット演算って?</h3>
+<p>二進数を個々のビットの列として操作することです。</p>
+
+<h4 id="h6aaef2f">二進数って?</h4>
+<p>二進法とは、日常で使われる10で1つ位を上げる十進法に対し、2で1つ位上げる方式のことです。<br />
+ですので<span class="basic-text">０</span>→<span class="basic-text">１</span>→<span class="basic-text">１０</span>→<span class="basic-text">１１</span>→<span class="basic-text">１００</span>→<span class="basic-text">１０１</span>→<span class="basic-text">１１０</span>→<span class="basic-text">１１１</span>･･･と数がふえていきます。<br />
+そして、この方式で表された数のことを二進数といいます。<br />
+ただ、二進法の10と十進法の10は見分けがつかないのでプチコンの場合、頭に<span class="basic-text">＆Ｂ</span>を付けて表します。<br />
+例）</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>？”＆Ｂ１０１＝”；＆Ｂ１０１</li>
+</ol></code></div></div>
+<p>このように打つと<span class="basic-text">＆Ｂ１０１＝９</span>と表示されます</p>
+
+<h4 id="lce13c76">ビットって?</h4>
+<p>この場合、二進数の桁1つ1つをさします。<br />
+ちなみに、「0=OFF」「1=ON」となり 0が1になることを「ビットが立つ」と言うことがありますが、特に覚える必要はありません。<br /></p>
+
+<h3 id="efd77958">ビット演算子</h3>
+<p>ビット演算子とは「＋」「−」「×」「÷」などと同じように数を操作する記号のようなものです。<br />
+ビット演算子にはいくつかありますので1つずつ解説していきます。</p>
+
+<h4 id="ff17dafb">NOT</h4>
+<p><strong>２つの数をくらべるのではなく０と１をひっくり返す</strong>のがNOTを使ったビット演算です。<br />
+まずはこのように編集モードで入力して<span class="basic-text">ＲＵＮ</span>してください。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝ＮＯＴ　６</li>
+<li>ＰＲＩＮＴ　Ａ</li>
+</ol></code></div></div>
+<p>すると6は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>０００００００００００００００００１１０</li>
+</ol></code></div></div>
+<p>なのでそれぞれの位の０と１をひっくり返すと</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１１１１１１１１１１１１１１１１１００１</li>
+</ol></code></div></div>
+<p>となり十進数に直すと<span class="basic-text">−７</span>となるので</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li>−７</li>
+</ol></code></div></div>
+<p>と表示されます。<br />
+<br />
+※ちょっと待ったあああ！<a href="http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;rlz=1T4ADFA_jaJP410JP424&amp;q=0b11111111111111111001%e3%82%92%e5%8d%81%e9%80%b2%e6%95%b0%e3%81%a7" rel="nofollow">「0b11111111111111111001を十進数で」でググる</a>と1048569と出たぞ！おかしいじゃないか！<br />
+　というそこのあなた、ごもっともです。しかし、ここには「2の補数」「符号ビット」という考え方が必要になりますので、後述します。</p>
+
+<h4 id="cc375b15">OR</h4>
+<p><strong>どちらかでも１がある位は、１になる</strong>のがORを使ったビット演算です。<br />
+まずはこのように編集モードで入力して<span class="basic-text">ＲＵＮ</span>してください。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝５　ＯＲ　６</li>
+<li>ＰＲＩＮＴ　Ａ</li>
+</ol></code></div></div>
+<p>すると5は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１０１</li>
+</ol></code></div></div>
+<p>6は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１１０</li>
+</ol></code></div></div>
+<p>となりどちらかでも１がある位は、１にするので</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>　　　１０１</li>
+<li>ＯＲ　１１０</li>
+<li>−−−−−−</li>
+<li>　　　１１１</li>
+</ol></code></div></div>
+<p>となり十進数に直すと<span class="basic-text">７</span>なので</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li>７</li>
+</ol></code></div></div>
+<p>と表示されます。</p>
+
+<h4 id="u1526d10">XOR</h4>
+<p><strong>両方とも１になっている位は０になり、片方にだけ１がある位は１になる</strong>のがXORを使ったビット演算です。
+まずはこのように編集モードで入力して<span class="basic-text">ＲＵＮ</span>してください。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝５　ＸＯＲ　６</li>
+<li>ＰＲＩＮＴ　Ａ</li>
+</ol></code></div></div>
+<p>すると5は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１０１</li>
+</ol></code></div></div>
+<p>6は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１１０</li>
+</ol></code></div></div>
+<p>となり両方とも１になっている位は０になり、片方にだけ１がある位は１になるので</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>　　　　１０１</li>
+<li>ＸＯＲ　１１０</li>
+<li>−−−−−−−</li>
+<li>　　　　０１１</li>
+</ol></code></div></div>
+<p>となり十進数に直すと<span class="basic-text">３</span>なので</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li>３</li>
+</ol></code></div></div>
+<p>と表示されます。</p>
+
+<h4 id="ua39fe7a">AND</h4>
+<p><strong>両方とも１になっている位だけ、１になる</strong>のがANDを使ったビット演算です。
+まずはこのように編集モードで入力して<span class="basic-text">ＲＵＮ</span>してください。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝５　ＡＮＤ　６</li>
+<li>ＰＲＩＮＴ　Ａ</li>
+</ol></code></div></div>
+<p>すると5は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１０１</li>
+</ol></code></div></div>
+<p>6は二進数で</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>１１０</li>
+</ol></code></div></div>
+<p>となり両方とも１になっている位だけ、１になるので</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>　　　　１０１</li>
+<li>ＡＮＤ　１１０</li>
+<li>−−−−−−−</li>
+<li>　　　　１００</li>
+</ol></code></div></div>
+<p>となり十進数に直すと<span class="basic-text">４</span>なので</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li>４</li>
+</ol></code></div></div>
+<p>と表示されます。</p>
+
+<h3 id="dabdebd9">符号ビットって？</h3>
+<p>符号ビットとはその数値の正負を表すものになっています。プチコンでは符号ビットが整数部の20ビット目に割り当てられています。<br />
+符号ビットが1のとき、その数は「符号ビット以外の数値-524288」となります。ただし、-524288という数字はプチコンのシステム上存在しないので、<span class="basic-text">＆Ｂ１０００００００００００００００００００</span>と打つと-0という謎の数値が出てしまいます。（詳細はまめちしきへ）<br /></p>
+
+<h3 id="h197c010">ビット演算の使用例</h3>
+<p>ここまでビット演算について説明してきましたが実際に役立たなければいみがありません。<br />
+ここからはビット演算の具体的な使用方法について説明していきます。</p>
+
+<h4 id="sa61c955">BUTTON()命令</h4>
+<p>このようなプログラムを見たことがあるとおもいます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ｂ＝ＢＵＴＴＯＮ（）</li>
+<li>ＩＦ　Ｂ　ＡＮＤ　１６　ＴＨＥＮ　ＢＥＥＰ　１</li>
+</ol></code></div></div>
+<p>このプログラムの意味は もしAボタンが押されたらBEEP 1を鳴らすという意味です。<br />
+実はここに<span class="basic-text">ＡＮＤ</span>がつかわれています。なぜでしょうか?
+実は<span class="basic-text">ＢＵＴＴＯＮ（）</span>命令に使われてる値を二進数に直すとこうなります。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="text-align:right;">ボタン</td><td class="style_td" style="text-align:right;">10進数</td><td class="style_td" style="text-align:right;">2進数</td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">↑</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">１</span></td><td class="style_td"><span class="basic-text">０００００００００００１</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">↓</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">２</span></td><td class="style_td"><span class="basic-text">００００００００００１０</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">←</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">４</span></td><td class="style_td"><span class="basic-text">０００００００００１００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">→</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">８</span></td><td class="style_td"><span class="basic-text">００００００００１０００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">А</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">１６</span></td><td class="style_td"><span class="basic-text">０００００００１００００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">Б</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">３２</span></td><td class="style_td"><span class="basic-text">００００００１０００００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">Ф</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">６４</span></td><td class="style_td"><span class="basic-text">０００００１００００００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">Х</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">１２８</span></td><td class="style_td"><span class="basic-text">００００１０００００００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">К</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">２５６</span></td><td class="style_td"><span class="basic-text">０００１００００００００</span></td></tr><tr><td class="style_td" style="text-align:right;"><span class="basic-text">н</span></td><td class="style_td" style="text-align:right;"><span class="basic-text">５１２</span></td><td class="style_td"><span class="basic-text">００１０００００００００</span></td></tr><tr><td class="style_td">STARTボタン</td><td class="style_td"><span class="basic-text">１０２４</span></td><td class="style_td"><span class="basic-text">０１００００００００００</span></td></tr><tr><td class="style_td">SELECTボタン</td><td class="style_td"><span class="basic-text">２０４８</span></td><td class="style_td"><span class="basic-text">１０００００００００００</span></td></tr></tbody></table></div>
+<p>つまり
+Aボタンが押されている時、16のビットが1になり</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>　　　　１００００</li>
+<li>ＡＮＤ　１００００</li>
+<li>−−−−−−−−−</li>
+<li>　　　　１００００</li>
+</ol></code></div></div>
+<p>IF以下の命令が実行されます。（IF命令は条件式が0以外の時に実行される)</p>
+<p>この時にBボタンが押されていると、32のビットが上がるので</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li>　　　　　１００００</li>
+<li>ＡＮＤ　１０００００</li>
+<li>−−−−−−−−−−</li>
+<li>　　　　００００００</li>
+</ol></code></div></div>
+<p>となりIF以下の命令が実行されなくなります(IF〜THEN〜ELSE分の場合ELSE以下の命令が実行される)</p>
+
+<h3 id="y7e6aa7e">CHECKER FLAG (ひとことコメント)</h3>
+<p>コメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (2909d)">掲示板</a>へ)</p>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/ビット演算とは" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="9c96ba4a03a2b4901c4f9a0cec272119" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (448d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1555d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2499d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1431d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1442d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (1893d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2094d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1664d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (754d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (112d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1886d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1625d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2093d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (21h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1456d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (17h)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (19d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (19d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (52d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (101d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (104d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (112d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (120d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (231d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+<h4>2019/12/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FCOMMAND%20PROMPT" title="コマンドプロンプト (242d)">コマンドプロンプト</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.035 秒  | このページの最終更新 : 2016/02/20 (土) 21:10:45  (1635d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

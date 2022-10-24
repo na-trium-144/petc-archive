@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : JDI - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : JDI - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, QRコード, mkII専用, インタプリタ, ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FJDI">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FJDI">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FJDI">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FJDI">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : JDI</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FJDI">JDI</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.055sec. -->
+<div class="contents">
+<ul><li><a href="#v5ccb313">  概要 </a>
+<ul><li><a href="#n5a2300c">  命令文一覧 </a>
+<ul><li><a href="#nd5c68a1"> 注釈 </a></li></ul></li></ul></li>
+<li><a href="#xbfd6337">  バグ・修正情報 </a>
+<ul><li><a href="#if11092f"> 修正情報 </a></li>
+<li><a href="#e2ff6466">  バグ情報 </a></li></ul></li>
+<li><a href="#sb7bce10">  JDIに参加してくれる方募集中 </a></li>
+<li><a href="#c8c9e77c">  QR コード </a></li>
+<li><a href="#e6bc825c">  プログラムリスト </a></li>
+<li><a href="#a46e71ef">  CHECKER FLAG (ひとことコメント) </a></li>
+<li><a href="#v9366394">  リンク集 </a></li></ul>
+</div>
+
+<p>2012年09月28日投稿 / 投稿者 : JDI members / <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">インタプリタ</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> </span></p>
+<h3 id="v5ccb313">概要</h3>
+<p><span style="font-size:24px">インタプリタ共同開発(Joint Development Interpreter、JDI)</span><br class="spacer" />
+<span style="font-size:18px"><a href="http://enq-maker.com/ct89PB" rel="nofollow">アンケートにご回答お願いします</a>。</span><br class="spacer" />
+プチコン上で動くJDIBASICのインタプリタです。今後の更新で命令を増やそうと思っています。<br class="spacer" />
+インタプリタを起動、そして<span class="basic-text">ＲＵＮ</span>と入力するだけで編集モードに書いてある命令文を実行します。</p>
+
+<h4 id="n5a2300c">命令文一覧</h4>
+<p>↓クリックで開閉します。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">命令文一覧
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="3">実行モード専用命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">RUN</td><td class="style_td">プログラムの実行</td><td class="style_td"><span class="basic-text">ＲＵＮ</span></td></tr><tr><td class="style_td">END</td><td class="style_td">JDIインタプリタを終了する。</td><td class="style_td"><span class="basic-text">ＥＮＤ</span></td></tr><tr><th class="style_th" colspan="3">宣言・代入命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">CLEAR</td><td class="style_td">変数名やBASIC内部のメモリーを初期化</td><td class="style_td"><span class="basic-text">ＣＬＥＡＲ</span></td></tr><tr><td class="style_td">ALLCLA</td><td class="style_td">変数名やBASIC内部のメモリー、全画面を初期化</td><td class="style_td"><span class="basic-text">ＡＬＬＣＬＡ</span></td></tr><tr><td class="style_td">LET</td><td class="style_td">変数への代入</td><td class="style_td"><span class="basic-text">ＬＥＴ　</span>変数<span class="basic-text">　</span>文字列</td></tr><tr><td class="style_td">SETKEY</td><td class="style_td">ファンクションキーへの文字列割り当て</td><td class="style_td"><span class="basic-text">ＳＥＴＫＥＹ　</span>番号<span class="basic-text">　</span>文字列</td></tr><tr><th class="style_th" colspan="3">ウエイト命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">WAIT</td><td class="style_td">単純な時間待ち</td><td class="style_td"><span class="basic-text">ＷＡＩＴ　</span>フレーム数</td></tr><tr><th class="style_th" colspan="3">分岐系命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">GOTO</td><td class="style_td">プログラムの強制分岐</td><td class="style_td"><span class="basic-text">ＧＯＴＯ　</span>分岐先の行数</td></tr><tr><td class="style_td">STOP</td><td class="style_td">実行中のプログラムを強制的に停止</td><td class="style_td"><span class="basic-text">ＳＴＯＰ</span></td></tr><tr><td class="style_td">END</td><td class="style_td">プログラムの終了</td><td class="style_td"><span class="basic-text">ＥＮＤ</span></td></tr><tr><td class="style_td">SBASIC</td><td class="style_td">JDIを終了しプチコンに戻る</td><td class="style_td"><span class="basic-text">ＳＢＡＳＩＣ</span></td></tr><tr><th class="style_th" colspan="3">コンソール基本命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">ACLS</td><td class="style_td">画面完全初期化</td><td class="style_td"><span class="basic-text">ＡＣＬＳ</span></td></tr><tr><td class="style_td">CLS</td><td class="style_td">コンソール面初期化</td><td class="style_td"><span class="basic-text">ＣＬＳ</span></td></tr><tr><td class="style_td">LOCATE</td><td class="style_td">コンソール上の文字表示位置の指定</td><td class="style_td"><span class="basic-text">ＬＯＣＡＴＥ　</span>X座標<span class="basic-text">　</span>Y座標</td></tr><tr><td class="style_td">PRINT</td><td class="style_td">コンソール面への文字表示</td><td class="style_td"><span class="basic-text">ＰＲＩＮＴ　</span>文字列</td></tr><tr><td class="style_td">ORINT</td><td class="style_td">コンソール面への変数表示</td><td class="style_td"><span class="basic-text">ＯＰＲＩＮＴ　</span>変数</td></tr><tr><td class="style_td">TM</td><td class="style_td">コンソールへの現在の時間の表示</td><td class="style_td"><span class="basic-text">ＴＭ</span></td></tr><tr><td class="style_td">DE</td><td class="style_td">コンソールへの今日の日付を表示</td><td class="style_td"><span class="basic-text">ＤＥ</span></td></tr><tr><td class="style_td">PUTNOW</td><td class="style_td">現在の情報を表示</td><td class="style_td"><span class="basic-text">ＰＵＴＮＯＷ　</span>表示モード</td></tr><tr><td class="style_td">FCOLOR</td><td class="style_td">文字色と背景色の指定</td><td class="style_td"><span class="basic-text">ＦＣＯＬＯＲ　</span>文字色<span class="basic-text">　</span>背景色</td></tr><tr><td class="style_td">COLOR</td><td class="style_td">文字色のみの指定</td><td class="style_td"><span class="basic-text">ＣＯＬＯＲ　</span>文字色</td></tr><tr><th class="style_th" colspan="3">コンソール入力系命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">PUT</td><td class="style_td">文字列の取得</td><td class="style_td"><span class="basic-text">ＰＵＴ</span></td></tr><tr><td class="style_td">BUTTON</td><td class="style_td">ボタンの入力待ち命令　<span style="font-size:11px">(<a href="/petc/?Toukou%2FJDI#nd5c68a1" title="Toukou/JDI (1770d)">注釈１</a>)</span></td><td class="style_td"><span class="basic-text">ＢＵＴＴＯＮ　</span>ボタン文字</td></tr><tr><th class="style_th" colspan="3">サウンド基本命令</th></tr><tr><th class="style_th">命令文</th><th class="style_th">説明</th><th class="style_th">書式</th></tr><tr><td class="style_td">BEEP</td><td class="style_td">単純な警告音(効果音)の発声</td><td class="style_td"><span class="basic-text">ＢＥＥＰ　</span>波形番号</td></tr><tr><td class="style_td">NOISY</td><td class="style_td">波形番号がランダムな警告音(効果音)の発声</td><td class="style_td"><span class="basic-text">ＮＯＩＳＹ　</span>発声回数</td></tr><tr><td class="style_td">BGM</td><td class="style_td">音楽演奏開始</td><td class="style_td"><span class="basic-text">ＢＧＭ　</span>曲番号</td></tr><tr><td class="style_td">BGMSTOP</td><td class="style_td">音楽演奏停止</td><td class="style_td"><span class="basic-text">ＢＧＭＳＴＯＰ</span></td></tr><tr><td class="style_td">MML</td><td class="style_td">MMLによる音楽の演奏</td><td class="style_td"><span class="basic-text">ＭＭＬ　</span>MML文字列</td></tr></tbody></table></div>
+
+<h5 id="nd5c68a1">注釈</h5>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">注釈
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<ul><li>注釈１ ボタン文字について
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">記入する文字</th><th class="style_th">あてはまるボタン</th></tr><tr><td class="style_td"><span class="basic-text">↑</span></td><td class="style_td"><span class="basic-text">↑</span></td></tr><tr><td class="style_td"><span class="basic-text">↓</span></td><td class="style_td"><span class="basic-text">↓</span></td></tr><tr><td class="style_td"><span class="basic-text">←</span></td><td class="style_td"><span class="basic-text">←</span></td></tr><tr><td class="style_td"><span class="basic-text">→</span></td><td class="style_td"><span class="basic-text">→</span></td></tr><tr><td class="style_td"><span class="basic-text">Ａ</span></td><td class="style_td"><span class="basic-text">А</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｂ</span></td><td class="style_td"><span class="basic-text">Б</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｘ</span></td><td class="style_td"><span class="basic-text">Ф</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｙ</span></td><td class="style_td"><span class="basic-text">Х</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｌ</span></td><td class="style_td"><span class="basic-text">К</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｒ</span></td><td class="style_td"><span class="basic-text">н</span></td></tr><tr><td class="style_td"><span class="basic-text">Ｓ</span></td><td class="style_td"><span class="basic-text">ＳＴＡＲＴ</span></td></tr></tbody></table></div>
+</td></tr></table></li></ul>
+</td></tr></table>
+
+<h3 id="xbfd6337">バグ・修正情報</h3>
+
+<h4 id="if11092f">修正情報</h4>
+<p>現在のJDIの最新バージョンは2.00です。</p>
+
+<h4 id="e2ff6466">バグ情報</h4>
+<p>現在の最新バージョン、2.00ではバグは発見されていません。バグを発見された方は<a href="/petc/?Toukou%2FJDI#a46e71ef" title="Toukou/JDI (1770d)">CHECKER FLAG (ひとことコメント)</a>にて報告お願いします。</p>
+
+<h3 id="sb7bce10">JDIに参加してくれる方募集中</h3>
+<p>JDIへの参加やお知らせの確認等は、全て<a href="/petc/?Toukou%2FJDI#v9366394" title="Toukou/JDI (1770d)">リンク集</a>からお願いします。</p>
+
+<h3 id="c8c9e77c">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="2"><span class="basic-text">ＰＲＧ：ＪＤＩＭ＿ＪＤＩ</span>　ver2.00</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJDI&amp;openfile=ver2.00-qr000.png" title="ver2.00-qr000.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJDI&amp;src=ver2.00-qr000.png" alt="ver2.00-qr000.png" title="ver2.00-qr000.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJDI&amp;openfile=ver2.00-qr001.png" title="ver2.00-qr001.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJDI&amp;src=ver2.00-qr001.png" alt="ver2.00-qr001.png" title="ver2.00-qr001.png" width="290" height="290" /></a></td></tr></tbody></table></div>
+
+<h3 id="e6bc825c">プログラムリスト</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＤＡＴＡ”ＬＥＴ　Ａ　コノタヒ゛ハＪＤＩｍノＪＤＩヲタ゛ウンロ−ト゛シテイタタ゛イテ</li>
+<li>ＤＡＴＡ”ＬＥＴ　Ｂ　マコトニアリカ゛トウコ゛サ゛イマス</li>
+<li>ＤＡＴＡ”ＯＰＲＩＮＴ　Ａ</li>
+<li>ＤＡＴＡ”ＯＰＲＩＮＴ　Ｂ</li>
+<li>ＤＡＴＡ”ＣＬＥＡＲ</li>
+<li>’┌──────────────────────────┐</li>
+<li>’│　　　　ＪＤＩ　　　　　ＢＡＳＩＣ　インタフ゜リタ　│</li>
+<li>’│ハ゛−シ゛ョン２．００　　　　　　　　　　　　　　　│</li>
+<li>’│　１　　　　　　　．１　　　　　　　１　　　　　　　│</li>
+<li>’│　↑オオハハ゛ナ　　↑ミヤスサ　　　↑メイレイフ゛ン│</li>
+<li>’│　　ヘンコウ　　　　　コウシ゛ョウ　　フヤス　　　　│</li>
+<li>’├──────────────────────────┤</li>
+<li>’│　９／２９：　１．００　ハッヒ゜ョウ　　　　　　　　│</li>
+<li>’│　９／２９：　１．１０　ハッヒ゜ョウ　　　　　　　　│</li>
+<li>’│　９／３０：　１．１０　ヘンシュウ　（Ｓ）　　　　　│</li>
+<li>’│１０／　４：　２．００　ヘンシュウ　（Ｍ）　　　　　│</li>
+<li>’└──────────────────────────┘</li>
+<li>ＤＡＴＡ”ＲＥＮＤ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−　ショキカ</li>
+<li>ＧＯＳＵＢ　＠ＩＮＩＴ</li>
+<li>ＦＬＯＷ＝０</li>
+<li>’−−−−−−−−−−−−−−−−−−　メイン　ル−フ゜</li>
+<li>＠ＭＡＩＮ</li>
+<li>　ＯＮ　ＦＬＯＷ　ＧＯＳＵＢ　＠ＤＭＯＤＥ，＠ＲＵＮ</li>
+<li>ＩＦ　！ＥＮＤ＿ＦＬＡＧ　ＧＯＴＯ　＠ＭＡＩＮ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−　オワリ</li>
+<li>？ＲＴＮＶ＄</li>
+<li>ＳＹＳＢＥＥＰ＝ＴＲＵＥ</li>
+<li>ＫＥＹ　１，”ＦＩＬＥＳ”</li>
+<li>ＫＥＹ　２，”ＬＯＡＤ”＋ＣＨＲ＄（３４）</li>
+<li>ＫＥＹ　３，”ＳＡＶＥ”＋ＣＨＲ＄（３４）</li>
+<li>ＫＥＹ　４，”ＣＯＮＴ”</li>
+<li>ＫＥＹ　５，”ＲＵＮ”</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>’■タ゛イレクト　モ−ト゛</li>
+<li>’───────────────────────────</li>
+<li>＠ＤＭＯＤＥ</li>
+<li>ＩＮＰＵＴ　ＪＤＩＲＥ＄</li>
+<li>ＥＲＲＯＲ＿ＢＩＴ＝１</li>
+<li>ＩＦ　ＪＤＩＲＥ＄＝＝”ＥＮＤ”　ＴＨＥＮ　ＥＲＲＯＲ＿ＢＩＴ＝０：ＥＮＤ＿ＦＬＡＧ＝１</li>
+<li>ＩＦ　ＪＤＩＲＥ＄＝＝”ＲＵＮ”　ＴＨＥＮ　ＥＲＲＯＲ＿ＢＩＴ＝０：ＦＬＯＷ＝１</li>
+<li>ＩＦ　ＥＲＲＯＲ＿ＢＩＴ　ＴＨＥＮ　ＧＯＳＵＢ　＠Ｄ＿ＥＸＥＣＭＤ</li>
+<li>ＩＦ　ＥＲＲＯＲ＿ＢＩＴ　ＴＨＥＮ　ＢＥＥＰ　２：？”Ｓｙｎｔａｘ　ｅｒｒｏｒ”</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝コマント゛　シ゛ッコウ</li>
+<li>＠Ｄ＿ＥＸＥＣＭＤ</li>
+<li>ＣＭＤ＄＝ＪＤＩＲＥ＄　　　’＠ＢＦＲＵＮノヒキスウ</li>
+<li>ＧＯＳＵＢ　＠ＢＦＲＵＮ</li>
+<li>’シ゛ッコウ？　メイレイ　ナケレハ゛　エラ−</li>
+<li>ＩＦ　ＴＯＣＭＤ　ＴＨＥＮ　ＥＲＲＯＲ＿ＢＩＴ＝０：ＧＯＳＵＢ　”＠Ｃ＿”＋ＡＲＧＳ＄（０）</li>
+<li>ＩＦ　ＳＫＩＰ　ＴＨＥＮ　ＥＲＲＯＲ＿ＢＩＴ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’■ＲＵＮ</li>
+<li>’───────────────────────────</li>
+<li>＠ＲＵＮ</li>
+<li>ＦＯＲ　＿Ｉ＝０　ＴＯ　ＤＡＲＥ−１</li>
+<li>　ＣＭＤ＄＝ＣＯＤＥ＄（＿Ｉ）　’＠ＢＦＲＵＮノヒキスウ</li>
+<li>　ＧＯＳＵＢ　＠ＢＦＲＵＮ</li>
+<li>　’シ゛ッコウ？　</li>
+<li>　ＩＦ　ＴＯＣＭＤ　ＴＨＥＮ　ＧＯＳＵＢ　”＠Ｃ＿”＋ＡＲＧＳ＄（０）</li>
+<li>　’メイレイ　ナケレハ゛　ル−フ゜ヲ　ヌケル</li>
+<li>　ＩＦ　！ＴＯＣＭＤ　ＡＮＤ　！ＳＫＩＰ　ＴＨＥＮ　＿Ｉ＝ＤＡＲＥ：？”Ｓｙｎｔａｘ　ｅｒｒｏｒ”</li>
+<li>　’オワリナラ　ル−フ゜ヲ　ヌケル</li>
+<li>　ＩＦ　ＥＮＤ＿ＦＬＡＧ　ＴＨＥＮ　＿Ｉ＝ＤＡＲＥ</li>
+<li>ＮＥＸＴ</li>
+<li>ＦＬＯＷ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’−−−−−−−−−−−−−−−−　ＢＥＦＯＲＥ　ＲＵＮ</li>
+<li>＠ＢＦＲＵＮ</li>
+<li>ＳＫＩＰ＝０</li>
+<li>’リセット</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＡＲＧＭ−１</li>
+<li>　ＡＲＧＳ＄（Ｉ）＝””</li>
+<li>ＮＥＸＴ</li>
+<li>ＡＲＧＳ＄（０）＝ＣＭＤ＄</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＡＲＧＭ−１</li>
+<li>　ＡＲＧＣ＝Ｉ＋１　’ヒキスウ　カウント</li>
+<li>　’スヘ゜−ス　ケンサク</li>
+<li>　ＦＯＲ　Ｊ＝１　ＴＯ　１</li>
+<li>　　ＰＯＳ＝ＩＮＳＴＲ（ＡＲＧＳ＄（Ｉ），”　”）</li>
+<li>　　’キ゛ョウトウノ　スヘ゜−スヲ　ケス</li>
+<li>　　ＩＦ　！ＰＯＳ　ＴＨＥＮ　Ｊ＝０：ＡＲＧＳ＄（Ｉ）＝ＲＩＧＨＴ＄（ＡＲＧＳ＄（Ｉ），ＬＥＮ（ＡＲＧＳ＄（Ｉ））−１）</li>
+<li>　ＮＥＸＴ</li>
+<li>　’キ゛ョウマツニ　スヘ゜−スカ゛　アッタラ　ヒキスウニ　フクメナイ</li>
+<li>　ＩＦ　ＡＲＧＳ＄（Ｉ）＝＝””　ＡＮＤ　０＜Ｉ　ＴＨＥＮ　ＡＲＧＣ＝ＡＲＧＣ−１</li>
+<li>　’スヘ゜−スカ゛ナケレハ゛　ｂｒｅａｋ</li>
+<li>　ＩＦ　ＰＯＳ＝＝−１　ＴＨＥＮ　Ｉ＝ＡＲＧＭ：ＮＥＸＴ：ＦＯＲ　ＢＲＥＡＫ＝１　ＴＯ　０</li>
+<li>　’モシ゛ヲ　トリタ゛ス</li>
+<li>　ＡＲＧＳ＄（Ｉ＋１）＝ＲＩＧＨＴ＄（ＡＲＧＳ＄（Ｉ），ＬＥＮ（ＡＲＧＳ＄（Ｉ））−ＰＯＳ−１）</li>
+<li>　ＡＲＧＳ＄（Ｉ）＝ＬＥＦＴ＄（ＡＲＧＳ＄（Ｉ），ＰＯＳ）</li>
+<li>ＮＥＸＴ</li>
+<li>’チェック</li>
+<li>ＴＯＣＭＤ＝０</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＣＭＤＣＮＴ−１</li>
+<li>　ＩＦ　ＡＲＧＳ＄（０）＝＝ＣＭＤＳ＄（Ｉ）　ＴＨＥＮ　ＴＯＣＭＤ＝１</li>
+<li>ＮＥＸＴ</li>
+<li>’モシ゛カ゛　カラ　ナラ　エラ−ニ　シナイ</li>
+<li>ＩＦ　ＡＲＧＳ＄（０）＝＝””　ＴＨＥＮ　ＳＫＩＰ＝１</li>
+<li>’コメント</li>
+<li>ＩＦ　ＬＥＦＴ＄（ＡＲＧＳ＄（０），１）＝＝”’”　ＴＨＥＮ　ＳＫＩＰ＝１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’■ＥＲＲＯＲ</li>
+<li>’───────────────────────────</li>
+<li>＠ＥＲＲＯＲ</li>
+<li>’マタ゛　シ゛ッソウ　シテイマセン</li>
+<li>ＢＥＥＰ　２</li>
+<li>ＧＯＳＵＢ　”＠ＥＲＲ＿”＋ＳＴＲ＄（ＪＤ＿ＥＲＲ）</li>
+<li>ＪＤ＿ＥＲＲ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’■メイレイ</li>
+<li>’───────────────────────────</li>
+<li>’＝＝＝ＪＤＩ</li>
+<li>＠Ｃ＿ＪＤＩ</li>
+<li>？”ケ゛ンサ゛イノテ゛−タ　Ｖｅｒ　”；ＪＤＩＶＥＲ＄</li>
+<li>？”ノコリヨウリョウ”；ＦＲＥＥＭＥＭ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＰＲＩＮＴ</li>
+<li>＠Ｃ＿ＰＲＩＮＴ</li>
+<li>？ＡＲＧＳ＄（１）</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＢＥＥＰ</li>
+<li>＠Ｃ＿ＢＥＥＰ</li>
+<li>ＢＥＥＰ＿ＮＵＭ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>ＩＦ　ＢＥＥＰ＿ＮＵＭ＞５９　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＢＥＥＰ　ＢＥＥＰ＿ＮＵＭ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＷＡＩＴ</li>
+<li>＠Ｃ＿ＷＡＩＴ</li>
+<li>ＷＡＩＴＦＲＡＭＥ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>ＷＡＩＴ　ＷＡＩＴＦＲＡＭＥ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＢＧＭ</li>
+<li>＠Ｃ＿ＢＧＭ</li>
+<li>ＢＧＭ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>ＩＦ　ＢＧＭ＞２９　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＢＧＭＰＬＡＹ　ＢＧＭ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＢＵＴＴＯＮ</li>
+<li>＠Ｃ＿ＢＵＴＴＯＮ</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”↑”　ＴＨＥＮ　ＢＵＴ＝１</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”↓”　ＴＨＥＮ　ＢＵＴ＝２</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”←”　ＴＨＥＮ　ＢＵＴ＝４</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”→”　ＴＨＥＮ　ＢＵＴ＝８</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ａ”　ＴＨＥＮ　ＢＵＴ＝１６</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｂ”　ＴＨＥＮ　ＢＵＴ＝３２</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｘ”　ＴＨＥＮ　ＢＵＴ＝６４</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｙ”　ＴＨＥＮ　ＢＵＴ＝１２８</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｌ”　ＴＨＥＮ　ＢＵＴ＝２５６</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｒ”　ＴＨＥＮ　ＢＵＴ＝５１２</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”Ｓ”　ＴＨＥＮ　ＢＵＴ＝１０２４</li>
+<li>＠ＢＵＴＴＯＮ＿ＬＯＯＰ</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）！＝ＢＵＴ　ＧＯＴＯ　＠ＢＵＴＴＯＮ＿ＬＯＯＰ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＥＮＤ</li>
+<li>＠Ｃ＿ＥＮＤ</li>
+<li>ＲＴＮＶ＄＝”ＯＫ”：ＥＮＤ＿ＦＬＡＧ＝１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＳＴＯＰ</li>
+<li>＠Ｃ＿ＳＴＯＰ</li>
+<li>？”ＢＲＥＡＫ　ＩＮ　”＿Ｉ</li>
+<li>？”ＰＵＳＨ　Ａ　ＢＵＴＴＯＮ</li>
+<li>？”</li>
+<li>＠ＳＴＯＰ＿ＬＯＯＰ</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）！＝１６　ＧＯＴＯ　＠ＳＴＯＰ＿ＬＯＯＰ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＣＬＥＡＲ</li>
+<li>＠Ｃ＿ＣＬＥＡＲ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＶＡＲＣ</li>
+<li>　ＶＡＲＮ＄（Ｉ）＝””：ＶＡＲＳ＄（Ｉ）＝””</li>
+<li>ＮＥＸＴ</li>
+<li>ＶＡＲＣ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＡＣＬＳ</li>
+<li>＠Ｃ＿ＡＣＬＳ</li>
+<li>ＡＣＬＳ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＣＬＳ</li>
+<li>＠Ｃ＿ＣＬＳ</li>
+<li>ＣＬＳ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＣＯＬＯＲ</li>
+<li>＠Ｃ＿ＣＯＬＯＲ</li>
+<li>ＣＯＬ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>ＩＦ　ＣＯＬ＞１５　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＣＯＬＯＲ　ＣＯＬ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＢＧＭＳＴＯＰ</li>
+<li>＠Ｃ＿ＢＧＭＳＴＯＰ</li>
+<li>ＢＧＭＳＴＯＰ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＧＯＴＯ</li>
+<li>＠Ｃ＿ＧＯＴＯ</li>
+<li>ＧＯ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>＿Ｉ＝ＧＯ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＴＭ</li>
+<li>＠Ｃ＿ＴＭ</li>
+<li>？ＴＩＭＥ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＤＥ</li>
+<li>＠Ｃ＿ＤＥ</li>
+<li>？ＤＡＴＥ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＬＯＣＡＴＥ</li>
+<li>＠Ｃ＿ＬＯＣＡＴＥ</li>
+<li>ＬＯＣＡＴＥＸ＝ＶＡＬ（ＡＲＧＳ＄（１））</li>
+<li>ＬＯＣＡＴＥＹ＝ＶＡＬ（ＡＲＧＳ＄（２））</li>
+<li>ＬＯＣＡＴＥ　ＬＯＣＡＴＥＸ，ＬＯＣＡＴＥＹ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＡＬＬＣＬＡ</li>
+<li>＠Ｃ＿ＡＬＬＣＬＡ</li>
+<li>ＡＣＬＳ</li>
+<li>ＧＯＳＵＢ　＠Ｃ＿ＣＬＥＡＲ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＰＵＴ</li>
+<li>＠Ｃ＿ＰＵＴ</li>
+<li>ＬＩＮＰＵＴ　”ニュウリョク”；ＰＵＴ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＬＥＴ</li>
+<li>＠Ｃ＿ＬＥＴ</li>
+<li>ＢＯＯＬ＝０</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＶＡＲＣ</li>
+<li>　ＩＦ　ＡＲＧＳ＄（１）＝＝ＶＡＲＮ＄（Ｉ）　ＴＨＥＮ　ＶＡＲＳ＄（Ｉ）＝ＡＲＧＳ＄（２）：ＢＯＯＬ＝１：Ｉ＝ＶＡＲＣ</li>
+<li>ＮＥＸＴ</li>
+<li>ＩＦ　ＢＯＯＬ　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＶＡＲＮ＄（ＶＡＲＣ）＝ＡＲＧＳ＄（１）</li>
+<li>ＶＡＲＳ＄（ＶＡＲＣ）＝ＡＲＧＳ＄（２）</li>
+<li>ＶＡＲＣ＝ＶＡＲＣ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＯＰＲＩＮＴ</li>
+<li>＠Ｃ＿ＯＰＲＩＮＴ</li>
+<li>ＢＯＯＬ＝０</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＶＡＲＣ</li>
+<li>　ＩＦ　ＡＲＧＳ＄（１）＝＝ＶＡＲＮ＄（Ｉ）　ＴＨＥＮ　？ＶＡＲＳ＄（Ｉ）：ＢＯＯＬ＝１：Ｉ＝ＶＡＲＣ</li>
+<li>ＮＥＸＴ</li>
+<li>ＩＦ　！ＢＯＯＬ　ＴＨＥＮ　？”ＵＮＫＮＯＷＮ　ＶＡＲ”：ＥＮＤ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＦＣＯＬＯＲ</li>
+<li>＠Ｃ＿ＦＣＯＬＯＲ</li>
+<li>ＣＯＬＯＲ　ＶＡＬ（ＡＲＧＳ＄（１）），ＶＡＬ（ＡＲＧＳ＄（２））</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＭＭＬ</li>
+<li>＠Ｃ＿ＭＭＬ</li>
+<li>ＢＧＭＰＬＡＹ　ＡＲＧＳ＄（１）</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＮＯＩＳＹ</li>
+<li>＠Ｃ＿ＮＯＩＳＹ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　５０００</li>
+<li>　ＢＥＥＰ　ＲＮＤ（７０）</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＰＵＴＮＯＷ</li>
+<li>＠Ｃ＿ＰＵＴＮＯＷ</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”３”　ＴＨＥＮ　？ＤＡＴＥ＄＋”　”＋ＴＩＭＥ＄</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”２”　ＴＨＥＮ　？ＤＡＴＥ＄</li>
+<li>ＩＦ　ＡＲＧＳ＄（１）＝＝”１”　ＴＨＥＮ　？ＴＩＭＥ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＳＥＴＫＥＹ</li>
+<li>＠Ｃ＿ＳＥＴＫＥＹ</li>
+<li>ＫＥＹ　ＶＡＬ（ＡＲＧＳ＄（１）），ＡＲＧＳ＄（２）</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’＝＝＝ＳＭＩＬＥＢＡＳＩＣ</li>
+<li>＠Ｃ＿ＳＢＡＳＩＣ</li>
+<li>ＡＣＬＳ：ＣＬＥＡＲ</li>
+<li>ＶＥＲ＄＝ＬＥＦＴ＄（ＨＥＸ＄（ＶＥＲＳＩＯＮ），１）＋”．”＋ＭＩＤ＄（ＨＥＸ＄（ＶＥＲＳＩＯＮ），２，１）</li>
+<li>？”ＰｅｔｉｔＣｏｍｐｕｔｅｒ　ｖｅｒ”；ＶＥＲ＄</li>
+<li>？”ＳＭＩＬＥＢＡＳＩＣ　１０４８５７６　ｂｙｔｅｓ　ｆｒｅｅ”</li>
+<li>？”（Ｃ）２０１１−２０１２　ＳｍｉｌｅＢｏｏｍ　Ｃｏ．　Ｌｔｄ．”</li>
+<li>？</li>
+<li>ＥＮＤ＿ＦＬＡＧ＝１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>’■ショキカ</li>
+<li>’───────────────────────────</li>
+<li>＠ＩＮＩＴ</li>
+<li>ＣＬＥＡＲ：ＡＣＬＳ</li>
+<li>ＢＧＭＳＴＯＰ</li>
+<li>ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ</li>
+<li>ＫＥＹ　１，””</li>
+<li>ＫＥＹ　２，””</li>
+<li>ＫＥＹ　３，””</li>
+<li>ＫＥＹ　４，”ＥＮＤ”</li>
+<li>ＫＥＹ　５，”ＲＵＮ</li>
+<li>’ヘンスウ　セッテイ</li>
+<li>ＶＡＲＭ＝２００：ＡＲＧＭ＝１００</li>
+<li>ＣＯＤＥ＿ＭＡＸ＝３０００</li>
+<li>ＤＩＭ　ＶＡＲＳ＄（ＶＡＲＭ），ＶＡＲＮ＄（ＶＡＲＭ）</li>
+<li>ＤＩＭ　ＡＲＧＳ＄（ＡＲＧＭ）</li>
+<li>ＤＩＭ　ＣＯＤＥ＄（ＣＯＤＥ＿ＭＡＸ）</li>
+<li>ＪＤＩＶＥＲ＄＝”２．００”</li>
+<li>’ＣＯＤＥ＄　ヨミコミ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＣＯＤＥ＿ＭＡＸ−１</li>
+<li>　ＲＥＡＤ　ＣＯＤＥ＄（Ｉ）</li>
+<li>　ＩＦ　ＣＯＤＥ＄（Ｉ）＝＝”ＲＥＮＤ”　ＴＨＥＮ　Ｉ＝ＣＯＤＥ＿ＭＡＸ：ＤＡＲＥ＝ＤＡＲＥ−１</li>
+<li>　ＤＡＲＥ＝ＤＡＲＥ＋１</li>
+<li>ＮＥＸＴ</li>
+<li>’メイレイ　カウント</li>
+<li>ＲＥＳＴＯＲＥ　＠ＣＤＡＴＡ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１</li>
+<li>　ＲＥＡＤ　ＣＭＤ＄</li>
+<li>　’ＲＥＮＤナラ　ｂｒｅａｋ</li>
+<li>　ＩＦ　ＣＭＤ＄＝＝”ＲＥＮＤ”　ＴＨＥＮ　ＮＥＸＴ：ＦＯＲ　ＢＲＥＡＫ＝１　ＴＯ　０</li>
+<li>　Ｉ＝０：ＣＭＤＣＮＴ＝ＣＭＤＣＮＴ＋１</li>
+<li>ＮＥＸＴ</li>
+<li>’メイレイ　ヨミコミ</li>
+<li>ＲＥＳＴＯＲＥ　＠ＣＤＡＴＡ</li>
+<li>ＤＩＭ　ＣＭＤＳ＄（ＣＭＤＣＮＴ）</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＣＭＤＣＮＴ−１</li>
+<li>　ＲＥＡＤ　ＣＭＤＳ＄（Ｉ）</li>
+<li>ＮＥＸＴ</li>
+<li>’カ゛メン</li>
+<li>ＣＬＳ</li>
+<li>？”ＪＤＩ　”；ＪＤＩＶＥＲ＄；”　ＪＤＩＢＡＳＩＣ”</li>
+<li>？”（Ｃ）２０１２−２０１２　ＪＤＩｍｅｍｂｅｒｓ　ｓｏｆｔ”</li>
+<li>？</li>
+<li>？”ＲＥＡＤＹ”</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>’−−−−−−−−−−−−−−−−−　メイレイ　テ゛−タ</li>
+<li>＠ＣＤＡＴＡ</li>
+<li>ＤＡＴＡ”ＯＰＲＩＮＴ”　，”ＬＥＴ”　　　，”ＰＵＴ”</li>
+<li>ＤＡＴＡ”ＡＬＬＣＬＡ”　，”ＬＯＣＡＴＥ”，”ＧＯＴＯ”</li>
+<li>ＤＡＴＡ”ＴＭ”　　　　　，”ＤＥ”　　　　，”ＣＯＬＯＲ”</li>
+<li>ＤＡＴＡ”ＢＧＭＳＴＯＰ”，”ＳＴＯＰ”　　，”ＣＬＥＡＲ”</li>
+<li>ＤＡＴＡ”ＡＣＬＳ”　　　，”ＣＬＳ”　　　，”ＢＵＴＴＯＮ”</li>
+<li>ＤＡＴＡ”ＥＮＤ”　　　　，”ＰＲＩＮＴ”　，”ＢＥＥＰ”</li>
+<li>ＤＡＴＡ”ＢＧＭ”　　　　，”ＷＡＩＴ”　　，”ＦＣＯＬＯＲ”</li>
+<li>ＤＡＴＡ”ＭＭＬ”　　　　，”ＮＯＩＳＹ”　，”ＰＵＴＮＯＷ”</li>
+<li>ＤＡＴＡ”ＳＥＴＫＥＹ”　，”ＳＢＡＳＩＣ”</li>
+<li>ＤＡＴＡ”ＲＥＮＤ”</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="a46e71ef">CHECKER FLAG (ひとことコメント)</h3>
+<p>感想やバグ情報、欲しい命令文などはここに書き込んで下さい。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3013d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : 毎日毎日更新されてんな・・・　別サイトでやれよ (<span class="comment_date">2012/10/01 (月) 20:16:41</span>)</li>
+<li><strong>進</strong><span style="font-size:11px">(as 個人)</span> : ダメなんですか？他のページだって毎日更新されてるページありますよ。 (<span class="comment_date">2012/10/04 (木) 20:11:52</span>)</li>
+<li><strong>名無しさん</strong> : 他がやっているから自分もやる・・・いいのか、それで。 (<span class="comment_date">2012/10/04 (木) 21:04:27</span>)</li>
+<li><strong>進</strong><span style="font-size:11px">(JDI members)</span> : 別に毎日更新しても問題なし。逆にやる気の証拠 (<span class="comment_date">2012/10/04 (木) 21:12:51</span>)</li>
+<li><strong>麿</strong><span style="font-size:11px">(JDI members)</span> : 毎日更新されると不快に思う人もいるし、そうでない人もいますよ。。 (<span class="comment_date">2012/10/04 (木) 21:34:53</span>)</li>
+<li><strong>進</strong><span style="font-size:11px">(JDI members)</span> : ２つめの名無しさんの言い方だと、このページだけに対する意見かと (<span class="comment_date">2012/10/04 (木) 21:46:34</span>)</li>
+<li><strong>ゆうしゃアシスタント</strong><span style="font-size:11px">(JDI members)</span> : 新しい命令を思いつきました！DS命令。 DS命令より後のグラフィック系命令は、両方の画面に作用する。 DS命令を終わらせるためには、DSEND命令を使う。なんてどうですか？ 長文失礼しました。 (<span class="comment_date">2012/10/12 (金) 16:49:07</span>)</li>
+<li><strong>麿</strong><span style="font-size:11px">(JDI members)</span> : 新しい命令の案、ありがとうございます。グラフィック麺に作用するなら、名前はGDS命令とかの方が妥当ですね。<span style="font-size:4px">まだまだグラフィック命令自体ができてないんだけどね…</span> (<span class="comment_date">2012/10/12 (金) 16:54:08</span>)</li>
+<li><strong>わぁぃ＊</strong> : GDS命令について、GDRAWMDみたいに引数を用意して、ENDGDSをなくしたらどうでしょう。 (<span class="comment_date">2012/10/13 (土) 16:22:11</span>)
+<ul><li><strong>麿</strong><span style="font-size:11px">(JDI members)</span> : そのやりかたはスマートでいいですね。 (<span class="comment_date">2012/10/13 (土) 17:22:59</span>)</li></ul></li>
+<li><strong>わぁぃ＊</strong> : あと、<a href="http://wikiwiki.jp/namekosusumu/?INTAPURITA" rel="nofollow">http://wikiwiki.jp/namekosusumu/?INTAPURITA</a>の「ご意見板」になぜか書き込めません。 (<span class="comment_date">2012/10/13 (土) 16:23:32</span>)
+<ul><li><strong>麿</strong><span style="font-size:11px">(JDI members)</span> : こちらは書き込めました。どうして書き込めないんでしょうね…。 (<span class="comment_date">2012/10/13 (土) 17:21:45</span>)</li></ul></li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/JDI" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="05bd22f3766b9e86f8dd245ce500752b" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="v9366394">リンク集</h3>
+<p>JDIに関連するページへのリンク集です。</p>
+<ul><li><a href="http://wikiwiki.jp/namekosusumu/?INTAPURITA" rel="nofollow">インタプリタ共同開発研究所</a> - プチコン勝手にランキングWiki</li>
+<li>JDI総合討論会 - かにチャット</li>
+<li><a href="http://chat.kanichat.com/chat?roomid=susumu_1" rel="nofollow">高機能版</a> - かにチャット</li>
+<li><a href="http://chat.kanichat.com/chat?roomid=susumu_1&amp;simple=true" rel="nofollow">簡易版</a> - かにチャット</li>
+<li><a href="http://chat.kanichat.com/mobile.jsp?roomid=susumu_1" rel="nofollow">携帯版</a> - かにチャット</li>
+<li><a href="/petc/?Toukou%2FSHtax" title="Toukou/SHtax (2510d)">SHtax</a> - プチコンまとめWiki</li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_7_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (552d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1660d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2603d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1535d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1546d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (1997d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2198d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1768d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (858d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (216d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1991d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1730d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_7_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2197d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_7_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1560d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (83d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (105d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (123d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (123d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (157d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (205d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (208d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (216d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (224d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (335d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+</div>
+
+<h3 id="content_7_3">オンライン情報</h3>
+<p>現在同時に 3 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.059 秒  | このページの最終更新 : 2016/01/21 (木) 13:52:31  (1770d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

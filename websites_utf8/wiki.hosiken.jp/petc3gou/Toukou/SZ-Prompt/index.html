@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : SZ-PROMPT 2.2 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : SZ-PROMPT 2.2 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, 初心者" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FSZ-Prompt">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FSZ-Prompt">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FSZ-Prompt">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FSZ-Prompt">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : SZ-PROMPT 2.2</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FSZ-Prompt">SZ-Prompt</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.175sec. -->
+<div class="contents">
+<ul><li><a href="#WhatIsIt">  これってなに？ </a></li>
+<li><a href="#HowToUse">  使い方 </a>
+<ul><li><a href="#Launch">  起動するには </a></li>
+<li><a href="#HowToControl">  操作方法 </a></li>
+<li><a href="#Commands">  実行できるコマンド </a>
+<ul><li><a href="#ComList">  コマンド一覧 </a></li></ul></li>
+<li><a href="#ComDet">  コマンドの詳細 </a>
+<ul><li><a href="#ReturnBTN">  BTNでの機能IDと返り値 </a></li>
+<li><a href="#CanCalcLit">  CALCで利用可能な演算子 </a></li>
+<li><a href="#CanIDGet">  GETでの取得ID </a></li>
+<li><a href="#CanGETSGet">  GETSでの取得ID </a></li>
+<li><a href="#CanIfLit">  IFで利用可能な論理演算子 </a></li>
+<li><a href="#CanTimeLit">  TIMEで利用可能な引数 </a></li>
+<li><a href="#CanWaitbBtn">  WAITBで指定できるボタン </a></li>
+<li><a href="#InternalApps">  APPで起動できるアプリケーション </a></li>
+<li><a href="#CanUsercfgLit">  USERCFGで利用可能な設定 </a></li></ul></li></ul></li>
+<li><a href="#Specs">  仕様 </a>
+<ul><li><a href="#Limit">  制約 </a></li>
+<li><a href="#SysVar">  システム変数 </a></li>
+<li><a href="#GenExt">  ファイル拡張子 </a></li></ul></li>
+<li><a href="#UThinkSlow">  コマンドの実行が遅いと思ったら... </a></li>
+<li><a href="#Updates">  更新履歴・更新予定 </a>
+<ul><li><a href="#updh">  更新履歴 </a>
+<ul><li><a href="#updh10">  r1.0 (Build at 3_9) </a></li>
+<li><a href="#updh11">  r1.1 (Build at 3_11) </a></li>
+<li><a href="#updh12">  r1.2 (Build at 3_13) </a></li>
+<li><a href="#updh13">  r1.3 (Build at 3_23) </a></li>
+<li><a href="#updh141">  r1.4.1 (Build at 3_26) </a></li>
+<li><a href="#updh15">  r1.5 (Build at 3_27) </a></li>
+<li><a href="#updh16">  r1.6 (Build at 3_29) </a></li>
+<li><a href="#updh161">  r1.6.1 (Build at 3_31) </a></li>
+<li><a href="#updh17">  r1.7 (Build at 4_1) </a></li>
+<li><a href="#updh171">  r1.7.1 (Build at 4_3) </a></li>
+<li><a href="#updh172">  r1.7.2 (Build at 4_4) </a></li>
+<li><a href="#updh173">  r1.7.3 (Build at 4_5) </a></li>
+<li><a href="#updh18">  r1.8 (Build at 4_7) </a></li>
+<li><a href="#updh181">  r1.8.1 (Build at 4_8) </a></li>
+<li><a href="#updh19">  r1.9 (Build at 4_17) </a></li>
+<li><a href="#updh110">  r1.10 (Build at 4_21) </a></li>
+<li><a href="#updh111">  r1.11 (Build at 5_6) </a></li>
+<li><a href="#updh1111">  r1.11.1 (Build at 5_21) </a></li>
+<li><a href="#updh1112">  r1.11.2 (Build at 5_27) </a></li>
+<li><a href="#updh112">  r1.12 (Build at 6_5) </a></li>
+<li><a href="#updh20">  r2.0 (Build at 6_22) </a></li>
+<li><a href="#updh2011">  r2.1.1 (Build at 7_8) </a></li>
+<li><a href="#updh2012">  r2.1.2 (Build at 7_12) </a></li>
+<li><a href="#updh202">  r2.2 (Build at 7_17) </a></li></ul></li>
+<li><a href="#Schedule">  更新予定 </a>
+<ul><li><a href="#updf23">  r2.3 </a></li>
+<li><a href="#Bugs">  不具合情報 </a></li>
+<li><a href="#Forever">  実装未定 </a></li></ul></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショットとか </a></li>
+<li><a href="#PubKey">  公開キーはここです </a></li>
+<li><a href="#List">  プログラムリスト </a></li>
+<li><a href="#Question">  アンケートです </a>
+<ul><li><a href="#x790ddee">  正直このプログラムってどうですか </a></li>
+<li><a href="#cf117f13">  .NMPや.GPKなど他のプログラムのファイル形式の読み込みに対応するべきですか </a></li></ul></li>
+<li><a href="#Comments">  なにかあったらここに書いてくださいね </a>
+<ul><li><a href="#q6a74da5">  すみっこのアクセスカウンタ </a></li></ul></li></ul>
+</div>
+
+<p>2019年3月10日投稿
+/ 2019年7月17日更新
+/ 投稿者 : すず
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BD%E9%BF%B4%BC%D4">初心者</a> </span></p>
+<p>ページ更新内容 (8/22) ： 過去バージョンの公開を終了しました</p>
+<h3 id="WhatIsIt">これってなに？</h3>
+<p>こんにちは、すずっていいます。</p>
+<p>これはたぶんコマンドプロンプト的なプログラムです<a id="notetext_1" href="#notefoot_1" class="note_super" title="そういえばこれn番煎じですね">*1</a>。そんなに機能はないけどプログラムのサイズが無駄に大きくなってきました。</p>
+<p>プログラムを投稿するのは初めてなので、間違ってるところがあったら教えてください！</p>
+<p>PIANO.BAT を付属しておきました。きっとたのしいですよ<a id="notetext_2" href="#notefoot_2" class="note_super" title="そんなことないよ">*2</a>。</p>
+
+<h3 id="HowToUse">使い方</h3>
+
+<h4 id="Launch">起動するには</h4>
+<p>SZ-PROMPT.EXE っていう名前のファイルがたぶんあるので、それを実行してください。</p>
+<p>無事に起動したら、そこにコマンドを入力してEnterで実行してください。</p>
+<p>ユーザー設定ファイルが存在しない場合、エラーが出ますが気にしなくて大丈夫ですよ。</p>
+
+<h4 id="HowToControl">操作方法</h4>
+<p>基本的に下画面のキーボードで操作します。</p>
+<p>Aボタンでエンター、Yボタンで1文字削除、十字キーの上下で入力履歴を表示することもできますよ。</p>
+<p>...バグありそうですけど。</p>
+<p>もしバグってコマンドの実行が止まらなくなったら L+X ボタンで強制停止できますよ。</p>
+
+<h4 id="Commands">実行できるコマンド</h4>
+
+<h5 id="ComList">コマンド一覧</h5>
+<p>r2.2 でついにコマンド数が200を超えてしまいました</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">長いかもしれませんよ？
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">コマンド名 (文法)</td><td class="style_td">説明</td></tr><tr><td class="style_td">ABS &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1の絶対値を変数2に代入します</td></tr><tr><td class="style_td">ACOS &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数2のアークコサインを変数2に代入します</td></tr><tr><td class="style_td">ALARMSET &lt;時&gt; &lt;分&gt;</td><td class="style_td">アラームを設定します</td></tr><tr><td class="style_td">ALARMSTART</td><td class="style_td">アラームを開始します</td></tr><tr><td class="style_td">ALARMSTAT</td><td class="style_td">アラームの状態を表示します</td></tr><tr><td class="style_td">ALARMSTOP</td><td class="style_td">アラームを停止します</td></tr><tr><td class="style_td">AND &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1 AND 数値 を変数2に代入します</td></tr><tr><td class="style_td">APP &lt;アプリID&gt;</td><td class="style_td">内蔵アプリを起動します</td></tr><tr><td class="style_td">ARY</td><td class="style_td">配列を表示します</td></tr><tr><td class="style_td">ARYADD &lt;数値&gt;</td><td class="style_td">配列に数値を代入します</td></tr><tr><td class="style_td">ARYAVE</td><td class="style_td">配列の平均値を返します</td></tr><tr><td class="style_td">ARYCLR</td><td class="style_td">配列を初期化します</td></tr><tr><td class="style_td">ARYDEL &lt;配列番号&gt;</td><td class="style_td">指定した配列番号に0を代入します</td></tr><tr><td class="style_td">ARYLOAD &lt;ファイル名&gt;</td><td class="style_td">配列を読み込みます</td></tr><tr><td class="style_td">ARYMAX</td><td class="style_td">配列の最大値を返します</td></tr><tr><td class="style_td">ARYMID</td><td class="style_td">配列の中央値を返します</td></tr><tr><td class="style_td">ARYMIN</td><td class="style_td">配列の最小値を返します</td></tr><tr><td class="style_td">ARYMUL</td><td class="style_td">配列の総積を返します</td></tr><tr><td class="style_td">ARYRND</td><td class="style_td">配列をシャッフルします</td></tr><tr><td class="style_td">ARYSAVE &lt;ファイル名&gt;</td><td class="style_td">配列を保存します</td></tr><tr><td class="style_td">ARYSRTM</td><td class="style_td">配列を昇順に並べかえます</td></tr><tr><td class="style_td">ARYSRTN</td><td class="style_td">配列を降順に並べかえます</td></tr><tr><td class="style_td">ARYSUM</td><td class="style_td">配列の総和を返します</td></tr><tr><td class="style_td">ASC &lt;文字列&gt;</td><td class="style_td">文字列をASCIIコードに変換します</td></tr><tr><td class="style_td">ASIN &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のアークサインを変数2に代入します</td></tr><tr><td class="style_td">ATAN &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のアークタンジェントを変数2に代入します</td></tr><tr><td class="style_td">BACKGROUND &lt;赤&gt; &lt;緑&gt; &lt;青&gt;</td><td class="style_td">背景色を変更します</td></tr><tr><td class="style_td">BAT &lt;ファイル名&gt;</td><td class="style_td">バッチファイルを実行します</td></tr><tr><td class="style_td">BATD &lt;ファイル名&gt;</td><td class="style_td">バッチファイルの中身を表示します</td></tr><tr><td class="style_td">BCFG</td><td class="style_td">BIOS設定を表示します</td></tr><tr><td class="style_td">BEEP &lt;BEEP番号&gt;</td><td class="style_td">効果音を再生します</td></tr><tr><td class="style_td">BGMCONT</td><td class="style_td">BGMの再生を再開します</td></tr><tr><td class="style_td">BGMCRNT</td><td class="style_td">BGMの再生状態を表示します</td></tr><tr><td class="style_td">BGMPAUSE</td><td class="style_td">BGMの再生を中断します</td></tr><tr><td class="style_td">BGMPLAY &lt;BGM番号&gt;</td><td class="style_td">BGMを再生します</td></tr><tr><td class="style_td">BGMSTOP</td><td class="style_td">BGMの再生を停止します</td></tr><tr><td class="style_td">BGMVOL</td><td class="style_td">BGMの音量を変更します</td></tr><tr><td class="style_td">BIN &lt;10進数&gt;</td><td class="style_td">2進数に変換します</td></tr><tr><td class="style_td">BLINK &lt;回数&gt;</td><td class="style_td">3Dランプを点滅します</td></tr><tr><td class="style_td">BTN &lt;機能ID&gt; &lt;変数&gt;</td><td class="style_td">入力されたボタンIDを変数に代入します</td></tr><tr><td class="style_td">CALC &lt;数値1&gt; &lt;演算子&gt; &lt;数値2&gt;</td><td class="style_td">計算をします</td></tr><tr><td class="style_td">CEIL &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1を小数切り上げした値を変数2に代入します</td></tr><tr><td class="style_td">CHKSUM</td><td class="style_td">チェックサムの結果を表示します</td></tr><tr><td class="style_td">CLR</td><td class="style_td">画面を初期化します</td></tr><tr><td class="style_td">CLS</td><td class="style_td">コンソールを初期化します</td></tr><tr><td class="style_td">CLIPCLR</td><td class="style_td">クリップボードの内容を消去します</td></tr><tr><td class="style_td">CLIPREAD</td><td class="style_td">クリップボードの内容を表示します</td></tr><tr><td class="style_td">CLIPSET &lt;文字列&gt;</td><td class="style_td">文字列をクリップボードに格納します</td></tr><tr><td class="style_td">CMDLIST</td><td class="style_td">コマンドを一覧で表示します</td></tr><tr><td class="style_td">CMEM &lt;変数&gt;</td><td class="style_td">CALCの計算結果を変数に代入します</td></tr><tr><td class="style_td">COIN</td><td class="style_td">0か1の乱数を返します</td></tr><tr><td class="style_td">COMPMODE</td><td class="style_td">互換モードを切り替えます</td></tr><tr><td class="style_td">COPY &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1から変数2に値をコピーします</td></tr><tr><td class="style_td">COPYS &lt;文字列変数1&gt; &lt;文字列変数2&gt;</td><td class="style_td">文字列変数1から文字列変数2に文字列をコピーします</td></tr><tr><td class="style_td">COS &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のコサインを変数2に代入します</td></tr><tr><td class="style_td">COSH &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のハイパボリックコサインを変数2に代入します</td></tr><tr><td class="style_td">CSLMOVE &lt;X&gt; &lt;Y&gt;</td><td class="style_td">コンソールを移動します</td></tr><tr><td class="style_td">CSRPOS</td><td class="style_td">カーソル位置を表示します</td></tr><tr><td class="style_td">CVSV &lt;文字列変数&gt; &lt;変数&gt;</td><td class="style_td">文字列変数を変数に変換します</td></tr><tr><td class="style_td">CVVS &lt;変数&gt; &lt;文字列変数&gt;</td><td class="style_td">変数を文字列変数に変換します</td></tr><tr><td class="style_td">DEASC &lt;ASCIIコード&gt;</td><td class="style_td">ASCIIコードから文字列に変換します</td></tr><tr><td class="style_td">DEBIN &lt;2進数&gt;</td><td class="style_td">2進数から10進数に変換します</td></tr><tr><td class="style_td">DEG &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1(ラジアン)を度に変換して変数2に代入します</td></tr><tr><td class="style_td">DEHEX &lt;16進数&gt;</td><td class="style_td">16進数から10進数に変換します</td></tr><tr><td class="style_td">DICE &lt;回数&gt; &lt;最大値&gt;</td><td class="style_td">nDnの乱数を返します</td></tr><tr><td class="style_td">DIV &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1/数値 の整数部を変数2に代入します</td></tr><tr><td class="style_td">DRUN</td><td class="style_td">開発用コマンドの実行権限を取得します</td></tr><tr><td class="style_td">ECHO &lt;文字列&gt; &lt;繰り返す回数&gt;</td><td class="style_td">指定した回数文字列を繰り返します</td></tr><tr><td class="style_td">EFCLOAD &lt;ファイル名&gt;</td><td class="style_td">エフェクターの設定を読み込みます</td></tr><tr><td class="style_td">EFCOFF</td><td class="style_td">エフェクターを無効化します</td></tr><tr><td class="style_td">EFCON</td><td class="style_td">エフェクターを有効化します</td></tr><tr><td class="style_td">EFCPRE &lt;プリセット番号&gt;</td><td class="style_td">エフェクターのプリセット設定を読み込みます</td></tr><tr><td class="style_td">EFCSAVE &lt;ファイル名&gt;</td><td class="style_td">エフェクターの設定を保存します</td></tr><tr><td class="style_td">EFCSET &lt;反射&gt; &lt;ディレイ&gt; &lt;減衰&gt; &lt;フィルタ1&gt; &lt;フィルタ2&gt; &lt;反射ゲイン&gt; &lt;残響ゲイン&gt;</td><td class="style_td">エフェクターの設定をします</td></tr><tr><td class="style_td">EFCWET &lt;BEEP効果量&gt; &lt;BGM効果量&gt; &lt;TALK効果量&gt;</td><td class="style_td">エフェクターの効果量を設定します</td></tr><tr><td class="style_td">EOS</td><td class="style_td">コマンド実行を終了します</td></tr><tr><td class="style_td">EXIT</td><td class="style_td">SZ-PROMPTを終了します</td></tr><tr><td class="style_td">EXP &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">e^変数1 を変数2に代入します</td></tr><tr><td class="style_td">FILE &lt;プロジェクト名&gt; &lt;種別&gt;</td><td class="style_td">指定したプロジェクト内のファイルの一覧を表示します</td></tr><tr><td class="style_td">FKEY &lt;キー番号&gt; &lt;文字列&gt;</td><td class="style_td">ファンクションキーに文字列を登録します</td></tr><tr><td class="style_td">FKEYCLR</td><td class="style_td">ファンクションキーを初期化します</td></tr><tr><td class="style_td">FLASH</td><td class="style_td">画面を発光させます</td></tr><tr><td class="style_td">FLOOR &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1を小数切り捨てした値を変数2に代入します</td></tr><tr><td class="style_td">FQ</td><td class="style_td">強制的に入力状態を通常に戻します</td></tr><tr><td class="style_td">GET &lt;取得ID&gt; &lt;変数&gt;</td><td class="style_td">取得IDの値を変数に代入します</td></tr><tr><td class="style_td">GETS &lt;取得ID&gt; &lt;文字列変数&gt;</td><td class="style_td">取得IDの値を文字列変数に代入します</td></tr><tr><td class="style_td">GRPBOX &lt;SX&gt; &lt;SY&gt; &lt;EX&gt; &lt;EY&gt;</td><td class="style_td">グラフィックに四角形を描画します</td></tr><tr><td class="style_td">GRPCHR &lt;X&gt; &lt;Y&gt; &lt;文字列&gt;</td><td class="style_td">グラフィックに文字列を描画します</td></tr><tr><td class="style_td">GRPCIR &lt;CX&gt; &lt;CY&gt; &lt;半径&gt;</td><td class="style_td">グラフィックに円を描画します</td></tr><tr><td class="style_td">GRPCOL &lt;赤&gt; &lt;緑&gt; &lt;青&gt;</td><td class="style_td">グラフィック描画色を変更します</td></tr><tr><td class="style_td">GRPCOPY &lt;SX&gt; &lt;SY&gt; &lt;EX&gt; &lt;EY&gt; &lt;CX&gt; &lt;CY&gt; &lt;モード&gt;</td><td class="style_td">グラフィックをコピーします</td></tr><tr><td class="style_td">GRPCLR</td><td class="style_td">グラフィックを初期化します</td></tr><tr><td class="style_td">GRPFILL &lt;SX&gt; &lt;SY&gt; &lt;EX&gt; &lt;EY&gt;</td><td class="style_td">グラフィックに塗りつぶされた四角形を描画します</td></tr><tr><td class="style_td">GRPLINE &lt;SX&gt; &lt;SY&gt; &lt;EX&gt; &lt;EY&gt;</td><td class="style_td">グラフィックに線を描画します</td></tr><tr><td class="style_td">GRPLOAD &lt;ファイル名&gt;</td><td class="style_td">グラフィックを読み込みます</td></tr><tr><td class="style_td">GRPSAVE &lt;ファイル名&gt;</td><td class="style_td">グラフィックを保存します</td></tr><tr><td class="style_td">GRPSET &lt;X&gt; &lt;Y&gt;</td><td class="style_td">グラフィックに点を描画します</td></tr><tr><td class="style_td">GRPSFL</td><td class="style_td">グラフィック全体を塗りつぶします</td></tr><tr><td class="style_td">GRPTRI &lt;X1&gt; &lt;Y1&gt; &lt;X2&gt; &lt;Y2&gt; &lt;X3&gt; &lt;Y3&gt;</td><td class="style_td">グラフィックに三角形を描画します</td></tr><tr><td class="style_td">HELP</td><td class="style_td">ヘルプを表示します</td></tr><tr><td class="style_td">HEX &lt;10進数&gt;</td><td class="style_td">16進数に変換します</td></tr><tr><td class="style_td">HISTORY</td><td class="style_td">最新10件の履歴を表示します</td></tr><tr><td class="style_td">HR &lt;文字&gt;</td><td class="style_td">指定した文字で水平線を引きます</td></tr><tr><td class="style_td">HWBTN</td><td class="style_td">ボタンの動作をテストします</td></tr><tr><td class="style_td">HWINFO</td><td class="style_td">ハードウェア情報を表示します</td></tr><tr><td class="style_td">IF &lt;変数&gt; &lt;論理演算子&gt; &lt;数値&gt;</td><td class="style_td">条件を満たした場合 IFEND 間を実行します</td></tr><tr><td class="style_td">IFS &lt;文字列変数&gt; &lt;文字列&gt;</td><td class="style_td">文字列変数=文字列 を満たした場合IFSEND間を実行します</td></tr><tr><td class="style_td">IFEND</td><td class="style_td">IFの終わり</td></tr><tr><td class="style_td">IFSEND</td><td class="style_td">IFSの終わり</td></tr><tr><td class="style_td">INFLPOFF</td><td class="style_td">REPEATの無限ループを解除します</td></tr><tr><td class="style_td">INFLPON</td><td class="style_td">REPEATを無限ループにします</td></tr><tr><td class="style_td">INLET &lt;変数&gt;</td><td class="style_td">数値を入力して変数に代入します</td></tr><tr><td class="style_td">INLETS &lt;文字列変数&gt;</td><td class="style_td">文字列を入力して文字列変数に代入します</td></tr><tr><td class="style_td">LAST</td><td class="style_td">最後に入力したコマンドを表示します</td></tr><tr><td class="style_td">LAUNCH &lt;スロット&gt; &lt;ファイル名&gt;</td><td class="style_td">他のプログラムを起動します</td></tr><tr><td class="style_td">LEFT &lt;文字列変数1&gt; &lt;文字数&gt; &lt;文字列変数2&gt;</td><td class="style_td">文字列変数1の左から指定した文字数の文字列を文字列変数2に代入します</td></tr><tr><td class="style_td">LENGTH &lt;文字列&gt;</td><td class="style_td">文字数を数えます</td></tr><tr><td class="style_td">LENGTHS &lt;文字列変数&gt;</td><td class="style_td">文字列変数の文字数を数えます</td></tr><tr><td class="style_td">LET &lt;変数&gt; &lt;数値&gt;</td><td class="style_td">変数に数値を代入します</td></tr><tr><td class="style_td">LETS &lt;文字列変数&gt; &lt;文字列&gt;</td><td class="style_td">文字列変数に文字列を代入します</td></tr><tr><td class="style_td">LIST &lt;ページ&gt;</td><td class="style_td">コマンドの一覧を表示します</td></tr><tr><td class="style_td">LOG &lt;変数1(実数)&gt; &lt;変数2(底)&gt; &lt;変数3&gt;</td><td class="style_td">Logを変数3に代入します</td></tr><tr><td class="style_td">LONG</td><td class="style_td">長いコマンドが実行できる状態にします</td></tr><tr><td class="style_td">MDIV &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1/数値 を変数2に代入します</td></tr><tr><td class="style_td">MOD &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1/数値 の余りを変数2に代入します</td></tr><tr><td class="style_td">MID &lt;文字列変数1&gt; &lt;文字位置&gt; &lt;文字数&gt; &lt;文字列変数2&gt;</td><td class="style_td">文字列変数1の文字位置から指定した文字数の文字列を文字列変数2に代入します</td></tr><tr><td class="style_td">MEMORY</td><td class="style_td">メモリ使用状況を表示します</td></tr><tr><td class="style_td">MKEMP &lt;ファイル名&gt;</td><td class="style_td">空のテキストファイルを作成します</td></tr><tr><td class="style_td">MMIN &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1-数値 を変数2に代入します</td></tr><tr><td class="style_td">MML &lt;MML&gt;</td><td class="style_td">記述したMMLを再生します</td></tr><tr><td class="style_td">MMLCLR &lt;BGM定義番号&gt;</td><td class="style_td">MMLを消去します</td></tr><tr><td class="style_td">MMLIN &lt;ファイル名&gt;</td><td class="style_td">MMLを読み込みます</td></tr><tr><td class="style_td">MMLOUT &lt;ファイル名&gt;</td><td class="style_td">MMLを出力します</td></tr><tr><td class="style_td">MMLPLAY &lt;BGM定義番号&gt;</td><td class="style_td">MMLを再生します</td></tr><tr><td class="style_td">MMLSAVE &lt;BGM定義番号&gt;</td><td class="style_td">MMLを保存します</td></tr><tr><td class="style_td">MMUL &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1*数値 を変数2に代入します</td></tr><tr><td class="style_td">MSUM &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1+数値 を変数2に代入します</td></tr><tr><td class="style_td">NOT &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">NOT 変数1 を変数2に代入します</td></tr><tr><td class="style_td">OR &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1 OR 数値 を変数2に代入します</td></tr><tr><td class="style_td">PAUSE</td><td class="style_td">SZ-PROMPTの実行を一時停止します</td></tr><tr><td class="style_td">POW &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1^数値 を変数2に代入します</td></tr><tr><td class="style_td">PRGCRNT</td><td class="style_td">プログラム編集行を返します</td></tr><tr><td class="style_td">PRGDEL &lt;行数&gt;</td><td class="style_td">プログラムを指定行数削除します</td></tr><tr><td class="style_td">PRGINS &lt;文字列&gt; &lt;方向&gt;</td><td class="style_td">プログラムに文字列を挿入します</td></tr><tr><td class="style_td">PRGPOS &lt;行番号&gt;</td><td class="style_td">プログラム編集行を指定します</td></tr><tr><td class="style_td">PRGSET &lt;文字列&gt;</td><td class="style_td">プログラム編集行を置き換えます</td></tr><tr><td class="style_td">PROJECT</td><td class="style_td">プロジェクトの一覧を表示します</td></tr><tr><td class="style_td">RAD &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1(度)をラジアンに変換して変数2に代入します</td></tr><tr><td class="style_td">REBOOT</td><td class="style_td">SZ-PROMPTを再起動します</td></tr><tr><td class="style_td">RECOMPILE</td><td class="style_td">SZ-PROMPTを保存し直します</td></tr><tr><td class="style_td">RELEASE</td><td class="style_td">メモリを解放します</td></tr><tr><td class="style_td">REM &lt;文字列&gt;</td><td class="style_td">コメントとして扱います</td></tr><tr><td class="style_td">RENAME &lt;元の名前&gt; &lt;新しい名前&gt;</td><td class="style_td">ファイル名を変更します</td></tr><tr><td class="style_td">REPEAT &lt;回数&gt;</td><td class="style_td">REPEAT~REPEND間を指定回数ループします</td></tr><tr><td class="style_td">REPEND</td><td class="style_td">REPEATループの終わり</td></tr><tr><td class="style_td">RIGHT &lt;文字列変数1&gt; &lt;文字数&gt; &lt;文字列変数2&gt;</td><td class="style_td">文字列変数1の右から指定した文字数の文字列を文字列変数2に代入します</td></tr><tr><td class="style_td">RND &lt;最小値&gt; &lt;最大値&gt;</td><td class="style_td">指定範囲内の乱数を返します</td></tr><tr><td class="style_td">RNDF</td><td class="style_td">0~1の小数の乱数を返します</td></tr><tr><td class="style_td">RNDS &lt;文字数&gt;</td><td class="style_td">ランダムな文字列を生成します</td></tr><tr><td class="style_td">ROM</td><td class="style_td">残り空き容量を表示します</td></tr><tr><td class="style_td">ROUND &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1を小数四捨五入した値を変数2に代入します</td></tr><tr><td class="style_td">SCSHOT &lt;ファイル名&gt;</td><td class="style_td">コンソールをファイルに保存します</td></tr><tr><td class="style_td">SECRET</td><td class="style_td">シークレットモードに切り替えます</td></tr><tr><td class="style_td">SGN &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1の符号を変数2に代入します</td></tr><tr><td class="style_td">SIN &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のサインを変数2に代入します</td></tr><tr><td class="style_td">SINH &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のハイパボリックサインを変数2に代入します</td></tr><tr><td class="style_td">SLOT</td><td class="style_td">実行中のスロットを表示します</td></tr><tr><td class="style_td">SPCLR</td><td class="style_td">スプライトを削除します</td></tr><tr><td class="style_td">SPDEL &lt;管理番号&gt;</td><td class="style_td">指定した管理番号のスプライトを削除します</td></tr><tr><td class="style_td">SPHID &lt;管理番号&gt;</td><td class="style_td">指定した管理番号のスプライトを非表示にします</td></tr><tr><td class="style_td">SPHIT &lt;管理番号&gt; &lt;変数&gt;</td><td class="style_td">指定した管理番号のスプライトの当たり判定を変数に代入します</td></tr><tr><td class="style_td">SPOFS &lt;管理番号&gt; &lt;X&gt; &lt;Y&gt;</td><td class="style_td">指定した管理番号のスプライトの座標を変更します</td></tr><tr><td class="style_td">SPROT &lt;管理番号&gt; &lt;角度&gt;</td><td class="style_td">指定した管理番号のスプライトを回転します</td></tr><tr><td class="style_td">SPSCL &lt;管理番号&gt; &lt;X&gt; &lt;Y&gt;</td><td class="style_td">指定した管理番号のスプライトの大きさを変更します</td></tr><tr><td class="style_td">SPSET &lt;管理番号&gt; &lt;ID&gt;</td><td class="style_td">指定したIDのスプライトを表示します</td></tr><tr><td class="style_td">SPSHW &lt;管理番号&gt;</td><td class="style_td">指定した管理番号のスプライトを表示します</td></tr><tr><td class="style_td">SQR &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1の平方根を変数2に代入します</td></tr><tr><td class="style_td">STINFO</td><td class="style_td">起動チェック結果を表示します</td></tr><tr><td class="style_td">STR &lt;文字列&gt; &lt;密着&gt;</td><td class="style_td">文字列を表示します (密着:1で有効)</td></tr><tr><td class="style_td">STRS &lt;文字列変数&gt; &lt;密着&gt;</td><td class="style_td">文字列変数の値を表示します (密着:1で有効)</td></tr><tr><td class="style_td">STRV &lt;変数&gt; &lt;密着&gt;</td><td class="style_td">変数の値を表示します (密着:1で有効)</td></tr><tr><td class="style_td">SYSTEM</td><td class="style_td">システム情報を表示します</td></tr><tr><td class="style_td">TAB &lt;行数&gt;</td><td class="style_td">指定した行数改行をします</td></tr><tr><td class="style_td">TALK &lt;文字列&gt;</td><td class="style_td">指定した文字列を読み上げます</td></tr><tr><td class="style_td">TAN &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のタンジェントを変数2に代入します</td></tr><tr><td class="style_td">TANH &lt;変数1&gt; &lt;変数2&gt;</td><td class="style_td">変数1のハイパボリックタンジェントを変数2に代入します</td></tr><tr><td class="style_td">TIME &lt;T/D&gt;</td><td class="style_td">現在の時間を表示します</td></tr><tr><td class="style_td">USERCFG &lt;設定&gt; [設定値]</td><td class="style_td">ユーザー設定を変更します</td></tr><tr><td class="style_td">USERLOAD</td><td class="style_td">ユーザー設定を読み込みます</td></tr><tr><td class="style_td">USERSAVE</td><td class="style_td">ユーザー設定を保存します</td></tr><tr><td class="style_td">VAR</td><td class="style_td">変数を一覧で表示します</td></tr><tr><td class="style_td">VARS</td><td class="style_td">文字列変数を一覧で表示します</td></tr><tr><td class="style_td">VARCLR</td><td class="style_td">変数を初期化します</td></tr><tr><td class="style_td">VARSCLR</td><td class="style_td">文字列変数を初期化します</td></tr><tr><td class="style_td">VER</td><td class="style_td">バージョン情報を表示します</td></tr><tr><td class="style_td">WAIT &lt;フレーム数&gt;</td><td class="style_td">指定したフレーム数動作を停止します</td></tr><tr><td class="style_td">WAITB &lt;ボタンID&gt;</td><td class="style_td">指定したボタンが入力されるまで動作を停止します</td></tr><tr><td class="style_td">WAITE</td><td class="style_td">ENTERキーが押されるまで動作を停止します</td></tr><tr><td class="style_td">WAITK &lt;キー&gt;</td><td class="style_td">指定したキーが入力されるまで動作を停止します</td></tr><tr><td class="style_td">XOR &lt;変数1&gt; &lt;数値&gt; &lt;変数2&gt;</td><td class="style_td">変数1 XOR 数値 を変数2に代入します</td></tr></tbody></table></div>
+</td></tr></table>
+
+<h4 id="ComDet">コマンドの詳細</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">長いかもしれませんよ？
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h5 id="ReturnBTN">BTNでの機能IDと返り値</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">機能ID</td><td class="style_td">説明</td></tr><tr><td class="style_td">1</td><td class="style_td">押しっぱなし</td></tr><tr><td class="style_td">2</td><td class="style_td">押した瞬間</td></tr><tr><td class="style_td">3</td><td class="style_td">押して離した瞬間</td></tr></tbody></table></div>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ボタン</td><td class="style_td">返り値</td></tr><tr><td class="style_td">↑</td><td class="style_td">1</td></tr><tr><td class="style_td">↓</td><td class="style_td">2</td></tr><tr><td class="style_td">←</td><td class="style_td">4</td></tr><tr><td class="style_td">→</td><td class="style_td">8</td></tr><tr><td class="style_td">A</td><td class="style_td">16</td></tr><tr><td class="style_td">B</td><td class="style_td">32</td></tr><tr><td class="style_td">X</td><td class="style_td">64</td></tr><tr><td class="style_td">Y</td><td class="style_td">128</td></tr><tr><td class="style_td">L</td><td class="style_td">256</td></tr><tr><td class="style_td">R</td><td class="style_td">512</td></tr></tbody></table></div>
+
+<h5 id="CanCalcLit">CALCで利用可能な演算子</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">演算子種類</td><td class="style_td">演算子</td></tr><tr><td class="style_td">基本演算</td><td class="style_td">+ - * / %</td></tr><tr><td class="style_td">三角関数</td><td class="style_td">SIN COS TAN ASIN ACOS ATAN SINH COSH TANH</td></tr><tr><td class="style_td">小数処理</td><td class="style_td">FLOOR ROUND CEIL</td></tr><tr><td class="style_td">数学関数</td><td class="style_td">ABS SQRT EXP POW LOG</td></tr></tbody></table></div>
+
+<h5 id="CanIDGet">GETでの取得ID</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">TM.H</td><td class="style_td">時</td></tr><tr><td class="style_td">TM.M</td><td class="style_td">分</td></tr><tr><td class="style_td">TM.S</td><td class="style_td">秒</td></tr><tr><td class="style_td">DT.Y</td><td class="style_td">年</td></tr><tr><td class="style_td">DT.M</td><td class="style_td">月</td></tr><tr><td class="style_td">DT.D</td><td class="style_td">日</td></tr><tr><td class="style_td">MM.FR</td><td class="style_td">残りメモリ</td></tr><tr><td class="style_td">MM.MX</td><td class="style_td">最大メモリ</td></tr><tr><td class="style_td">MM.US</td><td class="style_td">使用メモリ</td></tr><tr><td class="style_td">SYS.LINE</td><td class="style_td">行番号</td></tr><tr><td class="style_td">SYS.SCTM</td><td class="style_td">シークレットモードか？</td></tr><tr><td class="style_td">SYS.DRNM</td><td class="style_td">開発者モードか？</td></tr><tr><td class="style_td">SYS.CMPM</td><td class="style_td">互換モードか？</td></tr><tr><td class="style_td">SYS.UPTM</td><td class="style_td">プチコン起動時間(フレーム)</td></tr><tr><td class="style_td">SYS.UPMS</td><td class="style_td">プチコン起動時間(ミリ秒)</td></tr><tr><td class="style_td">SYS.ROM</td><td class="style_td">残り空き容量</td></tr><tr><td class="style_td">SYS.VCOD</td><td class="style_td">バージョンコード</td></tr><tr><td class="style_td">CFG.&lt;0~511&gt;</td><td class="style_td">ユーザー設定</td></tr><tr><td class="style_td">HW.ID</td><td class="style_td">使用ハードウェアID</td></tr><tr><td class="style_td">CS.X</td><td class="style_td">カーソル位置X</td></tr><tr><td class="style_td">CS.Y</td><td class="style_td">カーソル位置Y</td></tr></tbody></table></div>
+
+<h5 id="CanGETSGet">GETSでの取得ID</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">HW.HWR</td><td class="style_td">ハードウェア種類</td></tr><tr><td class="style_td">HW.CPU</td><td class="style_td">CPU情報</td></tr><tr><td class="style_td">HW.GPU</td><td class="style_td">GPU情報</td></tr><tr><td class="style_td">HW.RAM</td><td class="style_td">メモリ情報</td></tr><tr><td class="style_td">HW.RES</td><td class="style_td">解像度情報</td></tr><tr><td class="style_td">HW.BTR</td><td class="style_td">バッテリー情報</td></tr></tbody></table></div>
+
+<h5 id="CanIfLit">IFで利用可能な論理演算子</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">== &gt;= &lt;= != &lt; &gt;</td></tr></tbody></table></div>
+
+<h5 id="CanTimeLit">TIMEで利用可能な引数</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">引数</td><td class="style_td">説明</td></tr><tr><td class="style_td">T</td><td class="style_td">時間を表示します</td></tr><tr><td class="style_td">D</td><td class="style_td">日付を表示します</td></tr></tbody></table></div>
+
+<h5 id="CanWaitbBtn">WAITBで指定できるボタン</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ボタンID</td><td class="style_td">対応するボタン</td></tr><tr><td class="style_td">UP</td><td class="style_td">上</td></tr><tr><td class="style_td">DW</td><td class="style_td">下</td></tr><tr><td class="style_td">LF</td><td class="style_td">左</td></tr><tr><td class="style_td">RG</td><td class="style_td">右</td></tr><tr><td class="style_td">A</td><td class="style_td">A</td></tr><tr><td class="style_td">B</td><td class="style_td">B</td></tr><tr><td class="style_td">X</td><td class="style_td">X</td></tr><tr><td class="style_td">Y</td><td class="style_td">Y</td></tr><tr><td class="style_td">L</td><td class="style_td">L</td></tr><tr><td class="style_td">R</td><td class="style_td">R</td></tr></tbody></table></div>
+
+<h5 id="InternalApps">APPで起動できるアプリケーション</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">アプリID</td><td class="style_td">アプリ名</td><td class="style_td">説明</td></tr><tr><td class="style_td">STATBAR</td><td class="style_td">ステータスバー</td><td class="style_td">現在の時間やモード等を表示するバーです</td></tr><tr><td class="style_td">FPS</td><td class="style_td">FPS表示</td><td class="style_td">FPSを微妙な精度で表示します</td></tr><tr><td class="style_td">RUNTIME</td><td class="style_td">実行時間表示</td><td class="style_td">コマンドの実行時間と平均時間を表示します</td></tr><tr><td class="style_td">ALARM</td><td class="style_td">アラーム</td><td class="style_td">指定した時間にBEEP音を鳴らします</td></tr><tr><td class="style_td">SZPTMNG</td><td class="style_td">SZ-PROMPTマネージャー</td><td class="style_td">使用メモリ量と起動中のアプリを1文字のアイコンで表示します</td></tr><tr><td class="style_td">DELAY</td><td class="style_td">遅延表示</td><td class="style_td">入力遅延時間を表示します</td></tr><tr><td class="style_td">CFGEDI</td><td class="style_td">設定ファイルエディタ</td><td class="style_td">ユーザー設定ファイルを編集できます</td></tr></tbody></table></div>
+
+<h5 id="CanUsercfgLit">USERCFGで利用可能な設定</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">書式</td><td class="style_td">説明</td></tr><tr><td class="style_td">USERCFG NAME &lt;String 名前&gt;</td><td class="style_td">ユーザー名を設定します</td></tr><tr><td class="style_td">USERCFG BIRTHDAY &lt;Int 月&gt; &lt;Int 日&gt;</td><td class="style_td">誕生日を設定します</td></tr><tr><td class="style_td">USERCFG BGCOLOR &lt;Int 赤&gt; &lt;Int 緑&gt; &lt;Int 青&gt;</td><td class="style_td">背景色を設定します</td></tr><tr><td class="style_td">USERCFG CSCOLIN &lt;Int 色コード&gt;</td><td class="style_td">コンソール入力文字の色を変更します</td></tr><tr><td class="style_td">USERCFG CSCOLNR &lt;Int 色コード&gt;</td><td class="style_td">コンソール通常文字の色を変更します</td></tr><tr><td class="style_td">USERCFG CSCOLER &lt;Int 色コード&gt;</td><td class="style_td">コンソールエラー文字の色を変更します</td></tr><tr><td class="style_td">USERCFG CSCOLSP &lt;Int 色コード&gt;</td><td class="style_td">コンソール特殊文字の色を変更します</td></tr><tr><td class="style_td">USERCFG CURSOL &lt;String 文字&gt;</td><td class="style_td">カーソルを変更します</td></tr><tr><td class="style_td">USERCFG LINE</td><td class="style_td">行番号表示を切り替えます</td></tr><tr><td class="style_td">USERCFG RESET</td><td class="style_td">ユーザー設定を初期化します</td></tr><tr><td class="style_td">USERCFG SYSMODE</td><td class="style_td">新動作モード・旧動作モードを切り替えます</td></tr></tbody></table></div>
+</td></tr></table>
+
+<h3 id="Specs">仕様</h3>
+
+<h4 id="Limit">制約</h4>
+<ul><li>スロット0で実行するのを想定しています</li>
+<li>スロット3では実行できません</li>
+<li>同時に40文字程度まで入力ができます</li>
+<li>3DS, New3DS, WiiUが認識できます</li>
+<li>ファイル操作はプロジェクトを指定できません</li>
+<li>プログラム編集はスロット3を利用します</li></ul>
+
+<h4 id="SysVar">システム変数</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">変数</td><td class="style_td">内容</td></tr><tr><td class="style_td">R</td><td class="style_td">REPEATループ回数メモリ</td></tr></tbody></table></div>
+
+<h4 id="GenExt">ファイル拡張子</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">拡張子</td><td class="style_td">ファイル種類</td><td class="style_td">ファイル型</td></tr><tr><td class="style_td">.EXE</td><td class="style_td">実行ファイル</td><td class="style_td">TXT</td></tr><tr><td class="style_td">.SYS</td><td class="style_td">システムファイル</td><td class="style_td">TXT, DAT</td></tr><tr><td class="style_td">.BAT</td><td class="style_td">バッチファイル</td><td class="style_td">TXT</td></tr><tr><td class="style_td">.MML</td><td class="style_td">MMLファイル</td><td class="style_td">TXT</td></tr><tr><td class="style_td">.GRP</td><td class="style_td">画像ファイル</td><td class="style_td">DAT</td></tr><tr><td class="style_td">.SCR</td><td class="style_td">スクショファイル</td><td class="style_td">TXT</td></tr></tbody></table></div>
+
+<h3 id="UThinkSlow">コマンドの実行が遅いと思ったら...</h3>
+<p>ときどきコマンドの実行が遅かったりするみたいです。</p>
+<p>そんなときの対処法を紹介します。</p>
+<ul><li>プチコンの再起動</li>
+<li>CLEARコマンドをダイレクトモードで実行</li>
+<li>常駐アプリを終了
+<ul><li>特に RUNTIME アプリは結構重たいみたいです</li></ul></li></ul>
+
+<h3 id="Updates">更新履歴・更新予定</h3>
+
+<h4 id="updh">更新履歴</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">過去バージョンの更新履歴だよ
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h5 id="updh10">r1.0 (Build at 3_9)</h5>
+<p>公開した最初のバージョンですよ。</p>
+<p>たぶん不具合がたくさんあります。</p>
+
+<h5 id="updh11">r1.1 (Build at 3_11)</h5>
+<ul><li>コマンドとコマンドの間に#を入れることで連続でコマンドを実行できます
+<ul><li>例) BGMPLAY 16 # BGMCRNT</li>
+<li>こうするとBGM16番の曲名が調べられます</li></ul></li>
+<li>ARRAYMAX, ARRAYMID, ARRAYMIN, ARRAYSRTM, ARRAYSRTNコマンドを追加しました</li>
+<li>DEASC, DEBIN, DEHEXコマンドを追加しました</li>
+<li>ユーザー設定が実装されました
+<ul><li>USERCFGコマンドで変更可能ですが、EXITコマンドで正常に終了する必要があります</li>
+<li>r1.1 (Build at 3_11)では、ユーザー名と背景色の設定が利用できます</li></ul></li>
+<li>ユーザー設定実装により、プロジェクト内にファイルが2つ生成されます
+<ul><li>TXT:NAM ユーザー名が保存されます</li>
+<li>DAT:BKG 背景色が保存されます</li></ul></li></ul>
+
+<h5 id="updh12">r1.2 (Build at 3_13)</h5>
+<ul><li>BASICコマンドが追加されました
+<ul><li>非常に限られた動作しかしませんが、:で区切ることで複数の命令を同時に実行できます</li></ul></li>
+<li>LISTコマンドの一部引数書き忘れを修正しました</li></ul>
+
+<h5 id="updh13">r1.3 (Build at 3_23)</h5>
+<ul><li>LISTコマンドにTYPE引数を追加しました
+<ul><li>引数の型の一覧を表示します</li></ul></li>
+<li>HELP, PAUSE, TIMEコマンドを追加しました</li>
+<li>FKEYコマンドの挙動を修正しました
+<ul><li>ファンクションキーにそれぞれ [Last], [Ans], [m1], [m2], [m3] が入ります</li></ul></li>
+<li>連続実行を削除しました
+<ul><li>2つまでとかいらないですもんね</li></ul></li>
+<li>EXITコマンドで終了時にファンクションキーを復元するようにしました</li>
+<li>設定が変更されていないときにダイアログを非表示にするようにしました</li>
+<li>ステータスバーの位置を微調整しました</li></ul>
+
+<h5 id="updh141">r1.4.1 (Build at 3_26)</h5>
+<ul><li>LINPUTの代わりに自作入力機構を実装しました
+<ul><li>40文字程度の入力制限があります</li>
+<li>AボタンでのEnterは現在実装されていません</li>
+<li>Yボタンで1文字削除</li>
+<li>十字キー上下で履歴</li></ul></li>
+<li>漢字を用いて表示するようになりました</li>
+<li>ステータスバーが常時更新されるようになりました</li>
+<li>右上にFPSが表示されるようになりました
+<ul><li>あまり正確じゃないです</li></ul></li>
+<li>簡易的なバージョンチェッカーが実装されました
+<ul><li>バージョン先頭の文字で判断されます</li></ul></li></ul>
+
+<h5 id="updh15">r1.5 (Build at 3_27)</h5>
+<ul><li>設定ファイル名が BKG から CFG に変わりました
+<ul><li>ファイル名を変更するだけでr1.4以前のバージョンから引き継げます</li></ul></li>
+<li>Aボタンでエンターができるようになりました</li>
+<li>LISTコマンドにLit型ヘルプを追加しました
+<ul><li>例) LIST CALC</li>
+<li>これを実行すると、CALCコマンドのLit型引数である 演算子 の一覧が表示されます</li></ul></li>
+<li>HISTORYコマンドを追加しました</li>
+<li>RELEASEコマンドを追加しました
+<ul><li>RELEASEコマンドを実行すると履歴はすべて削除されます</li>
+<li>HISTORY, RELEASEコマンドは履歴に残りません</li></ul></li>
+<li>USERSAVEコマンドを追加しました
+<ul><li>EXITでも保存できますが、SZ-PROMPTを終了したくない場合はこちらを利用してください</li></ul></li>
+<li>USERCFGにコンソール色変更を追加しました
+<ul><li>COLOR命令の色コードと同じで0~15で指定します</li>
+<li>見づらい色にならないように注意してください</li></ul></li>
+<li>USERCFGにカーソル変更を追加しました
+<ul><li>2文字以上を指定した場合は、一番最初の文字だけがカーソルとして利用されます</li></ul></li>
+<li>FILEコマンドの挙動を若干変更しました</li></ul>
+
+<h5 id="updh16">r1.6 (Build at 3_29)</h5>
+<ul><li>一部文字色を変更しました</li>
+<li>コマンド入力にクリップボードが使えるようになりました
+<ul><li>下画面キーボードのCOPYとPASTEが使えます</li></ul></li>
+<li>行番号が9999でカウンターストップするように変更しました
+<ul><li>10000超えるとバグったからね</li></ul></li>
+<li>HELPコマンドの内容を修正しました</li>
+<li>配列計算コマンドを大幅に変更しました
+<ul><li>配列が無制限に使えます</li>
+<li>コマンド名が短くなりました</li></ul></li>
+<li>一部コマンドの実行中にFPSが表示されるようになりました
+<ul><li>プログレスバーが表示されるコマンドに表示されます</li></ul></li>
+<li>ARYRNDコマンドが追加されました</li>
+<li>VERコマンドが追加されました</li>
+<li>デバッグモードが実装されました
+<ul><li>とあることをすると有効化できます</li>
+<li>デバッグモード中はユーザー設定が保存されません</li>
+<li>デバッグモード中にのみ実行できるコマンドがあります</li></ul></li>
+<li>とってもちいさい隠し要素を追加しました</li></ul>
+
+<h5 id="updh161">r1.6.1 (Build at 3_31)</h5>
+<ul><li>ARYSAVE, ARYLOADコマンドが追加されました
+<ul><li>配列を保存・読み込みできます</li>
+<li>TXT:ARYMX, DAT:ARYの2つのファイルで保存されます</li></ul></li>
+<li>HWINFOコマンドが追加されました
+<ul><li>ハードウェア情報が表示されます</li>
+<li>適当に調べた情報なので間違っている部分があるかもしれません</li>
+<li>無印とLLの差などは認識できません</li></ul></li>
+<li>デバッグモードに機能が追加されました</li></ul>
+
+<h5 id="updh17">r1.7 (Build at 4_1)</h5>
+<ul><li>EFCOFF, EFCON, EFCPRE, EFCSET, EFCWETコマンドが追加されました</li>
+<li>SYSBEEPがFALSEになりました
+<ul><li>代わりに下画面キーボードはBEEP 9で鳴らしています</li>
+<li>EXITで終了するときにTRUEに戻ります</li></ul></li>
+<li>デバッグモードに機能が追加されました</li></ul>
+
+<h5 id="updh171">r1.7.1 (Build at 4_3)</h5>
+<ul><li>LISTコマンドを修正しました
+<ul><li>一部漢字になってなかったり内容が古かった部分を修正しました</li>
+<li>引数に129以上の値を指定するとエラーになるのを修正しました</li></ul></li>
+<li>LまたはRを押しているときにファンクションキーとコピー・ペーストが使えないようにしました</li>
+<li>メイン部分のコードをある程度インデントしました</li></ul>
+
+<h5 id="updh172">r1.7.2 (Build at 4_4)</h5>
+<ul><li>コマンド入力時のペーストの動作を変更しました
+<ul><li>いままでクリップボードの中身に化けていたのが後ろに追加されるようになりました</li></ul></li>
+<li>コマンドが連続実行できるようになりました
+<ul><li>2つまで？そんなことないですよ。</li>
+<li>: で区切ることで連続実行できます</li></ul></li>
+<li>EFCLOAD, EFCSAVEコマンドを追加しました
+<ul><li>エフェクター設定を保存できます</li>
+<li>ファイル名は DAT:EFC です</li></ul></li>
+<li>DRUNコマンドを追加しました
+<ul><li>DRUNコマンドを実行した直後のみ開発用コマンドが実行できます</li></ul></li>
+<li>ユーザー設定を追加しました
+<ul><li>BIRTHDAYで誕生日が設定できます</li></ul></li>
+<li>デバッグモードに機能が追加されました</li></ul>
+
+<h5 id="updh173">r1.7.3 (Build at 4_5)</h5>
+<ul><li>HISTORYコマンドを修正しました
+<ul><li>最新10件ではなくすべての履歴が表示されていました</li></ul></li>
+<li>LISTコマンドを修正しました
+<ul><li>250とかそれくらい以上の数値を指定するとエラーになっていました</li></ul></li>
+<li>LASTコマンドを追加しました</li>
+<li>MEMORYコマンドを追加しました</li>
+<li>シークレットモードを実装しました
+<ul><li>SECRETコマンドで切り替えができます</li>
+<li>シークレットモード中は履歴に保存されなくなります</li></ul></li>
+<li>ステータスバーを少し変更しました</li>
+<li>そういえばコマンド数が100に到達しました</li></ul>
+
+<h5 id="updh18">r1.8 (Build at 4_7)</h5>
+<ul><li>拡張子という概念が導入されました</li>
+<li>BASICコマンドのデバッグ表示消し忘れを修正しました</li>
+<li>実行スロットチェッカーを実装しました
+<ul><li>スロット0で実行されていない場合に警告が表示されます</li>
+<li>スロット0に同名のプログラムが存在する状態で他のスロットで実行するとチェッカーをすり抜けます</li></ul></li>
+<li>WAITコマンドを追加しました
+<ul><li>バッチファイル向けですね</li></ul></li>
+<li>BATコマンドを追加しました
+<ul><li>バッチファイルを実行するときに実行します</li></ul></li>
+<li>ARYLOAD, ARYSAVE, EFCLOAD, EFCSAVEにファイル名を指定するようにしました
+<ul><li>任意のファイル名で保存できるよ</li></ul></li></ul>
+
+<h5 id="updh181">r1.8.1 (Build at 4_8)</h5>
+<ul><li>b0.6からずっと修正されなかったFILEコマンドの不具合を修正しました</li>
+<li>LISTコマンドの一部記載ミスを修正しました</li>
+<li>SCSHOTコマンドを追加しました
+<ul><li>色はないけどコンソール画面をファイルに出力できますよ</li></ul></li>
+<li>BLINKコマンドを追加しました
+<ul><li>3DSの上画面右側にある 3D のランプが点滅します</li>
+<li>やりすぎると球切れする気がしてなりません</li></ul></li>
+<li>MKEMPコマンドを追加しました
+<ul><li>MKDIR的なコマンドを追加しようとした結果がこれですよ</li></ul></li>
+<li>GRPLOAD, GRPSAVE, MMLIN, MMLOUTコマンドを追加しました
+<ul><li>MMLの方だけちょっとコマンド名が違うので注意してね</li></ul></li>
+<li>MMLコマンドの仕様を変更しました
+<ul><li>どう考えても今までの仕様は無意味だったね</li></ul></li>
+<li>メモリ関係の処理を変更しました</li>
+<li>上画面が3D表示にならないように変更しました
+<ul><li>ACLSするたびに XSCREEN 0 になるのを初めて知りました</li></ul></li></ul>
+
+<h5 id="updh19">r1.9 (Build at 4_17)</h5>
+<ul><li>ユーザーメモリ機能を追加しました
+<ul><li>現在利用できるユーザーメモリは ABCD R です</li>
+<li>A~DメモリはCALCコマンドにのみ利用できます</li>
+<li>RメモリにはREPEATのループ回数が入り、一部コマンドで R を指定することで利用できます</li></ul></li>
+<li>ALARMSTAT, ALARMSET, ALARMSTART, ALARMSTOPコマンドを追加しました
+<ul><li>アラーム機能が利用できます</li>
+<li>指定した時刻(分まで設定可能)にBEEP音を鳴らします</li></ul></li>
+<li>BATDコマンドを追加しました
+<ul><li>.BATファイルの中身が表示できます</li></ul></li>
+<li>FLASHコマンドを追加しました
+<ul><li>画面を一瞬白色で描画するコマンドです</li>
+<li>高速で連続実行すると気分が悪くなったりする可能性があります</li></ul></li>
+<li>STRコマンドを追加しました
+<ul><li>ECHOコマンドと違って1度のみの描画を行います</li>
+<li>ECHOコマンドでは必ず引数に 1 を指定しなければならないため、1度のみの場合はこちらを利用してください</li></ul></li>
+<li>REPEAT, REPENDコマンドを追加しました
+<ul><li>REPEATコマンドで指定した回数 REPEAT~REPEND 間をループします</li>
+<li>ループ回数はユーザーメモリRに入ります</li></ul></li>
+<li>USERMEMコマンドを追加しました
+<ul><li>ユーザーメモリに入っている数値を確認できます</li></ul></li>
+<li>RNDSコマンドで指定した引数より1回多く生成されていた問題を修正しました
+<ul><li>なんで気づかなかったんだろうね...？</li></ul></li>
+<li>CALCコマンドの答えがCALCANS変数に入っていましたが、コマンド実行時に初期化されていた問題を修正しました
+<ul><li>たぶんこの不具合相当前のバージョンからありました</li></ul></li>
+<li>ファイル名指定時に文字数をチェックするようにしました
+<ul><li>どうやら一部コマンドでチェック漏れがあったみたいです</li></ul></li></ul>
+
+<h5 id="updh110">r1.10 (Build at 4_21)</h5>
+<ul><li>起動時の演出()を少し変更しました</li>
+<li>変数システムを大幅に改良しました
+<ul><li>4文字まで自由な変数が使えます</li>
+<li>その代償に起動時消費メモリが大幅に増えてしまいました</li></ul></li>
+<li>EOSコマンドを追加しました
+<ul><li>REPEATループを使用したとき実行が終わらなかったことがあったので作りました</li>
+<li>EOSを使わなくてもいいですが、最後に使っておくことをおすすめします</li></ul></li>
+<li>INLET, LETコマンドを追加しました
+<ul><li>INLETコマンドはユーザーに数値を入力させて代入します</li></ul></li>
+<li>STRVコマンドを追加しました
+<ul><li>変数の値を表示するときに利用してください</li></ul></li>
+<li>WAITKコマンドを追加しました
+<ul><li>任意のタイミングで次のコマンドに進めたい場合に利用してください</li></ul></li>
+<li>CMEMDEL, CMEMADELコマンドが削除されました
+<ul><li>変数システムV2のおかげで必要なくなりました</li></ul></li>
+<li>CMEMSAVEコマンドがCMEMコマンドに変更されました
+<ul><li>SAVEとかいちいちめんどくさいからね</li></ul></li>
+<li>REPEATループが正常に動作しなかった問題がそれっぽく修正されました
+<ul><li>いままでは先頭にあるREPEATのみ動作していましたが、途中のREPEATも動作するようになりました</li>
+<li>1回のコマンド実行で2つ以上のREPEATが存在した場合正常に動作しませんでしたが、修正されました</li>
+<li>多重ループは正常に動作しません</li></ul></li>
+<li>一部ファイルを読み込む動作をするコマンドのファイル名指定チェックが実装し忘れていたのを修正しました
+<ul><li>ARYLOAD, BAT, BATDとかそのあたりのコマンドが対象です</li></ul></li>
+<li>多分LISTコマンドの順番が直りました</li></ul>
+
+<h5 id="updh111">r1.11 (Build at 5_6)</h5>
+<ul><li>USERCFGにCSCOLNR, CSCOLER, CSCOLSPを追加しました</li>
+<li>USERCFGのCSCOLORはCSCOLINに変更されました</li>
+<li>APPコマンドを追加しました
+<ul><li>アプリIDを指定することでその内蔵アプリを起動できます</li>
+<li>まだアプリが全然ないのでアイデア募集中だったりします</li></ul></li>
+<li>SZ-PROMPTマネージャーを追加しました
+<ul><li>マネージャーとかいってますがただ使用量とかを表示してるだけですよ</li></ul></li>
+<li>REBOOTコマンドを実行すると再起動時にOUT OF MEMORYエラーになっていた問題を修正しました</li>
+<li>ユーザー設定ファイルが読み込めなかった場合の処理を修正しました</li>
+<li>VERコマンドを修正しました</li>
+<li>コマンド実行時間をデバッグ限定の機能から通常時でも使える機能に変更しました</li>
+<li>添付BATファイルをなんかよくわからない3つのやつから変更しました
+<ul><li>USERRESET.BATを実行するとユーザー設定を大体初期化できますよ</li>
+<li>USERCFG RESETでも大体同じような挙動をします</li></ul></li></ul>
+
+<h5 id="updh1111">r1.11.1 (Build at 5_21)</h5>
+<ul><li>残り空き容量が取得できるようになりました
+<ul><li>_SZPT-EMP プロジェクトを作っておくと起動が0.2秒ほど早くなります</li></ul></li>
+<li>遅延表示アプリを追加しました</li>
+<li>COMPMODEコマンドを追加しました
+<ul><li>互換モードに切り替えるコマンドです</li>
+<li>もしかしたら過去のバージョンで作られたバッチファイルが動かない場合に役に立つかもしれません</li></ul></li>
+<li>HWBTNコマンドの挙動が少しだけ改善されました</li>
+<li>LONGコマンドを追加しました
+<ul><li>40文字以上の長いコマンドを実行する場合に利用してください</li></ul></li>
+<li>ROMコマンドを追加しました
+<ul><li>残り空き容量を表示します</li></ul></li>
+<li>TABコマンドを追加しました
+<ul><li>指定行数の改行をします</li></ul></li>
+<li>WAITKコマンドはWAITEコマンドに変更されました</li>
+<li>WAITBコマンドが追加されました</li>
+<li>WAITKコマンドが追加されました</li>
+<li>DEASCコマンドでエラーになっていた問題を修正しました</li></ul>
+
+<h5 id="updh1112">r1.11.2 (Build at 5_27)</h5>
+<ul><li>BIOSもどきが実装されました
+<ul><li>まだなにもできないです</li></ul></li>
+<li>CMDLIST, USERLOAD, VARCLRコマンドを追加しました</li>
+<li>コンフィグエディタアプリを追加しました
+<ul><li>APP CFGEDI で起動できます</li>
+<li>めちゃくちゃ使いづらいです</li></ul></li>
+<li>USERMEMコマンドはVARコマンドに変更されました
+<ul><li>変数システムV1の名残ですね</li></ul></li>
+<li>VARコマンドでの数値の表示を10進数に変更しました
+<ul><li>16進数のほうが情報量は少なくなるはずなんだけど見づらいよね</li></ul></li>
+<li>上下ボタンで履歴を表示しているときにステータスバーに履歴番号が表示されるようになりました
+<ul><li>地味に便利かもしれませんよ</li></ul></li>
+<li>LISTコマンドの順番が修正されました</li></ul>
+
+<h5 id="updh112">r1.12 (Build at 6_5)</h5>
+<ul><li>BIOSの設定項目が増えました
+<ul><li>ついでに変更非推奨な項目にマークつけときました</li></ul></li>
+<li>起動チェックを実装しました
+<ul><li>WARNINGやERRORがなければたぶんまともに動きますよ</li></ul></li>
+<li>新動作モードが追加されました
+<ul><li>BATファイルがBATコマンドを使わなくても実行できます</li>
+<li>存在しないコマンドや存在しないBATファイル名を入力するとエラーが出ます</li></ul></li>
+<li>IF, IFENDによる条件分岐がついに実装されました
+<ul><li>IFの条件を満たしたときにIFENDまでのコマンドを実行します</li>
+<li>多重IFもできるっぽいですがなんか動作怪しいです</li></ul></li>
+<li>BCFGコマンドが追加されました
+<ul><li>BIOSでの設定が表示されます</li></ul></li>
+<li>STINFOコマンドが追加されました
+<ul><li>起動チェックの結果が表示されます</li></ul></li>
+<li>LISTコマンドを微修正しました</li>
+<li>ハードウェア情報を更新しました</li>
+<li>起動画面が少し変更されました</li>
+<li>SMPL.BATを同梱しました
+<ul><li>SZ-PROMPTに実装されているコマンドのサンプルみたいなのです</li>
+<li>IF~IFENDが実装できたおかげで少しだけ複雑なことができるようになりました</li></ul></li></ul>
+
+<h5 id="updh20">r2.0 (Build at 6_22)</h5>
+<ul><li>新動作モードのパフォーマンスが改善されました
+<ul><li>6.1ms から 2.7ms まで高速化されました</li></ul></li>
+<li>新動作モードで - を入力するとエラーになる不具合を修正しました</li>
+<li>HELP, LISTコマンドの微調整</li>
+<li>GETSEC が GET に統合されました</li>
+<li>LISTのLit型表示機能が削除されました</li>
+<li>コマンドの実行を途中でキャンセルできるようになりました
+<ul><li>REPEAT 100000とかやってしまったときに L+X ボタンでキャンセルできます</li>
+<li>不具合で無限ループになってしまったときにも使えます</li></ul></li>
+<li>STR, STRVが密着に対応しました
+<ul><li>とある方がコンソール動かしまくって頑張っていたので対応しました</li></ul></li>
+<li>行番号表示の切り替えが追加されました
+<ul><li>USERCFG LINE で切り替えできます</li></ul></li>
+<li>初期設定ウィザードが追加されました
+<ul><li>ユーザー設定ファイルが見つからないときに自動起動します</li></ul></li>
+<li>数学系コマンドが追加されました</li>
+<li>スプライト系コマンドが追加されました
+<ul><li>当たり判定はr2.1で追加します</li></ul></li>
+<li>チェックサム機能が追加されました
+<ul><li>何らかの外部プログラム等で勝手にユーザー設定ファイルが書き換わってしまった場合に不正が検出できるかも</li>
+<li>CHKSUMコマンドで正常かどうか判定できます</li></ul></li>
+<li>FQコマンドが追加されました
+<ul><li>IFなどを使ったときにコマンドを入力しても実行されない場合に使用してください</li></ul></li>
+<li>HRコマンドが追加されました
+<ul><li>水平線がラクラク引けますよ</li></ul></li>
+<li>REMコマンドが追加されました
+<ul><li>旧動作モードでは効果薄いですが、新動作モードでは役に立つかもしれません</li></ul></li>
+<li>GETコマンドが追加されました
+<ul><li>いろいろな情報を変数に格納できるみたいです</li></ul></li>
+<li>USERCFGからSTATBAR, FPS, RUNTIMEが削除されました
+<ul><li>APPを利用してください</li></ul></li>
+<li>BASICコマンドが削除されました</li>
+<li>行番号に合わせた文字の表示が行われなくなりました
+<ul><li>今までは行番号に合わせて7文字空白を空けてから文字を表示していました</li></ul></li></ul>
+
+<h5 id="updh2011">r2.1.1 (Build at 7_8)</h5>
+<ul><li>起動時・終了時の処理(ただの演出ですけど)を高速化しました</li>
+<li>0.1ミリ秒程度の処理高速化しました</li>
+<li>GETコマンドで取得できるものを追加しました
+<ul><li>SYS.UPTM, UPMS, ROM, CFG.&lt;Num&gt;</li></ul></li>
+<li>INFLPOFF, INFLPONコマンドを追加しました
+<ul><li>REPEATを無限ループにしたい場合に利用します</li>
+<li>無限ループから抜け出す処理を記述していない場合は L+X で脱出できます</li></ul></li>
+<li>BTNコマンドを追加しました
+<ul><li>ついにボタン入力が取得できますね</li></ul></li>
+<li>MMLコマンドを修正しました
+<ul><li>変更かもしれないけど過去の自分なんて覚えてない</li></ul></li>
+<li>LOGコマンドを修正しました
+<ul><li>なんであんなことになってたんだろうね</li></ul></li></ul>
+
+<h5 id="updh2012">r2.1.2 (Build at 7_12)</h5>
+<ul><li>RNDコマンドで引数が不足するとエラーになるのを修正しました</li>
+<li>CALCコマンドで0で除算したときにエラーになるのを修正しました</li>
+<li>コマンドの実行速度が高速化されたみたいです
+<ul><li>従来の1.75倍くらいで動くっぽいです
+</td></tr></table></li></ul></li></ul>
+
+<h5 id="updh202">r2.2 (Build at 7_17)</h5>
+<ul><li>バージョンコードが実装されました</li>
+<li>コマンド解析機構が改善されました
+<ul><li>GETコマンドから変数に代入できるので、それを使うことでバージョン判定ができます</li></ul></li>
+<li>文字列変数が実装されました
+<ul><li>0~65535のの変数が利用できます</li></ul></li>
+<li>変数変換系コマンド CVSV, CVVS が追加されました</li>
+<li>文字列変数を利用したコマンド LETS, INLETS, STRS, LEFT, MID, RIGHT, LENGTHS, VARS, VARSCLR, IFS, IFSEND, GETS が追加されました
+<ul><li>大量に追加されましたが基本的には変数と同じです</li></ul></li>
+<li>GETコマンドに SYS.VCOD IDが追加されました</li>
+<li>LISTコマンドが修正されました
+<ul><li>一部表記が修正されています</li></ul></li>
+<li>LAUNCHが引数不足のときエラーになっていたのをたぶん修正</li>
+<li>EXITとREBOOTが壊れていたのを修正
+<ul><li>処理の高速化をしたときになんか壊れたみたいです</li></ul></li>
+<li>変数代入系命令を修正しました</li>
+<li>STATBARアプリを修正しました</li></ul>
+
+<h4 id="Schedule">更新予定</h4>
+
+<h5 id="updf23">r2.3</h5>
+<ul><li>まだ未定</li></ul>
+
+<h5 id="Bugs">不具合情報</h5>
+<ul><li>[注意] IFを使ったときにコマンドを実行しても無反応になる
+<ul><li>FQコマンドを実行すると解決します</li></ul></li>
+<li>[注意] REPEATループが複数存在するとき実行が終わらないときがある
+<ul><li>EOSコマンドを最後に入れることで解決するかもしれません</li>
+<li>L+X ボタンで強制脱出できます</li></ul></li>
+<li>[微細] プログレスバーが正確に表示されない</li>
+<li>[仕様] 処理が遅い
+<ul><li>付属の PIANO.BAT を実行するといかに遅いかがわかります</li>
+<li>r2.1.2で処理速度が向上したので試してみてください</li></ul></li></ul>
+
+<h5 id="Forever">実装未定</h5>
+<ul><li>このwikiのスクリーンショットの改善</li>
+<li>コメントではやピー氏も言っていたゲームの追加</li></ul>
+
+<h3 id="ScreenShots">スクリーンショットとか</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FSZ-Prompt&amp;openfile=HNI_0081.JPG" title="HNI_0081.JPG"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FSZ-Prompt&amp;src=HNI_0081.JPG" alt="HNI_0081.JPG" title="HNI_0081.JPG" width="400" height="240" /></a></div>
+
+
+<h3 id="PubKey">公開キーはここです</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<p>いまの最新バージョンは r2.2 (Build at 7_17) ですよ。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">E15E43QJ</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="List">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠Ｍａｉｎｌｏｏｐ</span></li>
+<li><span class="smbas">Ｆｏｒ　ｉ＝０　ｔｏ　ｉ＋１</span></li>
+<li><span class="smbas">Ｐｒｉｎｔ　”見る価値ないですよ”</span></li>
+<li><span class="smbas">Ｇｏｔｏ　＠Ｍａｉｎｌｏｏｐ</span></li>
+<li><span class="smbas">Ｎｅｘｔ</span></li>
+</ol></code></div></div>
+
+<h3 id="Question">アンケートです</h3>
+<p>興味があれば押していってほしいです。同項目に連打はやめてくださいね。</p>
+
+<h4 id="x790ddee">正直このプログラムってどうですか</h4>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/SZ-Prompt" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="6adc41a4192d8c09b2356eeea497ea87" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">5. いいね</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_352E20A4A4A4A4A4CD" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;"> 4. それなり</td>
+   <td align="right" class="vote_td1">1&nbsp;&nbsp;
+    <input type="submit" name="vote_20342E20A4BDA4ECA4CAA4EA" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;"> 3. わるくはない</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_20332E20A4EFA4EBA4AFA4CFA4CAA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;"> 2. びみょう</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_20322E20A4D3A4DFA4E7A4A6" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;"> 1. だめです</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_20312E20A4C0A4E1A4C7A4B9" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h4 id="cf117f13">.NMPや.GPKなど他のプログラムのファイル形式の読み込みに対応するべきですか</h4>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/SZ-Prompt" />
+    <input type="hidden" name="vote_no" value="1" />
+    <input type="hidden" name="digest"  value="6adc41a4192d8c09b2356eeea497ea87" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">1. 対応するべき</td>
+   <td align="right" class="vote_td2">3&nbsp;&nbsp;
+    <input type="submit" name="vote_312E20C2D0B1FEA4B9A4EBA4D9A4AD" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;"> 2. 対応してもいい</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_20322E20C2D0B1FEA4B7A4C6A4E2A4A4A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;"> 3. 対応しなくてもいい</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_20332E20C2D0B1FEA4B7A4CAA4AFA4C6A4E2A4A4A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;"> 4. 対応するべきでない</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_20342E20C2D0B1FEA4B9A4EBA4D9A4ADA4C7A4CAA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="Comments">なにかあったらここに書いてくださいね</h3>
+<p>感想とか機能要望とかあったら書いてくれると実装したりするかもしれないのです。</p>
+<p>(ここで関係ないことは<a href="/petc3gou/?Board" title="Board (749d)">掲示板</a>でお願いします！)</p>
+<ul><li><strong>MoriKawa/Midorimori</strong> : ！　今日は 17 人が来てくれました。 合計で 111 人ですよ。 (<span class="comment_date">2019/03/13 (水) 19:26:24</span>)</li>
+<li><strong>はやピー</strong> : 凄い。僕にはわからない。僕も今コマンドプロンプトを作っています。ゲームとかがあったら面白そう (<span class="comment_date">2019/03/16 (土) 19:18:07</span>)</li>
+<li><strong>すず</strong> : はやピー氏 &gt;&gt; 簡単なゲームを仕込んでみようとは思っていたり思っていなかったり... (<span class="comment_date">2019/03/23 (土) 15:37:20</span>)</li>
+<li><strong>TASさん[TASソフト]</strong> : いまTA-DOSを作っているのですがそれにコマンドの一部を移植していいですか？ (<span class="comment_date">2019/03/28 (木) 06:45:59</span>)</li>
+<li><strong>すず</strong> : TASさん[TASソフト]氏 &gt;&gt; 微妙なコマンドしかないけどそれでもいいならどうぞ (<span class="comment_date">2019/03/28 (木) 12:36:01</span>)</li>
+<li><strong>TASさん[TASソフト]</strong> : やったぜ！！！！！！！！！！！ 移植大変 USERファイル互換性もたせようかなー (<span class="comment_date">2019/03/28 (木) 13:23:58</span>)</li>
+<li><strong>すず</strong> : 毎度毎度更新が地味すぎる割に頻度が高すぎですかね... (<span class="comment_date">2019/04/07 (日) 00:41:15</span>)</li>
+<li><strong>名無しさん</strong> : すっげすげ…改造してゲーム関数作ろ… (<span class="comment_date">2019/04/18 (木) 21:11:18</span>)</li>
+<li><strong>ichi</strong> : スゴ! (<span class="comment_date">2019/05/22 (水) 07:14:24</span>)</li>
+<li><strong>ichi</strong> : もしかして他のプログラミング言語触ったことあります？ (<span class="comment_date">2019/05/22 (水) 07:16:27</span>)</li>
+<li><strong>すず</strong> : ichi氏 &gt;&gt; C#を雀の涙程度になら... (<span class="comment_date">2019/05/22 (水) 13:28:20</span>)</li>
+<li><strong>Na</strong> : 面白いですね。更新期待してます。 機能要望です ・CHKFILEを使えば「ファイルが見つかりません」は出なくて済みます ・十字キーでカーソル移動できるようにしてほしい ・コマンド以外のものが入力されたときメッセージを出してほしい ・ファイル名入力するだけでbatファイルやbasicプログラムが実行できるようにしてほしい ・上に書いてあるプログラムリストのForが意味ないです(iが永久に0) 長文失礼しました (<span class="comment_date">2019/06/02 (日) 15:16:54</span>)</li>
+<li><strong>すず</strong> : Na氏 &gt;&gt; わー、なんかたくさんありがとうございます。機能要望のほうはそのうち実装しようと思います(CHKFILEとか存在忘れてました)。プログラムリストくんはわざと無意味なこと書いてます(無意味なので)。 (<span class="comment_date">2019/06/02 (日) 15:46:49</span>)</li>
+<li><strong>Na</strong> : バッチファイル作ってみました。公開キー[733N459F] カーソル移動なしで文字列と変数をつなぐのは難しい...あとREPEATがなぜか指定回数繰り返す前に終わるよ (<span class="comment_date">2019/06/06 (木) 21:38:30</span>)</li>
+<li><strong>すず</strong> : Na氏 &gt;&gt; バッチファイルを作ってくださりありがとうございます(サンプル2の再現だ...！)。割と不便な仕様が多いので少しずつ修正していきたいですね...。 (<span class="comment_date">2019/06/06 (木) 22:19:50</span>)</li>
+<li><strong>Na</strong> : PIANO.BAT改造してみました[AEC373AV]<br class="spacer" /> 仕様が不便なのは別に気にしてませんよ。LAUNCHでコマンド作ればいいのだ。<br class="spacer" /> バグ報告はRNDで2つめの引数がないとエラーで止まること、CALC 1/0も同様です。 (<span class="comment_date">2019/07/11 (木) 21:29:38</span>)</li>
+<li><strong>すず</strong> : Na氏 &gt;&gt; 不具合報告ありがとうございます、次のバージョンでたぶん修正されます。 (<span class="comment_date">2019/07/11 (木) 22:58:23</span>)</li>
+<li><strong>名無しさん</strong> : sl使えると面白うと思います (<span class="comment_date">2019/09/15 (日) 22:44:54</span>)</li>
+<li><strong>すず</strong> : 名無しさん氏 &gt;&gt; slがなんなのかわからなかったので調べてみたんですが... もしかして汽車が走るコマンドですか？ (<span class="comment_date">2019/09/15 (日) 23:24:40</span>)</li>
+<li><strong>たすさん</strong> : TPOSに採用いたします。 (<span class="comment_date">2020/05/08 (金) 00:24:56</span>)</li>
+<li><strong>すず</strong> : たすさん氏 &gt;&gt; 大量にバグがひそんでいる上にメモリ爆喰いでいろいろと不便な仕様が備わっていてもいいならどうぞ (<span class="comment_date">2020/05/08 (金) 00:54:25</span>)</li>
+<li><strong>たすさん</strong> : ダブルブートsystem実装しないとな… (<span class="comment_date">2020/05/09 (土) 07:11:02</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/SZ-Prompt" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="6adc41a4192d8c09b2356eeea497ea87" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h5 id="q6a74da5">すみっこのアクセスカウンタ</h5>
+<p>今日は 4 人が来てくれました。
+合計で 2875 人ですよ。</p>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_7_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (449d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (365d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (1802d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (394d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (106d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (444d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (126d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (573d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (670d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (68d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (1h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (509d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1626d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_7_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1040d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (20d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (5h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_7_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (90d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (34d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/08/14</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (1h)">RecentDeleted</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%C4%A4%C1%A4%CE%A4%B3%A1%C7s%20FREE%20BGM" title="つちのこ’s FREE BGM (1h)">つちのこ’s FREE BGM</a></li>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (1h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2F1st%20REN" title="1st RENシリーズ(MML) (2h)">1st RENシリーズ(MML)</a></li>
+</ul>
+<h4>2020/08/13</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F100%BF%CD%A4%CB%CA%B9%A4%A4%A4%C6%A4%DF%A4%E8%A4%A6" title="100人に聞いてみよう (15h)">100人に聞いてみよう</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%A2%A5%AA%A5%BF%A5%AF%A4%AC%BA%EE%C0%AE%A4%B7%A4%BFMML%A4%DE%A4%C8%A4%E1" title="アオタクが作成したMMLまとめ ver.10.0 (18h)">アオタクが作成したMMLまとめ ver.10.0</a></li>
+ <li><a href="/petc3gou/?Toukou%2FSimple_Archived_Text_library" title="Simple Archived Text library (21h)">Simple Archived Text library</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="リズミカルおもちつきSZ 10.1 (1d)">リズミカルおもちつきSZ 10.1</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="コメント/Toukou/リズミカルおもちつきKR (1d)">コメント/Toukou/リズミカルおもちつきKR</a></li>
+ <li><a href="/petc3gou/?Toukou%2FMKsoft%20CHAOS" title="MKsoft CHAOS V2.0 (2d)">MKsoft CHAOS V2.0</a></li>
+</ul>
+</div>
+
+<h3 id="content_7_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%A2%A5%AA%A5%BF%A5%AF%A4%AC%BA%EE%C0%AE%A4%B7%A4%BFMML%A4%DE%A4%C8%A4%E1" title="Toukou/アオタクが作成したMMLまとめ (18h)">アオタクが作成したMMLまとめ ver.10.0<span class="counter">(33)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSimple_Archived_Text_library" title="Toukou/Simple_Archived_Text_library (21h)">Simple Archived Text library<span class="counter">(25)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%E1%A1%BC%A5%AB%A1%BC" title="Toukou/ゆうしゃメーカー (811d)">ゆうしゃメーカー<span class="counter">(16)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (10d)">弾幕音遊戯<span class="counter">(16)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="Toukou/リズミカルおもちつきSZ (1d)">リズミカルおもちつきSZ 10.1<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F1st%20REN" title="Toukou/1st REN (2h)">1st RENシリーズ(MML)<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F100%BF%CD%A4%CB%CA%B9%A4%A4%A4%C6%A4%DF%A4%E8%A4%A6" title="Toukou/100人に聞いてみよう (15h)">100人に聞いてみよう<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?WorksLink" title="WorksLink (670d)">プチコン3号作品集<span class="counter">(12)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (599d)">Nintendo全記号Unicode一覧表<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (30d)">リズミカルおもちつきTG<span class="counter">(10)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1074d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_7_4">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 2875 回、本日は 4 回、昨日は 4 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+<p id="notes">
+<a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">そういえばこれn番煎じですね</span><br />
+<a id="notefoot_2" href="#notetext_2" class="note_super">*2</a>
+<span class="small">そんなことないよ</span><br /></p>
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.179 秒  | このページの最終更新 : 2020/05/09 (土) 07:11:02  (97d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

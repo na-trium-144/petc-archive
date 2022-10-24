@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>旧プチコンの既知の不具合 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="旧プチコンの既知の不具合 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Bug%2FOld">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Bug%2FOld">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Bug%2FOld">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Bug%2FOld">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>旧プチコンの既知の不具合</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Bug">Bug</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Bug%2FOld">Old</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.042sec. -->
+<p>旧プチコンの不具合です。これらは基本的に mkII では修正されています。mkII 以降の不具合については、<a href="/petc/?Bug" title="Bug (1692d)">既知の不具合</a>のページをごらんください。</p>
+<ul class="contentsx"><li><a href="#t329a687">プチコン V1.2 不具合一覧</a><ul><li><a href="#u787d5fb">プログラム内から EXEC で別プログラムを起動したり、LOAD でプログラムを読み込むとエラーになる</a></li><li><a href="#oe3e0126">BEEP 35 の周波数を設定しても反映されない</a></li><li><a href="#l9a28091">IF SYSBEEP==0 THEN 〜 がエラーとなる</a></li></ul></li><li><a href="#p793abbd">プチコン V1.1 不具合一覧</a><ul><li><a href="#v16a093f">システム変数「VERSION」が変わっていない</a></li><li><a href="#s98d73b8">ソフト内説明書の誤植</a></li><li><a href="#abb4c863">FOR 〜 NEXT の開始値が終了値よりも大きい場合、対応した NEXT が行頭にないと誤動作する</a></li><li><a href="#p0c9e6f6">プログラム内から EXEC で別プログラムを起動したり、LOAD でプログラムを読み込むと Syntax error になる</a></li><li><a href="#za1b00c7">EXP() で小数点以下が無視される</a></li><li><a href="#w66383ab">DATA文の末尾にスペース文字があるとエラー</a></li><li><a href="#ub9a8a63">長いプログラムを編集すると表示がおかしくなる</a></li><li><a href="#u8bcdca7">STOPした後にCONTしても、STOPの後ろの命令が実行されない</a></li><li><a href="#z07402b8">値を読み込む命令で配列変数の添字が範囲外だと Syntax error になる</a></li><li><a href="#ie638159">NEW 直後に SAVE したプログラムを LOAD しても、プログラムが読み込まれない</a></li></ul></li><li><a href="#qd013cf5">プチコン V1.00 不具合一覧</a><ul><li><a href="#cee15aa3">サンプルプログラム「CHRED」でリソースを保存できない。</a></li><li><a href="#uf8fbde2">ダイレクトモードで操作不能になる。</a></li><li><a href="#o67e3466">累乗の演算子 (^) を使うと文法エラーになる。</a></li><li><a href="#i4e88ed6">VISIBLE 命令でパネルを非表示にしたまま、特定の操作で表示がおかしくなる</a></li><li><a href="#ead8c6bb">DTREAD、TMREAD 命令で、文法が合っても文法エラーとなる</a></li><li><a href="#y2758b1c">複数の FOR 文または NEXT 文を一行に詰めるとループが正しく機能しない</a></li><li><a href="#jea8dd16">FOR 〜 NEXT の開始値が終了値よりも大きい場合、対応した NEXT が行頭にないと誤動作する</a></li><li><a href="#nd93529f">複数の GOSUB 文を一行に詰めるとサブルーチン呼び出しが正しく機能しない</a></li><li><a href="#e9253b44">ファンクションキーの設定内容が、説明書の出入りでリセットされる</a></li><li><a href="#w71def07">BEEP 命令で音をたくさん鳴らしながらキーボードの入力音を鳴らすとフリーズ</a></li><li><a href="#y0815186">GFILL 命令の描画が極端に遅い</a></li><li><a href="#acfb403c">MEM ファイルの読み込み時、文字コード 0 以降の文字列が切り捨てられる</a></li><li><a href="#zd27eef0">スプライトのキャラクター番号 400 番のみ、表示がずれる</a></li><li><a href="#ld35be0d">容量超過したプログラムの上書き保存でハングアップする</a></li><li><a href="#a346e6f6">FILES 命令でページ送りを中断すると、次の FILES の表示内容が変になる</a></li><li><a href="#se432904">文字列の大小比較の結果が逆になる</a></li><li><a href="#q3036df4">特定のファイル名でファイルを保存できない</a></li><li><a href="#v8daec1f">ソフト内説明書の誤植</a></li></ul></li></ul>
+<h3 id="t329a687">プチコン V1.2 不具合一覧</h3>
+<p>プチコン V1.2 の不具合一覧です。これらはすべて mkII で修正されています。</p>
+
+<h4 id="u787d5fb">プログラム内から EXEC で別プログラムを起動したり、LOAD でプログラムを読み込むとエラーになる</h4>
+<p>プログラム内から EXEC で別プログラムを起動すると、以下の様な現象が発生することがある。</p>
+<ul><li>FOR文で初期値&lt;=終了値の場合、NEXT without FOR のエラーが発生する。</li>
+<li>一行に複数の命令を書いても、最初の命令しか実行されない。</li>
+<li>IF のTHEN以降に命令を書いても実行されない。(ラベルは問題なし)</li></ul>
+<p>たとえば、以下のプログラムを「TEST」という名前で保存して実行しても、正常に動作せず、A が 10 以上になっても終了しない。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝Ａ＋１</li>
+<li>ＩＦ　Ａ＝＝１０　ＴＨＥＮ　ＥＮＤ</li>
+<li>ＥＸＥＣ　”ＴＥＳＴ”</li>
+</ol></code></div></div>
+<p>また、プログラム内から LOAD で別プログラムを読み込むと、Out of DATA などのエラーが発生することがある。</p>
+
+<h4 id="oe3e0126">BEEP 35 の周波数を設定しても反映されない</h4>
+<p>他の効果音は、周波数を打ち込めばその周波数が反映されるが、35 番の BEEP のみ、「<span class="basic-text">ＢＥＥＰ　３５，８１９２</span>」などと入力しても、音が高くならない。また、低くしても同じ。</p>
+
+<h4 id="l9a28091">IF SYSBEEP==0 THEN 〜 がエラーとなる</h4>
+<p>以下のプログラムがなぜかエラーとなってしまう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＩＦ　ＳＹＳＢＥＥＰ＝＝０　ＴＨＥＮ　ＰＲＩＮＴ　”シス゛カニ　シテマス”</li>
+</ol></code></div></div>
+<p>このように書いた場合は大丈夫。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＝ＳＹＳＢＥＥＰ</li>
+<li>ＩＦ　Ａ＝＝０　ＴＨＥＮ　ＰＲＩＮＴ　”シス゛カニ　シテマス”</li>
+</ol></code></div></div>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＩＦ　０＝＝ＳＹＳＢＥＥＰ　ＴＨＥＮ　ＰＲＩＮＴ　”シス゛カニ　シテマス”</li>
+</ol></code></div></div>
+<p>その他、TABSTEP, ICONPUSE, ICONPAGE, ICONPMAX, MEM$ でも同様にエラーとなる。とりあえず左辺と右辺を入れ替えれば大丈夫です。</p>
+
+<h3 id="p793abbd">プチコン V1.1 不具合一覧</h3>
+<p>プチコン V1.1 の不具合一覧です。2011 年 11 月 11 日に、修正版である、プチコン V1.2 がリリースされました。以下に書かれたバグのほとんどは修正されています。DSi ウェアは、セーブデータを残したままのバージョンアップが可能です。</p>
+
+<h4 id="v16a093f">システム変数「VERSION」が変わっていない</h4>
+<p>プチコンのバージョンは V1.1 になったが、システム変数の「VERSION」はいかにも V1.0 な <span class="basic-text">＆Ｈ１０００</span> が入ったままになっている。</p>
+
+<h4 id="s98d73b8">ソフト内説明書の誤植</h4>
+<p>以下は、V1.00 から修正されていないままでした。</p>
+<ul><li>プチコン基本仕様 → サウンド機能 の、BGM リストの 13 番「激しいロック超」→「激しいロック調」</li>
+<li>分岐系命令の ON〜GOTO と ON〜GOSUB の書式に、「行番号 (または@ラベル)」と書いてあるが、実際には行番号は指定できない</li>
+<li>SPCLR と PNLSTR の最後の引数は省略可能なのに、書式の引数が[]で囲まれていない</li>
+<li>SPRITE 制御命令のトップページ(赤文字で命令一覧が載っているところ)に SPCHR が含まれていない</li></ul>
+
+<h4 id="abb4c863">FOR 〜 NEXT の開始値が終了値よりも大きい場合、対応した NEXT が行頭にないと誤動作する</h4>
+<p>開始が終了より大きい場合、対応した NEXT が行頭にないとうまく動かない。
+ここまでは1.0と同じだが、1.1の場合、NEXTの前にスペースも含まない形で行頭に無いとエラーになる。</p>
+<p>下記のプログラムを実行すると、 FOR without NEXT エラーとなってしまう。おそらく、高速化のために、行頭に NEXT がある場合しか対応していないものと思われる。これは1.0と1.1で共通のバグ。ちなみに、スペースをコロン (<span class="basic-text">：</span>)で代用してもダメである。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝１　ＴＯ　０</li>
+<li>ＰＲＩＮＴ　”ＴＥＳＴ”：ＮＥＸＴ　Ｉ</li>
+</ol></code></div></div>
+<p>下記の場合は、1.0ではエラーにならないが、1.1ではFOR without NEXT エラーとなってしまう。
+NEXTの前のスペースが原因。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝１　ＴＯ　０</li>
+<li>ＰＲＩＮＴ　”ＴＥＳＴ”</li>
+<li>　　　　　　　　ＮＥＸＴ　Ｉ</li>
+</ol></code></div></div>
+
+<h4 id="p0c9e6f6">プログラム内から EXEC で別プログラムを起動したり、LOAD でプログラムを読み込むと Syntax error になる</h4>
+<p>プログラム内から EXEC で別プログラムを起動すると、行番号のない Syntax error が発生し、起動に失敗することがある。</p>
+<p>また、プログラム内から LOAD で別プログラムを読み込むと、行番号付きの Syntax error が発生することがある。</p>
+
+<h4 id="za1b00c7">EXP() で小数点以下が無視される</h4>
+<p>EXP() に小数点以下を含む数値を渡しても、小数点以下が無視され整数部のみで計算される。そのため、EXP(2) と EXP(2.5) がともに 7.389 となる。</p>
+<p>この問題があるため、累乗 X^Y を計算したい時に、EXP(Y*LOG(X)) で代用することができない。</p>
+
+<h4 id="w66383ab">DATA文の末尾にスペース文字があるとエラー</h4>
+<p><a href="http://smileboom.com/special/petitcom/debug.html" rel="nofollow">公式サイトのバグ情報</a>より。DATA文の行の終わりにスペース文字が入っているとエラーが出ることがある。</p>
+
+<h4 id="ub9a8a63">長いプログラムを編集すると表示がおかしくなる</h4>
+<p><a href="http://smileboom.com/special/petitcom/debug.html" rel="nofollow">公式サイトのバグ情報</a>より。サイズの大きいプログラム（64KB 以上）の編集中に、<a href="http://twitpic.com/630e00" rel="nofollow">こんな感じ</a>でリストの表示が異常になり、またその状態でプログラムを保存すると正常に保存されない。</p>
+
+<h4 id="u8bcdca7">STOPした後にCONTしても、STOPの後ろの命令が実行されない</h4>
+<p>STOPした後にCONTした場合、STOPの次の行から実行が再開される。そのため、STOPと同じ行に命令が書かれていたとしても再開時には実行されない。</p>
+
+<h4 id="z07402b8">値を読み込む命令で配列変数の添字が範囲外だと Syntax error になる</h4>
+<p>通常、配列変数の添字が範囲外だと Subscript out of range エラーになるが、値を読み込む命令(READ,INPUT,TMREADなど)で添字が範囲外だと、なぜか Syntax error になる。</p>
+
+<h4 id="ie638159">NEW 直後に SAVE したプログラムを LOAD しても、プログラムが読み込まれない</h4>
+<p>起動直後もしくは実行モードで NEW したあと、一度も編集モードに切り替えずにプログラムを SAVE する。適当なプログラムを LOAD したあと、先程保存したプログラムを LOAD しても、プログラムが読み込まれない。(最初に LOAD したプログラムがそのまま残る)</p>
+
+<h3 id="qd013cf5">プチコン V1.00 不具合一覧</h3>
+<p>2011 年 6 月に、修正版であるプチコン V1.1 がリリースされ、以下に書かれたバグはほぼ修正されています。</p>
+
+<h4 id="cee15aa3">サンプルプログラム「CHRED」でリソースを保存できない。</h4>
+<p><a href="http://smileboom.com/special/petitcom/debug.html#chred" rel="nofollow">公式サイトのバグ情報</a>を参照。プログラムを一行修正すると回避できる。</p>
+
+<h4 id="uf8fbde2">ダイレクトモードで操作不能になる。</h4>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝１　ＴＯ　０：ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>ダイレクトモード (RUN とか LOAD とかを入力する場所) に、上記のように開始値よりも終了値のほうが小さい FOR ループを書くと、ブレークできなくなり、操作不能になる。こうなるともう DSi をリセットするしかない。</p>
+
+<h4 id="o67e3466">累乗の演算子 (^) を使うと文法エラーになる。</h4>
+<p>累乗の演算子 (^) は設計時に存在したが実装されず削除された仕様で、発売の前後にウェブサイトのコマンド一覧に間違って載ってしまったものである。つまり、バグではなくコマンド一覧の間違い。ウェブサイトからはすでに削除されており、ソフト内の説明書にも最初から載っていない。したがって、プチコンではこの演算子は使用できない。</p>
+
+<h4 id="i4e88ed6">VISIBLE 命令でパネルを非表示にしたまま、特定の操作で表示がおかしくなる</h4>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＶＩＳＩＢＬＥ　１，０，１，１，１，１</li>
+</ol></code></div></div>
+<p>上記のように、VISIBLE の 2 番目の引数が 0 でパネルを非表示にしている状態で、以下の操作を行うと表示がおかしくなる。</p>
+
+<h5 id="gab1a801">RUN 命令、SAVE 命令のように、下画面に確認画面が出る命令</h5>
+<p>上画面が真っ暗、下画面が緑一色になってしまう。フリーズしたように見えるが、確認画面が見えないだけなので、右下の本来ボタンがある場所あたりをタッチすると復帰する。</p>
+
+<h5 id="pe9e3d37">下画面右上の×ボタン (DSi メニューに戻る) を押す</h5>
+<p>下の画面が真っ暗になってしまう。これも本来「いいえ」あたり (右下の「はい」に触らないこと。右下に「はい」、その左に「いいえ」がある) をタッチすると復帰するが、その後キーボードが見えなくなるため、セーブすら困難になってしまう。この場合、スタートボタンを押して何でも (からっぽでも) 良いので何かプログラムを実行すれば復帰する。</p>
+
+<h4 id="ead8c6bb">DTREAD、TMREAD 命令で、文法が合っても文法エラーとなる</h4>
+<p>DTREAD、TMREAD 命令で、時刻をあらわす文字列が間違っていると、文法が合っていても文法エラー (Syntax error) を示す。どのみちエラーになるのは間違いないが、エラーの意味合い的には Illigal function call を返すのが正しい。</p>
+
+<h4 id="y2758b1c">複数の FOR 文または NEXT 文を一行に詰めるとループが正しく機能しない</h4>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝０　ＴＯ　２３</li>
+<li>　ＦＯＲ　Ｊ＝０　ＴＯ　３１</li>
+<li>　　ＢＧＰＵＴ　０，Ｉ，Ｊ，０，０，０，０</li>
+<li>　ＮＥＸＴ</li>
+<li>ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>上記のようなネストされたループの処理はもちろん正常に動作する。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝０　ＴＯ　２３：ＦＯＲ　Ｊ＝０　ＴＯ　３１</li>
+<li>　ＢＧＰＵＴ　０，Ｉ，Ｊ，０，０，０，０</li>
+<li>ＮＥＸＴ：ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>しかし、上記のようにマルチステーメントを使用して FOR ループを 1 行にまとめると、1 行目で何かを使い切って謎の Out of memory エラーが発生。以降、スタートボタンによる実行では FOR 文があるたびに同種のエラーが発生し一切使えなくなってしまう。ダイレクトモードから RUN 命令による実行だと回復する。ちなみに、I と J は 0 のまま、処理が 256 回ほど回っている模様。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝０　ＴＯ　２３</li>
+<li>　ＦＯＲ　Ｊ＝０　ＴＯ　３１</li>
+<li>　　ＢＧＰＵＴ　０，Ｉ，Ｊ，０，０，０，０</li>
+<li>ＮＥＸＴ：ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>そこでこうすると、4 行目でなぜか謎の NEXT withour FOR エラーが発生。やはり正常に動かない。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝０　ＴＯ　２４＊３２−１：ＢＧＰＵＴ　０，Ｉ％３２，Ｉ／３２，０，０，０，０：ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>どうしても 1 行にまとめたいなら、こうすればどうにかなる。</p>
+
+<h4 id="jea8dd16">FOR 〜 NEXT の開始値が終了値よりも大きい場合、対応した NEXT が行頭にないと誤動作する</h4>
+<p>開始が終了より大きい場合、対応した NEXT が行頭にないとうまく動かない。下記のプログラムを実行すると、 FOR without NEXT エラーとなってしまう。おそらく、高速化のために、行頭に NEXT がある場合しか対応していないものと思われる。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝１　ＴＯ　０</li>
+<li>ＰＲＩＮＴ　”ＴＥＳＴ”：ＮＥＸＴ　Ｉ</li>
+</ol></code></div></div>
+
+<h4 id="nd93529f">複数の GOSUB 文を一行に詰めるとサブルーチン呼び出しが正しく機能しない</h4>
+<p>下記のようなサブルーチンの呼び出しは当然問題なく動作する。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＧＯＳＵＢ　＠ＳＵＢ１</li>
+<li>ＧＯＳＵＢ　＠ＳＵＢ２</li>
+<li>ＥＮＤ</li>
+<li>＠ＳＵＢ１</li>
+<li>ＰＲＩＮＴ　”ＳＵＢ１”：ＲＥＴＵＲＮ</li>
+<li>＠ＳＵＢ２</li>
+<li>ＰＲＩＮＴ　”ＳＵＢ２”：ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+<p>しかし、下記のようにマルチステーメントを使用して複数の GOSUB 文を 1 行にまとめると、なぜか @SUB2 が無限に呼び出され続けてしまい、ブレークをかけて止めるしかなくなってしまう。3 つ以上の GOSUB を並べても、無限に呼び出されるのは 2 つ目。厳密に言うと、同じ行の 2 つ目の GOSUB から飛んで戻ってくると、1 つ目の GOSUB の直後に戻ってしまうためのようである。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＧＯＳＵＢ　＠ＳＵＢ１：ＧＯＳＵＢ　＠ＳＵＢ２</li>
+<li>ＥＮＤ</li>
+<li>＠ＳＵＢ１</li>
+<li>ＰＲＩＮＴ　”ＳＵＢ１”：ＲＥＴＵＲＮ</li>
+<li>＠ＳＵＢ２</li>
+<li>ＰＲＩＮＴ　”ＳＵＢ２”：ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="e9253b44">ファンクションキーの設定内容が、説明書の出入りでリセットされる</h4>
+<p>KEY 命令で設定したファンクションキーの設定内容が、ソフト内説明書に入り戻ってくると、起動時のデフォルトに戻ってしまう。</p>
+
+<h4 id="w71def07">BEEP 命令で音をたくさん鳴らしながらキーボードの入力音を鳴らすとフリーズ</h4>
+<p>※ <a href="http://ameblo.jp/shadowcat/entry-10828599795.html" rel="nofollow">元ネタはこちらのブログ</a>です。管理人が最小限のプログラムでも再現することを確認できたので、内容をアレンジして書きます。</p>
+<p>下記のプログラムを実行中に適当にキーボードを押すと、フリーズしてしまうことがある。ただし、SYSBEEP=FALSE でキー入力確認音 (ブチッ という音) をオフにしている場合は発生しない。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠Ａ</li>
+<li>ＢＥＥＰ　０：ＧＯＴＯ　＠Ａ</li>
+</ol></code></div></div>
+<p>おそらく、プチコンの限界を遙かに超えてサウンドを鳴らしまくっているときにキー入力確認音が鳴ってしまうことでフリーズする。以下のプログラムリストのように VSYNC 命令で 1/60 秒中に鳴らす回数を制限してみると、ループ回数 85 回あたりがフリーズする・しないの境目であることがなんとなくわかる。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠Ａ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　８５</li>
+<li>ＢＥＥＰ　０</li>
+<li>ＮＥＸＴ</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>ＧＯＴＯ　＠Ａ</li>
+</ol></code></div></div>
+
+<h4 id="y0815186">GFILL 命令の描画が極端に遅い</h4>
+<p><a href="http://smileboom.com/special/petitcom/debug.html" rel="nofollow">公式サイトのバグ情報</a>より。GFILL 命令の描画が仕様よりも極端に遅い。確かに、8 ビット時代のマイコンのように、上から四角を描いていってるのが余裕で見えます。</p>
+
+<h4 id="acfb403c">MEM ファイルの読み込み時、文字コード 0 以降の文字列が切り捨てられる</h4>
+<p>保存した MEM ファイルを読み込む際、文字コード 0 (CHR$(0)) が含まれていると、それ以降が切り捨てられてしまう。</p>
+
+<h4 id="zd27eef0">スプライトのキャラクター番号 400 番のみ、表示がずれる</h4>
+<p>キャラクター番号 400 番のスプライトを画面に表示させると、誤った位置に表示される。</p>
+
+<h4 id="ld35be0d">容量超過したプログラムの上書き保存でハングアップする</h4>
+<p>残り保存容量よりも大きなプログラムを上書きで保存すると、動作が停止する。上書きでない場合は停止しない。</p>
+
+<h4 id="a346e6f6">FILES 命令でページ送りを中断すると、次の FILES の表示内容が変になる</h4>
+<p>一画面分を超える数のファイルを保存した状態で FILES 命令を実行し、エンターキーの入力待ちになったところで「停止」を押して中断すると、次に FILES 命令を実行したとき、いきなり続きから表示されてしまう。</p>
+<p>さらに、GRP などのリソースファイルも保存されている場合は、GRP などのリソースファイルがプログラムの PRG と誤認識された状態で表示され、なおかつ、GRP のリソースファイルがもう一度表示されるという現象も発生する。</p>
+
+<h4 id="se432904">文字列の大小比較の結果が逆になる</h4>
+<p><span class="basic-text">”１”＞”２”</span> が真に、<span class="basic-text">”１”＜”２”</span> が偽になる。</p>
+
+<h4 id="q3036df4">特定のファイル名でファイルを保存できない</h4>
+<p>ファイルを保存する際、ファイル名が CON, AUX, PRN, NUL のいずれかだった場合、一見ファイルの保存に成功したように見えるが実際には保存されていない。</p>
+
+<h4 id="v8daec1f">ソフト内説明書の誤植</h4>
+<ul><li><a href="http://smileboom.com/special/petitcom/debug.html" rel="nofollow">公式サイトのバグ情報</a>にいくつか訂正が載っています。</li>
+<li>プチコン基本仕様 → サウンド機能 の、BGM リストの 13 番「激しいロック超」→「激しいロック調」</li>
+<li>分岐系命令の ON〜GOTO と ON〜GOSUB の書式に、「行番号 (または@ラベル)」と書いてあるが、実際には行番号は指定できない</li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (698d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1806d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2749d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1681d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1692d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2143d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2344d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1914d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1004d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (362d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2136d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1875d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2343d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (22h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (33d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/04/19</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (11h)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/17</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (33d)">リンク集</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (49d)">編集の練習用ページ</a></li>
+</ul>
+<h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (228d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (250d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (269d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (269d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (302d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (351d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (354d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 5 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.046 秒  | このページの最終更新 : 2012/03/17 (土) 20:30:51  (3320d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

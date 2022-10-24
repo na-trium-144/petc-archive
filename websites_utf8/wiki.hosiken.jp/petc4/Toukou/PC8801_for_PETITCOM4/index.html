@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>投稿プログラム : PC8801_エミュ for プチコン４号 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : PC8801_エミュ for プチコン４号 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, エミュレータ, Z80, PC8801" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Toukou%2FPC8801_for_PETITCOM4">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Toukou%2FPC8801_for_PETITCOM4">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPC8801_for_PETITCOM4">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Toukou%2FPC8801_for_PETITCOM4">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : PC8801_エミュ for プチコン４号</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li><a href="/petc4/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Toukou%2FPC8801_for_PETITCOM4">PC8801_for_PETITCOM4</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.056sec. -->
+<div class="contents">
+<ul><li><a href="#b8039da2">  概要 </a>
+<ul><li><a href="#j780ae57">  動作環境 </a></li>
+<li><a href="#k7a0bef1">  遊び方 </a></li>
+<li><a href="#j292d61c">  操作方法 </a></li>
+<li><a href="#hfb6adf6"> キーボードパネル </a></li>
+<li><a href="#hd2b0aab">  DISKの取り扱い </a>
+<ul><li><a href="#v54ade20"> 簡易ローダー (X)押下げ後、L/Rでタブ選択で .D88 ファイルを選択する </a></li>
+<li><a href="#u8a7d9a0"> DISK選択メニュー(X)押下げ後、L/Rでタブ選択 で.D88ファイルを選択。 </a></li></ul></li>
+<li><a href="#zacbaa91">  CPUタイミング </a></li>
+<li><a href="#b26aba90">  簡易ローダ </a></li>
+<li><a href="#b37ece7a"> 独自のステートファイル(.I88)仕様 </a></li>
+<li><a href="#h80f5f9b">  USBキーボード </a></li>
+<li><a href="#pac56dc9">  モニタ </a></li></ul></li>
+<li><a href="#r5eeb2ac">  スクリーンショット・動画 </a></li>
+<li><a href="#c36ea954">  公開キー </a></li>
+<li><a href="#w9f1be17">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2019年10月23日投稿
+/ 2021年08月08日更新
+/ 投稿者 : つかさ
+/ <span class="tag">タグ : <a href="/petc4/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%A8%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF">エミュレータ</a> <a href="/petc4/?cmd=taglist&amp;tag=Z80">Z80</a> <a href="/petc4/?cmd=taglist&amp;tag=PC8801">PC8801</a> </span></p>
+<h3 id="b8039da2">概要</h3>
+<p>このプログラムは，Z80エミュレータに，CRTCやキーボードなどを付加して，日本電気殿が発売していたパソコン，PC8801mk2っぽいような感じの動きをするプログラムです。実行には，N88-BASIC等のROMデータが必要ですが，同梱されておりません。各自で用意して下さい。また，このプログラムはプチコン4号専用となっており，プチコン3号やBIGでは動作いたしません。実機の2/3程度の速度で動作いたします。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FPC8801_for_PETITCOM4&amp;openfile=PC8801_emu.jpg" title="PC8801_emu.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FPC8801_for_PETITCOM4&amp;src=PC8801_emu.jpg" alt="PC8801_emu.jpg" title="PC8801_emu.jpg" width="800" height="450" /></a></div>
+
+<ul><li>2019.10.23 初公開(S52V)</li>
+<li>2019.10.29 CMTテープのn88モードのモニタでセーブしたマシン語頭出し対応(S54V)</li>
+<li>2019.12.01 VSYNCバグ修正、FDDシーク音、ヘッドロード、アンロード音の追加(S60V)</li>
+<li>2019.12.15 FM音源簡易実装、SSG音源実装(S71V)</li>
+<li>2019.12.20 メインCPUとサブCPUの動作のタイミングを決めるcpuタイミングを実装(S74V)</li>
+<li>2020.03.15 個別高速化ルーチンが追加されました(S102V)</li>
+<li>2020.04.22 英語対応(S112V)</li>
+<li>2020.04.30 PCG-8100のPSGを3声化(S118V)</li>
+<li>2020.05.03 ステートセーブ機能を追加,PC88.ROMサポート(S122V)</li>
+<li>2020.05.06 V1, V2モードでも、IMGファイルを読み込めるようにした(S123V)</li>
+<li>2020.10.11 PCG8200機能OFFの場合、OUT 0,0(]o0,0)でCMTよりマシン語ロード</li>
+<li>2021.07.02 各種メニューの呼び出しを、(X)ボタン押下後、L/Rでタブ選択に変更</li>
+<li>2021.08.08 エミュレーションの制度向上。Rレジスタ、Port66H、Port68H実装修正</li></ul>
+
+<h4 id="j780ae57">動作環境</h4>
+<p>プチコン4号専用です。USBキーボードでの入力も対応しています。ゲームプレイにもそこそ使用できます。プログラムのロードや、ちょっとした操作には便利に使えると思います。カーソルキーもバッチリです。</p>
+
+<h4 id="k7a0bef1">遊び方</h4>
+<ul><li>同梱のREADMEに従って，プロジェクト内にROMデータを置きます。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">N88.ROM</th><td class="style_td">N88-BASIC ROM(32k)</td></tr><tr><th class="style_th">N88N.ROM</th><td class="style_td">N-BASIC   ROM(32k)</td></tr><tr><th class="style_th">N88EXT0.ROM</th><td class="style_td">ROM 4th拡張ROM 0バンク目(8k)</td></tr><tr><th class="style_th">N88EXT1.ROM</th><td class="style_td">ROM 4th拡張ROM 1バンク目(8k)</td></tr><tr><th class="style_th">N88EXT2.ROM</th><td class="style_td">ROM 4th拡張ROM 2バンク目(8k)</td></tr><tr><th class="style_th">N88EXT3.ROM</th><td class="style_td">ROM 4th拡張ROM 3バンク目(8k)</td></tr><tr><th class="style_th">N88SUB.ROM</th><td class="style_td">ディスクサブシステムROM(2k)</td></tr><tr><th class="style_th">FONT.ROM</th><td class="style_td">TVRAMで表示するフォント(2k)</td></tr><tr><th class="style_th">N88KNJ1.ROM</th><td class="style_td">JIS第一水準漢字ROM(128k)</td></tr><tr><th class="style_th">N88KNJ2.ROM</th><td class="style_td">JIS第二水準漢字ROM(128k)</td></tr></tbody></table></div></li></ul>
+<ul><li>N88.ROM〜N88SUB.ROM の代わりに、これらのファイルを固めた,PC88SRエミュのPC88.ROM を利用することも可能です。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">N88-BASKC</th><td class="style_td">(0000H-7FFFH)</td><td class="style_td">32kbytes</td></tr><tr><th class="style_th">N-BASIC</th><td class="style_td">(6000H-7FFFH))</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">N88-BASIC</th><td class="style_td">(6000H-7FFFH))</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">E0-ROM</th><td class="style_td">(6000H-7FFFH)</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">E1-ROM</th><td class="style_td">(6000H-7FFFH)</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">E2-ROM</th><td class="style_td">(6000H-7FFFH)</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">E3-ROM</th><td class="style_td">(6000H-7FFFH)</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">SUBCPU-ROM</th><td class="style_td">(0000H-1FFFH)</td><td class="style_td">8kbytes</td></tr><tr><th class="style_th">N-BASIC</th><td class="style_td">(0000H-5FFFH)</td><td class="style_td">24kbytes</td></tr></tbody></table></div></li></ul>
+<p>Petit4Send（<a href="http://rei.to/petit4send.html" rel="nofollow">http://rei.to/petit4send.html</a>）等でPCからSwitchにファイルを転送できます。</p>
+<ul><li>Petit4Sendを用いたファイルの転送方法およびケーブルの作成方法は、以下の動画が参考になります。
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/C4f9Ew6cIwE" frameborder="0" allowfullscreen></iframe>
+</div>
+</li></ul>
+<p>もしくは、プチコン３号、プチコンBig等でROMを音声で読み出し、サーバ経由で読み込んでください。</p>
+<ol><li>ROMデータがない場合は、pbios の DISK.ROM、N88.ROM(N88_pbios.ROMとリネームされています)で代用されます。</li>
+<li>プロジェクトを選択すると、PC8801_S122V.PRGが実行されます。</li></ol>
+<ul><li>※pbios は cisc (<a href="mailto:cisc@retropc.net" rel="nofollow">cisc@retropc.net</a>) が著作権を所有しています。(<a href="http://www.retropc.net/cisc/m88/)" rel="nofollow">http://www.retropc.net/cisc/m88/)</a></li></ul>
+
+<h4 id="j292d61c">操作方法</h4>
+<ul><li>X  Menu呼び出し (F12)</li>
+<li>A リターンキー</li>
+<li>B スペースキー</li>
+<li>Y デリートキー</li></ul>
+<ul><li>L,R1  SHIFTキー</li>
+<li>L+X  モニタ機能呼び出し(デフォルトではディスエーブル)</li>
+<li>ZR リターンキー(FANFANでのゲームスタートに利用することを想定)</li></ul>
+<ul><li>ZL　Graphキー。(Luna City SOSでバリアを張り直すことを想定)</li>
+<li>ZL+右スティック押込　リセット (Home + End)</li>
+<li>L+右スティック押込 画面のズーム機能のON/OFF</li>
+<li>L+左スティック押込 PC8001 40周年記念イラスト インポーズモード切替</li></ul>
+
+<h4 id="hfb6adf6">キーボードパネル</h4>
+<p>SHIFTキー、カナ、CAPS, GRAPHは一度タップするとロックし、もう一度タップするとロック
+解除されます。CTRLキーは、キーが押されるまではロックされ，キーが押されるとロックが解除されます。</p>
+
+<h4 id="hd2b0aab">DISKの取り扱い</h4>
+
+<h5 id="v54ade20">簡易ローダー (X)押下げ後、L/Rでタブ選択で .D88 ファイルを選択する</h5>
+<ul><li>簡易ローダーを使って D88ファイルを選択すると、ドライブ1にディスクが挿入され、リセットがかかります。ゲームが自動起動するように .D88 フォーマットにコンバートされたファイルを実行する際には,ディスクの取り出し操作無しに利用可能なこの手順が便利です。</li></ul>
+
+<h5 id="u8a7d9a0">DISK選択メニュー(X)押下げ後、L/Rでタブ選択 で.D88ファイルを選択。</h5>
+<ul><li>選択するとドライブ1から順にディスクが挿入されます。ドライブにディスクが挿入されると、ライトプロテクトされているディスクイメージは、 「&#128273;」のマークが前につきます。</li>
+<li>(X)ボタンもしくは,キーボードの[&quot;Scroll Lock&quot;]をディスクが挿入されているドライブで押すと,挿入中のディスクイメージのプロテクト状態を変更できます。物理的には、5インチフロッピーでは銀色のシールを貼ったり剥がしたりすることに相当します。</li>
+<li>既にディスクが挿入されているドライブで(A)ボタンを押すと、ディスクが取り出されます。その際に，ディスクに書き込みが行われていた場合，イメージ ファイルを保存するか尋ねられます。保存しない場合，変更は捨て去れれます。</li>
+<li>ブランクディスクは,FDDドライブが空の状態で(Ａ)ボタンを押すと作成できます。作成終了時にファイルに保存するかの確認がでますが,保存しないとディスク作成が無かった事になります。作成されたディスクは,N88-BASICのデータディスクとしてフォーマットされています。</li>
+<li>リセットを選択すると、リセットがかかります。</li>
+<li>ディスクサブシステムが有効な場合、キーボードのエンブレムの左側にFDDのアクセスランプが表示されます。</li>
+<li>アクセスランプの色は,通常は緑色ですがディスクへの書き込みが行われると,以降は赤で表示されます。書き込み結果を残すには、明示的にDISK選択メニューから[取出]を選択し,変更の保存を行って下さい。</li>
+<li>(＋)ボタンでエミュレータを終了させた場合、内容が変更されているディスクがあると、保存するかどうか尋ねてきます。</li>
+<li>ディスクサブシステムが無効な場合、FDDランプは表示されません。また、簡易ファイル選択に.D88ファイルが現れず、DISK選択メニューも利用できません。</li>
+<li>ディスクサブシステムを有効にするためには、サブシステムROMデータがプロジェクト内に&quot;N88SUB.ROM&quot;という名前で保存しておく必要があります。pbiosの代用&quot;DISK.ROM&quot;を同梱しているため、単純な読込み&amp;起動は動きますが、EMMYなどは、動作しませんでした。</li></ul>
+
+<h4 id="zacbaa91">CPUタイミング</h4>
+<ul><li>cpuタイミングは、FDDサブシステムでメインCPU処理に戻るまでに実行する命令数。大きい程動作が早くなるが、動かなくなるソフトも増える。0の時は、従来と同じ動作を行ないます。通常は０のまま使用します。起動しないディスクがあったばあい、まずは cpuタイミング=3を試してみてください。それでも上手くいかない場合は、値を少しずつ変えながら動作する値を探ってください。0〜6までの値が設定できます。</li></ul>
+<ul><li>cpuタイミングに0以外を設定しなければならなかったソフトを以下に示す。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">蒼き狼と白き牝鹿(mk2)</th><td class="style_td">V1S,cpu=4</td></tr><tr><th class="style_th">デゼニワールド(mk2)</th><td class="style_td">V1S,cpu=4 (予告編を見ようとすると止まる)</td></tr><tr><th class="style_th">ギャンブラー自己中心派</th><td class="style_td">V2, cpu=3</td></tr><tr><th class="style_th">シルフィード</th><td class="style_td">V2, cpu=3</td></tr><tr><th class="style_th">RIGLAS</th><td class="style_td">V1, cpu=0 (デフォルト値)</td></tr><tr><th class="style_th">スタークルーザー</th><td class="style_td">V2, cpu=3</td></tr><tr><th class="style_th">テグザーSR版</th><td class="style_td">V2, cpu=3</td></tr><tr><th class="style_th">テグザー88版</th><td class="style_td">V2, cpu=3</td></tr><tr><th class="style_th">Wizardry I</th><td class="style_td">V1S,cpu=3</td></tr><tr><th class="style_th">Wizardry II</th><td class="style_td">V2S,cpu=3</td></tr></tbody></table></div></li></ul>
+
+<h4 id="b26aba90">簡易ローダ</h4>
+<ul><li>(X)ボタンを単体で押すと，簡易ローダが呼びだされ，ファイルの読み込み，生成のメニューが出てきます。</li>
+<li>(B)ボタンを押すと，簡易ローダから抜けます</li></ul>
+<ul><li>サポートしているファイルは以下のとおり。
+<ul><li>N80ファイル (読み込みのみ）
+<ul><li>モードがＮの時のみ読み込み可能。Ｎモード以外ではリストにも表示されません。</li>
+<li>N80解體新書のN80フォーマットが読めます。</li>
+<li><a href="http://home1.catvmics.ne.jp/~kanemoto/n80/inside.html" rel="nofollow">http://home1.catvmics.ne.jp/~kanemoto/n80/inside.html</a></li></ul></li>
+<li>T88ファイル (読み込みのみ）
+<ul><li>T88テープイメージファイルフォーマットが読めます。</li>
+<li><a href="http://www.cug.net/~manuke/t88format.html" rel="nofollow">http://www.cug.net/~manuke/t88format.html</a></li></ul></li>
+<li>D88フォーマット(読み書き可能,要サブシステムROM)
+<ul><li>D88フロッピーイメージファイルが使用できます。内部的には、複数イメージを含むファイルもサポートしているのですが、GUIができていません。もっとも, PC8001で複数イメージを含んだ D88 ファイルは見たことないです。</li>
+<li><a href="https://github.com/jpzm/wii88/blob/master/document/FORMAT.TXT" rel="nofollow">https://github.com/jpzm/wii88/blob/master/document/FORMAT.TXT</a></li></ul></li>
+<li>CMTファイル (読み書き可)
+<ul><li>テープのセーブデータをそのまま保存する形式。 CLOADやMONコマンドのLで読み込む。 CMTファイルを選択した場合、ファイルに含まれるプログラムの頭出しが可能。CMTファイルを指定するだけでは読み込みは行われません。プログラムの読み込みは，CLOAD や MONコマンドのLなどで自分で行う必要があります。</li>
+<li>また，CSAVEやMONのWコマンドでファイルを追記することができます。デフォルトでは，00MY_TAPE.CMT というファイルに追記されます。
+いったんCMTファイルを読み込み指定すると，次からそのファイルの後ろに追記されます。セーブするCMTファイルを変えたい場合は、簡易ローダから追記したいCMTファイルを指定してください。新たなCMTファイルに保存したい場合は「新規テープの作成」を選んで下さい。</li>
+<li>セーブ時は，必ず追記の形で保存されます。</li></ul></li>
+<li>独自のIMGファイル (読み込み)　Nモードの時のみ。
+<ul><li>モードがＮの時のみ読み込み可能。Ｎモード以外ではリストにも表示されません。</li>
+<li>&amp;H8000〜&amp;HFFFFのRAMのデータの後ろに，レジスタの値を格納した形式。簡易ローダを呼び出した時点での状態を、新規イメージの作成」で保存することができます。</li>
+<li>PCGによって変更されたフォント情報があるばあい、最後に1024byteのPCGデータが付加されるようになりました。</li>
+<li>Nモード時のステート保存も.I88で行うようにしたため、PC8001エミュレータとの互換性のため、デフォルトでは読み込みのみです。ENABLE_ALWAYS_I88を #FALSEに設定すると、Nモード時に .IMGファイルで保存できるよう鳴ります。ただし、.IMGファイルはNモード時のみしか読み込むことが出来ません。</li>
+<li>詳細は、README.TXTをご参照下さい。</li></ul></li>
+<li>独自のステートファイル(.I88)ファイル (読み込み・生成)
+<ul><li>エミュレータの全ステートをセーブします。起動に時間のかかるソフトの一発起動や、簡易的なセーブ機能としてお使いいただけます。</li>
+<li>セーブ機能として使う間合いは、SimConfigから、イメージ上書可を設定しておくと、同じイメージ名で保存できるようになるので、便利です。</li>
+<li>PC88モードも保存されるステートに含まれているので、現在のPC88モードにかかわらず、NモードやN88モードのステートを読み込めます。</li>
+<li>PCGの状態も保存されるので、PCGで定義された文字も崩れません。</li></ul></li></ul></li></ul>
+
+<h4 id="b37ece7a">独自のステートファイル(.I88)仕様</h4>
+<ul><li>内部のステートをまるっと保存したファイル形式。Nモード時にも、無駄になっちゃうステートは多いですが、利用出来ます。</li>
+<li>ROMエリア、拡張RAMエリア(灰色)は保存されていない(現在頒布されているバージョンでは、ENABLE_ROM_STATE_STORE, ext_ram_bankが0になっている)</li>
+<li>背景が水色で塗られている部分はディスクサブシステム関連</li>
+<li>背景が黄色で塗られている部分は、N-Basicモードでは保存されない部分。</li>
+<li>long int配列なので、左側の番地を4倍すると、バイト単位番地に</li>
+<li>PCG_USAGEが非ゼロの時のみ、17E00以降のPCG_FONT[]の内容を0x80以降の半角文字のフォントに読み込む。</li>
+<li>所々に値が設定されていない部分は、拡張用。（結構保存し忘れで後から追加したりしてます。文字が水色になっている物は、実は最初のころ保存し忘れていた)
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FPC8801_for_PETITCOM4&amp;openfile=state_file_format2.png" title="state_file_format2.png"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FPC8801_for_PETITCOM4&amp;src=state_file_format2.png" alt="state_file_format2.png" title="state_file_format2.png" width="2147" height="1314" /></a></div>
+</li></ul>
+
+<h4 id="h80f5f9b">USBキーボード</h4>
+<p>PC8801とUSBキーボードでは違いがあります。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">カナ</th><td class="style_td">カタカナひらがな, ALTキー</td></tr><tr><th class="style_th">Graph</th><td class="style_td">Windowsキー</td></tr><tr><th class="style_th">Stop</th><td class="style_td">Pause Breakキー</td></tr><tr><th class="style_th">CLS</th><td class="style_td">Numロックキー</td></tr><tr><th class="style_th">Ins・Del</th><td class="style_td">Deleteキー</td></tr></tbody></table></div>
+
+<h4 id="pac56dc9">モニタ</h4>
+<p>モニタ機能は、Simコンフィグでイネーブルにしておく必要があります。X+L を押し，離すとモニタに入れます。モニタは，メモリのダンプ，逆アセンブル，メモリの書き換えができます。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">Ｑ</th><td class="style_td">モニタから抜け、エミュレータに戻る</td></tr><tr><th class="style_th">Ｄｎｎｎｎ</th><td class="style_td">逆アセンブル (B)で抜ける</td></tr><tr><th class="style_th">Ｍｎｎｎｎ</th><td class="style_td">メモリダンプ (B)で抜ける</td></tr><tr><th class="style_th">Ｅｎｎｎｎ</th><td class="style_td">メモリのエディット<br class="spacer" />１６進以外の入力で抜ける</td></tr><tr><th class="style_th">Ｒ　　　　</th><td class="style_td">レジスタの値を表示</td></tr></tbody></table></div>
+
+<h3 id="r5eeb2ac">スクリーンショット・動画</h3>
+<ul><li>インストール方法
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/C4f9Ew6cIwE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/FyhszmjrOnU" frameborder="0" allowfullscreen></iframe>
+</div>
+</li></ul>
+<ul><li>プレイ画面
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/4ftgMGEu-5M" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm35851095" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm35851095">thumb/sm35851095</a></iframe>
+</div>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm36088670" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm36088670">thumb/sm36088670</a></iframe>
+</div></li></ul>
+
+<h3 id="c36ea954">公開キー</h3>
+<p>プチコン4用の公開キーです。トップメニューの「作品を見る」から公開キーを入力すると、作品をダウンロードできます。</p>
+<div>
+<div class="ptcmid">
+プチコン4 公開キー<br />
+<div class="key">
+<span class="smbas">4EDKE2EAV</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="w9f1be17">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc4/?Board" title="Board (1027d)">掲示板</a>へ)</p>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PC8801_for_PETITCOM4" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="bf6ffee121eff4d11c2bfe414a64cf3b" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (370d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (1028d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (133d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (610d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (708d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (94d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (655d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (121d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (42d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (2d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (727d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (1028d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_4_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (1027d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (1027d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (376d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (273d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/03/12</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD Forward (1d)">リズミカルおもちつきHD Forward</a></li>
+</ul>
+<h4>2022/03/11</h4>
+<ul>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (2d)">OFコーナー4</a></li>
+</ul>
+<h4>2022/03/10</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADOCT" title="リズミカルおもちつきOCT β版 (3d)">リズミカルおもちつきOCT β版</a></li>
+</ul>
+<h4>2022/03/07</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="MMLPAC-2 (6d)">MMLPAC-2</a></li>
+ <li><a href="/petc4/?Toukou%2FAll_MML" title="All over the MMLs (7d)">All over the MMLs</a></li>
+</ul>
+<h4>2022/03/04</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMOHAN" title="ペイントツール「MOHAN」 (9d)">ペイントツール「MOHAN」</a></li>
+</ul>
+<h4>2022/02/28</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA%A1%A6%B2%FE" title="幻想楽遊戯・改 (13d)">幻想楽遊戯・改</a></li>
+</ul>
+<h4>2022/02/19</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA" title="幻想楽遊戯 (22d)">幻想楽遊戯</a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO for Nintendo Switch (22d)">リズミカルおもちつきTG NEO for Nintendo Switch</a></li>
+</ul>
+<h4>2022/02/10</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A4%DF%A4%F3%A4%CA%A4%CE%A5%E9%A5%B8%A5%AA" title="みんなのラジオ！ (31d)">みんなのラジオ！</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_4">最近の人気ページ</h3>
+<div><ul>
+ <li><span title="Toukou/PC8801_for_PETITCOM4  (216d)">PC8801_エミュ for プチコン４号<span class="counter">(42)</span></span></li>
+ <li><a href="/petc4/?FAQ" title="FAQ (708d)">よくある質問集<span class="counter">(13)</span></a></li>
+ <li><a href="/petc4/?WorksLink" title="WorksLink (121d)">プチコン4 作品集<span class="counter">(9)</span></a></li>
+ <li><a href="/petc4/?Link" title="Link (273d)">プチコン4 リンク集<span class="counter">(8)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="Toukou/リズミカルおもちつきHD (1d)">リズミカルおもちつきHD Forward<span class="counter">(8)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FMOHAN" title="Toukou/MOHAN (9d)">ペイントツール「MOHAN」<span class="counter">(6)</span></a></li>
+ <li><a href="/petc4/?Mame%2FTagCloud" title="Mame/TagCloud (328d)">タグクラウド<span class="counter">(6)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FSBplusplus" title="Toukou/SBplusplus (576d)">オブジェクト指向ライブラリ<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Mame%2Fpetitline" title="Mame/petitline (629d)">プチコン通信発行所<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Mame%2FMML3and4" title="Mame/MML3and4 (311d)">プチコン3号と4のMMLの違い<span class="counter">(3)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (1028d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_5">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 6716 回、本日は 10 回、昨日は 32 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.066 秒  | このページの最終更新 : 2021/08/09 (月) 20:16:31  (216d) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

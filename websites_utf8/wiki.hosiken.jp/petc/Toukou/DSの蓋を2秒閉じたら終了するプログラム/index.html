@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : DSの蓋を2秒閉じたら終了するプログラム - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : DSの蓋を2秒閉じたら終了するプログラム - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : DSの蓋を2秒閉じたら終了するプログラム</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">DSの蓋を2秒閉じたら終了するプログラム</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.061sec. -->
+<div class="contents">
+<ul><li><a href="#j766df06">  内容 </a></li>
+<li><a href="#y3c0d522"> 遊び方 </a></li>
+<li><a href="#xcec3e9a"> 使用例 </a></li>
+<li><a href="#l5d73dd3"> クリックコメント </a></li>
+<li><a href="#vfadeca2">  QR コード </a></li>
+<li><a href="#wdde751c"> プログラムリスト </a></li>
+<li><a href="#hd60c639">  課題 </a></li>
+<li><a href="#g3904f65"> 応用ゲーム　NO KEY JUMP </a>
+<ul><li><a href="#v719d391"> QRコード&amp;スクリーンショット </a></li>
+<li><a href="#r356dd96"> 遊び方 </a></li>
+<li><a href="#def2b5e0"> 高得点のコツ </a></li>
+<li><a href="#ca54890c"> NO KEY JUMP NEO </a></li></ul></li>
+<li><a href="#ed6e10d0"> 応用プログラム　スリープ状態になっていた秒数を1/100秒まで表示するプログラム </a>
+<ul><li><a href="#z25a7ce5"> QRコード&amp;スクリーンショット </a></li>
+<li><a href="#l934f3c1"> 遊び方 </a></li>
+<li><a href="#qc681a00"> 課題 </a></li></ul></li>
+<li><a href="#f6e7a37d">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2013年6月10日投稿
+/ 投稿者 : 猫姫
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="j766df06">内容</h3>
+<p>小ネタみたいなものです。<br />
+第２回プチコン大喜利のノミネート作品の中に<br />
+「蓋を閉じて、開くとスタート」<br />
+というのがあり、<br />
+どうしたらそんなことが、できるのかなと<br />
+電子説明書とにらめっこした結果です。</p>
+
+<h3 id="y3c0d522">遊び方</h3>
+<p>プログラムをRUNさせたら、<br />
+蓋を２秒閉じて、開けてください。終了してます。</p>
+
+<h3 id="xcec3e9a">使用例</h3>
+<p>何に使うの？を受けての紹介です。入力のかわりに使うことができます。<br />
+たとえば、ボタンを押す。タッチパネルに触れる。そういった入力と同じように、<br />
+DSの蓋を開け閉めが入力として使えます。</p>
+<blockquote><p class="quotation"><span style="font-size:30px"><a href="http://wiki.hosiken.jp/petc/?Toukou%2FA%20SHOT" rel="nofollow">A SHOT</a></span></p>
+<blockquote><p class="quotation"><span style="color:#999900">隠しコマンドとして実装しています。デバッグモードに切り替わります</span></p></blockquote></blockquote>
+<blockquote><p class="quotation"><span style="font-size:30px"><a href="http://wiki.hosiken.jp/petc/?Toukou%2FSPEED%20SUIJAKU" rel="nofollow">SPEED SUIJAKU</a></span></p>
+<blockquote><p class="quotation"><span style="color:#999900">ゲームスタートの入力として実装しています。</span>}</p></blockquote></blockquote>
+
+<h3 id="l5d73dd3">クリックコメント</h3>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/DSの蓋を2秒閉じたら終了するプログラム" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="0e22a0410d9166bbb1076bc66624a022" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">おもしろい</td>
+   <td align="right" class="vote_td2">6&nbsp;&nbsp;
+    <input type="submit" name="vote_A4AAA4E2A4B7A4EDA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">目からウロコ</td>
+   <td align="right" class="vote_td1">9&nbsp;&nbsp;
+    <input type="submit" name="vote_CCDCA4ABA4E9A5A6A5EDA5B3" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">参考になりました！</td>
+   <td align="right" class="vote_td2">32&nbsp;&nbsp;
+    <input type="submit" name="vote_BBB2B9CDA4CBA4CAA4EAA4DEA4B7A4BFA1AA" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<p>訪問者<br />
+トータル:4610人<br />
+今日:1人<br /></p>
+
+<h3 id="vfadeca2">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPTOOL1</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=tool1.jpg" title="tool1.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=tool1.jpg" alt="tool1.jpg" title="tool1.jpg" width="242" height="240" /></a></td></tr></tbody></table></div>
+
+<h3 id="wdde751c">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＣＬＥＡＲ</li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>ＬＯＣＡＴＥ　４，４：？ＲＩＧＨＴ＄（ＴＩＭＥ＄，２）</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＩＦ　ＲーＱ＞＝２　ＴＨＥＮ　Ｉ＝１</li>
+<li>Ｑ＝Ｒ</li>
+<li>ＮＥＸＴ</li>
+<li>ＬＯＣＡＴＥ　４，４</li>
+<li>？”フタカ゛　２ヒ゛ョウ　トシ゛ラレマシタ”</li>
+</ol></code></div></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト解説
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>短いプログラムですが一応<br />
+ポイントは、<br />
+[スリープ状態になると、プログラムは止まるが、<br />
+DSの時計は動いている]<br />
+ということです。<br />
+2行目:変数Qに、起動時の秒数を代入しています。<br />
+TIME$は、現在のDSの時計を、00:00:00という、８文字の文字変数で返すので、<br />
+RIGHT$で、秒数部分の文字を抜き出し、VALで、数字の変数にしてます。<br />
+以降、この秒数を変数として、条件に使っていきます。<br />
+3行目のFORから、9行目のNEXTが、ループ部分です。<br />
+終了条件を満たすことで、このループから抜けるようにプログラムを組んでいきます。<br />
+6行目:変数Rに、現在の秒数を数字変換して代入してます。<br />
+8行目は、終了条件を満たさなかった場合に、QをRの値にします。<br />
+こうすることによって、プログラムが動いている間は、R-Qの値は、常に０か１(もしくは、-59)となります。<br />
+7行目:終了条件です。<br />
+蓋を2秒以上閉じておくと、変数Qと、開いた瞬間に代入される変数Rの差が大きくなるので、<br />
+R-Q&gt;=2を満たすことになります。<br />
+FOR変数IにNEXTを抜ける１を代入して、その周回でループを抜けてます。<br />
+<br />
+なお、上記の事もあり、秒数が58,59秒の時に蓋を閉じても、このままでは成立しません。<br />
+コナミコマンドのような裏技に仕込むなら、これぐらいの精度でもいいかもしれませんが、<br />
+ゲーム操作に組み込むなら、対策が必要になると考えます。</p>
+</td></tr></table>
+
+<h3 id="hd60c639">課題</h3>
+<p>じつは、６０秒のうち、ある２秒だけ、止まらないタイミングがあります。<br />
+このプログラムを利用したゲームを、この下にアップしてあります。<br />
+上記、2/60の問題も、解決してあります。<br /></p>
+
+<h3 id="g3904f65">応用ゲーム　NO KEY JUMP</h3>
+
+<h4 id="v719d391">QRコード&amp;スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPJG</td><td class="style_td"></td><td class="style_td"></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=qr.jpg" title="qr.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=qr.jpg" alt="qr.jpg" title="qr.jpg" width="217" height="748" /></a></td><td class="style_td"></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=sc1.jpg" title="sc1.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=sc1.jpg" alt="sc1.jpg" title="sc1.jpg" width="240" height="320" /></a>　<a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=sc2.jpg" title="sc2.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=sc2.jpg" alt="sc2.jpg" title="sc2.jpg" width="240" height="320" /></a></td></tr></tbody></table></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＣＬＥＡＲ：ＭＥＭ＄＝””：ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ</li>
+<li>ＤＩＭ　Ｉ＄（３）</li>
+<li>ＤＩＭ　ＤＡＹ＄（５），ＨＳＣＯＲＥ＄（５），ＨＳＣＯＲＥ（５）</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　４</li>
+<li>ＤＡＹ＄（Ｉ）＝”−−−−／−−／−−”</li>
+<li>ＨＳＣＯＲＥ＄（Ｉ）＝”３００”</li>
+<li>ＨＳＣＯＲＥ（Ｉ）＝３００</li>
+<li>ＮＥＸＴ</li>
+<li>ＧＯＳＵＢ　＠ＬＯＡＤ　</li>
+<li>ＰＮＬＴＹＰＥ　”ＯＦＦ”</li>
+<li>ＳＰＳＥＴ　０，１１４，０，０，０，０</li>
+<li>ＳＰＨＯＭＥ　０，８，８</li>
+<li>ＳＰＡＮＧＬＥ　０，９０</li>
+<li>＠ＧＡＭＥ</li>
+<li>ＢＧＭＰＬＡＹ　４</li>
+<li>ＧＯＳＵＢ　＠ＯＰＮＩＮＧ</li>
+<li>ＭＸ＝１６：ＭＹ＝１００</li>
+<li>ＳＰＣＨＲ　０，１１４，０，０，０，０</li>
+<li>ＳＰＡＮＩＭ　０，２，３０</li>
+<li>ＳＰＯＦＳ　０，ＭＸ，ＭＹ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　５０</li>
+<li>ＢＧＰＵＴ　１，ＲＮＤ（６４），ＲＮＤ（６４），８５９，３，０，０</li>
+<li>ＢＧＰＵＴ　１，ＲＮＤ（６４），ＲＮＤ（６４），８９１，３，０，０</li>
+<li>ＮＥＸＴ</li>
+<li>ＧＰＲＩＯ　１</li>
+<li>ＧＦＩＬＬ　０，０，１６，２００，７</li>
+<li>ＧＣＩＲＣＬＥ　２００，５０，３０，１２</li>
+<li>ＧＰＡＩＮＴ　２００，５０，１２</li>
+<li>ＧＣＩＲＣＬＥ　２１０，４０，３０，０</li>
+<li>ＧＰＡＩＮＴ　２１０，４０，０</li>
+<li>Ｐ＝０</li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>Ｐ＝（Ｐ＋１）＊（Ｐ！＝１００）</li>
+<li>ＣＯＬＯＲ　１３</li>
+<li>ＬＯＣＡＴＥ　５，２０：ＰＲＩＮＴ　”╂”＊２０</li>
+<li>ＣＯＬＯＲ　３</li>
+<li>ＬＯＣＡＴＥ　５，２０：ＰＲＩＮＴ　”┿”＊ＦＬＯＯＲ（Ｐ／５）</li>
+<li>ＣＯＬＯＲ　０</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＩＦ　ＲーＱ＜０　ＴＨＥＮ　Ｒ＝Ｒ＋６０：ＣＨ＝ＴＲＵＥ</li>
+<li>ＩＦ　ＲーＱ＞＝２　ＴＨＥＮ　Ｉ＝１</li>
+<li>Ｇ＝ＲーＱ</li>
+<li>ＧＧ＝ＡＢＳ（５ーＧ）</li>
+<li>ＩＦ　ＣＨ＝＝ＴＲＵＥ　ＴＨＥＮ　Ｒ＝Ｒ−６０：ＣＨ＝ＦＡＬＳＥ</li>
+<li>Ｑ＝Ｒ</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>ＰＯ＝ＦＬＯＯＲ（（ＰーＰ＊ＧＧ／２０）＊９）</li>
+<li>ＳＣＯＲＥ＝ＰＯ</li>
+<li>ＤＡＹ＄＝ＤＡＴＥ＄</li>
+<li>ＬＯＣＡＴＥ　５，２０：ＰＲＩＮＴ　”　”＊２０</li>
+<li>ＳＰＣＨＲ　０，１２１，０，０，０，０</li>
+<li>ＳＰＡＮＩＭ　０，１，０</li>
+<li>Ｘ＝１０</li>
+<li>ＢＥＥＰ　５</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　Ｘ</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>ＭＸ＝ＭＸ＋５：ＰＯ＝ＰＯー１</li>
+<li>ＳＰＯＦＳ　０，ＭＸ，ＭＹ</li>
+<li>ＩＦ　ＰＯ＜＝０　ＴＨＥＮ　Ｉ＝Ｘ</li>
+<li>ＮＥＸＴ　Ｉ</li>
+<li>ＩＦ　ＰＯ＜＝０　ＴＨＥＮ　＠ＥＮＤ＿ＬＯＯＴＩＮ</li>
+<li>ＧＦＩＬＬ　０，０，１６，２００，０</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＰＯ</li>
+<li>ＶＳＹＮＣ　１</li>
+<li></li>
+<li>ＳＰ＝ＦＬＯＯＲ（（ＰＯーＩ）／１００）＋１</li>
+<li>ＩＦ　ＳＰ＞＝３　ＴＨＥＮ　ＳＰ＝３</li>
+<li>ＢＸ＝（ＢＸ＋ＳＰ）</li>
+<li>ＢＧＯＦＳ　１，ＢＸ，０</li>
+<li>ＮＥＸＴ</li>
+<li>＠ＥＮＤ＿ＬＯＯＴＩＮ</li>
+<li>ＢＥＥＰ　６</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１００</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>ＭＸ＝ＭＸー１</li>
+<li>ＳＰＯＦＳ　０，ＭＸ，ＭＹ</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>Ｉ＄＝”０００”＋ＳＴＲ＄（ＳＣＯＲＥ）</li>
+<li>Ｉ＄＝ＲＩＧＨＴ＄（Ｉ＄，３）</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　２</li>
+<li>Ｉ＄（Ｉ）＝ＭＩＤ＄（Ｉ＄，Ｉ，１）</li>
+<li>ＮＥＸＴ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　２</li>
+<li>ＲＥＳＴＯＲＥ　”＠”＋Ｉ＄（Ｉ）</li>
+<li>ＲＥＡＤ　Ａ＄，Ｂ＄，Ｃ＄</li>
+<li>ＢＥＥＰ　５７</li>
+<li>ＬＯＣＡＴＥ　２５，５＋４＊Ｉ：ＰＲＩＮＴ　Ａ＄</li>
+<li>ＬＯＣＡＴＥ　２５，６＋４＊Ｉ：ＰＲＩＮＴ　Ｂ＄</li>
+<li>ＬＯＣＡＴＥ　２５，７＋４＊Ｉ：ＰＲＩＮＴ　Ｃ＄</li>
+<li>ＷＡＩＴ　１５</li>
+<li>ＮＥＸＴ</li>
+<li>ＢＥＥＰ　５７</li>
+<li>ＬＯＣＡＴＥ　２５，１７：ＰＲＩＮＴ　”┿┿┿┿”</li>
+<li>ＬＯＣＡＴＥ　２５，１８：ＰＲＩＮＴ　”　　┝┸”</li>
+<li>ＬＯＣＡＴＥ　２５，１９：ＰＲＩＮＴ　”　　┥┰”</li>
+<li>ＬＯＣＡＴＥ　２５，２０：ＰＲＩＮＴ　”┿┿┿┿”</li>
+<li>ＷＡＩＴ　１００</li>
+<li>ＢＥＥＰ　６４</li>
+<li>ＧＯＳＵＢ　＠ＨＳＣＯＲＥ</li>
+<li>ＣＬＳ</li>
+<li>ＧＯＴＯ　＠ＧＡＭＥ</li>
+<li></li>
+<li>＠０</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>ＤＡＴＡ　”┿　　　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠１</li>
+<li>ＤＡＴＡ　”　　　　　”</li>
+<li>ＤＡＴＡ　”　　　　　”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠２</li>
+<li>ＤＡＴＡ　”┿┿┿　┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿　┿┿┿”</li>
+<li>＠３</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠４</li>
+<li>ＤＡＴＡ　”　　┿┿┿”</li>
+<li>ＤＡＴＡ　”　　┿　　”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠５</li>
+<li>ＤＡＴＡ　”┿　┿┿┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿　┿”</li>
+<li>＠６</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿　┿”</li>
+<li>＠７</li>
+<li>ＤＡＴＡ　”　　┿┿┿”</li>
+<li>ＤＡＴＡ　”　　　　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠８</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li>＠９</li>
+<li>ＤＡＴＡ　”┿　┿┿┿”</li>
+<li>ＤＡＴＡ　”┿　┿　┿”</li>
+<li>ＤＡＴＡ　”┿┿┿┿┿”</li>
+<li></li>
+<li>＠ＯＰＮＩＮＧ</li>
+<li>　ＰＮＬＳＴＲ　０，０，”┌───────────┐</li>
+<li>　ＰＮＬＳＴＲ　０，１，”│ＮＯ　ＫＥＹ　ＪＵＭＰ│</li>
+<li>　ＰＮＬＳＴＲ　０，２，”└───────────┘</li>
+<li>　ＰＮＬＳＴＲ　０，３，”１：タテニ　モッテ　アソヒ゛マス</li>
+<li>　ＰＮＬＳＴＲ　０，４，”２：ハ゜ワ−メ−タ−　カ゛　タマッテイル</li>
+<li>　ＰＮＬＳＴＲ　０，５，”　　トキニ　ＤＳ　ノ　フタ　ヲ　トシ゛マス</li>
+<li>　ＰＮＬＳＴＲ　０，６，”３：５ヒ゛ョウ　タッタラ　フタヲ　アケマス</li>
+<li>　ＰＮＬＳＴＲ　０，７，”４：シ゛ャンフ゜　シマス</li>
+<li>　ＰＮＬＳＴＲ　０，８，”</li>
+<li>　ＰＮＬＳＴＲ　０，９，”┌────────────┐</li>
+<li>ＰＮＬＳＴＲ　０，１０，”│タカク　トフ゛　タメニハ│</li>
+<li>ＰＮＬＳＴＲ　０，１１，”└────────────┘</li>
+<li>ＰＮＬＳＴＲ　０，１２，”１：ハ゜ワ−メ−タ−　カ゛　オオイ　ホト゛</li>
+<li>ＰＮＬＳＴＲ　０，１３，”　　タカク　トヘ゛マス</li>
+<li>ＰＮＬＳＴＲ　０，１４，”２：ＤＳ　ノ　フタヲ　トシ゛テイル　シ゛カンカ゛</li>
+<li>ＰＮＬＳＴＲ　０，１５，”　　５ヒ゛ョウ　ニ　チカイ　ホト゛　タカク　トヘ゛マス</li>
+<li>ＰＮＬＳＴＲ　０，１６，”　　タタ゛シ　２　ヒ゛ョウ　トシ゛テ　オカナイト</li>
+<li>ＰＮＬＳＴＲ　０，１７，”　　トヘ゛マセン</li>
+<li>ＰＮＬＳＴＲ　０，１８，”</li>
+<li>ＰＮＬＳＴＲ　０，１９，”ケ゛−ム　ハ　ＳＥＬＥＣＴ　ホ゛タン　テ゛</li>
+<li>ＰＮＬＳＴＲ　０，２０，”シュウリョウ　シマス</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＨＳＣＯＲＥ</li>
+<li>ＣＬＳ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　４</li>
+<li>ＩＦ　ＳＣＯＲＥ＜ＨＳＣＯＲＥ（Ｉ）　ＴＨＥＮ　＠ＳＫＳＣ</li>
+<li>ＳＷＡＰ　ＳＣＯＲＥ，ＨＳＣＯＲＥ（Ｉ）</li>
+<li>ＳＷＡＰ　ＤＡＹ＄，ＤＡＹ＄（Ｉ）</li>
+<li>ＨＳＣＯＲＥ＄（Ｉ）＝”０００”＋ＳＴＲ＄（ＨＳＣＯＲＥ（Ｉ））</li>
+<li>ＨＳＣＯＲＥ＄（Ｉ）＝ＲＩＧＨＴ＄（ＨＳＣＯＲＥ＄（Ｉ），３）</li>
+<li>ＨＳＣ＝ＴＲＵＥ</li>
+<li>＠ＳＫＳＣ</li>
+<li>ＮＥＸＴ</li>
+<li>ＰＮＬＳＴＲ　５，１，”ＨＩ＿ＳＣＯＲＥ</li>
+<li>ＰＮＬＳＴＲ　５，５，”１ＳＴ　”＋ＤＡＹ＄（０）＋”　　”＋ＨＳＣＯＲＥ＄（０）</li>
+<li>ＰＮＬＳＴＲ　５，８，”２ＮＤ　”＋ＤＡＹ＄（１）＋”　　”＋ＨＳＣＯＲＥ＄（１）</li>
+<li>ＰＮＬＳＴＲ　５，１１，”３ＲＤ　”＋ＤＡＹ＄（２）＋”　　”＋ＨＳＣＯＲＥ＄（２）</li>
+<li>ＰＮＬＳＴＲ　５，１４，”４ＴＨ　”＋ＤＡＹ＄（３）＋”　　”＋ＨＳＣＯＲＥ＄（３）</li>
+<li>ＰＮＬＳＴＲ　５，１７，”５ＴＨ　”＋ＤＡＹ＄（４）＋”　　”＋ＨＳＣＯＲＥ＄（４）</li>
+<li>ＷＡＩＴ　２００</li>
+<li>ＩＦ　ＨＳＣ＝＝ＴＲＵＥ　ＴＨＥＮ　ＧＯＳＵＢ　＠ＳＡＶＥ</li>
+<li>ＨＳＣ＝ＦＡＬＳＥ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＳＡＶＥ　</li>
+<li>ＭＥＭ＄＝””</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　４</li>
+<li>ＭＥＭ＄＝ＭＥＭ＄＋ＤＡＹ＄（Ｉ）＋ＨＳＣＯＲＥ＄（Ｉ）</li>
+<li>ＮＥＸＴ</li>
+<li>ＳＡＶＥ　”ＭＥＭ：ＮＨＰＪＧ”</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＬＯＡＤ</li>
+<li>ＬＯＡＤ　”ＭＥＭ：ＮＨＰＪＧ”，０</li>
+<li>ＩＦ　ＶＡＬ（ＭＥＭ＄）＝＝０　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　４</li>
+<li>ＤＡＹ＄（Ｉ）＝ＭＩＤ＄（ＭＥＭ＄，０＋１３＊Ｉ，１０）</li>
+<li>ＨＳＣＯＲＥ＄（Ｉ）＝ＭＩＤ＄（ＭＥＭ＄，１０＋１３＊Ｉ，３）</li>
+<li>ＨＳＣＯＲＥ（Ｉ）＝ＶＡＬ（ＨＳＣＯＲＥ＄（Ｉ））</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト解説
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>2行目ー3行目<br />
+配列宣言<br />
+I$(3):ゲームスコアの表示に使います。<br />
+DAY$(5),HSCORE$(5),HSCORE(5):ハイスコアの管理に使います。<br />
+21行目ー24行目<br />
+背景の星空を描いてます。<br />
+面倒なので、位置はランダムです。<br />
+25行目ー30行目<br />
+地面と月を描いてます。<br />
+月の描画は昔ながらの方法ですね。<br />
+塗りつぶした円を二つ重ねる手法です。<br />
+32行目<br />
+変数Qに、初期起動時の秒数を読み込みます。<br />
+33行目ー48行目<br />
+メインループです。<br />
+なお、スコアの計算も実質このループだけで成立しています。<br />
+3５行目<br />
+変数Pを変化させています。<br />
+０から１００まで順番に足していって、100になったら、0に戻る処理です。<br />
+この、変数Pが、スコアの基本の値になります。<br />
+36行目ー40行目<br />
+ゲームの胆となる変数Pを視覚化しています。<br />
+私がよく使う、コンソールのメーターです。<br />
+4１行目<br />
+変数Rに現在の秒数を代入します。<br />
+変数Qと、変数Rの考え方は、上記、<br />
+「DSの蓋を2秒閉じたら終了するプログラム」の、リスト解説へ、<br />
+おねがいします。<br />
+42行目、46行目<br />
+秒数が58秒、59秒のときの対策です。<br />
+R-Qがマイナスになるときは、Rが繰り上がりリセットされたあとなので、<br />
+Rに60を足すことで、計算を成立させています。<br />
+ただ、Rをこのまま、このあとの計算につかえないので、変数CHでフラグだてをおこない、<br />
+４６行目で、Rの値を戻しています。<br />
+4５行目<br />
+変数GGの代入です。この値は、蓋を閉じている時間が５秒にどれだけ近いかを求めています。<br />
+48行目でループを抜けると、あとはジャンプの演出プログラムになります。<br />
+<br />
+50行目、5１行目<br />
+スコアの計算式です。<br />
+SCORE=(P-PxGG/20)x9<br />
+基本値は、Pの最大値100x9で、最大900<br />
+閉じている時間が5秒に近いほど、減点値が、０に近づくという計算にしてみました。<br />
+つまり、理論上の最大値は、900mになっています。<br />
+二行に分けた理由は、このあとの処理に使う変数POと、スコアを分離して調整するためでしたが、<br />
+結局は全くのノータッチとなりました。<br />
+56行目ー64行目<br />
+ジャンプの１段階目<br />
+spキャラを画面中央辺りまでジャンプさせます。<br />
+ジャンプの距離になるPOの値があまりにも小さいと、<br />
+ここでジャンプ処理を終わらせます。(62行目、64行目)<br />
+6５行目ー73行目<br />
+ジャンプの2段階目<br />
+地面の描画を削除し(65行目)<br />
+BG画面を動かすことで、擬似的な上昇を演出しています。<br />
+変数POの大きさで、背景の速度も変えて、高得点の期待を演出しています。(69行目)<br />
+74行目―80行目<br />
+ジャンプの最高点に到達したので、spキャラをフレームアウトさせます。<br />
+82行目ー102行目<br />
+スコア表示のルーチンです。<br />
+スコアの百位、十位、一位それぞれを読み取って、(84ー86)<br />
+それに対するDATA文を、文字変数に読み込み、<br />
+それぞれの位置にWAITをかけつつ、表示させています(87ー95)<br />
+最後にmを書き込んで、一連の演出は終了します。<br />
+<br />
+107行目ー146行目<br />
+スコア表示に使う文字列です。<br />
+7セグ表示を参考に作ってます。<br />
+<br />
+148行目ー170行目<br />
+下画面、タイトルと説明書がわりを表示させるサブルーチンです。<br />
+<br />
+172行目ー192行目<br />
+ハイスコアの管理と、表示を行うサブルーチンです。<br />
+1stスコアから順に、スコア判定させて、もし、SCORE&gt;HSCOREならば、<br />
+SWAP命令で変数を入れ換えます。<br />
+こうすると、当然下位のスコアもSCORE&gt;HSCOREになるため、順に順位が繰り下がります。<br />
+(174ー182)<br />
+<br />
+194行目ー200行目<br />
+SAVE処理のサブルーチンです。<br />
+日付とスコアを順番に記録してます。<br />
+<br />
+202行目ー210行目<br />
+LOAD処理のサブルーチンです。<br />
+204行目は、1行目のMEM$のリセットと組み合わせて、MEMデータの無い初回起動時の、<br />
+読み込みエラーを回避しています。</p>
+</td></tr></table>
+
+<h4 id="r356dd96">遊び方</h4>
+<p>パワーメーターが上下しています。<br />
+できるだけ、高い位置で、DSの蓋を閉じてください。<br />
+その後、５秒待って、蓋を開けると、<br />
+大ジャンプします？<br /></p>
+
+<h4 id="def2b5e0">高得点のコツ</h4>
+<p>蓋が閉じられてから、スリープモードになるまでに、<br />
+多少の誤差があるようです。<br />
+そこも考慮に入れないと、なかなか高得点はでません。<br /></p>
+
+<h4 id="ca54890c">NO KEY JUMP NEO</h4>
+<p>1ゲームとして作り組んでみました。<br />
+<a href="http://wiki.hosiken.jp/petc/?Toukou%2FNO%20KEY%20JUMP%20NEO" rel="nofollow">NO KEY JUMP NEO</a></p>
+
+<h3 id="ed6e10d0">応用プログラム　スリープ状態になっていた秒数を1/100秒まで表示するプログラム</h3>
+
+<h4 id="z25a7ce5">QRコード&amp;スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPTOOL2</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=tool2.jpg" title="tool2.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=tool2.jpg" alt="tool2.jpg" title="tool2.jpg" width="240" height="240" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=toolsc2.jpg" title="toolsc2.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=toolsc2.jpg" alt="toolsc2.jpg" title="toolsc2.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button4" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary4').style.display!='none'){
+		document.getElementById('rgn_summary4').style.display='none';
+		document.getElementById('rgn_content4').style.display='block';
+		document.getElementById('rgn_bracket4').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button4').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary4').style.display='block';
+		document.getElementById('rgn_content4').style.display='none';
+		document.getElementById('rgn_bracket4').style.borderStyle='none';
+		document.getElementById('rgn_button4').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket4" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary4" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content4" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＣＬＥＡＲ</li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＩＦ　ＲーＱ＝＝１　ＴＨＥＮ　Ｉ＝１</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＣＮＴ１＝ＭＡＩＮＣＮＴＬ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>Ｈ＝Ｈ＋１</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＩＦ　ＲーＱ＝＝１　ＴＨＥＮ　Ｉ＝１</li>
+<li>ＮＥＸＴ</li>
+<li>ＣＮＴ２＝ＭＡＩＮＣＮＴＬ</li>
+<li>Ｍ＿ＦＰＳ＝ＣＮＴ２ーＣＮＴ１</li>
+<li>Ｈ＝０</li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＣＮＴ１＝ＭＡＩＮＣＮＴＬ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＣＮＴ２＝ＭＡＩＮＣＮＴＬ</li>
+<li>ＩＦ　ＣＮＴ２ーＣＮＴ１＝＝１　ＴＨＥＮ　Ｈ＝（Ｈ＋１）＊（Ｈ！＝Ｍ＿ＦＰＳ）</li>
+<li>ＣＮＴ１＝ＣＮＴ２</li>
+<li>Ｈ２＝ＦＬＯＯＲ（Ｈ／Ｍ＿ＦＰＳ＊１００）／１００</li>
+<li>ＩＦ　ＲーＱ＝＝１　ＴＨＥＮ　Ｍ＿ＦＰＳ２＝ＨＨ：ＨＨ＝０</li>
+<li>ＩＦ　ＲーＱ＜０　ＴＨＥＮ　Ｒ＝Ｒ＋６０：ＣＨ＝ＴＲＵＥ</li>
+<li>ＩＦ　ＲーＱ＞＝２　ＴＨＥＮ　Ｉ＝１</li>
+<li>ＩＦ　ＣＨ＝＝ＴＲＵＥ　ＴＨＥＮ　Ｒ＝Ｒ−６０：ＣＨ＝ＦＡＬＳＥ</li>
+<li>Ｃ＿ＳＥＣ＝Ｑ：Ｃ＿Ｈ＝Ｈ２：Ｏ＿ＳＥＣ＝Ｒ</li>
+<li>Ｑ＝Ｒ</li>
+<li>ＬＯＣＡＴＥ　４，４：ＰＲＩＮＴ　Ｒ＋Ｈ２</li>
+<li>ＬＯＣＡＴＥ　４，５：ＰＲＩＮＴ　Ｍ＿ＦＰＳ</li>
+<li>ＬＯＣＡＴＥ　４，６：ＰＲＩＮＴ　Ｍ＿ＦＰＳ２</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>Ｑ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＣＮＴ１＝ＭＡＩＮＣＮＴＬ</li>
+<li>Ｈ＝０</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝０</li>
+<li>Ｒ＝ＶＡＬ（ＲＩＧＨＴ＄（ＴＩＭＥ＄，２））</li>
+<li>ＣＮＴ２＝ＭＡＩＮＣＮＴＬ</li>
+<li>ＩＦ　ＣＮＴ２−ＣＮＴ１＝＝１　ＴＨＥＮ　Ｈ＝（Ｈ＋１）＊（Ｈ！＝Ｍ＿ＦＰＳ）</li>
+<li>ＣＮＴ１＝ＣＮＴ２</li>
+<li>ＩＦ　ＲーＱ＝＝１　ＴＨＥＮ　Ｉ＝１</li>
+<li>Ｑ＝Ｒ</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>Ｏ＿Ｈ＝ＦＬＯＯＲ（Ｈ／Ｍ＿ＦＰＳ＊１００）／１００</li>
+<li>ＣＬＯＳＥＴＩＭＥ＝Ｃ＿ＳＥＣ＋Ｃ＿Ｈ</li>
+<li>ＯＰＥＮＴＩＭＥ＝Ｏ＿ＳＥＣ−Ｏ＿Ｈ</li>
+<li>ＩＦ　ＯＰＥＮＴＩＭＥ−ＣＬＯＳＥＴＩＭＥ＜０　ＴＨＥＮ　ＯＰＥＮＴＩＭＥ＝ＯＰＥＮＴＩＭＥ＋６０</li>
+<li>ＳＬＥＥＰＴＩＭＥ＝ＯＰＥＮＴＩＭＥ−ＣＬＯＳＥＴＩＭＥ</li>
+<li>ＩＦ　ＯＰＥＮＴＩＭＥ＜０　ＴＨＥＮ　ＯＰＥＮＴＩＭＥ＝ＯＰＥＮＴＩＭＥ＋６０</li>
+<li>ＬＯＣＡＴＥ　４，４：ＰＲＩＮＴ　”ＣＬＯＳＥ：　”ＣＬＯＳＥＴＩＭＥ</li>
+<li>ＬＯＣＡＴＥ　４，５：ＰＲＩＮＴ　”ＯＰＥＮ　：　”ＯＰＥＮＴＩＭＥ</li>
+<li>ＬＯＣＡＴＥ　４，６：ＰＲＩＮＴ　”ＳＬＥＥＰ：　”ＳＬＥＥＰＴＩＭＥ</li>
+</ol></code></div></div>
+</td></tr></table>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button5" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary5').style.display!='none'){
+		document.getElementById('rgn_summary5').style.display='none';
+		document.getElementById('rgn_content5').style.display='block';
+		document.getElementById('rgn_bracket5').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button5').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary5').style.display='block';
+		document.getElementById('rgn_content5').style.display='none';
+		document.getElementById('rgn_bracket5').style.borderStyle='none';
+		document.getElementById('rgn_button5').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket5" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary5" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト解説
+</td><td valign="top" id="rgn_content5" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>2-7行目<br />
+秒数がカウントアップするまで待っています。<br />
+9-17行目<br />
+一秒間に、MAINCNTLが何カウントするかを求めています。<br />
+求めた値は、変数M_FPSに代入しています。(17)<br />
+18-36行目<br />
+プログラムのメイン。「DSの蓋を2秒閉じたら終了するプログラム」の部分です。<br />
+1/100秒の部分は、MAINCNTLのカウント数を百分率換算しています。(26)<br />
+また、このループで、蓋が閉じられた時の秒数:C_SEC。蓋が閉じられた時の1/100秒数:C_H。蓋が開いたときの秒数:0_SEC。を求めています。(31)<br />
+38-48行目<br />
+蓋が空いてから、秒数がカウントアップするまでの、MAINCNTLカウント数を数えています。<br />
+50行目<br />
+カウント数を、1/100秒数に換算して、変数O_Hに代入しています。<br />
+<br />
+以下、閉めたときの時間を、C_SEC+C_H。開けたときの時間を、O_SEC-O_H。<br />
+スリープしていた時間を、その差から求めています。</p>
+</td></tr></table>
+
+<h4 id="l934f3c1">遊び方</h4>
+<p>プログラムを起動させたら、しばらくするとカウントが始まります。<br />
+蓋を閉じて、2秒以上まって、蓋をあけると、<br />
+閉じたときの秒数、開けたときの秒数、スリープ状態だった時間が表示されます。<br />
+注意)タイム表示後にウエイト系の処理を入れ忘れています。<br />
+できたら、プログラムモードから、NHPTOOL2をロード&amp;ランしてください。<br /></p>
+
+<h4 id="qc681a00">課題</h4>
+<p>今回も秒数しか処理に使っていないので、１分以上の値はループになってしまいます。<br />
+1/100秒カウントは、MAINCNTLから出しているので、プチコンを2時間ほど起動しっぱなしにしておくと、つかえません。<br />
+蓋の開け閉め判断は、やっぱり2秒は必要です。</p>
+
+<h3 id="f6e7a37d">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (2900d)">掲示板</a>へ)</p>
+<ul><li><strong>.EXE</strong> : 凄い (<span class="comment_date">2013/06/11 (火) 07:00:04</span>)</li>
+<li><strong>キービィ</strong> : いいアイデアだコレ (<span class="comment_date">2013/06/11 (火) 07:18:11</span>)</li>
+<li><strong>ヤッフー</strong> : うわ、目から鱗だ (<span class="comment_date">2013/06/11 (火) 16:21:04</span>)</li>
+<li><strong>Shiftキー</strong> : OSもどきで蓋を閉じて自動ロックにいいかも (<span class="comment_date">2013/06/11 (火) 19:21:22</span>)</li>
+<li><strong>シトリン</strong> : それいいかも&gt;Shiftキー (<span class="comment_date">2013/06/11 (火) 20:59:59</span>)</li>
+<li><strong>猫姫</strong> : 分や、時も秒に直してプログラムを組むと、もっと精度があがります。今回は何分も閉じておくことは想定していないので、秒数しか使っていません。 (<span class="comment_date">2013/06/12 (水) 01:30:24</span>)</li>
+<li><strong>名無しさん</strong> : 1フレーム単位で閉じた時間を調べることは可能？ (<span class="comment_date">2013/06/12 (水) 05:26:39</span>)</li>
+<li><strong>名無しさん</strong> : ↑　できるよ (<span class="comment_date">2013/06/12 (水) 12:25:32</span>)</li>
+<li><strong>名無しさん</strong> : でも1秒未満は無理そう (<span class="comment_date">2013/06/12 (水) 15:27:47</span>)</li>
+<li><strong>Shiftキー</strong> : ストップウオッチ使ってチートしたのに100mもいかねぇ (<span class="comment_date">2013/06/12 (水) 17:13:17</span>)</li>
+<li><strong>Shiftキー</strong> : 100mは超えたけどランキングには入らん (<span class="comment_date">2013/06/12 (水) 17:15:30</span>)</li>
+<li><strong>.EXE</strong> : 使わせてもらってもよろしいですか? (<span class="comment_date">2013/06/12 (水) 17:33:52</span>)</li>
+<li><strong>がんばる卓球部</strong> : 上に同じく、(開発中のBASICOS FINALに)使わせてもらってもよろしいでしょうか。 (<span class="comment_date">2013/06/12 (水) 19:05:48</span>)</li>
+<li><strong>名無しさん</strong> : これは前から (<span class="comment_date">2013/06/12 (水) 19:38:43</span>)</li>
+<li><strong>名無しさん</strong> : ある技術っちゃ技術だな (<span class="comment_date">2013/06/12 (水) 19:38:55</span>)</li>
+<li><strong>名無しさん</strong> : ↑7　できるよ (<span class="comment_date">2013/06/12 (水) 19:40:33</span>)</li>
+<li><strong>名無しさん</strong> : ↑どのように？ (<span class="comment_date">2013/06/12 (水) 19:54:38</span>)</li>
+<li><strong>猫姫</strong> : まあ、上述のとおり、私も「できる」ということが確定している状態での開発ですから(←再現が適当かな?)。 (<span class="comment_date">2013/06/12 (水) 20:07:47</span>)</li>
+<li><strong>猫姫</strong> : １フレーム単位の取得&lt;できるというか、このプログラム自体、１フレーム毎に実際取得しています。ただ、質問者さんの意図は違うっぽいですね。1/100秒みたいな意味なら、出来ない(思い付いてない)です。チャレンジはしたんですけどね。 (<span class="comment_date">2013/06/12 (水) 20:13:51</span>)</li>
+<li><strong>猫姫</strong> : Shiftキーさん&gt;100ﾒｰﾄﾙくらいということは、そもそも、閉じるときのメーターがオーバーランしています。閉じてからスリープになるまでのラグがあるので、まずは、早すぎるくらいに閉じてみてください。&lt;このゲームの入力方法としては、向いてないともいう。 (<span class="comment_date">2013/06/12 (水) 20:21:27</span>)</li>
+<li><strong>猫姫</strong> : いろいろ考えているのですが、レギュレーションが。スリープ状態で、MAINCTLも止まっているようなので、閉じていることを処理にどうしてもくみこめません。 (<span class="comment_date">2013/06/12 (水) 20:45:55</span>)</li>
+<li><strong>猫姫</strong> : もし、DSが１/100秒までカウントしていて、それを取得する裏コードがプチコンにあれば、もっと細かくできます。 (<span class="comment_date">2013/06/12 (水) 20:48:52</span>)</li>
+<li><strong>猫姫</strong> : あ、利用はどうぞご自由に。プチコンテクニックみたいなものですし。 (<span class="comment_date">2013/06/12 (水) 20:52:01</span>)</li>
+<li><strong>名無しさん</strong> : そうなんですかTIMEだから1秒未満閉じても取得できないと思っていました (<span class="comment_date">2013/06/12 (水) 21:06:23</span>)</li>
+<li><strong>猫姫</strong> : １フレーム単位の閉じた時間&lt;あ、閉じた時間だけなら出来ます。１秒間のフレーム数を計算式でだしておいて、上記プログラムリストの変数Rを取得したときのフレーム数を取得すればいいです。ということは、開いたときもいけますね。開いてから、時間が１秒上がるまでのフレーム数をだして、引けばいいわけです。開いた瞬間の処理とはいきませんが。 (<span class="comment_date">2013/06/12 (水) 21:09:24</span>)</li>
+<li><strong>猫姫</strong> : ↑と、いうことで、<a href="#ed6e10d0">試作を上げておきます。</a>(<span class="comment_date">2013/06/13 (木) 00:42:39</span>)</li>
+<li><strong>名無しさん</strong> : stop&amp;cont (<span class="comment_date">2013/06/14 (金) 09:06:06</span>)</li>
+<li><strong>名無しさん</strong> : を使ったら楽勝♪ (<span class="comment_date">2013/06/14 (金) 09:06:36</span>)</li>
+<li><strong>Shiftキー</strong> : 900mとかチートしただろ (<span class="comment_date">2013/06/14 (金) 20:03:28</span>)</li>
+<li><strong>猫姫</strong> : ジャンプゲーム&lt;今上がってるのは、閉じるタイミングで８割はスコアが決まるので、簡単とはいいませんが、最高点でますよ。その下の、1/100秒取得と組み合わせると、最高点は無理ゲーになるかも…&lt;おもしろくなるかな?? (<span class="comment_date">2013/06/15 (土) 00:12:36</span>)</li>
+<li><strong>.EXE</strong> : 上手くＯＳもどきに組み込めた。 (<span class="comment_date">2013/06/17 (月) 23:35:59</span>)</li>
+<li><strong>Shiftキー</strong> : OSもどきの自動ロックできた (<span class="comment_date">2013/06/28 (金) 19:32:54</span>)</li>
+<li><strong>名無しさん</strong> : この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は掲示板へ) (<span class="comment_date">2013/06/28 (金) 20:14:16</span>)</li>
+<li><strong>名無しさん</strong> : この作品を組み込んだんだと思うから (<span class="comment_date">2013/06/28 (金) 20:19:42</span>)</li>
+<li><strong>名無しさん</strong> : 十分関係あると思うけど (<span class="comment_date">2013/06/28 (金) 20:19:55</span>)</li>
+<li><strong>Shiftキー</strong> : ↑そうだよ (<span class="comment_date">2013/06/28 (金) 20:21:02</span>)</li>
+<li><strong>.EXE</strong> : ↑↑そうだよ (<span class="comment_date">2013/06/28 (金) 20:43:12</span>)</li>
+<li><strong>猫姫</strong> : 自動ロック&lt;役に立って何よりです。一方UP主は、ゲームに組み込むことばかり考えてます。閉じる→スリープまでのタイムラグが。やはりネックです。行き着く先は、占いゲームか、「挑戦状」の2pマイク(笑 (<span class="comment_date">2013/06/28 (金) 22:09:20</span>)</li>
+<li><strong>がんばる卓球部</strong> : 僕もFTLOCKと組み合わせて使わせてもらいました。ありがとうございます。 (<span class="comment_date">2013/06/28 (金) 23:19:44</span>)</li>
+<li><strong>名無しさん</strong> : .EXEさんや、Shiftキーさん、がんばる卓球部さんと言ってることがかぶりますけど、僕もOSもどき作ってるので、使わせていただきます。 (<span class="comment_date">2013/07/06 (土) 08:13:15</span>)</li>
+<li><strong>ヤッフー</strong> : ↑と同じくｗ (<span class="comment_date">2013/07/11 (木) 15:54:46</span>)</li>
+<li><strong>( ^ω^ )</strong> : 794m行けた (<span class="comment_date">2013/09/01 (日) 12:24:04</span>)</li>
+<li><strong>名無しさん</strong> : 2秒問題解決バージョンのサブルーチン欲しい (<span class="comment_date">2013/09/02 (月) 16:28:49</span>)</li>
+<li><strong>名無しさん</strong> : ↑同じく (<span class="comment_date">2013/09/16 (月) 21:02:27</span>)</li>
+<li><strong>今は名無し</strong> : QRコードをDLしました (<span class="comment_date">2013/11/09 (土) 18:57:04</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/DSの蓋を2秒閉じたら終了するプログラム" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="0e22a0410d9166bbb1076bc66624a022" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_9_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (439d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1546d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2490d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1422d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1433d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (1884d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2085d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1655d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (745d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (103d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1877d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1616d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_9_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2084d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (21h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_9_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1447d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (10d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (10d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (43d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (92d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (95d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (103d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (111d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (222d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+<h4>2019/12/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FCOMMAND%20PROMPT" title="コマンドプロンプト (233d)">コマンドプロンプト</a></li>
+</ul>
+<h4>2019/12/13</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%DF%A5%B3%A5%F3%C9%F7%A5%D5%A5%A9%A5%F3%A5%C8" title="ファミコン風フォント (234d)">ファミコン風フォント</a></li>
+</ul>
+</div>
+
+<h3 id="content_9_3">オンライン情報</h3>
+<p>現在同時に 4 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.065 秒  | このページの最終更新 : 2016/03/03 (木) 15:45:27  (1614d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

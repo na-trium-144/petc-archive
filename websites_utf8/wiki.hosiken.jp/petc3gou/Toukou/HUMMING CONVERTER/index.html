@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : ハミングコンバーター - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : ハミングコンバーター - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, マイク, スペクトラムアナライザー" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FHUMMING%20CONVERTER">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FHUMMING%20CONVERTER">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FHUMMING%20CONVERTER">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FHUMMING%20CONVERTER">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : ハミングコンバーター</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FHUMMING%20CONVERTER">HUMMING CONVERTER</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.026sec. -->
+<div class="contents">
+<ul><li><a href="#r6cfc0af">  概要 </a></li>
+<li><a href="#h1197a32">  起動方法 </a>
+<ul><li><a href="#h88ac295">  おしらせ </a></li></ul></li>
+<li><a href="#u3688318">  画面紹介 </a></li>
+<li><a href="#t032b4ff">  コマンドの選択 </a>
+<ul><li><a href="#qe5c3029">  おしらせ </a></li>
+<li><a href="#pd9af59c">  ご注意 </a></li></ul></li>
+<li><a href="#e1a9cc9a">  アンケート </a></li>
+<li><a href="#v0157e5d">  公開キー </a></li>
+<li><a href="#v4cc294f">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2015年4月5日投稿
+/ 投稿者 : hanzo
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%DE%A5%A4%A5%AF">マイク</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B9%A5%DA%A5%AF%A5%C8%A5%E9%A5%E0%A5%A2%A5%CA%A5%E9%A5%A4%A5%B6%A1%BC">スペクトラムアナライザー</a> </span></p>
+<h3 id="r6cfc0af">概要</h3>
+<p>「ハミングコンバーター」（略して「ハミコン」）は、3DSのマイクに向かって歌った鼻歌を、MMLに変換するプログラムです。<br />
+まずはざっくりと鼻歌をMMLに変換し、MMLの微修正は手作業で行うような使い方を想定しています。<br />
+拙作「<a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%E4%C2%D0%B2%BB%B4%B6%A5%DC%A5%A4%A5%B9%A5%C8%A5%EC%A1%BC%A5%CB%A5%F3%A5%B0" rel="nofollow">絶対音感ボイストレーニング</a>」の「CHECKER FLAG」でいただいたご意見により着想を得て作成してはみたものの、肝心の変換精度は、正直なところかなりいい加減です。</p>
+<p>本日のアクセス数：1　　トータルアクセス数：3434</p>
+
+<h3 id="h1197a32">起動方法</h3>
+<p>ダウンロードしたプロジェクトから HNZHC を実行してください。</p>
+
+<h5 id="h88ac295">おしらせ</h5>
+<ul><li>ダウンロードしたプロジェクトの中には、他にもいくつかの実行可能ファイルがあります。それらについては、以下リンクをご参照ください。
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FTraffic%20Lights" rel="nofollow">HNZTL（交通管制シミュレーター）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FSimplified%20Billiards" rel="nofollow">HNZHS（ビリヤード風ゲーム）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%A5%B9%A5%DA%A1%BC%A5%B9%A5%BF%A5%A4%A5%EB" rel="nofollow">HNZMJG（麻雀役形成ゲーム）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FHUMMING%20CONVERTER" rel="nofollow">HNZHC（ハミングをMMLに変換）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%E4%C2%D0%B2%BB%B4%B6%A5%DC%A5%A4%A5%B9%A5%C8%A5%EC%A1%BC%A5%CB%A5%F3%A5%B0" rel="nofollow">HNZVT（絶対音感ボイストレーニング）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%B3%B3%A4%C3%A4%D7%A4%C1%A1%AAHandleDrive%283D%29" rel="nofollow">HNZCDRV（崖っぷちハンドルドライブ3D）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%A5%DE%A5%F3%A5%C7%A5%EB%A5%D6%A5%ED%BD%B8%B9%E7%C9%C1%B2%E8" rel="nofollow">HNZMBRT（マンデルブロ集合描画）</a></li>
+<li><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FLANDING%A1%CA%C3%E5%CE%A6%A1%CB" rel="nofollow">HNZLND（着陸ゲーム）</a></li></ul></li>
+<li>もし、同名のhanzo soft製のプロジェクトを既にお持ちの場合は、お手数ですが、既存のプロジェクトを消去してから、本プロジェクトをダウンロード願います。</li></ul>
+
+<h3 id="u3688318">画面紹介</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FHUMMING%20CONVERTER&amp;openfile=hnzhc00.JPG" title="hnzhc00.JPG"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FHUMMING%20CONVERTER&amp;src=hnzhc00.JPG" alt="hnzhc00.JPG" title="hnzhc00.JPG" width="448" height="269" /></a></td></tr></tbody></table></div>
+
+<h3 id="t032b4ff">コマンドの選択</h3>
+<p>画面上部に、コマンドが4つ表示されます。現在有効なコマンドの左側には、カーソル「&gt;」が表示されます。カーソルの移動は、十字ボタン上下により行います。</p>
+<ul><li>「BAND」
+<ul><li>周波数帯域を「L（低い）」と「H（高い）」のうちから、十字ボタン左右により選択します。</li>
+<li>初期位置は「L」ですが、「L」ではうまくMML変換されない方や、声が高めの方は、「H」を選択してみてください。</li></ul></li>
+<li>「THRESH」
+<ul><li>音声検出レベルを「0」から「9」の10段階で設定します。設定は十字ボタン左右により行います。</li>
+<li>初期値は「2」ですが、うまくMML変換されない場合は適宜調整を試みてください。</li></ul></li>
+<li>「START CONVERTING」
+<ul><li>Aボタンを押すとMML変換を開始しますので、3DSのマイクに向かってハミングで歌ってください。</li>
+<li>MML変換中は、「@」で表示される拍子の目安に調子を合わせて歌うことをお勧めします。</li>
+<li>MML変換を開始すると、表示が「STOP CONVERTING」になります。「STOP CONVERTING」のときにAボタンを押すと、MML変換を停止します。</li></ul></li>
+<li>「PLAY MML」
+<ul><li>Aボタンを押すと、変換MMLの演奏を開始します。</li></ul></li></ul>
+
+<h5 id="qe5c3029">おしらせ</h5>
+<ul><li>「STOP CONVERTING」でAボタンを押すと、MML変換を停止し、同時に変換MMLをスロット1に書き込みます。</li>
+<li>歌うときは、口を閉じたまま発声する（ハミングする）ことをお勧めします。</li></ul>
+
+<h5 id="pd9af59c">ご注意</h5>
+<ul><li>MML変換中は「PLAY MML」でAボタンを押しても、変換MMLの演奏を行いません。</li>
+<li>MML変換を停止すると、変換MMLをスロット1に書き込みますが、スロット1にプログラムや前回の変換MMLが残っている場合、上書きされます。</li>
+<li>鼻息などの風切音がマイクに混入すると、MML変換が正しく行われにくくなります。</li>
+<li>ビブラートやコブシなどのエフェクトをきかせると、MML変換が正しく行われにくくなります。</li>
+<li>人の声に含まれる周波数成分には個人差があり、声質によっては本プログラムによって正しくMML変換できない場合があります。</li></ul>
+
+<h3 id="e1a9cc9a">アンケート</h3>
+<p>ダウンロードされた方は、できればご投票願います。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/HUMMING CONVERTER" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="151d8900080b9bc67241f418f89db97e" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダウンロードした</td>
+   <td align="right" class="vote_td2">21&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="v0157e5d">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">1DVK34J</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="v4cc294f">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (997d)">掲示板</a>へ)</p>
+<ul><li><strong>アクセラ</strong> : 単なる思い付きを形にして頂きありがとうございます。結構正しく認識されました。相変わらずすごい技術ですねー。 (<span class="comment_date">2015/04/18 (土) 19:53:34</span>)</li>
+<li><strong>hanzo</strong> : ＞アクセラさん：本作をご使用いただきましてありがとうございます。ちなみに本作は、技術的にはどうと言うことはなく、ただ計算量が膨大なだけなのです。その膨大な計算を瞬時にできるのは、プチコン3号の性能のおかげです。 (<span class="comment_date">2015/04/19 (日) 00:09:06</span>)</li>
+<li><strong>Newきゃらくたぁ製作所</strong> : これなら僕でも作曲出来る〜♪(かもしれない。 (<span class="comment_date">2015/05/17 (日) 14:28:49</span>)</li>
+<li><strong>hanzo</strong> : ＞Newきゃらくたぁ製作所さん：本作が作曲活動の一助になれば、作者としても嬉しいです。このwikiには、優れた音楽系ツールがいくつか投稿されているようですので、本格的な作曲はそちらに任せるとして、本作は導入として使っていただくのがよいと思います。 (<span class="comment_date">2015/05/17 (日) 21:09:29</span>)</li>
+<li><strong>R.Y.Miserable</strong> : 私は今までのMML製作を全て手作業で行っていたのですが、このプログラムを使えば、かなりの時間短縮になりそうです。 ちなみに、同じファイルに入っていた卓球のゲームが個人的に好きです。 (<span class="comment_date">2018/11/26 (月) 20:26:05</span>)</li>
+<li><strong>hanzo</strong> : ＞R.Y.Miserableさん：おしゃれなハンドルネームですね。本作は、高度サウンドユニットなしで、なおかつ旧3DSでも、そこそこの速度でフーリエ変換を行えるよう、精度を犠牲にしている部分があります。ゆえに、本格的な作曲に用いようとすると、パフォーマンス不足が直ちに露呈すると思います。前述のとおり、本作は導入としてご使用いただくのが適当かと。卓球ゲームは、適当にボタンを押していても、そこそこラリーが続くのがミソです。拙作全体に亘って言えることですが、数学的・物理的厳密性はそれほど重視せず、何となくそれっぽく動けばOKというスタンスを採っています。 (<span class="comment_date">2018/11/26 (月) 22:42:37</span>)</li>
+<li><strong>はやピー</strong> : 改造してラジオを作るキットでも (<span class="comment_date">2019/05/05 (日) 14:55:30</span>)</li>
+<li><strong>はやピー</strong> : 作ろうかな (<span class="comment_date">2019/05/05 (日) 14:55:45</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/HUMMING CONVERTER" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="151d8900080b9bc67241f418f89db97e" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (697d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (613d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2050d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (642d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (87d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (692d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (212d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (821d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (33d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (316d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (20m)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (757d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1874d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1288d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (268d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (3h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (165d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (75d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/04/19</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (20m)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%B9%A5%BF%A5%F3%A5%C0%A1%BC%A5%C8%B7%D7%BB%BB%B5%A1" title="スタンダード計算機 (9h)">スタンダード計算機</a></li>
+</ul>
+<h4>2021/04/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%CD%F0%C6%AE" title="【公開終了】プチ乱闘 (13h)">【公開終了】プチ乱闘</a></li>
+ <li><a href="/petc3gou/?Toukou%2F3D%C5%AA%A4%CA%A5%DE%A5%C3%A5%D7" title="3Dっぽい何か (13h)">3Dっぽい何か</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (13h)">ピクトチャット2</a></li>
+ <li><a href="/petc3gou/?Toukou%2FChatine" title="Chatine (13h)">Chatine</a></li>
+ <li><a href="/petc3gou/?Toukou%2FFINDEX" title="FINDEX-ブラウザもどき (14h)">FINDEX-ブラウザもどき</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="リズミカルおもちつきKR MAX (15h)">リズミカルおもちつきKR MAX</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="プチコンmkII at 3号 ver4.1.2 (17h)">プチコンmkII at 3号 ver4.1.2</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%CB%E3%BF%FD%A5%BD%A5%EA%A5%C6%A5%A3%A5%A2" title="麻雀ソリティア (23h)">麻雀ソリティア</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="Toukou/リズミカルおもちつきKR (15h)">リズミカルおもちつきKR MAX<span class="counter">(25)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="Toukou/プチコンmkII_at3号 (17h)">プチコンmkII at 3号 ver4.1.2<span class="counter">(23)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%CD%F0%C6%AE" title="Toukou/プチ乱闘 (13h)">【公開終了】プチ乱闘<span class="counter">(18)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%CB%E3%BF%FD%A5%BD%A5%EA%A5%C6%A5%A3%A5%A2" title="Toukou/麻雀ソリティア (23h)">麻雀ソリティア<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (50d)">Nintendo全記号Unicode一覧表<span class="counter">(13)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="Toukou/TASソフト/ピクトチャット2 (13h)">ピクトチャット2<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FChatine" title="Toukou/Chatine (13h)">Chatine<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FFINDEX" title="Toukou/FINDEX (14h)">FINDEX-ブラウザもどき<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F3D%C5%AA%A4%CA%A5%DE%A5%C3%A5%D7" title="Toukou/3D的なマップ (13h)">3Dっぽい何か<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter3" title="Beginner/Chapter3 (1072d)">初心者講座 :  第3章 サンプルプログラム1<span class="counter">(8)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1322d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 6 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3434 回、本日は 1 回、昨日は 2 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.030 秒  | このページの最終更新 : 2019/05/05 (日) 14:56:07  (714d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : ベジェ曲線を表示するだけのプログラム - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : ベジェ曲線を表示するだけのプログラム - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 初代対応" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : ベジェ曲線を表示するだけのプログラム</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">ベジェ曲線を表示するだけのプログラム</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.020sec. -->
+<div class="contents">
+<ul><li><a href="#g25211b5">  概要 </a></li>
+<li><a href="#e411ab30">  スクリーンショット・動画 </a></li>
+<li><a href="#c662ffe4">  プログラムリスト </a></li>
+<li><a href="#f43e4a8c">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2011年07月07日投稿
+/ 投稿者 : 名無しさん
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%BD%E9%C2%E5%C2%D0%B1%FE">初代対応</a> </span></p>
+<h3 id="g25211b5">概要</h3>
+<p>ベジェ曲線のようなものを表示します。<br />
+12行目のNの数値を変更することで、曲線のなめらかさを変更できます。<br />
+Nの数値を2の累乗の数にするときれいに表示できます(1024ぐらいまでは)</p>
+
+<h3 id="e411ab30">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=HNI_0013.JPG" title="HNI_0013.JPG"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=HNI_0013.JPG" alt="HNI_0013.JPG" title="HNI_0013.JPG" width="640" height="480" /></a></div>
+
+
+<h3 id="c662ffe4">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＩＦ　ＶＣＬＥＡＲ＿１＝＝０　ＴＨＥＮ　ＡＸ＝５０：ＢＸ＝１３０：ＣＸ＝２３０：ＤＸ＝２１０：ＡＹ＝１５０：ＢＹ＝２０：ＣＹ＝７０：ＤＹ＝１５０</li>
+<li>ＣＬＳ：ＧＣＬＳ：ＫＥＹ　５，”ＢＥＺＩＥ”</li>
+<li>ＶＣＬＥＡＲ＿１＝１</li>
+<li>ＧＰＡＧＥ　１：ＰＮＬＴＹＰＥ　”ＯＦＦ”</li>
+<li>＠ＬＯＯＰ</li>
+<li>ＧＣＬＳ：Ｔ＝０</li>
+<li>ＩＦ　Ｚ＝＝１　ＴＨＥＮ　ＡＸ＝ＴＣＨＸ：ＡＹ＝ＴＣＨＹ</li>
+<li>ＩＦ　Ｚ＝＝２　ＴＨＥＮ　ＢＸ＝ＴＣＨＸ：ＢＹ＝ＴＣＨＹ</li>
+<li>ＩＦ　Ｚ＝＝３　ＴＨＥＮ　ＣＸ＝ＴＣＨＸ：ＣＹ＝ＴＣＨＹ</li>
+<li>ＩＦ　Ｚ＝＝４　ＴＨＥＮ　ＤＸ＝ＴＣＨＸ：ＤＹ＝ＴＣＨＹ</li>
+<li></li>
+<li>Ｎ＝３２</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　Ｎ−１</li>
+<li>Ｘ１＝ＡＸ：Ｙ１＝ＡＹ：Ｘ２＝ＢＸ：Ｙ２＝ＢＹ</li>
+<li>Ｘ３＝ＣＸ：Ｙ３＝ＣＹ：Ｘ４＝ＤＸ：Ｙ４＝ＤＹ</li>
+<li>Ｘ＿１＝（１−Ｔ）＊（１−Ｔ）＊（１−Ｔ）＊Ｘ１＋３＊（１−Ｔ）＊（１−Ｔ）＊Ｔ＊Ｘ２＋３＊（１−Ｔ）＊Ｔ＊Ｔ＊Ｘ３＋Ｔ＊Ｔ＊Ｔ＊Ｘ４</li>
+<li>Ｙ＿１＝（１−Ｔ）＊（１−Ｔ）＊（１−Ｔ）＊Ｙ１＋３＊（１−Ｔ）＊（１−Ｔ）＊Ｔ＊Ｙ２＋３＊（１−Ｔ）＊Ｔ＊Ｔ＊Ｙ３＋Ｔ＊Ｔ＊Ｔ＊Ｙ４</li>
+<li></li>
+<li>Ｔ＝Ｔ＋１／Ｎ</li>
+<li>Ｘ＿２＝（１−Ｔ）＊（１−Ｔ）＊（１−Ｔ）＊Ｘ１＋３＊（１−Ｔ）＊（１−Ｔ）＊Ｔ＊Ｘ２＋３＊（１−Ｔ）＊Ｔ＊Ｔ＊Ｘ３＋Ｔ＊Ｔ＊Ｔ＊Ｘ４</li>
+<li>Ｙ＿２＝（１−Ｔ）＊（１−Ｔ）＊（１−Ｔ）＊Ｙ１＋３＊（１−Ｔ）＊（１−Ｔ）＊Ｔ＊Ｙ２＋３＊（１−Ｔ）＊Ｔ＊Ｔ＊Ｙ３＋Ｔ＊Ｔ＊Ｔ＊Ｙ４</li>
+<li></li>
+<li>ＩＦ　ＰＬＣＬ＝＝０　ＴＨＥＮ　ＧＬＩＮＥ　Ｘ１，Ｙ１，Ｘ２，Ｙ２，３</li>
+<li>ＩＦ　ＰＬＣＬ＝＝０　ＴＨＥＮ　ＧＢＯＸ　Ｘ２＋１，Ｙ２−１，Ｘ２−１，Ｙ２＋１，３</li>
+<li>ＩＦ　ＰＬＣＬ＝＝０　ＴＨＥＮ　ＧＬＩＮＥ　Ｘ３，Ｙ３，Ｘ４，Ｙ４，３</li>
+<li>ＩＦ　ＰＬＣＬ＝＝０　ＴＨＥＮ　ＧＢＯＸ　Ｘ３＋１，Ｙ３−１，Ｘ３−１，Ｙ３＋１，３</li>
+<li></li>
+<li>ＧＬＩＮＥ　Ｘ＿１，Ｙ＿１，Ｘ＿２，Ｙ＿２，２</li>
+<li>ＧＰ＝１</li>
+<li>ＮＥＸＴ　Ｉ</li>
+<li>＠ＢＴＮ＿Ｏ</li>
+<li>ＢＴＮ＝ＢＵＴＴＯＮ（）</li>
+<li>ＩＦ　ＢＴＮ＝＝０　ＴＨＥＮ　ＧＯＴＯ　＠ＬＯＯＰ２</li>
+<li>ＧＯＴＯ　＠ＢＴＮ＿Ｏ</li>
+<li>＠ＬＯＯＰ２</li>
+<li>ＢＴＮ＝ＢＵＴＴＯＮ（）</li>
+<li>ＩＦ　ＰＬＣＬ＝＝０　ＡＮＤ　ＢＴＮ＝＝６４　ＴＨＥＮ　ＰＬＣＬ＝１：ＧＯＴＯ　＠ＬＯＯＰ</li>
+<li>ＩＦ　ＰＬＣＬ＝＝１　ＡＮＤ　ＢＴＮ＝＝６４　ＴＨＥＮ　ＰＬＣＬ＝０：ＧＯＴＯ　＠ＬＯＯＰ</li>
+<li>ＩＦ　ＴＣＨＳＴ＝＝１　ＴＨＥＮ　ＧＯＴＯ　＠ＬＯＯＰ</li>
+<li>ＶＳＹＮＣ　１</li>
+<li></li>
+<li>ＩＦ　（ＡＸ−１０＜ＴＣＨＸ　ＡＮＤ　ＡＸ＋１０＞ＴＣＨＸ）　ＡＮＤ　（ＡＹ−１０＜ＴＣＨＹ　ＡＮＤ　ＡＹ＋１０＞ＴＣＨＹ）　ＴＨＥＮ　Ｚ＝１</li>
+<li>ＩＦ　（ＢＸ−１０＜ＴＣＨＸ　ＡＮＤ　ＢＸ＋１０＞ＴＣＨＸ）　ＡＮＤ　（ＢＹ−１０＜ＴＣＨＹ　ＡＮＤ　ＢＹ＋１０＞ＴＣＨＹ）　ＴＨＥＮ　Ｚ＝２</li>
+<li>ＩＦ　（ＣＸ−１０＜ＴＣＨＸ　ＡＮＤ　ＣＸ＋１０＞ＴＣＨＸ）　ＡＮＤ　（ＣＹ−１０＜ＴＣＨＹ　ＡＮＤ　ＣＹ＋１０＞ＴＣＨＹ）　ＴＨＥＮ　Ｚ＝３</li>
+<li>ＩＦ　（ＤＸ−１０＜ＴＣＨＸ　ＡＮＤ　ＤＸ＋１０＞ＴＣＨＸ）　ＡＮＤ　（ＤＹ−１０＜ＴＣＨＹ　ＡＮＤ　ＤＹ＋１０＞ＴＣＨＹ）　ＴＨＥＮ　Ｚ＝４</li>
+<li>ＩＦ　ＴＣＨＳＴ＝＝０　ＴＨＥＮ　ＴＣＺ＝０：Ｚ＝０</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ２</li>
+</ol></code></div></div>
+
+<h3 id="f43e4a8c">CHECKER FLAG (ひとことコメント)</h3>
+<ul><li>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3012d)">掲示板</a>へ)</li>
+<li><strong>バイカウントメルビル</strong> : ４行目のイコールはスペースではないのですか？ (<span class="comment_date">2011/07/28 (木) 18:42:26</span>)</li>
+<li><strong>作者</strong> : そうですね、修整しました。 (<span class="comment_date">2011/07/28 (木) 19:20:07</span>)</li>
+<li><strong>バイカウントメルピル</strong> : 23・25行はGLINEでは？ (<span class="comment_date">2012/01/07 (土) 14:43:44</span>)</li>
+<li><strong>投稿者</strong> : すいません。直しました。 (<span class="comment_date">2012/01/07 (土) 22:56:14</span>)</li>
+<li><strong>おうぎょく</strong> : 自身の作品に、このプログラムを利用してもよろしいでしょうか。 (<span class="comment_date">2012/10/05 (金) 11:32:31</span>)</li>
+<li><strong>投稿者</strong> : いいですよ (<span class="comment_date">2012/10/05 (金) 18:43:38</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/ベジェ曲線を表示するだけのプログラム" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="bf7a43dfa897333ea3164f12ac829eb6" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (551d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1659d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2602d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1534d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1545d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (1996d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2197d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1767d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (857d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (215d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1990d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1729d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2196d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1559d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (82d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (104d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (122d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (122d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (156d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (204d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (207d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (215d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (223d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (334d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 3 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.023 秒  | このページの最終更新 : 2012/10/05 (金) 18:43:38  (2971d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

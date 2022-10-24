@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>既知の不具合 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="既知の不具合 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Bug">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Bug">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Bug">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Bug">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>既知の不具合</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Bug">Bug</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.277sec. -->
+<p>プチコンmkII で見つかった、既知の不具合の一覧です。おもに Twitter や 2 ちゃんねるの報告から情報を集めてます。ここは見つかって間もない第一報的な情報も扱っているので、<a href="http://smileboom.com/special/ptcm2/html_bug.php" rel="nofollow">公式サイトで公開されている公式バグ情報</a>も参照してください。</p>
+<p>mkII では修正済みの旧プチコンのバグについては「<a href="/petc/?Bug%2FOld" title="Bug/Old (3594d)">旧プチコンの既知の不具合</a>」をごらんください。</p>
+<ul class="contentsx"><li><a href="#lcea08d6">V2.3 のバグ</a><ul><li><a href="#b95f1a1b">ファンクションキーで改行を含む文字列や100文字より長い文字列を編集モードに流し込むと挙動がおかしくなる</a></li><li><a href="#je8358d1">ＩＮＰＵＴでオーバーフロー</a></li><li><a href="#db855424">SORT系命令で動作が一定でない</a></li><li><a href="#k03cbae7">CHKCHR()の引数に文字列が渡せる</a></li><li><a href="#c43726fc">電子説明書の誤植</a></li><li><a href="#f8a08387">CONTの動作が不安定</a></li></ul></li><li><a href="#w13bbea4">V2.1 のバグ</a><ul><li><a href="#gfb534b8">BGMPLAY の MML で、チャンネル指定を省略したときの挙動が V2.0 と異なる</a></li><li><a href="#u80598f7">説明書の一部が途切れている</a></li></ul></li><li><a href="#f8821824">V2.0 からあるバグ</a><ul><li><a href="#e71d2b83">BGMSTOP でエンベロープの音のリリースタイムの余韻を止められない</a></li><li><a href="#s9013323">拡大したスプライトが一定枚数以上重なると、グラフィック画面の一部が欠けて見える</a></li><li><a href="#xa8b38ce">グラフィック画面を隠した直後に描画すると、一瞬表示されてしまう。</a></li><li><a href="#c6271f97">文字列+STR$(変数) がうまく動かない場合がある</a></li><li><a href="#s7fbed88">SYSBEEP を FALSE にしていても、特定の箇所のみキークリック音が鳴る</a></li><li><a href="#mba36015">BGMSET などで設定した BGM の内容が、ホームメニューに戻っても残ったまま</a></li><li><a href="#o6769859">【仕様かも?】N コマンドをタイやスラー、ポルタメントでつなげられない</a></li><li><a href="#r92494e5">【仕様かも?】縦横比が正方形でない長方形枠で、拡大率 100% よりも大きいスプライトを回転させると、スプライトの長方形枠の外にはみ出す部分が表示されない</a></li><li><a href="#y1658754">【仕様かも?】縦 64 ピクセル、拡大率 100% よりも大きいスプライトが画面外にはみ出すと、反対側から何か出てくる</a></li><li><a href="#l1d273e5">【仕様かも?】サンプルプログラムのファイル名で保存</a></li></ul></li><li><a href="#o8daee38">バグではないが、不便な仕様</a><ul><li><a href="#i8ba4cd3">【不便仕様】BTRIG、BUTTON(1) などが 1/60 秒単位でしか取れない</a></li><li><a href="#v858c48f">【不便仕様】COLOR で指定したテキスト画面の背景色の、表示優先順位が低い</a></li><li><a href="#b200eb3d">【不便仕様】PCM のドラム音色の定位 (パンポット) が中央にない</a></li><li><a href="#t0a8110c">【不便仕様】SUBST$ の最後の引数が &quot;&quot; のとき値が変更されない</a></li><li><a href="#i16ec45d">【不便仕様】SPSCALEで拡大したところの当たり判定が行われない</a></li></ul></li><li><a href="#da10ce40">バグではなく、仕様だったもの</a><ul><li><a href="#tab7a004">【仕様でした】「BGMPLAY トラック(1〜7),&quot;MML文字列&quot;」の使い方がエラーになる</a></li><li><a href="#sd6879d5">【仕様でした】MML を複数トラック鳴らした場合、チャンネルが欠けてしまうケースがある (PSG のみ)</a></li></ul></li><li><a href="#w2b70e9a">プチコンmkII V2.3 で修正されたもの</a><ul><li><a href="#n2ee4040">【V2.3 で修正】文字列の比較およびSORT命令の動作に問題</a></li><li><a href="#of6b35ba">【V2.3 で修正】COLSET命令で不正な色情報文字列を指定した場合にフリーズ</a></li><li><a href="#k3a0b4ea">【V2.3 で修正】Ａボタンによる命令入力候補の誤動作</a></li><li><a href="#k49d12dc">【V2.3 で修正】電子説明書の起動によってコピー範囲の記憶がリセットされる</a></li><li><a href="#dfb37918">【V2.3 で修正】大量の文字列の演算で誤動作</a></li><li><a href="#c11f0d6c">【V2.3 で修正】非パッケージ型ファイルを読み込んでもPACKAGE$が変化しない</a></li><li><a href="#mec805a9">【V2.3 で修正】PRGNAME$,PACKAGE$をセーブ時にも対応</a></li><li><a href="#ud2006f8">【V2.3 で修正】COLINITで引数を省略した場合の動作</a></li><li><a href="#z05f9ad3">【V2.3 で修正】MMLのチャンネル指定省略時について</a></li><li><a href="#p13a5d24">【V2.3 で修正】サンプルプログラムのSAMPLE5の誤動作</a></li><li><a href="#hf5b5f09">【V2.3 で修正】サンプルプログラムのGAME4の誤用</a></li><li><a href="#h818c225">【V2.3 で修正】電子説明書の誤植</a></li></ul></li><li><a href="#qafd6717">プチコンmkII V2.1 で修正されたもの</a><ul><li><a href="#i8f6cab4">【V2.1 で修正】 【不便仕様】QR コード読み込み完了のファイル保存時、ファイル名が表示されないのが不便</a></li><li><a href="#q55169f3">【V2.1 で修正】【注意】MML で、タイ/スラー記号などを介して長さ指定を複数記述するとフリーズ</a></li><li><a href="#q55169f3">【V2.1 で修正】【注意】MML で、無効なイコール記号を記述するとフリーズする</a></li><li><a href="#c34d0085">【V2.1 で修正】【注意】プログラム中の「★」記号が改行に変わってしまう</a></li><li><a href="#mcc37050">【V2.1 で修正】【注意】GDRAWMD 1 のときに、GCIRCLE で画面外にはみだす円を描くと誤動作やフリーズ</a></li><li><a href="#xeeaaae2">【V2.1 で修正】【注意】実行モードで、行末で Shift+Del を押すと誤動作やフリーズ</a></li><li><a href="#qb9abe11">【V2.1 で修正】保存ファイル数が少ないとき、ホーム画面のファイル選択で特定の操作をするとフリーズ</a></li><li><a href="#s121a380">【V2.1 で修正】QR コード作成の際に表示される内容が入れ替わっている</a></li><li><a href="#i09c5827">【V2.1 で修正】MML で、ゲート設定が短いと、短い音符の音が鳴らない</a></li><li><a href="#ta5423e7">【V2.1 で修正】MML で Q の設定により音符の長さに誤差が発生する場合がある</a></li><li><a href="#p95dab9c">【V2.1 で修正】BGFILL 命令でスクリーンデータを文字列指定したとき、キャラクターの配置が正しく処理されない</a></li><li><a href="#ud3db8ee">【V2.1 で修正】GCOPY 命令で、転送元と転送先の座標が同じだと転送されない</a></li><li><a href="#f832418a">【V2.1 で修正】GCIRCLE で、角度 0 をまたぐ円弧を描くことができない</a></li><li><a href="#e4d8a728">【V2.1 で修正】電子説明書を出入りすると、ファンクションキーの設定内容が化ける</a></li><li><a href="#s22df11a">【V2.1 で修正】「作品を見る」から RECVFILE 命令を使用すると、上書き確認のメッセージが表示されない</a></li><li><a href="#c539f467">【V2.1 で修正?】VAL(&quot;-&quot;) でオーバーフロー</a></li><li><a href="#uc5302fc">【V2.1 で修正】プログラムを実行してから 1 回目の VSYNC 命令が無視される</a></li><li><a href="#gd924fce">【V2.1 で修正】PNLTYPE を実行すると、VISIBLE の状態が一部リセットされる</a></li><li><a href="#y8b0b7fc">【V2.1 で修正】MML で、「&lt;」コマンドで本来の上限である 8 オクターブを超えてしまう</a></li><li><a href="#mf9c01c1">【V2.1 で修正】GCIRCLE の描画速度が旧プチコンよりも遅くなっている</a></li><li><a href="#d4470005">【V2.1 で修正】「`」 と CHR$(96) など、一部文字とキャラクターコードが同じと認識されない</a></li><li><a href="#y7427a05">【V2.1 で修正】命令文入力支援で、ページとページの境目に当たる入力候補 1 つが抜けている</a></li><li><a href="#p7312970">【V2.1 で修正】PRINT のカンマ指定で出力した文字列の最後の文字が表示されない</a></li><li><a href="#z3db8e3f">【V2.1 で修正】ダイレクトモードのコマンドの入力履歴が一部無くなる</a></li><li><a href="#e67f0b0c">【V2.1 で修正】文字列で存在しないラベルを指定したときのエラーが違う</a></li><li><a href="#u4a901f3">【V2.1 で修正】GPAINT 命令で、塗りを指定した場所がすでに塗り色と同じ色だった場合、関係ない場所も塗られる</a></li><li><a href="#r362c7e8">【V2.1 で修正】TALK 命令で合成音声を再生中、不正な TALK 命令を実行してエラーを起こさせると、TALKCHK() が TRUE のままになる</a></li><li><a href="#w9ddda93">【V2.1 で修正】ACLS 命令を実行すると、BG の背景色の変更がきかなくなる</a></li><li><a href="#h65b3e87">【V2.1 で修正】MML のマクロ定義にポルタメント (_) があると、以降の MML 解釈がおかしくなる場合がある</a></li><li><a href="#r24025d4">【V2.1 で修正】BGOFS の自動補完スクロールで、ループの境目をまたいだスクロールをすると 1 周してしまう</a></li><li><a href="#gc3a8f23">【V2.1 で修正】メモリ不足になるほど文字列を定義すると、以降文字列の挙動に誤動作</a></li><li><a href="#ab371dda">【V2.1 で修正】SPCOLVEC の設定がないスプライトの衝突判定が誤っている場合がある</a></li><li><a href="#b3a22293">【V2.1 で修正】SPHIT 命令の当たり判定の縦幅が 1 ピクセル大きい</a></li><li><a href="#y6132e00">【V2.1 で修正】サンプルの「GAME3」の動作が速すぎる</a></li><li><a href="#y95797c7">【V2.1 で修正】サンプルの「DRWED」で、BOX または FILL を描いた後の TEXT 入力がおかしい</a></li><li><a href="#h60ff336">【V2.1 で修正】サンプルの「SAMPLE12」で、存在しないファイルをロードするとエラーになる</a></li><li><a href="#ub756d19">【V2.1 で修正】電子説明書の誤植</a></li></ul></li></ul>
+<h3 id="lcea08d6">V2.3 のバグ</h3>
+
+<h4 id="b95f1a1b">ファンクションキーで改行を含む文字列や100文字より長い文字列を編集モードに流し込むと挙動がおかしくなる</h4>
+<p>ファンクションキーで改行を含む文字列を編集モードに流し込むと改行されないことがある。また、100文字より長い文字列を編集モードに流し込むと101文字目以降がはき出されないことがある。</p>
+<p>具体的には以下の様になる。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">改行</th><th class="style_th">文字数</th><th class="style_th">入力モード</th><th class="style_th">結果</th></tr><tr><td class="style_td">あり</td><td class="style_td">100文字越え</td><td class="style_td">上書き</td><td class="style_td">改行されず、100文字までしかはき出されない。BEEP 2が鳴る。</td></tr><tr><td class="style_td">あり</td><td class="style_td">100文字越え</td><td class="style_td">挿入</td><td class="style_td">改行されるが、100文字までしかはき出されない。</td></tr><tr><td class="style_td">あり</td><td class="style_td">100文字未満</td><td class="style_td">上書き</td><td class="style_td">改行されるが、はき出されない。</td></tr><tr><td class="style_td">あり</td><td class="style_td">100文字未満</td><td class="style_td">挿入</td><td class="style_td">正常</td></tr><tr><td class="style_td">なし</td><td class="style_td">100文字越え</td><td class="style_td">上書き</td><td class="style_td">100文字までしかはき出されない。</td></tr><tr><td class="style_td">なし</td><td class="style_td">100文字越え</td><td class="style_td">挿入</td><td class="style_td">100文字までしかはき出されない。</td></tr><tr><td class="style_td">なし</td><td class="style_td">100文字未満</td><td class="style_td">上書き</td><td class="style_td">正常</td></tr><tr><td class="style_td">なし</td><td class="style_td">100文字未満</td><td class="style_td">挿入</td><td class="style_td">正常</td></tr></tbody></table></div>
+
+<h4 id="je8358d1"><span class="basic-text">ＩＮＰＵＴ</span>でオーバーフロー</h4>
+<p><span class="basic-text">ＩＮＰＵＴ　Ａ</span> に対し <span class="basic-text">−</span> と入力すると Overflow エラーで止まってしまう。</p>
+
+<h4 id="db855424">SORT系命令で動作が一定でない</h4>
+<p><span class="basic-text">ＳＯＲＴ，ＲＳＯＲＴ</span>を使用したとき、並び替えの範囲が21以上で数値が同じ項目があり、その結果で別の配列を並び替える場合、同じ項目のある部分に対応する部分の並ぶ順番がころころ変わる。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ</li>
+<li>ＣＬＥＡＲ：ＤＩＭ　Ａ（２１），Ｂ（２１）</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　２０</li>
+<li>Ａ（Ｉ）＝Ｉ</li>
+<li>Ｂ（Ｉ）＝Ｉ％４</li>
+<li>ＮＥＸＴ</li>
+<li>ＳＯＲＴ　０，２１，Ａ，Ｂ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　２０</li>
+<li>ＰＲＩＮＴ　Ａ（Ｉ），Ｂ（Ｉ）</li>
+<li>ＮＥＸＴ</li>
+</ol></code></div></div>
+
+<h4 id="k03cbae7">CHKCHR()の引数に文字列が渡せる</h4>
+<p>下のプログラムがエラーにならない。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>？ＣＨＫＣＨＲ（””，０）</li>
+<li>？ＣＨＫＣＨＲ（０，””）</li>
+</ol></code></div></div>
+<p>ただし、両方の引数を文字列にするとエラーが出る。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>？ＣＨＫＣＨＲ（””，””）</li>
+</ol></code></div></div>
+
+<h4 id="c43726fc">電子説明書の誤植</h4>
+<ul><li>「10 サウンド関係の表 → MML コマンド」の ) コマンドの説明で、「ベロシティ減算 ( (0〜(127 )」と書かれているが、「ベロシティ減算 ( )0〜)127 )」が正しい。</li>
+<li>「11 BASIC基本仕様 → エラー番号表」の説明に、エラー21 (FOR without NEXT), 22 (Illegal MML) が載っていない。</li></ul>
+
+<h4 id="f8a08387">CONTの動作が不安定</h4>
+<p><span class="basic-text">ＣＯＮＴ</span>でプログラムを再開しようとするとき、一部のプログラムで<span class="basic-text">ＣＯＮＴ</span>した瞬間に行番号つきのSyntax errorになる。</p>
+<p>そこの行番号でおかしな文法があれば話は別だが、特におかしな文法がない場合がある。</p>
+<p>エラーになったらプチコンの仕様で再開できなくなるため、<span class="basic-text">ＲＵＮ</span>でやり直すしかない。</p>
+
+<h3 id="w13bbea4">V2.1 のバグ</h3>
+
+<h4 id="gfb534b8">BGMPLAY の MML で、チャンネル指定を省略したときの挙動が V2.0 と異なる</h4>
+<p>BGMPLAY の MML で、チャンネル指定を省略したとき、V2.0 ではチャンネル 0 が使われていましたが、V2.1 では、和音を鳴らす際に異常な挙動となります。</p>
+<p>以下のプログラムを実行すると、V2.1 では和音にならず「ドレミファソミファソラシ」とつながって鳴ってしまいます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”ＣＤＥＦＧ：１ＥＦＧＡＢ”</li>
+</ol></code></div></div>
+<p>チャンネル指定を行うことで問題なくなります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”：０ＣＤＥＦＧ：１ＥＦＧＡＢ”</li>
+</ol></code></div></div>
+<p>また、トラック内で単音の場合も問題ありません。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”ＣＤＥＦＧＦＥＤＣ”</li>
+</ol></code></div></div>
+
+<h4 id="u80598f7">説明書の一部が途切れている</h4>
+<p>取扱説明書の、10 サウンド関係の表 TALKコマンド（こちらについてはv2.3で修正）</p>
+<ul><li>11 BASIC基本仕様 エラー番号表</li></ul>
+<p>の2つのページの終わりがなくなっている</p>
+
+<h3 id="f8821824">V2.0 からあるバグ</h3>
+
+<h4 id="e71d2b83">BGMSTOP でエンベロープの音のリリースタイムの余韻を止められない</h4>
+<p>BGMSTOP では、演奏が終わったあとの音の余韻を止めることができない。もし BGMPLAY でエンベロープのリリースタイムの設定を誤り余韻が長い音を鳴らしてしまうと、それをプログラムから簡単に止める手段がないので、自然に鳴り終わるまでしばらくうるさい状態が続いてしまう。</p>
+<p>緊急で音を止めたい場合は、電子説明書を開閉するとなんとかなるようです。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>’　リリースタイム　カ゛　セ゛ロ　（キケン）</li>
+<li>ＢＧＭＰＬＡＹ”＠１４７＠Ｅ１２７，０，０，０ＣＤＥＦＧ”</li>
+</ol></code></div></div>
+
+<h4 id="s9013323">拡大したスプライトが一定枚数以上重なると、グラフィック画面の一部が欠けて見える</h4>
+<p>SPOFS で拡大したスプライトが一定枚数 (15〜20枚 ぐらい以上) 重なると、重なった部分のグラフィック画面が、横ライン上に一時的に (大量に重なっている間のみ) 欠けて見える。バグというか、ハードウェアの限界?</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%B3%C8%C2%E7%A4%B7%A4%BF%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%AC%BD%C5%A4%CA%A4%EB%A4%C8.jpg" title="拡大したスプライトが重なると.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%B3%C8%C2%E7%A4%B7%A4%BF%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%AC%BD%C5%A4%CA%A4%EB%A4%C8.jpg" alt="拡大したスプライトが重なると.jpg" title="拡大したスプライトが重なると.jpg" width="480" height="359" /></a></div>
+
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　９９</li>
+<li>　　ＧＬＩＮＥ　ＲＮＤ（２５６），ＲＮＤ（１９２），ＲＮＤ（２５６），ＲＮＤ（１９２），ＲＮＤ（２５６）</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　３１</li>
+<li>　　ＳＰＳＥＴ　Ｉ，１００，０，０，０，０</li>
+<li>　　ＳＰＳＣＡＬＥ　Ｉ，２００</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>＠ＬＯＯＰ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　３１</li>
+<li>　　ＳＰＯＦＳ　Ｉ，ＲＮＤ（３２），ＲＮＤ（３２），６０</li>
+<li>ＮＥＸＴ</li>
+<li>ＷＡＩＴ　６０</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="xa8b38ce">グラフィック画面を隠した直後に描画すると、一瞬表示されてしまう。</h4>
+<p>VISIBLE 命令でグラフィック画面を隠した直後に描画すると、旧プチコンとは異なり一瞬グラフィック画面が表示されてしまう。たとえば、以下のプログラムを実行すると、一瞬画面が白くなる。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＶＩＳＩＢＬＥ　１，１，０，０，０，０：ＧＣＬＳ　１５</li>
+</ol></code></div></div>
+<p>どうも、VISIBLE の表示状態が反映されるのが旧プチコンとは違って 1 フレーム遅れているもよう。<span class="basic-text">ＷＡＩＴ　１</span> をはさむと白いのは見えなくなります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＶＩＳＩＢＬＥ　１，１，０，０，０，０：ＷＡＩＴ　１：ＧＣＬＳ　１５</li>
+</ol></code></div></div>
+
+<h4 id="c6271f97">文字列+STR$(変数) がうまく動かない場合がある</h4>
+<p>「文字列+STR$(配列(変数))」とすると、ごくまれに STR$ が文字列の 1 文字目を返すことがある。「A$=STR$(配列(変数)):A$=文字列+A$」とすると回避できる模様。<a href="https://twitter.com/#!/notohoho/status/185378292692557824" rel="nofollow">社長のつぶやき</a>によると、文字列まわりまたは CLEAR 命令の不具合が潜んでいる可能性があるとのこと。</p>
+
+<h4 id="s7fbed88">SYSBEEP を FALSE にしていても、特定の箇所のみキークリック音が鳴る</h4>
+<p>SYSBEEP を FALSE にしていると、システム音は何も鳴らなくなるはずだが、ダイレクトモードにおいて「A」(リターンキー) と「Y」(BS キー) の押下のみ、キークリック音 (ブチブチ) が鳴る。実行中は鳴らないので、そういう意味では問題ありません。</p>
+
+<h4 id="mba36015">BGMSET などで設定した BGM の内容が、ホームメニューに戻っても残ったまま</h4>
+<p>BASIC 画面からホームメニューに戻ると基本的にすべての設定が初期化されるが、BGMSET や BGMSETD で設定した MML による BGM (128 〜 255 番) の内容だけは残ったままになっている。ただし、基本的に MML 領域が不足することをしていない限り実害はないと思われます。</p>
+
+<h4 id="o6769859">【仕様かも?】N コマンドをタイやスラー、ポルタメントでつなげられない</h4>
+<p>N コマンドをタイやスラー、ポルタメントでつなげようとしても、Illegal MML エラーになる。ただし、説明書にはできるとは特に書いていないので、できたら便利なのだが仕様かもしれない。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｎ６０＆Ｎ８０”　　’エラー</li>
+<li>ＢＧＭＰＬＡＹ　”Ｎ６０＿Ｎ８０”　　’エラー</li>
+</ol></code></div></div>
+
+<h4 id="r92494e5">【仕様かも?】縦横比が正方形でない長方形枠で、拡大率 100% よりも大きいスプライトを回転させると、スプライトの長方形枠の外にはみ出す部分が表示されない</h4>
+
+<h4 id="y1658754">【仕様かも?】縦 64 ピクセル、拡大率 100% よりも大きいスプライトが画面外にはみ出すと、反対側から何か出てくる</h4>
+<p>縦 64 ピクセル、拡大率 100% よりも大きい (つまり、縦幅が 65 ピクセル以上) のスプライトが画面の上下からはみ出すと、反対側から顔を出してしまう。拡大していなくても、回転により縦幅が長くなった場合も同様。以下は再現用のテストプログラム (<a href="https://twitter.com/#!/yourenzhu/status/183774015192707072" rel="nofollow">Twitter より引用</a>)。</p>
+<div class="img_margin" style="text-align:left"><a href="http://twitpic.com/show/large/90yrkn.jpg" title="90yrkn.jpg"><img src="http://twitpic.com/show/large/90yrkn.jpg" alt="90yrkn.jpg" title="90yrkn.jpg" /></a></div>
+
+<p>要は画面の縦幅 192 ピクセルに対して、見えていない部分の縦幅が 64 ピクセルしかなく、それを超えると反対側から出てくるという状況。バグではなく、DS のハードウェアによるスプライトの仕様の可能性もあります。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%C2%E7%A4%AD%A4%A4%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%AC%C8%BF%C2%D0%C2%A6%A4%AB%A4%E9%BD%D0%A4%C6%A4%AF%A4%EB.jpg" title="大きいスプライトが反対側から出てくる.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%C2%E7%A4%AD%A4%A4%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%AC%C8%BF%C2%D0%C2%A6%A4%AB%A4%E9%BD%D0%A4%C6%A4%AF%A4%EB.jpg" alt="大きいスプライトが反対側から出てくる.jpg" title="大きいスプライトが反対側から出てくる.jpg" width="480" height="359" /></a></div>
+
+
+<h4 id="l1d273e5">【仕様かも?】サンプルプログラムのファイル名で保存</h4>
+<p>PC で ptc ファイルを直接書き換えるか、非純正の QR コード生成ツールを使い、ファイル名がサンプルプログラムのいずれかと被っている QR コードを作成すると、プチコン上で読み込めてしまう。この場合、サンプルプログラムが上書きされて消えることはなく、QR コードから保存した同名のプログラムと共存した状態となってしまい、以下のような状況になります。</p>
+<ul><li><span class="basic-text">ＬＯＡＤ</span>、<span class="basic-text">ＳＡＶＥ</span>、<span class="basic-text">ＥＸＥＣ</span>、<span class="basic-text">ＤＥＬＥＴＥ</span>、<span class="basic-text">ＲＥＮＡＭＥ</span>、<span class="basic-text">ＡＰＰＥＮＤ</span> 命令においては、同名のサンプルプログラムが操作対象として扱われる (そのため、リネームや削除はできない)</li>
+<li>作品リストから実行した場合、同名のサンプルプログラムが実行される</li></ul>
+
+<h3 id="o8daee38">バグではないが、不便な仕様</h3>
+
+<h4 id="i8ba4cd3">【不便仕様】BTRIG、BUTTON(1) などが 1/60 秒単位でしか取れない</h4>
+<p>これはバグではなく、不便な仕様。ボタン押した瞬間だけ有効になる BTRIG、BUTTON(1) 関数などが、1/60 秒 (1 フレーム) の瞬間でしか有効にならない。したがって、VSYNC 2 以上で処理を回していたり、処理落ちしたりすると、ボタンの入力取得が漏れてしまうタイミングが発生するので事実上使えない。</p>
+<p>また、キーボードを表示した状態では、L ボタンの入力を取りこぼしやすい (キーボードの表示切り替えによる処理落ちが発生するため)。WAIT の直後ぐらいで値を読み取ると大丈夫そうです。</p>
+<p>逆に VSYNC や WAIT を使わずに処理を回すと、1/60 秒の間はフラグが残り続けるので、FOR 文で時間調整をする場合も注意。</p>
+
+<h4 id="v858c48f">【不便仕様】COLOR で指定したテキスト画面の背景色の、表示優先順位が低い</h4>
+<p>COLOR で背景色を指定していても、同じ位置にスプライト・BG 面・グラフィック面のどれか一つでも描画されていたら背景色が表示されない、もしくは欠けてしまうので、COLOR の背景色で他の面をマスクしつつコンソール表示をさせるという使い方が出来ない。</p>
+<p>CLS 命令に「コンソール背景色に対応した色を BG パレットの 0 番にコピーする」機能を追加すればコンソール面とコンソール背景色を同じ優先順位にすることが出来る…かもしれない。</p>
+
+<h4 id="b200eb3d">【不便仕様】PCM のドラム音色の定位 (パンポット) が中央にない</h4>
+<p>PCM のドラム音色 (@128, @129) の定位が中央になく、音によって勝手に左や右に割り振られている。これが意図しないものである場合、それぞれの音ごとに P コマンドでパンポットの修正が必要です。また、たとえば P64 (本来の中央) で右寄りで鳴る音の場合、P0 (本来の左端) にしても、完全に左にならない。本格的にデータを作る人にとってはあまり歓迎されない仕様です。たとえば、定位の割り振られていないドラム音色を @130, @131 で使えるようになると良さそうなのですが。</p>
+
+<h4 id="t0a8110c">【不便仕様】SUBST$ の最後の引数が &quot;&quot; のとき値が変更されない</h4>
+<p>例えば、<span class="basic-text">ＳＵＢＳＴ＄（”ＡＢＣＤ”，１，２，””）</span> は &quot;ABCD&quot; を返すが、これは &quot;AD&quot; を返して欲しい。</p>
+
+<h4 id="i16ec45d">【不便仕様】SPSCALEで拡大したところの当たり判定が行われない</h4>
+<p><span class="basic-text">ＳＰＳＣＡＬＥ</span>命令で拡大した際、拡大した部分の当たり判定（<span class="basic-text">ＳＰＨＩＴＳＰ</span>など）が行われなくなる。デフォルトのサイズ部分のみ、判定が行われる。</p>
+<p>これは<span class="basic-text">ＳＰＣＯＬ</span>でいちいち当たり判定を定義する必要があるという不便な仕様でした。<span class="basic-text">ＳＰＳＣＡＬＥ</span>を行った際にいちいち定義し直すのは面倒なので、当たり判定も引き延ばすなど、どうにかしてほしいものです。</p>
+
+<h3 id="da10ce40">バグではなく、仕様だったもの</h3>
+
+<h4 id="tab7a004">【仕様でした】「BGMPLAY トラック(1〜7),&quot;MML文字列&quot;」の使い方がエラーになる</h4>
+<p><span class="basic-text">ＢＧＭＰＬＡＹ　１~７，”ＭＭＬ”</span> の使い方でこの命令を呼ぶと、なぜか Out of Range エラーになってしまう。トラックが 0 の場合のみエラーとならない。→ Web 版説明書の間違いのようです。電子説明書には、MML を直接鳴らす場合、トラック 0 しか使えないと書かれています。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　１，”ＣＤＥ”</li>
+</ol></code></div></div>
+<p>ということで、短い MML をトラック 0 以外で鳴らしたい場合、BGMSET を使いましょう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＳＥＴ　１２８，”ＣＤＥ”</li>
+<li>ＢＧＭＰＬＡＹ　１，１２８</li>
+</ol></code></div></div>
+
+<h4 id="sd6879d5">【仕様でした】MML を複数トラック鳴らした場合、チャンネルが欠けてしまうケースがある (PSG のみ)</h4>
+<p>BGMPLAY 命令で MML を複数トラック鳴らした場合、チャンネルを使い切っていないにもかかわらず、一部チャンネルの音が欠けてしまう場合がある。</p>
+<p>再現テストプログラムの QR コードは以下の通り。A ボタンで音が鳴ります。2 行目の BGMPLAY 命令のトラック番号 (1 つめの引数) を 1 にすると、チャンネル欠けは大幅に軽減される。7 にすると、まったくチャンネル欠けが無くなります。</p>
+<div class="img_margin" style="text-align:left"><a href="http://p.twimg.com/ApAEPpMCIAEMlVN.png" title="ApAEPpMCIAEMlVN.png"><img src="http://p.twimg.com/ApAEPpMCIAEMlVN.png" alt="ApAEPpMCIAEMlVN.png" title="ApAEPpMCIAEMlVN.png" width="280" height="280" /></a></div>
+
+<p>…ということでしたが、これは仕様でした。社長の Twitter によると、マニュアルに載っていない仕様として、PSG (@144〜@150) の音色は同時発音数 6 音まで、ノイズ (@151) は同時発音数 2 音までという制限があり、上記 QR コードのサンプルプログラムの場合、この制限に引っかかって音が欠けています。</p>
+<p>PCM 音源の音色 (@1〜@128) は、仕様通り 16 音鳴ります。波形メモリ音源の音色 (@224〜225) も PCM で鳴っているため同様の仕様です。したがって、矩形波を 7 音以上同時に鳴らしたい場合、波形メモリ音源に PSG 相当の矩形波を定義し、PSG の代用または併用すると良いことになります。波形メモリはデフォルトで @144 (PSG デューティ比 50%) 相当の矩形波が定義されているので、そのまま代用すればリストが長くなることはありません。ただし、PCM/波形メモリの音色は、PSG と比較して若干音量が小さいため、全体的なベロシティ (音量) の調整は必要です。</p>
+<p>なお、PSG と PCM 両方が鳴っている場合でも、同時発音数は合わせて 16 音となります。それを超えた場合、PSG が優先されて鳴ります。詳しくは、社長のツイート (<a href="https://twitter.com/#!/notohoho/status/187505131980472320" rel="nofollow">その1</a>, <a href="https://twitter.com/#!/notohoho/status/187505907121401856" rel="nofollow">その2</a>, <a href="https://twitter.com/#!/notohoho/status/187507207108177922" rel="nofollow">その3</a>)、および<a href="http://smileboom.com/special/ptcm2/html_command.php" rel="nofollow">プチコン公式サイトにある解説資料 (付録)</a> をご覧ください。</p>
+
+<h3 id="w2b70e9a">プチコンmkII V2.3 で修正されたもの</h3>
+
+<h4 id="n2ee4040">【V2.3 で修正】文字列の比較およびSORT命令の動作に問題</h4>
+<p>文字列の比較（ＣＨＲ＄同士の比較など）およびＳＯＲＴ／ＲＳＯＲＴの結果において、両者の動作の不統一、直感的でない結果が発生します。これらは修正によって辞書順の比較に統一されます。</p>
+
+<h4 id="of6b35ba">【V2.3 で修正】COLSET命令で不正な色情報文字列を指定した場合にフリーズ</h4>
+<p>ＣＯＬＳＥＴで指定する色情報文字列に、書式より極端に長い文字列を指定した場合
+に、フリーズが起こる危険性があります。</p>
+
+<h4 id="k3a0b4ea">【V2.3 で修正】Ａボタンによる命令入力候補の誤動作</h4>
+<p>命令入力支援機能で、本体Ａボタンによる改行の直後に正しい変換候補が表示されない、または変換候補が消える場合があります。</p>
+
+<h4 id="k49d12dc">【V2.3 で修正】電子説明書の起動によってコピー範囲の記憶がリセットされる</h4>
+<p>編集モードでプログラムリストのコピー機能を使用中に電子説明書を起動した場合、再び編集モードに戻ったときにコピーした内容がリセットされます。</p>
+
+<h4 id="dfb37918">【V2.3 で修正】大量の文字列の演算で誤動作</h4>
+<p>文字列に対する演算（Ａ＄＋Ｂ＄における＋など）が極端に大量に行なわれたときの処理に問題があり、正しい演算結果が返されない場合があります。</p>
+
+<h4 id="c11f0d6c">【V2.3 で修正】非パッケージ型ファイルを読み込んでもPACKAGE$が変化しない</h4>
+<p>パッケージ型ファイルを読み込んだ後、パッケージリソースを含まないファイルをＬＯＡＤした場合に、直前に読み込まれたパッケージ型ファイルの情報がシステム変数ＰＡＣＫＡＧＥ＄に残ります。本来の正しい動作ではＰＡＣＫＡＧＥ＄はクリアされ”０”となります。</p>
+
+<h4 id="mec805a9">【V2.3 で修正】PRGNAME$,PACKAGE$をセーブ時にも対応</h4>
+<p>ＳＡＶＥ成功時に、システム変数PRGNAME$およびPACKAGE$が更新されるようになります。</p>
+
+<h4 id="ud2006f8">【V2.3 で修正】COLINITで引数を省略した場合の動作</h4>
+<p>一切の引数を省略してＣＯＬＩＮＩＴと記述した場合、全ての色が初期化されるようになります。また、ＣＯＬＩＮＩＴ　”ＢＧ”のようにバンク名以降を省略した場合は、指定したバンクの色が全て初期化されます。</p>
+
+<h4 id="z05f9ad3">【V2.3 で修正】MMLのチャンネル指定省略時について</h4>
+<p>チャンネル指定を省略して書き出されたMML構文においては、続いて記述されたチャンネル指定が先頭にさかのぼって指定されます。たとえばＢＧＭＰＬＡＹ”Ｃ：１Ｄ”ではチャンネル:1で「ドレ」が再生されます。
+これはチャンネルにデフォルト値を設けないことにより、チャンネルの重複を極力起こさないための措置ですが、感覚的に意図しないチャンネルが割り当てられる場合もあります。
+次回更新時にはこれに対処し最も若いチャンネル:0をチャンネルのデフォルトとして厳密に解釈する予定です。たとえばＢＧＭＰＬＡＹ”Ｃ：１Ｄ”と記述した場合、”：０Ｃ：１Ｄ”と解釈されチャンネル:0「ド」とチャンネル:1「レ」が同時に再生されます。このためＢＧＭＰＬＡＹ”：１Ｃ：０Ｄ”と記述すると、”：０：１Ｃ：０Ｄ”と解釈されチャンネル:0の重複が起こりIllegal MMLエラーが発生します（この場合正しくはチャンネル:0を先頭にＢＧＭＰＬＡＹ”：０Ｄ：１Ｃ”と書きます。あるいはＢＧＭＰＬＡＹ”Ｄ：１Ｃ”やＢＧＭＰＬＡＹ”：１Ｃ：２Ｄ”と書いてもエラーにはなりません）。</p>
+
+<h4 id="p13a5d24">【V2.3 で修正】サンプルプログラムのSAMPLE5の誤動作</h4>
+<p>日付を跨いだ場合の処理を修正しました。</p>
+
+<h4 id="hf5b5f09">【V2.3 で修正】サンプルプログラムのGAME4の誤用</h4>
+<p>キャラクタ入れ替え時のループ回数に関して、理論上の誤用を修正しました（実質的な動作に変化はありません）。</p>
+
+<h4 id="h818c225">【V2.3 で修正】電子説明書の誤植</h4>
+
+<h5 id="f3f2444b">はじめに &gt; 操作方法</h5>
+<p>Ｒボタンの説明をＬボタンと同内容に</p>
+
+<h5 id="k5344d05">サウンド関係の表 &gt; TALKコマンド &gt; @E 数値</h5>
+<p>E9以降の説明を再度追加</p>
+
+<h5 id="fa43afaa">数学三角関数 &gt; ATAN()</h5>
+<p>引数が2個の型と1個の型について説明を分離</p>
+
+<h5 id="pa4985a4">文字検索置換関数 &gt; INSTR</h5>
+<p>×「変数=INSTR( 文字列, 検索文字列 )」
+○「変数=INSTR ( 文字列, 検索文字列 [, 開始位置 ] )」
+追加「引数：開始位置：0〜文字単位の開始位置」。
+ただし、開始位置の指定は電子説明書にあるこの順序ではなく、「変数=INSTR (  [開始位置,] 文字列, 検索文字列 )」です。</p>
+
+<h5 id="u80598f7">説明書の一部が途切れている</h5>
+<p>取扱説明書の、「10 サウンド関係の表 → TALKコマンド」の内容が途中で途切れている</p>
+
+<h3 id="qafd6717">プチコンmkII V2.1 で修正されたもの</h3>
+
+<h4 id="i8f6cab4">【V2.1 で修正】 【不便仕様】QR コード読み込み完了のファイル保存時、ファイル名が表示されないのが不便</h4>
+<p>これはバグではないですが、QR コードの読み込み時、ファイル名が表示されるのが 1 枚目を読み込んだときのみで、保存時にファイル名が表示されず、その頃にはファイル名なんていちいち覚えていないのが不便という声が多いです。</p>
+<p>1 枚目を読み直すのがおっくうな場合、プログラムを作るモードから FILES 命令でファイル一覧を見て、そのリソース種類 (PRG など) の中で一番末尾にあるファイルが最後に保存したファイルなので、そこで判断すればとりあえずだいたい何とかなります。</p>
+
+<h4 id="q55169f3">【V2.1 で修正】【注意】MML で、タイ/スラー記号などを介して長さ指定を複数記述するとフリーズ</h4>
+<p>BGMPLAY 命令や BGMSET 命令、BGMSETD 命令で MML を記述する際、タイ/スラー記号 (&amp;) の直後に数字を記述するなど、<span class="basic-text">＃　＋　−　．　＆　＿</span> などの記号を介して長さ指定を複数記述すると、実行時にプチコンがフリーズしてしまう。</p>
+<p>たとえば、こんな感じに書くと止まってしまいます。本来は Iligal MML エラーで止まるのが正しい動作です。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｃ２＆４”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｃ２＋４”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｃ２．４”</li>
+</ol></code></div></div>
+<p>ちなみに、&amp; をタイとして使う場合、以下が本来の正しい記述です。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｃ２＆Ｃ４”</li>
+</ol></code></div></div>
+
+<h4 id="q55169f3">【V2.1 で修正】【注意】MML で、無効なイコール記号を記述するとフリーズする</h4>
+<p>BGMPLAY 命令や BGMSET 命令、BGMSETD 命令の MML で「休符+イコール記号」「音階+イコール記号」のように、無効なイコール記号を記述すると、実行時にプチコンがフリーズしてしまう。以下はフリーズする一例です。本来は Iligal MML エラーで止まるのが正しい動作です。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｒ＝”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｃ＝”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｃ２＋．＝”</li>
+</ol></code></div></div>
+
+<h4 id="c34d0085">【V2.1 で修正】【注意】プログラム中の「★」記号が改行に変わってしまう</h4>
+<p>プログラム中に「★」記号を直接含むプログラムをセーブしてロードすると、改行に置き換えられてしまう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　”ツノタ゛★ヒロ”</li>
+</ol></code></div></div>
+<p>ロードするとこんな感じになるので、動かなくなります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　”ツノタ゛</li>
+<li>ヒロ”</li>
+</ol></code></div></div>
+<p>とりあえず、文字列であれば <span class="basic-text">ＣＨＲ＄（１０）</span> でしのぐのが一番のようです。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＳＴＡＲ＄＝ＣＨＲ＄（１０）</li>
+<li>ＰＲＩＮＴ　”ツノタ゛”＋ＳＴＡＲ＄＋”ヒロ”</li>
+</ol></code></div></div>
+
+<h4 id="mcc37050">【V2.1 で修正】【注意】GDRAWMD 1 のときに、GCIRCLE で画面外にはみだす円を描くと誤動作やフリーズ</h4>
+<p>GDRAWMD 1 (XOR 描画) に設定しているときに、GCIRCLE 命令で画面外にはみ出す位置・大きさの円を描くと、はみ出した部分が変な位置に描画されたり、以降正常に動作しなくなったり、フリーズしたりする。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>’　チュウイ！　コレヲシ゛ッコウスルト　フリース゛　シマス。</li>
+<li>ＢＧＭＰＬＡＹ　２</li>
+<li>ＧＤＲＡＷＭＤ　１</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１００　ＳＴＥＰ　４</li>
+<li>　　ＧＣＩＲＣＬＥ　８０，８０，Ｉ，２５５</li>
+<li>　　ＢＥＥＰ：ＷＡＩＴ　８</li>
+<li>ＮＥＸＴ</li>
+</ol></code></div></div>
+
+<h4 id="xeeaaae2">【V2.1 で修正】【注意】実行モードで、行末で Shift+Del を押すと誤動作やフリーズ</h4>
+<p>実行モードにおいて、行末 (入力中の文字列の終端) で Shift+Del キーを押すと、誤動作やフリーズを起こすことがある。発生頻度はあまり高くないように見えますが、やらない方が良さそうです。</p>
+
+<h4 id="qb9abe11">【V2.1 で修正】保存ファイル数が少ないとき、ホーム画面のファイル選択で特定の操作をするとフリーズ</h4>
+<p>ファイルが 1 ページ分の数 (1〜7 個) しか保存されていない状態で、ホーム画面の「SD カードに保存」や「名前変更」などのファイル選択画面を表示し、「十字キーの右」や「L + 下ボタン」で本来存在しないはずの次のページに送ろうとすると、完全にフリーズするか、もしくは文字化けした謎のファイルが表示される (謎のファイルを選択しても、未選択状態として扱われ何かできるわけではない)。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%A5%D5%A5%A1%A5%A4%A5%EB%C1%AA%C2%F2%CA%B8%BB%FA%B2%BD%A4%B1.jpg" title="ファイル選択文字化け.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%A5%D5%A5%A1%A5%A4%A5%EB%C1%AA%C2%F2%CA%B8%BB%FA%B2%BD%A4%B1.jpg" alt="ファイル選択文字化け.jpg" title="ファイル選択文字化け.jpg" width="480" height="359" /></a></div>
+
+
+<h4 id="s121a380">【V2.1 で修正】QR コード作成の際に表示される内容が入れ替わっている</h4>
+<p>QR コード作成の際、確認画面で表示される「リソース名」と「ファイル名」が入れ替わって表示されている。表示の問題だけで特に実害はありません。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=QR%A5%B3%A1%BC%A5%C9%BA%EE%C0%AE%C6%FE%A4%EC%C2%D8%A4%EF%A4%EA.jpg" title="QRコード作成入れ替わり.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=QR%A5%B3%A1%BC%A5%C9%BA%EE%C0%AE%C6%FE%A4%EC%C2%D8%A4%EF%A4%EA.jpg" alt="QRコード作成入れ替わり.jpg" title="QRコード作成入れ替わり.jpg" width="256" height="384" /></a></div>
+
+
+<h4 id="i09c5827">【V2.1 で修正】MML で、ゲート設定が短いと、短い音符の音が鳴らない</h4>
+<p>MML で、ゲート設定 (Q) が短いと、特定よりも短い音符の音が鳴らなくなる。1 フレーム未満の音になると鳴らないようです。Q0 だと全く鳴りません。また、テンポ設定は現象に影響しません。以下は音が鳴らない例。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｑ０　＠１４７　Ｌ１ＣＤＥ”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｑ１　＠１４７　Ｌ３２ＣＤＥ”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｑ２　＠１４７　Ｌ６４ＣＤＥ”</li>
+</ol></code></div></div>
+<p>上記ではプツプツした音が鳴るか鳴らないかでどうでもいいのですが、実使用では、以下のようにエンベロープのリリースタイムを使いたい場合にも全く鳴らなくなるという悪影響があります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｑ０　＠１４７　＠Ｅ１２７，１，１，１１０　Ｌ１ＣＤＥ”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｑ１　＠１４７　＠Ｅ１２７，１，１，１１０　Ｃ１６　Ｒ２　Ｃ２４　Ｒ２　Ｃ３２”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｑ２　＠１４７　＠Ｅ１２７，１，１，１１０　Ｃ３２　Ｒ２　Ｃ４８　Ｒ２　Ｃ６４”</li>
+</ol></code></div></div>
+
+<h4 id="ta5423e7">【V2.1 で修正】MML で Q の設定により音符の長さに誤差が発生する場合がある</h4>
+<p>( 192 / 音長の数値 ) * ( Q の数値 / 8 ) の計算結果が小数になる音を鳴らした場合、音符の長さに誤差が発生してしまう。たとえば、同じ 16 分音符を鳴らす場合、Q6 と Q7 でずれが発生する。以下が誤差が重なってズレが確認できる例。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＄＝”＠１４７Ｌ１６［ＣＤＥＦＧＡＢ＜Ｃ＞］”</li>
+<li>ＢＧＭＰＬＡＹ　”Ｑ６”＋Ａ＄＋”：２Ｑ７”＋Ａ＄</li>
+</ol></code></div></div>
+
+<h4 id="p95dab9c">【V2.1 で修正】BGFILL 命令でスクリーンデータを文字列指定したとき、キャラクターの配置が正しく処理されない</h4>
+<p>BGFILL 命令のスクリーンデータ文字列指定版では、複数のキャラクターを並べて指定できるが、埋めるキャラクターの数が指定した数の倍になる。</p>
+<p>以下のコードでは、4 のキャラで埋めるはずが、4,0 の 2 キャラで繰り返され市松模様となってしまう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＦＩＬＬ　０，０，０，１０，１０，”０００４”</li>
+</ol></code></div></div>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=BGFILL%A4%CE%C9%D4%B6%F1%B9%E71.jpg" title="BGFILLの不具合1.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=BGFILL%A4%CE%C9%D4%B6%F1%B9%E71.jpg" alt="BGFILLの不具合1.jpg" title="BGFILLの不具合1.jpg" width="480" height="172" /></a></div>
+
+<p>今度は以下のコードを実行すると、本来は 4,8 の 2 キャラの繰り返しが正しいが、キャラ番号 4,8,0,0 の 4 キャラのパターンで描画される。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＦＩＬＬ　０，０，０，１０，１０，”０００４０００８”</li>
+</ol></code></div></div>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=BGFILL%A4%CE%C9%D4%B6%F1%B9%E72.jpg" title="BGFILLの不具合2.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=BGFILL%A4%CE%C9%D4%B6%F1%B9%E72.jpg" alt="BGFILLの不具合2.jpg" title="BGFILLの不具合2.jpg" width="480" height="192" /></a></div>
+
+<p>なお、指定した以降のキャラは、前回指定したものがそのまま適用される。
+例えば、上のコードを実行後に以下のコードを実行すると、キャラ番号 6,8 の2キャラのパターンで描画される。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＦＩＬＬ　０，０，０，１０，１０，”０００６”</li>
+</ol></code></div></div>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=BGFILL%A4%CE%C9%D4%B6%F1%B9%E73.jpg" title="BGFILLの不具合3.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=BGFILL%A4%CE%C9%D4%B6%F1%B9%E73.jpg" alt="BGFILLの不具合3.jpg" title="BGFILLの不具合3.jpg" width="480" height="165" /></a></div>
+
+<p>暫定的に対処するなら、1 キャラ分の塗りつぶしでは文字列指定版を使わないようにし、2 キャラ分以上を塗りつぶしたいならこんな感じになります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧ＄＝”０００４０００８”</li>
+<li>ＢＧＦＩＬＬ　０，０，０，０，０，ＢＧ＄＋ＢＧ＄　’シュウセイハ゛ン　カ゛　テ゛タラ　ケス</li>
+<li>ＢＧＦＩＬＬ　０，０，０，１０，１０，ＢＧ＄</li>
+</ol></code></div></div>
+
+<h4 id="ud3db8ee">【V2.1 で修正】GCOPY 命令で、転送元と転送先の座標が同じだと転送されない</h4>
+<p>GCOPY 命令で、転送元と転送先の座標が同じだと、転送が行われない。以下の再現手順は <a href="http://yfrog.com/nzd99dfj" rel="nofollow">Twitter の報告</a> より引用。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＡＣＬＳ</li>
+<li>ＧＣＯＬＯＲ　１５</li>
+<li>ＧＰＡＧＥ　０，１，１：ＧＣＬＳ　０</li>
+<li>ＧＬＩＮＥ　０，０，２５５，１９１</li>
+<li>ＧＰＡＧＥ　０，０，０：ＧＣＬＳ</li>
+<li>ＧＣＯＰＹ　１，０，０，２５５，１９１，０，０，ＦＡＬＳＥ</li>
+</ol></code></div></div>
+
+<h4 id="f832418a">【V2.1 で修正】GCIRCLE で、角度 0 をまたぐ円弧を描くことができない</h4>
+<p>GCIRCLE で円弧を描く場合、角度 0 をまたぐ円弧を描けない (1 回で描く方法がない)。開始角と終了角を入れ替えても円弧は変わらず、0〜360 の範囲外の角度は無視されてしまう。これは不具合扱いとして、次のバージョンで改善される予定だそうです。</p>
+
+<h4 id="e4d8a728">【V2.1 で修正】電子説明書を出入りすると、ファンクションキーの設定内容が化ける</h4>
+<p>電子説明書を出入りすると、各ファンクションキーの 3〜4 文字目のみ、デフォルトの設定に戻ってしまう。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%A5%D5%A5%A1%A5%F3%A5%AF%A5%B7%A5%E7%A5%F3%A5%AD%A1%BC%A4%CE%C0%DF%C4%EA%B2%BD%A4%B1.jpg" title="ファンクションキーの設定化け.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%A5%D5%A5%A1%A5%F3%A5%AF%A5%B7%A5%E7%A5%F3%A5%AD%A1%BC%A4%CE%C0%DF%C4%EA%B2%BD%A4%B1.jpg" alt="ファンクションキーの設定化け.jpg" title="ファンクションキーの設定化け.jpg" width="320" height="353" /></a></div>
+
+
+<h4 id="s22df11a">【V2.1 で修正】「作品を見る」から RECVFILE 命令を使用すると、上書き確認のメッセージが表示されない</h4>
+<p>RECVFILE 命令を「プログラムを作る」モード内から使用した場合、受信ファイルがすでに存在していると上書き確認のメッセージが表示される。しかし、「作品を見る」から実行したプログラム内からこの命令を使用した場合、上書き確認が行われない。</p>
+
+<h4 id="c539f467">【V2.1 で修正?】VAL(&quot;-&quot;) でオーバーフロー</h4>
+<p><span class="basic-text">ＰＲＩＮＴ　ＶＡＬ（”−”）</span> でなぜか Overflow エラーに。本来は 0 を返すのが正しいと思われます。
+修正したようですが、エラーの種類が変わっただけです。0を返す仕様の初代との互換性に問題があり、修正できたといえるのか微妙です。</p>
+
+<h4 id="uc5302fc">【V2.1 で修正】プログラムを実行してから 1 回目の VSYNC 命令が無視される</h4>
+<p>初回実行時、およびプログラムを書き換えた直後の実行時、1 回目の VSYNC 命令が無視される。2 回目以降は正常に機能する。下記は再現用のプログラムで、1 回目の実行のみすぐに終了します。前回の VSYNC 命令を実行した時間が終了をまたいで記憶されているわけではないようです。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＶＳＹＮＣ　１０００：ＰＲＩＮＴ　”オワリ”</li>
+</ol></code></div></div>
+
+<h4 id="gd924fce">【V2.1 で修正】PNLTYPE を実行すると、VISIBLE の状態が一部リセットされる</h4>
+<p>VISIBLE でテキスト画面を消している状態で PNLTYPE を実行すると、旧プチコンとは違ってテキスト画面が再び見えるようになってしまいます。再び VISIBLE で消す必要があります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ</li>
+<li>ＶＩＳＩＢＬＥ　０，０，０，０，０，０</li>
+<li>ＰＲＩＮＴ　”ミエテルヨ！！”</li>
+<li>ＷＡＩＴ　６０</li>
+<li>ＰＮＬＴＹＰＥ　”ＯＦＦ”</li>
+<li>＠ＬＯＯＰ</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="y8b0b7fc">【V2.1 で修正】MML で、「&lt;」コマンドで本来の上限である 8 オクターブを超えてしまう</h4>
+<p>MML でオクターブを 本来の上限である 8 より大きくしようとすると、エラーにならず、9 オクターブまであげることができてしまう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”Ｏ８＜ＡＢＣ”</li>
+<li>ＢＧＭＰＬＡＹ　”＜＜＜＜＜＜＜＜＜＜ＢＣ”</li>
+</ol></code></div></div>
+<p>この時点でまぎれもないバグなので何が起こってもおかしくないのだが、さらにこの状態では A (ラ) や B (シ) 以降の音が、音程の変化の無い効果音に変わる。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＭＰＬＡＹ　”＜＜＜＜＜＜＜＜＜ＣＤＥＦＧＢＣ”</li>
+</ol></code></div></div>
+<p>最初に A が来たときは銃声のような音が、A#〜B# が来たときはピアノのような音がする。また、音の長さが高さに影響する (短いほど高くなる)。なお、<span class="basic-text">＠Ｄ</span>は効く (これらは、<span class="basic-text">＠</span>で音色をしない場合で検証)。</p>
+
+<h4 id="mf9c01c1">【V2.1 で修正】GCIRCLE の描画速度が旧プチコンよりも遅くなっている</h4>
+<p>プチコンmkII では、動作速度や各種グラフィック命令が旧プチコンよりも高速化されているが、GCIRCLE の描画速度のみ旧プチコンより 10〜20% 程度遅くなっている。これは公式サイトのバグ情報によると、不具合だそうです。</p>
+
+<h4 id="d4470005">【V2.1 で修正】「`」 と CHR$(96) など、一部文字とキャラクターコードが同じと認識されない</h4>
+<p>プログラムリスト上に直接記述した <span class="basic-text">￥　｀　―　＼　・　ー</span> のいずれかの文字と CHR$(キャラクターコード) が同じ文字と認識されない。たとえば、INSTR や == での比較に影響がある。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　ＩＮＳＴＲ（”ＡＢＣ｀”，”｀”）　　　　　　　’４　（ＯＫ）</li>
+<li>ＰＲＩＮＴ　ＩＮＳＴＲ（”ＡＢＣ｀”，ＣＨＲ＄（９６））　　’−１（ＮＧ）</li>
+<li>ＰＲＩＮＴ　”｀”＝＝ＣＨＲ＄（９６）　　　　　　　　　　　’０　（ＮＧ）</li>
+<li>ＰＲＩＮＴ　ＡＳＣ（”｀”）　　　　　　　　　　　　　　　　’９６（ＯＫ）</li>
+<li>ＰＲＩＮＴ　ＣＨＲ＄（９６）　　　　　　　　　　　　　　　　’｀　（ＯＫ）</li>
+</ol></code></div></div>
+<p>文字列変数に入れみてもこんな感じで別扱いに。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ａ＄＝”｀”：Ｂ＄＝ＣＨＲ＄（９６）</li>
+<li>ＰＲＩＮＴ　Ａ＄＝＝Ｂ＄　　　　’０（ＮＧ）</li>
+<li>ＰＲＩＮＴ　Ａ＄＝＝”｀”　　　’１（ＯＫ）</li>
+<li>ＰＲＩＮＴ　Ｂ＄＝＝”｀”　　　’０（ＮＧ）</li>
+</ol></code></div></div>
+<p>この問題は、一度プログラムを保存して開き直すことで発生しなくなる。</p>
+
+<h4 id="y7427a05">【V2.1 で修正】命令文入力支援で、ページとページの境目に当たる入力候補 1 つが抜けている</h4>
+<p>命令文入力支援で、入力支援の候補が 1 ページに収まりきらない場合、「&gt;&gt;」が表示されてページをめくることができるが、ページとページの間の 1 候補が抜けている。</p>
+<p>たとえば、G と入力した場合の入力候補はこんな感じだが…。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%C6%FE%CE%CF%B8%F5%CA%E4%A4%AC%C2%AD%A4%EA%A4%CA%A4%A41.jpg" title="入力候補が足りない1.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%C6%FE%CE%CF%B8%F5%CA%E4%A4%AC%C2%AD%A4%EA%A4%CA%A4%A41.jpg" alt="入力候補が足りない1.jpg" title="入力候補が足りない1.jpg" width="480" height="129" /></a></div>
+
+<p>2 ページ目に行くと、最初にあるはずの「<span class="basic-text">ＧＯＴＯ</span>」が無いことがわかる。</p>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%C6%FE%CE%CF%B8%F5%CA%E4%A4%AC%C2%AD%A4%EA%A4%CA%A4%A42.jpg" title="入力候補が足りない2.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%C6%FE%CE%CF%B8%F5%CA%E4%A4%AC%C2%AD%A4%EA%A4%CA%A4%A42.jpg" alt="入力候補が足りない2.jpg" title="入力候補が足りない2.jpg" width="480" height="118" /></a></div>
+
+
+<h4 id="p7312970">【V2.1 で修正】PRINT のカンマ指定で出力した文字列の最後の文字が表示されない</h4>
+<p>PRINT 命令で、以下の条件がそろった場合、カンマ指定で出力した文字列の最後の文字が表示されない。</p>
+<ul><li>TABSTEP が 1, 2, 4, 8, 16 のいずれか (デフォルトは 4)</li>
+<li>文字列が右端32文字目で終わる</li>
+<li>出力の結果コンソールがスクロールする</li></ul>
+<p>以下が再現手順。2 ちゃんねるより引用しました。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ：ＴＡＢＳＴＥＰ＝４</li>
+<li>ＬＯＣＡＴＥ　０，２３</li>
+<li>Ａ＄＝”Ａ”＊３２</li>
+<li>ＰＲＩＮＴ　Ａ＄；Ａ＄，Ａ＄</li>
+</ol></code></div></div>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Bug&amp;openfile=%A5%AB%A5%F3%A5%DE%B6%E8%C0%DA%A4%EAPRINT%A4%CE%CA%B8%BB%FA%A4%AC1%CA%B8%BB%FA%C2%AD%A4%EA%A4%C6%A4%A4%A4%CA%A4%A4.jpg" title="カンマ区切りPRINTの文字が1文字足りていない.jpg"><img src="/petc/?plugin=ref&amp;page=Bug&amp;src=%A5%AB%A5%F3%A5%DE%B6%E8%C0%DA%A4%EAPRINT%A4%CE%CA%B8%BB%FA%A4%AC1%CA%B8%BB%FA%C2%AD%A4%EA%A4%C6%A4%A4%A4%CA%A4%A4.jpg" alt="カンマ区切りPRINTの文字が1文字足りていない.jpg" title="カンマ区切りPRINTの文字が1文字足りていない.jpg" width="480" height="88" /></a></div>
+
+
+<h4 id="z3db8e3f">【V2.1 で修正】ダイレクトモードのコマンドの入力履歴が一部無くなる</h4>
+<p>ダイレクトモード (実行モード) で、上ボタンを押し過去のコマンド入力履歴を表示した状態でスタートボタンを押して RUN させると、その項目以降の履歴が密かに削除されてしまう。</p>
+
+<h4 id="e67f0b0c">【V2.1 で修正】文字列で存在しないラベルを指定したときのエラーが違う</h4>
+<p>GOTO などでラベルを文字列変数で指定したとき、ラベルが存在しないと「Syntax Error」エラーになる。「Undefined Label」エラーが正しいはず。</p>
+
+<h4 id="u4a901f3">【V2.1 で修正】GPAINT 命令で、塗りを指定した場所がすでに塗り色と同じ色だった場合、関係ない場所も塗られる</h4>
+<p>GPAINT 命令で、塗りを指定した場所がすでに塗り色と同じ色だった場合、関係ない場所も塗られてしまう。</p>
+<p>以下の通りにすると再現できます (<a href="https://twitter.com/#!/Ackieee/status/183596540328288259" rel="nofollow">Twitter より引用</a>)。</p>
+<ol><li>GCIRCLE 命令で、画面の真ん中に赤色の円を描く</li>
+<li>GPAINT 命令で、円の外を起点に円の外を青色で塗りつぶす</li>
+<li>もう一度同じ座標に対して青色で塗りつぶすと、なぜか円の中まで塗りつぶされる</li></ol>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＧＣＬＳ</li>
+<li>ＧＣＩＲＣＬＥ　１２８，９６，５０，２</li>
+<li>ＧＰＡＩＮＴ　０，９６，４，２</li>
+<li>ＧＰＡＩＮＴ　０，９６，４，２</li>
+</ol></code></div></div>
+<p>実行した結果は、以下の通り (<a href="https://twitter.com/#!/Ackieee/status/183603149687357440" rel="nofollow">Twitter より引用</a>)。</p>
+<p><a href="https://twitter.com/#!/Ackieee/status/183603149687357440" rel="nofollow"><img src="http://p.twimg.com/AoxKF4XCAAMKSvE.jpg" alt="https://twitter.com/#!/Ackieee/status/183603149687357440" /></a></p>
+
+<h4 id="r362c7e8">【V2.1 で修正】TALK 命令で合成音声を再生中、不正な TALK 命令を実行してエラーを起こさせると、TALKCHK() が TRUE のままになる</h4>
+<p>TALK 命令で合成音声の再生が終わる前に、不正な TALK 命令 (<span class="basic-text">ＴＡＬＫ”ＡＢＣ”</span>) で Illegal function call エラーを起こして、強制的に再生を中断させると、現在合成音声が再生されていないのにずっと TALKCHK() 関数が TRUE を返し続けてしまう。</p>
+<p>この状態は、RUN や CLEAR、ACLS 命令でも復旧しないが、新たに TALK 命令による合成音声の再生を正常終了させると元に戻る。</p>
+
+<h4 id="w9ddda93">【V2.1 で修正】ACLS 命令を実行すると、BG の背景色の変更がきかなくなる</h4>
+<p>ACLS 命令を一度でも実行すると、以降 BG のパレット 0 番の背景色の変更が反映されなくなる。以下は再現用テストプログラムの QR コード (<a href="https://twitter.com/#!/yourenzhu/status/184515309145817088" rel="nofollow">Twitter より引用</a>)。</p>
+<div class="img_margin" style="text-align:left"><a href="http://twitpic.com/show/large/91vwp6.jpg" title="91vwp6.jpg"><img src="http://twitpic.com/show/large/91vwp6.jpg" alt="91vwp6.jpg" title="91vwp6.jpg" /></a></div>
+
+<p>どうやら、かわりに BG パレット 31 番が背景色となってしまうようです (<a href="https://twitter.com/#!/Pt_Macumba/status/185787195586641921" rel="nofollow">Twitter での報告より</a>)。</p>
+
+<h4 id="h65b3e87">【V2.1 で修正】MML のマクロ定義にポルタメント (_) があると、以降の MML 解釈がおかしくなる場合がある</h4>
+<p>MML の隠し機能である<a href="https://twitter.com/#!/notohoho/status/187311102655336448" rel="nofollow">マクロ機能</a>で、マクロ定義の中にポルタメント (_) が含まれていると、それを使用した箇所以降、MML の再生がおかしくなる場合がある。</p>
+<p>再現用プログラムの QR コードはこちら。マクロ「A2」と「BD」の最後のほうにあるポルタメント (_) を取り除くか、タイ (&amp;) に変更すると正常に再生されるようになる。単純にポルタメントを使うと必ずおかしくなるわけではないようです。</p>
+<div class="img_margin" style="text-align:left"><a href="http://p.twimg.com/ApoosjzCAAEGPib.png" title="ApoosjzCAAEGPib.png"><img src="http://p.twimg.com/ApoosjzCAAEGPib.png" alt="ApoosjzCAAEGPib.png" title="ApoosjzCAAEGPib.png" /></a></div>
+
+
+<h4 id="r24025d4">【V2.1 で修正】BGOFS の自動補完スクロールで、ループの境目をまたいだスクロールをすると 1 周してしまう</h4>
+<p>旧プチコンから存在する謎挙動。BGOFS の自動補完スクロール機能で、たとえば、(0, 0) 座標から (-1, 0) 座標に自動スクロールさせると、なぜかスクロールが 1 周してしまう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＢＧＦＩＬＬ　０，２，２，１０，１０，１０</li>
+<li>ＢＧＯＦＳ　０，０，０</li>
+<li>ＢＧＯＦＳ　０，−１，０，６０</li>
+</ol></code></div></div>
+
+<h4 id="gc3a8f23">【V2.1 で修正】メモリ不足になるほど文字列を定義すると、以降文字列の挙動に誤動作</h4>
+<p>Out of Memory エラーが発生するほどたくさんの文字列変数 (配列含む) を定義すると、エラーまたはエラーが無視されたあと、文字列を扱ったあらゆる挙動が異常になるようです。</p>
+
+<h4 id="ab371dda">【V2.1 で修正】SPCOLVEC の設定がないスプライトの衝突判定が誤っている場合がある</h4>
+<p>SPCOLVEC 命令で移動速度が定義されていないスプライトにおいて、SPHIT 命令の衝突判定時、移動速度の計算に誤りがあり、衝突結果が間違っている場合があるようです。</p>
+
+<h4 id="b3a22293">【V2.1 で修正】SPHIT 命令の当たり判定の縦幅が 1 ピクセル大きい</h4>
+<p>SPHIT 命令の当たり判定において、横幅は正確だが縦幅が実際よりも 1 ピクセル大きく判定されている。</p>
+
+<h4 id="y6132e00">【V2.1 で修正】サンプルの「GAME3」の動作が速すぎる</h4>
+<p>サンプルの「GAME3」(SAMPLE STG) の動作が速すぎる。これは、VSYNC にすべき部分が実質機能していない <span class="basic-text">ＷＡＩＴ　０</span> になっているから。<span class="basic-text">ＶＳＮＹＣ　１</span> に置き換えるといい感じになります。旧プチコンでも <span class="basic-text">ＶＳＹＮＣ　０</span> になっていて、この変更をすると処理落ち地獄になるので、意図的に外していたものが mkII の高速化によって速すぎる事態になったものと思われます。</p>
+
+<h4 id="y95797c7">【V2.1 で修正】サンプルの「DRWED」で、BOX または FILL を描いた後の TEXT 入力がおかしい</h4>
+<p>サンプルの「DRWED」で、BOX または FILL を描いた直後に B ボタンで TEXT 入力に移行すると、テキストカーソルの位置がおかしくなり、場合 (最後に BOX や FILL を描いた座標) によっては、Out of range エラーでプログラムが停止してしまう。</p>
+<p>これを回避するには、438, 445, 459 行目の 3 箇所で使用している変数 <span class="basic-text">ＭＸ</span> を別の適当な名前 (<span class="basic-text">ＭＸ２</span> とか) に変更する。</p>
+
+<h4 id="h60ff336">【V2.1 で修正】サンプルの「SAMPLE12」で、存在しないファイルをロードするとエラーになる</h4>
+<p>サンプルの「SAMPLE12」（波形メモリ音色作成ツール）で、何も保存されていない音色番号の音色データを Y ボタンを押してロードしようとすると、Division by zero エラーが発生してプログラムが停止する。</p>
+<p>エラー時に保存されていなかった音色データは再実行するとすべて初期化されてしまうので、もしそれが不便に感じて回避したい場合は、プログラムの以下の 2 箇所に赤字で示した行を追加する。</p>
+<div class="basic-source"><div class="basic-list"><code><ol start="54"><li style="color:red">ＭＥＭ＄＝””</li>
+<li>ＬＯＡＤ　ＮＥ＄</li>
+<li style="color:red">ＩＦ　ＭＥＭ＄＝＝””　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+<div class="basic-source"><div class="basic-list"><code><ol start="60"><li style="color:red">ＭＥＭ＄＝””</li>
+<li>ＬＯＡＤ　ＮＷ＄</li>
+<li style="color:red">ＩＦ　ＭＥＭ＄＝＝””　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="ub756d19">【V2.1 で修正】電子説明書の誤植</h4>
+<ul><li>「10 サウンド関係の表 → MML コマンド」の N コマンドの説明で、O4C (ド) の音が N40 と書かれているが、実際は N60 が正しい。</li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (972d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2080d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (3023d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1956d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1966d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2418d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2618d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2188d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1279d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (637d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2411d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2150d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2617d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (14h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (167d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FShiftKey%20Store" title="Toukou/ShiftKey Store (4d)">Toukou/ShiftKey Store</a></li>
+</ul>
+<h4>2022/01/01</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FINSECTS%20FLIGHT%20-%BA%AB%C3%EE%C8%F4%B9%D4-" title="INSECTS FLIGHT ー昆虫飛行ー (17d)">INSECTS FLIGHT ー昆虫飛行ー</a></li>
+</ul>
+<h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (108d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (124d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (139d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (162d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (167d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (191d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (191d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (256d)">Petit Slash II</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.324 秒  | このページの最終更新 : 2016/08/31 (水) 23:05:04  (1966d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

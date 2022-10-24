@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン3号&amp;BIG 非公式初心者講座 : 第6章 くりかえし命令と配列変数 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン3号&amp;BIG 非公式初心者講座 : 第6章 くりかえし命令と配列変数 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Beginner%2FChapter6">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Beginner%2FChapter6">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter6">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Beginner%2FChapter6">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン3号&amp;BIG 非公式初心者講座 : 第6章 くりかえし命令と配列変数</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Beginner">Beginner</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Beginner%2FChapter6">Chapter6</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.095sec. -->
+<div style="margin-bottom:2em;">
+<div style="text-align:center">[ <a href="/petc3gou/?Beginner%2FChapter5" title="Beginner/Chapter5 (1693d)">← 第5章へ</a>
+|
+<a href="/petc3gou/?Beginner#beginner-contents" title="Beginner (564d)">もくじに戻る</a>
+|
+<a href="/petc3gou/?Beginner%2FChapter7" title="Beginner/Chapter7 (1694d)">第7章へ →</a> ]</div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+<h3 id="fcbdaf0d">プログラマーからひとこと</h3>
+<p>この章では、FOR〜NEXT文について学びます。<br />
+<br />
+FOR〜NEXT文は、それがあるだけでプログラムリストを読むのがぐっと難しくなるというおそろしい命令です。<br />
+プログラムした人は意味があって使っているしその意味もわかっているのですが、そのリストを読むほうはたまったものじゃありません。<br />
+<br />
+それでも使うのはなぜかといえば、とてもベンリだからです。<br />
+これがあるだけでプログラムの手間はものすごく少なくなります。<br />
+あんがい悪くないですね。プラマイでいえばプラスじゃないでしょうか。<br />
+<br />
+さらにこの章では、DIM命令、いわゆる配列変数についても学びます。<br />
+配列変数というものはパッと頭で理解するのがなかなかむずかしく、プログラムをおぼえはじめた人はみんなひっかかるポイントです。<br />
+正直わたしも何度か「こんなものなけりゃいいのに」と思いました。<br />
+「なんの役にたつんだ？」とも思いました。<br />
+「なくていいじゃん」とも思いました。<br />
+でも、そういうものが意外とけっこう役にたつということは、ここまでこの講座を読んできた人なら知っているはずです。<br />
+くやしいことにこれが本当に役にたつのです。<br />
+<br />
+この章では、できるだけじっくりと配列変数のことをおぼえていきます。<br />
+あんまりじっくりすぎて途中でめんどくさくなるかもしれませんが、カベをのりこえるためだと思ってじっくり読んでみてください。</p>
+</div>
+
+<h3 id="y5fcd5af">FOR〜NEXT命令</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>「くりかえし命令」と言ってどんな命令を想像するかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p><span class="basic-text smbas">ＧＯＴＯ</span>で作る無限ループなんか、「くりかえし」になるんじゃねえか？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">＠ＭＵＧＥＮ</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”くりかえし”</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＭＵＧＥＮ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>たしかに何度もくりかえしているね。じゃあ、無限ループじゃなく10回くり返したら途中でループをやめる、とするとどうすればいいかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ムリじゃねえの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ず、ずいぶんアキラメが早いね。ええと、変数を使って、ループのたびに変数の中身を変えて、IF〜THEN文で変数によって別のラベルまで……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウォオー！　話を聞いてるだけでめんどクセエうえに、言ってるイミもよくわかんねえぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>なかなか難しいよね。そこで役に立つのがFOR (フォー)〜NEXT (ネクスト)命令なんだ。<br class="spacer" />まずこのプログラムを見てごらん。</p>
+
+ </div>
+</div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＦＯＲ　Ａ＝１　ＴＯ　１０</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”くりかえし”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ほとんどゼンブ新しい命令じゃねえか！　とりあえず<span class="basic-text smbas">ＲＵＮ</span>してみるか。</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter6&amp;src=screenshot_loop.jpg" alt="screenshot_loop.jpg" title="screenshot_loop.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ちゃんと<span class="basic-text smbas">くりかえし</span>を10回書いたところで終わったね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>３行のプログラムにしちゃナカナカやるじゃねえか。どうやらクワシク話をきかなきゃならねェようだな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>英語で「FOR (フォー)」は「〜から」、「TO (トゥ)」は「〜まで」という意味になるね。<br class="spacer" /><span class="basic-text smbas">ＦＯＲ　Ａ＝１　ＴＯ　１０</span>は「<span class="basic-text smbas">Ａ＝１</span>から<span class="basic-text smbas">１０</span>まで」と読んでもいいだろう。<br class="spacer" />そして「NEXT (ネクスト)」は「次にいく」というところかな。「次のくりかえしを始める」って考えればこれはわかるよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＮＥＸＴ</span>の方はだいたいワカッたぜ。しかし<span class="basic-text smbas">ＦＯＲ</span>の方、「<span class="basic-text smbas">Ａ＝１</span>から<span class="basic-text smbas">１０</span>まで」ってのはイミわからねェな。フツウ「<span class="basic-text smbas">１</span>から<span class="basic-text smbas">１０</span>まで」じゃねえのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あれ？　たしかBASICでイコール記号を使うのは変数のときだけだから……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>よくおぼえていたね。そう、この<span class="basic-text smbas">Ａ</span>は変数なんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>なんでココで変数が出てくんだ……？<br class="spacer" />話が見えてこねェぞ！　ワカるようにセツメイしやがれ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ジッサイにプログラムで見てもらうのが早いかな？　ちょっと書きかえてみよう。</p>
+
+ </div>
+</div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＦＯＲ　Ａ＝１　ＴＯ　１０</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”くりかえし”；Ａ</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これを<span class="basic-text smbas"></span>するとこうなるね。</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter6&amp;src=screenshot_loop2.jpg" alt="screenshot_loop2.jpg" title="screenshot_loop2.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>１から10まで、くりかえすたびに変数<span class="basic-text smbas">Ａ</span>がふえている、のかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そう考えてマチガイじゃないね。これが<span class="basic-text smbas">ＦＯＲ</span>〜<span class="basic-text smbas">ＴＯ</span>のむずかしいトコロなんだけど、「<span class="basic-text smbas">Ａ＝１</span>から始めて、変数<span class="basic-text smbas">Ａ</span>が<span class="basic-text smbas">１０</span>になるまで、変数<span class="basic-text smbas">Ａ</span>を１ふやしながらくりかえす」というのが<span class="basic-text smbas">ＦＯＲ　Ａ＝１　ＴＯ　１０</span>の正しいイミなんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ズイブンいろいろなコトがはぶいて書いてあんだな、<span class="basic-text smbas">ＦＯＲ</span>〜<span class="basic-text smbas">ＴＯ</span>文にはよォ！　わかりづれェ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そのまま書いても長い命令になって、打ちづらいだろうしね。これくらいがちょうどいいんじゃないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>おっと待てよ、オレのギモンがカイケツしてないままだったぜ！　なんで変数がかならず出てくんだ？　はじめの方で使ったこのプログラムだけは、変数いらねえじゃねえか！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＦＯＲ　Ａ＝１　ＴＯ　１０</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”くりかえし”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>それはもっともかもしれないね。FOR〜NEXT文では変数を使うことの方がずっと多いから……としか言えないかな。じっさい、変数を使わないループなら変数のことはムシすればいいんだし、別にモンダイはないだろう？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウムム……タシカに。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>うっかり別のところで変数<span class="basic-text smbas">Ａ</span>を使ってると、<span class="basic-text smbas">ＦＯＲ</span>命令で変数のナカミが変わっちゃうから、それだけは気をつけないとね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>なんだかマルメこまれた気がしねェでもないが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>次はこのFOR〜NEXT文と相性のいい、DIM命令について説明するよ！</p>
+
+ </div>
+</div>
+
+<h3 id="t68fff69">配列変数</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まずサイショに、「配列変数 (はいれつへんすう)」について知っておこうか。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>イヤなヨカンだな……。漢字が４コ以上つづいたコトバはムズカシいモンと決まってるぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まあまあ。いままでにおぼえた変数とたいした違いはないんだよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ホントに？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>使いかたがトクシュだからとまどうかもしれないけど、変数と同じように使うものだってコトさえ忘れなければ、けっこうカンタンなはずさ。
+まず、いつもの変数を考えてみようか。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＡＰＰＬＥ＝５６</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ；”こ”</span></li>
+</ol></code></div></div>
+<p>おぼえてるかな？　サンプルプログラム１でこんな使いかたをしたよね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>オボエてなくたって、リストを読めばイミはわかるぜ。えーと、&quot;ＲＵＮ&quot;！</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">りんご５６こ</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<p>そうそう、変数<span class="basic-text smbas">ＡＰＰＬＥ</span>のナカミ<span class="basic-text smbas">５６</span>を<span class="basic-text smbas">ＰＲＩＮＴ</span>するんだゼ！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>（ワンパク君、わすれかけてたな……）</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これを配列変数に変えてみよう。</p>
+
+ </div>
+</div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li style="color:#aaa"><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［１］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［０］＝５６</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ［０］；”こ”</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>１行目からさっそく新しい命令が２つ……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ああ、そこは今は気にしないでいいトコロだから、２行目から読むようにしてね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ン？　じゃあ変わったのは、変数のウシロに<span class="basic-text smbas">［０］</span>がついただけってコトか？　それとも変数のウシロに<span class="basic-text smbas">［０］</span>がつくと、何か変数がチガってくんのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いいや、<span class="basic-text smbas">ＡＰＰＬＥ［０］</span>のナカミは<span class="basic-text smbas">５６</span>でマチガイないよ。</p>
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">りんご５６こ</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>じゃあナマエ以外ゼンブ同じじゃねェかよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>変数と同じだって言ったじゃないか。こういうものなんだよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>うーん……これはワンパク君じゃなくても、フツウの変数でいいじゃないかって思うな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>よし、その気持ちをわすれずに、配列変数の使い方その２にいってみよう！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li style="color:#aaa"><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［２］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［０］＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［１］＝３２</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ［０］；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ［１］；”こ”</span></li>
+</ol></code></div></div>
+<p>やっぱり１行目はムシして読んでね！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>テメー……まさか、ソレもこのフツウの変数と同じだって言うんじゃねェだろうな……</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＡＰＰＬＥ０＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ１＝３２</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ０；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”りんご”；ＡＰＰＬＥ１；”こ”</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>合ってるよワンパク君！　ちゃんとわかってるじゃないか。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウオォー！　ガキあつかいもタイガイにしやがれー！　変数のナマエが違うだけじゃねえか!!</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そうそう、名前くらいのちがいだって思えばいいんだよ。教えやすくてたすかるなあ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>チッ、ここまではテメーのオモワクどおりってワケか。だが、そろそろ配列変数だけができるワザを言わねえと、オレもダマっちゃいないぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>配列変数ならではって言うと……こういうのはどうかな？</p>
+<div style="background-color:black;margin:0;padding:0;">
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li style="color:#aaa"><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［１］＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［２］＝３２</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３］＝７１</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="31"><li><span class="smbas">　　　：</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３１］＝４５</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”１にちめ　りんご”；ＡＰＰＬＥ［１］；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”２にちめ　りんご”；ＡＰＰＬＥ［２］；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”３にちめ　りんご”；ＡＰＰＬＥ［３］；”こ”</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="63"><li><span class="smbas">　　　：</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”３１にちめ　りんご”；ＡＰＰＬＥ［３１］；”こ”</span></li>
+</ol></code></div></div>
+</div>
+<p>あんまり長いから途中ははぶいたけど、31日分のリンゴを数えるプログラムなのはわかるよね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>つまり……カッコの中の数字があるからわかりやすいって感じ……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>フザケんじゃねエー！　だからソレ、こう書いても同じじゃねえか！</p>
+<div style="background-color:black;margin:0;padding:0;">
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＡＰＰＬＥ１＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ２＝３２</span></li>
+<li><span class="smbas">ＡＰＰＬＥ３＝７１</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="30"><li><span class="smbas">　　　：</span></li>
+<li><span class="smbas">ＡＰＰＬＥ３１＝４５</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”１にちめ　りんご”；ＡＰＰＬＥ１；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”２にちめ　りんご”；ＡＰＰＬＥ２；”こ”</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”３にちめ　りんご”；ＡＰＰＬＥ３；”こ”</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="62"><li><span class="smbas">ＰＲＩＮＴ”３１にちめ　りんご”；ＡＰＰＬＥ３１；”こ”</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+</div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そうだよワンパク君！　よくここまでガマンしたね！　ここまでは本当に変数といっしょなんだ。これから、配列変数だけの使い方に変えていくよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>お、おう……？　ガマンしたオボエはあんまりねェが、とにかくのぞむトコロだぜ！</p>
+
+ </div>
+</div>
+<div style="background-color:black;margin:0;padding:0;">
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li style="color:#aaa"><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［１］＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［２］＝３２</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３］＝７１</span></li>
+<li><span class="smbas">　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="31"><li><span class="smbas">　　　：</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３１］＝４５</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　ＤＡＹ；”にちめ　りんご”；ＡＰＰＬＥ［ＤＡＹ］；”こ”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>!!</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>わかってきたかな。34行目からはおぼえたばかりのFOR〜NEXTを使っているね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>変数<span class="basic-text smbas">ＤＡＹ</span>を<span class="basic-text smbas">１</span>から順にふやしながら、<span class="basic-text smbas">３１</span>までくりかえすんだよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>変数<span class="basic-text smbas">ＤＡＹ</span>が<span class="basic-text smbas">１</span>のトキは、35行目のイミは<span class="basic-text smbas">ＰＲＩＮＴ　１；”にちめ　りんご”；ＡＰＰＬＥ［１］；”こ”</span>ってコトになる……<br class="spacer" />だがFOR〜NEXTでくりかえして<span class="basic-text smbas">ＤＡＹ</span>が<span class="basic-text smbas">２</span>になったら、同じ35行目でも<span class="basic-text smbas">ＰＲＩＮＴ　２；”にちめ　りんご”；ＡＰＰＬＥ［２］；”こ”</span>に……！<br class="spacer" />これが<span class="basic-text smbas">３１</span>まで自動でくりかえされるってワケか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>これは配列変数じゃないとできないだろう。こういう使い方もできるね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="34"><li><span class="smbas">ＩＮＰＵＴ”なんにちめを　しらべますか”；ＤＡＹ</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　ＤＡＹ；”にちめ　りんご”；ＡＰＰＬＥ［ＤＡＹ］；”こ”</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＩＮＰＵＴ</span>で数字を変数<span class="basic-text smbas">ＤＡＹ</span>に入れて、34行目で配列変数<span class="basic-text smbas">ＡＰＰＬＥ［ＤＡＹ］</span>を<span class="basic-text smbas">ＰＲＩＮＴ</span>するわけだね。<br class="spacer" />うーん、これを普通の変数でやろうとすると、変数名を入力させて……いやいや配列変数じゃないとダメか……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>みんなもわかったみたいだね。つまり配列変数は「変数名に変数を使える」ベンリな変数なんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ヘンスウメイをヘンスウにツカえるヘンスウ……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ごめんごめん、「変数」というコトバばっかりでわかりづらかったね。こういうふうに、口で説明するのがムズカシいのが配列変数なんだ。だから今回はできるだけジッセン的に説明したよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ヘッ、なかなかヤルじゃねえかクソッタレー！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>それ、ほめてるの？</p>
+
+ </div>
+</div>
+
+<h3 id="o9f27746">DIM命令</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>配列変数についてわかってきたところで、DIM命令もおぼえておこう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>配列変数を使うときはいつも１行目に書いてあったね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span>というのは、これから配列変数を<span class="basic-text smbas">ＡＰＰＬＥ［０］</span>〜<span class="basic-text smbas">ＡＰＰＬＥ［３１］</span>まで用意する、という命令だよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>いちいち前もって数を決めておかないといけないの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そう。このことを「配列宣言」と言うんだけど、かならず配列宣言するのはちょっとめんどうではあるね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>メンドウなコトなんざやってられるか！　イキナリ書けばいいじゃねえか！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＡＰＰＬＥ［３１］＝１</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">Ｕｎｄｅｆｉｎｅｄ　ｖａｌｉａｂｌｅ　ｉｎ　０：１</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>というエラーが出るんだよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ヤロー！　こうすりゃいいんだろ！　負けたキブンだぜ！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３１］＝１</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>使うのは<span class="basic-text smbas">ＡＰＰＬＥ［３１］</span>までなのに、<span class="basic-text smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span>と書かなきゃいけないのがフシギなんだけど……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>その<span class="basic-text smbas">ＤＩＭ</span>だと、用意されるのは<span class="basic-text smbas">ＡＰＰＬＥ［０］</span>〜<span class="basic-text smbas">ＡＰＰＬＥ［３１］</span>だからね。数を数えてみるとわかるよ。</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter6&amp;src=array_matrix.png" alt="array_matrix.png" title="array_matrix.png" width="800" height="136" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>……タシカに、32コあるな。しかし言われねえとピンとこねえハナシだぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＬＯＣＡＴＥ</span>命令でもそうだったけど、ゼロから数えるから、頭で考える数より１つズレちゃうんだね。これは気をつけないといけないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>いっそありえないくらい大きく宣言したら？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ところがプチコンが用意できる変数の数は無限ではないんだ。数値の変数だけならだいたい100万個ぐらいまでなら大丈夫だけど、文字列の変数だと入れる文字列が長いほど使える量が減っていったりするし、あとになって足りなくなったら困るだろ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>チッ、なにかとメンドウだぜ！<br class="spacer" />しかしまあワリと今回はジュウジツしたな。デカいヤマを乗りこえたって感じだゼ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>あ、でもその前にもう１つ、おぼえておきたいコトが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>マジでか。</p>
+
+ </div>
+</div>
+
+<h3 id="m1708bac">DATA命令・READ命令</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>配列変数の説明に使ったこのプログラムだけど……</p>
+<div style="background-color:black;margin:0;padding:0;">
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［１］＝５６</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［２］＝３２</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３］＝７１</span></li>
+<li><span class="smbas">　　　　　：</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="31"><li><span class="smbas">　　　　　：</span></li>
+<li><span class="smbas">ＡＰＰＬＥ［３１］＝４５</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　ＤＡＹ；”にちめ　りんご”；ＡＰＰＬＥ［ＤＡＹ］；”こ”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+</div>
+<p>いま見直しても、２〜32行目がずいぶん長いって思うよね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>でもコロンで２行や３行をまとめても、まだけっこう長いしなあ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>こういうデータをまとめたいときに役にたつのがDATA (データ) とREAD (リード) のコンビなのさ。
+まずは<span class="basic-text smbas">ＤＡＴＡ</span>の使い方を先に見てみよう！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="2"><li><span class="smbas">ＤＡＴＡ　５６，３２，７１，４０，６４，７３，６１，１０，４５，８０</span></li>
+<li><span class="smbas">ＤＡＴＡ　２５，７１，６３，５４，９８，２３，１４，６６，５８，４７</span></li>
+<li><span class="smbas">ＤＡＴＡ　９４，３６，３１，２６，４５，７１，２４，７６，６６，５８，４６</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ホントにデータって感じだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>やってるコトは「<span class="basic-text smbas">，</span>」で区切りながらリンゴの数を順に並べてるだけ……みたいだな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>リンゴの数の種類は全部で31。４行目だけ１つ飛び出してるけど、これはいいの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＤＡＴＡ</span>文はかなり自由だから、１行に何個データがあってもいいんだ。２行目では10個、３行目も10個、４行目では11個。プログラムしていて見やすければそれが一番だと思うよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>だがイマんとこ、ただ数をズラッと書いてるだけじゃねえか！　<span class="basic-text smbas">ＤＡＴＡ</span>の使いミチにはほど遠いゼ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そこがポイントだね。<span class="basic-text smbas">ＤＡＴＡ</span>命令はそのままだと何のイミもないんだ。そこで<span class="basic-text smbas">ＲＥＡＤ</span>命令の出番になるよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>READ、日本語で言えば「読む」だね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>いちばんカンタンな<span class="basic-text smbas">ＲＥＡＤ</span>命令の使いかたはこうかな。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="5"><li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ</span></li>
+</ol></code></div></div>
+<p>さっきの<span class="basic-text smbas">ＤＡＴＡ</span>文の後にこう書くと、最初のデータ<span class="basic-text smbas">５６</span>が変数<span class="basic-text smbas">ＡＰＰＬＥ</span>に入るよ！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>31コあるデータなのに、入る数字は最初の１つだけかよ。どういうこった！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>いくつもデータを読み込むなら、<span class="basic-text smbas">ＲＥＡＤ</span>のあとに変数を並べて書くね。今回使うのは配列変数だから……</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="5"><li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ［１］，ＡＰＰＬＥ［２］，ＡＰＰＬＥ［３］</span></li>
+<li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ［４］，ＡＰＰＬＥ［５］，ＡＰＰＬＥ［６］</span></li>
+<li><span class="smbas">　　　　　：</span></li>
+</ol></code></div></div>
+<p>こんなふうに10行ほど続けると全部のデータが読み込めるよ。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ゼンゼン長ったらしいゼ、まだまだ使えたもんじゃねェな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あれ、待ってよ。配列変数っていうことは……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>そう、気がついたようだね。今の<span class="basic-text smbas">ＲＥＡＤ</span>文を短くまとめると、こうなるんだ。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="5"><li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ［ＤＡＹ］</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ココでもまたFOR〜NEXTか……。オボエたての命令だが、ずいぶんアチコチで使うんだな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>特に配列変数や<span class="basic-text smbas">ＲＥＡＤ</span>にはベンリな命令だからね。31行あった文が６行におさまったのはFOR〜NEXT文のおかげだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>いままでのプログラムリストを全部書いてみると、こうなるね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＤＡＴＡ　５６，３２，７１，４０，６４，７３，６１，１０，４５，８０</span></li>
+<li><span class="smbas">ＤＡＴＡ　２５，７１，６３，５４，９８，２３，１４，６６，５８，４７</span></li>
+<li><span class="smbas">ＤＡＴＡ　９４，３６，３１，２６，４５，７１，２４，７６，６６，５８，４６</span></li>
+<li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ［ＤＡＹ］</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　ＤＡＹ；”にちめ　りんご”；ＡＰＰＬＥ［ＤＡＹ］；”こ”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウオォ、いつのまにか10行まで短くなってたのか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>５〜10行目はかぶってるところがあるから、まとめちゃおう。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＰＰＬＥ［３２］</span></li>
+<li><span class="smbas">ＦＯＲ　ＤＡＹ＝１　ＴＯ　３１</span></li>
+<li><span class="smbas">ＲＥＡＤ　ＡＰＰＬＥ［ＤＡＹ］</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　ＤＡＹ；”にちめ　りんご”；ＡＰＰＬＥ［ＤＡＹ］；”こ”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＤＡＴＡ　５６，３２，７１，４０，６４，７３，６１，１０，４５，８０</span></li>
+<li><span class="smbas">ＤＡＴＡ　２５，７１，６３，５４，９８，２３，１４，６６，５８，４７</span></li>
+<li><span class="smbas">ＤＡＴＡ　９４，３６，３１，２６，４５，７１，２４，７６，６６，５８，４６</span></li>
+</ol></code></div></div>
+<p>こんなふうに<span class="basic-text smbas">ＤＡＴＡ</span>はプログラムリストのどこに置いてもいいんだよ。<span class="basic-text smbas">ＲＥＡＤ</span>すると自動的にリストの中で最初にあるデータをさがして順番に読みこむからね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>オイオイ、８行におさまっちまったぞ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>やっていることは同じでも、はじめのころの63行あったプログラムとくらべると、かなりコンパクトになったろう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>あんまり短くしすぎると書いてる自分もこんがらがるので考えものじゃが、目で追えるていどならセイリしてまとめるのは良いことじゃな。こういうのもプログラムのひとつのダイゴミじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あ、ハカセ。いつから……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ジジイの言うこともワカる気がするゼ。ケッキョク配列変数もFOR〜NEXTもナシで書いた方がワカりやすさじゃイチバンなんじゃねえか？ とか思ったモンだが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>今までの話を全部だいなしにしそうな発言だね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>しかし、BASICの命令をクシして、めんどクセェことをゼンブはぶいたのはロックだゼ！　オレのパンクスピリットにもウッタエるモノがあったな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ワカッてくれたようでうれしいのう。そんなパンクキッズのキミのために、次のサンプルプログラムはサウンドをフィーチャーしてみたぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>やってやろうじゃねェかコノヤロー！　さっさと見せやがれェ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>（なんだろうこのテンカイ……）</p>
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h3 id="skip">今回のまとめ</h3>
+
+<h4 id="gc0d64ad">FOR〜NEXT命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＦＯＲ　（変数）＝（最初の数）　ＴＯ　（終わる数）</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+<p>最初の数から始めて、変数を１ずつふやしながら、終わる数まで<span class="basic-text smbas">ＦＯＲ</span>〜<span class="basic-text smbas">ＮＥＸＴ</span>までをくり返します。</p>
+
+<h4 id="j4cd3e5f">配列変数</h4>
+<p><span class="basic-text smbas">Ａ［</span>（数字）<span class="basic-text smbas">］</span>という形の変数が配列変数です。たとえば<span class="basic-text smbas">Ａ［１］</span>と<span class="basic-text smbas">Ａ［２］</span>はまったく別のものとして、違う数が中に入ります。</p>
+
+<h4 id="na0b8890">DIM命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　（変数）［（数）］</span></li>
+</ol></code></div></div>
+<p>配列変数に使う数を決める「配列宣言」をします。たとえば<span class="basic-text smbas">ＤＩＭ　Ａ［１０］</span>なら<span class="basic-text smbas">Ａ［０］</span>〜<span class="basic-text smbas">Ａ［９］</span>まで10個の配列変数が用意されます。</p>
+
+<h4 id="r4a7db3c">READ命令・DATA命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＡＴＡ　（データ），（データ），……</span></li>
+</ol></code></div></div>
+<p>変数に入れるデータ（数字など）を「<span class="basic-text smbas">，</span>」でくぎって連続で書くことができます。</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＲＥＡＤ　（変数）</span></li>
+</ol></code></div></div>
+<p>変数に<span class="basic-text smbas">ＤＡＴＡ</span>文で書いたデータを読みこみます。データはプログラムの中で先の方にあるものから順に呼びだされます。</p>
+</div>
+<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><a href="/petc3gou/?Beginner%2FChapter7" title="Beginner/Chapter7 (1694d)">次のページへ</a></span></div>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_116_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (7h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_116_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (1h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_116_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (6h)">編集の練習用ページ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (7h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_116_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表<span class="counter">(16)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (65d)">【公開終了】弾幕音遊戯<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (797d)">HERO2 一台で二人同時プレイ<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%E1%A1%BC%A5%AB%A1%BC" title="Toukou/ゆうしゃメーカー (1010d)">ゆうしゃメーカー<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FLOGO%CB%B7%A4%E2%A4%C9%A4%AD" title="Toukou/LOGO坊もどき (136d)">LOGO坊もどき<span class="counter">(5)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_116_4">オンライン情報</h3>
+<ul><li>現在同時に 2 人がこのサイトを見ています</li>
+<li>このページはこれまでに 6504 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.099 秒  | このページの最終更新 : 2016/07/12 (火) 16:19:00  (1692d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン3号&amp;BIG 非公式初心者講座 : 第17章 ビット演算の実習 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン3号&amp;BIG 非公式初心者講座 : 第17章 ビット演算の実習 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Beginner%2FChapter17">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Beginner%2FChapter17">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter17">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Beginner%2FChapter17">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン3号&amp;BIG 非公式初心者講座 : 第17章 ビット演算の実習</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Beginner">Beginner</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Beginner%2FChapter17">Chapter17</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.134sec. -->
+<div style="margin-bottom:2em;">
+<div style="text-align:center">[ <a href="/petc3gou/?Beginner%2FChapter16" title="Beginner/Chapter16 (565d)">← 第16章へ</a>
+|
+<a href="/petc3gou/?Beginner#beginner-contents" title="Beginner (564d)">もくじに戻る</a>
+|
+<a href="/petc3gou/?Beginner%2FChapter18" title="Beginner/Chapter18 (565d)">第18章へ →</a> ]</div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+<h3 id="m66e238b">プログラマーからひとこと</h3>
+<p>ふたたびビット演算の話です。<br />
+<br />
+「もういいよ！　あんまり使う場面ないし！」と思うかもしれませんが、うん、まあ、いままであんまり使う場面ありませんでしたね。<br />
+そこで今回は、もっと役立つビット演算の使い方をいくつかおぼえてみよう、という回です。<br />
+<br />
+これで意外と役に立つものなんですよ。<br />
+例によって、これさえおぼえておけば、人のプログラムを読むときにグンと読みやすさがアップしますし。<br />
+<br />
+難しいようで、わかってみるとカンタンなことでもあるので、ANDやORの計算に慣れながら読んでいってみてください。<br /></p>
+</div>
+
+<h3 id="o04e1f03">ループする数</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>前回までのサンプルプログラムで、ビット演算が出てきたのはおぼえてるかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>たしか、<span class="basic-text smbas">Ａ＝（Ａ＋１）　ＡＮＤ　３</span>ってカタチだったよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そうそう。コレでどういう効果が出るかは、おぼえてる？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>この行を通るたびに変数<span class="basic-text smbas">Ａ</span>の数が<span class="basic-text smbas">０</span>から１ずつ増えるんだけど、<span class="basic-text smbas">４</span>まで増えたときには<span class="basic-text smbas">０</span>に戻されるんだった、かな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そういうコトだね。では、このビット演算を……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>テメエら、リズムだけでサクサクおさらいするのもイイカゲンにしやがれ！　このオレもついてこれてねェぞ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ヒドいなあ。じゃあ、いまの<span class="basic-text smbas">ＡＮＤ　３</span>がうまく動くしくみを見直してみることから始めるかい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>復習ってのもおベンキョウくさくってあんまり好きじゃねェが……<br class="spacer" />まず、サイショに変数<span class="basic-text smbas">Ａ</span>が<span class="basic-text smbas">０</span>だったトキはどうなるんだ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">Ａ＝（Ａ＋１）　ＡＮＤ　３</span>ってことは、言いかえると<span class="basic-text smbas">１　ＡＮＤ　３</span>の計算になるよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>それを２進数の式にすると、こうなるね。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１</span></span></td></tr></tbody></table></div>
+<p><span class="basic-text smbas">ＡＮＤ</span>を使った計算はまだ忘れてないかな？</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>上からメセンがニクニクしいぜ！　同じ位をクラベて、両方<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>なら答も<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>、<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>が片方でもあったら<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>になるってヤツだろ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>そこまでワカッてるなら一気にいこうか。変数<span class="basic-text smbas">Ａ</span>に入る数字が<span class="basic-text smbas">０</span>から<span class="basic-text smbas">３</span>までのパターンを並べてみるよ。<br class="spacer" />
+それぞれ<span class="basic-text smbas">＋１</span>されるから、<span class="basic-text smbas">１　ＡＮＤ　３</span>　〜　<span class="basic-text smbas">４　ＡＮＤ　３</span>の式になるね。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００</span></span></td></tr></tbody></table></div>
+<p><span class="basic-text smbas">４　ＡＮＤ　３</span>のときだけ、結果がゼロになるのがわかるだろう。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ホントだな。<br class="spacer" />ギャクに<span class="basic-text smbas">１</span>〜<span class="basic-text smbas">３</span>までは、<span class="basic-text smbas">ＡＮＤ　３</span>されても、そのままナニゴトもなく変化しねェのがフシギだぜ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか、<span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span>みたいに全部<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>で並んだ数で<span class="basic-text smbas">ＡＮＤ</span>すると、数はなにも変わらないでそのまま出てくるんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>おっ、いいトコロに目をつけたね。そのとおりで、たとえば<span class="basic-text smbas">ＡＮＤ　２</span>だと、そうウマくはいかないんだ。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００</span></span></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>タシカになんだか、スッキリしねえケッカになるな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>これが<span class="basic-text smbas">ＡＮＤ　７</span>だとどうかな？　<span class="basic-text smbas">７</span>を２進数になおすと<span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span>で、<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>が並ぶ数字だね。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０</span></span></td><td class="style_td" style="background-color:white;">…</td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td><td class="style_td" style="background-color:white;">…</td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１１１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０</span></span></td><td class="style_td" style="background-color:white;">…</td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００</span></span></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>やっぱり３ケタまではゼッタイ変化しないで、上の数が４ケタになったとたんにゼロになるよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>……<span class="basic-text smbas">ＡＮＤ</span>と<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>が並ぶ数を使うと、ある数まではフツウに増えて、ある数まで増えたらゼロにリセットされるってコトなのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>悪くないリカイだよ。<br class="spacer" /><span class="basic-text smbas">Ａ＝（Ａ＋１）　ＡＮＤ　７</span>が「８回ループするたびに１回だけゼロになる」ものと考えると、<span class="basic-text smbas">ＩＦ　Ａ＝＝ＦＡＬＳＥ　ＴＨＥＮ</span>とすれば８回に１度だけトクベツなコトができるね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>かならず８回目にゼロに戻ってくるのもベンリかもね。<span class="basic-text smbas">ＯＮ　Ａ　ＧＯＴＯ</span>を使ったプログラムでも、自動的にループになるよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>タシカにサンプルプログラムでやったコトも同じか……。<br class="spacer" />で、<span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span>みたく<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>が並ぶ数ってのはナニとナニがあるんだ？　<span class="basic-text smbas">３</span>と<span class="basic-text smbas">７</span>はワカッたが、いちいち探すのはメンドくせェぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>だいじょうぶ、それにはパターンがあるんだ。先にそういう数を見せた方が早いかな？<br class="spacer" />
+２進数にすると<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>の連続になる数字</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">10進数</th><th class="style_th">２進数</th></tr><tr><td class="style_td" style="background-color:white;">1</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">3</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">7</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">15</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">31</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">63</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">127</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">255</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１１１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">：</td><td class="style_td" style="background-color:white;">：</td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>1、3、7、15、31……うーん、パターンがあるような、ないような……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナンだか数字パズルみたいになってきたな。ニガテなテンカイだぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ゼロから数え始めるコンピューターのクセに合わせて、数を１ずつ増やすとどうかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ん？　2、4、8、16、32……あっ！　ぜんぶ倍になってるよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>２の倍は４、４の倍は８、８の倍は16……いわゆる「２のべき乗」だね。２のべき乗マイナス１と考えれば、アンガイおぼえやすいだろう。「64」や「256」なんかはゲームでも見たことある数じゃないかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>64分の１の確率でアイテムをドロップ、とかアリガチじゃな。<br class="spacer" />コンピューターとアイショウのいい数じゃからのう。ムカシはバキ●ラを256回撃つと倒せるというウワサが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ケッ、ムカシ話にはキョウミがねえぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>ま、まあそれもこれもビットの考えカタにそっとるのじゃよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>この数だと「63」にWAIT命令を組みあわせると、こんな風にもできるね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li><span class="smbas">ＷＡＩＴ（１）</span></li>
+<li><span class="smbas">Ａ＝（Ａ＋１）　ＡＮＤ　６３</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　Ａ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＷＡＩＴ（１）</span>は60分の１秒だけ待つってコトだろ。それとコレとどうカンケイが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ビット演算では64回に１回リセットだから……１秒と4/60秒だけループした時に、変数<span class="basic-text smbas">Ａ</span>がゼロにリセットされることになるね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>つまり「だいたい１秒」でリセットされるカウンターだね。ここではただの<span class="basic-text smbas">ＰＲＩＮＴ</span>だけど、ゲームのタイマーや１秒ごとにたまるダメージとか、使いどころはあるんじゃないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>オイオイ、「だいたい１秒」って、そんなテキトウでいいのか!?</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>目に見えるワケではないからのう、体感時間としてはアリじゃ。ぶっちゃけプログラムにはよくある手じゃよ。<br class="spacer" />その後、プログラムを解析されて「なんちゃって１秒」だとバレるところまでふくめてワンセットじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>は、はかりしれねえセカイだぜェ……。</p>
+
+ </div>
+</div>
+
+<h3 id="i516f3d5">BUTTON()命令の種明かし</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ン？　さっきの「2、4、8、16、32……」って数、マエにも見た気がするな……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>そういえば、<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令に使われてる数字がそうだったよ！</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td" style="background-color:white;">1</td><th class="style_th">Aボタン</th><td class="style_td" style="background-color:white;">16</td><th class="style_th">Lボタン</th><td class="style_td" style="background-color:white;">256</td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td" style="background-color:white;">2</td><th class="style_th">Bボタン</th><td class="style_td" style="background-color:white;">32</td><th class="style_th">Rボタン</th><td class="style_td" style="background-color:white;">512</td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td" style="background-color:white;">4</td><th class="style_th">Xボタン</th><td class="style_td" style="background-color:white;">64</td><th class="style_th"></th><td class="style_td" style="background-color:white;"></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td" style="background-color:white;">8</td><th class="style_th">Yボタン</th><td class="style_td" style="background-color:white;">128</td><th class="style_th"></th><td class="style_td" style="background-color:white;"></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ソレもビット演算の考え方を使ってるんだけど、しくみは飛ばしておぼえていたね。ためしに２進数に直してみるよ。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">10進数</th><th class="style_th">２進数</th></tr><tr><td class="style_td" style="background-color:white;">1</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">2</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td></tr><tr><td class="style_td" style="background-color:white;">4</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">8</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">16</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">32</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">：</td><td class="style_td" style="background-color:white;">：</td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか、２進数にするとキリがいい数だったんだな。ソコまではワカったが……コレとビット演算がカンケイあんのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>これだけだと、まだわかりづらいね。２進数のケタをそろえてみよう。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">10進数</th><th class="style_th">２進数</th></tr><tr><td class="style_td" style="background-color:white;">1</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００００１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">2</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００１０</span></span></td></tr><tr><td class="style_td" style="background-color:white;">4</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００１００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">8</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００１０００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">16</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">32</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">：</td><td class="style_td" style="background-color:white;">：</td></tr></tbody></table></div>
+<p>先頭にゼロをつけただけで、数が変わったわけじゃないよ。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ははあ、右からジュンバンに１ケタずつ、ボタンと<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>のペアができてるんだね。こうやって見ると数字っていうよりは、記号みたいだよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>タシカに。それぞれのケタがスイッチで、<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>が「オフ」で<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>が「オン」だって考え方があるんだ。<br class="spacer" />だから、こういう表でも<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になっているケタを「ビットが立っている」と言ったりするね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p><span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>から<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になるのが、「ビットが立つ」ってことか。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span style="text-decoration:underline;"><span class="basic-text smbas">００００１０</span></span>なら第１ビットが立っている、なんて言うね。１ケタ目が第０ビット、２ケタ目なら第１ビットさ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>またゼロから始める数えカタかよ……ギョウカイ用語はいいから、サッサとハナシをススメやがれ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>じゃあ、たとえば「十字ボタン↑」と「Ａボタン」が同時押しされた時で考えてみよう。<br class="spacer" />10進数なら<span class="basic-text smbas">１</span>＋<span class="basic-text smbas">１６</span>で<span class="basic-text smbas">１７</span>が変数に入るけど、この数を２進数にするとどう見えるかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>えーと、こうなるかな。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">10進数</th><th class="style_th">２進数</th></tr><tr><td class="style_td" style="background-color:white;">1</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００００１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">16</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">1+16=17</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０００１</span></span></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>お、オォ？　そのまま組み合わさったみてェな数になったぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>こういう「１、２、４、８、……」と倍々になっている数のトクチョウだね。数をたすとビットが立ったままキレイに合わさるんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ますます記号みたいだね。
+つまり<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令だと、第０ビットが「十字ボタン↑」のスイッチになっていて、第４ビットは「Ａボタン」のスイッチってことだね。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td" style="background-color:white;">1</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００００００００１</span></span></td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td" style="background-color:white;">2</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００００００１０</span></span></td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td" style="background-color:white;">4</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００００００１００</span></span></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td" style="background-color:white;">8</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００００１０００</span></span></td></tr><tr><th class="style_th">Aボタン</th><td class="style_td" style="background-color:white;">16</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００００１００００</span></span></td></tr><tr><th class="style_th">Bボタン</th><td class="style_td" style="background-color:white;">32</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００１０００００</span></span></td></tr><tr><th class="style_th">Xボタン</th><td class="style_td" style="background-color:white;">64</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０００１００００００</span></span></td></tr><tr><th class="style_th">Yボタン</th><td class="style_td" style="background-color:white;">128</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００１０００００００</span></span></td></tr><tr><th class="style_th">Lボタン</th><td class="style_td" style="background-color:white;">256</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００００００００</span></span></td></tr><tr><th class="style_th">Rボタン</th><td class="style_td" style="background-color:white;">512</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００００００００</span></span></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナカナカおもしれえハナシだが……だからナンのイミがあるんだって気もするぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ここからがベンリなところだよ。<br class="spacer" /><span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令で言えば、Ａボタンが押されているかをチェックしたい時はどうするんだったかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>何もカンガエずに、IF文で<span class="basic-text smbas">ＡＮＤ　１６</span>と書けばイイって、教わったな。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li><span class="smbas">Ｂ＝ＢＵＴＴＯＮ（）</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　１６　ＴＨＥＮ　ＰＲＩＮＴ”Ａがおされてます”</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>じゃあ、今度はちゃんと見てみよう。<br class="spacer" />
+いま出てきた「十字ボタン↑」と「Ａボタン」が同時押しされた時の数「<span style="text-decoration:underline;"><span class="basic-text smbas">０１０００１</span></span>」に、<span class="basic-text smbas">ＡＮＤ　１６</span>のビット演算をしてみるね。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０００１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００００</span></span></td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あっ！　Ａボタンのスイッチになってる第４ビットだけが立ってるよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>わかってきたかな。チェックしたいケタに１を、それ以外のケタに０を入れて<span class="basic-text smbas">ＡＮＤ</span>で演算すれば、そのビットが立っているかどうかスグにわかるんだ。<br class="spacer" />このトクチョウをうまく使ったのが、<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令と<span class="basic-text smbas">ＡＮＤ</span>を使ったIF文だね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ゴクリ……てことは、第５ビットのＢボタンが押されてるかどうかで考えると……</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１０００１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００００</span></span></td></tr></tbody></table></div>
+<p>ヤッパリ答はゼロ、第５ビットは立ってねえってコトがワカるぜ！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>「１、２、４、８、……」という数で組み立てておくと、こういうチェックにベンリなのがわかるね。<br class="spacer" />頭で考えるよりも、こういう数のパターンをひとつおぼえておくといいよ！</p>
+
+ </div>
+</div>
+
+<h3 id="w5657555">ビット演算を使ったフラグ</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>フーム……このパターンを<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令イガイに使うとすると、トウゼン変数だよな。フラグなんかにベンリそうな気はするぜ！<br class="spacer" />どうするのがイイのかはサッパリ思いつかねェけど。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>スッキリあきらめたね。<br class="spacer" />まあ、さっきの<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令だって、「上ボタンを押すと第０ビットのフラグが立つ」と考えればリッパにフラグさ。その応用で作ればいいよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナルホド、そういうミカタもあるか……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>さすがに<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>なみに10ケタいるとは思えないけど、４ケタあれば、４つのオン・オフをいちどに見られるフラグになるワケだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>イヤちょっと待てよ！　<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>ならボタンを押せばカッテにフラグが立ってくれたがよォ、自分のプログラムの中でフラグを立てたり消したりするのは、どうやりゃいいんだ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>たしかに、10進数みたく<span class="basic-text smbas">Ａ＝Ａ＋１</span>みたいに書くわけにはいかないよね。第２ビットを<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>にするには、ええと……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>フラグを立てるならビット演算の<span class="basic-text smbas">ＯＲ</span>を使うのがキホンかな。<br class="spacer" />
+たとえばまっさらな変数<span class="basic-text smbas">Ａ</span>があったとしよう。<span class="basic-text smbas">Ａ＝０</span>だから、２進数でも<span style="text-decoration:underline;"><span class="basic-text smbas">００００</span></span>なのはわかるよね。<br class="spacer" />
+この３ケタ目（第２ビット）を立てるには、こうするよ。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">OR</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr></tbody></table></div>
+<p>ここで<span class="basic-text smbas">ＯＲ</span>に使った<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>は、10進数で言いかえれば４。<br class="spacer" />
+つまり、<span class="basic-text smbas">Ａ＝Ａ　ＯＲ　４</span>と書けば、第２ビットが立つことになるね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＯＲ</span>を使うのはワカッたが、イチイチ10進数に直すのがカッタルイぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>なれないウチは並んだ２進数の右ハジから、「１、２、４、８、……」と倍にしながら数えていくのがカンタンかもしれんな。10進数で右ハジから「一、十、百、千、万、……」とケタを数えるノリでいけるぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>第２ビットが立っているときに、もういちど<span class="basic-text smbas">ＯＲ　４</span>すると……</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">OR</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr></tbody></table></div>
+<p>やっぱりそのままだね。<span class="basic-text smbas">ＯＲ</span>はビットを立てるために使うってコトか。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>オン・オフを逆にしたい時は、<span class="basic-text smbas">ＸＯＲ</span>がオススメだね。<br class="spacer" />
+ためしに<span style="text-decoration:underline;"><span class="basic-text smbas">１１００</span></span>と<span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span>、どっちにも<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>で<span class="basic-text smbas">ＸＯＲ</span>してみるよ。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１００</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">XOR</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td><td class="style_td" style="text-align:right; background-color:white;">XOR</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１００</span></span></td></tr></tbody></table></div>
+<p><span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>で<span class="basic-text smbas">ＸＯＲ</span>した第２ビットだけがひっくり返って、ホカのケタはそのまま残るのがわかるだろう。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＸＯＲ</span>って使い方がムズカシいと思ってたけど、こういう時にベンリなんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>じゃあ、とにかく<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>にしたいってトキは……そうか、<span class="basic-text smbas">ＡＮＤ</span>だな？</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０１１</span></span></td><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０１１</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">００００</span></span></td><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０１１</span></span></td></tr></tbody></table></div>
+<p><span style="text-decoration:underline;"><span class="basic-text smbas">１０１１</span></span>で<span class="basic-text smbas">ＡＮＤ</span>、10進数で言えば<span class="basic-text smbas">ＡＮＤ　１１</span>だな。
+これでホカのケタはそのままで、第２ビットだけが<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>になったぜ！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left">
+<p>なかなかワカッてきたではないか。<br class="spacer" />
+さっきの復習じゃが、<span class="basic-text smbas">ＡＮＤ</span>を使ったフラグチェックには、こういうテクニックもあるのう。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="background-color:white;"></td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１０</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">AND</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr><tr><td class="style_td" style="text-align:right; background-color:white;">=</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span></td></tr></tbody></table></div>
+<p><span class="basic-text smbas">ＡＮＤ　４</span>すると、第２ビット以外はゼロになったじゃろう。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>で使ったテクだな！　第２ビット以外をゼロにすれば、第２ビットのオン・オフだけがハッキリする。ツマリ……エー……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか！　そうなると、<span class="basic-text smbas">ＩＦ　Ａ　ＴＨＥＮ</span>の形が使えるんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そのトオリ。１行にまとめると、<span class="basic-text smbas">ＩＦ　Ａ　ＡＮＤ　４　ＴＨＥＮ</span>〜だね。<br class="spacer" />もちろんホカにも<span class="basic-text smbas">Ａ＝Ａ　ＡＮＤ　４：ＩＦ　Ａ＝＝ＦＡＬＳＥ　ＴＨＥＮ</span>〜 なんかでもいいけど、とにかく決まったケタのナカミだけがスグにわかるよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ホカのケタがまるまるゼロになっちまうが……、ああ、そこは変数のナカミをあらかじめコピーしとけばいいのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>そうじゃな、<span class="basic-text smbas">Ａ＝Ｂ</span>とか逃がしてから、<span class="basic-text smbas">Ｂ＝Ｂ　ＡＮＤ　４</span>などとするのがアンゼンじゃろうの。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まだまだイロイロなテクニックはあるよ。なかなかオクの深い世界だろう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>とっつきはワルいが、使いミチはワカッてきた気がするぜ。てコトは、このアトすぐに使う場面があるワケだな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>いや、そうともかぎらんが。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>えー……？</p>
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h3 id="l82664ff">今回のまとめ</h3>
+<dl><dt>ループする数</dt>
+<dd><div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">Ａ＝（Ａ＋１）　ＡＮＤ　３</span></li>
+</ol></code></div></div>
+こう書くと、<span class="basic-text smbas">Ａ＝０</span>から始めて、この式を３＋１回くり返したとき、変数<span class="basic-text smbas">Ａ</span>は<span class="basic-text smbas">０</span>に戻ります。<br />
+３以外に、７、15、31、63……と、「２のべき乗」マイナス１の数で同じパターンが使えます。</dd>
+<dt>ビット演算を使ったフラグ</dt>
+<dd>たとえば２進数の<span style="text-decoration:underline;"><span class="basic-text smbas">００００</span></span>（10進数の<span class="basic-text smbas">０</span>）を「４つ並んだフラグ」と見なせば、４種類のオン・オフを管理できます。<br />
+<span style="text-decoration:underline;"><span class="basic-text smbas">０００１</span></span>（10進数の<span class="basic-text smbas">１</span>）なら「第０ビットが立った」状態、<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>（10進数の<span class="basic-text smbas">４</span>）なら「第２ビットが立った」状態と言えます。<br />
+他のケタを変化させずに第２ビットだけを<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>にしたければ<span class="basic-text smbas">ＯＲ　４</span>（２進数の<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>）、第２ビットだけを<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>にしたければ<span class="basic-text smbas">ＡＮＤ　１１</span>（２進数の<span style="text-decoration:underline;"><span class="basic-text smbas">１０１１</span></span>）することになるでしょう。<br />
+第２ビットの状態だけを反転させるには、<span class="basic-text smbas">ＸＯＲ　４</span>（２進数の<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>）がいいでしょう。<br />
+わざと<span class="basic-text smbas">ＡＮＤ　４</span>（２進数の<span style="text-decoration:underline;"><span class="basic-text smbas">０１００</span></span>）することで、第２ビット以外を<span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span>にして、第２ビットの状態をハッキリさせる方法もあります。<br />
+こういったあるひとケタだけが<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になっている数は、10進数に直せば「１、２、４、８……」と倍々に増えていく数になります。
+</div></dd></dl>
+<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><strong><a href="/petc3gou/?Beginner%2FChapter18" title="Beginner/Chapter18 (565d)">次のページへ</a></strong></span></div>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_88_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (7h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_88_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (58m)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_88_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (6h)">編集の練習用ページ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (7h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_88_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表<span class="counter">(16)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (65d)">【公開終了】弾幕音遊戯<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (797d)">HERO2 一台で二人同時プレイ<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%E1%A1%BC%A5%AB%A1%BC" title="Toukou/ゆうしゃメーカー (1010d)">ゆうしゃメーカー<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FLOGO%CB%B7%A4%E2%A4%C9%A4%AD" title="Toukou/LOGO坊もどき (136d)">LOGO坊もどき<span class="counter">(5)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_88_4">オンライン情報</h3>
+<ul><li>現在同時に 2 人がこのサイトを見ています</li>
+<li>このページはこれまでに 591 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.138 秒  | このページの最終更新 : 2019/08/13 (火) 17:08:59  (565d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 日付をしゃべる - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 日付をしゃべる - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, サブルーチン, カレンダー, QRコード, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 日付をしゃべる</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB">日付をしゃべる</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.278sec. -->
+<p>2014年10月16日投稿 / 投稿者 : まげ / <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%B5%A5%D6%A5%EB%A1%BC%A5%C1%A5%F3">サブルーチン</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%AB%A5%EC%A5%F3%A5%C0%A1%BC">カレンダー</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<div class="contents">
+<ul><li><a href="#tccd612b">  概要 </a></li>
+<li><a href="#w0947a52">  使い方 </a></li>
+<li><a href="#o377adb7">  応用 </a></li>
+<li><a href="#adeddb8b">  プログラムについて </a></li>
+<li><a href="#g3b32528">  アンケート </a></li>
+<li><a href="#af99f5b4">  QR コード </a></li>
+<li><a href="#i7854f0d">  プログラムリスト </a></li>
+<li><a href="#t9ae214d">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>今日のアクセス：1　　トータルアクセス：1450</p>
+<h3 id="tccd612b">概要</h3>
+<p>日付を、そこそこ流暢な日本語で発声させるプログラムです。</p>
+
+<h3 id="w0947a52">使い方</h3>
+<p>プログラムを起動すると、今日の日付を発声して、終わります。</p>
+
+<h3 id="o377adb7">応用</h3>
+<p>●10行目「<span class="basic-text">’ＩＮＰＵＴ　”ナンカ゛ツ”；ＭＴ：ＩＮＰＵＴ　”ナンニチ”；ＤＹ</span>」の「<span class="basic-text">’</span>」を消せば、好きな数字でテストできます。ただし、日付の範囲外の数値の判定はしていないので悪しからず(^^)。</p>
+
+<h3 id="adeddb8b">プログラムについて</h3>
+<p>他のプログラムに組み込む等、自由に二次使用していただいて構いませんし、著作表示も一切義務づけ致しません。使用報告も強くは求めません(^^;)。<br class="spacer" />
+ただし、使用したことで何らかの悪影響があったとしても、責任は負いません。ま、変数名やラベル名さえカブらなければ、いたって無害なプログラムだとは思いますけどね(^^)。<br class="spacer" /></p>
+<p>ぶっちゃけ、前に発表した「時刻をしゃべる」の、二番煎じです(^^;)。時刻の時にも感じましたが、数字と日本語って、面倒くさい関係ですね。</p>
+<p>よろしければ作者のHP・<a href="http://mage.kir.jp/puchiko_hp" rel="nofollow">【プチコＲｏｏｍ】</a>へもお越しください。</p>
+
+<h3 id="g3b32528">アンケート</h3>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/日付をしゃべる" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="0c59690cba4e449d706822804132828f" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダウンロードした</td>
+   <td align="right" class="vote_td2">2&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">二次使用した</td>
+   <td align="right" class="vote_td1">1&nbsp;&nbsp;
+    <input type="submit" name="vote_C6F3BCA1BBC8CDD1A4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">支援(^^;)</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_BBD9B1E7285E5E3B29" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="af99f5b4">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。<br class="spacer" /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB&amp;openfile=qr000.gif" title="qr000.gif"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB&amp;src=qr000.gif" alt="qr000.gif" title="qr000.gif" width="258" height="258" /></a></td></tr></tbody></table></div>
+
+<h3 id="i7854f0d">プログラムリスト</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト／57行
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ</li>
+<li></li>
+<li>’ショキセッテイ＜−−−−−−−−−−−−−−−−−−</li>
+<li>ＭＴ＄＝”，イチ’，ニ，サ’ン，シ，コ゛，ロク，シチ，ハチ，ク’，シ゛ュ−，シ゛ュ−イチ，シ゛ュ−ニ”</li>
+<li>ＤＹ＄＝”，ツイタチ，フツ，ミッ，ヨッ，イツ，ムイ，ナノ，ヨ−，ココノ，ト−”</li>
+<li>ＹＢ＄＝”ニチ，ケ゛ツ，カ，スイ，モク，キン，ト゛”</li>
+<li></li>
+<li>’ニチシ゛　トリタ゛シ＜−−−−−−−−−−−−−−−</li>
+<li>ＤＴＲＥＡＤ（ＤＡＴＥ＄），ＹＲ，ＭＴ，ＤＹ</li>
+<li>’ＩＮＰＵＴ　”ナンカ゛ツ”；ＭＴ：ＩＮＰＵＴ　”ナンニチ”；ＤＹ</li>
+<li></li>
+<li>’ヒツ゛ケ　ヒョウシ゛＜−−−−−−−−−−−−−−−</li>
+<li>？　ＹＲ；”／”；ＭＴ；”／”；ＤＹ：？</li>
+<li></li>
+<li>’ツキ　ケイサン＜−−−−−−−−−−−−−−−−−−</li>
+<li>ＩＴＥＭ＝ＭＴ：ＩＴＥＭ＄＝ＭＴ＄：ＧＯＳＵＢ　＠ＩＴＥＭ</li>
+<li>ＴＭＴ＄＝ＩＴＥＭ＄＋”カ゛ツ　��”</li>
+<li></li>
+<li>’ニチ　ケイサン＜−−−−−−−−−−−−−−−−−−</li>
+<li>ＩＦ　ＤＹ＜１１　ＴＨＥＮ　＠ＤＳＫＩＰ</li>
+<li>ＤＹＰ＄＝””</li>
+<li>ＩＦ　ＤＹ＞２０　ＴＨＥＮ　ＤＹＰ＄＝”ニ’”</li>
+<li>ＩＦ　ＤＹ＞２９　ＴＨＥＮ　ＤＹＰ＄＝”サ’ン”</li>
+<li>ＩＴＥＭ＝ＤＹ−ＦＬＯＯＲ（ＤＹ／１０）＊１０：ＩＴＥＭ＄＝ＭＴ＄：ＧＯＳＵＢ　＠ＩＴＥＭ</li>
+<li>ＴＤＹ＄＝ＤＹＰ＄＋”シ゛ュ−’��”＋ＩＴＥＭ＄＋”ニ’チ”</li>
+<li>ＩＦ　ＩＴＥＭ＝＝４　ＴＨＥＮ　ＴＤＹ＄＝ＤＹＰ＄＋”シ゛ュ−��ヨッカ”</li>
+<li>ＩＦ　ＤＹ＝＝２０　ＴＨＥＮ　ＴＤＹ＄＝”ハツ％カ”</li>
+<li>ＧＯＴＯ　＠ＤＮＥＸＴ</li>
+<li>＠ＤＳＫＩＰ</li>
+<li>ＩＴＥＭ＝ＤＹ：ＩＴＥＭ＄＝ＤＹ＄：ＧＯＳＵＢ　＠ＩＴＥＭ</li>
+<li>ＩＦ　ＤＹ＝＝１　ＴＨＥＮ　ＤＹＰ＄＝””　ＥＬＳＥ　ＤＹＰ＄＝”カ”</li>
+<li>ＴＤＹ＄＝ＩＴＥＭ＄＋ＤＹＰ＄</li>
+<li>＠ＤＮＥＸＴ</li>
+<li></li>
+<li>’ヨウヒ゛　ケイサン＜−−−−−−−−−−−−−−−−</li>
+<li>ＹＹ＝ＹＲ：ＹＭ＝ＭＴ：ＹＤ＝ＤＹ</li>
+<li>ＹＹ＝ＹＹ−（ＹＭ＜３）</li>
+<li>ＹＭ＝ＹＭ＋（ＹＭ＜３）＊１２</li>
+<li>ＹＢ＝（ＹＹ＋（０　ＯＲ　ＹＹ／４）−（０　ＯＲ　ＹＹ／１００）＋（０　ＯＲ　ＹＹ／４００）＋ＦＬＯＯＲ（（１３＊ＹＭ＋８）／５）＋ＹＤ）％７</li>
+<li>ＩＴＥＭ＝ＹＢ：ＩＴＥＭ＄＝ＹＢ＄：ＧＯＳＵＢ　＠ＩＴＥＭ</li>
+<li>ＴＹＢ＄＝ＩＴＥＭ＄＋”ヨ−ヒ゛”</li>
+<li></li>
+<li>’ハッセイ＜−−−−−−−−−−−−−−−−−−−−−</li>
+<li>ＴＡＬＫ　ＴＭＴ＄＋ＴＤＹ＄＋”　”＋ＴＹＢ＄</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li></li>
+<li>’アイテム　トリタ゛シ　ル−チン＜−−−−−−−−−−</li>
+<li>＠ＩＴＥＭ</li>
+<li>＿ＩＴＰ＝０：＿ＩＴＥＭ＄＝””</li>
+<li>ＦＯＲ　＿ＩＴＸ＝０　ＴＯ　ＬＥＮ（ＩＴＥＭ＄）</li>
+<li>＿ＩＴＣ＄＝ＭＩＤ＄（ＩＴＥＭ＄，＿ＩＴＸ，１）</li>
+<li>＿ＩＴＰ＝＿ＩＴＰ＋（＿ＩＴＣ＄＝＝”，”）</li>
+<li>＿ＩＴＥＭ＄＝＿ＩＴＥＭ＄＋ＭＩＤ＄（＿ＩＴＣ＄，（＿ＩＴＰ！＝ＩＴＥＭ）＋（＿ＩＴＣ＄＝＝”，”），１）</li>
+<li>ＮＥＸＴ　＿ＩＴＸ</li>
+<li>ＩＴＥＭ＄＝＿ＩＴＥＭ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="t9ae214d">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3434d)">掲示板</a>へ)</p>
+<ul><li><strong>キャラクター製作</strong> : コレもDoorsに組み込むことにしました(^_^)/ (<span class="comment_date">2014/11/12 (水) 19:18:00</span>)</li>
+<li><strong>投稿者</strong> : ＞キャラクター製作所さん：いつかそう言っていただけると思っていました(^^;)。プログラムの改造しての使用もＯＫですからね。 (<span class="comment_date">2014/11/12 (水) 20:29:52</span>)</li>
+<li><strong>キャラクター製作所</strong> : できました〜(ﾟ▽ﾟ)/<a href="/petc/?Toukou%2F%A1%D6Doors%A1%D7%A4%A2%A4%CA%A4%BF%A4%CE%A5%D7%A5%C1%A5%B3%A5%F3%A4%F2%CA%D8%CD%F8%A4%CB%A4%B9%A4%EBOS" title="Toukou/「Doors」あなたのプチコンを便利にするOS (2146d)">Toukou/「Doors」あなたのプチコンを便利にするOS</a> (<span class="comment_date">2014/11/17 (月) 19:17:57</span>)</li>
+<li><strong>投稿者</strong> : ＞キャラクター製作所さん：…レスが遅れてごめんなさい。 それにしても、まさか3DSのTALKがあんなに機能ダウンするとは…。(<span class="comment_date">2015/01/10 (土) 15:12:19</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/日付をしゃべる" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="0c59690cba4e449d706822804132828f" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (972d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2080d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (3023d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1956d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1966d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2418d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2618d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2188d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1279d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (637d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2411d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2150d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_5_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2617d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (15h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_5_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (167d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FShiftKey%20Store" title="Toukou/ShiftKey Store (4d)">Toukou/ShiftKey Store</a></li>
+</ul>
+<h4>2022/01/01</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FINSECTS%20FLIGHT%20-%BA%AB%C3%EE%C8%F4%B9%D4-" title="INSECTS FLIGHT ー昆虫飛行ー (17d)">INSECTS FLIGHT ー昆虫飛行ー</a></li>
+</ul>
+<h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (108d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (124d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (139d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (162d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (167d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (191d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (191d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (256d)">Petit Slash II</a></li>
+</ul>
+</div>
+
+<h3 id="content_5_3">オンライン情報</h3>
+<p>現在同時に 3 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.363 秒  | このページの最終更新 : 2016/02/27 (土) 22:12:58  (2152d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

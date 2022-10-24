@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>エラーメッセージ - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="エラーメッセージ - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Mame%2FErrormsg">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Mame%2FErrormsg">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FErrormsg">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Mame%2FErrormsg">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>エラーメッセージ</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Mame%2FErrormsg">Errormsg</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.091sec. -->
+<p>プログラムを書いていると、エラーが出ることがあります。エラーの内容をしっかり理解して、動くプログラムを作っていきましょう!!</p>
+<h3 id="list">エラーメッセージ一覧</h3>
+
+<h4 id="Ver310">ver 3.1.0で確認</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ERRNUM</td><td class="style_td">内容</td><td class="style_td">説明</td></tr><tr><td class="style_td">1</td><td class="style_td"><a href="#err1">Internal Error</a></td><td class="style_td">プチコン3号の内部エラー</td></tr><tr><td class="style_td">2</td><td class="style_td"><a href="#err2">Illegal Instruction</a></td><td class="style_td">プチコン3号の内部エラー</td></tr><tr><td class="style_td">3</td><td class="style_td"><a href="#err3">Syntax error</a></td><td class="style_td">プログラムが間違っている</td></tr><tr><td class="style_td">4</td><td class="style_td"><a href="#err4">Illegal function call</a></td><td class="style_td">関数・命令のパラメータ数が合わない</td></tr><tr><td class="style_td">5</td><td class="style_td"><a href="#err5">Stack overflow</a></td><td class="style_td">再帰呼び出し等によって内部スタックが溢れた</td></tr><tr><td class="style_td">6</td><td class="style_td"><a href="#err6">Stack underflow</a></td><td class="style_td">?</td></tr><tr><td class="style_td">7</td><td class="style_td"><a href="#err7">Divide by zero</a></td><td class="style_td">数値を0で割った</td></tr><tr><td class="style_td">8</td><td class="style_td"><a href="#err8">Type mismatch</a></td><td class="style_td">関数・命令・変数の型が合わない</td></tr><tr><td class="style_td">9</td><td class="style_td"><a href="#err9">Overflow</a></td><td class="style_td">値が大きすぎる</td></tr><tr><td class="style_td">10</td><td class="style_td"><a href="#err10">Out of range</a></td><td class="style_td">関数・命令の値が範囲外である</td></tr><tr><td class="style_td">11</td><td class="style_td"><a href="#err11">Out of memory</a></td><td class="style_td">メモリが不足している</td></tr><tr><td class="style_td">12</td><td class="style_td"><a href="#err12">Out of code memory</a></td><td class="style_td">プログラムが長すぎる</td></tr><tr><td class="style_td">13</td><td class="style_td"><a href="#err13">Out of DATA</a></td><td class="style_td">データが足りない</td></tr><tr><td class="style_td">14</td><td class="style_td"><a href="#err14">Undefined label</a></td><td class="style_td">指定したラベルは存在しない</td></tr><tr><td class="style_td">15</td><td class="style_td"><a href="#err15">Undefined variable</a></td><td class="style_td">指定した変数は存在しない</td></tr><tr><td class="style_td">16</td><td class="style_td"><a href="#err16">Undefined function</a></td><td class="style_td">指定した関数・命令は存在しない</td></tr><tr><td class="style_td">17</td><td class="style_td"><a href="#err17">Duplicate label</a></td><td class="style_td">ラベルが多重定義されている</td></tr><tr><td class="style_td">18</td><td class="style_td"><a href="#err18">Duplicate variable</a></td><td class="style_td">変数が多重定義されている</td></tr><tr><td class="style_td">19</td><td class="style_td"><a href="#err19">Duplicate function</a></td><td class="style_td">関数・命令が多重定義されている</td></tr><tr><td class="style_td">20</td><td class="style_td"><a href="#err20">FOR without NEXT</a></td><td class="style_td">FOR に対応する NEXT がない</td></tr><tr><td class="style_td">21</td><td class="style_td"><a href="#err21">NEXT without FOR</a></td><td class="style_td">NEXT に対応する FOR がない</td></tr><tr><td class="style_td">22</td><td class="style_td"><a href="#err22">REPEAT without UNTIL</a></td><td class="style_td">REPEAT に対応する UNTIL がない</td></tr><tr><td class="style_td">23</td><td class="style_td"><a href="#err23">UNTIL without REPEAT</a></td><td class="style_td">UNTIL に対応する REPEAT がない</td></tr><tr><td class="style_td">24</td><td class="style_td"><a href="#err24">WHILE without WEND</a></td><td class="style_td">WHILE に対応する WEND がない</td></tr><tr><td class="style_td">25</td><td class="style_td"><a href="#err25">WEND without WHILE</a></td><td class="style_td">WEND に対応する WHILE がない</td></tr><tr><td class="style_td">26</td><td class="style_td"><a href="#err26">THEN without ENDIF</a></td><td class="style_td">IF に対応する ENDIF がない</td></tr><tr><td class="style_td">27</td><td class="style_td"><a href="#err27">ELSE without ENDIF</a></td><td class="style_td">ELSE に対応する ENDIF がない</td></tr><tr><td class="style_td">28</td><td class="style_td"><a href="#err28">ENDIF without IF</a></td><td class="style_td">ENDIF に対応する IF がない</td></tr><tr><td class="style_td">29</td><td class="style_td"><a href="#err29">DEF without END</a></td><td class="style_td">DEF に対応する ENDがない</td></tr><tr><td class="style_td">30</td><td class="style_td"><a href="#err30">RETURN without GOSUB</a></td><td class="style_td">RETURN があるのに GOSUB がない</td></tr><tr><td class="style_td">31</td><td class="style_td"><a href="#err31">Subscript out of range</a></td><td class="style_td">配列変数の添字が範囲外である</td></tr><tr><td class="style_td">32</td><td class="style_td"><a href="#err32">Nested DEF</a></td><td class="style_td">DEF の中に DEF がある</td></tr><tr><td class="style_td">33</td><td class="style_td"><a href="#err33">Can't continue</a></td><td class="style_td">プログラムを再開出来ない</td></tr><tr><td class="style_td">34</td><td class="style_td"><a href="#err34">Illegal symbol string</a></td><td class="style_td">ラベル文字列が不正</td></tr><tr><td class="style_td">35</td><td class="style_td"><a href="#err35">Illegal file format</a></td><td class="style_td">ファイルフォーマットが不正</td></tr><tr><td class="style_td">36</td><td class="style_td"><a href="#err36">Mic is not available</a></td><td class="style_td">マイク機能が無効</td></tr><tr><td class="style_td">37</td><td class="style_td"><a href="#err37">Motion sensor is not available</a></td><td class="style_td">ジャイロセンサー機能が無効</td></tr><tr><td class="style_td">38</td><td class="style_td"><a href="#err38">Use PRGEDIT before any PRG function</a></td><td class="style_td">PRGEDIT を実行する前に PRG 系命令を使用した</td></tr><tr><td class="style_td">39</td><td class="style_td"><a href="#err39">Animation is too long</a></td><td class="style_td">アニメーションデータが長すぎる</td></tr><tr><td class="style_td">40</td><td class="style_td"><a href="#err40">Illegal animation data</a></td><td class="style_td">アニメーションデータが不正</td></tr><tr><td class="style_td">41</td><td class="style_td"><a href="#err41">String is too long</a><br class="spacer" />(String too long)</td><td class="style_td">文字列が長すぎる</td></tr><tr><td class="style_td">42</td><td class="style_td"><a href="#err42">Communication buffer overflow</a></td><td class="style_td">ワイヤレス通信バッファが溢れた</td></tr><tr><td class="style_td">43</td><td class="style_td"><a href="#err43">Can't use from direct mode</a></td><td class="style_td">ダイレクトモードでは使えない命令</td></tr><tr><td class="style_td">44</td><td class="style_td"><a href="#err44">Can't use in program</a></td><td class="style_td">プログラム内では使えない命令</td></tr><tr><td class="style_td">45</td><td class="style_td"><a href="#err45">Can't use in tool program</a></td><td class="style_td">SMILE ボタンに登録したプログラムから、この命令は利用できない</td></tr><tr><td class="style_td">46</td><td class="style_td"><a href="#err46">Load failed</a></td><td class="style_td">ファイルの読み込みに失敗した</td></tr><tr><td class="style_td">47</td><td class="style_td"><a href="#err47">Illegal MML</a></td><td class="style_td">MML コマンドが間違っている<br class="spacer" /><a href="/petc3gou/?Mame%2FMMLErrors" title="Mame/MMLErrors (596d)">MMLで発生するエラーメッセージ</a></td></tr></tbody></table></div>
+
+<h4 id="Ver320">ver 3.2.0で確認</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ERRNUM</td><td class="style_td">内容</td><td class="style_td">説明</td></tr><tr><td class="style_td">48</td><td class="style_td"><a href="#err48">Uninitialized variable used</a></td><td class="style_td">未初期化の変数を参照した</td></tr></tbody></table></div>
+
+<h4 id="Ver330">ver 3.3.0で確認</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ERRNUM</td><td class="style_td">内容</td><td class="style_td">説明</td></tr><tr><td class="style_td">49</td><td class="style_td"><a href="#err49">Protected resource</a></td><td class="style_td">保護されたリソースを変更しようとした</td></tr><tr><td class="style_td">50</td><td class="style_td"><a href="#err50">Protected file</a></td><td class="style_td">保護されたファイルを変更しようとした</td></tr><tr><td class="style_td">51</td><td class="style_td"><a href="#err51">DLC not found</a></td><td class="style_td">該当のDLCが購入されていない</td></tr></tbody></table></div>
+
+<h4 id="Ver350">ver 3.5.0で確認</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">ERRNUM</td><td class="style_td">内容</td><td class="style_td">説明</td></tr><tr><td class="style_td">52</td><td class="style_td"><a href="#err52">Incompatible statement</a></td><td class="style_td">現在の互換モードでは使用できない</td></tr><tr><td class="style_td">53</td><td class="style_td"><a href="#err53">END without CALL</a></td><td class="style_td">?</td></tr><tr><td class="style_td">54</td><td class="style_td"><a href="#err54">Array is too large</a></td><td class="style_td">SAVE で保存しようとした配列変数のサイズが大きすぎる</td></tr></tbody></table></div>
+<div class="spacer">&nbsp;</div>
+
+<h3 id="Error">エラーの具体的な発生原因</h3>
+<p>エラーの主な原因を解説します。</p>
+
+<h4 id="err1">Internal Error</h4>
+<ul><li>プチコン3号の内部エラーです。</li></ul>
+
+<h5 id="err1ex1">例</h5>
+<p>ラベルに空文字列を指定すると発生します。<span class="basic-text smbas">GOSUB</span> と <span class="basic-text smbas">RESTORE</span> も同様です。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＧＯＴＯ　””</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err2">Illegal Instruction</h4>
+<ul><li>プチコン3号の内部エラーです。</li></ul>
+
+<h5 id="err2ex1">例</h5>
+<p><span class="basic-text smbas">GOSUB</span>で別スロットに飛んだあと、<span class="basic-text smbas">EXEC</span>等で呼び出し元のスロットを上書きすると発生します。<br />
+SLOT0:</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＵＳＥ　１</span></li>
+<li><span class="smbas">ＧＯＳＵＢ　”１：＠１”</span></li>
+</ol></code></div></div>
+<p>SLOT1:</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠１</span></li>
+<li><span class="smbas">ＥＸＥＣ　”ＰＲＧ０：ＨＯＧＥ”　’空でないファイルなら何でもよい</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err3">Syntax error</h4>
+<ul><li>定義されていない命令や関数、演算子などを使用した時に発生します。</li>
+<li>その他、構文に関する最も一般的なエラーです。</li></ul>
+
+<h5 id="err3ex1">例1</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＨＥＬＬＯ</span></li>
+</ol></code></div></div>
+<p>この時点では <span class="basic-text smbas">HELLO</span> は有効な変数名、命令名ではありません。</p>
+
+<h5 id="err3ex2">例2</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＄＄＄＄＄＄</span></li>
+</ol></code></div></div>
+<p>解読できない根本的な文法の間違いがあるプログラムにもこのエラーが発生します。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err4">Illegal function call</h4>
+<ul><li>命令や関数の呼び出し方が間違っている場合に発生します。</li></ul>
+
+<h5 id="err4ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＯＬＯＲ　１，２，３</span></li>
+<li><span class="smbas">ＡＣＬＳ　１</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">COLOR</span> は1個または2個の引数を渡す命令だが、ここでは3個の引数が渡されているのでエラーになります。<br class="spacer" />
+また、<span class="basic-text smbas">ACLS</span> は、引数を指定しないか、指定するときは3個の引数を指定しなければなりませんが、ここでは引数は1個しかありません。</p>
+
+<h5 id="err4debug">解決策</h5>
+<ul><li>ヘルプなどを見て、引数を正しく指定しましょう。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err5">Stack overflow</h4>
+<ul><li>再帰呼び出しによってスタックがあふれたとき発生します。
+<ul><li>再帰呼び出しとは、<span class="basic-text smbas">DEF</span> で定義している命令や関数を、定義している中で呼び出すことです。</li>
+<li><span class="basic-text smbas">GOSUB</span>でも発生します。</li>
+<li>再帰呼び出しをうまく使うと、とてもシンプルに組めることがありますが、単に再帰呼び出しすると無限に呼び出し続けてしまいます。</li>
+<li>再帰呼び出しには内部のスタックと呼ばれるメモリ領域が必要です。無限に再帰呼び出しするとスタックがあふれてしまうので、結果としてエラーとなります。</li></ul></li></ul>
+
+<h5 id="err5ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＴＥＳＴ</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＴＲＵＥ</span></li>
+<li><span class="smbas">　　ＴＥＳＴ　’ＴＥＳＴを再度呼び出す</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＴＥＳＴ</span></li>
+</ol></code></div></div>
+<p>しばらく経つとエラーが発生します。</p>
+
+<h5 id="err5debug">解決策</h5>
+<p>再帰呼び出しの際は、適切な条件を設定して無限に呼び出すことがないように注意しましょう。
+以下は再帰呼び出しで数学の階乗を求める例です。きちんと <span class="basic-text smbas">IF</span> で適切な条件が設定されています。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　Ｆ（Ｎ）</span></li>
+<li><span class="smbas">　ＩＦ　Ｎ＝＝０　ＴＨＥＮ　ＲＥＴＵＲＮ　１</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　Ｆ（Ｎ−１）＊Ｎ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err6">Stack underflow</h4>
+<ul><li>スタックが不足している場合に発生します。</li>
+<li>発生条件は不明となっています。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err7">Divide by zero</h4>
+<ul><li>数値を0、あるいは0に限りなく近い数値で割ったときに発生します。</li></ul>
+
+<h5 id="err7ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ　”３／０＝”；３／０</span></li>
+</ol></code></div></div>
+<p>数値を0で割っているのでエラーとなる。</p>
+
+<h5 id="err7debug">解決策</h5>
+<p>数値を0で割るかもしれない部分があったら、割る数が0かどうかチェックする <span class="basic-text smbas">IF</span> 文を加えておきましょう。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err8">Type mismatch</h4>
+<ul><li>値の型があっていない時に発生します。
+<ul><li>命令や関数に渡す引数の型が合っていない。</li>
+<li>演算子の左、または右の式の型が合っていない</li></ul></li></ul>
+
+<h5 id="err8ex1">例1</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">Ａ＝”ＨＥＬＬＯ”</span></li>
+<li><span class="smbas">Ｂ＄＝１２３</span></li>
+</ol></code></div></div>
+<p>数値変数には数値を、文字列変数には文字列をしなければなりません。</p>
+
+<h5 id="err8ex2">例2</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＯＬＯＲ　”ＢＬＵＥ”</span></li>
+</ol></code></div></div>
+<p>命令に渡す引数の型が合っていない。
+<span class="basic-text smbas">COLOR</span> には数値変数を渡さなければなりません。</p>
+
+<h5 id="err8bug">バグ</h5>
+<p>左を文字列、右を数値として比較(<span class="basic-text smbas">== != ＜ ＞ ＜= ＞=</span>)すると3が返るもので、ユーザーによって発見されました。<br class="spacer" />本来のところならば Type mismatch エラーとなるべきですが、この方法を使用して変数の型をチェックするプログラム事例もあります。また、この仕様は ver 3.6.3 現在も変更されていません。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＶＡＲ　Ａ＝−１００</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　１０＞０　’１</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　Ａ＞０　’０</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　”ＴＥＳＴ”＞０　’３</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err9">Overflow</h4>
+<ul><li>整数型変数や、整数型で値を扱う命令や演算に範囲外の値(-2147483648より小さい、または2147483647より大きい)を渡したときに発生します。</li></ul>
+
+<h5 id="err9ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">Ａ＝１００００００００００　ＭＯＤ　７</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err10">Out of range</h4>
+<ul><li>命令、関数の引数の値が範囲外であるときに発生します。</li></ul>
+
+<h5 id="err10ex">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＯＬＯＲ　１００</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">COLOR</span> には0〜15の値を指定しなければなりませんが、100が指定されています。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err11">Out of memory</h4>
+<ul><li>メモリーが足りなくなったとき発生します。</li>
+<li>特に、巨大な要素数の配列変数を宣言しようとすると発生します。</li></ul>
+
+<h5 id="err11ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＴＥＳＴ［１０００００００］</span></li>
+</ol></code></div></div>
+
+<h5 id="err11debug">解決策</h5>
+<p>要素数を減らしましょう。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err12">Out of code memory</h4>
+<ul><li>スマイルボタンに登録したプログラムが長すぎるときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err13">Out of DATA</h4>
+<ul><li><span class="basic-text smbas">READ</span>で読み込むデータがないときに発生します。</li></ul>
+
+<h5 id="err13ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＲＥＡＤ　Ａ，Ｂ，Ｃ，Ｄ</span></li>
+<li><span class="smbas">ＤＡＴＡ　１，２，３</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err14">Undefined label</h4>
+<ul><li><span class="basic-text smbas">GOTO</span>,<span class="basic-text smbas">GOSUB</span>,<span class="basic-text smbas">RESTORE</span>などで指定したラベルがないときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err15">Undefined variable</h4>
+<ul><li><span class="basic-text smbas">OPTION STRICT</span>時に定義していない変数を使った時に発生します。</li>
+<li><span class="basic-text smbas">VAR</span>で指定した変数がないときにも発生します。</li></ul>
+
+<h5 id="err15ex1">例1</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＯＰＴＩＯＮ　ＳＴＲＩＣＴ</span></li>
+<li><span class="smbas">Ａ＝５</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">OPTION STRICT</span>があるときは<span class="basic-text smbas">VAR A</span>のように使う変数を定義しないといけません。</p>
+
+<h5 id="err15ex2">例2</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ　ＶＡＲ（”ＴＥＳＴ”）</span></li>
+</ol></code></div></div>
+<p>変数<span class="basic-text smbas">TEST</span>があるときはその内容が表示されますが、ないときはエラーになります。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err16">Undefined function</h4>
+<ul><li><span class="basic-text smbas">CALL</span>で指定した命令がないときに発生します。
+<ul><li>最初からプチコンにある命令では、<span class="basic-text smbas">CALL</span>が使える命令と使えない命令があります。</li></ul></li></ul>
+
+<h5 id="err13ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＡＬＬ　”ＬＯＣＡＴＥ”，１０，１０</span></li>
+<li><span class="smbas">ＣＡＬＬ　”ＰＲＩＮＴ”，”ＴＥＳＴ”</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">LOCATE</span>は<span class="basic-text smbas">CALL</span>で使えますが<span class="basic-text smbas">PRINT</span>は使えません。<br />
+実は<span class="basic-text smbas">LOCATE</span>と<span class="basic-text smbas">PRINT</span>はエディットモードで表示される色が少し違います。(設定による)</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err17">Duplicate label</h4>
+<ul><li>同じラベルが2つ以上あるときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err18">Duplicate variable</h4>
+<ul><li>同じ名前の配列変数を定義したときに発生します。</li>
+<li><span class="basic-text smbas">OPTION STRICT</span>では通常の変数でも複数定義したときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err19">Duplicate function</h4>
+<ul><li>同じ名前の命令を2つ以上定義したときに発生します。
+<ul><li>最初からプチコンにある命令と同じ名前で定義したときにも発生します。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err20">FOR without NEXT</h4>
+<ul><li><span class="basic-text smbas">NEXT</span>がありません。</li></ul>
+
+<h4 id="err21">NEXT without FOR</h4>
+<ul><li><span class="basic-text smbas">FOR</span>がないのに<span class="basic-text smbas">NEXT</span>があります。</li></ul>
+
+<h4 id="err22">REPEAT without UNTIL</h4>
+<ul><li><span class="basic-text smbas">UNTIL</span>がありません。</li></ul>
+
+<h4 id="err23">UNTIL without REPEAT</h4>
+<ul><li><span class="basic-text smbas">REPEAT</span>がないのに<span class="basic-text smbas">UNTIL</span>があります。</li></ul>
+
+<h4 id="err24">WHILE without WEND</h4>
+<ul><li><span class="basic-text smbas">WEND</span>がありません。</li></ul>
+
+<h4 id="err25">WEND without WHILE</h4>
+<ul><li><span class="basic-text smbas">WHILE</span>がないのに<span class="basic-text smbas">WEND</span>があります。</li></ul>
+
+<h4 id="err26">THEN without ENDIF</h4>
+<ul><li><span class="basic-text smbas">ENDIF</span>がありません。
+<ul><li>1行の<span class="basic-text smbas">IF</span>の場合は<span class="basic-text smbas">THEN</span>の後に命令を書いてください。</li></ul></li></ul>
+
+<h4 id="err27">ELSE without ENDIF</h4>
+<ul><li><span class="basic-text smbas">ENDIF</span>がありません。
+<ul><li><span class="basic-text smbas">IF</span>がないのに<span class="basic-text smbas">ELSE</span>がある場合は Syntax error になります。</li></ul></li></ul>
+
+<h4 id="err28">ENDIF without IF</h4>
+<ul><li><span class="basic-text smbas">IF</span>がないのに<span class="basic-text smbas">ENDIF</span>があります。</li></ul>
+
+<h4 id="err29">DEF without END</h4>
+<ul><li><span class="basic-text smbas">DEF</span>の<span class="basic-text smbas">END</span>がありません。</li></ul>
+
+<h4 id="err30">RETURN without GOSUB</h4>
+<ul><li><span class="basic-text smbas">GOSUB</span>がないのに<span class="basic-text smbas">RETURN</span>があります。
+<ul><li><span class="basic-text smbas">GOSUB</span>を使わずに<span class="basic-text smbas">GOSUB</span>のルーチンに入ってしまった場合など。</li></ul></li></ul>
+
+<h5 id="i0456766">注意</h5>
+<ul><li>「×× without ○○」 →　「○○がない××」。 無いのは後ろに書いてある方です。</li>
+<li>上にあげた「○○がありません」系のエラーは、プチコンにはどこに入れるべきものかわからないため、エラー行が変な位置になる場合があります。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err31">Subscript out of range</h4>
+<ul><li>配列変数の添字が定義したサイズより大きいときに発生します。
+<ul><li>命令、関数の引数の値が範囲外のときは Out of range ですが、こちらは配列変数限定のエラーです。</li></ul></li></ul>
+
+<h5 id="err13ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　Ａ［５］</span></li>
+<li><span class="smbas">Ａ［５］＝１</span></li>
+</ol></code></div></div>
+<p>この場合<span class="basic-text smbas">A</span>の要素数は5なので使えるのは<span class="basic-text smbas">A[0]</span>〜<span class="basic-text smbas">A[4]</span>です。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err32">Nested DEF</h4>
+<ul><li>DEF内で別のDEFを定義したときに発生します。</li></ul>
+
+<h5 id="err32ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＴＥＳＴ１</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＴＥＳＴ２</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+<p>このように、<span class="basic-text smbas">DEF</span>に対応する<span class="basic-text smbas">END</span>がない場合にも発生することがあります。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err33">Can't continue</h4>
+<ul><li>再開できないプログラムを<span class="basic-text smbas">CONT</span>で再開しようとしたときに発生します。
+<ul><li>再開できるのは<span class="basic-text smbas">STOP</span>で停止したときと、STARTボタンや左下の「×STOP」をタッチしてプログラムを停止したときだけです。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err34">Illegal symbol string</h4>
+<ul><li><span class="basic-text smbas">GOTO</span>などでラベルの指定方法が間違っているときに発生します。</li></ul>
+
+<h5 id="err34ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＧＯＴＯ　”ＴＥＳＴ”</span></li>
+</ol></code></div></div>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err35">Illegal file format</h4>
+<ul><li>ファイルリソースが間違っているときに発生します。
+<ul><li><span class="basic-text smbas">EXEC</span>や<span class="basic-text smbas">USE</span>にPRG以外のリソースを指定した。</li>
+<li>GRPではないDATファイルをGRPとして<span class="basic-text smbas">LOAD</span>しようとした。</li></ul></li></ul>
+
+<h5 id="err35ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＥＸＥＣ　”ＤＡＴ：ＴＥＳＴ”</span></li>
+</ol></code></div></div>
+<p>最新バージョンのプチコンではエラーになりますが、更新前のプチコンでは<span class="basic-text smbas">EXEC</span>でDATを読み込むことができてしまうようです。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err36">Mic is not available</h4>
+<ul><li><span class="basic-text smbas">XON MIC</span>をする前にマイクの命令を使用しようとしたときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err37">Motion sensor is not available</h4>
+<ul><li><span class="basic-text smbas">XON MOTION</span>をする前にジャイロ等の命令を使用しようとしたときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err38">Use PRGEDIT before any PRG function</h4>
+<ul><li><span class="basic-text smbas">PRGEDIT</span>をする前にスロット操作命令を使用しようとしたときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err39">Animation is too long</h4>
+<ul><li><span class="basic-text smbas">SPANIM</span>や<span class="basic-text smbas">BGANIM</span>に33個以上のデータを渡したときに発生します。
+<ul><li>アニメーションデータは最大32個までしか使用できません。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err40">Illegal animation data</h4>
+<ul><li><span class="basic-text smbas">SPANIM</span>や<span class="basic-text smbas">BGANIM</span>で、時間に(絶対値が)1未満の数値を指定したときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err41">String is too long</h4>
+<ul><li>命令に渡す文字列が長すぎるときに発生します。
+<ul><li><span class="basic-text smbas">MPSEND</span>は256文字までしか扱えません。</li>
+<li><span class="basic-text smbas">FORMAT$</span>のフォーマット文字列は1024文字までのようです。</li>
+<li><span class="basic-text smbas">TALK</span>は256文字までですが、超えると String is too long ではなく Illegal function call になります。</li></ul></li>
+<li>更新前のプチコンでは String too long と表示されます。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err42">Communication buffer overflow</h4>
+<ul><li><span class="basic-text smbas">MPSEND</span>で大量のデータを送信したときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err43">Can't use from direct mode</h4>
+<ul><li>ダイレクトモードでは使用できない命令を使用したときに発生します。
+<ul><li><span class="basic-text smbas">XSCREEN 4</span>,<span class="basic-text smbas">DISPLAY</span>,<span class="basic-text smbas">USE</span>,<span class="basic-text smbas">EXEC</span>,<span class="basic-text smbas">DEF</span>,<span class="basic-text smbas">RESTORE</span>,<span class="basic-text smbas">DATA</span>,<span class="basic-text smbas">READ</span>,<span class="basic-text smbas">STOP</span>,<span class="basic-text smbas">OPTION</span>で発生します。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err44">Can't use in program</h4>
+<ul><li>プログラム中では使用できない命令を使用したときに発生します。
+<ul><li><span class="basic-text smbas">PROJECT</span>で発生します。</li>
+<li>それ以外のダイレクトモード専用命令を使用すると Syntax error になります。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err45">Can't use in tool program</h4>
+<ul><li>ツールプログラム(スマイルボタンから起動したプログラム)では使用できない命令を使用したときに発生します。
+<ul><li><span class="basic-text smbas">COMMON DEF</span>で発生します。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err46">Load failed</h4>
+<ul><li><span class="basic-text smbas">EXEC</span>や<span class="basic-text smbas">USE</span>で読み込みに失敗したときに発生します。
+<ul><li>ファイルが存在しない場合。</li>
+<li>スロット上書きの確認ダイアログで「いいえ」を押した場合。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err47">Illegal MML</h4>
+<ul><li>MML文字列に誤りがあるときに発生します。
+<ul><li>エラー時には、誤りのある箇所と詳しいエラー内容が表示されます。</li>
+<li>MMLでのエラー一覧は<a href="/petc3gou/?Mame%2FMMLErrors" title="Mame/MMLErrors (596d)">MMLで発生するエラーメッセージ</a></li></ul></li></ul>
+
+<h5 id="err47ex1">例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＢＧＭＰＬＡＹ　”ＣＤＥＦＧＨ”</span></li>
+</ol></code></div></div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">Ｉｌｌｅｇａｌ　ＭＭＬ　ｉｎ　０：１（ＢＧＭＰＬＡＹ：１）</span></li>
+<li><span class="smbas">　　ＣＤＥＦＧＨ</span></li>
+<li><span class="smbas">　　　　　　　＾</span></li>
+<li><span class="smbas">　Ｕｎｋｎｏｗｎ　ｃｏｍｍａｎｄ　（ｉｎ　Ｔｒａｃｋ　０）</span></li>
+</ol></code></div></div>
+<p>のようにエラーが表示されます。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err48">Uninitialized variable used</h4>
+<ul><li>ユーザー定義命令の戻り値を設定しなかったときに発生します。</li></ul>
+
+<h5 id="err48ex1">例1</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＴＥＳＴ（）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas">Ａ＝ＴＥＳＴ（）</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">RETURN 1</span>のように値を返さなければいけません。</p>
+
+<h5 id="err48ex2">例2</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＴＥＳＴ　ＯＵＴ　Ｘ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas">ＴＥＳＴ　ＯＵＴ　Ａ</span></li>
+</ol></code></div></div>
+<p>この場合は<span class="basic-text smbas">X=1</span>のように値を設定します。</p>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err49">Protected resource</h4>
+<ul><li>保護されたリソースを読みだそうとしたときに発生します。
+<ul><li>カタログIPコラボ内のGRPファイルをロードしたグラフィックページに対して<span class="basic-text smbas">GSPOIT,GSAVE,GCOPY,SAVE</span>をしたときに発生します。</li>
+<li>カタログIPコラボ内のGRPファイルをGRPFにロードした後<span class="basic-text smbas">GPUTCHR</span>したときにも発生します。</li></ul></li></ul>
+
+<h4 id="err50">Protected file</h4>
+<ul><li>保護されたファイルを操作しようとしたときに発生します。
+<ul><li>カタログIPコラボ内のGRPファイルをDATとして配列変数に<span class="basic-text smbas">LOAD</span>しようとしたときに発生します。</li></ul></li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err51">DLC not found</h4>
+<ul><li>カタログIPコンテンツや高度サウンドユニットを購入せずに使おうとしたときに発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err52">Incompatible statement</h4>
+<ul><li>3DSで<span class="basic-text smbas">XON WiiU</span>、またはWiiUで<span class="basic-text smbas">XON 3DS</span>をしたときに発生します。</li>
+<li>またWiiUで<span class="basic-text smbas">XON WIIU</span>をせずにWiiU専用命令を使おうとしたときにも発生します。</li>
+<li><span class="basic-text smbas">XON COMPAT</span>時に端末IDやコントローラIDを指定した(<span class="basic-text smbas">BUTTON(1,1)</span>など)ときにも発生します。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err53">END without CALL</h4>
+<ul><li>ユーザー定義命令を呼び出さずに、ユーザー定義命令の<span class="basic-text smbas">END</span>に到達したときに発生します。</li>
+<li>発生条件は不明となっています。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h4 id="err54">Array is too large</h4>
+<ul><li><span class="basic-text smbas">SAVE</span>しようとした配列のサイズが大きすぎるときに発生します。</li>
+<li>発生条件は不明となっています。</li></ul>
+<div class="spacer">&nbsp;</div>
+
+<h3 id="Comments">コメント</h3>
+<p>ご指摘、ご要望、ご感想があればお書きください。</p>
+<ul><li><strong>初心者</strong> : RETURN without GOSUB  ってなんですか? (<span class="comment_date">2018/03/28 (水) 15:52:22</span>)</li>
+<li><strong>みどり</strong> : 「RETURNが無いGOSUBがあります」と言う意味です。 (<span class="comment_date">2018/03/28 (水) 19:49:44</span>)</li>
+<li><strong>moi</strong> : 逆ですね。RETURNはGOSUBで飛んできた位置へ戻る命令です。（別の場合もある）GOSUBで飛んできてないのに戻れと言われたらどこに行けばいいのか分からなくなりますよね。つまりそういうことです。長文失礼しました。 (<span class="comment_date">2018/03/28 (水) 21:02:51</span>)</li>
+<li><strong>Ryou Tanpo</strong> : RETURN without GOSUB は <strong><span class="basic-text smbas">GOSUB</span> がない <span class="basic-text smbas">RETURN</span></strong> のことです。<span class="basic-text smbas">GOSUB</span> は <span class="basic-text smbas">GOTO</span> と違って、ジャンプした先に <span class="basic-text smbas">RETURN</span> があると元のところに戻ることができます。逆に言えば、<span class="basic-text smbas">GOSUB</span> がないと、どこに戻ればいいかわからない。この場合に発生するエラーです。 (<span class="comment_date">2018/03/29 (木) 09:36:34</span>)</li>
+<li><strong>Ryou Tanpo</strong> : 「違います」という言い方はちょっと言われた側ががっかりすると思います。 (<span class="comment_date">2018/03/29 (木) 09:37:16</span>)</li>
+<li><strong>Ryou Tanpo</strong> : ちなみに、<span class="basic-text smbas">DEF</span> 内での <span class="basic-text smbas">RETURN</span> は別の働きをするため例外となっています (<span class="comment_date">2018/03/29 (木) 09:38:04</span>)</li>
+<li><strong>初心者</strong> : おお、ありがとうございます! (<span class="comment_date">2018/03/31 (土) 09:36:59</span>)</li>
+<li><strong>moi</strong> : 大変失礼いたしました。 (<span class="comment_date">2018/07/31 (火) 12:10:38</span>)</li>
+<li><strong>Na</strong> : Illegal Instructionを発生させました→<a href="http://petitverse.hosiken.jp/community/petitcom/topic/?read=1326" rel="nofollow">http://petitverse.hosiken.jp/community/petitcom/topic/?read=1326</a> (<span class="comment_date">2019/10/31 (木) 19:16:01</span>)</li>
+<li><strong>Na</strong> : 勝手に追記してみました。(前から編集してたけど) (<span class="comment_date">2020/03/04 (水) 18:36:06</span>)</li>
+<li><strong>名無しさん</strong> : GOSUBがないRETURNはエラーじゃなくて無視するようにしてほしい(変数とIF使えばいけるとは思うが) (<span class="comment_date">2020/03/06 (金) 12:21:03</span>)</li>
+<li><strong>Na</strong> : こんなやり方を思いついたので次作るプログラムで使おうと思ってます:<br class="spacer" /> <span class="basic-text smbas">IF 0 THEN</span><br class="spacer" /> <span class="basic-text smbas">　@LABEL</span><br class="spacer" /> <span class="basic-text smbas">　(処理)</span><br class="spacer" /> <span class="basic-text smbas">　RETURN</span><br class="spacer" /> <span class="basic-text smbas">ENDIF</span><br class="spacer" /> <span class="basic-text smbas">GOSUB @LABEL</span> (<span class="comment_date">2020/03/06 (金) 12:30:07</span>)</li>
+<li><strong>Na</strong> : とりあえず全部書き終えましたが、一部詳細がわからなかった(stack underflow, <del>out of code memory</del>, end without call, array is too large)ので誰かわかる人がいたら教えてください。 (<span class="comment_date">2020/03/07 (土) 10:06:17</span>)</li>
+<li><strong>Header</strong> : こんまえみつけたんですが、Defのoutつかう命令指定するとき、out ,として変数を指定しなかったらOut of memoryが出てました (<span class="comment_date">2020/12/15 (火) 19:59:15</span>)</li>
+<li><strong>名無しさん</strong> : そういえば、DEF HOGE A OUT Bのように定義して、B=HOGE(A)のように呼び出すことは可能？逆も然り (<span class="comment_date">2020/12/15 (火) 22:33:19</span>)</li>
+<li><strong>天郷思音</strong> : どちらも可能です。 (<span class="comment_date">2020/12/22 (火) 15:43:54</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/Errormsg" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="ab38a2419929449f0f85982e15247476" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (881d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (797d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2234d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (826d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (271d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (876d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (71d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1005d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (217d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (941d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2058d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1472d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (452d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (17h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (60d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/19</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="リズミカルおもちつきKR MAX (17m)">リズミカルおもちつきKR MAX</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="コメント/Toukou/リズミカルおもちつきKR (6h)">コメント/Toukou/リズミカルおもちつきKR</a></li>
+</ul>
+<h4>2021/10/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="プチコンで使われる拡張子まとめ (23h)">プチコンで使われる拡張子まとめ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="LA  OS (1d)">LA  OS</a></li>
+</ul>
+<h4>2021/10/16</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Musics総合サイト ('21/06/23更新) (3d)">Musics総合サイト ('21/06/23更新)</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (3d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2021/10/12</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (7d)">ピクトチャット2</a></li>
+</ul>
+<h4>2021/10/09</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FDrop-3s" title="Drop-3s(リズムゲーム) (10d)">Drop-3s(リズムゲーム)</a></li>
+</ul>
+<h4>2021/10/08</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS3OS" title="[公開停止]TAS3OS (11d)">[公開停止]TAS3OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FGravityLabo2" title="GravityLabo2 (11d)">GravityLabo2</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Mame%2FMathInfNan" title="Mame/MathInfNan (1097d)">浮動小数点演算におけるInf/NaNの取り扱い<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="Mame/プチコンで使われる拡張子まとめ (23h)">プチコンで使われる拡張子まとめ<span class="counter">(14)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FPetitverse" title="Mame/Petitverse (955d)">Petitverseに関すること<span class="counter">(12)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverse終了後の避難先まとめ<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C5%B7%BB%C8%CA%B8%BB%FA%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/天使文字フォント (1125d)">天使文字フォント<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="Toukou/LA OS (1d)">LA  OS<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (691d)">NCF MUSEQ STATION<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (1030d)">HERO2 一台で二人同時プレイ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (233d)">Nintendo全記号Unicode一覧表<span class="counter">(9)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1506d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 5 人がこのサイトを見ています</li>
+<li>このページはこれまでに 4189 回、本日は 5 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.096 秒  | このページの最終更新 : 2020/12/22 (火) 15:43:55  (301d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

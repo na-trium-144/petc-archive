@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>PTCファイル、mkIIのQRコード仕様と内部コード - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="PTCファイル、mkIIのQRコード仕様と内部コード - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Mame%2FPTCFileSystem">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Mame%2FPTCFileSystem">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FPTCFileSystem">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Mame%2FPTCFileSystem">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>PTCファイル、mkIIのQRコード仕様と内部コード</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Mame%2FPTCFileSystem">PTCFileSystem</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.094sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  PTCファイルとは? </a></li>
+<li><a href="#Header">  ファイルヘッダ </a></li>
+<li><a href="#PRG3">  PRG(mkII) </a>
+<ul><li><a href="#Package">  パッケージパラメータ </a></li></ul></li>
+<li><a href="#PRG1">  PRG(初代) </a></li>
+<li><a href="#MEM2">  MEM </a></li>
+<li><a href="#GRP1">  GRP </a></li>
+<li><a href="#CHR1">  CHR </a></li>
+<li><a href="#SCR1">  SCR </a></li>
+<li><a href="#COL1">  COL </a></li>
+<li><a href="#ChrCode">  プチコンmkII 内部コード</a>
+<ul><li><a href="#Chr2Bin">  CHR$文字コード→内部コード </a></li>
+<li><a href="#Bin2Chr">  内部コード→CHR$コード </a></li></ul></li>
+<li><a href="#QRCode">  mkIIのQRコード </a>
+<ul><li><a href="#QRData">  データ </a></li></ul></li>
+<li><a href="#Comment">  コメント </a></li></ul>
+</div>
+
+<h3 id="Summary">PTCファイルとは?</h3>
+<p>プチコンmkIIの「SDメモリーカード書き込み」で書き込まれる、拡張子が「.PTC」のファイルです。<br />
+「SDメモリーカード書き込み」では、SDカードのルート/private/app/4B4E414A/(mkIIで指定した名前)/ にPTCファイルが書き込まれます。<br />
+公式サイトの<a href="https://smileboom.com/special/ptcm2/qrmaker/qrmaker.html" rel="nofollow">QRコード変換ツール</a>を使用すると、QRコードに変換できます。<br />
+変換したQRコードは、プチコンmkIIの「QRコード読み込み」で読み込むことができます。<br />
+非公式のツールもあります。→<a href="/petc/?Link" title="Link (33d)">リンク集</a><br /></p>
+
+<h3 id="Header">ファイルヘッダ</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x00-0x03</td><td class="style_td">PX01(必須)</td></tr><tr><td class="style_td">0x04-0x07</td><td class="style_td">PETC〜以降のファイルサイズ(バイト数)</td></tr><tr><td class="style_td">0x08-0x0b</td><td class="style_td">未使用(任意の値に書き換えてもQRコードに変化なし)</td></tr><tr><td class="style_td">0x0c-0x13</td><td class="style_td">ファイル名(余分なバイトはすべて00)</td></tr><tr><td class="style_td">0x14-0x23</td><td class="style_td">&quot;PETITCOM&quot;とPETC〜以降をつなげた物のMD5ハッシュ値</td></tr><tr><td class="style_td">0x24-</td><td class="style_td">PETC〜 (データ。リソースごとの説明参照)</td></tr></tbody></table></div>
+<ul><li>このうち、ファイルサイズとMD5ハッシュ値は公式のQRコード変換ツールが使用します。
+<ul><li>非公式ツールを使用する場合は不要です。</li></ul></li>
+<li>PTCファイル内の値はすべてリトルエンディアンなので注意です。</li></ul>
+
+<h3 id="PRG3">PRG(mkII)</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0300RPRG</td></tr><tr><td class="style_td">0x30-0x33</td><td class="style_td">パッケージパラメータ 上4Byte</td></tr><tr><td class="style_td">0x34-0x37</td><td class="style_td">パッケージパラメータ 下4Byte</td></tr><tr><td class="style_td">0x38-0x3b</td><td class="style_td">プログラムのサイズ(末尾の00を含まないバイト数)</td></tr><tr><td class="style_td">0x3c-</td><td class="style_td">プログラム本体(1文字→1Byte)</td></tr></tbody></table></div>
+<ul><li>プログラムのサイズが4の倍数でないときは、長さが4の倍数になるようにプログラム末尾に0x00が付きます。</li>
+<li>プログラム本体の後にパッケージリソース(PETC〜以降)がパッケージパラメータの一番下のビットのものから順にくっつきます。</li>
+<li>プログラム本体は<span class="basic-text">ＣＨＲ＄</span>で取得できるものと同じ文字コードで1文字ずつ書かれています。改行は0x0dです。</li></ul>
+
+<h4 id="Package">パッケージパラメータ</h4>
+<ul><li>上4Byte(下4Byteより前に書かれています。)
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ビット</th><th class="style_th">リソース名</th><th class="style_th">内容</th></tr><tr><td class="style_td">b32-b34</td><td class="style_td">COL0-2L</td><td class="style_td">下画面BG/SP/GRP色</td></tr><tr><td class="style_td">b35-b36</td><td class="style_td">SCU0-1L</td><td class="style_td">下画面BGスクリーン</td></tr><tr><td class="style_td">b37-b38</td><td class="style_td">SPS0-1U</td><td class="style_td">上画面システム使用スプライト</td></tr><tr><td class="style_td">b39-b40</td><td class="style_td">BGD0-1U</td><td class="style_td">上画面システム使用BG</td></tr><tr><td class="style_td">b41-b42</td><td class="style_td">SPS0-1L</td><td class="style_td">下画面スプライト</td></tr><tr><td class="style_td">b43-b44</td><td class="style_td">BGD0-1L</td><td class="style_td">下画面システム使用BG</td></tr><tr><td class="style_td">b45-</td><td class="style_td"></td><td class="style_td">未使用(エラー)</td></tr></tbody></table></div></li></ul>
+<ul><li>下4Byte
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ビット</th><th class="style_th">リソース名</th><th class="style_th">内容</th></tr><tr><td class="style_td">b00-b07</td><td class="style_td">SPU0-7</td><td class="style_td">上画面スプライト</td></tr><tr><td class="style_td">b08-b11</td><td class="style_td">BGU0-3U</td><td class="style_td">上画面BG</td></tr><tr><td class="style_td">b12</td><td class="style_td">BGF0U</td><td class="style_td">上画面フォント</td></tr><tr><td class="style_td">b13-b15</td><td class="style_td">COL0-2U</td><td class="style_td">上画面BG/SP/GRP色</td></tr><tr><td class="style_td">b16-b17</td><td class="style_td">SCU0-1U</td><td class="style_td">上画面BGスクリーン</td></tr><tr><td class="style_td">b18-b21</td><td class="style_td">GRP0-3</td><td class="style_td">グラフィック</td></tr><tr><td class="style_td">b22</td><td class="style_td">MEM</td><td class="style_td">MEM$中身</td></tr><tr><td class="style_td">b23-b26</td><td class="style_td">SPD0-3</td><td class="style_td">下画面パネルアイコン(32x32サイズのスプライト)</td></tr><tr><td class="style_td">b27-b30</td><td class="style_td">BGU0-3L</td><td class="style_td">下画面BG</td></tr><tr><td class="style_td">b31</td><td class="style_td">BGF0L</td><td class="style_td">下画面フォント</td></tr></tbody></table></div></li></ul>
+<ul><li>SPS1Uはカーソルに使用されます。</li>
+<li>SPS0Uはおそらく使われていません。</li>
+<li>BGDは編集画面、キーボード、LOAD/SAVE画面などで使用されるBG。これを編集すれば多少は画面をカスタマイズできます。</li></ul>
+
+<h3 id="PRG1">PRG(初代)</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0100RPRG</td></tr><tr><td class="style_td">0x30-0x33</td><td class="style_td">プログラムのサイズ(バイト数/2)</td></tr><tr><td class="style_td">0x34-X</td><td class="style_td">プログラム本体</td></tr><tr><td class="style_td">X  -X+3</td><td class="style_td">プログラムの行数</td></tr><tr><td class="style_td">X+4-X+7</td><td class="style_td">1行目の開始位置((位置-0x34)/2)</td></tr><tr><td class="style_td">X+8-X+11</td><td class="style_td">1行目のサイズ(バイト数/2)</td></tr><tr><td class="style_td">X+12-X+15</td><td class="style_td">2行目の開始位置((位置-0x34)/2)</td></tr><tr><td class="style_td">X+16-X+19</td><td class="style_td">2行目のサイズ(バイト数/2)</td></tr></tbody></table></div>
+<p>...(以下、行数分繰り返す。)<br />
+(Xはプログラムの終端位置です。)<br /></p>
+<ul><li>(投稿者が初代プチコンを持っていないので、正確ではない可能性があります。)</li>
+<li>初代プチコンからmkIIへSENDFILEし、そのままmkIIでQRコード書き出しを行うと得られます。</li>
+<li>しかしmkIIで一度SAVEするとmkII形式のフォーマットへ変換されてしまいます。</li>
+<li>このWikiで1つだけ発見しました。<a href="/petc/?Toukou%2FRND%B4%D8%BF%F4%A4%F2%BB%C8%A4%EF%A4%CA%A4%A4%A5%B5%A5%A4%A5%B3%A5%ED" title="Toukou/RND関数を使わないサイコロ (1515d)">Toukou/RND関数を使わないサイコロ</a> 他にもあるかも。</li>
+<li>このフォーマットはPTCUtilitiesで開くことができません。</li>
+<li>このフォーマットのファイルは、初代へSENDFILEで送り返せるはずです。</li></ul>
+<ul><li>1文字2バイトの内部コード(後述)で記録されています。</li>
+<li>また、命令、システム変数もすべて2バイトのコードになっています。</li>
+<li>改行コード(000d)はありますが、表示だけであり、改行されません。</li>
+<li>また、プログラムは1行目から始まっていません。
+<ul><li>プログラムの後にある行数、開始位置、サイズの情報から行の順番を復元します。</li>
+<li>行末が改行(000d)で終わっていない場合、行末の文字が(000d)に置き換えられます。</li></ul></li></ul>
+<ul><li>例(PETC0100RPRGの直後から)<br />
+<strong><span style="color:red">04 00 00 00</span> 1f e0 0d 00 1e e0 0d 00 <span style="color:green">02 00 00 00</span></strong><br />
+<strong><span style="color:blue">02 00 00 00 02 00 00 00</span> <span style="color:orange">00 00 00 00 02 00 00 00</span></strong><br />
+<span style="color:red">プログラムサイズ=4 (8バイト)</span><br />
+プログラム本体 PRINT(改行)CLS(改行)<br />
+<span style="color:green">行数=2</span><br />
+<span style="color:blue">1行目:位置=2,サイズ=2(4バイト)→1e e0 0d 00→CLS(改行)</span><br />
+<span style="color:orange">2行目:位置=0,サイズ=2(4バイト)→1f e0 0d 00→PRINT(改行)</span><br /></li></ul>
+
+<h3 id="MEM2">MEM</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0200RMEM</td></tr><tr><td class="style_td">0x30-0x22f</td><td class="style_td">文字列(1文字2バイトの内部コード)余りは00</td></tr><tr><td class="style_td">0x230-0x233</td><td class="style_td">文字列長さ</td></tr></tbody></table></div>
+<ul><li>長さは0〜256なので実質最後の2バイトは常に0x00です。</li></ul>
+
+<h3 id="GRP1">GRP</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0100RGRP</td></tr><tr><td class="style_td">0x30-0xc02f</td><td class="style_td">パレット番号(1ドット→1Byte)</td></tr></tbody></table></div>
+<ul><li>GRPリソースは単純に左上→右下に書き込まれているのではありません。
+<ul><li>以下、8x8ドットを1キャラ、8x8キャラを1ブロックと呼びます。</li>
+<li>1キャラは左上ドットから右に進み、右端まで行くと1段下に進みます。</li>
+<li>1ブロックも同様に、一番左上のキャラから右下まで進みます。</li>
+<li>そしてGRPリソースは4x3ブロックで出来ていて、一番左上のブロックから右に進み、一番右下のブロックまでを順に書き込んでいます。</li></ul></li>
+<li>言葉では分かりにくいのでイメージはこんな感じです。
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Mame%2FPTCFileSystem&amp;openfile=GRP_image.png" title="GRP_image.png"><img src="/petc/?plugin=ref&amp;page=Mame%2FPTCFileSystem&amp;src=GRP_image.png" alt="GRP_image.png" title="GRP_image.png" width="1103" height="449" /></a></div>
+</li></ul>
+
+<h3 id="CHR1">CHR</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0100RCHR</td></tr><tr><td class="style_td">0x30-0x202f</td><td class="style_td">パレット番号(2ドット→1Byte)</td></tr></tbody></table></div>
+<ul><li>8x8ドットで1キャラです。</li>
+<li>1キャラごとに、左上のドットからから右下へ順に書き込みます。</li>
+<li>1ドットは0-15のパレット番号なので、1ドット当たり4bitとなります。</li>
+<li>しかしリトルエンディアンなので、下位4bitが左のドット、上位4bitが右のドットとなります。</li></ul>
+
+<h3 id="SCR1">SCR</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0100RSCR</td></tr><tr><td class="style_td">0x30-0x202f</td><td class="style_td">スクリーンデータ(1キャラ→2Byte)</td></tr></tbody></table></div>
+<ul><li>キャラ配置順は、左上の32x32の範囲→右上→左下→右下です。</li>
+<li>スクリーンデータはBGPUT、BGREAD等で使用するものと同じです。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ビット</th><th class="style_th">内容</th></tr><tr><td class="style_td">b00-b09</td><td class="style_td">キャラ番号(0-1023)</td></tr><tr><td class="style_td">b10</td><td class="style_td">横反転</td></tr><tr><td class="style_td">b11</td><td class="style_td">縦反転</td></tr><tr><td class="style_td">b12-b15</td><td class="style_td">パレット番号(0-15)</td></tr></tbody></table></div></li></ul>
+
+<h3 id="COL1">COL</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2f</td><td class="style_td">PETC0100RCOL</td></tr><tr><td class="style_td">0x30-0x22f</td><td class="style_td">色(1色→2Byte)</td></tr></tbody></table></div>
+<ul><li>緑1bit,青5bit,緑5bit,赤5bitで1色16bitです。</li>
+<li>ただし先頭の緑1bitは真ん中の緑5bitの下の桁です。</li>
+<li><span style="color:lime">G</span><span style="color:blue">BBBBB</span><span style="color:green">GGGGG</span><span style="color:red">RRRRR</span> (R=赤,G=緑,B=青)</li>
+<li>(リトルエンディアンなので後半の<span style="color:green">GGG</span><span style="color:red">RRRRR</span>が先に来ます)。</li>
+<li>例) <span style="color:lime">1</span><span style="color:blue">11010</span><span style="color:green">01100</span><span style="color:red">11111</span>は、
+<ul><li>赤248(<span style="color:red">11111</span>000)</li>
+<li>緑100(<span style="color:green">01100</span><span style="color:lime">1</span>00)</li>
+<li>青208(<span style="color:blue">11010</span>000)</li></ul></li></ul>
+
+<h3 id="ChrCode">プチコンmkII 内部コード</h3>
+<ul><li>PRG(初代)、MEMで使用される文字コードです。</li>
+<li>以下はmkIIでの結果です。初代プチコンでは一部異なる結果になる可能性があります。</li></ul>
+
+<h4 id="Chr2Bin">CHR$文字コード→内部コード</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">表
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">CHR$コード</th><th class="style_th">内部コード</th><th class="style_th">3号文字コード(Unicode)</th></tr><tr><td class="style_td">00</td><td class="style_td">0000</td><td class="style_td">0000</td></tr><tr><td class="style_td">01<span class="basic-text">А</span>-08<span class="basic-text">Ж</span></td><td class="style_td">0001-0008</td><td class="style_td">e201-e208</td></tr><tr><td class="style_td">09</td><td class="style_td">0009</td><td class="style_td">0009</td></tr><tr><td class="style_td">0a<span class="basic-text">И</span>-0c<span class="basic-text">К</span></td><td class="style_td">000a-000c</td><td class="style_td">e20a-e20c</td></tr><tr><td class="style_td">0d</td><td class="style_td">000d</td><td class="style_td">000d</td></tr><tr><td class="style_td">0e<span class="basic-text">М</span>-1f<span class="basic-text">↓</span></td><td class="style_td">000e-001f</td><td class="style_td">e20e-e21f</td></tr><tr><td class="style_td">20</td><td class="style_td">0020</td><td class="style_td">0020</td></tr><tr><td class="style_td">21<span class="basic-text">！</span></td><td class="style_td">ff01</td><td class="style_td">0021</td></tr><tr><td class="style_td">22<span class="basic-text">”</span></td><td class="style_td"><strong>201d</strong></td><td class="style_td">0022</td></tr><tr><td class="style_td">23<span class="basic-text">＃</span>-26<span class="basic-text">＆</span></td><td class="style_td">ff03-ff06</td><td class="style_td">0023-0026</td></tr><tr><td class="style_td">27<span class="basic-text">’</span></td><td class="style_td"><strong>2019</strong></td><td class="style_td">0027</td></tr><tr><td class="style_td">28<span class="basic-text">（</span>-5b<span class="basic-text">［</span></td><td class="style_td">ff08-ff3b</td><td class="style_td">0028-005b</td></tr><tr><td class="style_td">5c<span class="basic-text">￥</span></td><td class="style_td"><strong>ffe5</strong></td><td class="style_td">005c</td></tr><tr><td class="style_td">5d<span class="basic-text">］</span>-7f<span class="basic-text">＼</span></td><td class="style_td">ff3d-ff5f</td><td class="style_td">005d-007f</td></tr><tr><td class="style_td">80<span class="basic-text">◇</span>-9f<span class="basic-text">┸</span></td><td class="style_td">0080-009f</td><td class="style_td">e280-e29f</td></tr><tr><td class="style_td">a0<span class="basic-text">―</span></td><td class="style_td"><strong>00a0</strong></td><td class="style_td">301c</td></tr><tr><td class="style_td">a1<span class="basic-text">。</span></td><td class="style_td">3002</td><td class="style_td">3002</td></tr><tr><td class="style_td">a2<span class="basic-text">「</span></td><td class="style_td">300c</td><td class="style_td">300c</td></tr><tr><td class="style_td">a3<span class="basic-text">」</span></td><td class="style_td">300d</td><td class="style_td">300d</td></tr><tr><td class="style_td">a4<span class="basic-text">、</span></td><td class="style_td">3001</td><td class="style_td">3001</td></tr><tr><td class="style_td">a5<span class="basic-text">・</span></td><td class="style_td">30fb</td><td class="style_td">30fb</td></tr><tr><td class="style_td">a6<span class="basic-text">ヲ</span></td><td class="style_td">30f2</td><td class="style_td">30f2</td></tr><tr><td class="style_td">a7<span class="basic-text">ァ</span></td><td class="style_td">30a1</td><td class="style_td">30a1</td></tr><tr><td class="style_td">a8<span class="basic-text">ィ</span></td><td class="style_td">30a3</td><td class="style_td">30a3</td></tr><tr><td class="style_td">a9<span class="basic-text">ゥ</span></td><td class="style_td">30a5</td><td class="style_td">30a5</td></tr><tr><td class="style_td">aa<span class="basic-text">ェ</span></td><td class="style_td">30a7</td><td class="style_td">30a7</td></tr><tr><td class="style_td">ab<span class="basic-text">ォ</span></td><td class="style_td">30a9</td><td class="style_td">30a9</td></tr><tr><td class="style_td">ac<span class="basic-text">ャ</span></td><td class="style_td">30e3</td><td class="style_td">30e3</td></tr><tr><td class="style_td">ad<span class="basic-text">ュ</span></td><td class="style_td">30e5</td><td class="style_td">30e5</td></tr><tr><td class="style_td">ae<span class="basic-text">ョ</span></td><td class="style_td">30e7</td><td class="style_td">30e7</td></tr><tr><td class="style_td">af<span class="basic-text">ッ</span></td><td class="style_td">30c3</td><td class="style_td">30c3</td></tr><tr><td class="style_td">b0<span class="basic-text">ー</span></td><td class="style_td"><strong>ff70</strong></td><td class="style_td">30fc</td></tr><tr><td class="style_td">b1<span class="basic-text">ア</span></td><td class="style_td">30a2</td><td class="style_td">30a2</td></tr><tr><td class="style_td">b2<span class="basic-text">イ</span></td><td class="style_td">30a4</td><td class="style_td">30a4</td></tr><tr><td class="style_td">b3<span class="basic-text">ウ</span></td><td class="style_td">30a6</td><td class="style_td">30a6</td></tr><tr><td class="style_td">b4<span class="basic-text">エ</span></td><td class="style_td">30a8</td><td class="style_td">30a8</td></tr><tr><td class="style_td">b5<span class="basic-text">オ</span></td><td class="style_td">30aa</td><td class="style_td">30aa</td></tr><tr><td class="style_td">b6<span class="basic-text">カ</span></td><td class="style_td">30ab</td><td class="style_td">30ab</td></tr><tr><td class="style_td">b7<span class="basic-text">キ</span></td><td class="style_td">30ad</td><td class="style_td">30ad</td></tr><tr><td class="style_td">b8<span class="basic-text">ク</span></td><td class="style_td">30af</td><td class="style_td">30af</td></tr><tr><td class="style_td">b9<span class="basic-text">ケ</span></td><td class="style_td">30b1</td><td class="style_td">30b1</td></tr><tr><td class="style_td">ba<span class="basic-text">コ</span></td><td class="style_td">30b3</td><td class="style_td">30b3</td></tr><tr><td class="style_td">bb<span class="basic-text">サ</span></td><td class="style_td">30b5</td><td class="style_td">30b5</td></tr><tr><td class="style_td">bc<span class="basic-text">シ</span></td><td class="style_td">30b7</td><td class="style_td">30b7</td></tr><tr><td class="style_td">bd<span class="basic-text">ス</span></td><td class="style_td">30b9</td><td class="style_td">30b9</td></tr><tr><td class="style_td">be<span class="basic-text">セ</span></td><td class="style_td">30bb</td><td class="style_td">30bb</td></tr><tr><td class="style_td">bf<span class="basic-text">ソ</span></td><td class="style_td">30bd</td><td class="style_td">30bd</td></tr><tr><td class="style_td">c0<span class="basic-text">タ</span></td><td class="style_td">30bf</td><td class="style_td">30bf</td></tr><tr><td class="style_td">c1<span class="basic-text">チ</span></td><td class="style_td">30c1</td><td class="style_td">30c1</td></tr><tr><td class="style_td">c2<span class="basic-text">ツ</span></td><td class="style_td">30c4</td><td class="style_td">30c4</td></tr><tr><td class="style_td">c3<span class="basic-text">テ</span></td><td class="style_td">30c6</td><td class="style_td">30c6</td></tr><tr><td class="style_td">c4<span class="basic-text">ト</span></td><td class="style_td">30c8</td><td class="style_td">30c8</td></tr><tr><td class="style_td">c5<span class="basic-text">ナ</span></td><td class="style_td">30ca</td><td class="style_td">30ca</td></tr><tr><td class="style_td">c6<span class="basic-text">ニ</span></td><td class="style_td">30cb</td><td class="style_td">30cb</td></tr><tr><td class="style_td">c7<span class="basic-text">ヌ</span></td><td class="style_td">30cc</td><td class="style_td">30cc</td></tr><tr><td class="style_td">c8<span class="basic-text">ネ</span></td><td class="style_td">30cd</td><td class="style_td">30cd</td></tr><tr><td class="style_td">c9<span class="basic-text">ノ</span></td><td class="style_td">30ce</td><td class="style_td">30ce</td></tr><tr><td class="style_td">ca<span class="basic-text">ハ</span></td><td class="style_td">30cf</td><td class="style_td">30cf</td></tr><tr><td class="style_td">cb<span class="basic-text">ヒ</span></td><td class="style_td">30d2</td><td class="style_td">30d2</td></tr><tr><td class="style_td">cc<span class="basic-text">フ</span></td><td class="style_td">30d5</td><td class="style_td">30d5</td></tr><tr><td class="style_td">cd<span class="basic-text">ヘ</span></td><td class="style_td">30d8</td><td class="style_td">30d8</td></tr><tr><td class="style_td">ce<span class="basic-text">ホ</span></td><td class="style_td">30db</td><td class="style_td">30db</td></tr><tr><td class="style_td">cf<span class="basic-text">マ</span></td><td class="style_td">30de</td><td class="style_td">30de</td></tr><tr><td class="style_td">d0<span class="basic-text">ミ</span></td><td class="style_td">30df</td><td class="style_td">30df</td></tr><tr><td class="style_td">d1<span class="basic-text">ム</span></td><td class="style_td">30e0</td><td class="style_td">30e0</td></tr><tr><td class="style_td">d2<span class="basic-text">メ</span></td><td class="style_td">30e1</td><td class="style_td">30e1</td></tr><tr><td class="style_td">d3<span class="basic-text">モ</span></td><td class="style_td">30e2</td><td class="style_td">30e2</td></tr><tr><td class="style_td">d4<span class="basic-text">ヤ</span></td><td class="style_td">30e4</td><td class="style_td">30e4</td></tr><tr><td class="style_td">d5<span class="basic-text">ユ</span></td><td class="style_td">30e6</td><td class="style_td">30e6</td></tr><tr><td class="style_td">d6<span class="basic-text">ヨ</span></td><td class="style_td">30e8</td><td class="style_td">30e8</td></tr><tr><td class="style_td">d7<span class="basic-text">ラ</span></td><td class="style_td">30e9</td><td class="style_td">30e9</td></tr><tr><td class="style_td">d8<span class="basic-text">リ</span></td><td class="style_td">30ea</td><td class="style_td">30ea</td></tr><tr><td class="style_td">d9<span class="basic-text">ル</span></td><td class="style_td">30eb</td><td class="style_td">30eb</td></tr><tr><td class="style_td">da<span class="basic-text">レ</span></td><td class="style_td">30ec</td><td class="style_td">30ec</td></tr><tr><td class="style_td">db<span class="basic-text">ロ</span></td><td class="style_td">30ed</td><td class="style_td">30ed</td></tr><tr><td class="style_td">dc<span class="basic-text">ワ</span></td><td class="style_td">30ef</td><td class="style_td">30ef</td></tr><tr><td class="style_td">dd<span class="basic-text">ン</span></td><td class="style_td">30f3</td><td class="style_td">30f3</td></tr><tr><td class="style_td">de<span class="basic-text">゛</span></td><td class="style_td">309b</td><td class="style_td">309b</td></tr><tr><td class="style_td">df<span class="basic-text">゜</span></td><td class="style_td">309c</td><td class="style_td">309c</td></tr><tr><td class="style_td">e0<span class="basic-text">■</span>-ff<span class="basic-text">╂</span></td><td class="style_td">00e0-00ff</td><td class="style_td">e2e0-e2ff</td></tr></tbody></table></div>
+</td></tr></table>
+<ul><li>内部コードはプチコン3号の文字コード(Unicode)に近いコードであるということがわかります。</li>
+<li>ちなみにUnicodeのff01-ff5fは全角英数です。</li></ul>
+
+<h4 id="Bin2Chr">内部コード→CHR$コード</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">表
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">内部コード</th><th class="style_th">表示される文字</th></tr><tr><td class="style_td">0000</td><td class="style_td">[00]または[0d]</td></tr><tr><td class="style_td">0001-00ff</td><td class="style_td">[01]-[ff]</td></tr><tr><td class="style_td">0100-01ff</td><td class="style_td">(画像参照)</td></tr><tr><td class="style_td">2019</td><td class="style_td">[27]<span class="basic-text">’</span></td></tr><tr><td class="style_td">201d</td><td class="style_td">[22]<span class="basic-text">”</span></td></tr><tr><td class="style_td">3001</td><td class="style_td">[a4]<span class="basic-text">、</span></td></tr><tr><td class="style_td">3002</td><td class="style_td">[a1]<span class="basic-text">。</span></td></tr><tr><td class="style_td">300c</td><td class="style_td">[a2]<span class="basic-text">「</span></td></tr><tr><td class="style_td">300d</td><td class="style_td">[a3]<span class="basic-text">」</span></td></tr><tr><td class="style_td">3090-309f</td><td class="style_td"><strong>ーアイウエオカキクケコ゛゜スセソ</strong></td></tr><tr><td class="style_td">30a0-30af</td><td class="style_td"><strong>タァアィイゥウェエォオカギキグク</strong></td></tr><tr><td class="style_td">30b0-30bf</td><td class="style_td"><strong>ゲケゴコザサジシズスゼセゾソダタ</strong></td></tr><tr><td class="style_td">30c0-30cf</td><td class="style_td"><strong>ヂチヅッツヅテデトドナニヌネノハ</strong></td></tr><tr><td class="style_td">30d0-30df</td><td class="style_td"><strong>バパヒビピフブプヘベペホボポマミ</strong></td></tr><tr><td class="style_td">30e0-30ef</td><td class="style_td"><strong>ムメモャヤュユョヨラリルレロ<span class="basic-text">М</span>ワ</strong></td></tr><tr><td class="style_td">30f0-30ff</td><td class="style_td"><span class="basic-text">♪ОヲンРСТУФХ◎・→←↑↓</span></td></tr><tr><td class="style_td">e000</td><td class="style_td">NEW</td></tr><tr><td class="style_td">e001</td><td class="style_td">LIST</td></tr><tr><td class="style_td">e002</td><td class="style_td">RUN</td></tr><tr><td class="style_td">e003</td><td class="style_td">CONT</td></tr><tr><td class="style_td">e004</td><td class="style_td">FILES</td></tr><tr><td class="style_td">e005</td><td class="style_td">IF</td></tr><tr><td class="style_td">e006</td><td class="style_td">THEN</td></tr><tr><td class="style_td">e007</td><td class="style_td">FOR</td></tr><tr><td class="style_td">e008</td><td class="style_td">TO</td></tr><tr><td class="style_td">e009</td><td class="style_td">STEP</td></tr><tr><td class="style_td">e00a</td><td class="style_td">NEXT</td></tr><tr><td class="style_td">e00b</td><td class="style_td">STOP</td></tr><tr><td class="style_td">e00c</td><td class="style_td">END</td></tr><tr><td class="style_td">e00d</td><td class="style_td">CLEAR</td></tr><tr><td class="style_td">e00e</td><td class="style_td">REM</td></tr><tr><td class="style_td">e00f</td><td class="style_td">'</td></tr><tr><td class="style_td">e010</td><td class="style_td">LABEL</td></tr><tr><td class="style_td">e011</td><td class="style_td">@</td></tr><tr><td class="style_td">e012</td><td class="style_td">GOTO</td></tr><tr><td class="style_td">e013</td><td class="style_td">GOSUB</td></tr><tr><td class="style_td">e014</td><td class="style_td">RETURN</td></tr><tr><td class="style_td">e015</td><td class="style_td">ON</td></tr><tr><td class="style_td">e016</td><td class="style_td">DIM</td></tr><tr><td class="style_td">e017</td><td class="style_td">TMREAD</td></tr><tr><td class="style_td">e018</td><td class="style_td">DTREAD</td></tr><tr><td class="style_td">e019</td><td class="style_td">DATA</td></tr><tr><td class="style_td">e01a</td><td class="style_td">READ</td></tr><tr><td class="style_td">e01b</td><td class="style_td">RESTORE</td></tr><tr><td class="style_td">e01c</td><td class="style_td">KEY</td></tr><tr><td class="style_td">e01d</td><td class="style_td">WAIT(初代で読み込むとVSYNC)</td></tr><tr><td class="style_td">e01e</td><td class="style_td">CLS</td></tr><tr><td class="style_td">e01f</td><td class="style_td">PRINT</td></tr><tr><td class="style_td">e020</td><td class="style_td">?</td></tr><tr><td class="style_td">e021</td><td class="style_td">LOCATE</td></tr><tr><td class="style_td">e022</td><td class="style_td">INPUT</td></tr><tr><td class="style_td">e023</td><td class="style_td">LINPUT</td></tr><tr><td class="style_td">e024</td><td class="style_td">COLOR</td></tr><tr><td class="style_td">e025</td><td class="style_td">LOAD</td></tr><tr><td class="style_td">e026</td><td class="style_td">SAVE</td></tr><tr><td class="style_td">e027</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e028</td><td class="style_td">SENDFILE</td></tr><tr><td class="style_td">e029</td><td class="style_td">RECVFILE</td></tr><tr><td class="style_td">e02a</td><td class="style_td">DELETE</td></tr><tr><td class="style_td">e02b</td><td class="style_td">RENAME</td></tr><tr><td class="style_td">e02c</td><td class="style_td">VISIBLE</td></tr><tr><td class="style_td">e02d</td><td class="style_td">COLINIT</td></tr><tr><td class="style_td">e02e</td><td class="style_td">COLSET</td></tr><tr><td class="style_td">e02f</td><td class="style_td">COLREAD</td></tr><tr><td class="style_td">e030</td><td class="style_td">CHRINIT</td></tr><tr><td class="style_td">e031</td><td class="style_td">CHRSET</td></tr><tr><td class="style_td">e032</td><td class="style_td">CHRREAD</td></tr><tr><td class="style_td">e033</td><td class="style_td">BGPAGE</td></tr><tr><td class="style_td">e034</td><td class="style_td">BGCLIP</td></tr><tr><td class="style_td">e035</td><td class="style_td">BGPUT</td></tr><tr><td class="style_td">e036</td><td class="style_td">SPPAGE</td></tr><tr><td class="style_td">e037</td><td class="style_td">SPSET</td></tr><tr><td class="style_td">e038</td><td class="style_td">SPCLR</td></tr><tr><td class="style_td">e039</td><td class="style_td">SPOFS</td></tr><tr><td class="style_td">e03a</td><td class="style_td">SPSCALE</td></tr><tr><td class="style_td">e03b</td><td class="style_td">SPANGLE</td></tr><tr><td class="style_td">e03c</td><td class="style_td">GPAGE</td></tr><tr><td class="style_td">e03d</td><td class="style_td">GCOLOR</td></tr><tr><td class="style_td">e03e</td><td class="style_td">GPSET</td></tr><tr><td class="style_td">e03f</td><td class="style_td">GPAINT</td></tr><tr><td class="style_td">e040</td><td class="style_td">GLINE</td></tr><tr><td class="style_td">e041</td><td class="style_td">GBOX</td></tr><tr><td class="style_td">e042</td><td class="style_td">GCIRCLE</td></tr><tr><td class="style_td">e043</td><td class="style_td">GPUTCHR</td></tr><tr><td class="style_td">e044</td><td class="style_td">GCLS</td></tr><tr><td class="style_td">e045</td><td class="style_td">PNLTYPE</td></tr><tr><td class="style_td">e046</td><td class="style_td">ICONSET</td></tr><tr><td class="style_td">e047</td><td class="style_td">ICONCLR</td></tr><tr><td class="style_td">e048</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e049</td><td class="style_td">PNLSTR</td></tr><tr><td class="style_td">e04a</td><td class="style_td">BEEP</td></tr><tr><td class="style_td">e04b</td><td class="style_td">BGMPLAY</td></tr><tr><td class="style_td">e04c</td><td class="style_td">BGMSTOP</td></tr><tr><td class="style_td">e04d</td><td class="style_td">SPANIM</td></tr><tr><td class="style_td">e04e</td><td class="style_td">BGOFS</td></tr><tr><td class="style_td">e04f</td><td class="style_td">BGREAD</td></tr><tr><td class="style_td">e050</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e051</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e052</td><td class="style_td">SPCHR</td></tr><tr><td class="style_td">e053</td><td class="style_td">EXEC</td></tr><tr><td class="style_td">e054</td><td class="style_td">GFILL</td></tr><tr><td class="style_td">e055</td><td class="style_td">SPREAD</td></tr><tr><td class="style_td">e056</td><td class="style_td">SPHOME</td></tr><tr><td class="style_td">e057</td><td class="style_td">SPCOL</td></tr><tr><td class="style_td">e058</td><td class="style_td">REBOOT</td></tr><tr><td class="style_td">e059</td><td class="style_td">TALK</td></tr><tr><td class="style_td">e05a</td><td class="style_td">TALKSTOP</td></tr><tr><td class="style_td">e05b</td><td class="style_td">BGMSET</td></tr><tr><td class="style_td">e05c</td><td class="style_td">BGMCLEAR</td></tr><tr><td class="style_td">e05d</td><td class="style_td">BGMSETV</td></tr><tr><td class="style_td">e05e</td><td class="style_td">SPSETV</td></tr><tr><td class="style_td">e05f</td><td class="style_td">SWAP</td></tr><tr><td class="style_td">e060</td><td class="style_td">SORT</td></tr><tr><td class="style_td">e061</td><td class="style_td">RSORT</td></tr><tr><td class="style_td">e062</td><td class="style_td">SPCOLVEC</td></tr><tr><td class="style_td">e063</td><td class="style_td">ELSE</td></tr><tr><td class="style_td">e064</td><td class="style_td">BGCLR</td></tr><tr><td class="style_td">e065</td><td class="style_td">ACLS</td></tr><tr><td class="style_td">e066</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e067</td><td class="style_td">BGCOPY</td></tr><tr><td class="style_td">e068</td><td class="style_td">GDRAWMD</td></tr><tr><td class="style_td">e069</td><td class="style_td">GPRIO</td></tr><tr><td class="style_td">e06a</td><td class="style_td">GCOPY</td></tr><tr><td class="style_td">e06b</td><td class="style_td">BGMSETD</td></tr><tr><td class="style_td">e06c</td><td class="style_td">APPEND</td></tr><tr><td class="style_td">e06d</td><td class="style_td">BGFILL</td></tr><tr><td class="style_td">e06e</td><td class="style_td">(null)</td></tr><tr><td class="style_td">e06f</td><td class="style_td">BGMPRG</td></tr><tr><td class="style_td">e070</td><td class="style_td">BGMVOL</td></tr><tr><td class="style_td">e071</td><td class="style_td">BREPEAT</td></tr><tr><td class="style_td">e072</td><td class="style_td">VSYNC</td></tr><tr><td class="style_td">e400</td><td class="style_td">ASC</td></tr><tr><td class="style_td">e401</td><td class="style_td">CHR$</td></tr><tr><td class="style_td">e402</td><td class="style_td">VAL</td></tr><tr><td class="style_td">e403</td><td class="style_td">STR$</td></tr><tr><td class="style_td">e404</td><td class="style_td">HEX$</td></tr><tr><td class="style_td">e405</td><td class="style_td">MID$</td></tr><tr><td class="style_td">e406</td><td class="style_td">LEN</td></tr><tr><td class="style_td">e407</td><td class="style_td">RND</td></tr><tr><td class="style_td">e408</td><td class="style_td">ABS</td></tr><tr><td class="style_td">e409</td><td class="style_td">SGN</td></tr><tr><td class="style_td">e40a</td><td class="style_td">PI</td></tr><tr><td class="style_td">e40b</td><td class="style_td">RAD</td></tr><tr><td class="style_td">e40c</td><td class="style_td">SIN</td></tr><tr><td class="style_td">e40d</td><td class="style_td">COS</td></tr><tr><td class="style_td">e40e</td><td class="style_td">TAN</td></tr><tr><td class="style_td">e40f</td><td class="style_td">ATAN</td></tr><tr><td class="style_td">e410</td><td class="style_td">SQR</td></tr><tr><td class="style_td">e411</td><td class="style_td">EXP</td></tr><tr><td class="style_td">e412</td><td class="style_td">LOG</td></tr><tr><td class="style_td">e413</td><td class="style_td">FLOOR</td></tr><tr><td class="style_td">e414</td><td class="style_td">BUTTON</td></tr><tr><td class="style_td">e415</td><td class="style_td">INKEY$</td></tr><tr><td class="style_td">e416</td><td class="style_td">CHKCHR</td></tr><tr><td class="style_td">e417</td><td class="style_td">GSPOIT</td></tr><tr><td class="style_td">e418</td><td class="style_td">ICONCHK</td></tr><tr><td class="style_td">e419</td><td class="style_td">BGMCHK</td></tr><tr><td class="style_td">e41a</td><td class="style_td">DEG</td></tr><tr><td class="style_td">e41b</td><td class="style_td">SPCHK</td></tr><tr><td class="style_td">e41c</td><td class="style_td">LEFT$</td></tr><tr><td class="style_td">e41d</td><td class="style_td">RIGHT$</td></tr><tr><td class="style_td">e41e</td><td class="style_td">POW</td></tr><tr><td class="style_td">e41f</td><td class="style_td">SPHITSP</td></tr><tr><td class="style_td">e420</td><td class="style_td">TALKCHK</td></tr><tr><td class="style_td">e421</td><td class="style_td">BGMGETV</td></tr><tr><td class="style_td">e422</td><td class="style_td">SPGETV</td></tr><tr><td class="style_td">e423</td><td class="style_td">SPHITRC</td></tr><tr><td class="style_td">e424</td><td class="style_td">SUBST$</td></tr><tr><td class="style_td">e425</td><td class="style_td">INSTR</td></tr><tr><td class="style_td">e426</td><td class="style_td">BGCHK</td></tr><tr><td class="style_td">e427</td><td class="style_td">SPHIT</td></tr><tr><td class="style_td">e428</td><td class="style_td">BTRIG</td></tr><tr><td class="style_td">e800</td><td class="style_td">TRUE</td></tr><tr><td class="style_td">e801</td><td class="style_td">FALSE</td></tr><tr><td class="style_td">e802</td><td class="style_td">CANCEL</td></tr><tr><td class="style_td">e803</td><td class="style_td">VERSION</td></tr><tr><td class="style_td">e804</td><td class="style_td">TCHX</td></tr><tr><td class="style_td">e805</td><td class="style_td">TCHY</td></tr><tr><td class="style_td">e806</td><td class="style_td">TCHST</td></tr><tr><td class="style_td">e807</td><td class="style_td">TCHTIME</td></tr><tr><td class="style_td">e808</td><td class="style_td">FUNCNO</td></tr><tr><td class="style_td">e809</td><td class="style_td">CSRX</td></tr><tr><td class="style_td">e80a</td><td class="style_td">CSRY</td></tr><tr><td class="style_td">e80b</td><td class="style_td">ERR</td></tr><tr><td class="style_td">e80c</td><td class="style_td">ERL</td></tr><tr><td class="style_td">e80d</td><td class="style_td">RESULT</td></tr><tr><td class="style_td">e80e</td><td class="style_td">TIME$</td></tr><tr><td class="style_td">e80f</td><td class="style_td">DATE$</td></tr><tr><td class="style_td">e810</td><td class="style_td">MAINCNTL</td></tr><tr><td class="style_td">e811</td><td class="style_td">MAINCNTH</td></tr><tr><td class="style_td">e812</td><td class="style_td">ICONPUSE</td></tr><tr><td class="style_td">e813</td><td class="style_td">ICONPAGE</td></tr><tr><td class="style_td">e814</td><td class="style_td">ICONPMAX</td></tr><tr><td class="style_td">e815</td><td class="style_td">FREEMEM</td></tr><tr><td class="style_td">e816</td><td class="style_td">FREEVAR</td></tr><tr><td class="style_td">e817</td><td class="style_td">MEM$</td></tr><tr><td class="style_td">e818</td><td class="style_td">TABSTEP</td></tr><tr><td class="style_td">e819</td><td class="style_td">SYSBEEP</td></tr><tr><td class="style_td">e81a</td><td class="style_td">SPHITX</td></tr><tr><td class="style_td">e81b</td><td class="style_td">SPHITY</td></tr><tr><td class="style_td">e81c</td><td class="style_td">SPHITT</td></tr><tr><td class="style_td">e81d</td><td class="style_td">SPHITNO</td></tr><tr><td class="style_td">e81e</td><td class="style_td">KEYBOARD</td></tr><tr><td class="style_td">e81f</td><td class="style_td">PRGNAME$</td></tr><tr><td class="style_td">e820</td><td class="style_td">PACKAGE$</td></tr><tr><td class="style_td">ec00</td><td class="style_td">NOT</td></tr><tr><td class="style_td">ec01</td><td class="style_td">AND</td></tr><tr><td class="style_td">ec02</td><td class="style_td">OR</td></tr><tr><td class="style_td">ec03</td><td class="style_td">XOR</td></tr><tr><td class="style_td">ff70</td><td class="style_td">[b0]<span class="basic-text">ー</span></td></tr><tr><td class="style_td">ffe5</td><td class="style_td">[5c]<span class="basic-text">＆</span></td></tr></tbody></table></div>
+</td></tr></table>
+<ul><li>[]内はCHR$で取得できる文字コード(16進数)です。</li>
+<li>0000は初代PRGでは改行[0d]、MEMでは[00]となります。</li>
+<li>0100-01ffについて
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Mame%2FPTCFileSystem&amp;openfile=exchr.jpg" title="exchr.jpg"><img src="/petc/?plugin=ref&amp;page=Mame%2FPTCFileSystem&amp;src=exchr.jpg" alt="exchr.jpg" title="exchr.jpg" width="434" height="123" /></a></div>
+
+<ul><li>PTCファイルを編集する以外の方法で入手できません。</li>
+<li>mkIIでPRGとして保存する際、1文字1バイトに変換するため[20]-[ff],[00]-[1f]に変化してしまいます。</li>
+<li>しかしMEMリソースで保存すると、失われず残ります。</li>
+<li>MEMリソースに保存しておけば、いつでもプログラム中で取り出して使用できます。</li>
+<li>0100-01ffのMEMリソース作りました。これを使えばいつでも0100-01ffの文字が使えます。(MEM:EXCHR)
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Mame%2FPTCFileSystem&amp;openfile=exchrqr.png" title="exchrqr.png"><img src="/petc/?plugin=ref&amp;page=Mame%2FPTCFileSystem&amp;src=exchrqr.png" alt="exchrqr.png" title="exchrqr.png" width="210" height="210" /></a></div>
+</li></ul></li>
+<li>3000-30ffについて
+<ul><li>濁点、半濁点付きの文字コードがあります。
+<ul><li>ただし、「ガ」はなぜかありません。また、「ヅ」が2つあります。</li>
+<li>これらの文字は濁点、半濁点がない状態で表示されます。</li>
+<li>mkIIでPRG保存すると、次の文字を上書きして濁点、半濁点に変えてしまいます。</li></ul></li></ul></li>
+<li>e000-について
+<ul><li>初代PRGリソースの場合のみ、命令、システム変数などを表します。</li>
+<li>(null)と記したものは何も表示されません。</li>
+<li>MEMリソースの場合は、ほかの文字コードと同様に扱われます。(下記参照)</li></ul></li>
+<li>上記以外の文字コードは、文字コードの下2桁+0x20の文字が表示されます。
+<ul><li>しかしASCは0〜255の値しか返しません。</li>
+<li>複数のコードに同じ文字が割り当てられることになりますが、内部コードが異なるためSyntax Error等を起こします。</li>
+<li>プログラムに使用する場合は上の「CHR$コード→内部コード」の表にあるコードを使用します。</li>
+<li>mkIIでPRG保存すると、正規の文字に置き換えられます。</li></ul></li></ul>
+
+<h3 id="QRCode">mkIIのQRコード</h3>
+<p>PTC2QRのソースコードより。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x00-0x01</td><td class="style_td">PT</td></tr><tr><td class="style_td">0x02</td><td class="style_td">QRコードの番号(何枚目か)</td></tr><tr><td class="style_td">0x03</td><td class="style_td">QRコードの総枚数</td></tr><tr><td class="style_td">0x04-0x13</td><td class="style_td">データのうち、このQRコードにある分のMD5ハッシュ</td></tr><tr><td class="style_td">0x14-0x23</td><td class="style_td">データ全体のMD5ハッシュ</td></tr><tr><td class="style_td">0x24-</td><td class="style_td">データ</td></tr></tbody></table></div>
+
+<h4 id="QRData">データ</h4>
+<p>1枚のQRコードに入らない場合、分割される。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オフセット</th><th class="style_th">内容</th></tr><tr><td class="style_td">0x24-0x2b</td><td class="style_td">ファイル名(余分なバイトはすべて00)</td></tr><tr><td class="style_td">0x2c-0x2f</td><td class="style_td">リソースタイプ(RPRG,RMEMなど)</td></tr><tr><td class="style_td">0x30-0x33</td><td class="style_td">0x38以降のサイズ</td></tr><tr><td class="style_td">0x34-0x37</td><td class="style_td">PTCファイルのサイズ(0x04-0x07にあったもの)</td></tr><tr><td class="style_td">0x38-</td><td class="style_td">PTCのPETC〜以降を<a href="http://ja.wikipedia.org/wiki/Deflate" title="Wikipedia:Deflate" rel="nofollow">Deflate</a>圧縮したもの</td></tr></tbody></table></div>
+
+<h3 id="Comment">コメント</h3>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/PTCFileSystem" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="69f02a551e8b801927b8d9183ed8fd45" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_6_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (698d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1805d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2749d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1681d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1692d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2143d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2344d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1914d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1004d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (362d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2136d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1875d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_6_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2343d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (21h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_6_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (33d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/04/19</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (11h)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/17</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (33d)">リンク集</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (49d)">編集の練習用ページ</a></li>
+</ul>
+<h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (228d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (250d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (269d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (269d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li>PTCファイル、mkIIのQRコード仕様と内部コード</li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (351d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (354d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+</div>
+
+<h3 id="content_6_3">オンライン情報</h3>
+<p>現在同時に 4 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.098 秒  | このページの最終更新 : 2020/06/21 (日) 12:48:03  (302d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

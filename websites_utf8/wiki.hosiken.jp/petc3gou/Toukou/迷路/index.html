@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 迷路探索ゲーム-Chaesr- - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 迷路探索ゲーム-Chaesr- - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, 3D風, ホラー" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2F%CC%C2%CF%A9">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2F%CC%C2%CF%A9">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%CC%C2%CF%A9">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2F%CC%C2%CF%A9">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 迷路探索ゲーム-Chaesr-</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2F%CC%C2%CF%A9">迷路</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.048sec. -->
+<div class="contents">
+<ul><li><a href="#o41fc606">  概要 </a>
+<ul><li><a href="#nb52a271">  作者から </a></li>
+<li><a href="#r391b04e">  ゲーム説明 </a>
+<ul><li><a href="#w19adc39"> 操作方法　 </a></li>
+<li><a href="#q6973ec2"> シンボル </a></li>
+<li><a href="#j63f1eff"> 敵 </a></li></ul></li>
+<li><a href="#sc5c1198"> おまけ </a></li></ul></li>
+<li><a href="#b08606cf">  スクリーンショット </a></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2015年2月22日投稿
+/ 投稿者 : ベルック
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=3D%C9%F7">3D風</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%DB%A5%E9%A1%BC">ホラー</a> </span></p>
+<h3 id="o41fc606">概要</h3>
+<p>脱出を目指すゲームです</p>
+
+<h4 id="nb52a271">作者から</h4>
+<p>初投稿です！！(*'▽')　<br class="spacer" />
+はい、3号では初めてです。何かミスがあるかも。許して<br class="spacer" /></p>
+<p>今回のゲームは一応大喜利の投稿作品なんですが、Ver2.0です。おめでとうございます（謎）<br class="spacer" />
+それからタグにホラーとついていますが、グロテスクな描写はありませんので安心してください。<br class="spacer" />
+少しびっくりするだけです。ホラー好きからしたらホラーってほどではないのでしょうか、私からすればホラーです(/ω＼)<br class="spacer" />
+微々たるホラーですね。<br class="spacer" />
+※心臓が弱い方やホラーが死ぬほど苦手な方はプレイを止めておいたほうがいいでしょう。</p>
+
+<h4 id="r391b04e">ゲーム説明</h4>
+<p>迷路の中を探検して鍵を集めゴールに向かえばゲームクリアです。　<br class="spacer" />
+しかし、迷路の中には世にも恐ろしい（安っぽい見た目の）怪物が徘徊しています。そいつに捕まるとゲームオーバーになります。気を付けてください。<br class="spacer" /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%CC%C2%CF%A9&amp;openfile=%A5%BF%A5%A4%A5%C8%A5%EB.jpg" title="タイトル.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%CC%C2%CF%A9&amp;src=%A5%BF%A5%A4%A5%C8%A5%EB.jpg" alt="タイトル.jpg" title="タイトル.jpg" width="400" height="240" /></a></div>
+
+
+<h5 id="w19adc39">操作方法　</h5>
+<p>・十字キー<br class="spacer" />
+　↑：前進　←→：左右に向く　：↓：後退<br class="spacer" />
+・Aﾎﾞﾀﾝ<br class="spacer" />
+　シンボルを調べる<br class="spacer" />
+基本的にサンプルプログラムのGAME2と同じ操作です。<br class="spacer" />
+※本プログラムにも説明が載っていますので詳しい説明はたたみます　<br class="spacer" /></p>
+
+<h5 id="q6973ec2">シンボル</h5>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">しんぼぉる
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<ul><li>かぎ<br class="spacer" />
+　ゴールの扉に必要な鍵です。　<br class="spacer" />
+　取ると消えます　<br class="spacer" />
+　上画面の左上に手に入れたカギと必要なカギの数が表示されています。<br class="spacer" /></li></ul>
+<ul><li>ちず<br class="spacer" />
+　ステージのマップを下画面に表示します。<br class="spacer" />
+　マップの地形とシンボルを表示します。</li></ul>
+<ul><li>とびら<br class="spacer" />
+　ゴールです。カギを必要な数手に入れていないと開かない。　<br class="spacer" /></li></ul>
+<ul><li>ワープポイント<br class="spacer" />
+　マップ上の他のワープポイントの近くにワープします。<br class="spacer" />
+　※ワープポイントの隣に通路が無いとワープポイントとして認識されません<br class="spacer" /></li></ul>
+<ul><li>01スイッチ<br class="spacer" />
+　調べると0のスイッチと1のスイッチを切り替えて<br class="spacer" />
+　「0扉」と「1扉」を開閉します。<br class="spacer" />
+　</li>
+<li>01扉<br class="spacer" />
+　↑のスイッチの表示が0の時は0扉が開き1扉が閉まります。<br class="spacer" />
+　　　スイッチの表示が1の時は1扉が開き0扉が閉まります。<br class="spacer" /></li></ul>
+<ul><li>フリーズランプ-01扉
+　怪物の行動が5秒間止まります。止まった状態では怪物に当たっても
+ゲームオーバーになりません。
+</td></tr></table></li></ul>
+
+<h5 id="j63f1eff">敵</h5>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">てきだぁ！！
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>怪物が移動すると音を出します（beep1）。そのおとは近づけば近づくほど大きくなるので、近くにいるか遠くにいるかわかります。<br class="spacer" />
+怪物は普段はランダムで移動し、プレイヤーを見つけると（直線状に重なると）怪物が追いかけてきます。<br class="spacer" />
+プレイヤーが見つかってしまうと、移動スピードが上がります。怪物が出す音の間隔も短くなります。</p>
+</td></tr></table>
+
+<h4 id="sc5c1198">おまけ</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">怖さがやわらぐかもしれないでござる
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>10行目が <br class="spacer" />
+LOAD&quot;GRP4:MEROS&quot;,FALSE
+となっているので<br class="spacer" />
+LOAD&quot;GRP4:MEROTS&quot;,FALSE
+にしてみましょう。<br class="spacer" />
+怖さがやわらぐかもしれません。（約束はしない）<br class="spacer" />
+<br class="spacer" />
+※ぶっちゃけ東方ネタなので苦手な方は注意してください<br class="spacer" />
+2015/06/13更新</p>
+</td></tr></table>
+
+<h3 id="b08606cf">スクリーンショット</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%CC%C2%CF%A9&amp;openfile=%A5%D7%A5%EC%A5%A4%C3%E6.jpg" title="プレイ中.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%CC%C2%CF%A9&amp;src=%A5%D7%A5%EC%A5%A4%C3%E6.jpg" alt="プレイ中.jpg" title="プレイ中.jpg" width="400" height="240" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%CC%C2%CF%A9&amp;openfile=GAMEOVER.jpg" title="GAMEOVER.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%CC%C2%CF%A9&amp;src=GAMEOVER.jpg" alt="GAMEOVER.jpg" title="GAMEOVER.jpg" width="400" height="240" /></a></div>
+
+
+<h3 id="QR">公開キー</h3>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">V37VF3CJ</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (1181d)">掲示板</a>へ)</p>
+<ul><li><strong>ボタン嬢のたると</strong> : 怖さが面白さを増して面白い！！ (<span class="comment_date">2015/02/22 (日) 01:42:32</span>)</li>
+<li><strong>BOSS</strong> : 怪物がいきなり出てきて驚くのは自分だけだろうか？ (<span class="comment_date">2015/02/22 (日) 08:53:05</span>)</li>
+<li><strong>みほ</strong> : 普通に怖いですよｗ (<span class="comment_date">2015/02/23 (月) 16:10:27</span>)</li>
+<li><strong>魔神</strong> : 敵との距離は、音ではかるのか? (<span class="comment_date">2015/02/23 (月) 17:53:24</span>)</li>
+<li><strong>魔神</strong> : 敵との距離を音ではかるのでエネミーゼロみたい (<span class="comment_date">2015/02/23 (月) 17:56:55</span>)</li>
+<li><strong>ベルック</strong> : 皆さん遊んでいただいてありがとうございます。゜+(。ノдヽ。)゜+。デバッグのたびにビビっていた甲斐がありました (<span class="comment_date">2015/02/23 (月) 19:25:01</span>)</li>
+<li><strong>/Tachesci</strong> : 怖くてプレイできないww (<span class="comment_date">2015/02/24 (火) 22:53:09</span>)</li>
+<li><strong>恐怖症</strong> : ダウンロードしたけど　怖そうで　出来ない(^∀^) (<span class="comment_date">2015/02/25 (水) 21:02:07</span>)</li>
+<li><strong>hanzo</strong> : ほんとに怖いです。心臓の弱い人の一人プレイは避けるように注意喚起する必要があるかも。私も「敵に追いかけられる恐怖を味わう系の迷路ゲーム」をこのwikiに投稿しましたが、リアルな恐怖感では本作の足元にも及びません。 (<span class="comment_date">2015/02/25 (水) 22:35:10</span>)</li>
+<li><strong>名無しさん</strong> : 怖くて2面から進まないorz (<span class="comment_date">2015/02/26 (木) 00:51:12</span>)</li>
+<li><strong>ベルック</strong> : ↑↑アドバイスありがとうございます。注意を促す文を追加しました。しかし、あれですね。怖い怖いって言われて嬉しいのですが 怖さで迷路内の色々な仕掛けがかすんでいる気がしますw(;´･ω･)(<span class="comment_date">2015/02/26 (木) 20:52:31</span>)</li>
+<li><strong>名無しさん</strong> : こええｗｗ (<span class="comment_date">2015/03/10 (火) 16:56:14</span>)</li>
+<li><strong>園田</strong> : 恐さを本命にしても通用するレベルだわ (<span class="comment_date">2015/03/27 (金) 13:36:37</span>)</li>
+<li><strong>名無しさん</strong> : 初めて遊んで以来このプログラム開いてないo( _ _ )o (<span class="comment_date">2015/03/27 (金) 20:20:32</span>)</li>
+<li><strong>プチコン三号すき</strong> : 夜にうなされた。めっちゃこわかった〜。 (<span class="comment_date">2015/03/28 (土) 10:59:27</span>)</li>
+<li><strong>ライオネル</strong> : 敵が一瞬しか見えない (<span class="comment_date">2015/04/04 (土) 16:05:04</span>)</li>
+<li><strong>名無しさん</strong> : 友達にやらせたらビビってましたw (<span class="comment_date">2015/05/01 (金) 22:48:14</span>)</li>
+<li><strong>ゆうちゃん</strong> : 怖すぎて出来ないので怖くなくして下さい((殴 (<span class="comment_date">2015/05/28 (木) 20:09:34</span>)</li>
+<li><strong>コム</strong> : すごくおもしろいです！ともだちにやらせよう (<span class="comment_date">2015/06/06 (土) 19:19:12</span>)</li>
+<li><strong>名無しさん</strong> : ホラープログラム(ビックリ系ウイルスプログラムではない)増えてほしいな。 (<span class="comment_date">2015/06/06 (土) 20:30:17</span>)</li>
+<li><strong>ベルック</strong> : ↑↑↑なるほど (<span class="comment_date">2015/06/13 (土) 01:22:55</span>)</li>
+<li><strong>名無しさん</strong> : くっそ怖かったw　でも面白いです！ (<span class="comment_date">2015/06/21 (日) 15:48:45</span>)</li>
+<li><strong>レモン</strong> : このゲームBGMとすごく合う (<span class="comment_date">2015/07/28 (火) 20:20:49</span>)</li>
+<li><strong>名無しさん</strong> : すごく面白いです！　まだ6面までしかプレイしてませんが…(笑)　こういうゲーム大好きです〜 (<span class="comment_date">2015/08/15 (土) 17:43:47</span>)</li>
+<li><strong>名無しさん</strong> : フランちゃん可愛い 癒された (<span class="comment_date">2015/08/15 (土) 17:49:03</span>)</li>
+<li><strong>ロッピー</strong> : おまけやったら面白かったです！ (<span class="comment_date">2015/09/05 (土) 14:43:39</span>)</li>
+<li><strong>pkfhgdwqytsbvzxmckdpcjvgkhdsyw</strong> : wwwrtいいプログラムだったぞ。 (<span class="comment_date">2017/10/30 (月) 18:34:30</span>)</li>
+<li><strong>登勢</strong> : ↑名前荒らしやめて (<span class="comment_date">2017/10/30 (月) 18:35:20</span>)</li>
+<li><strong>登勢</strong> : ごめん、コメント普通 (<span class="comment_date">2017/10/30 (月) 18:35:48</span>)</li>
+<li><strong>MMMMM</strong> : 友達としたら、楽しかったです。 (<span class="comment_date">2019/07/20 (土) 21:53:47</span>)</li>
+<li><strong>だいこん</strong> : 何これ怖すぎ (<span class="comment_date">2019/10/27 (日) 00:55:41</span>)</li>
+<li><strong>MMMMM</strong> : ^∀^ (<span class="comment_date">2020/10/24 (土) 09:28:45</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/迷路" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="9940c622d1cfd29958267d82cee59ef4" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_7_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (881d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (797d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2234d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (826d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (271d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (876d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (71d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1005d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (217d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (941d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2058d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_7_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1472d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (452d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (18h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_7_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (60d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/19</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="リズミカルおもちつきKR MAX (1h)">リズミカルおもちつきKR MAX</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="コメント/Toukou/リズミカルおもちつきKR (6h)">コメント/Toukou/リズミカルおもちつきKR</a></li>
+</ul>
+<h4>2021/10/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="プチコンで使われる拡張子まとめ (1d)">プチコンで使われる拡張子まとめ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="LA  OS (1d)">LA  OS</a></li>
+</ul>
+<h4>2021/10/16</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Musics総合サイト ('21/06/23更新) (3d)">Musics総合サイト ('21/06/23更新)</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (3d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2021/10/12</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (7d)">ピクトチャット2</a></li>
+</ul>
+<h4>2021/10/09</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FDrop-3s" title="Drop-3s(リズムゲーム) (10d)">Drop-3s(リズムゲーム)</a></li>
+</ul>
+<h4>2021/10/08</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS3OS" title="[公開停止]TAS3OS (11d)">[公開停止]TAS3OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FGravityLabo2" title="GravityLabo2 (11d)">GravityLabo2</a></li>
+</ul>
+</div>
+
+<h3 id="content_7_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADAK" title="Toukou/リズミカルおもちつきAK (108d)">リズミカルインムウチAK&amp;Broken rice-cake making+α<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMoi%27s%20BGM" title="Toukou/Moi's BGM (1192d)">Mo4 : Moi's BGM<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (310d)">リズミカルおもちつきTG<span class="counter">(3)</span></a></li>
+ <li><span title="Toukou/迷路  (360d)">迷路探索ゲーム-Chaesr-<span class="counter">(3)</span></span></li>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Toukou/Musics4/Integrated site (3d)">Musics総合サイト ('21/06/23更新)<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fundertale%20bgm%BD%B8" title="Toukou/undertale bgm集 (407d)">undertale bgm集<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FSmiletool" title="Mame/Smiletool (729d)">スマイルツールで保存したデータの使用方法<span class="counter">(2)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D5%A5%EA%A1%BC%C1%C7%BA%E0%A1%D6%A4%DC%A4%C3%A4%B5%A4%F3%A1%D7" title="Toukou/フリー素材「ぼっさん」 (1470d)">フリー素材「ぼっさん」<span class="counter">(2)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMusicsKK" title="Toukou/MusicsKK (498d)">Musics King/King Touch 〜blueberry〜<span class="counter">(2)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%A4%A4%ED%A4%A4%A4%ED%A4%D5%A4%E9%A4%C3%A4%B7%A4%E5%A4%BF%A4%B7%A4%B6%A4%F3" title="Toukou/いろいろふらっしゅたしざん (1050d)">いろいろふらっしゅたしざん<span class="counter">(2)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1506d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_7_4">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 2374 回、本日は 1 回、昨日は 2 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.052 秒  | このページの最終更新 : 2020/10/24 (土) 09:28:45  (360d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

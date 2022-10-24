@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : MINI_MAP_EDITER - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : MINI_MAP_EDITER - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, エディタ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FMINI_MAP_EDITER">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FMINI_MAP_EDITER">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FMINI_MAP_EDITER">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FMINI_MAP_EDITER">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : MINI_MAP_EDITER</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FMINI_MAP_EDITER">MINI_MAP_EDITER</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.059sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#r5cb1b77">  特徴 </a>
+<ul><li><a href="#PanelSection">  その1.パネルセクション </a></li>
+<li><a href="#MacroPen">  その2.マクロペン </a></li></ul></li></ul></li>
+<li><a href="#HowToUse">  操作方法 </a>
+<ul><li><a href="#MenuScreen">  メニュー画面 </a></li>
+<li><a href="#CallMap">  作ったマップの呼び出し方 </a>
+<ul><li><a href="#j4b2da33"> 手順 </a></li>
+<li><a href="#CallMap_Sample"> サンプルコード </a></li></ul></li></ul></li>
+<li><a href="#ScreenShot">  スクリーンショット・動画 </a></li>
+<li><a href="#Update">  更新履歴と予定 </a>
+<ul><li><a href="#Up2018">  2018年 </a></li>
+<li><a href="#Up2020">  2020年 </a></li>
+<li><a href="#Up2021">  2021年 </a></li></ul></li>
+<li><a href="#Limit">  仕様上の制約 </a></li>
+<li><a href="#bb779580">  希望など </a></li>
+<li><a href="#About_RMB_Format">  RMB形式について </a></li>
+<li><a href="#SBKey">  公開キー </a>
+<ul><li><a href="#Content_of_Project">  プロジェクト内容 </a></li></ul></li>
+<li><a href="#Comment">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2018年04月13日投稿
+/ 2021年12月05日更新
+/ 投稿者 : 天郷思音
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%A8%A5%C7%A5%A3%A5%BF">エディタ</a> </span><br />
+検索用：【天郷思音】</p>
+<h3 id="Summary">概要</h3>
+<p>プリセット素材でマップを作る人におすすめの、マップ作成ツールです。<br />
+現在のバージョンは150です。</p>
+
+<h4 id="r5cb1b77">特徴</h4>
+
+<h5 id="PanelSection">その1.パネルセクション</h5>
+<p>マップのデータと一緒に、マップチップの画像を分割して保存する機能です。<br />
+「ちょこっとだけ自分で描いた絵を使いたい！」時に便利です。<br />
+もちろん圧縮済み。GRPファイルを添付するよりもずっと軽量です。</p>
+
+<h5 id="MacroPen">その2.マクロペン</h5>
+<p>細長い建物だけでなく、複雑な組み合わせのチップを一度における機能です。<br />
+マクロペンの登録が面倒な方のために、簡易版の「建物ペン」もあります。（2*2マスで固定）<br /></p>
+<p>※マクロペンの情報はマップとは別に保存します。「OPTION」からセーブしてください。<br /></p>
+
+<h3 id="HowToUse">操作方法</h3>
+<ul><li>タッチペン：チップを置く / チップを選ぶ</li>
+<li>スライドパッド：スクロール</li>
+<li>→：押している間だけBIGペン（1度に4*4マスに同じチップを置くペン）</li>
+<li>Y：3秒押しで編集中のレイヤーを消去します</li>
+<li>←　L　Rのいずれかでメニュー画面を開きます</li></ul>
+
+<h4 id="MenuScreen">メニュー画面</h4>
+<ul><li>家：建物ペンのオン / オフ
+<ul><li>建物ペンは2*2マスの絵が繋がるペンです。プリセット素材のお城やデパートに便利です。</li></ul></li>
+<li>なし / 90° / 180° / 270° / ←→ / ↑↓：アトリビュートの切り替え</li>
+<li>SUPER COPY：スーパーコピー（全レイヤーコピー）機能</li>
+<li>MAKE MACRO：マクロペンの登録</li>
+<li>OPTION：その他の機能・設定</li></ul>
+
+<h4 id="CallMap">作ったマップの呼び出し方</h4>
+
+<h5 id="j4b2da33">手順</h5>
+<ol><li>RMBライブラリを使用可能にします。</li>
+<li>必要なら、画面を初期化します。</li>
+<li>BG画面の面積を、必要に応じて拡張します。</li>
+<li>RMB_LOAD命令を呼んで、マップをロードします。</li></ol>
+
+<h5 id="CallMap_Sample">サンプルコード</h5>
+<p>前項の「手順」を実際にプログラムにしたものです。<br />
+そのままコピーしてお使いいただけます。<br />
+（&quot;FILENAME&quot;は実際のファイル名に書き換えてください。）</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＥＸＥＣ　”ＰＲＧ３：ＲＭＢ＿ＬＩＢ．ＰＲＧ”</span></li>
+<li><span class="smbas">ＡＣＬＳ</span></li>
+<li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　３</span></li>
+<li><span class="smbas">　ＢＧＳＣＲＥＥＮ　Ｉ，１２８，１２７</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＲＭＢＬＯＡＤ　”ＦＩＬＥＮＡＭＥ”，０，３　ＯＵＴ　Ｉ</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">RMBLOAD</span>の書式は<br />
+RMBLOAD ファイル名,開始レイヤー,終了レイヤー OUT パネルセクション数<br />
+です。</p>
+<ul><li>ファイル名…拡張子は必ず省きます。</li>
+<li>開始・終了レイヤー…この範囲のレイヤーにマップチップが置かれます。開始≦終了でなければなりません。
+<ul><li>現在のバージョンでは、開始レイヤーは0のみ対応しています。</li></ul></li>
+<li>パネルセクション数…戻り値です。再度セーブする場合に使う値です。ロードのみの場合は値を捨てて構いません。</li></ul>
+
+<h3 id="ScreenShot">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FMINI_MAP_EDITER&amp;openfile=MME150_optimized.png" title="MME150_optimized.png"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FMINI_MAP_EDITER&amp;src=MME150_optimized.png" alt="MME150_optimized.png" title="MME150_optimized.png" width="400" height="480" /></a></div>
+
+<p>※スクリーンショットは、プチコン本体のスクショ機能で撮った物に、劣化を軽減する加工をしています。</p>
+
+<h3 id="Update">更新履歴と予定</h3>
+
+<h4 id="Up2018">2018年</h4>
+<ul><li>04月13日：ver.100。wiki投稿。</li>
+<li>04月26日：ver.101。パネルセクションが4枚に増える。ほか機能改善。</li>
+<li>05月12日：ver.120。置くマップチップのプレビューを追加。ライブラリのファイルを分離。簡易ビューアのおまけを追加。</li>
+<li>06月01日：ver.130。マクロペンとチップ番号のスクリーンデータ表示の実装。</li>
+<li>07月13日：ver.131。上書き保存する際にファイル名をあらかじめ表示するように改良。RMBライブラリのバグの修正。</li></ul>
+
+<h4 id="Up2020">2020年</h4>
+<ul><li>06月08日：ver.140。ロード時のファイル名入力をダイアログで選択するように変更。マップサイズ設定で異常値が入力できるバグの修正。</li></ul>
+
+<h4 id="Up2021">2021年</h4>
+<ul><li>12月05日：ver.150。新形式のRMBライブラリを正式サポート。リファクタリングなど。</li></ul>
+
+<h3 id="Limit">仕様上の制約</h3>
+<ul><li>アトリビュートの併用はあえてできないように設計しています。
+<ul><li>（※左右反転+上下反転=180°回転なのでうまく考えて使ってください。）</li>
+<li>透明チップ（0番）は強制で「アトリビュートなし」になります。</li></ul></li>
+<li>BGを重ねる順番は固定です。
+<ul><li>変更機能を検討しています。（上から順に3,2,1,0または0,1,2,3のどちらかが選べるように）</li></ul></li></ul>
+
+<h3 id="bb779580">希望など</h3>
+<ul><li>作成したマップをゲームに組み込む時の不便点の把握</li>
+<li>機能追加
+<ul><li>チップサイズ変更も規格上盛り込み準備中</li>
+<li>当たり判定の設定機能</li></ul></li></ul>
+
+<h3 id="About_RMB_Format">RMB形式について</h3>
+<ul><li>Run-length-encoding Multi-layer Bgの略です。
+<ul><li>ランレングス圧縮された複数レイヤーのBGという意味です。</li></ul></li>
+<li>マップ4レイヤー+BG画像の一部を1つのファイルで保存できるフォーマットです。</li>
+<li>デフォルトでランレングス圧縮が効いていることが特徴です。</li>
+<li><a href="https://waaimyroom.web.fc2.com/PetitComputer/RMB_Format.html" rel="nofollow">RMB形式の仕様</a></li></ul>
+
+<h3 id="SBKey">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+ver.150　最新版<br />
+<div class="key">
+<span class="smbas">VP5QN3C4</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="Content_of_Project">プロジェクト内容</h4>
+<ul><li>TXT:-EDITER.PRG…マップエディタ本体</li>
+<li>TXT:MAP_VIEW.PRG…簡易ビューア</li>
+<li>TXT:RMB_LIB.PRG…RMBライブラリ（作成したマップの保存に使用します）</li>
+<li>TXT:MACRO.INI…マクロペンの内容を保存します</li>
+<li>DAT:SAMPLE.RMB…サンプルデータ</li></ul>
+
+<h3 id="Comment">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品集に対するコメントがあれば一言どうぞ。(作品に関係ない質問や雑談は<a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse</a>等でお願いします。)<br />
+<strong>RMBライブラリに関する質問も歓迎します。</strong></p>
+<ul><li><strong>天郷思音</strong> : 内容をver.101に合わせて直しましたが、キー発行がまだなのでキーだけはver.100になってます。 (<span class="comment_date">2018/04/25 (水) 14:44:05</span>)</li>
+<li><strong>天郷思音</strong> : 仕様書くの楽しいw (<span class="comment_date">2018/04/25 (水) 16:06:59</span>)</li>
+<li><strong>天郷思音</strong> : ver.101の公開キーを掲載しました。 (<span class="comment_date">2018/04/26 (木) 18:22:00</span>)</li>
+<li><strong>天郷思音</strong> : 使い心地の感想とか来ないｶﾅｰ (<span class="comment_date">2018/04/26 (木) 20:11:06</span>)</li>
+<li><strong>天郷思音</strong> : 上画面のスクリーンショットのみ、劣化低減加工をした画像に差し替えました。赤い文字の部分は手動で直した。疲れる。 (<span class="comment_date">2018/04/26 (木) 20:58:34</span>)</li>
+<li><strong>天郷思音</strong> : 下画面写真も加工。 (<span class="comment_date">2018/05/08 (火) 17:13:52</span>)</li>
+<li><strong>天郷思音</strong> : 更新予定日は5/14-5/20の間になりました。 (<span class="comment_date">2018/05/10 (木) 16:53:40</span>)</li>
+<li><strong>天郷思音</strong> : 更新。荒らしで消えてたので投稿者による復帰です。荒らしは帰れ！ (<span class="comment_date">2018/05/12 (土) 13:57:58</span>)</li>
+<li><strong>名無しさん</strong> : 当たり判定を変更できるフラグ管理モードを追加してほしいです (<span class="comment_date">2018/05/16 (水) 07:52:29</span>)</li>
+<li><strong>天郷思音</strong> : ゲームに使うのを考えると、当たり判定も付いてた方が良いよねぇ。検討する。 (<span class="comment_date">2018/05/16 (水) 13:12:42</span>)</li>
+<li><strong>名無しさん</strong> : わざわざありがとうございます！ (<span class="comment_date">2018/05/16 (水) 16:41:58</span>)</li>
+<li><strong>DLしました！</strong> : Lシフトでチップ選択できるとは。。すごく使いやすいです！ナイスアイデアですね。製作頑張ってくださいd (<span class="comment_date">2018/05/16 (水) 22:56:39</span>)</li>
+<li><strong>天郷思音</strong> : どもども。マクロペン製作中（家とか一気に置けるペン） (<span class="comment_date">2018/05/19 (土) 18:36:52</span>)</li>
+<li><strong>天郷思音</strong> : レイヤーの重ね順の変更ができそうです。RMB規格に重ね順を規定しました。0番のレイヤーを上にすることができる予定です。 (<span class="comment_date">2018/05/21 (月) 16:58:14</span>)</li>
+<li><strong>あまさと(3DS)</strong> : ver.130 【1KBX N3QE】です。「いち」で始まるキーは珍しいですね。 (<span class="comment_date">2018/06/01 (金) 21:07:19</span>)</li>
+<li><strong>名無しさん</strong> : ついにバージョン130ですかー (<span class="comment_date">2018/06/06 (水) 14:41:41</span>)</li>
+<li><strong>名無しさん</strong> : 遂にバージョン130ですかー (<span class="comment_date">2018/06/06 (水) 14:41:58</span>)</li>
+<li><strong>天郷思音</strong> : RMBライブラリのバグを発見。マップエディタからの呼び出しには影響はない。 (<span class="comment_date">2018/06/18 (月) 13:48:16</span>)</li>
+<li><strong>すごい</strong> : 貴方は神ですか？ (<span class="comment_date">2018/06/23 (土) 00:06:00</span>)</li>
+<li><strong>天郷思音</strong> : 古い公開キーを削除（存在自体は削除していませんが、そのうち消します） (<span class="comment_date">2018/08/11 (土) 19:27:06</span>)</li>
+<li><strong>天郷思音</strong> : 公開キーの部分に『ver.130　最新版』という誤表記があったので修正しました。 (<span class="comment_date">2018/08/28 (火) 16:46:51</span>)</li>
+<li><strong>あまさ<span style="color:teal">と</span>しおん</strong> : ライブラリのみ新しいバージョンを掲載しました。上書きすると今までより高い効率の圧縮をするようになります。 (<span class="comment_date">2021/08/23 (月) 20:19:14</span>)</li>
+<li><strong>あまさ<span style="color:teal">と</span>しおん</strong> : 新しいRMBライブラリは従来の2.1形式と新しい4.1w形式の両方で圧縮を試行し、結果が良かった方を保存するようになっています。 (<span class="comment_date">2021/08/23 (月) 20:20:16</span>)</li>
+<li><strong>あまさ<span style="color:teal">と</span>しおん</strong> : 新しいRMBライブラリを正式に同梱したバージョンを公開しました。 (<span class="comment_date">2021/12/05 (日) 17:32:42</span>)</li>
+<li><strong>あまさ<span style="color:teal">と</span>しおん</strong> : 3年前に要望があった当たり判定機能は、いまだに実装できていません。今後も見込みは薄そうです。 (<span class="comment_date">2021/12/05 (日) 17:36:27</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/MINI_MAP_EDITER" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="eea83cc9036f8ed6fe34ed6f35fa36f6" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (972d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (889d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2326d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (917d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (363d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (967d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1096d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (308d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (592d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (1d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (1032d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2150d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1563d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (544d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (14h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (441d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (151d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/18</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (1d)">OFコーナー3号</a></li>
+</ul>
+<h4>2022/01/17</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%B8%E6%BB%D2%BF%C0%A5%C4%A5%A4%A5%F3%A5%A8%A5%C7%A5%A3%A5%BF%A1%BC" title="御子神ツインエディター (2d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/01/16</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (3d)">リズミカルおもちつきTG NEO</a></li>
+</ul>
+<h4>2022/01/11</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%B8%E6%BB%D2%BF%C0%A5%C4%A5%A4%A5%F3%A5%A8%A5%C7%A5%A3%A5%BF%A1%BC" title="コメント/Toukou/御子神ツインエディター (7d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+<h4>2022/01/05</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="リズミカルおもちつきΣ (13d)">リズミカルおもちつきΣ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FPCPD_Code3" title="PCPD -code3- (14d)">PCPD -code3-</a></li>
+</ul>
+<h4>2022/01/03</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (16d)">ピクトチャット2</a></li>
+</ul>
+<h4>2021/12/31</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (19d)">TAGeLorix Sounds</a></li>
+ <li><a href="/petc3gou/?Toukou%2FMKsoft%20CHAOS" title="MKsoft CHAOS V2.0 (19d)">MKsoft CHAOS V2.0</a></li>
+</ul>
+<h4>2021/12/26</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA" title="幻想楽遊戯 (24d)">幻想楽遊戯</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (363d)">ユニコードについて<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Link" title="Link (151d)">リンク集<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FKoneta" title="Mame/Koneta (37d)">tips(小ネタ集)<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FErrormsg" title="Mame/Errormsg (393d)">エラーメッセージ<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FPC8001EMU" title="Toukou/PC8001EMU (255d)">PC8001EMU<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Falpha%20os" title="Toukou/alpha os (926d)">alpha os Version 4.0<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C6%E6%A4%CE%B3%CA%C6%AE%A5%B2%A1%BC%A5%E0%A1%CA%C2%CE%B8%B3%C8%C7%A1%CB" title="Toukou/謎の格闘ゲーム（体験版） (47d)">謎の格闘ゲーム（体験版）<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP" title="Toukou/リズミカルおもちつきSP (130d)">リズミカルおもちつきSP<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (1096d)">サンプルプログラム集<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="Toukou/正規表現ライブラリ (1122d)">正規表現ライブラリ<span class="counter">(7)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1597d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 2150 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.065 秒  | このページの最終更新 : 2021/12/05 (日) 23:43:38  (44d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

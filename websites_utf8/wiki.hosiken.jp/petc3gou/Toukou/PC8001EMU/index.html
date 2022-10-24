@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>投稿プログラム : PC8001EMU - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : PC8001EMU - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, エミュレータ, Z80" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FPC8001EMU">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FPC8001EMU">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPC8001EMU">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FPC8001EMU">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : PC8001EMU</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FPC8001EMU">PC8001EMU</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.031sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#Rquirement">  動作環境 </a></li>
+<li><a href="#HowToPlay">  遊び方 </a></li>
+<li><a href="#HowTo2">  操作方法 </a></li>
+<li><a href="#HowTo2">  簡易ローダ </a></li>
+<li><a href="#Monitor">  モニタ </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2016年7月7日投稿
+/ 投稿者 : つかさ
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%A8%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF">エミュレータ</a> <a href="/petc3gou/?cmd=taglist&amp;tag=Z80">Z80</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>このプログラムは，Z80エミュレータに，CRTCやキーボードなどを付加して，日本電気殿が発売していたパソコン，PC8001っぽいような感じの動きをするプログラムです。実行には，N-BASICのROMデータが必要ですが，同梱されておりません。各自で用意して下さい。
+ROMのテープからの読み出しプログラム，CMTファイル作成プログラムを更新し，新たに公開しました。</p>
+<ul><li>2016-08-21　CRTCカラーモード更新時のバグを修正。</li>
+<li>2017-05-16　使い勝手向上</li>
+<li>2017-05-25　フォントの誤り修正(Xの位置にSが入っていた)</li>
+<li>2017-05-27　ブリンキングをサポート，20行モードでの行間サイズを調整</li></ul>
+
+<h4 id="Rquirement">動作環境</h4>
+<p>高度サウンドユニット必須です。モータON/OFF音の生成や、BEEP音の再生に使用しています。また、ROMファイルの作成や、CMTファイルの作成用のプログラムでも，バンドパスフィルタを用いています。また、これらのプログラムはnew 3DS以外での動作確認は行っておりません。</p>
+
+<h4 id="HowToPlay">遊び方</h4>
+<ol><li>同梱のREADMEに従って，プロジェクト内にファイル名「N80BASIC.ROM」でROMデータを置きます。</li>
+<li>PC8001_V70.PRGを実行してください。</li></ol>
+
+<h4 id="HowTo2">操作方法</h4>
+<ul><li>L,Rボタン SHIFTキー</li>
+<li>ZL グラフキー</li>
+<li>ZR リターンキー</li></ul>
+<ul><li>十字ボタン カーソル</li>
+<li>スティック テンキーの2,4,6,8</li>
+<li>X 簡易ローダ呼び出し</li>
+<li>X+L モニタ機能呼び出し</li>
+<li>X+R ボタン設定変更機能</li>
+<li>X+ZL 画面モード切り替え（カラー，グリーン）
+※画面モードを切り替えると，PCGのキャラクタは元に戻ります。
+画面の切替は，PCGの設定前に済ませましょう。</li>
+<li>A リターンキー</li>
+<li>B スペースキー</li>
+<li>Y デリートキー</li></ul>
+<ul><li>キーボードパネル
+<ul><li>SHIFTキー、カナ、GRAPHは一度タップするとロックし、もう一度タップするとロック解除されます。</li>
+<li>CTRLキーは、キーが押されるまではロックされ，キーが押されるとロックが解除されます。</li></ul></li></ul>
+
+<h4 id="HowTo2">簡易ローダ</h4>
+<ul><li>(X)ボタンを単体で押すと，簡易ローダが呼びだされ，ファイルの読み込み，生成のメニューが出てきます。</li>
+<li>(B)ボタンを押すと，簡易ローダから抜けます</li></ul>
+<ul><li>サポートしているファイルは以下のとおり。
+<ul><li>N80ファイル (読み込みのみ
+<ul><li>N80解體新書のN80フォーマットが読めます。</li>
+<li><a href="http://home1.catvmics.ne.jp/~kanemoto/n80/inside.html" rel="nofollow">http://home1.catvmics.ne.jp/~kanemoto/n80/inside.html</a></li></ul></li>
+<li>CMTファイル (読み書き可)
+<ul><li>テープのセーブデータをそのまま保存する形式。 CLOADやMONコマンドのLで読み込む。 CMTファイルを選択した場合、ファイルに含まれるプログラムの頭出しが可能。CMTファイルを指定するだけでは読み込みは行われません。プログラムの読み込みは，CLOAD や MONコマンドのLなどで自分で行う必要があります。</li>
+<li>また，CSAVEやMONのWコマンドでファイルを追記することができます。デフォルトでは，00MY_TAPE.CMT というファイルに追記されます。
+いったんCMTファイルを読み込み指定すると，次からそのファイルの後ろに追記されます。セーブするCMTファイルを変えたい場合は、簡易ローダから追記したいCMTファイルを指定してください。新たなCMTファイルに保存したい場合は「新規テープの作成」を選んで下さい。</li>
+<li>セーブ時は，必ず追記の形で保存されます。同梱されている MAKE_CMT5.PRG を使うことで， new 3DS のマイクからテープの音声を取り込み，CMT ファイルを作成することが可能です。プログラムを起動し，プログラムをセーブした テープをの音を取り込んだ後、(X)ボタンを押してください。</li></ul></li>
+<li>独自のIMGファイル (読み込み・生成)
+<ul><li>&amp;H8000〜&amp;HFFFFのRAMのデータの後ろに，レジスタの値を格納した形式。簡易ローダを呼び出した時点での状態を、新規イメージの作成」で保存することができます。</li>
+<li>詳細は、README.TXTをご参照下さい。</li></ul></li></ul></li></ul>
+
+<h4 id="Monitor">モニタ</h4>
+<p>X+L を押し，離すとモニタに入れます。モニタは，メモリのダンプ，逆アセンブル，メモリの書き換えができます。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">Ｑ</th><td class="style_td">モニタから抜け、エミュレータに戻る</td></tr><tr><th class="style_th">Ｄｎｎｎｎ</th><td class="style_td">逆アセンブル (B)で抜ける</td></tr><tr><th class="style_th">Ｍｎｎｎｎ</th><td class="style_td">メモリダンプ (B)で抜ける</td></tr><tr><th class="style_th">Ｅｎｎｎｎ</th><td class="style_td">メモリのエディット<br class="spacer" />１６進以外の入力で抜ける</td></tr><tr><th class="style_th">Ｒ　　　　</th><td class="style_td">レジスタの値を表示</td></tr></tbody></table></div>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm29110086" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm29110086">thumb/sm29110086</a></iframe>
+</div>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm29197033" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm29197033">thumb/sm29197033</a></iframe>
+</div>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm29219634" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm29219634">thumb/sm29219634</a></iframe>
+</div>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm29442268" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm29442268">thumb/sm29442268</a></iframe>
+</div>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">AEDE32QV</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (1181d)">掲示板</a>へ)</p>
+<ul><li><strong>PetitPocky</strong> : なんてこった。 (<span class="comment_date">2016/07/08 (金) 00:06:53</span>)</li>
+<li><strong>SquidSky</strong> : やばう。まさか本格的エミュレータが登場するとは (<span class="comment_date">2016/07/08 (金) 16:31:40</span>)</li>
+<li><strong>おちゃん</strong> : 動かん！ (<span class="comment_date">2016/07/10 (日) 14:43:55</span>)</li>
+<li><strong>つかさ</strong> : ROMデータがないと動きません。それを含めたセットアップ方法の動画を載せました。 (<span class="comment_date">2016/07/10 (日) 16:25:03</span>)</li>
+<li><strong>デスソード</strong> : ニコ動見れませんROMデータの公開キー教えてください (<span class="comment_date">2016/07/13 (水) 18:47:57</span>)</li>
+<li><strong>名無しさん</strong> : ROMデータは自分で用意しろと書かれていますよ (<span class="comment_date">2016/07/27 (水) 11:29:14</span>)</li>
+<li><strong>WAN</strong> : 実機がない時はどうするんですか (<span class="comment_date">2016/08/13 (土) 18:33:52</span>)</li>
+<li><strong>名無しさん</strong> : 建前論から言えば、ヤフオフとから落札かな。おおよそ数千円で落札できる。ググるとネット上にROMデータを違法にアップしているところもあるけど、ウイルスソフトをインストールさせようとするところもあるので、お勧めしません。違法にアップされているファイルをダウンロードすること自体も犯罪になるし。X68000みたいに、メーカーさんがBIOSとかROMとかを公開してくれるといいんだけどなぁ。PC8001は、BASICはマイクロソフト社製だったりするから、同様のことを行うのは難しいんだろうなぁ。 (<span class="comment_date">2016/08/18 (木) 02:51:30</span>)</li>
+<li><strong>名無しさん</strong> : <a href="http://www.famitsu.com/news/201608/27113960.html" rel="nofollow">http://www.famitsu.com/news/201608/27113960.html</a>     で、公式がこのエミュの存在を知っていましたよ (<span class="comment_date">2016/09/15 (木) 01:15:34</span>)</li>
+<li><strong>ピコピコ</strong> : 動きました!!P8が持ち運べるってスゴ。高機能なプチコンもいいけどN-Basic楽しい。 (<span class="comment_date">2017/05/21 (日) 07:03:16</span>)</li>
+<li><strong>ピコピコ</strong> : Shiftを押してからのXがSと入力されるのは自分だけかな？？ (<span class="comment_date">2017/05/21 (日) 18:00:26</span>)</li>
+<li><strong>ZAXUS</strong> : cmtファイルだけではくD88ファイルも読めるようにしてほしい。 (<span class="comment_date">2017/05/24 (水) 23:36:05</span>)</li>
+<li><strong>hagetixyan719</strong> : おぉ・・・流石ですねぇ・・・ここまでやるとは。ROMの入れるのは音でも使えば誰でも出来ます。使い方は分からなければググるのが基本ですよ？特にエミュ系は。 (<span class="comment_date">2017/05/25 (木) 21:47:50</span>)</li>
+<li><strong>つかさ</strong> : &gt;&gt;ぴこぴこさん。バグです。40文字モードのフォントのXの位置にSの文字を入れてました。修正しました。 (<span class="comment_date">2017/05/25 (木) 23:10:49</span>)</li>
+<li><strong>ピコピコ</strong> : 対応ありがとうございます。確認できました！キーコンフィグに設定されているゲームはツボを押さえてあっていいっすね (<span class="comment_date">2017/05/27 (土) 09:49:48</span>)</li>
+<li><strong>New2DS LL</strong> : ROM_MKR5.PRGを選択しても、エラーになるんですけど、分かる方教えてください。 (<span class="comment_date">2017/07/16 (日) 17:22:33</span>)</li>
+<li><strong>New2DS LL</strong> : 続きです。エラーの内容は「DLC not found in 0:32(BQPARAM)です。 (<span class="comment_date">2017/07/17 (月) 15:20:45</span>)</li>
+<li><strong>名無しさん</strong> : 『動作環境  高度サウンドユニット必須です。』　ちゃんと説明読もうよ (<span class="comment_date">2017/07/17 (月) 19:46:35</span>)</li>
+<li><strong>New2DS LL</strong> : ありがとうございました。PC8001EMUが起動できました。もう1つだけ教えてください。N80ファイルはどのように簡易ローダに載せるのでしょうか (<span class="comment_date">2017/07/17 (月) 22:56:16</span>)</li>
+<li><strong>New2DS LL</strong> : お騒がせいたしました。READMEのツールを使用したらできました。 (<span class="comment_date">2017/07/24 (月) 20:17:26</span>)</li>
+<li><strong>名無しさん</strong> : PC8001EMUにバグがあるのではないかと師匠が申していましたので、ご確認をお願いいたします。のとして出力しています。 原因としてSP（StackPointer）が0000の時に値を１つ引くと-1になってしまっていると推測します。 （正しい動作は、0002→0001→0000→FFFF→FFFEと、FFFFに戻るのが正解です） (<span class="comment_date">2017/08/15 (火) 21:34:56</span>)</li>
+<li><strong>SEKI22</strong> : 著作権フリーROMイメージならPDromsにありそう (<span class="comment_date">2017/08/15 (火) 22:31:59</span>)</li>
+<li><strong>名無しさん</strong> : 名無しさん。ＳＰレジスタ、0を跨いだ変化はないものとして組んでました。プログラムカウンタも同様のはず。AND 65535 みたいなコードをSP,PC周りのコードに入れる必要があります。もともとは、メモリアクセスは１個の関数に集約されていたのですが、高速化のための全部ハンドインライン展開してしまったので、修正が面倒そう。 (<span class="comment_date">2017/10/26 (木) 02:13:06</span>)</li>
+<li><strong>名無しさん</strong> : ご回答ありがとうございました。とりあえず、下記の修正で、手持ちのゲームは動くようになりました。（修正内容）2327行目に、「 (<span class="comment_date">2017/11/23 (木) 20:22:45</span>)</li>
+<li><strong>名無しさん</strong> : ご回答ありがとうございました。とりあえず、下記の修正で、手持ちのゲームは動くようになりました。（修正内容）2327行目に、「IF Z80_SP==0 THEN Z80_SP=65536 ENDIF」を挿入。  (<span class="comment_date">2017/11/23 (木) 20:25:10</span>)</li>
+<li><strong>ossan</strong> : ここが生きているか自信がないのですが、このプログラムの公開は2018年までで終了したようですね。かなり残念です。手元にやっとPC-8001の実機を (<span class="comment_date">2019/02/12 (火) 12:30:46</span>)</li>
+<li><strong>ossan</strong> : (つづき)用意できたのですが。ちなみにROMイメージの吸い出しは、やはりモニターからW0,5FFF という感じでやるんでしょうか？ (<span class="comment_date">2019/02/12 (火) 12:32:47</span>)</li>
+<li><strong>ossan</strong> : (つづき)用意できたのですが。ちなみにROMイメージの吸い出しは、やはりモニターからW0,5FFF という感じでやるんでしょうか？ (<span class="comment_date">2019/02/12 (火) 17:31:55</span>)</li>
+<li><strong>マツコウ</strong> : ソースコード拝見しました。 (<span class="comment_date">2021/05/09 (日) 11:13:42</span>)</li>
+<li><strong>マツコウ</strong> : (続き)誤送信しました、すみません。演算方式は直接演算(A=A+~)ではなく、配列に結果を予め書いて参照させる事で、オーバーフローを回避しているようですね。 (<span class="comment_date">2021/05/09 (日) 11:17:40</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PC8001EMU" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="ac5577668a6ac733eab313b5652dccf9" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (881d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (797d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2234d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (826d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (271d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (876d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (71d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1005d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (217d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (941d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2058d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1472d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (452d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (18h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (60d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/19</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="リズミカルおもちつきKR MAX (53m)">リズミカルおもちつきKR MAX</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="コメント/Toukou/リズミカルおもちつきKR (6h)">コメント/Toukou/リズミカルおもちつきKR</a></li>
+</ul>
+<h4>2021/10/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="プチコンで使われる拡張子まとめ (1d)">プチコンで使われる拡張子まとめ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="LA  OS (1d)">LA  OS</a></li>
+</ul>
+<h4>2021/10/16</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Musics総合サイト ('21/06/23更新) (3d)">Musics総合サイト ('21/06/23更新)</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (3d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2021/10/12</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (7d)">ピクトチャット2</a></li>
+</ul>
+<h4>2021/10/09</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FDrop-3s" title="Drop-3s(リズムゲーム) (10d)">Drop-3s(リズムゲーム)</a></li>
+</ul>
+<h4>2021/10/08</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS3OS" title="[公開停止]TAS3OS (11d)">[公開停止]TAS3OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FGravityLabo2" title="GravityLabo2 (11d)">GravityLabo2</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Mame%2FMathInfNan" title="Mame/MathInfNan (1097d)">浮動小数点演算におけるInf/NaNの取り扱い<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="Mame/プチコンで使われる拡張子まとめ (1d)">プチコンで使われる拡張子まとめ<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FPetitverse" title="Mame/Petitverse (955d)">Petitverseに関すること<span class="counter">(12)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="Toukou/リズミカルおもちつきKR (53m)">リズミカルおもちつきKR MAX<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (1030d)">HERO2 一台で二人同時プレイ<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverse終了後の避難先まとめ<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (691d)">NCF MUSEQ STATION<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="Toukou/LA OS (1d)">LA  OS<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C5%B7%BB%C8%CA%B8%BB%FA%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/天使文字フォント (1125d)">天使文字フォント<span class="counter">(10)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1506d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 5 人がこのサイトを見ています</li>
+<li>このページはこれまでに 6952 回、本日は 4 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.035 秒  | このページの最終更新 : 2021/05/09 (日) 11:17:40  (163d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

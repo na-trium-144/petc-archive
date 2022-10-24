@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : プチコンバータ バージョン 0.8.3 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : プチコンバータ バージョン 0.8.3 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, 変換, プチコンバータ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Toukou%2FPetitConverter">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Toukou%2FPetitConverter">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPetitConverter">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Toukou%2FPetitConverter">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : プチコンバータ バージョン 0.8.3</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li><a href="/petc4/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Toukou%2FPetitConverter">PetitConverter</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.094sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a></li>
+<li><a href="#Usage080">  v0.8.1 の使用方法 </a>
+<ul><li><a href="#UseFromTOPMENU">  TOPMENUから実行 </a></li>
+<li><a href="#UseAsSMILETOOL">  変換プログラムをスマイルツールとして起動 </a></li>
+<li><a href="#UseAsMainProgram">  メインプログラムとして起動 </a></li></ul></li>
+<li><a href="#Usage">  v0.7.7 以前の使用方法 </a>
+<ul><li><a href="#SelectFile">  プチコン3号・BIGのプログラムを選ぶ </a></li>
+<li><a href="#ConvertFrom3">  プログラムを変換してテストする </a></li>
+<li><a href="#SaveProgram">  変換したプログラムを保存する </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#Download">  公開キー </a></li>
+<li><a href="#Updates">  更新履歴 </a>
+<ul><li><a href="#Update083">  v0.8.3 - 2020/03/04 </a></li>
+<li><a href="#Update082">  v0.8.2 - 2020/03/01 </a></li>
+<li><a href="#Update081">  v0.8.1 - 2020/02/29 </a></li>
+<li><a href="#Update080">  v0.8.0 - 2020/02/29 </a></li>
+<li><a href="#Update077">  v0.7.7 - 2020/01/11 </a></li>
+<li><a href="#Update076">  v0.7.6 - 2020/01/11 </a></li>
+<li><a href="#Update075">  v0.7.5 - 2020/01/11 </a></li>
+<li><a href="#Update074">  v0.7.4 - 2020/01/11 </a></li>
+<li><a href="#Update073">  v0.7.3 - 2020/01/11 </a></li>
+<li><a href="#Update072">  v0.7.2 - 2020/01/10 </a></li>
+<li><a href="#Update071">  v0.7.1 - 2020/01/10 </a></li>
+<li><a href="#Update070">  v0.7.0 - 2020/01/09 </a></li>
+<li><a href="#Update066">  v0.6.6 - 2020/01/08 </a></li>
+<li><a href="#Update065">  v0.6.5 - 2020/01/08 </a></li>
+<li><a href="#Update064">  v0.6.4 - 2020/01/08 </a></li>
+<li><a href="#Update063">  v0.6.3 - 2020/01/07 </a></li>
+<li><a href="#Update062">  v0.6.2 - 2020/01/07 </a></li>
+<li><a href="#Update061">  v0.6.1 - 2020/01/07 </a></li>
+<li><a href="#Update060">  v0.6.0 - 2020/01/07 </a></li>
+<li><a href="#Update054">  v0.5.4 - 2020/01/07 </a></li>
+<li><a href="#Update053">  v0.5.3 - 2020/01/07 </a></li>
+<li><a href="#Update052">  v0.5.2 - 2020/01/06 </a></li>
+<li><a href="#Update051">  v0.5.1 - 2020/01/06 </a></li></ul></li>
+<li><a href="#Bug">  不具合情報 </a></li>
+<li><a href="#BugReport">  不具合報告 </a></li>
+<li><a href="#Comments">  コメント欄 </a></li></ul>
+</div>
+
+<p>2020年1月6日投稿
+/ 2020年2月29日更新
+/ 投稿者 : りょうTanpo (元うつりきまぐれ)
+/ <span class="tag">タグ : <a href="/petc4/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc4/?cmd=taglist&amp;tag=%CA%D1%B4%B9">変換</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%D7%A5%C1%A5%B3%A5%F3%A5%D0%A1%BC%A5%BF">プチコンバータ</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>これはプチコン3号・プチコンBIGのために作られたプログラムを、プチコン4で動作するように変換するツールです。置き換えが必要な命令にプレフィックスをつけた独自命令を定義して、変換時にプレフィックスを付加して独自命令を参照するというやり方をとっています。</p>
+<p>主に次のことができます。</p>
+<ul><li>プチコン4のレイヤーを使って 3DS や TV/GamePad の2画面をエミュレート</li>
+<li><span class="basic-text smbas">XSCREEN</span> や <span class="basic-text smbas">DISPLAY</span> などのスクリーン関連の命令を置き換え</li>
+<li><span class="basic-text smbas">SP</span> や <span class="basic-text smbas">BG</span> 系の命令も、動作をエミュレートした独自命令に置き換え</li>
+<li><span class="basic-text smbas">MIC</span> 系命令を置き換え (無音)</li>
+<li>ボタンビットやタッチ座標、アニメーション種類やスプライトアトリビュートを変換</li>
+<li>MML の変換</li></ul>
+<p><strong>プチコンバータで移植されたプログラムを実行する際もプチコンバータのプロジェクトが必要です。</strong></p>
+<p>把握した範囲でのバグは修正していますが、まだ動作しないプログラムもあります。もしエラーが発生したり、挙動が違ったりしたとき、またツールやヘッダプログラムそのものに間違いを見つけたときは <a href="#BugReport">不具合報告</a> をお願いします。</p>
+<p><span class="noexists">動作確認済みの作品<a href="/petc4/?cmd=edit&amp;page=Toukou%2FPetitConverter%2FStatus&amp;refer=Toukou%2FPetitConverter">?</a></span></p>
+
+<h3 id="Usage080">v0.8.1 の使用方法</h3>
+<p>GUI ライブラリは実装中で、プロジェクトには入っていません。色ビット数やアンチエイリアスなどのオプションはツールで指定できないので、変換したプログラムの冒頭を一部修正する形となります。</p>
+<p>プロジェクト <strong>PETITC</strong> 内にある <strong>SIMPLE.PRG</strong> が自動変換ツールです。ツールといっても画面はなく、特定のスロットのプログラムをすぐに変換して起動するだけのものです。</p>
+
+<h4 id="UseFromTOPMENU">TOPMENUから実行</h4>
+<ol><li>まず変換ツール SIMPLE.PRG をスマイルツールに登録する。</li>
+<li>TOPMENU からプチコン3号のプログラムを<strong>そのまま</strong>実行する。</li>
+<li>たいていエラーで停止するので、プロンプトが表示されている状態でスマイルツールを起動する。</li></ol>
+
+<h4 id="UseAsSMILETOOL">変換プログラムをスマイルツールとして起動</h4>
+<ol><li>まず変換ツール SIMPLE.PRG をスマイルツールに登録する。</li>
+<li>変換したいファイルのあるプロジェクトに移動して、変換したいファイルを読み込む。どのスロットでも可。</li>
+<li>読み込んだスロットにいる状態でスマイルツールを起動する。</li></ol>
+
+<h4 id="UseAsMainProgram">メインプログラムとして起動</h4>
+<p>通常のプログラムとして SIMPLE.PRG を起動する際は、先にスロット 5 に変換したいプログラムを読み込んでください。スロット 5 の内容は変換後上書きされます。</p>
+
+<h3 id="Usage">v0.7.7 以前の使用方法</h3>
+<p>ここに書いてあるのは最新のバージョンの情報ではありません。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>まず MAIN.PRG を起動してください。変換ツールはボタン、タッチスクリーン、マウスのいずれでも操作できます。</p>
+
+<h4 id="SelectFile">プチコン3号・BIGのプログラムを選ぶ</h4>
+<p>メインメニューから <strong>プログラムを変換する</strong> を選択します。すると、プチコン3号またはBIGのものと思われるプロジェクトの一覧が表示されるので、変換したいプログラムのあるプロジェクトを選んでください。プチコン3号またはBIGのプロジェクトかどうかは MAIN.PRG がないかどうかで判定しています。もしプロジェクトが表示されないときは <strong>その他のプロジェクト</strong> を選択するとすべてのプロジェクトの一覧が表示されるので、その一覧から選択してください。</p>
+<p>次にファイルを選択します。ファイル一覧には TXT 形式のすべてのファイルが表示されるので、変換したいプログラムを選んでください。</p>
+<p>ファイルを選ぶと、現在のプロジェクトで今すぐにテストするかどうか質問されます。テストとは、変換したプログラムを実際に確認することです。ここで <strong>はい</strong> を選択すると、プログラムを変換してすぐにテストを開始します。<strong>いいえ</strong> を選択したときはテストをせずに、変換したプログラムを保存します。ファイル選択に戻るには B ボタンを押してください。</p>
+
+<h4 id="ConvertFrom3">プログラムを変換してテストする</h4>
+<p>ファイルを選択したあとの画面で <strong>はい</strong> を選択します。プログラムが変換され、すぐに実行されます。根本的な文法エラーの場合はエラーメッセージが出てファイル選択画面に戻ります。</p>
+<p>テストを終わるには、コントローラの + ボタンを押すか、キーボードの F5 を押してください。または、プログラム内に終了メニューが用意されているときは、そこから終了しても構いません。</p>
+<p>テストを終了するとツールに戻ります。オプションを変えてもう一度テストする際は <strong>はい</strong> を選択してください。<strong>いいえ</strong>を選択すると、変換したプログラムを保存するかどうか尋ねられます。</p>
+<p>注意点として、テストの際 <span class="basic-text smbas">LOAD</span> はファイルのあるプロジェクトを参照しますが、<span class="basic-text smbas">SAVE</span> は現在のプロジェクト以外の場所に保存することができません。サブプログラムとしてプチコンバータを起動している場合を除き、テストでは <span class="basic-text smbas">SAVE</span> は無視されます。書き出したプログラムを元のプロジェクト ( 変換する前のファイルのあるプロジェクト ) で実行すれば保存できます。</p>
+
+<h4 id="SaveProgram">変換したプログラムを保存する</h4>
+<p>変換したプログラムはファイルとして保存したり、クリップボードまたはプログラムスロットに書き出すことができます。保存するかどうか聞かれたら <strong>はい</strong> を選択してから、どこに書き出すか選んでください。</p>
+<p>変換したプログラムを動作させるには PETITC.LIB というファイルが必要です。プチコンバータのプロジェクトからコピーする必要はありませんが、逆にプチコンバータのプロジェクトを削除してしまうと動作しなくなります。</p>
+<p>また、変換したプログラムを元のプロジェクト以外で実行した際 <span class="basic-text smbas">SAVE</span> は無視されます。</p>
+</td></tr></table>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/utrmagure/status/1233558640453279744">ツイート</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h3 id="Download">公開キー</h3>
+<p>プチコン4用の公開キーです。トップメニューの「作品を見る」から公開キーを入力すると、作品をダウンロードできます。</p>
+<div>
+<div class="ptcmid">
+プチコンバータ v0.8.3<br />
+<div class="key">
+<span class="smbas">44AAD23Q3</span>
+</div>
+</div>
+
+</div>
+
+<p><br class="spacer" /></p>
+<div>
+<div class="ptcmid">
+プチコンバータ v0.7.7<br />
+<div class="key">
+<span class="smbas">4NJA5X3WD</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Updates">更新履歴</h3>
+
+<h4 id="Update083">v0.8.3 - 2020/03/04</h4>
+<ul><li>色変換モード 0 の <span class="basic-text smbas">GLOAD</span> が機能していなかった問題を修正。</li>
+<li><del><span class="basic-text smbas">XON MOTION</span> と <span class="basic-text smbas">XOFF MOTION</span> に正式対応。</del></li>
+<li>プチコン3号の SYS/SBGED を試しに同梱してみた。</li>
+<li>その他細かな修正</li></ul>
+
+<h4 id="Update082">v0.8.2 - 2020/03/01</h4>
+<ul><li>コンソール表示に関する修正。</li>
+<li>0.8.0 以降でスロット指定のない <span class="basic-text smbas">EXEC</span> がエラーになる問題を修正。</li>
+<li><span class="basic-text smbas">DATA 0</span> のない <span class="basic-text smbas">BGMSETD</span> がエラーになる問題を修正。</li>
+<li>最後に編集していたスロットが 0 以外の場合に、TOPMENU から起動する方法でスマイルツールがスロット 0 を参照しなかった問題を修正。</li>
+<li><span class="basic-text smbas">MPSTART</span> <span class="basic-text smbas">MPEND</span> <span class="basic-text smbas">MPSEND</span> <span class="basic-text smbas">MPRECV</span> <span class="basic-text smbas">MPSTAT</span> <span class="basic-text smbas">MPNAME$</span> <span class="basic-text smbas">MPGET</span> <span class="basic-text smbas">MPSET</span> <span class="basic-text smbas">MPCOUNT</span> <span class="basic-text smbas">MPHOST</span> <span class="basic-text smbas">MPLOCAL</span> を追加。これらはダミーなので動作しません。</li></ul>
+
+<h4 id="Update081">v0.8.1 - 2020/02/29</h4>
+<ul><li><span class="basic-text smbas">SPDEF</span> を配列で使用する際なぜか <span class="basic-text smbas">READ</span> する問題を修正 (コピペからのミス)</li></ul>
+
+<h4 id="Update080">v0.8.0 - 2020/02/29</h4>
+<ul><li>内部ソースコードを一新。以前とのランタイムライブラリの互換性はありません。</li>
+<li>GUI ツールをいったん削除。暫定的にスロットに変換したいプログラムを読み込んでから起動する形となります。なにかいい UI ライブラリないかなぁ</li>
+<li>MML の動的変換を実装。次の処理を行います。
+<ul><li>指定できない音長を、近い値に修正。</li>
+<li>シャープ・フラットや音長や付点の並び順を修正。</li>
+<li>2個以上のシャープやフラットを絶対音程指定に変換。</li>
+<li>音色 <span class="basic-text smbas">@144-@151</span> を <span class="basic-text smbas">@216-@223</span> に移動。</li>
+<li><span class="basic-text smbas">Q</span> コマンドの値を4倍に修正。</li>
+<li>マクロ定義を冒頭に移動。</li></ul></li>
+<li><span class="basic-text smbas">ACCEL</span> <span class="basic-text smbas">GYROA</span> <span class="basic-text smbas">GYROV</span> <span class="basic-text smbas">GYROSYNC</span> のエラーを修正。ただしジャイロセンサーが内部で無効にされているバグがあり現在動作しません。</li>
+<li><span class="basic-text smbas">COLOR</span> の背景色に対応。</li>
+<li>表示要素の重なり順に関する修正。</li>
+<li><span class="basic-text smbas">TRUE</span> と <span class="basic-text smbas">FALSE</span> を定数に変更。</li></ul>
+
+<h4 id="Update077">v0.7.7 - 2020/01/11</h4>
+<ul><li><span class="basic-text smbas">FILES</span> に文字列配列のみを指定した場合にエラーになる問題を修正。</li>
+<li><span class="basic-text smbas">SPDEF</span> の修正。</li></ul>
+
+<h4 id="Update076">v0.7.6 - 2020/01/11</h4>
+<ul><li>メインメニューに「サブプログラムとして起動」を追加。プチコンバータをサブプログラムとして起動します。スマイルツールに PETITC/MAIN.PRG が設定されているときのみ利用できます。</li>
+<li>サブプログラムとして起動されている場合は、右上のバージョン表記の左に SUB と表示されるようになりました。</li></ul>
+
+<h4 id="Update075">v0.7.5 - 2020/01/11</h4>
+<ul><li>書き出しファイル名にプレフィックスを付加するように変更。</li>
+<li>サブプログラムとして起動した場合は元のプロジェクトに保存するように変更。</li></ul>
+
+<h4 id="Update074">v0.7.4 - 2020/01/11</h4>
+<ul><li>画面回転オプションがエラーになる問題を修正。</li></ul>
+
+<h4 id="Update073">v0.7.3 - 2020/01/11</h4>
+<ul><li><span class="basic-text smbas">CALL BG</span> がエラーになる問題を修正。</li>
+<li><span class="basic-text smbas">CALLIDX</span> が番号を補正しない問題を修正。</li>
+<li><span class="basic-text smbas">SPPAGE 5</span> が <span class="basic-text smbas">SPPAGE 4</span> と同じ場所を参照する問題を修正。</li>
+<li>BG チップ番号計算を修正。</li>
+<li><span class="basic-text smbas">XSCREEN</span> 時に <span class="basic-text smbas">GCLS</span> されないよう変更。</li></ul>
+
+<h4 id="Update072">v0.7.2 - 2020/01/10</h4>
+<ul><li><span class="basic-text smbas">PRINT</span> に関する修正。</li>
+<li>変換オプション「New 3DS」「Wii U」「上画面のみ」「下画面のみ」を新たに追加。<br class="spacer" />システム変数 <span class="basic-text smbas">HARDWARE</span> の値を変更して New 3DS あるいは Wii U 用のプログラムを動作させたり、2画面モードの際にどちらか1画面のみを表示させることができます。</li></ul>
+
+<h4 id="Update071">v0.7.1 - 2020/01/10</h4>
+<ul><li><span class="basic-text smbas">PRINT</span> に関する修正。</li>
+<li>下画面コンソール表示が著しく遅い問題を修正。</li>
+<li><span class="basic-text smbas">SPHITRC</span> のスプライト番号が一部のケースで補正されない問題を修正。</li>
+<li><span class="basic-text smbas">CSRX</span> <span class="basic-text smbas">CSRY</span> が下画面でエラーになる問題を修正。</li>
+<li><span class="basic-text smbas">LINPUT</span> のセミコロンが <span class="basic-text smbas">PRINT</span> と同じように独自命令に変換され、エラーになる問題を修正。</li></ul>
+
+<h4 id="Update070">v0.7.0 - 2020/01/09</h4>
+<ul><li>ツールのメニューをキーボードで操作可能に。</li>
+<li>境界色の指定がない <span class="basic-text smbas">GPAINT</span> がエラーになる問題を修正。</li>
+<li>下画面コンソールをテキストスクリーンからスプライト実装に変更。</li>
+<li><span class="basic-text smbas">CSRZ</span> を追加。</li>
+<li><span class="basic-text smbas">SPDEF</span> で <span class="basic-text smbas">OUT</span> 引数が5つの場合に値を返さない問題を修正。</li>
+<li>ファイル名をP3DEF.LIB から PETITC.LIB に変更しました。またツール本体は MAIN.PRG です。</li></ul>
+
+<h4 id="Update066">v0.6.6 - 2020/01/08</h4>
+<ul><li>10以上の引数が渡された <span class="basic-text smbas">SPANIM</span> および <span class="basic-text smbas">BGANIM</span> が無視される問題を修正。現時点で暫定的に32まで対応。</li></ul>
+
+<h4 id="Update065">v0.6.5 - 2020/01/08</h4>
+<ul><li><span class="basic-text smbas">MICSTART</span> <span class="basic-text smbas">MICSTOP</span> <span class="basic-text smbas">MICDATA</span> <span class="basic-text smbas">MICSAVE</span> <span class="basic-text smbas">MICPOS</span> <span class="basic-text smbas">MICSIZE</span> を実装。</li>
+<li>本来のプロジェクト以外で実行している際 <span class="basic-text smbas">LOAD</span> などにプロジェクト名が含まれたパスを指定したときも二重に本来のプロジェクト名を付加してしまう問題を修正。</li></ul>
+
+<h4 id="Update064">v0.6.4 - 2020/01/08</h4>
+<ul><li><span class="basic-text smbas">CONTROLLER</span> <span class="basic-text smbas">VIBRATE</span> <span class="basic-text smbas">RGB</span> 実装</li>
+<li><span class="basic-text smbas">BGSAVE</span> の typo を修正</li>
+<li><span class="basic-text smbas">XSCREEN 6</span> の typo を修正</li>
+<li>プロジェクト選択でワークスペースを選択しようとするとメインメニューに戻る問題を修正</li>
+<li><span class="basic-text smbas">DIALOG</span> の特殊モードに対応</li>
+<li>識別子の直後にスペースを挟まず <span class="basic-text smbas">?</span> を記述するとエラーになる問題を修正</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＬＳ？</span></li>
+</ol></code></div></div>
+
+<h4 id="Update063">v0.6.3 - 2020/01/07</h4>
+<ul><li><span class="basic-text smbas">USE</span> でファイル名を指定できるように</li>
+<li><span class="basic-text smbas">SPHITSP</span> と <span class="basic-text smbas">SPHITRC</span> の結果が -1 のときもスプライト番号を補正計算してしまう問題を修正</li>
+<li><span class="basic-text smbas">LOCATE</span> の引数を省略したとき現在の位置を参照していない問題を修正</li></ul>
+
+<h4 id="Update062">v0.6.2 - 2020/01/07</h4>
+<ul><li>メニューで「キャンセル」または B ボタンで戻ろうとした際に挙動がおかしくなることがある問題を修正 ( 急に「書き出しますか？」ダイアログが表示されるなど )</li>
+<li>書き出しの際、実際には文法エラーではないのに文法エラーが出て保存できない問題を修正</li></ul>
+
+<h4 id="Update061">v0.6.1 - 2020/01/07</h4>
+<ul><li><span class="basic-text smbas">EXEC</span> で実行したプログラムが画面等の環境を初期化してしまう問題を修正。</li>
+<li><span class="basic-text smbas">VISIBLE</span> を実装。</li>
+<li><span class="basic-text smbas">.</span> がエラーになる問題を修正。</li>
+<li><span class="basic-text smbas">SPPAGE</span> や <span class="basic-text smbas">BGPAGE</span> が機能していない</li></ul>
+
+<h4 id="Update060">v0.6.0 - 2020/01/07</h4>
+<ul><li>ツールが新しくなりました。</li>
+<li>変換オプションを追加。画面の回転やアンチエイリアス設定を変更できます。</li>
+<li>文法エラーの際プログレスバーが止まったまま固まる問題を修正。</li>
+<li><span class="basic-text smbas">FILES</span> の出力を修正。</li>
+<li><span class="basic-text smbas">OPTION STRICT</span> 時に <span class="basic-text smbas">XON</span> や <span class="basic-text smbas">XOFF</span> がエラーになる問題を修正。変換されたプログラムでは <span class="basic-text smbas">XON</span> や <span class="basic-text smbas">XOFF</span> は削除されます。</li>
+<li><span class="basic-text smbas">OPTION TOOL</span> がエラーになる問題を修正。変換後のプログラムでは削除されます。</li>
+<li><span class="basic-text smbas">EFCWET</span> を実装。</li></ul>
+
+<h4 id="Update054">v0.5.4 - 2020/01/07</h4>
+<ul><li><span class="basic-text smbas">XSCREEN</span> で2画面から1画面になる際に余計な内部スプライトが残っていた問題を修正。</li></ul>
+
+<h4 id="Update053">v0.5.3 - 2020/01/07</h4>
+<ul><li><span class="basic-text smbas">SPCHR</span> で <span class="basic-text smbas">OUT</span> 引数が5つの場合に値を返さない問題を修正。</li>
+<li><span class="basic-text smbas">INKEY$</span> <span class="basic-text smbas">RENAME</span> <span class="basic-text smbas">DELETE</span> <span class="basic-text smbas">CHKFILE</span> を実装。</li></ul>
+
+<h4 id="Update052">v0.5.2 - 2020/01/06</h4>
+<ul><li>サブプログラムとして起動した場合はどのプロジェクトにいてもテスト中に <span class="basic-text smbas">SAVE</span> できるように変更。</li>
+<li>定数を <span class="basic-text smbas">DATA</span> に記述するとエラーになる問題を修正。</li>
+<li>3号/BIG・4間でのスプライト番号補正に関する修正。</li>
+<li><span class="basic-text smbas">GLOAD</span> と <span class="basic-text smbas">GSAVE</span> での物理色変換に対応。</li>
+<li>ツールのコメントに記述されていた誤ったバージョンを修正。</li></ul>
+
+<h4 id="Update051">v0.5.1 - 2020/01/06</h4>
+<ul><li>スプラッシュスクリーンを追加。</li>
+<li>ツールのメニューで B ボタンに相当するタッチ・マウスの操作を追加。</li>
+<li>サブプログラムとして起動されたときに正しく動作するように修正。</li>
+<li><span class="basic-text smbas">SPCOL</span> <span class="basic-text smbas">SPCOLVEC</span> <span class="basic-text smbas">SPHITSP</span> <span class="basic-text smbas">SPHITRC</span> <span class="basic-text smbas">SPHITINFO</span> を実装。</li></ul>
+
+<h3 id="Bug">不具合情報</h3>
+<p>バージョン 0.8.0 現在</p>
+<ul><li><span class="basic-text smbas">SPCLIP</span> <span class="basic-text smbas">BGCLIP</span> が何もしない。</li>
+<li>上画面の背景色が反映されない。</li>
+<li><span class="basic-text smbas">BGANIM</span> の XY アニメーションが上下左右反対の動きをする。( <span class="basic-text smbas">BGOFS</span> では問題なし )</li>
+<li>ジャイロセンサーが反応しない。</li>
+<li>GRP3 のリソース変換処理に間違いがある (GRP3 を GRPC と typo している)</li></ul>
+
+<h3 id="BugReport">不具合報告</h3>
+<p>変換したプログラムが動作しなかったり、ツールやヘッダプログラム内に間違いがあったりした場合はこちらにお願いします。</p>
+<p>下から最新のコメントとなります。</p>
+<ul><li><strong>みうぃき</strong> : PC8001エミュを変換した際に、２つ問題点がありました。それらを対策したら、動き始めました。(1).3号と4号で、FILESの出力の仕様が違う（4号だと、&quot;DAT:&quot;などがつくが、3号だと &quot; &quot;か&quot;*&quot;がつく。先頭の1文字を捨ててファイル名を取り出していた処理を4文字捨てるように修正）。(2). XON の後ろの機能名がそのまま残り、未定義変数扱いになる（単純にコメントアウト）。 (<span class="comment_date">2020/01/06 (月) 23:42:53</span>)</li>
+<li><strong>うつりきまぐれ</strong> : ありがとうございます。ver. 0.5.5 で修正します。 (<span class="comment_date">2020/01/07 (火) 08:14:40</span>)</li>
+<li><strong>うつりきまぐれ</strong> : 0.6.0 として修正しました (<span class="comment_date">2020/01/07 (火) 16:04:00</span>)</li>
+<li><strong>みうぃき</strong> : P3DEF.PRG 4453行目、P3DISP_SET6SCREENMODE 5 となっていますが、TYPOで、おそらくはP3DISP_SETXSCREENMODE ６が正しい？ (<span class="comment_date">2020/01/07 (火) 23:27:59</span>)</li>
+<li><strong>みうぃき</strong> : SAVEで、&quot;GRP:xxx&quot;でSAVEGしたい時に、すでに&quot;DAT:xxx&quot;というファイルが存在する場合、SAVEG &quot;DAT:xxx&quot; で保存しようとして、エラーになる。SAVEのときは、&quot;GRP:&quot;を&quot;DAT:&quot;に変えないようにするべきか。 (<span class="comment_date">2020/01/08 (水) 00:15:33</span>)</li>
+<li><strong>うつりきまぐれ</strong> : 0.6.4 で修正します。 (<span class="comment_date">2020/01/08 (水) 15:13:25</span>)</li>
+<li><strong>sou51</strong> : Twitterの方でもリプ飛ばしましたが、GPAINT用の関数で引数3個のときも4個目を参照している箇所がありエラーとなります。0.6.6だと2189行目のBCOLOR32=DEFARG(3)という部分。多分この行削除で大丈夫だと思います (<span class="comment_date">2020/01/09 (木) 10:35:11</span>)</li>
+<li><strong>うつりきまぐれ</strong> : ありがとうございます、修正します。 (<span class="comment_date">2020/01/09 (木) 10:48:55</span>)</li>
+<li><strong>takumi</strong> : NaさんのNewリズミカルおもちつきSPを使ってみだですが……起動毎に大量のセーブを求められます。ファイル名はP3OUTPUT.PRGです。曲洗濯でも毎回出ます。改善方法はありますか (<span class="comment_date">2020/01/09 (木) 17:55:14</span>)</li>
+<li><strong>うつりきまぐれ</strong> : ありがとうございます、修正します。 (<span class="comment_date">2020/01/09 (木) 18:53:54</span>)</li>
+<li><strong>うつりきまぐれ</strong> : すみません、誤送信 (<span class="comment_date">2020/01/09 (木) 18:54:31</span>)</li>
+<li><strong>うつりきまぐれ</strong> : &gt; takumi さん EXEC の時に毎回出ます。改善できないか考えてみます (<span class="comment_date">2020/01/09 (木) 18:55:32</span>)</li>
+<li><strong>Na</strong> : 曲選択でも毎回出るってことはPRGNAME$が取得できてないとか? (<span class="comment_date">2020/01/09 (木) 21:34:25</span>)</li>
+<li><strong>みうぃき</strong> : (1). DEF P3CON_UPDATECURSOR DISP 関数内で、5168行目のLOCATE がOut of range in 4:5168(LOCATE:2)で止まる。5167行目でのCURSORX, CURSORYの値は、41, 0 となっています。(2). LINPT &quot;xxx&quot;; 変数 の場合の ; が P3CON_SEMICOLON に変換されてしまっている。PETITC.LIBの225行目を、IF CODE4$<span class="basic-text">&quot;INPUT&quot; || CODE4$</span>&quot;LINPUT&quot; THEN にすれば、回避できそう。 (<span class="comment_date">2020/01/09 (木) 22:20:24</span>)</li>
+<li><strong>うつりきまぐれ</strong> : Twitter でも受けております、修正いたします。 (<span class="comment_date">2020/01/09 (木) 22:37:29</span>)</li>
+<li><strong>tskumi</strong> : &gt;Naさん そうかもしれません。あと、お餅エディタはエラーを吐きます。エラー文は (<span class="comment_date">2020/01/10 (金) 17:24:20</span>)</li>
+<li><strong>アルセ</strong> : 変換すると画面がチカチカします。 (<span class="comment_date">2020/11/17 (火) 22:11:48</span>)</li>
+<li><strong>アルセ</strong> : ↑の追記 画面というか文字がチカチカしています。スプライトに異常はないのですが... (<span class="comment_date">2020/11/17 (火) 22:14:09</span>)</li></ul>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PetitConverter" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="1bee13245399adab9c6aaa9a44b40c67" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="Comments">コメント欄</h3>
+<p>コメントと要望はこちらにどうぞ。バグ報告はここではなくすぐ上にお願いします。</p>
+<p>下から最新のコメントとなります。</p>
+<ul><li><strong>サル</strong> : プチコンmarkIIも対応して欲しいです。 (<span class="comment_date">2020/01/07 (火) 10:56:36</span>)</li>
+<li><strong>Na</strong> : ↑<a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="3gou:Toukou/プチコンmkII_at3号" rel="nofollow">プチコンmkII at 3号</a>をプチコンバータで変換すればできそうです。ただmkIIat3号のプロジェクト内のファイルが多くてどれをコンバートすればいいかわからなくなるのでそのうち改善します (<span class="comment_date">2020/01/07 (火) 15:33:53</span>)</li>
+<li><strong>うつりきまぐれ</strong> : あとで試してみます。あと <span class="basic-text smbas">EXEC</span> で実行するプログラムもコンバートされます (<span class="comment_date">2020/01/07 (火) 22:27:35</span>)</li>
+<li><strong>Na</strong> : E&#8203;X&#8203;E&#8203;Cで実行するプログラムもコンバートされる、というのはEXECをした瞬間そのスロットに入ってるプログラムをコンバートしはじめるってことですか? (<span class="comment_date">2020/01/08 (水) 18:13:43</span>)</li>
+<li><strong>Na</strong> : つまりEXECで実行するファイルはコンバートしておく必要がないってことですかね? (<span class="comment_date">2020/01/08 (水) 18:14:41</span>)</li>
+<li><strong>Na</strong> : あ、mkIIat3号の今のバージョンは中途半端にVERSIONで3号/4の判別をして処理しているところがあったりして不具合が起きると思います。できるだけはやくver3.0出すのでちょとお待ちください (<span class="comment_date">2020/01/08 (水) 18:31:00</span>)</li>
+<li><strong>takimi</strong> : 今度<a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FMusicsKK" rel="nofollow">Musics King</a>を変換しようと思うんですが…ほしけんさんの漢字ライブラリはさすがに無理なんでしょうか(まだやってないので全く分からない) (<span class="comment_date">2020/01/08 (水) 23:22:00</span>)</li>
+<li><strong>うつりきまぐれ</strong> : &gt; Na さん はい。コンバートするのは最初のファイルだけでよいです。 (<span class="comment_date">2020/01/09 (木) 10:47:25</span>)</li>
+<li><strong>うつりきまぐれ</strong> : &gt; takimi さん 漢字ライブラリは多分動くと思います。昨日動作確認したような気もするんですが覚えてないので、今日改めて動作確認します。 (<span class="comment_date">2020/01/09 (木) 10:48:32</span>)</li>
+<li><strong>tskumi</strong> : ありがとうございます。 (<span class="comment_date">2020/01/09 (木) 16:25:10</span>)</li>
+<li><strong>Na</strong> : ↑3 既にコンバートしたファイルをEXECしたらエラーですか? 1回EXECしてコンバートされたスロットをもう一回EXECしたらどうなるんでしょうか (<span class="comment_date">2020/01/09 (木) 20:13:06</span>)</li>
+<li><strong>Na</strong> : mkIIのやつをエミュレータからコンバータに作り替えようと思ってたんですが、...長くなるので<a href="http://petitverse.hosiken.jp/community/petitcom/topic/?read=1390&amp;ukey=0" rel="nofollow">続き</a> (<span class="comment_date">2020/01/09 (木) 20:16:32</span>)</li>
+<li><strong>うつりきまぐれ</strong> : 既にコンバートしたファイルは判別されてそのまま実行してくれるはずです。 (<span class="comment_date">2020/01/09 (木) 21:14:17</span>)</li>
+<li><strong>Na</strong> : VERSIONやHARDWAREとかのシステム変数ってどうなってますか? (<span class="comment_date">2020/01/09 (木) 21:43:35</span>)</li>
+<li><strong>うつりきまぐれ</strong> : 現時点では VERSION=&amp;H03060300 HARDWARE=0 固定になってます。そのうち変更できるようにします (<span class="comment_date">2020/01/09 (木) 22:36:02</span>)</li>
+<li><strong>うつりきまぐれ</strong> : ERR系とMP系以外のシステム変数はだいたい対応してたような気がします。 (<span class="comment_date">2020/01/09 (木) 22:36:35</span>)</li>
+<li><strong>Na</strong> : HARDWARE=0 固定よりもHARDWARE=1固定の方がいいのでは?(Old3DSで処理落ちを防止するためにHARDWARE=0の時だけ特別な処理をするプログラムがあるので) (<span class="comment_date">2020/01/09 (木) 22:50:00</span>)</li>
+<li><strong>Na</strong> : あとBIG専用プログラムがHARDWARE=2じゃないとENDする、みたいなこともあるかと (<span class="comment_date">2020/01/09 (木) 22:51:27</span>)</li>
+<li><strong>うつりきまぐれ</strong> : わかりました。変更できるようにします。 (<span class="comment_date">2020/01/10 (金) 07:33:39</span>)</li>
+<li><strong>takumi</strong> : プチコン通信の題材はこれにしようかな...(ネタ切れてる) (<span class="comment_date">2020/01/11 (土) 14:58:21</span>)</li>
+<li><strong>名無し</strong> : MPは通信のを1P用画面、2P用画面…という感じに画面分割する形式ですか？ (<span class="comment_date">2020/02/09 (日) 18:21:04</span>)</li>
+<li><strong>うつりきまぐれ</strong> : MPはまだ対応してません…。近々対応しようと思ってますが画面分割等のシステムについてはまだまったく考えていませんでした、 (<span class="comment_date">2020/02/09 (日) 20:53:09</span>)</li>
+<li><strong>HTV04</strong> : どうやら、SB4のMMLは &quot;V&quot;コマンドと &quot;@V&quot;コマンドを切り替えました。 これはMMLコンバーターに実装されていますか？ (<span class="comment_date">2020/04/28 (火) 08:10:03</span>)</li>
+<li><strong>うつりきまぐれ (utrmagure)</strong> : まだ実装されていません。まだ作業に時間がかかりますが、修正します。 (<span class="comment_date">2020/04/30 (木) 09:43:33</span>)</li>
+<li><strong>HTV04</strong> : コメントに返信してくれてありがとう！ ほんの少し前に、Na_triumによってより多くの変更が見つかりました：<a href="https://new.smilebasicsource.com/pages/734" rel="nofollow">https://new.smilebasicsource.com/pages/734</a> (<span class="comment_date">2020/05/04 (月) 08:24:47</span>)</li>
+<li><strong>うつりきまぐれ</strong> : 遅い返信すみません！参考にします。ありがとうございます。 (<span class="comment_date">2020/05/06 (水) 09:58:55</span>)</li>
+<li><strong>Na</strong> : 日本語で説明したやつありますよ <a href="http://petitverse.hosiken.jp/community/petitcom/topic/?read=1474&amp;ukey=0" rel="nofollow">http://petitverse.hosiken.jp/community/petitcom/topic/?read=1474&amp;ukey=0</a> (<span class="comment_date">2020/05/06 (水) 10:13:11</span>)</li>
+<li><strong>うつりきまぐれ</strong> : あっ ほんとだ、ありがとうございます (<span class="comment_date">2020/05/11 (月) 14:27:03</span>)</li>
+<li><strong>うつりきまぐれ</strong> : ↑8 メインとサブで画面分割対応するかもしれません。その他色々作業してるので気長にお待ち下さい (<span class="comment_date">2020/05/24 (日) 21:45:47</span>)</li>
+<li><strong>アルセ(元[名無し])</strong> : ↑うつりきまぐれさん&#187;返信ありがとうございます。名無しとして質問していたアルセです。画面分割って、1pがメインで2p以降はサブになる感じですよね？あと画面分割か、メインの画面のみにするか選べるように出来ますか？ご返信お待ちしております。 (<span class="comment_date">2020/06/15 (月) 02:35:08</span>)</li>
+<li><strong>りょうたんぽ</strong> : 元うつりです。画面分割はその通りです。3DS 2台分まで対応します。画面分割とメインのみの選択……というのは、ひょっとしてBIGについての話でしょうか？BIGは画面分割機能の予定はありません、3DSのワイヤレス通信は同じ、あるいは別のプログラムを別の3DSで動かすということなので画面分割で、という感じです。ちなみに、いまは完全に新しいバージョンとしてコードを書き直しています。 (<span class="comment_date">2020/06/15 (月) 15:39:20</span>)</li>
+<li><strong>名無しさん</strong> : BIGに対応したら普通にうれしい (<span class="comment_date">2020/06/15 (月) 17:34:35</span>)</li>
+<li><strong>アルセ</strong> : ↑りょうたんぽさん&#187;返信ありがとうございます。[メインの画面のみ]というのは、1pの画面のみ表示することも出来るのかということです。説明が分かりづらくてすみませんでした。 (<span class="comment_date">2020/06/19 (金) 01:04:41</span>)</li>
+<li><strong>りょうたんぽ</strong> : こちらこそすみません、3DSの1Pのみ、ということですね？できるようにしておきます。 (<span class="comment_date">2020/06/23 (火) 08:39:37</span>)</li>
+<li><strong>アルセ</strong> : すみません、「アンチエイリアス」ってなんのことですか？ (<span class="comment_date">2020/11/17 (火) 22:17:10</span>)</li>
+<li><strong>りょうTanpo</strong> : ドットのギザギザを目立たないようにするものです。ドットがにじむように見えます。プチコンバータでは画面のサイズが一定ではないため、プチコン4の解像度 (1280x720) に対するスケール率も変わるのですが、それが整数でない0.75とかになると、プログラムで書いた1ドットが特定の場所によって2x2=4ドットに見えたり、逆に1より大きい (エミュレータの画面が1280x720よりデカい) と消滅したりすることがあります。なので、プチコン4のXSCREENのアンチエイリアスを設定する引数を使って、その差を均一にすることができます。 (<span class="comment_date">2020/11/20 (金) 17:55:14</span>)</li>
+<li><strong>りょうTanpo</strong> : あと最近プチコンバータの新版に関する作業がなかなかできていないです。ごめんなさい! (<span class="comment_date">2020/11/20 (金) 17:56:15</span>)</li>
+<li><strong>アルセ</strong> : ↑りょうTanpoさん&#187;分かりました。返信遅れてすみません。 (<span class="comment_date">2020/12/25 (金) 01:55:16</span>)</li></ul>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PetitConverter" />
+  <input type="hidden" name="comment_no" value="1" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="1bee13245399adab9c6aaa9a44b40c67" />
+  <label for="_p_comment_name_1" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_1" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_1" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (550d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (1208d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (314d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (179d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (175d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (90d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (175d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (175d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (91d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (1d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (907d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (175d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_4_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (1207d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (1207d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (162d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (453d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/09</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FFairhythm" title="Fairhythm(フェアリズム) (23h)">Fairhythm(フェアリズム)</a></li>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (1d)">OFコーナー4</a></li>
+</ul>
+<h4>2022/09/08</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FAll_MML" title="All over the MMLs (2d)">All over the MMLs</a></li>
+</ul>
+<h4>2022/08/25</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO for Nintendo Switch (15d)">リズミカルおもちつきTG NEO for Nintendo Switch</a></li>
+</ul>
+<h4>2022/08/21</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD Forward (20d)">リズミカルおもちつきHD Forward</a></li>
+</ul>
+<h4>2022/08/14</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="MMLPAC-2 (26d)">MMLPAC-2</a></li>
+</ul>
+<h4>2022/08/10</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA%A1%A6%B2%FE" title="幻想楽遊戯・改 (30d)">幻想楽遊戯・改</a></li>
+ <li><a href="/petc4/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (30d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2022/08/09</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMDOS" title="MENDOS (31d)">MENDOS</a></li>
+</ul>
+<h4>2022/08/07</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FTAGeLorix%20Player%204" title="TAGeLorix Player 4 (34d)">TAGeLorix Player 4</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_4">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc4/?FAQ" title="FAQ (175d)">よくある質問集<span class="counter">(13)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FFairhythm" title="Toukou/Fairhythm (23h)">Fairhythm(フェアリズム)<span class="counter">(11)</span></a></li>
+ <li><span title="Toukou/PetitConverter  (520d)">プチコンバータ バージョン 0.8.3<span class="counter">(9)</span></span></li>
+ <li><a href="/petc4/?Mame%2FMML3and4" title="Mame/MML3and4 (491d)">プチコン3号と4のMMLの違い<span class="counter">(7)</span></a></li>
+ <li><a href="/petc4/?Link" title="Link (453d)">プチコン4 リンク集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="Toukou/リズミカルおもちつきHD (20d)">リズミカルおもちつきHD Forward<span class="counter">(6)</span></a></li>
+ <li><a href="/petc4/?Memo" title="Memo (179d)">プチコン4 メモ<span class="counter">(5)</span></a></li>
+ <li><a href="/petc4/?WorksLink" title="WorksLink (175d)">プチコン4 作品集<span class="counter">(5)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADOCT" title="Toukou/リズミカルおもちつきOCT (42d)">リズミカルおもちつきOCT βver.<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FPC8801_for_PETITCOM4" title="Toukou/PC8801_for_PETITCOM4 (42d)">PC8801_エミュ for プチコン４号<span class="counter">(4)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (1208d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_5">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3560 回、本日は 8 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.100 秒  | このページの最終更新 : 2021/04/07 (水) 16:17:26  (520d) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

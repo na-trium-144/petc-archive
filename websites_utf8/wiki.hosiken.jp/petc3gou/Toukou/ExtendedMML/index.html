@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : Extended MML フォーマット - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : Extended MML フォーマット - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, ツール, MML, 音楽" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FExtendedMML">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FExtendedMML">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FExtendedMML">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FExtendedMML">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : Extended MML フォーマット</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FExtendedMML">ExtendedMML</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.042sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#l8e36c83">  記述方法 </a></li>
+<li><a href="#id0e178c">  再生方法 </a>
+<ul><li><a href="#pa4737fb">  タグの取得 </a></li>
+<li><a href="#xd7e0832">  WAVSET </a></li>
+<li><a href="#j9e2b9b0">  3号/4の変換 </a></li></ul></li></ul></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#List">  プログラムリスト </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2019年6月17日投稿
+/ 投稿者 : Na
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=MML">MML</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%B2%BB%B3%DA">音楽</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>MML文字列にタイトルなどの情報を埋め込むための音楽フォーマットです。<br />
+再生する際はBGMPLAYに渡すだけでよく、とても簡単です。<br /></p>
+
+<h4 id="l8e36c83">記述方法</h4>
+<p>拡張子は「.MML」にします。<br />
+タグの記述は{TITLE=あいうえお}のように行います。<br />
+この文字列は、MML文字列内のどこに置いてもかまいません。<br />
+また、改行は<span class="basic-text smbas">/n</span>、<span class="basic-text smbas">＼n</span>、改行(文字コード10)のいずれかで指定します。<br />
+指定可能なタグは以下の通りです。<br />
+これらすべてを指定する必要はありません。また、この順番である必要もありません。<br />
+この一覧にあるものしか指定できないわけではありません。<br />
+(高原のなさんの<a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A5%B7%A5%EA%A1%BC%A5%BA%B6%A6%C4%CC%B2%BB%B3%DA%A5%D1%A5%C3%A5%AF%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8%20NMPACKS" title="Toukou/プチコンシリーズ共通音楽パックフォーマット NMPACKS (728d)">NMPACKS</a>で指定できるものはすべて指定できます。<del>というか丸コピです。</del>)</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">TITLE</td><td class="style_td">曲のタイトル</td></tr><tr><td class="style_td">ALBUM</td><td class="style_td">アルバム</td></tr><tr><td class="style_td">COMP</td><td class="style_td">作曲者(composerの略)</td></tr><tr><td class="style_td">ARR</td><td class="style_td">編曲者(arrangerの略)</td></tr><tr><td class="style_td">LRCIST</td><td class="style_td">作詞者(lyricistの略)</td></tr><tr><td class="style_td">PERF</td><td class="style_td">演奏者(performerの略)(ver. 1.4で除外)</td></tr><tr><td class="style_td">LYRIC</td><td class="style_td">歌詞(表示目的?)(ver. 1.6で除外)</td></tr><tr><td class="style_td">TEXT</td><td class="style_td">曲の説明など</td></tr><tr><td class="style_td">GENRE</td><td class="style_td">ジャンル(ver. 1.6で除外)</td></tr><tr><td class="style_td">COPYR</td><td class="style_td">コピーライト(ver. 1.4で除外)</td></tr><tr><td class="style_td">DATE</td><td class="style_td">制作日時(<span class="basic-text smbas">DATA$</span>と同じyyyy/mm/ddを推奨します)(ver. 1.4で変更)</td></tr><tr><td class="style_td">WAVxxx</td><td class="style_td">WAVSET用のデータ。アタック,ディケイ,サスティン,リリース,定義文字列[,基準音程]を指定する。</td></tr><tr><td class="style_td">VER</td><td class="style_td">バージョン情報。3は3号用、4は4用、0は両対応であることを表す。省略時は0。</td></tr></tbody></table></div>
+<p>NMPACKSとの相違点は、</p>
+<ul><li>すべて大文字。</li>
+<li>仕様上7文字しか入らないため上の表のとおりの省略形を使う。</li>
+<li>埋め込み構文は使用しない。</li></ul>
+<p><del>また、仕様上、<span class="basic-text smbas">:｛｝</span>は使用できません。</del></p>
+<ul><li><del><span class="basic-text smbas">｛｝</span>の個数が一致し、括弧が正しく対応している場合はokです。</del></li>
+<li><del>どうしても表示させたい場合は、全角の<span class="basic-text smbas">:</span>(文字コード&amp;HFF1A)<span class="basic-text smbas">｛</span>(&amp;HFF5B)<span class="basic-text smbas">｝</span>(&amp;HFF5D)を使用できます。</del></li></ul>
+<p>NNMフォーマット同梱版のExtended MMLライブラリ ver. 1.6より、仕様上<strong>使用できなかった文字を使えるようにするエスケープシーケンス</strong>を導入しました。</p>
+<ul><li><span class="basic-text smbas">: ｛ ｝</span>はそれぞれ、<span class="basic-text smbas">\; \( \)</span>と指定します。</li>
+<li>もちろん、全角の<span class="basic-text smbas">:</span>(文字コード&amp;HFF1A)<span class="basic-text smbas">｛</span>(&amp;HFF5B)<span class="basic-text smbas">｝</span>(&amp;HFF5D)も使用できます。</li>
+<li>詳しくは<a href="/petc3gou/?Toukou%2F%B2%BB%B3%DA%A5%D1%A5%C3%A5%AF%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8%A1%D6NNM%A1%D7" title="Toukou/音楽パックフォーマット「NNM」 (638d)">音楽パックフォーマット「NNM」</a>をご覧ください。</li></ul>
+<p>以下に例を示します。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">｛ＴＩＴＬＥ＝テスト｝</span></li>
+<li><span class="smbas">｛ＡＬＢＵＭ＝ｈｏｇｅｈｏｇｅ｝</span></li>
+<li><span class="smbas">｛ＶＥＲ＝３｝</span></li>
+<li><span class="smbas">：０＠１４４Ｑ８Ｌ４ＣＤＥＦ</span></li>
+<li><span class="smbas">ＧＡＢ＜Ｃ</span></li>
+<li><span class="smbas">｛ＴＥＸＴ＝ここで改行→</span></li>
+<li><span class="smbas">改行終わり｝</span></li>
+<li><span class="smbas">｛ＷＡＶ２２４＝１２７，１２７，１２７，１２７，８０８０８０８０ＦＦＦＦＦＦＦＦ８０８０８０８０ＦＦＦＦＦＦＦＦ｝</span></li>
+</ol></code></div></div>
+<p>MML文字列中の改行は、BGMPLAYには影響を及ぼしませんので、EDITモードでの編集が可能です。<br /></p>
+
+<h4 id="id0e178c">再生方法</h4>
+<p>例</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤ　”ＴＸＴ：ＢＧＭ１．ＭＭＬ”，ＭＭＬ＄</span></li>
+<li><span class="smbas">ＢＧＭＰＬＡＹ　ＭＭＬ＄</span></li>
+</ol></code></div></div>
+
+<h5 id="pa4737fb">タグの取得</h5>
+<p><span class="basic-text smbas">INSTR</span>を使って取得します。<br />
+サンプルに入っている<span class="basic-text smbas">EXMML$(MML$,META$)</span>を使用すると簡単です。<br /></p>
+
+<h5 id="xd7e0832">WAVSET</h5>
+<p><span class="basic-text smbas">INSTR</span>を使ってなんとかします。<br />
+サンプルに入っている<span class="basic-text smbas">EXMML_WAVSET MML$</span>を使用すると簡単です。<br /></p>
+
+<h5 id="j9e2b9b0">3号/4の変換</h5>
+<p><span class="basic-text smbas">MMLTO4$</span>関数及び、4→3号の変換である<span class="basic-text smbas">MMLTO3$</span>を同梱しました。(完全ではありませんが。)<br />
+3号→4の変換の際、マクロを定義前に使用するとエラーになるため、<span class="basic-text smbas">MML_REP$</span>をお使いください。<br /></p>
+
+<h3 id="QR">公開キー</h3>
+<p><a href="/petc3gou/?Toukou%2F%B2%BB%B3%DA%A5%D1%A5%C3%A5%AF%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8%A1%D6NNM%A1%D7" title="Toukou/音楽パックフォーマット「NNM」 (638d)">音楽パックフォーマット「NNM」</a>の「NNM-LIB.PRG」内にあります。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">公開終了</span>
+</div>
+</div>
+
+</div>
+
+<p>ver1.1 タグ内に<span class="basic-text smbas">｛｝</span>があると正しく取得できないバグを修正。<br />
+ver1.2 <span class="basic-text smbas">EXMML_DEL$</span>(指定したタグ削除)追加。<span class="basic-text smbas">MMLTO3$</span>で@130〜@148を@131に変更するようにした。<br />
+ver1.3 <span class="basic-text smbas">MML_REP$</span>(マクロ展開)追加。<br />
+ver1.4 <span class="basic-text smbas">MML_REP$</span>(マクロ展開)で展開したマクロを削除するように変更。<br /></p>
+
+<h3 id="List">プログラムリスト</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">...</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’Ｅｘｔｅｎｄｅｄ　ＭＭＬ　Ｌｉｂｒａｒｙ　ｖｅｒ１．４</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＥＸＭＭＬ＄（ＭＭＬ＄，ＭＥＴＡ＄）’１９／７／８　更新</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ，Ｊ，Ｋ＝０，Ｒ＄＝””</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（ＭＭＬ＄，”｛”＋ＭＥＴＡ＄＋”＝”）</span></li>
+<li><span class="smbas">　ＩＦ　Ｉ！＝−１　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　Ｉ＝Ｉ＋ＬＥＮ（ＭＥＴＡ＄）＋２</span></li>
+<li><span class="smbas">　　ＦＯＲ　Ｊ＝Ｉ　ＴＯ　ＬＥＮ（ＭＭＬ＄）−１</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｛”　ＴＨＥＮ　ＩＮＫ　Ｋ</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＡＮＤ　Ｋ＝＝０　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＴＨＥＮ　ＤＥＣ　Ｋ</span></li>
+<li><span class="smbas">　　ＮＥＸＴ</span></li>
+<li><span class="smbas">　　Ｒ＄＝ＭＩＤ＄（ＭＭＬ＄，Ｉ，Ｊ−Ｉ）</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｒ＄，”／ｎ”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｒ＄＝ＳＵＢＳＴ＄（Ｒ＄，Ｉ，２，ＣＨＲ＄（１０））</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｒ＄，”／ｎ”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｒ＄，”＼ｎ”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｒ＄＝ＳＵＢＳＴ＄（Ｒ＄，Ｉ，２，ＣＨＲ＄（１０））</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｒ＄，”＼ｎ”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　Ｒ＄</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">ＤＥＦ　ＥＸＭＭＬ＿ＤＥＬ＄（ＭＭＬ＄，ＭＥＴＡ＄）’１９／７／２０</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ，Ｊ，Ｋ＝０，Ｒ＄＝ＭＭＬ＄＋””</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（ＭＭＬ＄，”｛”＋ＭＥＴＡ＄＋”＝”）</span></li>
+<li><span class="smbas">　ＩＦ　Ｉ！＝−１　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＦＯＲ　Ｊ＝Ｉ＋ＬＥＮ（ＭＥＴＡ＄）＋２　ＴＯ　ＬＥＮ（ＭＭＬ＄）−１</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｛”　ＴＨＥＮ　ＩＮＫ　Ｋ</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＡＮＤ　Ｋ＝＝０　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＴＨＥＮ　ＤＥＣ　Ｋ</span></li>
+<li><span class="smbas">　　ＮＥＸＴ</span></li>
+<li><span class="smbas">　　Ｒ＄＝ＳＵＢＳＴ＄（ＭＭＬ＄，Ｉ，Ｊ＋１−Ｉ，””）</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　Ｒ＄</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">ＤＥＦ　ＥＸＭＭＬ＿ＷＡＶＳＥＴ　ＭＭＬ＄　’１９／６／１７</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ，Ｊ，Ｋ，Ｔ＄，Ｃ，Ｐ＄［６］，Ｎ</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（ＭＭＬ＄，”｛ＷＡＶ”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ！＝−１</span></li>
+<li><span class="smbas">　　ＦＩＬＬ　Ｐ＄，””</span></li>
+<li><span class="smbas">　　Ｉ＝Ｉ＋４</span></li>
+<li><span class="smbas">　　Ｃ＝ＶＡＬ（ＭＩＤ＄（ＭＭＬ＄，Ｉ，３））</span></li>
+<li><span class="smbas">　　ＩＦ　Ｃ＞＝２２４　ＡＮＤ　Ｃ＜＝２５５　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｉ＝Ｉ＋４</span></li>
+<li><span class="smbas">　　　Ｊ＝ＩＮＳＴＲ（Ｉ，ＭＭＬ＄，”｝”）</span></li>
+<li><span class="smbas">　　　ＩＦ　Ｊ！＝−１　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　Ｔ＄＝ＭＩＤ＄（ＭＭＬ＄，Ｉ，Ｊ−Ｉ）</span></li>
+<li><span class="smbas">　　　　Ｊ＝０</span></li>
+<li><span class="smbas">　　　　Ｋ＝ＩＮＳＴＲ（Ｔ＄，”，”）</span></li>
+<li><span class="smbas">　　　　Ｎ＝０</span></li>
+<li><span class="smbas">　　　　ＷＨＩＬＥ　Ｋ！＝−１　ＡＮＤ　Ｎ＜６</span></li>
+<li><span class="smbas">　　　　　Ｐ＄［Ｎ］＝ＭＩＤ＄（Ｔ＄，Ｊ，Ｋ−Ｊ）</span></li>
+<li><span class="smbas">　　　　　Ｊ＝Ｋ＋１</span></li>
+<li><span class="smbas">　　　　　Ｋ＝ＩＮＳＴＲ（Ｊ，Ｔ＄，”，”）</span></li>
+<li><span class="smbas">　　　　　ＩＮＣ　Ｎ</span></li>
+<li><span class="smbas">　　　　ＷＥＮＤ</span></li>
+<li><span class="smbas">　　　　ＩＦ　Ｎ＜６　ＴＨＥＮ　Ｐ＄［Ｎ］＝ＭＩＤ＄（Ｔ＄，Ｊ，ＬＥＮ（Ｔ＄）−Ｊ）</span></li>
+<li><span class="smbas">　　　　ＩＦ　Ｐ＄［５］＝＝””　ＴＨＥＮ　Ｐ＄［５］＝”６９”</span></li>
+<li><span class="smbas">　　　　ＷＡＶＳＥＴ　Ｃ，ＶＡＬ（Ｐ＄［０］），ＶＡＬ（Ｐ＄［１］），ＶＡＬ（Ｐ＄［２］），ＶＡＬ（Ｐ＄［３］），Ｐ＄［４］，ＶＡＬ（Ｐ＄［５］）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｉ，ＭＭＬ＄，”｛ＷＡＶ”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">ＤＥＦ　ＭＭＬＴＯ４＄（＿Ｍ＄）’１９／６／１７</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ，Ｖ，Ｍ＄＝＿Ｍ＄＋””</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｍ＄，”Ｑ”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｖ＝ＶＡＬ（ＭＩＤ＄（Ｍ＄，Ｉ＋１，１））</span></li>
+<li><span class="smbas">　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，１，ＳＴＲ＄（Ｖ＊４））</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｉ＋１，Ｍ＄，”Ｑ”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｍ＄，”＠”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｖ＝ＶＡＬ（ＭＩＤ＄（Ｍ＄，Ｉ＋１，３））</span></li>
+<li><span class="smbas">　　ＩＦ　Ｖ＞＝１４４　ＡＮＤ　Ｖ＜＝１５１　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，３，ＳＴＲ＄（Ｖ＋７２））</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｉ＋１，Ｍ＄，”＠”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　Ｍ＄</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">ＤＥＦ　ＭＭＬＴＯ３＄（＿Ｍ＄）’１９／７／２０　更新</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ，Ｖ，Ｍ＄＝＿Ｍ＄＋””</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｍ＄，”Ｑ”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｖ＝ＶＡＬ（ＭＩＤ＄（Ｍ＄，Ｉ＋１，２））</span></li>
+<li><span class="smbas">　　ＩＦ　Ｖ＞０　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，２，ＳＴＲ＄（Ｖ＞＞２））</span></li>
+<li><span class="smbas">　　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　　Ｖ＝ＶＡＬ（ＭＩＤ＄（Ｍ＄，Ｉ＋１，１））</span></li>
+<li><span class="smbas">　　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，１，ＳＴＲ＄（Ｖ＞＞２））</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｉ＋１，Ｍ＄，”Ｑ”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　Ｉ＝ＩＮＳＴＲ（Ｍ＄，”＠”）</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｉ＞＝０</span></li>
+<li><span class="smbas">　　Ｖ＝ＶＡＬ（ＭＩＤ＄（Ｍ＄，Ｉ＋１，３））</span></li>
+<li><span class="smbas">　　ＩＦ　Ｖ＞＝１３０　ＡＮＤ　Ｖ＜＝１４８　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，３，”１３１”）</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＩＦ　Ｖ＞＝２１６　ＡＮＤ　Ｖ＜＝２２３　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｍ＄＝ＳＵＢＳＴ＄（Ｍ＄，Ｉ＋１，３，ＳＴＲ＄（Ｖ−７２））</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　Ｉ＝ＩＮＳＴＲ（Ｉ＋１，Ｍ＄，”＠”）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　Ｍ＄</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">ＤＥＦ　ＭＭＬ＿ＲＥＰ＄（ＯＬＤ＄）　’１９／１１／３０　修正</span></li>
+<li><span class="smbas">　ＶＡＲ　ＭＭＬ＄＝ＯＬＤ＄＋””，Ｉ，Ｊ，Ｋ，Ｎ＄，Ｒ＄</span></li>
+<li><span class="smbas">　ＤＩＭ　ＭＴ＄［０］</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ＝０　ＴＯ　ＬＥＮ（ＭＭＬ＄）−１　’１文字ずつしらべる</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　’マクロ以外の部分はそのまま</span></li>
+<li><span class="smbas">　　ＩＦ　ＭＭＬ＄［Ｉ］！＝”｛”　ＴＨＥＮ　ＣＯＮＴＩＮＵＥ</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　Ｋ＝０　’Ｋはかっこが何重になっているか表す</span></li>
+<li><span class="smbas">　　ＦＯＲ　Ｊ＝Ｉ＋１　ＴＯ　ＬＥＮ（ＭＭＬ＄）−１　’｛から先を調べる</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｛”　ＴＨＥＮ　Ｋ＝Ｋ＋１</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＡＮＤ　Ｋ＝＝０　ＴＨＥＮ　ＢＲＥＡＫ　’｝の位置がＪに入っている</span></li>
+<li><span class="smbas">　　　ＩＦ　ＭＭＬ＄［Ｊ］＝＝”｝”　ＴＨＥＮ　Ｋ＝Ｋ−１</span></li>
+<li><span class="smbas">　　ＮＥＸＴ</span></li>
+<li><span class="smbas">　　’Ｋはもう使っていない</span></li>
+<li><span class="smbas">　　’＝が｛｝の中にあったら無視する</span></li>
+<li><span class="smbas">　　Ｋ＝ＩＮＳＴＲ（Ｉ，ＭＭＬ＄，”＝”）</span></li>
+<li><span class="smbas">　　ＩＦ　Ｋ！＝−１　ＡＮＤ　Ｋ＜Ｊ　ＴＨＥＮ　Ｉ＝Ｋ：ＣＯＮＴＩＮＵＥ</span></li>
+<li><span class="smbas">　　’↑でＩ＝Ｋとしたのは｛Ａ＝｛Ｂ｝｝などの時に”＝”以降の”｛Ｂ｝”も置き換えするため</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　Ｎ＄＝ＭＩＤ＄（ＭＭＬ＄，Ｉ＋１，Ｊ−Ｉ−１）　’マクロの名前を取り出す</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　ＭＴ＄，Ｎ＄</span></li>
+<li><span class="smbas">　　Ｒ＄＝ＥＸＭＭＬ＄（ＭＭＬ＄，Ｎ＄）　’そのマクロの中身を取り出す</span></li>
+<li><span class="smbas">　　’（ＥＸＭＭＬ＄はＥｘｔｅｎｄｅｄＭＭＬのライブラリにある）</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　ＭＭＬ＄＝ＳＵＢＳＴ＄（ＭＭＬ＄，Ｉ，Ｊ−Ｉ＋１，Ｒ＄）　’マクロ全体を中身に置き換える</span></li>
+<li><span class="smbas">　　Ｉ＝Ｉ−１　’１文字戻してもう一回調べる</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ＝０　ＴＯ　ＬＥＮ（ＭＴ＄）−１</span></li>
+<li><span class="smbas">　　ＭＭＬ＄＝ＥＸＭＭＬ＿ＤＥＬ＄（ＭＭＬ＄，ＭＴ＄［Ｉ］）</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　ＭＭＬ＄</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (1181d)">掲示板</a>へ)</p>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/ExtendedMML" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="c732cfb08bf9997ab6c37491ef75922e" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (881d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (797d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2234d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (826d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (271d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (876d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (71d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1005d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (217d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (500d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (941d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2058d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1472d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (452d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (19h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (349d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (60d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/19</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="リズミカルおもちつきKR MAX (1h)">リズミカルおもちつきKR MAX</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="コメント/Toukou/リズミカルおもちつきKR (7h)">コメント/Toukou/リズミカルおもちつきKR</a></li>
+</ul>
+<h4>2021/10/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="プチコンで使われる拡張子まとめ (1d)">プチコンで使われる拡張子まとめ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="LA  OS (1d)">LA  OS</a></li>
+</ul>
+<h4>2021/10/16</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Musics総合サイト ('21/06/23更新) (3d)">Musics総合サイト ('21/06/23更新)</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (3d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2021/10/12</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (7d)">ピクトチャット2</a></li>
+</ul>
+<h4>2021/10/09</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FDrop-3s" title="Drop-3s(リズムゲーム) (10d)">Drop-3s(リズムゲーム)</a></li>
+</ul>
+<h4>2021/10/08</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FTAS3OS" title="[公開停止]TAS3OS (11d)">[公開停止]TAS3OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FGravityLabo2" title="GravityLabo2 (11d)">GravityLabo2</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" title="Mame/プチコンで使われる拡張子まとめ (1d)">プチコンで使われる拡張子まとめ<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="Toukou/TASソフト/ピクトチャット2 (7d)">ピクトチャット2<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADAK" title="Toukou/リズミカルおもちつきAK (108d)">リズミカルインムウチAK&amp;Broken rice-cake making+α<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP" title="Toukou/NewリズミカルおもちつきSP (471d)">NewリズミカルおもちつきSP<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FLA%20OS" title="Toukou/LA OS (1d)">LA  OS<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMoi%27s%20BGM" title="Toukou/Moi's BGM (1192d)">Mo4 : Moi's BGM<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (310d)">リズミカルおもちつきTG<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMusics4%2FIntegrated%20site" title="Toukou/Musics4/Integrated site (3d)">Musics総合サイト ('21/06/23更新)<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fundertale%20bgm%BD%B8" title="Toukou/undertale bgm集 (407d)">undertale bgm集<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNa%A4%CEMML%BD%B8" title="Toukou/NaのMML集 (67d)">NaのMML集<span class="counter">(3)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1506d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1368 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.047 秒  | このページの最終更新 : 2019/11/30 (土) 11:56:06  (689d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

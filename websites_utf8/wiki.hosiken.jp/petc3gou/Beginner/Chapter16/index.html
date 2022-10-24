@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン3号&amp;BIG 非公式初心者講座 : 第16章 サンプルプログラム7 (その4) - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン3号&amp;BIG 非公式初心者講座 : 第16章 サンプルプログラム7 (その4) - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Beginner%2FChapter16">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Beginner%2FChapter16">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter16">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Beginner%2FChapter16">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン3号&amp;BIG 非公式初心者講座 : 第16章 サンプルプログラム7 (その4)</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Beginner">Beginner</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Beginner%2FChapter16">Chapter16</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.105sec. -->
+<div style="margin-bottom:2em;">
+<div style="text-align:center">[ <a href="/petc3gou/?Beginner%2FChapter15" title="Beginner/Chapter15 (565d)">← 第15章へ</a>
+|
+<a href="/petc3gou/?Beginner#beginner-contents" title="Beginner (564d)">もくじに戻る</a>
+|
+<a href="/petc3gou/?Beginner%2FChapter17" title="Beginner/Chapter17 (564d)">第17章へ →</a> ]</div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+<h3 id="m66e238b">プログラマーからひとこと</h3>
+<p>ついにサンプルプログラムを見ていく旅もここで終わりです。<br />
+RPGなら光とか青空とか出てくるムービーが始まるころですが、まだ今回もサンプルプログラムがゲームとして完成してはいないので、青空がふいにくもって真のラスボスが出てくる場面と言ったほうがいいでしょうか。<br />
+そこはどうだっていいですね。<br /></p>
+<p>今回はゲーム用語のいわゆる「当たり判定」から始まります。<br />
+思えばゲームっぽい話がたくさん出てくるサンプルプログラムでした。<br />
+あなたのプログラムのウデもかなり上がったんじゃないでしょうか。<br />
+これが終わったら、自分でカンタンなゲームを作ってみるのもいいかもしれません。<br /></p>
+<p>いまのは死亡フラグみたいなセリフでしたが、フラグのことも学んだあなたなら、このていどのフラグはFALSEにできるはずです。<br /></p>
+</div>
+
+<h3 id="b9ef7d06">敵を出してみよう</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いままでのプログラムリストをゼンブまとめてみると、こうだったよね。</p>
+
+ </div>
+</div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">’┌────────────┐</span></li>
+<li><span class="smbas">’│　ＥＸＡＭＰＬＥ７　　　│</span></li>
+<li><span class="smbas">’│　しんりやくしゃもどき　│</span></li>
+<li><span class="smbas">’└────────────┘</span></li>
+<li><span class="smbas">ＸＳＣＲＥＥＮ　０</span></li>
+<li><span class="smbas">ＶＩＳＩＢＬＥ　１，１，１，１</span></li>
+<li><span class="smbas">ＣＬＳ</span></li>
+<li><span class="smbas">ＣＯＬＯＲ　１５</span></li>
+<li><span class="smbas">ＤＩＭ　ＥＸ［２０］，ＥＹ［２０］，ＥＤ［２０］</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">ＥＭＡＸ＝２０</span></li>
+<li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　ＥＭＡＸ−１</span></li>
+<li><span class="smbas">　ＥＸ［Ｉ］＝ＦＬＯＯＲ（Ｉ　ＭＯＤ　１０）＊２</span></li>
+<li><span class="smbas">　ＥＹ［Ｉ］＝ＦＬＯＯＲ（Ｉ／１０）＊２＋３</span></li>
+<li><span class="smbas">　ＥＤ［Ｉ］＝０</span></li>
+<li><span class="smbas">　ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］</span></li>
+<li><span class="smbas">　ＰＲＩＮＴ　”Е”</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＰＸ＝１０：ＰＹ＝２１</span></li>
+<li><span class="smbas">ＭＸ＝ＰＸ：ＭＹ＝ＰＹ：ＭＳＴ＝ＦＡＬＳＥ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＰＸ，ＰＹ：ＰＲＩＮＴ”Г”；</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　０，２２</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　”─”＊５０</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li><span class="smbas">　ＧＯＳＵＢ　＠ＭＹＳＨＩＰ</span></li>
+<li><span class="smbas">　ＧＯＳＵＢ　＠ＭＹＳＨＯＴ</span></li>
+<li><span class="smbas">　ＧＯＳＵＢ　＠ＡＬＩＥＮ</span></li>
+<li><span class="smbas">　ＶＳＹＮＣ　１</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+<li><span class="smbas">’−−−　じぶん</span></li>
+<li><span class="smbas">＠ＭＹＳＨＩＰ</span></li>
+<li><span class="smbas">Ｂ＝ＢＵＴＴＯＮ（）：ＶＸ＝０</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　４　ＴＨＥＮ　ＶＸ＝−１</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　８　ＴＨＥＮ　ＶＸ＝１</span></li>
+<li><span class="smbas">ＩＦ　ＶＸ＝＝０　ＴＨＥＮ　＠ＮＯＴＭＯＶＥ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＰＸ，ＰＹ：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">ＰＸ＝ＰＸ＋ＶＸ</span></li>
+<li><span class="smbas">ＩＦ　ＰＸ＜０　ＴＨＥＮ　ＰＸ＝０</span></li>
+<li><span class="smbas">ＩＦ　ＰＸ＞４９　ＴＨＥＮ　ＰＸ＝４９</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＰＸ，ＰＹ：ＰＲＩＮＴ”Г”；</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＮＯＴＭＯＶＥ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−　たま</span></li>
+<li><span class="smbas">＠ＭＹＳＨＯＴ</span></li>
+<li><span class="smbas">Ｂ＝ＢＵＴＴＯＮ（）</span></li>
+<li><span class="smbas">ＩＦ　ＭＳＴ＝＝ＴＲＵＥ　ＴＨＥＮ　＠ＭＳＭＯＶＥ</span></li>
+<li><span class="smbas">ＩＦ　（Ｂ　ＡＮＤ　１６）＝＝０　ＴＨＥＮ　＠ＭＳＳＫＩＰ</span></li>
+<li><span class="smbas">ＭＳＴ＝ＴＲＵＥ</span></li>
+<li><span class="smbas">ＭＸ＝ＰＸ：ＭＹ＝ＰＹ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＭＳＭＯＶＥ２</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＭＳＭＯＶＥ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＭＸ，ＭＹ：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＭＳＭＯＶＥ２</span></li>
+<li><span class="smbas">ＭＹ＝ＭＹ−１</span></li>
+<li><span class="smbas">ＩＦ　ＭＹ＜３　ＴＨＥＮ　ＭＳＴ＝ＦＡＬＳＥ：ＧＯＴＯ　＠ＭＳＳＫＩＰ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＭＸ，ＭＹ：ＰＲＩＮＴ”│”</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＭＳＳＫＩＰ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’−−−　しんりゃくしゃ</span></li>
+<li><span class="smbas">＠ＡＬＩＥＮ</span></li>
+<li><span class="smbas">ＭＤ＝ＦＡＬＳＥ</span></li>
+<li><span class="smbas">ＩＦ　ＥＤＷ　ＴＨＥＮ　ＭＤ＝ＥＤＷ：ＥＤＷ＝ＦＡＬＳＥ</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　ＥＭＡＸ−１</span></li>
+<li><span class="smbas">　ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">　ＩＦ　ＭＤ＝＝ＦＡＬＳＥ　ＴＨＥＮ　＠ＥＭＶ</span></li>
+<li><span class="smbas">　’−−−　</span></li>
+<li><span class="smbas">　ＥＤ［Ｉ］＝（ＥＤ［Ｉ］＋１）　ＡＮＤ　３</span></li>
+<li><span class="smbas">　’−−−</span></li>
+<li><span class="smbas">　＠ＥＭＶ</span></li>
+<li><span class="smbas">　ＧＯＳＵＢ　＠ＥＭＯＶＥ</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">’−−−</span></li>
+<li><span class="smbas">＠ＥＭＯＶＥ</span></li>
+<li><span class="smbas">ＯＮ　ＥＤ［Ｉ］　ＧＯＴＯ　＠ＲＩ，＠ＤＷ，＠ＬＦ，＠ＤＷ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＲＩ</span></li>
+<li><span class="smbas">ＥＸ［Ｉ］＝ＥＸ［Ｉ］＋１</span></li>
+<li><span class="smbas">ＩＦ　ＥＸ［Ｉ］＜４９　ＴＨＥＮ　＠ＥＰＵＴ</span></li>
+<li><span class="smbas">ＥＤＷ＝ＴＲＵＥ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＥＰＵＴ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＤＷ</span></li>
+<li><span class="smbas">ＥＹ［Ｉ］＝ＥＹ［Ｉ］＋１</span></li>
+<li><span class="smbas">ＩＦ　ＥＹ［Ｉ］＞２０　ＴＨＥＮ　ＥＹ［Ｉ］＝３</span></li>
+<li><span class="smbas">ＥＤ［Ｉ］＝（ＥＤ［Ｉ］＋１）　ＡＮＤ　３</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＥＰＵＴ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＬＦ</span></li>
+<li><span class="smbas">ＥＸ［Ｉ］＝ＥＸ［Ｉ］−１</span></li>
+<li><span class="smbas">ＩＦ　ＥＸ［Ｉ］＞０　ＴＨＥＮ　＠ＥＰＵＴ</span></li>
+<li><span class="smbas">ＥＤＷ＝ＴＲＵＥ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＥＰＵＴ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＥＰＵＴ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　”Е”</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+</td></tr></table>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>変数<span class="basic-text smbas">ＥＭＡＸ</span>を敵の数に使うようになってるんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>敵の数をいつ変えたくなってもいいワケじゃな。前にもちらっと話したが、変数にできるトコロは変数にしておくのはダイジな心くばりじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まだデキてねェところは……ショットが敵に当たったトキ、か。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムでショットが敵に当たるというのは、どういうコトかを考えるとわかるんじゃないかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>うーん、ショットの場所と、敵の場所が重なったとき……かな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ショットの場所は変数<span class="basic-text smbas">ＭＸ</span>と<span class="basic-text smbas">ＭＹ</span>だったよな……。敵の場所は<span class="basic-text smbas">ＥＸ［Ｉ］</span>と<span class="basic-text smbas">ＥＹ［Ｉ］</span>だから……。つまり、こんなカンジか!?</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="81"><li><span class="smbas">ＩＦ　ＭＸ＝＝ＥＸ［Ｉ］　ＡＮＤ　ＭＹ＝＝ＥＹ［Ｉ］　ＴＨＥＮ　ＧＯＳＵＢ　＠ＥＯＵＴ</span></li>
+</ol></code></div></div>
+<p>配列変数<span class="basic-text smbas"></span>をツカッてるから、敵をウゴかすFOR〜NEXTの中に入れないとイケねェな。</p>
+
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h3 id="j986f13f">CHKCHR()命令</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/hakase.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ワシじゃワシじゃ、今回はやたら顔を出すハカセじゃ。<br />
+ここでは話のナガレ的に出てこなかったが、当たり判定にベンリな<span class="basic-text smbas">ＣＨＫＣＨＲ（）</span>という命令があるのを知っておったかな？<br />
+このサンプルにはカンケイない話じゃが、カンタンにセツメイしておくぞい。<br /></p>
+
+
+ </div>
+</div>
+<dl><dt>CHKCHR()命令</dt>
+<dd>たとえば<span class="basic-text smbas">Ａ＝ＣＨＫＣＨＲ（０，０）</span>と書くと、そのトキ画面の<span class="basic-text smbas">（０，０）</span>のバショにナニが表示されているか変数Ａに入るのじゃ。
+<span class="basic-text smbas">（０，０）</span>というのは<span class="basic-text smbas">ＬＯＣＡＴＥ</span>命令で使うのと同じヨコ方向とタテ方向の数じゃな。<br /></dd>
+<dt>文字コード</dt>
+<dd><span class="basic-text smbas">Ａ＝ＣＨＫＣＨＲ（０，０）</span>と書いたトキに変数Ａに入るのは、「文字コード」という数字じゃ。ナンのことかワカらんじゃろうが、実はプチコンでは1つ1つの文字に番号がわりふられているのじゃぞ。<br /></dd>
+<dt>ASC()命令</dt>
+<dd>文字コードを調べる命令が<span class="basic-text smbas">ASC()</span>じゃ。<br />
+<span class="basic-text smbas">()</span>の中に調べたい文字を入れると、その文字のコードがわかるのじゃ。例えば「<span class="basic-text smbas">Е</span>」の文字コードを調べたければダイレクトモードで<span class="basic-text smbas">PRINT ASC(”Е”)</span>と書いて実行すればいいのじゃ。<span class="basic-text smbas">57862</span>と表示されるぞ。<br /></dd>
+<dt>CHR$()命令</dt>
+<dd><span class="basic-text smbas">ASC()</span>とは逆に文字コードから文字を調べる命令が<span class="basic-text smbas">CHR$()</span>じゃ。<br />
+例えば<span class="basic-text smbas">PRINT CHR$(57862)</span>を実行すると「<span class="basic-text smbas">Е</span>」が表示されるぞい。<br />
+今回のサンプルでは使い道はなさそうじゃが、覚えておいてソンはないじゃろう。<br />
+<br />
+もし今回のサンプルのように、ショットの場所<span class="basic-text smbas">（ＭＸ，ＭＹ）</span>に敵「<span class="basic-text smbas">Е</span>」がいるかどうかチェックしたければ、<span class="basic-text smbas">ＩＦ　ＣＨＫＣＨＲ（ＭＸ，ＭＹ）＝＝ＡＳＣ（”Е”）　ＴＨＥＮ</span>〜とやればいいワケじゃな。<br />
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ここまではいい調子じゃないか。敵にショットが当たったコトが分かったら、次は敵がやられるルーチン<span class="basic-text smbas">＠ＥＯＵＴ</span>だね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+このサンプルだと、ショットが当たった敵はすぐに消えるから、敵を空白スペースで上書きすればいいのかな。
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="111"><li><span class="smbas">＠ＥＯＵＴ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>タシカにそうだが……ちょっと待てよ。コレだと、次に敵のターンがきたトタンに、消えた敵もまた出てきちまうぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか、敵を動かすためにいつも書きなおしていたんだっけ。<br class="spacer" />いちどショットが当たった敵は<span class="basic-text smbas">ＰＲＩＮＴ</span>しちゃダメってことだなあ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これも、いままでの応用でなんとかなるんじゃないかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか！　フラグを使うんだな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+敵１匹ずつに割りあたってるフラグっていうと、<span class="basic-text smbas">ＥＤ[Ｉ]</span>だね。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ED[I]=0</th><td class="style_td" style="background-color:white;">右に動く</td><td class="style_td" style="background-color:white;">X=49になるまでX+1</td><td class="style_td" style="background-color:white;">@RI</td></tr><tr><th class="style_th">ED[I]=1</th><td class="style_td" style="background-color:white;">下におりる</td><td class="style_td" style="background-color:white;">1回だけY+1</td><td class="style_td" style="background-color:white;">@DW</td></tr><tr><th class="style_th">ED[I]=2</th><td class="style_td" style="background-color:white;">左に動く</td><td class="style_td" style="background-color:white;">X=0になるまでX-1</td><td class="style_td" style="background-color:white;">@LF</td></tr><tr><th class="style_th">ED[I]=3</th><td class="style_td" style="background-color:white;">下におりる</td><td class="style_td" style="background-color:white;">1回だけY+1</td><td class="style_td" style="background-color:white;">@DW</td></tr></tbody></table></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+消えたっていうトクベツなフラグだから、数字には<span class="basic-text smbas">−１</span>をあてはめようか。
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ED[I]=-1</th><td class="style_td" style="background-color:white;">消えた</td><td class="style_td" style="background-color:white;">表示しない</td><td class="style_td" style="background-color:white;">@EOUT</td></tr></tbody></table></div>
+113行に追加しておこう。
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="111"><li><span class="smbas">＠ＥＯＵＴ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">ＥＤ［Ｉ］＝−１</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これでフラグは立ったから、次は敵の表示のトキにそのフラグを調べるのが……えーと、ドコがいいんだ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">Е</span>を書いて消すなら、FORループの中ならどこでもいいとも言えるけど。でもどうせなら、もう表示しないってくらいがいいだろうね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+じゃあ、最初の方だね。
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="73"><li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　ＥＭＡＸ−１</span></li>
+<li><span class="smbas">　ＩＦ　ＥＤ［Ｉ］＝＝−１　ＴＨＥＮ　＠ＰＡＳＳ</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="83"><li><span class="smbas">　＠ＰＡＳＳ</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+これで<span class="basic-text smbas">ＥＤ[Ｉ]</span>フラグが<span class="basic-text smbas">−１</span>のときは表示もされずに、次の敵まで飛ばされるよ！
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>待てよ……？　ハハァ、ピンときたぜ！<br class="spacer" />こうなってくると敵が減れば減るほどごっそりスキップする行が多くなるよな。つまり、敵をタオせばタオすほど、ゲームのスピードが早くなるってワケだな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ウムウム。どうやらショクンも、プログラムがダイブ身についてきたようじゃな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>負ける気がしねェゼ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>じゃが、せっかくならココで、よりコウリツのいいプログラムにチャレンジしてみんかな？</p>
+
+ </div>
+</div></dd></dl>
+
+<h3 id="u357624f">処理のスキップをおぼえておこう</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>コウリツときやがったか。プログラムが動けばそれでいいんじゃねェの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ム……ム。そういう考えもたしかにアリじゃが。<br class="spacer" />ひとつにはプログラムの動作スピードが早くなるテクニックなので、オボエておけばアトアト「重い」プログラムを動かすのに助かる、というコトはあるぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>アクションゲームにある「処理落ち」とか、そういうやつ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>まあそんなトコロじゃな。もうひとつのメリットとしては、プログラムが見やすくなるコトもある、とも言えるのう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>「見やすくなるコトもある」……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>逆に見にくくなるコトも、ときにはあるかも……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>えー……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ま、まァまァ！　じゃからこそ、シンプルプログラムのイマのうちにオボエておこうという話じゃよ。なに、たいしてムズカしいコトではないぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ハカセが言いたいのは、たぶんこの部分ですね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="82"><li><span class="smbas">　ＩＦ　ＭＸ＝＝ＥＸ［Ｉ］　ＡＮＤ　ＭＹ＝＝ＥＹ［Ｉ］　ＴＨＥＮ　ＧＯＳＵＢ　＠ＥＯＵＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>さすがはインテリ君じゃな。さよう、ソコは「敵がやられたとハッキリ決まったら、やられルーチンに行って帰ってくる。それ以外は普通に進む」となっておる。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>それでフツウじゃねえか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left">
+<p>しかし、こうすればどうじゃ。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="82"><li><span class="smbas">　ＩＦ　ＭＸ！＝ＥＸ［Ｉ］　ＴＨＥＮ　＠ＰＡＳＳ</span></li>
+<li><span class="smbas">　ＩＦ　ＭＹ！＝ＥＹ［Ｉ］　ＴＨＥＮ　＠ＰＡＳＳ</span></li>
+<li><span class="smbas">　’−−−　しぼう</span></li>
+<li><span class="smbas">　ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">　ＥＤ［Ｉ］＝−１</span></li>
+<li><span class="smbas">　＠ＰＡＳＳ</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ン？　……ンンン？　85〜86行目は、さっき作ったやられたトキのプログラムだよな。<br class="spacer" />82行目で<span class="basic-text smbas">ＭＸ！＝ＥＸ[Ｉ]</span>ってコトは、ショットのヨコ位置と敵のヨコ位置がチガうってコトだろ。ツマリ当たってないから、<span class="basic-text smbas">＠ＰＡＳＳ</span>に飛ぶよな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>83行目の<span class="basic-text smbas">ＭＹ！＝ＥＹ[Ｉ]</span>もタテ位置になっただけで、同じことだね。<br class="spacer" />そのどっちでもないって時は、かならずショットが当たっているって言えるから、そのままやられたことになる……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>さよう。もともとの<span class="basic-text smbas">ＭＸ＝＝ＥＸ[Ｉ]　ＡＮＤ　ＭＹ＝＝ＥＹ[Ｉ]</span>という条件式は、ハッキリしとるがそれだけチェックに時間がかかるものじゃ。<br class="spacer" />新しいプログラムじゃと、カンタンな理由さえあればザクザク切っているのがワカるじゃろう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>やってるコトも、<span class="basic-text smbas">ＧＯＴＯ</span>で飛ぶだけだしね。<br class="spacer" />それに、まだ敵のやられチェックをカンタンにする方法は残っているよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ツマリ今は「敵がゼッタイにやられてない」条件をサガせばいいってコトか？　……やられてないトキ……逆に言えば、やられるのはショットが当たったトキだけ……よし！ ゼンゼンわからねえ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ものすごくあきらめちゃったけど、たぶん「ショットが画面に出ていない間は、敵はやられない」と言えるんじゃないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ソコだね！　ショットは変数<span class="basic-text smbas">ＭＳＴ</span>で表示フラグをカンリしていたから……あとはカンタンだよね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="82"><li><span class="smbas">　ＩＦ　ＭＳＴ＝＝ＦＡＬＳＥ　ＴＨＥＮ　＠ＰＡＳＳ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナルホドな。言われてみりゃ、そのとおりだぜ。……てことは、何も言われずにコレいきなり見たら、どういうイミなのかワカりづらくねェか？<br class="spacer" />スナオに<span class="basic-text smbas">ＩＦ　ＭＸ＝＝ＥＸ[Ｉ]　ＡＮＤ　ＭＹ＝＝ＥＹ[Ｉ]</span>って書いてあった方がカンタンじゃねえの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>ぜんぶヒテイされてもうたが……そのキモチも、ワカらんでもないわい。スピードを気にせんでいい初心者のコロなら、ムリしてまでやるコトではないのはタシカじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>でも、人のプログラムリストを見るときに「どうしてこんな書き方を？」ってギモンはなくなるんじゃないかな。こういうプログラムの書き方があると知っておくのはムダじゃないよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ナイスフォローじゃ、インテリ君！<br class="spacer" />プログラムの書き方にはヒトそれぞれイロイロなポリシーがあるものじゃが、そういう考え方を知っておくのもひとつのベンキョウじゃぞ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ベンキョウってヒビキは気にくわねェが……ツギからこういうスキップのしかたを見てもナットクできるのはタシカか。</p>
+
+ </div>
+</div>
+
+<h3 id="f3076649">当たり処理の仕上げをしよう</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あれ？　このプログラム<span class="basic-text smbas">ＲＵＮ</span>してみると、ときどきショット１発で何匹も倒せることがあるよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ホントだな。こりゃアレだぜ、パワーアップとかによくある「カンツウダン」の動きになってるな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>「貫通弾」だね。シューティングゲームだと、敵に当たったらそこでショットは消える方がオーソドックスかな？　このゲームならそうしないとカンタンすぎるしね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>ええと、敵に当たったらすぐにショットを消すわけだ。<br class="spacer" />
+さっきもやったけどショットの表示フラグは変数<span class="basic-text smbas">ＭＳＴ</span>だったね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="85"><li><span class="smbas">　’−−−　しぼう</span></li>
+<li><span class="smbas">　ＬＯＣＡＴＥ　ＥＸ［Ｉ］，ＥＹ［Ｉ］：ＰＲＩＮＴ”　”</span></li>
+<li><span class="smbas">　ＥＤ［Ｉ］＝−１</span></li>
+<li><span class="smbas">　ＭＳＴ＝ＦＡＬＳＥ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>１行ふやしただけか。イガイにアッサリいくんだな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>フラグはうまく使うと、いろいろラクになるものさ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あとは、敵を倒したらスコアも上げないとね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>コレはそうムズカしくなさそうな気がするぜ。<br class="spacer" />
+とりあえず、サイショに画面の上の方に出しておくんだろ？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="27"><li><span class="smbas">ＬＯＣＡＴＥ　０，０</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”ＳＣＯＲＥ：　”；ＳＣ</span></li>
+</ol></code></div></div>
+<p>変数<span class="basic-text smbas">ＳＣ</span>をスコアってことにしておいたぜ。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>そして、敵がやられた時に10点プラスすれば完成かな。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="87"><li><span class="smbas">　’−−−　しぼう</span></li>
+<li><span class="smbas">　ＳＣ＝ＳＣ＋１０</span></li>
+<li><span class="smbas">　ＬＯＣＡＴＥ　７，０：ＰＲＩＮＴ　ＳＣ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>うむ、それで合っておる。合っておるのじゃが……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナンだ？　<span class="basic-text smbas">ＲＵＮ</span>しても、ナニもモンダイはなさそうだぜ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left">
+<p>しかし、ワシとしてはこういうプログラムをテイアンしたい！</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="87"><li><span class="smbas">　’−−−　しぼう</span></li>
+<li><span class="smbas">　ＳＶ＝ＳＶ＋１０</span></li>
+</ol></code></div></div>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="122"><li><span class="smbas">＠ＳＣＯＲＥ</span></li>
+<li><span class="smbas">ＩＦ　ＳＶ＝＝０　ＴＨＥＮ　ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">ＳＣ＝ＳＣ＋１０</span></li>
+<li><span class="smbas">ＳＶ＝ＳＶ−１０</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　７，０：ＰＲＩＮＴ　ＳＣ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+<p>メインループから<span class="basic-text smbas">＠ＳＣＯＲＥ</span>に<span class="basic-text smbas">ＧＯＳＵＢ</span>すると考えてくれい。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>どういうこった？　敵がやられたトキは、ただ変数<span class="basic-text smbas">ＳＶ</span>に10点プラスして終わりかよ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そのあとで、変数<span class="basic-text smbas">ＳＣ</span>を変えて<span class="basic-text smbas">ＰＲＩＮＴ</span>するのはサブルーチン<span class="basic-text smbas">＠ＳＣＯＲＥ</span>でやるんだね。そこで変数<span class="basic-text smbas">ＳＶ</span>も<span class="basic-text smbas">ー１０</span>して、またゼロに戻る……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>イミがワカらねェな！　プログラムが長くなっただけじゃねえか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>先に言っちゃうと、これは<span class="basic-text smbas">ＬＯＡＤ</span>したサンプルプログラムだとこうなってるんですよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>さよう。なぜワシがこんな一見ムダに見えるプログラムにしたのか、ソコがワカるかの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ムググ……サイゴになってイガイなナゾトキだぜ……。どう見てもムダにしか見えねェが……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>いやジッサイ、このプログラムのままじゃと、ホントにムダなのじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>バカにしてんのか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>このサンプルプログラムはユーザーのショクンの手でカンセイさせるためのモノじゃからのう。そこでイミが出てくるように作ってあるのじゃよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>うーん。そうは言っても、どういう時にヤクに立つのか……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>こういう何のためにあるのか分からないプログラムは、関係のありそうな数をデタラメでも変えてみると、あんがい目に見えて分かるコトもあるよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>というと、たとえば敵がやられたトキの<span class="basic-text smbas">ＳＶ＝ＳＶ＋１０</span>を<span class="basic-text smbas">ＳＶ＝ＳＶ＋１</span>に変えてみる、とかいうコトか？<br class="spacer" />ヤミクモに<span class="basic-text smbas">ＲＵＮ</span>してやろうじゃねェか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>画面の前のみんなもジッサイに変えてためしてみよう！</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><a href="https://smileboom.com/special/ptcm2/co_konnichiwa/image/img-screen-sample73.png" title="img-screen-sample73.png"><img src="https://smileboom.com/special/ptcm2/co_konnichiwa/image/img-screen-sample73.png" alt="img-screen-sample73.png" title="img-screen-sample73.png" /></a></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウ、ウォオ!?　敵を１回撃ったら、スコアが上がりツヅケて止まらねー！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そうか……考えてみればこうなるのはトウゼンではあるよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>アァ？　ブツブツ……<span class="basic-text smbas">ＳＶ</span>が１になってそのアト１０引いてまたモドッて０じゃねェからまた１０……フムフム。そりゃスコアがいつまでも上がりっぱなしにもなるな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>みんなもプログラムの流れを読むと、何が起きたのかだいたいわかるよね！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>わざとデタラメにやっておるのじゃから、おかしな動きになるのはトウゼンじゃな。<br class="spacer" />しかし、このスコアを見てナニかに気付いたのではないかの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いや、ベツに……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>ココまでのナガレがダイナシになるのう……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あっ！　スコアが10点ずつアニメーションで増えるように見えるよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そりゃタシカにそう見えるけどよォ……。メインループを１回通るたびに10点増やしてんだからトウゼンじゃ……ハッ!?</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いいトコロに気付いたね。ギャクに言えば、メインループを１回通るたびに点を増やすようにすると、アニメーションで点数が増えて見えるワケだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナゾがとけてきたゼ……こうすりゃハッキリするな。さっき<span class="basic-text smbas">ＳＶ＝ＳＶ＋１</span>にしたトコロを<span class="basic-text smbas">ＳＶ＝ＳＶ＋１００</span>にして<span class="basic-text smbas">ＲＵＮ</span>だ！</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><a href="https://smileboom.com/special/ptcm2/co_konnichiwa/image/img-screen-sample74.png" title="img-screen-sample74.png"><img src="https://smileboom.com/special/ptcm2/co_konnichiwa/image/img-screen-sample74.png" alt="img-screen-sample74.png" title="img-screen-sample74.png" /></a></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>うむ！　止まった画面ではよくワカらんが、ミゴトに１匹倒すごとに100点が入り、それが10点ずつアニメーションしておる。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>サブルーチン<span class="basic-text smbas">＠ＳＣＯＲＥ</span>を通るたびに、変数<span class="basic-text smbas">ＳＶ</span>がカラになるまで10点ずつ増えてるからな！　コレはメインループの中でナンドも通ることにイミがあったってワケだ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>モトモトは、たとえば１匹だけ高得点の敵がいるとして、そいつを倒したときにボーナスっぽく、と作ったブブンだったんじゃが、コレももちろんセイカイじゃぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まさかサイゴにこんなクイズがノコッてたとはな……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムをヒトに渡す時は分かりにくい処理にはコメントを付けておくのがキホンだけど、初心者向けのカダイとしては、まあ良かったんじゃないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>ケッキョクそういうアツカイなのかのう……？</p>
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h3 id="l82664ff">今回のまとめ</h3>
+<dl><dt>当たり判定</dt>
+<dd>いちばんオーソドックスな当たり判定は、ぶつけるモノの位置とぶつかられるモノの位置を比べることです。ヨコ座標とタテ座標が一致すれば、それは当たっているということになります。</dd>
+<dt>CHKCHR()命令</dt>
+<dd><div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">（変数）＝ＣＨＫＣＨＲ（横座標，縦座標）</span></li>
+</ol></code></div></div>
+画面の指定した座標に、何のキャラクターが表示されているかが、文字コードで変数に入ります。</dd>
+<dt>ASC()命令</dt>
+<dd><div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">（変数）＝ＡＳＣ（”文字”）</span></li>
+</ol></code></div></div>
+入力した文字の文字コードが変数に入ります。</dd>
+<dt>CHR$()命令</dt>
+<dd><div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">（変数）＝ＣＨＲ＄（文字コード）</span></li>
+</ol></code></div></div>
+入力した文字コードの文字が変数に入ります。
+</div></dd></dl>
+<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><strong><a href="/petc3gou/?Beginner%2FChapter17" title="Beginner/Chapter17 (564d)">次のページへ</a></strong></span></div>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_94_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (647d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (592d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (37d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (642d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (162d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (771d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (4h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (707d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_94_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1238d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (1h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_94_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (25d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="aiannmannは神 (1h)">aiannmannは神</a></li>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (4h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (8h)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (23h)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (1d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (2d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (4d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (4d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (5d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_94_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (1d)">nikuラジオ<span class="counter">(37)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (23h)">リズミカルおもちつきMC<span class="counter">(19)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (8h)">Nintendo全記号Unicode一覧表<span class="counter">(17)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C5%B7%BB%C8%CA%B8%BB%FA%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/天使文字フォント (891d)">天使文字フォント<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverse終了後の避難先まとめ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (458d)">NCF MUSEQ STATION<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (13d)">スマイルツール・ランチャ<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (76d)">リズミカルおもちつきTG<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP" title="Toukou/NewリズミカルおもちつきSP (237d)">NewリズミカルおもちつきSP<span class="counter">(6)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1272d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_94_4">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1362 回、本日は 1 回、昨日は 5 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.109 秒  | このページの最終更新 : 2019/08/13 (火) 14:37:20  (565d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

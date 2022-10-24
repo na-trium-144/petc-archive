@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 正規表現ライブラリ - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 正規表現ライブラリ - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ライブラリ, actorstool" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 正規表現ライブラリ</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">正規表現ライブラリ</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.077sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a></li>
+<li><a href="#Komidashi1">  関数説明 </a>
+<ul><li><a href="#lfabfa51">  RXINSTR </a></li>
+<li><a href="#j402a287">  RXSUBST$ </a></li>
+<li><a href="#xee4861a">  RXSUBSTALL$ </a></li>
+<li><a href="#fbe5ca83">  REGEX </a></li>
+<li><a href="#u6887a3f">  ROINSTR </a></li>
+<li><a href="#mf74464e">  ROSUBST$ </a></li>
+<li><a href="#hb0da0bd">  ROSUBSTALL$ </a></li>
+<li><a href="#hc6bc418">  ROMATCH </a></li></ul></li>
+<li><a href="#Komidashi2">  使用可能なメタ文字 </a></li>
+<li><a href="#Komidashi6">  使用可能な置換文字列 </a></li>
+<li><a href="#Komidashi3">  オプション </a></li>
+<li><a href="#Komidashi4">  注意 </a></li>
+<li><a href="#Komidashi5">  修正履歴 </a></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2015年3月15日投稿
+/ 投稿者 : actorbug
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ライブラリ</a> <a href="/petc3gou/?cmd=taglist&amp;tag=actorstool">actorstool</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>正規表現による検索・置換ライブラリ。<br />
+EXECで別スロットに読み込むか、プログラム内にコピペして使用する。</p>
+
+<h3 id="Komidashi1">関数説明</h3>
+
+<h4 id="lfabfa51">RXINSTR</h4>
+<p>文字列内から正規表現を検索。<br />
+正規表現を文字列で直接渡せる。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">RXINSTR(&quot;元文字列&quot;,&quot;正規表現文字列&quot;)</td></tr><tr><th class="style_th" rowspan="2">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現文字列</td><td class="style_td">元文字列の中から検索したい正規表現文字列</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">見つかった場合はその位置、見つからなかった場合は-1</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?RXINSTR(&quot;ABC&quot;,&quot;[BC]&quot;)</td></tr></tbody></table></div>
+
+<h4 id="j402a287">RXSUBST$</h4>
+<p>文字列内の正規表現を置換(1回)。<br />
+正規表現を文字列で直接渡せる。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">RXSUBST$(&quot;元文字列&quot;,&quot;正規表現文字列&quot;,&quot;置換文字列&quot;)</td></tr><tr><th class="style_th" rowspan="3">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現文字列</td><td class="style_td">元文字列の中から検索したい正規表現文字列</td></tr><tr><td class="style_td">置換文字列</td><td class="style_td">置き換えられる文字列</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">置換された文字列</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?RXSUBST$(&quot;ABC&quot;,&quot;[BC]&quot;,&quot;D&quot;)</td></tr></tbody></table></div>
+
+<h4 id="xee4861a">RXSUBSTALL$</h4>
+<p>文字列内の正規表現を置換(全部)。<br />
+正規表現を文字列で直接渡せる。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">RXSUBSTALL$(&quot;元文字列&quot;,&quot;正規表現文字列&quot;,&quot;置換文字列&quot;)</td></tr><tr><th class="style_th" rowspan="3">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現文字列</td><td class="style_td">元文字列の中から検索したい正規表現文字列</td></tr><tr><td class="style_td">置換文字列</td><td class="style_td">置き換えられる文字列</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">置換された文字列</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?RXSUBSTALL$(&quot;ABC&quot;,&quot;[BC]&quot;,&quot;D&quot;)</td></tr></tbody></table></div>
+
+<h4 id="fbe5ca83">REGEX</h4>
+<p>正規表現オブジェクト生成。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">REGEX(&quot;正規表現文字列&quot;,オプション)</td></tr><tr><th class="style_th" rowspan="2">引数</th><td class="style_td">正規表現文字列</td><td class="style_td">正規表現を表す文字列</td></tr><tr><td class="style_td">オプション</td><td class="style_td">後述</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">正規表現オブジェクト(実体は文字列配列)</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">DIM RX$[0]:RX$=REGEX(&quot;[BC]&quot;,1)</td></tr></tbody></table></div>
+
+<h4 id="u6887a3f">ROINSTR</h4>
+<p>文字列内から正規表現を検索。<br />
+オプションを指定したい場合や、同じ正規表現で何度も検索する場合は、こちらを使用する。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">ROINSTR(&quot;元文字列&quot;,正規表現オブジェクト)</td></tr><tr><th class="style_th" rowspan="2">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現オブジェクト</td><td class="style_td">元文字列の中から検索したい正規表現オブジェクト</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">見つかった場合はその位置、見つからなかった場合は-1</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?ROINSTR(&quot;ABC&quot;,REGEX(&quot;[BC]&quot;,1))</td></tr></tbody></table></div>
+
+<h4 id="mf74464e">ROSUBST$</h4>
+<p>文字列内の正規表現を置換(1回)。<br />
+オプションを指定したい場合や、同じ正規表現で何度も検索する場合は、こちらを使用する。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">ROSUBST$(&quot;元文字列&quot;,正規表現オブジェクト,&quot;置換文字列&quot;)</td></tr><tr><th class="style_th" rowspan="3">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現オブジェクト</td><td class="style_td">元文字列の中から検索したい正規表現オブジェクト</td></tr><tr><td class="style_td">置換文字列</td><td class="style_td">置き換えられる文字列</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">置換された文字列</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?ROSUBST$(&quot;ABC&quot;,REGEX(&quot;[BC]&quot;,1),&quot;D&quot;)</td></tr></tbody></table></div>
+
+<h4 id="hb0da0bd">ROSUBSTALL$</h4>
+<p>文字列内の正規表現を置換(全部)。<br />
+オプションを指定したい場合や、同じ正規表現で何度も検索する場合は、こちらを使用する。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">ROSUBSTALL$(&quot;元文字列&quot;,正規表現オブジェクト,&quot;置換文字列&quot;)</td></tr><tr><th class="style_th" rowspan="3">引数</th><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現オブジェクト</td><td class="style_td">元文字列の中から検索したい正規表現オブジェクト</td></tr><tr><td class="style_td">置換文字列</td><td class="style_td">置き換えられる文字列</td></tr><tr><th class="style_th">戻り</th><td class="style_td" colspan="2">置換された文字列</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">?ROSUBSTALL$(&quot;ABC&quot;,REGEX(&quot;[BC]&quot;,1),&quot;D&quot;)</td></tr></tbody></table></div>
+
+<h4 id="hc6bc418">ROMATCH</h4>
+<p>文字列内の指定位置以降で正規表現を検索。<br />
+結果を先頭・末尾位置で返すので、範囲を基準に処理したい場合に使用する。<br />
+これ以外のすべての検索・置換関数は、この関数を使って実装している。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">書式</th><td class="style_td" colspan="2">ROMATCH(開始位置,&quot;元文字列&quot;,正規表現オブジェクト)</td></tr><tr><th class="style_th" rowspan="3">引数</th><td class="style_td">開始位置</td><td class="style_td">検索開始する位置</td></tr><tr><td class="style_td">元文字列</td><td class="style_td">元になる文字列</td></tr><tr><td class="style_td">正規表現オブジェクト</td><td class="style_td">元文字列の中から検索したい正規表現オブジェクト</td></tr><tr><th class="style_th" rowspan="2">戻り</th><td class="style_td" colspan="2">見つかった文字列の範囲とキャプチャ範囲を表す数値配列R</td></tr><tr><td class="style_td" colspan="2">R[0]が文字列先頭、R[1]が末尾+1、R[2]が最初のキャプチャ先頭、R[3]が末尾+1など</td></tr><tr><th class="style_th">例</th><td class="style_td" colspan="2">DIM R[0]:R=ROMATCH(0,&quot;ABC&quot;,REGEX(&quot;B(C)&quot;,1))</td></tr></tbody></table></div>
+
+<h3 id="Komidashi2">使用可能なメタ文字</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">メタ文字</th><th class="style_th">説明</th></tr><tr><td class="style_td">\</td><td class="style_td">直後のメタ文字を無効化して通常文字として扱う</td></tr><tr><td class="style_td">\n</td><td class="style_td">LF、CHR$(10)</td></tr><tr><td class="style_td">\r</td><td class="style_td">CR、CHR$(13)</td></tr><tr><td class="style_td">\t</td><td class="style_td">Tab、CHR$(9)</td></tr><tr><td class="style_td">\xFF</td><td class="style_td">16進2桁で文字コード指定</td></tr><tr><td class="style_td">\uFFFF</td><td class="style_td">16進4桁で文字コード指定</td></tr><tr><td class="style_td">[]</td><td class="style_td">文字クラス、括弧内の文字のいずれかにマッチ、-で範囲指定可能</td></tr><tr><td class="style_td">[^]</td><td class="style_td">否定文字クラス、括弧内の文字以外にマッチ、-で範囲指定可能</td></tr><tr><td class="style_td">.</td><td class="style_td">任意の1文字(改行を除く)にマッチ、単一行モードなら改行もマッチ</td></tr><tr><td class="style_td">\d</td><td class="style_td">数字、[0-9]と同じ</td></tr><tr><td class="style_td">\D</td><td class="style_td">非数字、[^0-9]と同じ</td></tr><tr><td class="style_td">\w</td><td class="style_td">単語構成文字、[a-zA-Z0-9_]と同じ</td></tr><tr><td class="style_td">\W</td><td class="style_td">非単語文字、[^a-zA-Z0-9_]と同じ</td></tr><tr><td class="style_td">\s</td><td class="style_td">空白文字、[ \n\r\t]と同じ</td></tr><tr><td class="style_td">\S</td><td class="style_td">非空白文字、[^ \n\r\t]と同じ</td></tr><tr><td class="style_td">^</td><td class="style_td">文字列の先頭、複数行モードなら改行の次にもマッチ</td></tr><tr><td class="style_td">$</td><td class="style_td">文字列の末尾 or 最後が改行ならその前、複数行モードなら改行の前にもマッチ</td></tr><tr><td class="style_td">\A</td><td class="style_td">文字列の先頭</td></tr><tr><td class="style_td">\Z</td><td class="style_td">文字列の末尾 or 最後が改行ならその前</td></tr><tr><td class="style_td">\z</td><td class="style_td">文字列の末尾</td></tr><tr><td class="style_td">\b</td><td class="style_td">単語境界</td></tr><tr><td class="style_td">\B</td><td class="style_td">単語境界以外</td></tr><tr><td class="style_td">\1〜\9</td><td class="style_td">後方参照</td></tr><tr><td class="style_td">()</td><td class="style_td">グループ化 &amp; キャプチャ</td></tr><tr><td class="style_td">(?:)</td><td class="style_td">グループ化(キャプチャなし)</td></tr><tr><td class="style_td">(?=)</td><td class="style_td">肯定の先読み</td></tr><tr><td class="style_td">(?!)</td><td class="style_td">否定の先読み</td></tr><tr><td class="style_td">(?&lt;=)</td><td class="style_td">肯定の戻り読み(通常文字・文字クラス・一部アンカーのみ使用可)</td></tr><tr><td class="style_td">(?&lt;!)</td><td class="style_td">否定の戻り読み(通常文字・文字クラス・一部アンカーのみ使用可)</td></tr><tr><td class="style_td">(?&gt;)</td><td class="style_td">アトミックなグループ</td></tr><tr><td class="style_td">(?修飾子)</td><td class="style_td">モード修飾子(?i)(?-i)など</td></tr><tr><td class="style_td">(?修飾子:)</td><td class="style_td">モード修飾子の範囲(?i:...)など</td></tr><tr><td class="style_td">&#x7c;</td><td class="style_td">選択</td></tr><tr><td class="style_td">*</td><td class="style_td">直前の式の0回以上の繰り返し、{0,}と同じ</td></tr><tr><td class="style_td">+</td><td class="style_td">直前の式の1回以上の繰り返し、{1,}と同じ</td></tr><tr><td class="style_td">?</td><td class="style_td">直前の式が0回か1回現れる、{0,1}と同じ</td></tr><tr><td class="style_td">{n}</td><td class="style_td">直前の式のn回の繰り返し</td></tr><tr><td class="style_td">{m,}</td><td class="style_td">直前の式のm回以上の繰り返し</td></tr><tr><td class="style_td">{m,n}</td><td class="style_td">直前の式のm回以上n回以下の繰り返し</td></tr><tr><td class="style_td">*?</td><td class="style_td">直前の式の0回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">+?</td><td class="style_td">直前の式の1回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">??</td><td class="style_td">直前の式が0回か1回現れる(最短マッチ)</td></tr><tr><td class="style_td">{m,}?</td><td class="style_td">直前の式のm回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">{m,n}?</td><td class="style_td">直前の式のm回以上n回以下の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">*+</td><td class="style_td">直前の式の0回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">++</td><td class="style_td">直前の式の1回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">?+</td><td class="style_td">直前の式が0回か1回現れる(強欲)</td></tr><tr><td class="style_td">{m,}+</td><td class="style_td">直前の式のm回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">{m,n}+</td><td class="style_td">直前の式のm回以上n回以下の繰り返し(強欲)</td></tr></tbody></table></div>
+
+<h3 id="Komidashi6">使用可能な置換文字列</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">置換文字列</th><th class="style_th">説明</th></tr><tr><td class="style_td">$$</td><td class="style_td">1個の$</td></tr><tr><td class="style_td">$&amp;</td><td class="style_td">マッチした文字列</td></tr><tr><td class="style_td">$`</td><td class="style_td">マッチした文字列の前</td></tr><tr><td class="style_td">$'</td><td class="style_td">マッチした文字列の後</td></tr><tr><td class="style_td">$1〜$9</td><td class="style_td">キャプチャされた文字列</td></tr></tbody></table></div>
+
+<h3 id="Komidashi3">オプション</h3>
+<p>複数指定する場合は足し合わせる。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オプション</th><th class="style_th">値</th><th class="style_th">説明</th></tr><tr><td class="style_td">RXOPT_IC</td><td class="style_td">1</td><td class="style_td">大文字小文字を区別しない</td></tr><tr><td class="style_td">RXOPT_SL</td><td class="style_td">2</td><td class="style_td">単一行モード(&quot;.&quot;が改行にもマッチする)</td></tr><tr><td class="style_td">RXOPT_ML</td><td class="style_td">4</td><td class="style_td">複数行モード(&quot;^&quot;,&quot;$&quot;が改行前後にもマッチする)</td></tr></tbody></table></div>
+
+<h3 id="Komidashi4">注意</h3>
+<ul><li>間違った正規表現を処理した場合の動作は未定義です。</li></ul>
+
+<h3 id="Komidashi5">修正履歴</h3>
+<ul><li>2015/07/23 (木) 21:40:19　大文字小文字を区別しない場合に文字クラスの範囲指定が正常動作しないバグ修正。分岐処理を共有してサイズ縮小。分岐処理で可能な限りON GOTOを使用。高速化。</li>
+<li>2015/07/27 (月) 19:42:44　プログラムに変換するのをやめて、正規表現を引数として渡す関数形式に変更。内部構造をDFAからNFAに変更。オプション追加。最短マッチ対応。</li>
+<li>2015/07/31 (金) 19:47:23　後方参照対応。文字列置換対応。単語境界対応。\dなどの後にある正規表現が無視されるバグの修正。</li>
+<li>2015/08/01 (土) 08:10:33　テスト用プログラムを同梱。<a href="/petc3gou/?Toukou%2FLEX" title="Toukou/LEX (1300d)">Toukou/LEX</a>と同じプロジェクトにまとめる。</li>
+<li>2017/01/12 (木) 22:41:23　先頭が単純なパターンの場合に検索を高速化。テストパターン追加。</li>
+<li>2018/09/01 (土) 18:40:10　公開関数追加。</li>
+<li>2018/10/17 (水) 21:16:10　内部構造を少しシンプルにして少し高速化。</li>
+<li>2018/12/02 (日) 14:42:47　前後読み、アトミックなグループ、強欲な量指定子、モード修飾子対応。RXSUBSTALL$などで空文字にマッチするとフリーズするバグと、置換前後で長さが変わると置換範囲を誤るバグ修正。</li></ul>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">QKH3J463</span>
+</div>
+</div>
+
+</div>
+
+<p><a href="/petc3gou/?Toukou%2FLEX" title="Toukou/LEX (1300d)">Toukou/LEX</a>と同じプロジェクトにまとめられている。ライブラリ本体がABGREGEX、テスト用プログラムがABGREGEX_TEST。</p>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (1337d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : 猿脳には理解できなひ (<span class="comment_date">2015/08/08 (土) 08:55:12</span>)</li>
+<li><strong>名無しさん</strong> : つ<a href="http://www.mnet.ne.jp/~nakama/" rel="nofollow">サルにもわかる正規表現入門</a> (<span class="comment_date">2015/08/08 (土) 11:59:25</span>)</li>
+<li><strong>YOUMe</strong> : 便利だー!!!特にJavascript経験してると正規表現は必須ですからね〜 (<span class="comment_date">2016/01/29 (金) 17:14:52</span>)</li>
+<li><strong>YOUMe</strong> : 正規表現<a href="http://youme.nagoya/" rel="nofollow">http://youme.nagoya/</a> (<span class="comment_date">2016/01/31 (日) 09:55:12</span>)</li>
+<li><strong>猫好</strong> : 正規表現開発してたけど先にあったとは... (<span class="comment_date">2018/12/24 (月) 08:33:40</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/正規表現ライブラリ" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="630e414316c30da46d7656a5dfbfc8fe" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (1037d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (953d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2390d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (6d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (6d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (1032d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (227d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1161d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (373d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (656d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (5d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (1097d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (6d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1628d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (608d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (3h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (505d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (216d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/03/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CC%A5%A4%A5%F3%A5%AF%A5%E9%A5%D5%A5%C8" title="ヌインクラフト nuincraft (1d)">ヌインクラフト nuincraft</a></li>
+</ul>
+<h4>2022/03/21</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FNa%A4%CEMML%BD%B8" title="NaのMML集 (3d)">NaのMML集</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (3d)">リズミカルおもちつきTG NEO</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (3d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2022/03/20</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2F%A5%E6%A1%BC%A5%B6%A1%BC%BC%B1%CA%CC%A5%B3%A1%BC%A5%C9" title="プチコン3号/BIG ユーザー識別コード (4d)">プチコン3号/BIG ユーザー識別コード</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA" title="幻想楽遊戯 (4d)">幻想楽遊戯</a></li>
+</ul>
+<h4>2022/03/19</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (5d)">OFコーナー3号</a></li>
+</ul>
+<h4>2022/03/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Contact" title="管理人へ連絡 (6d)">管理人へ連絡</a></li>
+ <li><a href="/petc3gou/?Mame" title="まめちしき (6d)">まめちしき</a></li>
+ <li><a href="/petc3gou/?Memo" title="プチコンメモ (6d)">プチコンメモ</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (505d)">Miiverse終了後の避難先まとめ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FVAR_CHK_TOOL" title="Toukou/VAR_CHK_TOOL (185d)">VARIABLE VIEWER<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FHiscore" title="Mame/Hiscore (360d)">ハイスコアの保存方法<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (1186d)">HERO2 一台で二人同時プレイ<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D5%A5%EA%A1%BC%C1%C7%BA%E0%A1%D6%A4%DC%A4%C3%A4%B5%A4%F3%A1%D7" title="Toukou/フリー素材「ぼっさん」 (1627d)">フリー素材「ぼっさん」<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (427d)">ユニコードについて<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSHSENDER" title="Toukou/SHSENDER (115d)">SHSENDER<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CC%A5%A4%A5%F3%A5%AF%A5%E9%A5%D5%A5%C8" title="Toukou/ヌインクラフト (1d)">ヌインクラフト nuincraft<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="Toukou/リズミカルおもちつきKR (6d)">リズミカルおもちつきKR MAX<span class="counter">(7)</span></a></li>
+ <li><span title="Toukou/正規表現ライブラリ  (1187d)">正規表現ライブラリ<span class="counter">(7)</span></span></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1662d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1867 回、本日は 6 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.083 秒  | このページの最終更新 : 2018/12/24 (月) 08:33:40  (1187d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

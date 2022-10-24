@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>投稿プログラム : DosankoOSX (旧 DosankoMiniOS) - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : DosankoOSX (旧 DosankoMiniOS) - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, OSもどき, DsOS, QRコード, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FDosankoOSX">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FDosankoOSX">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FDosankoOSX">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FDosankoOSX">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : DosankoOSX (旧 DosankoMiniOS)</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FDosankoOSX">DosankoOSX</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.196sec. -->
+<div class="contents">
+<ul><li><a href="#Info160808">  投稿者からのお知らせ(17/10/18更新) </a></li>
+<li><a href="#Info">  お知らせ </a></li>
+<li><a href="#Summary">  概要 </a></li>
+<li><a href="#Tokutyo"> 主な特徴</a></li>
+<li><a href="#Ap">  アプリについて </a>
+<ul><li><a href="#Oap1"> オリジナルアプリを作るときは</a></li>
+<li><a href="#Oap2">  オリジナルアプリをつくったときは </a></li></ul></li>
+<li><a href="#Info"> 更新情報</a>
+<ul><li><a href="#plan"> Ver4.4→Ver Final(予定) </a></li></ul></li>
+<li><a href="#Shot"> スクリーンショット・動画</a></li>
+<li><a href="#QR">  QR コード </a>
+<ul><li><a href="#Q1"> 本体</a></li>
+<li><a href="#Q2"> CHRデータ</a>
+<ul><li><a href="#Q2-1"> SPU0</a></li>
+<li><a href="#Q2-2"> SPU5</a></li></ul></li>
+<li><a href="#Q3"> アプリマネージャー</a></li>
+<li><a href="#ApQR"> アプリ</a></li></ul></li>
+<li><a href="#Ikenbako"> 意見箱</a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2013年3月28日投稿
+/2013年8月12日名称変更
+/ 投稿者 : 道産子(dosankosoft)
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> <a href="/petc/?cmd=taglist&amp;tag=DsOS">DsOS</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="Info160808">投稿者からのお知らせ(17/10/18更新)</h3>
+<p>こちらのWikiではかなり久しぶりとなってしまいましたが、OS開発の現状をお知らせします。<br />
+Twitterでもぶつぶつ言っていますが、部活、勉強などで忙しく、OS開発がだいぶ前から凍結しています(その間[かん]に、好奇心からゆっくり実況も立ち上げましたが、同じような理由により停滞しています)。<br />
+大学に入ってからなら（入れるかどうか分からないが）まとまった時間が出来そうなので、そこを利用したいと思っています。なるべく早期にOSXおよび3DS版OSを手配できるように尽力します(皆さまの要望もなるべく吸収します)。2020年(殴)には間に合わせますので、首を長くしてお待ち願います。</p>
+
+<h3 id="Info">お知らせ</h3>
+<ul><li>次回のバージョンアップでDosankoOSXはDsOSに附属します。</li>
+<li>大変残念なお知らせですが、プチコン3号の発売によるDosankoOS3 (仮称)の開発開始に伴い、次回のバージョンアップを以ってDosankoOSXのアップデートを終了させていただきます。<br class="spacer" />ご要望などはお早めに申しつけをお願いします。	(<a href="http://dosankosoft.esy.es/software/dosankoosx/end_updatingsupport.html" rel="nofollow">詳細はこちら</a>)</li>
+<li><a href="http://petitcomputer.wikia.com/wiki/DosankoOSX" rel="nofollow">DosankoOSXを海外のWikiに投稿しました。</a></li>
+<li>このOSのタブレット版「<a href="/petc/?Toukou%2FDosankoMiniTablet" title="Toukou/DosankoMiniTablet (2137d)">DosankoMiniTablet</a>」も宜しくお願いします。</li></ul>
+
+<h3 id="Summary">概要</h3>
+<p>道産子のOSもどきです。</p>
+
+<h3 id="Tokutyo">主な特徴</h3>
+<ul><li>マウスカーソルによる簡単操作</li>
+<li>選べる2種類のカーソル操作</li>
+<li>アプリを自分好みにインストール出来る</li>
+<li>シンプル</li></ul>
+
+<h3 id="Ap">アプリについて</h3>
+<p>アプリの名前は、すべて<span class="basic-text">ＤＳＯＸＸＸＸＸ</span>(XXXXXには英数字五文字以内)です。「@XXXXX」がアプリIDになります。</p>
+
+<h4 id="Oap1">オリジナルアプリを作るときは</h4>
+<ul><li>プログラム先頭に、<span class="basic-text">＠</span>任意の英数字五文字以内　のラベルを組み込んでください。</li>
+<li>必ずどこかに<span class="basic-text">ＧＯＴＯ　＠ＭＥＮＵ</span>または<span class="basic-text">ＲＥＴＵＲＮ</span>のルーチンを組み込んでください。</li>
+<li>SPU0とSPU5はMiniOSのキャラで占領されているので、そこのデフォルトキャラを使用したい方は、CHRINIT命令で使ってください。(アプリ終了後にOSのSPUが再読み込みされます)</li>
+<li>上の()で示した理由から、独自のCHRを使用してもかまいません。</li>
+<li><a href="http://dosankosoft.esy.es/software/dosankoosx/mouse.html" rel="nofollow">マウスカーソルのサンプルはこちら</a></li></ul>
+
+<h4 id="Oap2">オリジナルアプリをつくったときは</h4>
+<p><span class="basic-text">ＳＡＶＥ”ＤＳＯ</span>アプリIDの英数字<span class="basic-text">”</span>と保存すると、このOSに対応するようになります。</p>
+<p>また、それを公開してくださるとウサギの１００倍くらい跳ねまわって（そこまでなるかよ！）喜びます。
+<a href="http://ws.formzu.net/fgen/S98350409/" rel="nofollow">公開用フォーム、始めました。</a></p>
+
+<h3 id="Info">更新情報</h3>
+
+<h4 id="plan">Ver4.4→Ver Final(予定)</h4>
+<p>進捗状況も載せています。</p>
+<ul><li>一部アイコンの高解像度化(16×16→32×32)→対応完了</li>
+<li>OSのアンインストール機能追加→対応完了</li>
+<li>「スライド相応移動」を追加(ノートパソコンのような操作方法)→対応完了</li>
+<li>配列変数を使った、プログラムのブラッシュアップ</li>
+<li>アプリのショートカット配置機能（やや大掛かりになる見込み）</li>
+<li>ユーザーオリジナルのマウスカーソル作成機能（やや大掛かりになる見込み）</li>
+<li>リソース初期化をより徹底させる（すぐ対応出来る見込み）</li>
+<li>時間表示の改善（すぐ対応出来る見込み）</li></ul>
+<p>(集まった要望もこちらに転記していますが、見落としなどあったらお知らせください)</p>
+<p>これより以前の更新情報は<a href="http://dosankosoft.esy.es/index.html" rel="nofollow">道産子ソフト公式サイト</a>のzipでご覧いただけます。</p>
+
+<h3 id="Shot">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDosankoOSX&amp;openfile=DSMINIOS.SS.png" title="DSMINIOS.SS.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDosankoOSX&amp;src=DSMINIOS.SS.png" alt="DSMINIOS.SS.png" title="DSMINIOS.SS.png" width="256" height="192" /></a></div>
+
+<span class="nicovideo movie-wrap">
+	<script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm21279159/script?w=337&h=265"></script><noscript>【ニコニコ動画】<a href="http://ext.nicovideo.jp/">sm21279159</a></noscript>
+</span>
+
+<h3 id="QR">QR コード</h3>
+
+<h4 id="Q1">本体</h4>
+<p>プチコンmkII 向けの QR コードです。<br />
+<span style="color:red">2013/11/3に更新しました！</span><br class="spacer" />
+<span style="color:red">名称が変わりました。旧版のDSMINIOSは使いませんので削除していただいて構いません。</span></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＰＲＧ：ＤＳＯＳＸ</span></th></tr><tr><th class="style_th">Ver4.4</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDosankoOSX&amp;openfile=QR-DSOSXV4.4.png" title="QR-DSOSXV4.4.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDosankoOSX&amp;src=QR-DSOSXV4.4.png" alt="QR-DSOSXV4.4.png" title="QR-DSOSXV4.4.png" width="770" height="383" /></a></td></tr></tbody></table></div>
+
+<h4 id="Q2">CHRデータ</h4>
+<p>こちらはCHRのQRです。主にアイコンのデータとして使います。</p>
+
+<h5 id="Q2-1">SPU0</h5>
+<p><span style="color:red">2013/11/3に更新しました！</span></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＣＨＲ：ＤＳＯＳＳＰＵ０</span></th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDosankoOSX&amp;openfile=QR-DSOSSPU0V4.4.png" title="QR-DSOSSPU0V4.4.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDosankoOSX&amp;src=QR-DSOSSPU0V4.4.png" alt="QR-DSOSSPU0V4.4.png" title="QR-DSOSSPU0V4.4.png" width="317" height="124" /></a></td></tr></tbody></table></div>
+
+<h5 id="Q2-2">SPU5</h5>
+<p><span style="color:red">永遠に更新しません。</span></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＣＨＲ：ＤＳＯＳＳＰＵ５</span></th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDosankoOSX&amp;openfile=QR-DSOSSPU5.png" title="QR-DSOSSPU5.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDosankoOSX&amp;src=QR-DSOSSPU5.png" alt="QR-DSOSSPU5.png" title="QR-DSOSSPU5.png" width="776" height="380" /></a></td></tr></tbody></table></div>
+
+<h4 id="Q3">アプリマネージャー</h4>
+<p>こちらはアプリマネージャー(アプリ保存領域)のQRです。<br />
+<span style="color:red">11/4に緊急修正しました。</span></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">ＰＲＧ：ＤＳＯＳＡＰＰ</span></th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FDosankoOSX&amp;openfile=QR-DSOSAPPV4.4.png" title="QR-DSOSAPPV4.4.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FDosankoOSX&amp;src=QR-DSOSAPPV4.4.png" alt="QR-DSOSAPPV4.4.png" title="QR-DSOSAPPV4.4.png" width="315" height="133" /></a></td></tr></tbody></table></div>
+<p><a href="http://dosankosoft.esy.es/index.html" rel="nofollow">道産子ソフト公式サイト</a>では、仕様書と更新情報が同梱されたzipが配布されています。</p>
+
+<h4 id="ApQR">アプリ</h4>
+<p>プチコンmkII向けのアプリのQRコードは<a href="http://dosankosoft.esy.es/index.html" rel="nofollow">道産子ソフト公式サイト</a>に公開されていきます。</p>
+
+<h3 id="Ikenbako">意見箱</h3>
+<p>ダメだこりゃという方は遠慮なく具体的な意見をお聞かせください。出来る限りお応えします。改善した意見は移動させていただきます。<br class="spacer" /><strong>DosankoOSXのバージョンアップは近いうちに終了します。要望などはお早めに申しつけをお願いします。</strong></p>
+<p>※バグなどについてはなるべく事後報告をお願い致します。(解決したかどうかわからないため)</p>
+<p><a href="http://dosankosoft.esy.es/software/dosankoosx/log.html" rel="nofollow">改善済みログ</a></p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">2013年
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<ul><li><strong>ヤッフー</strong> : アプリ保存領域はOS自体にくっつけた方が良いと思う (<span class="comment_date">2013/05/20 (月) 16:20:18</span>)
+<ul><li><strong>道産子</strong> : もし、OSのみアップデートした際に、いちいちアプリを再度取り込むのはアレかと思われます。また、MENを同時にアップデートするのはできないので、実現は難しいかと・・・。ごめんなさい。 (<span class="comment_date">2013/05/20 (月) 16:54:07</span>)</li>
+<li><strong>ヤッフー</strong> : 確かにそうですね..._(^^;)ゞ (<span class="comment_date">2013/05/21 (火) 07:56:48</span>)</li></ul></li>
+<li><strong>いったん</strong> : プログラムリスト見て気づいたんですけど、道産子さんって配列変数全く使ってないですよね。つかえばｑｒ何枚も削れるし、リストも見やすくなると思いますよ。初心者講座に詳しくのってたので見てみては？ (<span class="comment_date">2013/05/20 (月) 22:27:29</span>)<span style="color:red">★Ver3.1で改善(?)★</span>
+<ul><li><strong>.EXE</strong> : (<del>何それ。</del>) (<span class="comment_date">2013/05/20 (月) 22:59:24</span>)</li>
+<li><strong>道産子</strong> : 使ってみて見ます。 (<span class="comment_date">2013/05/20 (月) 23:34:06</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑EXEさんでいつも思うのですが横からそのように斜線と括弧を付けるくらいなら書き込まないほうがいいのでは (<span class="comment_date">2013/05/24 (金) 19:30:29</span>)</li></ul></li>
+<li><strong>cmk、</strong> : デスクトップ画面によく使うアプリのショートカット作れるようにしたら？ (<span class="comment_date">2013/07/08 (月) 22:04:19</span>)
+<ul><li><strong>道産子(dosankosoft)</strong> : 是非検討させて頂きます。 (<span class="comment_date">2013/07/08 (月) 23:30:06</span>)</li></ul></li>
+<li><strong>デイズ</strong> : あとアプリインストールでIDをいれると終了してしまうという状態なんですどうしたらいいですか? (<span class="comment_date">2013/07/27 (土) 11:01:03</span>)
+<ul><li><strong>道産子(dosankosoft)</strong> : ↑<span class="basic-text">ＳＴＯＰ</span>命令を使っているため、「作品を見る」からだと、プチコンの仕様でメニューに戻ってしましますので、「プログラムを作る」からお願いします。ちなみに起動はどちらからでもOKです。 (<span class="comment_date">2013/07/27 (土) 11:18:24</span>)</li></ul></li>
+<li><strong>かず</strong> : cmk、さんのって、出来そうですね。　アイコンの下の名前は、MEMで保存させて、読み込んで、変数＄に入れて表示させれば、出来ます！ (<span class="comment_date">2013/07/31 (水) 09:06:48</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑そうですね。ではそのアイコン文字列をどうしようか、考えておきます。 (<span class="comment_date">2013/07/31 (水) 21:59:07</span>)</li>
+<li><strong>名無しさん</strong> : アイコンを高解像度に（ドットを細かく）していただけませんか？ (<span class="comment_date">2013/11/17 (日) 10:42:32</span>)
+<ul><li><strong>道産子(dosankosoft)</strong> : CHRのQRが多くなりますが、出来そうです。 (<span class="comment_date">2013/11/18 (月) 22:39:41</span>)
+</td></tr></table></li></ul></li>
+<li><strong>名無しさん</strong> : マウスカーソルが自分で作れたら面白そう！ (<span class="comment_date">2014/02/22 (土) 03:53:43</span>)</li>
+<li><strong>名無しさん</strong> : ↑CHREDで <span class="basic-text">ＤＳＯＳＳＰＵ０</span>を編集できればいけそう　 (<span class="comment_date">2014/02/22 (土) 11:45:00</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑その方法でもいけます。　↑×2前向きに検討させていただきます。 (<span class="comment_date">2014/02/22 (土) 22:44:58</span>)</li>
+<li><strong>フラッピーバード</strong> : Flppy バード入れたらよりいいかも (<span class="comment_date">2014/03/07 (金) 17:12:14</span>)</li>
+<li><strong>天郷思音</strong> : リソース初期化甘いのでフォント読んだ後だと表示が変わるのと時間の表示は&quot;20:0&quot;みたいに分が1ケタにならないほうが良い (<span class="comment_date">2014/03/10 (月) 20:02:52</span>)</li>
+<li><span style="color:#2277ee"><strong>gbt</strong></span>  : <span class="basic-text">ＬＥＦＴ＄（ＴＩＭＥ＄，５）</span>にすれば、短い上に00:02とかって表示になりますよ。 (<span class="comment_date">2014/03/10 (月) 22:01:09</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 次回修正させていただきます。　↑ ありがとうございます。この方法を取らせていただくつもりです。 (<span class="comment_date">2014/03/11 (火) 13:47:21</span>)</li>
+<li><strong>かいん</strong> : ちょっと不具合が見つかりました。使ったばかりですがマウスを矢印右↑マウスに変更して操作するとマウスが消えてクリックすると言語が英語になっていてシャットダウンメニューになり操作不能になります。なにをしてもだめでしたどうしたらいいですか？ (<span class="comment_date">2015/09/19 (土) 17:38:23</span>)</li>
+<li><strong>かいん</strong> : DSOSXのすべてのデータを削除してQRコードやり直したら出来ました (<span class="comment_date">2015/10/17 (土) 17:59:38</span>)</li>
+<li><strong>かいん</strong> : あ、これって言語問題じゃないんですかね。↑カソールにしたら言語が英語になってそうさ不能になるし、言語のみ英語にして再起動すると標準マウスでも操作不能です。 (<span class="comment_date">2015/10/18 (日) 07:52:17</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : フラッピーバードさんへ。完全に見落としていました。ごめんなさい。プリインストールアプリにFluppy Birdを組み込むという解釈でよろしいでしょうか？ (<span class="comment_date">2016/08/17 (水) 18:44:54</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : かいんさんへ。確認が遅くなってしまいすみません。検証作業を進めていきます。こちらから追加情報を求める場合もありますのでよろしくお願いします。 (<span class="comment_date">2016/08/17 (水) 18:45:44</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/DosankoOSX" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="976677086b6efb914ba52f5505064c8f" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3381d)">掲示板</a>へ)</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">2013年
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<ul><li><strong>Shiftキー</strong> : デスクトップじゃない (<span class="comment_date">2013/02/11 (月) 13:48:16</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑じゃあ何てすればいいでしょうか? (<span class="comment_date">2013/02/11 (月) 14:30:20</span>)</li>
+<li><strong>進</strong> : ランチャ (<span class="comment_date">2013/02/11 (月) 16:36:08</span>)</li>
+<li><strong>名無しさん</strong> : ランチャ (<span class="comment_date">2013/02/11 (月) 18:44:39</span>)</li>
+<li><strong>名無しさん</strong> : 期待してる (<span class="comment_date">2013/02/11 (月) 18:45:44</span>)</li>
+<li><strong>名無しさん</strong> : 専用アプリのみが動くランチャだな (<span class="comment_date">2013/02/11 (月) 18:47:02</span>)</li>
+<li><strong>道産子の初心者</strong> : DosankoMiniOsでokですか? (<span class="comment_date">2013/02/11 (月) 19:45:34</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑×3 ありがとうございます。 (<span class="comment_date">2013/02/11 (月) 19:46:27</span>)</li>
+<li><strong>Ittan</strong> : アプリの簡易時計について一行目がおかしいのでは？もしA$が&quot;CL&quot;であるかを確認するのであればLENは入りませんよ。「IF A$==&quot;CL&quot;」で出来ます。あとアドバイスですが、BGMを登録するのは最初にやっておいて、後で呼び出すようにすると良いと思います。頑張ってください。 (<span class="comment_date">2013/02/11 (月) 19:57:34</span>)</li>
+<li><strong>.EXE</strong> : ランチャだな。 (<span class="comment_date">2013/02/12 (火) 18:49:18</span>)</li>
+<li><strong>名無しさん</strong> : というよりosではないな、アプリ動かしているのはプチコンだし。 (<span class="comment_date">2013/02/12 (火) 19:32:41</span>)</li>
+<li><strong>Citrine</strong> : ↑それじゃ、何で他のOSもどきには言わないの？ (<span class="comment_date">2013/02/12 (火) 20:44:14</span>)</li>
+<li><strong>Shiftキー</strong> : ↑2というよりプチコンはBASICじゃないな、ソフト動かしているのはDSiや3DSだし。 (<span class="comment_date">2013/02/12 (火) 20:52:52</span>)</li>
+<li><strong>名無しさん</strong> : ↑　ソフトウェアとハードウェアの区別はちゃんと付けよう (<span class="comment_date">2013/02/12 (火) 20:55:17</span>)</li>
+<li><strong>.EXE</strong> : dosanko runcher？ スペルミス (<span class="comment_date">2013/02/12 (火) 21:27:11</span>)</li>
+<li><strong>kerious</strong> : Dude, WTF&#191; This isn't a desktop, it's a crappy date and time display. XP (<span class="comment_date">2013/02/12 (火) 22:32:33</span>)</li>
+<li><strong>ケリオス（和訳）</strong> : おい、なんだこれは。デスクトップではない、これは安っぽい日付と時刻の表示するものだ。  (<span class="comment_date">2013/02/12 (火) 23:12:10</span>)</li>
+<li><strong>名無しさん</strong> : Me,too. I think so. (<span class="comment_date">2013/02/13 (水) 15:22:52</span>)</li>
+<li><strong>スマコン</strong> : スク書よろ (<span class="comment_date">2013/02/13 (水) 17:39:04</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑改名後、仕様を大幅改変した後に撮影しますね。 (<span class="comment_date">2013/02/14 (木) 17:55:25</span>)</li>
+<li><strong>名無しさん</strong> : かさヴぁるなぁ (<span class="comment_date">2013/02/14 (木) 18:11:41</span>)</li>
+<li><strong>名無しさん</strong> : ↑確かに　かさばる (<span class="comment_date">2013/02/14 (木) 18:12:01</span>)</li>
+<li><strong>名無しさん</strong> : アプリは別ファイルをEXECで実行するよりAPPENDしてGOSUBで使用する方がいいと思う。そうすればAPPENDしたあとはそのファイルは削除できるので容量の節約になる。 (<span class="comment_date">2013/02/14 (木) 18:20:07</span>)</li>
+<li><strong>道産子の初心者</strong> : いい案をありがとうございます。採用します! (<span class="comment_date">2013/02/15 (金) 23:41:05</span>)</li>
+<li><strong>カイン</strong> : ツール増やして下さい！ (<span class="comment_date">2013/02/19 (火) 05:20:00</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑DosankoMiniOS配信後、随時配信していきます。 (<span class="comment_date">2013/02/19 (火) 17:22:30</span>)</li>
+<li><strong>カイン</strong> : 了解です！ (<span class="comment_date">2013/03/01 (金) 09:24:34</span>)</li>
+<li><strong>名無しさん</strong> : いいものになりそうな希ガス (<span class="comment_date">2013/03/20 (水) 15:32:18</span>)</li>
+<li><strong>道産子の初心者</strong> : APPENDがプログラム中に使えないことが判明し、開発が凍結しました・・・。 (<span class="comment_date">2013/03/25 (月) 22:37:41</span>)</li>
+<li><strong>.EXE</strong> : 実行モード専用だったよね。 (<span class="comment_date">2013/03/25 (月) 23:55:42</span>)</li>
+<li><strong>名無しさん</strong> : 掲示板見ろ (<span class="comment_date">2013/03/26 (火) 00:40:41</span>)</li>
+<li><strong>道産子の初心者</strong> : アプリインストール機能がやっと実装出来ました!!ユーザー機能をつけたらうpできます! (<span class="comment_date">2013/03/28 (木) 11:10:37</span>)</li>
+<li><strong>道産子の初心者</strong> : MiniOSが出来ました！ (<span class="comment_date">2013/03/28 (木) 15:10:34</span>)</li>
+<li><strong>名無しさん</strong> : この分量の説明書と仕様ならば別途テキストファイルで用意するのではなくWikiに記述した方が読みやすいと思う (<span class="comment_date">2013/03/29 (金) 11:35:05</span>)</li>
+<li><strong>名無しさん</strong> : いつも余計なファイルくっつけるよね。そのせいですぐデリーとなんだが (<span class="comment_date">2013/03/29 (金) 15:39:36</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑ごめんなさい・・・。 (<span class="comment_date">2013/03/29 (金) 20:05:14</span>)</li>
+<li><strong>.EXE</strong> : 何故このOS自体にアプリをつけない？ (<span class="comment_date">2013/03/29 (金) 20:30:36</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑アプリは自分好みにインストールするので、申し訳ございませんがもともと入っているアプリはありません。アプリは随時公開していきます。明日また一つアプリを公開予定なのでお待ちください。 (<span class="comment_date">2013/03/29 (金) 23:28:08</span>)</li>
+<li><strong>名無しさん</strong> : 追加していくとか高確率で追加しなくなる　OTYAXもアプリ作ろうとして作りかけのものGあ (<span class="comment_date">2013/03/30 (土) 00:00:35</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : 本当にすいません。手違いでQRコードと説明書を削除してしまいました。大変恐れ入りますが、再度のQRアップロードと、説明の追記(説明書きを添付ファイルにするのは無しでお願いします。従来通りWiki本文に書いてください)をお願いできますでしょうか。 (<span class="comment_date">2013/03/30 (土) 00:17:03</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑了解しました。QRを本日中に再度うpします。 (<span class="comment_date">2013/03/30 (土) 07:47:57</span>)</li>
+<li><strong>道産子の初心者</strong> : QRを再度うｐしました。ついでにバージョンアップしました。 (<span class="comment_date">2013/03/30 (土) 10:49:12</span>)</li>
+<li><strong>道産子の初心者</strong> : マニュアルを掲載しました。これはdosankosoftに公開しているzip中の説明書とほぼ同じ内容です。 (<span class="comment_date">2013/03/30 (土) 12:06:46</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑一応、株式会社もどきです。w (<span class="comment_date">2013/04/01 (月) 07:51:37</span>)</li>
+<li><strong>名無しさん</strong> : 株式会社（かぶしきがいしゃ）とは、細分化された社員権（株式）を有する株主から有限責任の下に資金を調達して株主から委任を受けた経営者が事業を行い、利益を株主に配当する、法人格を有する企業形態である。 (<span class="comment_date">2013/04/01 (月) 08:48:02</span>)</li>
+<li><strong>名無しさん</strong> : ↑TopazSoftwareやPTCCorpにも張るのよろしく (<span class="comment_date">2013/04/01 (月) 08:50:01</span>)</li>
+<li><strong>名無しさん</strong> : ↑？ (<span class="comment_date">2013/04/01 (月) 08:51:12</span>)</li>
+<li><strong>名無しさん</strong> : ここに突っ込むならそこにも突っ込んでくれってこった (<span class="comment_date">2013/04/01 (月) 09:36:19</span>)</li>
+<li><strong>道産子の初心者</strong> : お待たせしました。明日にバージョンアップする予定です。 (<span class="comment_date">2013/04/01 (月) 15:09:24</span>)</li>
+<li><strong>道産子の初心者</strong> : また、次回のアップデートにより、今のユーザーデータは使わなくなります。用量節約したい方はユーザー消去を行ってください。 (<span class="comment_date">2013/04/01 (月) 15:14:22</span>)</li>
+<li><strong>道産子の初心者</strong> : アップデートしました！！ (<span class="comment_date">2013/04/02 (火) 15:45:26</span>)</li>
+<li><strong>名無しさん</strong> : 何をロードしているのかと思ったらただのwaitだったｗ (<span class="comment_date">2013/04/02 (火) 15:56:47</span>)</li>
+<li><strong>道産子の初心者</strong> : ↑はいｗｗただの雰囲気付けですｗｗ (<span class="comment_date">2013/04/02 (火) 16:08:02</span>)</li>
+<li><strong>道産子</strong> : お待たせしました。明後日にバージョンアップ出来たらします。毎回バージョンアップする度にアプリが消えてしまう事態を改善しました。 (<span class="comment_date">2013/04/06 (土) 10:11:41</span>)</li>
+<li><strong>道産子</strong> : ごめんなさい。うｐ遅れます。出せるときに出します。 (<span class="comment_date">2013/04/08 (月) 20:12:30</span>)</li>
+<li><strong>Citrine</strong> : おいちょっとまった！！TopazSoftwareは会社じゃない！！ (<span class="comment_date">2013/04/08 (月) 20:22:14</span>)</li>
+<li><strong>陰陽玉-黒</strong> : うん (<span class="comment_date">2013/04/08 (月) 21:06:50</span>)</li>
+<li><strong>名無しさん</strong> : これEXECか (<span class="comment_date">2013/04/09 (火) 20:21:28</span>)</li>
+<li><strong>道産子</strong> : ↑? (<span class="comment_date">2013/04/09 (火) 21:49:46</span>)</li>
+<li><strong>名無しさん</strong> : EXEC知らないの？ (<span class="comment_date">2013/04/10 (水) 15:07:26</span>)</li>
+<li><strong>道産子</strong> : ↑そういうわけではないですが、なんで急に言い出すのかなとおもって・・。 (<span class="comment_date">2013/04/13 (土) 12:57:40</span>)</li>
+<li><strong>道産子</strong> : アップデートしました。 (<span class="comment_date">2013/04/13 (土) 13:53:48</span>)</li>
+<li><strong>.EXE</strong> : アプリ2つだけ！？ (<span class="comment_date">2013/04/14 (日) 08:11:51</span>)</li>
+<li><strong>名無しさん</strong> : ↑じゃあお前が作れ (<span class="comment_date">2013/04/14 (日) 08:22:18</span>)</li>
+<li><strong>.EXE</strong> : おk (<span class="comment_date">2013/04/14 (日) 08:43:53</span>)</li>
+<li><strong>道産子</strong> : ↑×3 既にアプリ二つ準備出来ているので、今季中に公開したいです。また、公開の間までにも、随時開発します。 (<span class="comment_date">2013/04/14 (日) 10:15:11</span>)</li>
+<li><strong>名無しさん</strong> : もうちょっとアプリがそろってから公開できなかったの？完成したものを投稿しましょうってかいてあるじゃん (<span class="comment_date">2013/04/14 (日) 11:30:13</span>)</li>
+<li><strong>道産子</strong> : ↑それは僕の過ちでした。ごめんなさい・・・。あと、ゴールデンウィーク中にアプリを三つ公開する予定です。こちらの事情もあり、アプリは頻繁に公開出来ないかもしれませんが、ご理解頂きますよう、お願い致します。(長文失礼致しました。) (<span class="comment_date">2013/04/24 (水) 23:10:48</span>)</li>
+<li><strong>道産子</strong> : 今公開出来そうなので公開します。 (<span class="comment_date">2013/04/24 (水) 23:24:19</span>)</li>
+<li><strong>道産子</strong> : アプリを追加しました！ (<span class="comment_date">2013/04/24 (水) 23:37:31</span>)</li>
+<li><strong>ぐー</strong> : ユ−ザ−の2つめ読めないっっ (<span class="comment_date">2013/04/28 (日) 10:23:43</span>)</li>
+<li><strong>道産子</strong> : ↑原因を調査しますのでお待ちください。 (<span class="comment_date">2013/04/28 (日) 11:07:13</span>)</li>
+<li><strong>名無しさん</strong> : アプリインストールをするときの、「APPEND：DSOSAPSP：CONT」は、「APPEND：DSOSAPSP”：CONT」じゃないですか？ (<span class="comment_date">2013/04/28 (日) 11:24:51</span>)</li>
+<li><strong>Shiftキー</strong> : 起動もっと早くしてほしい (<span class="comment_date">2013/04/28 (日) 15:09:34</span>)</li>
+<li><strong>名無しさん</strong> : ↑自分でwait削ればいい (<span class="comment_date">2013/04/28 (日) 15:42:29</span>)</li>
+<li><strong>道産子</strong> : ↑×3ご報告ありがとうございます。ゴールデンウイーク中に修正します。 (<span class="comment_date">2013/04/28 (日) 17:47:42</span>)</li>
+<li><strong>CapsLockキー</strong> : ↑2それでもいいんだけどできれば道産子さんが短くしてほしい (<span class="comment_date">2013/04/28 (日) 18:52:02</span>)</li>
+<li><strong>名無しさん</strong> : ShiftキーさんBASICOSで言ってる事と矛盾しているな。気が変わったんだろうか (<span class="comment_date">2013/04/28 (日) 19:12:34</span>)</li>
+<li><strong>道産子</strong> : ↑確かにそうですね。何故でしょうか・・・? (<span class="comment_date">2013/04/28 (日) 19:15:56</span>)</li>
+<li><strong>道産子</strong> : ↑×3 次のアップデートで高速起動モードを搭載する予定です。 (<span class="comment_date">2013/04/28 (日) 19:17:25</span>)</li>
+<li><strong>がんばる卓球部</strong> : 道産子さん、アプリ作りました。（BASICOSの使いづらいアプリのですが、、、） (<span class="comment_date">2013/04/29 (月) 11:51:39</span>)</li>
+<li><strong>道産子</strong> : まとめwikiに公開してもらって結構です。 (<span class="comment_date">2013/04/29 (月) 14:05:29</span>)</li>
+<li><strong>Shiftキー</strong> : ↑5・4高速起動モードがないのとbasicosより遅いから。いらんPCのほうが早い気がする (<span class="comment_date">2013/04/29 (月) 14:06:25</span>)</li>
+<li><strong>Shiftキー</strong> : bios画面→xpロゴのところで下のバーが1回とちょっと→ようこそ→起動音がなる前にデスクトップ　※SSDはつけていない (<span class="comment_date">2013/04/29 (月) 14:10:00</span>)</li>
+<li><strong>Shiftキー</strong> : ようこそ画面の表示までがいらんPCのほうが早かった (<span class="comment_date">2013/04/29 (月) 14:21:54</span>)</li>
+<li><strong>名無しさん</strong> : ようするにBASICOS推しじゃん。 (<span class="comment_date">2013/04/29 (月) 16:01:15</span>)</li>
+<li><strong>道産子</strong> : どうやらユーザー２のアプリマネージャーのQR２個目がユーザー３の物になっていたようです。明日修正しますので、お待ちください。 (<span class="comment_date">2013/04/29 (月) 20:08:26</span>)</li>
+<li><strong>道産子</strong> : 修正しました。また、唐突ですが、バージョンアップしました!!! (<span class="comment_date">2013/04/30 (火) 10:14:09</span>)</li>
+<li><strong>がんばる卓球部</strong> : ↑x6道産子さん、専用アプリを公開するページを、wiki内で作っていただけませんか。がんばる卓球部の名前よりもいいとおもうので、、、 (<span class="comment_date">2013/05/01 (水) 19:38:52</span>)</li>
+<li><strong>道産子</strong> : ↑専用のフォームを手配します。お待ちください。 (<span class="comment_date">2013/05/01 (水) 21:25:47</span>)</li>
+<li><strong>道産子</strong> : <a href="http://form1.fc2.com/form/?id=846504" rel="nofollow">フォームを用意しました。</a> (<span class="comment_date">2013/05/01 (水) 21:33:22</span>)</li>
+<li><strong>道産子</strong> : ↑×3 専用ページを作ると、wikiのルールにそぐわなくなるので、フォームで投稿されたアプリは、DosankoMiniOSのページに公開されます。 (<span class="comment_date">2013/05/01 (水) 21:39:58</span>)</li>
+<li><strong>がんばる卓球部</strong> : ありがとうございます。明日にでも公開できれば、と思っています。一応、スキーゲームです。 (<span class="comment_date">2013/05/01 (水) 22:29:20</span>)</li>
+<li><strong>道産子</strong> : ↑投稿しました。<a href="http://www49.atwiki.jp/dosankosoft/pages/20.html" rel="nofollow">ご確認願います。</a> (<span class="comment_date">2013/05/02 (木) 22:02:50</span>)</li>
+<li><strong>道産子</strong> : 本日より6日迄旅行に行って参ります。そのため、旅行期間中に投稿されたアプリは直ぐに公開出来ませんので、ご了承願います。 (<span class="comment_date">2013/05/03 (金) 06:34:30</span>)</li>
+<li><strong>がんばる卓球部</strong> : スキーアプリについて 先日投稿したスキーゲームで不具合がありました。 (<span class="comment_date">2013/05/03 (金) 12:22:40</span>)</li>
+<li><strong>がんばる卓球部</strong> : アプリ起動画面で、ストップして、ソースの@skiのiをとって保存してください。申し訳ございません。 (<span class="comment_date">2013/05/03 (金) 12:24:48</span>)</li>
+<li><strong>道産子</strong> : ↑了解しました。帰ってきたらQRを差し替えておきます。 (<span class="comment_date">2013/05/03 (金) 15:18:25</span>)</li>
+<li><strong>名無しさん</strong> : コメント保存するほどか？ (<span class="comment_date">2013/05/03 (金) 21:56:09</span>)</li>
+<li><strong>名無しさん</strong> : osだったら、os自体に機能をつければ？ (<span class="comment_date">2013/05/03 (金) 22:10:11</span>)</li>
+<li><strong>道産子</strong> : ↑やはりそうですね・・・。電子説明書ぐらいはつけようと思います。 (<span class="comment_date">2013/05/03 (金) 22:22:27</span>)</li>
+<li><strong>名無しさん</strong> : というかそもそもOSに機能が無いとただ呼び出すだけでアプリじゃないような。たとえばファイルチェックルーチンを用意するとか (<span class="comment_date">2013/05/03 (金) 23:59:28</span>)</li>
+<li><strong>道産子</strong> : ↑具体的にどんな機能ですか？ (<span class="comment_date">2013/05/04 (土) 16:54:54</span>)</li>
+<li><strong>道産子</strong> : ひとまず電子説明書が出来ました。頂いたアドバイスも少しずつ取り入れ、十分改善してからバージョンアップデートします。 (<span class="comment_date">2013/05/08 (水) 20:48:42</span>)</li>
+<li><strong>名無しさん</strong> : 例えばOTYAXやTopazOSのようにGUIルーチンを用意するとか (<span class="comment_date">2013/05/08 (水) 20:56:44</span>)</li>
+<li><strong>ミジュはると</strong> : 今の話からそれるのですが、DosankoMiniOSのアプリを今開発中の「MijuOS」で使える様にしていいですか?? (<span class="comment_date">2013/05/10 (金) 18:12:55</span>)</li>
+<li><strong>名無しさん</strong> : そもそもDosankoMiniOSのアプリって全然独自じゃなくてラベル名だけだからなー (<span class="comment_date">2013/05/10 (金) 18:21:14</span>)</li>
+<li><strong>道産子</strong> : ↑×2 全然おkです。　　　↑×1 もう少し具体的に意見を述べて頂けますか? (<span class="comment_date">2013/05/10 (金) 18:57:38</span>)</li>
+<li><strong>名無しさん</strong> : APIを用意するなどしてもっともどきっぽくしてみるのはどうでしょうか (<span class="comment_date">2013/05/10 (金) 19:25:28</span>)</li>
+<li><strong>名無しさん</strong> : わざわざコメント専用のページを作らなくても折りたたみで対処できるのでは？ (<span class="comment_date">2013/05/10 (金) 21:44:34</span>)</li>
+<li><strong>名無しさん</strong> : WiiUの編集事情って書いてあるじゃないか (<span class="comment_date">2013/05/10 (金) 21:58:58</span>)</li>
+<li><strong>道産子</strong> : よっしゃぁ〜〜！！アプリの選択システムが完成したぁ〜〜！！ (<span class="comment_date">2013/05/10 (金) 22:58:05</span>)</li>
+<li><strong>道産子</strong> : ということで、来週アップデートします！ (<span class="comment_date">2013/05/10 (金) 22:58:47</span>)</li>
+<li><strong>道産子</strong> : やっぱりもう少し機能追加・改善します。 (<span class="comment_date">2013/05/12 (日) 09:54:37</span>)</li>
+<li><strong>道産子</strong> : 色々改善してたら変更量が膨大になったので、次回のアップデートはVer3.0とします。 (<span class="comment_date">2013/05/15 (水) 17:33:51</span>)</li>
+<li><strong>道産子</strong> : 大変長らくお待たせ致しました。来週中にバージョンアップします。 (<span class="comment_date">2013/05/18 (土) 20:49:50</span>)</li>
+<li><strong>名無しさん</strong> : へえ (<span class="comment_date">2013/05/18 (土) 20:59:40</span>)</li>
+<li><strong>道産子</strong> : あと、情報整理のため、上の改善済みの意見とそれに関連するコメントを移動・折り畳みしました。 (<span class="comment_date">2013/05/18 (土) 21:11:22</span>)</li>
+<li><strong>名無しさん</strong> : へえ (<span class="comment_date">2013/05/18 (土) 21:34:58</span>)</li>
+<li><strong>道産子</strong> : アップデートしました！！電子説明書のせいか、本体のQRがやたら多いですww (<span class="comment_date">2013/05/20 (月) 16:10:15</span>)</li>
+<li><strong>道産子</strong> : 今度は、MEMにアプリIDを記録して、そこからアプリ選択の為のルーチンを動かしています。 (<span class="comment_date">2013/05/20 (月) 16:14:30</span>)</li>
+<li><strong>道産子</strong> : 投票で、「凄くいい」に票を入れてくださった方ありがとうございます!また、今後のアップデートに期待してくださっている方もありがとうございます!期待に応えられるように頑張ります! (<span class="comment_date">2013/05/22 (水) 20:51:01</span>)</li>
+<li><strong>ヤッフー</strong> : お、Yos(YOSHI)のシステム使ってくれたー。何か嬉しいです。 (<span class="comment_date">2013/05/24 (金) 20:47:19</span>)</li>
+<li><strong>道産子</strong> : ありがとうございます。あと、勝手にいきなり使ってしまい、申し訳ありません。 (<span class="comment_date">2013/05/24 (金) 23:44:38</span>)</li>
+<li><strong>道産子</strong> : ！！！緊急アップデート！！！只今からアップデートの準備をします！ (<span class="comment_date">2013/05/25 (土) 20:35:08</span>)</li>
+<li><strong>道産子</strong> : アップデートしました！！ (<span class="comment_date">2013/05/25 (土) 21:04:28</span>)</li>
+<li><strong>道産子</strong> : 次回のアップデートで出来たらマウスカーソルを搭載します!!!!! (<span class="comment_date">2013/05/26 (日) 21:12:03</span>)</li>
+<li><strong>名無しさん</strong> : 道産子さんの事だからｺﾚｼﾞｬﾅｲなことになりそうだけど一応期待しておく (<span class="comment_date">2013/05/26 (日) 23:03:29</span>)</li>
+<li><strong>道産子</strong> : ↑これじゃないなこと？ (<span class="comment_date">2013/05/26 (日) 23:23:17</span>)</li>
+<li><strong>名無しさん</strong> : 例えば十字キーで動かしてGUI化みたいなこと (<span class="comment_date">2013/05/27 (月) 13:45:10</span>)</li>
+<li><strong>道産子</strong> : ↑いや既にGUIですから(^_^;) (<span class="comment_date">2013/05/27 (月) 17:07:22</span>)</li>
+<li><strong>名無しさん</strong> :  コンピューターの表示や操作の方式（ユーザーインターフェース）のうち、表示にアイコンや画像を多用し、操作の多くをマウスのようなポインティングデバイスによって指示できる方式のことである<br class="spacer" />と言う意味で言ったんです (<span class="comment_date">2013/05/27 (月) 17:29:03</span>)</li>
+<li><strong>道産子</strong> : ↑すみません、もう少しわかりやすく言っていただけますでしょうか? (<span class="comment_date">2013/05/27 (月) 21:44:06</span>)</li>
+<li><strong>名無しさん</strong> : <del>ggrks</del> (<span class="comment_date">2013/05/27 (月) 21:47:03</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑アイコンをタッチ＆クリックして操作するてきな (<span class="comment_date">2013/05/31 (金) 19:42:54</span>)</li>
+<li><strong>道産子</strong> : ↑いえ、他のOSもどきに既にあるように、下画面でマウスを操作し、ボタンで決定する方式となります。 (<span class="comment_date">2013/05/31 (金) 21:51:45</span>)</li>
+<li><strong>道産子</strong> : システム及びアイディア利用時の制約を追加しました。これに基づいた説明書の改正を近日行います。 (<span class="comment_date">2013/06/01 (土) 12:48:31</span>)</li>
+<li><strong>名無しさん</strong> : システム及びアイディアって...APPENDで追加するってのは他人のアイデアじゃ (<span class="comment_date">2013/06/01 (土) 13:40:31</span>)</li>
+<li><strong>名無しさん</strong> : 確かにｗ　自分の物にするなんてｗ (<span class="comment_date">2013/06/01 (土) 13:43:26</span>)</li>
+<li><strong>名無しさん</strong> : 名無しさん : アプリは別ファイルをEXECで実行するよりAPPENDしてGOSUBで使用する方がいいと思う。そうすればAPPENDしたあとはそのファイルは削除できるので容量の節約になる。 (2013/02/14 (木) 18:20:07)<br class="spacer" />道産子の初心者 : いい案をありがとうございます。採用します! (2013/02/15 (金) 23:41:05)と言ってるし (<span class="comment_date">2013/06/01 (土) 14:02:03</span>)</li>
+<li><strong>名無しさん</strong> : 利用時の制約も何もプチコンで作ったらオープンソースじゃね？っていうかそのAPPENDの使ってるOSもどきもっと前からいるし (<span class="comment_date">2013/06/01 (土) 16:47:14</span>)</li>
+<li><strong>名無しさん</strong> : 利用規約フリーのプログラム→参考にする→利用規約があるプログラムを作る→参考にしたい人がでてくる→規約があるじゃなくフリーの方参考にする→結果的にフリー＞規約あり (<span class="comment_date">2013/06/01 (土) 17:04:07</span>)</li>
+<li><strong>名無しさん</strong> : 別にプログラム自体を使う場合、なら分かるんだけど他人のアイデア... (<span class="comment_date">2013/06/01 (土) 17:42:16</span>)</li>
+<li><strong>名無しさん</strong> : そもそも規約いるのか？悪用する人なんていないだろ (<span class="comment_date">2013/06/01 (土) 17:57:18</span>)</li>
+<li><strong>道産子</strong> : かえって混乱させてしまい、申し訳ありません。今回説明書には、「謝辞」という項目を追加し、開発にあたって参考にしたものを書き留めてあります。今回の更新で、この「謝辞」には、「アプリインストールのシステムは皆様からの意見で生まれた」・「アプリ選択の<span class="basic-text">Б</span>で選択・<span class="basic-text">А</span>で決定のアイディアはヤッフーさんのYOSHIを参考にした」という旨を記載しています。明日か明後日に更新しますのでお待ちください。(長文失礼しました。) (<span class="comment_date">2013/06/01 (土) 19:16:30</span>)</li>
+<li><strong>道産子</strong> : 今回このような更新に踏み切ったのは、自分で規約作っといてそれを自分が守ってないなら「人のこと言えない」のでそれに沿うようにしたのです。 (<span class="comment_date">2013/06/01 (土) 19:23:40</span>)</li>
+<li><strong>名無しさん</strong> : 混乱っていうか疑問だけどな (<span class="comment_date">2013/06/01 (土) 19:50:03</span>)</li>
+<li><strong>道産子</strong> : 今の制約を保留しました。 (<span class="comment_date">2013/06/01 (土) 22:39:58</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : Ver3.2へのバージョンアップを廃止し、次回のアップデートはVer4.0とします。 (<span class="comment_date">2013/06/07 (金) 09:35:31</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 本日中にバージョンアップします!<strong>マウスカーソルが付きます!!</strong> (<span class="comment_date">2013/06/09 (日) 12:43:28</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : アップデートしました！<span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px"><strong>ついにマウスカーソルが付きました！！！</strong></span> (<span class="comment_date">2013/06/09 (日) 20:50:24</span>)</li>
+<li><strong>名無しさん</strong> : マウスカーソル万歳！ (<span class="comment_date">2013/06/09 (日) 20:54:54</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : マウスカーソルは下画面で動かし、Lでクリックします。 (<span class="comment_date">2013/06/09 (日) 21:01:44</span>)</li>
+<li><strong>名無しさん</strong> : ついにマウスカーソルが付いた！！！！ (<span class="comment_date">2013/06/09 (日) 21:11:55</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 皆様大変お待たせしました！！！ (<span class="comment_date">2013/06/09 (日) 21:12:32</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ちなみにマウスカーソルにも凝っています。 (<span class="comment_date">2013/06/09 (日) 21:13:11</span>)</li>
+<li><strong>名無しさん</strong> : おお！！すげえ！！めちゃくちゃ凝ってる！！！<span style="font-size:0.0001px">読み込んでないけど</span> (<span class="comment_date">2013/06/09 (日) 21:22:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑読み込んでくださいよww (<span class="comment_date">2013/06/09 (日) 21:26:15</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ちなみにこれまでのアプリにも対応しています。 (<span class="comment_date">2013/06/09 (日) 21:50:19</span>)</li>
+<li><strong>がんばる卓球部</strong> : あああ、みんなマウスカーソルになった、、、追いつけない。道産子さん、すごいです!こうなったら、別の路線(<strong>i</strong>OSもどき)で行きます！ (<span class="comment_date">2013/06/09 (日) 22:40:20</span>)</li>
+<li><strong>名無しさん</strong> : コマンドにスペースがあるのが変と思ってしまった。A B Cみたいなコマンドは関数A,B,Cが存在しないのにA(B(C()))としてるみたいで違和感 (<span class="comment_date">2013/06/10 (月) 00:58:03</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑次回改善します。 (<span class="comment_date">2013/06/10 (月) 01:15:47</span>)</li>
+<li><strong>名無しさん</strong> : ついに来た〜〜！ (<span class="comment_date">2013/06/10 (月) 16:52:05</span>)</li>
+<li><strong>名無しさん</strong> : ついに来た〜〜！ (<span class="comment_date">2013/06/10 (月) 16:58:01</span>)</li>
+<li><strong>.EXE</strong> : かなり良くなった (<span class="comment_date">2013/06/10 (月) 22:24:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ありがとうございます！ (<span class="comment_date">2013/06/10 (月) 22:32:37</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 今思うとV1.0の頃との性能のギャップがやばいな・・・w (<span class="comment_date">2013/06/10 (月) 22:33:39</span>)</li>
+<li><strong>ヤッフー</strong> : ↑たしかにーw ↑８ 実は今YOS2を開発中です。タッチパネルw (<span class="comment_date">2013/06/11 (火) 21:27:49</span>)</li>
+<li><strong>Shiftキー</strong> : 俺もOSもどき作ってたけど誤セーブしてしまったから作ってない。パックアップはしてたけど古いやつだから (<span class="comment_date">2013/06/12 (水) 18:04:01</span>)</li>
+<li><strong>TNN</strong> : アプリインストールしたら、エラーになったんですけど… (<span class="comment_date">2013/06/12 (水) 21:54:55</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑原因を調査致しますので、どの部分でエラーになったか、どのアプリをインストールしていたかをお教えください。 (<span class="comment_date">2013/06/12 (水) 22:07:56</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : あと、どのようなエラーになったかもお知らせ願います。 (<span class="comment_date">2013/06/12 (水) 22:10:36</span>)</li>
+<li><strong>TNN</strong> : インストールするとき、DSOSAPMMを読み込み出来ませんとなっているのですが… (<span class="comment_date">2013/06/13 (木) 13:38:07</span>)</li>
+<li><strong>道産子</strong> : ↑初めてインストールする時はエラーが出るのは必至です。違うタイミングでエラーが出るのであればお知らせください。 (<span class="comment_date">2013/06/13 (木) 19:00:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : もっとわかりやすく言いますと、アプリが入っていないときはそのMEMはないため、それが見つからない場合は、アプリが全く入っていないということになります。状況が違う場合はまたお知らせください。 (<span class="comment_date">2013/06/13 (木) 21:38:26</span>)</li>
+<li><strong>シトリン</strong> : やっぱり再利用できる機能を持てるというのは気持ち良いモンテスキュー (<span class="comment_date">2013/06/13 (木) 23:31:04</span>)</li>
+<li><strong>シトリン</strong> : ミス。気持ち良いもんだよねー！ (<span class="comment_date">2013/06/13 (木) 23:31:21</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑つまりどういうことでしょうか? (<span class="comment_date">2013/06/14 (金) 19:32:58</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 明日(て言うか本日中)にバージョンアップします。 (<span class="comment_date">2013/06/16 (日) 00:01:15</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : バージョンアップしました！！ (<span class="comment_date">2013/06/16 (日) 12:59:09</span>)</li>
+<li><strong>Shiftキー</strong> : インターネットに公開したら世界中の人に見られるよ。日本国内だったら外国人は使っちゃだめ？。海外旅行したときやっちゃだめ？ (<span class="comment_date">2013/06/16 (日) 13:48:30</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑どういうことでしょうか？ (<span class="comment_date">2013/06/16 (日) 13:59:50</span>)</li>
+<li><strong>Shiftキー</strong> : アップデートでだいぶ変わったからDosankoMiniOSの歴史みたいなの作りてー (<span class="comment_date">2013/06/16 (日) 14:03:34</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : そうですか。後ろのを改訂しましたので作っていいです。ありがとうございます。 (<span class="comment_date">2013/06/16 (日) 14:08:30</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 訂正　改訂します。 (<span class="comment_date">2013/06/16 (日) 14:08:59</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 修正しました。 (<span class="comment_date">2013/06/16 (日) 14:30:37</span>)</li>
+<li><strong>名無しさん</strong> : どこに外国人が使っちゃダメって書いてあるか知らんが北米向け説明書いてるあたりそれはないんじゃ (<span class="comment_date">2013/06/16 (日) 15:25:13</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑改訂済みです。 (<span class="comment_date">2013/06/16 (日) 15:45:25</span>)</li>
+<li><strong>Shiftキー</strong> : バージョンがver4.1修正版だったらver4.1.1やver4.1＋とかはどうですか？ (<span class="comment_date">2013/06/16 (日) 18:17:42</span>)</li>
+<li><strong>Shiftキー</strong> : バージョンの所に<span class="basic-text"></span>って書いていたら長い。 (<span class="comment_date">2013/06/16 (日) 18:21:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑確かにそうですので、次以降はVer4.1C のようにします。(Cは、修正という意味の英語　Correction　の頭文字です。) (<span class="comment_date">2013/06/16 (日) 22:19:11</span>)</li>
+<li><strong>名無しさん</strong> : 棒人間ワロタ (<span class="comment_date">2013/06/17 (月) 16:51:12</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ありがとうございますww (<span class="comment_date">2013/06/17 (月) 21:54:50</span>)</li>
+<li><strong>ミジュはると</strong> : 前回のMijuOSのことですが、MijuOSのアプリも使えるようにしてください。（MDOAPP**) (<span class="comment_date">2013/06/19 (水) 17:41:13</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑了解しました。早急に対応できるように心掛けます。 (<span class="comment_date">2013/06/20 (木) 23:23:37</span>)</li>
+<li><strong>名無しさん</strong> : *2 なんでつける必要がある？ (<span class="comment_date">2013/06/21 (金) 07:05:44</span>)</li>
+<li><strong>Shiftキー</strong> : もうDosankoMiniOSじゃなくてDosankoOSでいい気がする (<span class="comment_date">2013/06/21 (金) 09:17:47</span>)</li>
+<li><strong>名無しさん</strong> : いやもどきをつけろよ (<span class="comment_date">2013/06/21 (金) 14:04:05</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 では次回に名前を変更します。 (<span class="comment_date">2013/06/21 (金) 16:51:22</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 曖昧な気もするのでDosankoMiniOSの名称を募集します。 (<span class="comment_date">2013/06/21 (金) 17:17:51</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ミスしました。DosankoOSの新名称を募集します。 (<span class="comment_date">2013/06/21 (金) 17:18:23</span>)</li>
+<li><strong>名無しさん</strong> : ここで？ (<span class="comment_date">2013/06/21 (金) 17:25:29</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ここでは止めた方が良いですか? (<span class="comment_date">2013/06/21 (金) 17:27:56</span>)</li>
+<li><strong>名無しさん</strong> : あなた問題いくつ起こす気ですか<a href="/petc/?Help#Guideline" title="Help (2565d)">ガイドライン</a>に目を通してください (<span class="comment_date">2013/06/21 (金) 17:47:20</span>)</li>
+<li><strong>名無しさん</strong> : せっかくだしDosankoMiniOSでOTYAXとかでも動かすか (<span class="comment_date">2013/06/21 (金) 17:52:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ごめんなさい。では掲示板で募集します。 (<span class="comment_date">2013/06/21 (金) 17:52:22</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : <a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1371804872/" rel="nofollow">スレ建設しました。</a>(このスレはDosankoOSの名称が決まり次第、管理人さんに削除して頂く方針です。) (<span class="comment_date">2013/06/21 (金) 17:57:39</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×3 どういうことでしょうか? (<span class="comment_date">2013/06/21 (金) 17:59:00</span>)</li>
+<li><strong>名無しさん</strong> : ↑DosankoMiniOSをOTYAXのアプリにするってことじゃないの？ (<span class="comment_date">2013/06/21 (金) 18:12:44</span>)</li>
+<li><strong>Citrine</strong> : このOSって道産子ミニオスなのか道産子ミニオーエスなのか (<span class="comment_date">2013/06/21 (金) 18:30:30</span>)</li>
+<li><strong>名無しさん</strong> : 道産子くんオッスオッス (<span class="comment_date">2013/06/21 (金) 18:40:33</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 ｢道産子ミニオーエス｣です。 (<span class="comment_date">2013/06/21 (金) 22:50:12</span>)</li>
+<li><strong>名無しさん</strong> : ↑9 そこまで言うほど問題起こしてないだろ 過ちを指摘するのはいいが一言余計かと (<span class="comment_date">2013/06/22 (土) 17:56:54</span>)</li>
+<li><strong>名無しさん</strong> : ↑6　いや、そのアプリ実行方式ならOTYAXでもTopazOSだろうと動かせるのよ。どうでもいいけど (<span class="comment_date">2013/06/22 (土) 19:02:12</span>)</li>
+<li><strong>天郷思音</strong> : 結構気に入ったので何かアプリ作ろうと思う。 (<span class="comment_date">2013/06/25 (火) 19:01:25</span>)</li>
+<li><strong>名無しさん</strong> : ラベル名直すだけだからなあ (<span class="comment_date">2013/06/25 (火) 19:39:46</span>)</li>
+<li><strong>名無しさん</strong> : まあね (<span class="comment_date">2013/06/25 (火) 19:48:43</span>)</li>
+<li><strong>名無しさん</strong> : マウスカーソルついたのならマウスカーソルを使いたいね (<span class="comment_date">2013/06/25 (火) 20:51:35</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×1〜4 興味を持って頂きありがとうございます。素晴らしいアプリを期待しています。 (<span class="comment_date">2013/06/26 (水) 00:01:46</span>)</li>
+<li><strong>名無しさん</strong> : @MOUSEMOVルーチンでも作ってそれ読んだらマウスが移動してMOUSEX,MOUSEYに座標はいるとか (<span class="comment_date">2013/06/26 (水) 20:17:04</span>)</li>
+<li><strong>＠ななし</strong> : Putixだと割り込み用サブルーチンでマウスの位置を代入してるけどそんな感じでやってみるといいかも (<span class="comment_date">2013/06/26 (水) 22:06:44</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : マウスの仕組みが分かりづらくて申し訳ありません。近いうちに仕組みを公表します。 (<span class="comment_date">2013/06/26 (水) 22:18:15</span>)</li>
+<li><strong>名無しさん</strong> : 僕はspofsで座標はtchx-6,tchy-10で作ってますが。 (<span class="comment_date">2013/06/27 (木) 20:40:01</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 動画を上げました。 (<span class="comment_date">2013/07/05 (金) 11:19:20</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 今回は言語変更機能を着けるので、英文の記述に時間がかかります。その為次回のアップデートは遅くなりそうです。 (<span class="comment_date">2013/07/05 (金) 22:51:31</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 良策を思いついたので時間が短縮されそうです。 (<span class="comment_date">2013/07/06 (土) 17:11:59</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 唐突ですが、本日中にバージョンアップします！ (<span class="comment_date">2013/07/07 (日) 19:57:39</span>)</li>
+<li><strong>名無しさん</strong> : そういうコメントってブログ作ったんだからそこでしないんですか (<span class="comment_date">2013/07/07 (日) 20:08:56</span>)</li>
+<li><strong>cmk、</strong> : 「オリジナルアプリをつくったときは」の<a href="http://form1.fc2.com/form/?id=846504" rel="nofollow">公開用フォーム、始めました。</a>のリンクが変です。 (<span class="comment_date">2013/07/07 (日) 20:14:29</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑フォームのリンクが古かったです。修正しました。 (<span class="comment_date">2013/07/07 (日) 21:43:22</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : バージョンアップしました！！ (<span class="comment_date">2013/07/07 (日) 21:43:38</span>)</li>
+<li><strong>名無しさん</strong> : 七夕アップデートだなー (<span class="comment_date">2013/07/07 (日) 21:47:40</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑その通りでございますw (<span class="comment_date">2013/07/07 (日) 21:56:50</span>)</li>
+<li><strong>名無しさん</strong> : アプリIDに2つの英数字しか使えないのは管理も大変になりあまりよろしくはないと思う (<span class="comment_date">2013/07/08 (月) 22:30:06</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑そうですね…。今後どうにかして行きたいですが、直ぐの対応は厳しいです…。 (<span class="comment_date">2013/07/08 (月) 23:24:20</span>)</li>
+<li><strong>Shiftキー</strong> : ↑DOAXXXXXで良くね？ (<span class="comment_date">2013/07/09 (火) 16:46:20</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ではそのようにします。 (<span class="comment_date">2013/07/09 (火) 19:11:40</span>)</li>
+<li><strong>名無しさん</strong> : 道産子さん、公開用フォームに投稿してみました。ブログにもコメントしてあるので見ておいてください。 (<span class="comment_date">2013/07/09 (火) 19:34:55</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ありがとうございます。 (<span class="comment_date">2013/07/09 (火) 21:52:08</span>)</li>
+<li><strong>Shiftキー</strong> : エンドレスRPGをDosankoMiniOS用に対応させました。今度公開します。今後も、道産子さんのプログラムをDosankoMiniOSに対応させたいと思います。 (<span class="comment_date">2013/07/10 (水) 19:04:33</span>)</li>
+<li><strong>名無しさん</strong> : 対応って…普通にラベル書き換えるだけでしょ (<span class="comment_date">2013/07/10 (水) 20:28:17</span>)</li>
+<li><strong>cmk、</strong> : ↑5いままでのアプリと互換性あるよね? (<span class="comment_date">2013/07/10 (水) 21:20:39</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ごめんなさい…。今の名前だと互換性はありませんので、アプリの名前を一括に入れ替えします。本当に申し訳ございませんが、今回のバージョンアップでこれまで入れたアプリが使えなくなってしまいます。問題を未然に防ぐため、バージョンアップの前にアプリ全消去の操作をお願いします。 (<span class="comment_date">2013/07/10 (水) 22:55:31</span>)</li>
+<li><strong>名無しさん</strong> : 要はGOSUBしてるだけなんでしょなら出来るんじゃ (<span class="comment_date">2013/07/10 (水) 23:14:59</span>)</li>
+<li><strong>名無しさん</strong> : そういえば上位OSもどきタグが出来たみたいだがこれは上位なのか下位なのか (<span class="comment_date">2013/07/10 (水) 23:18:19</span>)</li>
+<li><strong>名無しさん</strong> : 真ん中くらいじゃね？ (<span class="comment_date">2013/07/10 (水) 23:21:27</span>)</li>
+<li><strong>名無しさん</strong> : HidroOSが上位なら、これも上位じゃね (<span class="comment_date">2013/07/10 (水) 23:27:34</span>)</li>
+<li><strong>ヤッフー</strong> : アプリ投稿しました。 (<span class="comment_date">2013/07/11 (木) 09:09:57</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 掲載しました。ありがとうございます。 (<span class="comment_date">2013/07/11 (木) 22:36:42</span>)</li>
+<li><strong>名無しさん</strong> : アプリの仕組み、僕の作ってるOSもどき「MICRON OS Ver1」に搭載してもいいですか？ (<span class="comment_date">2013/07/14 (日) 09:39:53</span>)</li>
+<li><strong>名無しさん</strong> : Powered by Dosanko Mini OSを大量に書かないとパクリって言われるよ (<span class="comment_date">2013/07/14 (日) 11:45:49</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 よろしいです。是非使ってください。(Powered by DosankoMiniOSをどこか一か所、目立たない程度でいいので書いてくださると大変うれしいです。)　　↑ 大量でなくても大丈夫です。 (<span class="comment_date">2013/07/14 (日) 12:05:11</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑の一件目をもう少しわかりやすく言いますと、文字をでかくしたり色をつけたりなどはしなくてよく、隅っこの目立たなそうな所でもどこでもいいので書いてくださるとうれしいということです。 (<span class="comment_date">2013/07/14 (日) 12:09:15</span>)</li>
+<li><strong>名無しさん</strong> : Powered by Dosanko Mini OSって長いな (<span class="comment_date">2013/07/14 (日) 12:30:55</span>)</li>
+<li><strong>名無しさん</strong> : 道産子さんじゃなくてその他の人がパクリと言うという意味で言った (<span class="comment_date">2013/07/14 (日) 13:04:32</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑すみません。どのような意味でしょうか？ (<span class="comment_date">2013/07/14 (日) 13:17:01</span>)</li>
+<li><strong>名無しさん</strong> : BASICOSでやたらパクリと言われていたので (<span class="comment_date">2013/07/14 (日) 13:28:34</span>)</li>
+<li><strong>名無しさん</strong> : 同意を得たらパクリじゃないよね (<span class="comment_date">2013/07/14 (日) 13:55:31</span>)</li>
+<li><strong>(2013/07/14 (日) 09:39:53の名無し</strong> : スタート画面にでもさりげなくPowered by Dosanko Mini OSっていれておきます。あ、ちなみに、このコメントを書いてるのは投票のとこでかずっていう名前で入れた人です。 (<span class="comment_date">2013/07/14 (日) 13:57:45</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 了解です。ありがとうございます。 (<span class="comment_date">2013/07/14 (日) 15:41:04</span>)</li>
+<li><strong>かず</strong> : さっそく入れました。完成しても、Wikiには投稿しませんけどね。 (<span class="comment_date">2013/07/15 (月) 19:26:15</span>)</li>
+<li><strong>cmk、</strong> : <span style="color:red">名前の募集は7/19まで。まだの人はお早めに！</span> (<span class="comment_date">2013/07/18 (木) 17:06:24</span>)</li>
+<li><strong>cmk、</strong> : アプリ投稿フォームに「図形データ表示プログラム〜ZUKEI〜」を投稿しました！ (<span class="comment_date">2013/07/18 (木) 17:33:04</span>)</li>
+<li><strong>cmk、</strong> : すみません!フォームのほうに間違ってPTCファイルあげてしまいました!QRあげなおすんでちょっと待ってください！ (<span class="comment_date">2013/07/18 (木) 17:40:54</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑PTCでも構いません。こちらでQRを生成しておきます。 (<span class="comment_date">2013/07/18 (木) 19:02:19</span>)</li>
+<li><strong>cmk、</strong> : ↑ 今、QR上げなおしましたんでのせといてください。 (<span class="comment_date">2013/07/18 (木) 19:52:19</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 了解しました。今は時間がないので、明日か明後日くらいに載せておきます。 (<span class="comment_date">2013/07/18 (木) 23:14:44</span>)</li>
+<li><strong>cmk、</strong> : お願いします。 (<span class="comment_date">2013/07/18 (木) 23:35:55</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑掲載しました。 (<span class="comment_date">2013/07/19 (金) 22:39:25</span>)</li>
+<li><strong>名無しさん</strong> : 今思ったんだけど名前の横に(dosankosoft)って入れる必要なくね？ (<span class="comment_date">2013/07/20 (土) 11:38:25</span>)</li>
+<li><strong>cmk、</strong> : ↑いやそもそも 道産子 のほうがいらないとおもう (<span class="comment_date">2013/07/20 (土) 22:10:33</span>)</li>
+<li><strong>名無しさん</strong> : 一番わかりやすいのは投稿者じゃね (<span class="comment_date">2013/07/20 (土) 22:43:46</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ・・・どうするほうがよろしいですか？ (<span class="comment_date">2013/07/21 (日) 22:04:00</span>)</li>
+<li><strong>cmk、</strong> : dosankosoftでいいと思う (<span class="comment_date">2013/07/22 (月) 01:23:19</span>)</li>
+<li><strong>名無しさん</strong> : 入れる必要無い＝入れない必要無いだからそのままが無難じゃないの (<span class="comment_date">2013/07/22 (月) 01:35:02</span>)</li>
+<li><strong>cmk、</strong> : 道産子(dosankosoft)のままでいいです。 (<span class="comment_date">2013/07/22 (月) 02:01:00</span>)</li>
+<li><strong>名無しさん</strong> : 別に入ってても問題ないけど宣伝臭いな (<span class="comment_date">2013/07/22 (月) 12:29:33</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 宣伝臭いということは入れないほうが望ましいということでしょうか? (<span class="comment_date">2013/07/22 (月) 22:09:37</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 明日の昼過ぎにバージョンアップします。 (<span class="comment_date">2013/07/22 (月) 23:09:51</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 追記　記載している通り、明日のバージョンアップ後、バグがない限り開発を中断します。 (<span class="comment_date">2013/07/22 (月) 23:10:58</span>)</li>
+<li><strong>かず</strong> : Ver4.3が楽しみです。 (<span class="comment_date">2013/07/23 (火) 09:04:46</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ありがとうございます。バージョンアップしました。 (<span class="comment_date">2013/07/23 (火) 16:17:49</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ちなみに操作方法について、STARTボタンで一時的な操作変更が出来ます。 (<span class="comment_date">2013/07/23 (火) 16:18:33</span>)</li>
+<li><strong>かず</strong> : Ver4.3キターーーーーー でも時間がないから読めねぇ。 (<span class="comment_date">2013/07/23 (火) 19:08:21</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑読み込める時にぜひお願いします。 (<span class="comment_date">2013/07/23 (火) 20:19:38</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 明日〜26日夜間まで家を留守にします。期間中に出たバグやお問い合わせにはすぐにお受けできません。(帰宅後対応します。)ご了承ください。 (<span class="comment_date">2013/07/23 (火) 23:00:25</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : !?三つ? (<span class="comment_date">2013/07/23 (火) 23:00:50</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑そういう報告はブログでしないのでしょうか (<span class="comment_date">2013/07/23 (火) 23:26:53</span>)</li>
+<li><strong>12さいくん</strong> : 道産子さんの一部のシステムで、 (<span class="comment_date">2013/07/25 (木) 19:38:58</span>)</li>
+<li><strong>12さいくん</strong> : ↑失礼しました。誤更新です。続き… アプリマネージャーを12SsoftWareで使用したいのですが… (<span class="comment_date">2013/07/25 (木) 19:42:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ よろしいです。是非使ってください。(Powered by DosankoMiniOSをどこか一か所、目立たない程度でいいので書いてくださると大変うれしいです。) (<span class="comment_date">2013/07/26 (金) 18:48:29</span>)</li>
+<li><strong>名無しさん</strong> : 逃れられないPowered by DosankoMiniOSの魔の手 (<span class="comment_date">2013/07/26 (金) 19:14:51</span>)</li>
+<li><strong>名無しさん</strong> : ↑魔の手って言い過ぎだろ (<span class="comment_date">2013/07/26 (金) 21:45:36</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 ちょっと強要し過ぎだということでしょうか?それなら少し考えます。 また、主な特徴を少し変更しました。 (<span class="comment_date">2013/07/26 (金) 22:14:01</span>)</li>
+<li><strong>名無しさん</strong> : パワード バイ ドサンコって書いた方が省スペース (<span class="comment_date">2013/07/27 (土) 08:06:36</span>)</li>
+<li><strong>名無しさん</strong> : 21文字は大すぎだな　かなり場所食うで (<span class="comment_date">2013/07/27 (土) 10:49:19</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ではシステム:dosankosoft的な感じでもOKです。 (<span class="comment_date">2013/07/27 (土) 11:21:17</span>)</li>
+<li><strong>名無しさん</strong> : そもそもPowered by DosankoMiniOSって入れる必要あるのかねー (<span class="comment_date">2013/07/27 (土) 12:49:16</span>)</li>
+<li><strong>名無しさん</strong> : プログラムを利用したならまだしも参考にしただけなら入れる必要はないと思う (<span class="comment_date">2013/07/27 (土) 17:44:00</span>)</li>
+<li><strong>名無しさん</strong> : ↑12さいくん場合は「利用」に入ると思うが　　↑８　魔の手ェ・・・ (<span class="comment_date">2013/07/27 (土) 19:58:11</span>)</li>
+<li><strong>名無しさん</strong> : ↑９　言い過ぎ乙 (<span class="comment_date">2013/07/27 (土) 20:04:16</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑BASICOSに対してゐった (<span class="comment_date">2013/07/27 (土) 20:37:02</span>)</li>
+<li><strong>名無しさん</strong> : この際DosankoTabletが完成する前にDosankoMiniOS向けにGUI作っちまえば面白いだろうなあ (<span class="comment_date">2013/07/27 (土) 20:54:26</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑どういうことでしょうか？悪いことはたくらまないでくださいよ。 (<span class="comment_date">2013/07/27 (土) 22:10:11</span>)</li>
+<li><strong>では、OS起動時に表示されるロゴの下に、「Powered by DosankoMiniOS」と。 あと、メニューには、「DosankoMiniOSの仮想システムを起動」とでもやりましょうか？</strong> : 12さいくん (<span class="comment_date">2013/07/28 (日) 10:04:10</span>)</li>
+<li><strong>12さいくん</strong> : ↑失礼しました。名前とコメントが逆でした。 (<span class="comment_date">2013/07/28 (日) 10:05:33</span>)</li>
+<li><strong>名無しさん</strong> : いい加減古いファイル消してもらえば？ (<span class="comment_date">2013/07/28 (日) 20:27:49</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑管理人さんに頼んでいます。 (<span class="comment_date">2013/07/28 (日) 21:09:13</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×4 わざわざ二つもありがとうございます。 (<span class="comment_date">2013/07/28 (日) 21:09:52</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : 組みます？(例えばセガが任天堂のソフト作る様な物です。) (<span class="comment_date">2013/07/29 (月) 09:22:30</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ごめんなさい…。つまりどういうことでしょうか？ (<span class="comment_date">2013/07/29 (月) 09:25:13</span>)</li>
+<li><strong>たかちゃん</strong> : なんかv4.3cになってからマウスが使えませんが何でなのでしょうか？ (<span class="comment_date">2013/07/29 (月) 10:36:04</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑×2えーと、つまり、12SsoftWareがDosankoMiniOSのアプリを作ってリリースしたり、逆にDosankoSoftさんがTOUCH-GRP(仮)のアプリを作ってリリースしたり、あと、12SsoftWareとDosankoSoftさんで協力して一つのプログラムを作ったり...。と、いうことです。(長文失礼) (<span class="comment_date">2013/07/29 (月) 10:41:43</span>)</li>
+<li><strong>名無しさん</strong> : 協力開発って大抵失敗するよね (<span class="comment_date">2013/07/29 (月) 10:50:41</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑うっ...確かに... (<span class="comment_date">2013/07/29 (月) 12:25:28</span>)</li>
+<li><strong>名無しさん</strong> : どうやってプログラム渡すの？道産子さんが近くにいるの？メールで渡せるの？ (<span class="comment_date">2013/07/29 (月) 12:49:27</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑<a href="http://www55.atwiki.jp/12ssoftware/?cmd=upload&amp;act=write&amp;postid=8" rel="nofollow">http://www55.atwiki.jp/12ssoftware/?cmd=upload&amp;act=write&amp;postid=8</a>で (<span class="comment_date">2013/07/29 (月) 13:02:38</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑ミス。<a href="http://www55.atwiki.jp/12ssoftware/pages/8.html" rel="nofollow">http://www55.atwiki.jp/12ssoftware/pages/8.html</a> (<span class="comment_date">2013/07/29 (月) 13:06:04</span>)</li>
+<li><strong>名無しさん</strong> : 宣伝かよ (<span class="comment_date">2013/07/29 (月) 15:00:38</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×8原因を調査しますので詳しい状況をお知らせ願います。 ↑×7了解しました。OKです。 (<span class="comment_date">2013/07/29 (月) 18:53:53</span>)</li>
+<li><strong>たかちゃん</strong> : さいしょはでるんですが、操作しようとすると、すぐカーソルが消えてしまいます。 (<span class="comment_date">2013/07/29 (月) 19:44:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑操作方法はどちらですか? (<span class="comment_date">2013/07/29 (月) 19:47:44</span>)</li>
+<li><strong>たかちゃん</strong> : タッチパネル(&#10067;)です (<span class="comment_date">2013/07/29 (月) 19:54:21</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑こちらで調査しておきます。 (<span class="comment_date">2013/07/29 (月) 19:56:59</span>)</li>
+<li><strong>たかちゃん</strong> : お願いします。 (<span class="comment_date">2013/07/29 (月) 20:46:01</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 僕の対応がどうか、皆さんにお聞きするため、投票を増やしました。 (<span class="comment_date">2013/07/29 (月) 21:34:05</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 先ほど言うのを忘れていましたが、すぐ確認できないため、明日朝に確認を行わせていただきます。 (<span class="comment_date">2013/07/29 (月) 21:35:44</span>)</li>
+<li><strong>cmk、</strong> : アプリインストールするときに$basic{Syntax error};とでます。~ ちなみにQRを読み取りました。 (<span class="comment_date">2013/07/30 (火) 07:57:41</span>)</li>
+<li><strong>ミス↑</strong> : アプリインストールするときに<span class="basic-text">Ｓｙｎｔａｘ　ｅｒｒｏｒ</span>とでます。ちなみにQRを読み取りました。 (<span class="comment_date">2013/07/30 (火) 07:58:54</span>)</li>
+<li><strong>cmk、</strong> : <span class="basic-text">Ｓｙｎｔａｘ　ｅｒｒｏｒ　（６１，　ＩＦ</span>です。 (<span class="comment_date">2013/07/30 (火) 08:00:05</span>)</li>
+<li><strong>cmk、</strong> : それと<span class="basic-text">＠ＭＳ２</span>はスライド操作の予定地ですか? (<span class="comment_date">2013/07/30 (火) 08:19:50</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2〜3 QRを差し替えますのでお待ちください。　↑その通りです。 (<span class="comment_date">2013/07/30 (火) 10:44:15</span>)</li>
+<li><strong>cmk、</strong> : ありがとうございます。 (<span class="comment_date">2013/07/30 (火) 12:41:16</span>)</li>
+<li><strong>cmk、</strong> : <span class="basic-text">＝＝</span>が<span class="basic-text">＝</span>になってたんですね (<span class="comment_date">2013/07/30 (火) 13:15:05</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑その通りです。 (<span class="comment_date">2013/07/30 (火) 21:49:13</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 対応についてのアンケートが今のところ3/3プラス評価で、しかも2/3がかなり柔軟と答えてくださいました！ありがとうございます！ (<span class="comment_date">2013/07/30 (火) 21:53:59</span>)</li>
+<li><strong>名無しさん</strong> : 柔軟てかバグが多すぎる　対応の速さよりデバッグに力を入れてほしい (<span class="comment_date">2013/07/30 (火) 23:21:32</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑おっしゃるとおりですが、諸事情ですぐ対応できないのが現実です。それでも早急なデバッグを心がけています。(都合が付いたらすぐにバグ修正など) (<span class="comment_date">2013/07/30 (火) 23:32:14</span>)</li>
+<li><strong>名無しさん</strong> : ↑そうじゃなくてバグをきちんと潰してからバージョンアップとかしてほしい (<span class="comment_date">2013/07/31 (水) 09:31:04</span>)</li>
+<li><strong>かず</strong> : OSもどき「MICRON OS Ver1」が完成しました。アプリはまだですが、Pメールという名の通信ソフトが入ってます。　ここで言う事か？とも思いましたが、使わせていただいているので、報告させて頂きます。 (<span class="comment_date">2013/07/31 (水) 09:46:29</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 それはずさんだったので、以後気をつけます。 ↑了解です。 (<span class="comment_date">2013/07/31 (水) 09:55:07</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : 道産子さん ここで言うのもナンですが、道産子さんのブログに自動報告をコメントにやっておいたので(たぶん)コメントが挿入されてますのでご覧下さい。(長文失礼) (<span class="comment_date">2013/07/31 (水) 12:44:12</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑ご確認しました。これから宜しくお願い致します。 (<span class="comment_date">2013/07/31 (水) 21:29:23</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : あと、12SsoftWareさん、あなたと連携したということでブログに告知(?)の方を行ってもよろしいでしょうか？ (<span class="comment_date">2013/07/31 (水) 21:32:24</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 大変唐突に申し訳ございませんが、2013/8/4〜8/6 13:00ごろまで、サービス休止致します。詳細はブログをご覧ください。 (<span class="comment_date">2013/07/31 (水) 21:57:59</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑了解です。 (<span class="comment_date">2013/08/01 (木) 09:31:34</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : 道産子さん メールで情報交換しますか？ (<span class="comment_date">2013/08/01 (木) 09:46:13</span>)</li>
+<li><strong>名無しさん</strong> : ↑3サポート休止じゃないの？ (<span class="comment_date">2013/08/01 (木) 18:08:23</span>)</li>
+<li><strong>Shiftキー</strong> : ↑3サポート休止じゃないの？ (<span class="comment_date">2013/08/01 (木) 18:08:32</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×3 メールOKです。dosankosoftアットマークinter7.jpで連絡できます。(ただし、Inter7にメール送信障害があるので、その都度臨時アドレスを発行します。) (<span class="comment_date">2013/08/01 (木) 21:11:13</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×3 制作なども休止するので、サービスといった方がいいと思い、サービス休止とします。 (<span class="comment_date">2013/08/01 (木) 21:12:27</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 12SsoftWareさん、<a href="http://dosankosoft.blog.fc2.com/blog-entry-6.html" rel="nofollow">あなたと連携したということで告知させていただきました。</a>問題がありましたらお知らせください。 (<span class="comment_date">2013/08/01 (木) 21:24:09</span>)</li>
+<li><strong>名無しさん</strong> : 英語邪魔すぎワロシッシュ (<span class="comment_date">2013/08/02 (金) 07:39:29</span>)</li>
+<li><strong>名無しさん</strong> : ↑アメリカ承知だからしょうがないだろ(ブログに載ってた) (<span class="comment_date">2013/08/02 (金) 07:51:46</span>)</li>
+<li><strong>名無しさん</strong> : ◯◯しました！◯◯します！っていちいちうるさい　ブログでやってくれると嬉しいんだけど (<span class="comment_date">2013/08/02 (金) 10:16:03</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑以後気をつけます。申し訳ございませんでした。 (<span class="comment_date">2013/08/02 (金) 21:15:30</span>)</li>
+<li><strong>12さいくん(12SsoftWare)</strong> : ↑×2失礼しました。今後はメールでやり取りいたしますのでご安心ください。 (<span class="comment_date">2013/08/03 (土) 09:51:53</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : あれ!? (<span class="comment_date">2013/08/03 (土) 20:16:27</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ブログでもお知らせしました通り、間もなくサービス休止致します。サービス再開後も宜しくお願い致します。 (<span class="comment_date">2013/08/03 (土) 20:55:04</span>)</li>
+<li><strong>たかちゃん</strong> : 結局調べてくれないのかよwww (<span class="comment_date">2013/08/03 (土) 23:08:35</span>)</li>
+<li><strong>道産子(dosankosoft)&lt;ひっそり&gt;</strong> : ↑申し訳ありませんが、こちらで不具合を確認できませんでした。再開後改めて調査しますので、詳しい状況をお知らせ願います。 (<span class="comment_date">2013/08/03 (土) 23:38:14</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : サービス再開しました。身勝手な事情にお付き合いいただき、ありがとうございました。 (<span class="comment_date">2013/08/06 (火) 13:37:38</span>)</li>
+<li><strong>名無しさん</strong> : ブログの意味が無いｗ (<span class="comment_date">2013/08/06 (火) 14:25:22</span>)</li>
+<li><strong>名無しさん</strong> : 名称一覧見たんだが19のランチャーっておかしくないか？ここまで急成長したのにランチャーって・・・まあいいか。どうせだれもランチャーなんてバカなものに入れないだろ。 (<span class="comment_date">2013/08/07 (水) 23:02:30</span>)</li>
+<li><strong>名無しさん</strong> : 票を (<span class="comment_date">2013/08/07 (水) 23:02:48</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑まあランチャーって言ってる方がいるということは何か欠けているということですからこれから頑張っていきます。 (<span class="comment_date">2013/08/07 (水) 23:13:08</span>)</li>
+<li><strong>名無しさん</strong> : 今のままだとランチャーに見えるなせめてアプリでGUIが触れたらいいのに (<span class="comment_date">2013/08/07 (水) 23:21:19</span>)</li>
+<li><strong>名無しさん</strong> : dmx-glだっけなんだっけこのOSもどき (<span class="comment_date">2013/08/08 (木) 22:20:25</span>)</li>
+<li><strong>名無しさん</strong> : でもランチャーは名称としては超不適切だからランチャーに票をいれる人は道産子さんに恨みを持っている人としか考えられない (<span class="comment_date">2013/08/10 (土) 21:53:46</span>)</li>
+<li><strong>名無しさん</strong> : いや超不適切って程じゃないでしょしかもそれで恨みとは限らないし (<span class="comment_date">2013/08/10 (土) 22:06:27</span>)</li>
+<li><strong>名無しさん</strong> : ミニオーエス≠OSもどき、ミニオーエス＝ランチャーってことか 最低だな (<span class="comment_date">2013/08/10 (土) 23:16:33</span>)</li>
+<li><strong>名無しさん</strong> : ということからランチャーと思っている奴＝道産子さんに恨みがあるってこと (<span class="comment_date">2013/08/10 (土) 23:18:03</span>)</li>
+<li><strong>名無しさん</strong> : 今はわからないがもしランチャーに1票でも入っていたらある意味問題だな そうならないことを願うが (<span class="comment_date">2013/08/10 (土) 23:21:22</span>)</li>
+<li><strong>名無しさん</strong> : 結論 今はランチャーに思えても名称としては合わない (<span class="comment_date">2013/08/10 (土) 23:23:12</span>)</li>
+<li><strong>名無しさん</strong> : そもそも今までOSもどきでやって来たのにランチャーってどういうわけ？ (<span class="comment_date">2013/08/10 (土) 23:27:45</span>)</li>
+<li><strong>名無しさん</strong> : だからOSもどきはランチャーと同じようなものって事 (<span class="comment_date">2013/08/11 (日) 00:06:02</span>)</li>
+<li><strong>名無しさん</strong> : 「アンケート」っていうのはそういうもんだろ　「ランチャーを選ばない人」がいるなら「ランチャーを選ぶ人」もいる可能性はあるんだから文句は一切言えないと思う (<span class="comment_date">2013/08/11 (日) 10:31:34</span>)</li>
+<li><strong>名無しさん</strong> : ↑2 ならOTYAXとかTopazOSもランチャーということだろ？ (<span class="comment_date">2013/08/11 (日) 18:44:19</span>)</li>
+<li><strong>名無しさん</strong> : でもそれらはランチャーということを前面に出してないじゃん DosankoMiniOS<strong>だけ</strong>前面に出せと言ってる事と同じだろ (<span class="comment_date">2013/08/11 (日) 22:46:24</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : お伝えするのを忘れていましたが、サービス完全復旧しています。申し訳ございませんでした。 (<span class="comment_date">2013/08/11 (日) 23:21:44</span>)</li>
+<li><strong>名無しさん</strong> : ランチャーはOSもどきの蔑称だったのか (<span class="comment_date">2013/08/11 (日) 23:46:02</span>)</li>
+<li><strong>名無しさん</strong> : このプログラムは言い換えると「専用プログラムを起動するプログラム」 (<span class="comment_date">2013/08/12 (月) 07:43:19</span>)</li>
+<li><strong>名無しさん</strong> : ↑批判乙 (<span class="comment_date">2013/08/12 (月) 07:53:35</span>)</li>
+<li><strong>名無しさん</strong> : 専用プログラムを起動するプログラムが批判とは驚き (<span class="comment_date">2013/08/12 (月) 08:37:33</span>)</li>
+<li><strong>名無しさん</strong> : 何が？ (<span class="comment_date">2013/08/12 (月) 08:55:56</span>)</li>
+<li><strong>名無しさん</strong> : 別に優秀なランチャーぐらいあるだろ　なんでOSもどき＞ランチャーって決めつけてんの？ (<span class="comment_date">2013/08/12 (月) 09:49:23</span>)</li>
+<li><strong>名無しさん</strong> : お前らなんでランチャー推しなの？ (<span class="comment_date">2013/08/12 (月) 12:08:58</span>)</li>
+<li><strong>名無しさん</strong> : 予想通りランチャーには決まらなかったな　卓球部さん採用おめでとう　手かなんでOSXとランチャーが争う結果になってんだよ　言っただろ？ランチャーを表に出してるOSもどきはないって　それなのになんでランチャーということを表に出させようとしてんだよ　お前ら何なの？道産子さんをいじめたいの？まあ何にせよランチャーにはならなかった　お前らランチャー反対派の人を散々というほどではないがバカにしたよな　お前らここで謝れよ　俺らはもちろんのこと、道産子さんにも謝れ　そして二度とこういうことにかかわってくんじゃねえぞ　て言うかそもそもなんで名称案の候補にランチャーが出てくんだよ　そもそもの問題はここにあるだろ　長文失礼 (<span class="comment_date">2013/08/12 (月) 15:19:28</span>)</li>
+<li><strong>名無しさん</strong> : （アンケートなのに投票しちゃダメっておかしいだろ　何言ってんだこいつ） (<span class="comment_date">2013/08/12 (月) 15:42:43</span>)</li>
+<li><strong>名無しさん</strong> : ↑ランチャー賛成派の人に言ってるからお前には関係ない (<span class="comment_date">2013/08/12 (月) 15:48:12</span>)</li>
+<li><strong>名無しさん</strong> : 道産子さんは投票の事に関して何も言っていないのにそんなに言ってると逆に道産子さんに迷惑がかかると思うんだけれど (<span class="comment_date">2013/08/12 (月) 15:50:55</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 以前も言いましたが、ランチャーと言っている方がいるということは、まだまだ未熟だということなのでこれから頑張っていこうと思います。もう終わった話なのでこれ以上の口出しはご遠慮願います。 (<span class="comment_date">2013/08/13 (火) 17:18:12</span>)</li>
+<li><strong>名無しさん</strong> : ↑わかりました　これからもがんばってください (<span class="comment_date">2013/08/13 (火) 17:27:50</span>)</li>
+<li><strong>名無しさん</strong> : プチコンでOSは作れないしランチャーもOSも変わら無くね (<span class="comment_date">2013/08/13 (火) 20:40:53</span>)</li>
+<li><strong>かず</strong> : 道産子ソフトさん、残念なお知らせ。 僕の作っていた、MICRONOS は、エラーだらけのため、データを消してしまいました。 せっかく、システムを使わせていただいていたのに、すいません。 (<span class="comment_date">2013/08/13 (火) 20:51:36</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×3 ありがとうございます。↑わかりました。気持ちを受け取っておきます。ありがとうございます。 (<span class="comment_date">2013/08/13 (火) 21:40:56</span>)</li>
+<li><strong>たかちゃん</strong> : すまん！遅れました！２〜３回起動した後カーソルが出なくなった　 (<span class="comment_date">2013/08/15 (木) 13:58:51</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 2〜3回は連続でしょうか?それとも間を置いていますか? (<span class="comment_date">2013/08/15 (木) 20:24:34</span>)</li>
+<li><strong>名無しさん</strong> : 個人的な意見だが、DosankoMiniOSも上位OSもどきに肩をならべられそうな希ガス (<span class="comment_date">2013/08/19 (月) 22:03:03</span>)</li>
+<li><strong>名無しさん</strong> : ↑少なくともTNNJOSよりも上位だよな (<span class="comment_date">2013/08/20 (火) 11:38:10</span>)</li>
+<li><strong>たかちゃん</strong> : 間は置いてますね (<span class="comment_date">2013/08/20 (火) 13:36:13</span>)</li>
+<li><strong>名無しさん</strong> : なんというかDosankoMiniOSはいいと思うんだけどいらない報告が多すぎる気がする (<span class="comment_date">2013/08/20 (火) 14:08:19</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×2 ちょっと調べておきます。わからなかったらまた聞きますのでよろしくお願いします。　↑どのようなことが余計でしょうか? (<span class="comment_date">2013/08/20 (火) 14:16:30</span>)</li>
+<li><strong>名無しさん</strong> : 「今週中にアップデートします！！」「明後日アップデートします！！！」「今日の〜にアップデートします！！」「アップデートしました！」みたいにアップデートの事を何回も言ってるときがある　アップデートしたときに「アップデートをした。」とだけ伝えればよいのでは？と思っただけです (<span class="comment_date">2013/08/20 (火) 14:23:52</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑以後気をつけます。申し訳ございませんでした。 (<span class="comment_date">2013/08/20 (火) 14:31:10</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 操作できない件についてですが、不具合を確認できませんでした。以下のプログラムを実行し、出てきた数字を教えてください。
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＬＯＡＤ”ＭＥＭ：ＤＳＯＳＣＳＳＳ</li>
+<li>ＰＲＩＮＴ　ＭＥＭ＄</li>
+</ol></code></div></div>
+(<span class="comment_date">2013/08/20 (火) 14:33:44</span>)</li>
+<li><strong>名無しさん</strong> : 発言のない日は必ず投票によって更新されている…なぜだろうか (<span class="comment_date">2013/08/22 (木) 14:28:04</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑多分毎日投票に来る人がいるためだと思います。 (<span class="comment_date">2013/08/22 (木) 19:00:28</span>)</li>
+<li><strong>名無しさん</strong> : 投票って毎日するものなの？ (<span class="comment_date">2013/08/22 (木) 19:06:25</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : そんなに怪しまれても迷惑なので一度投票閉鎖します。 (<span class="comment_date">2013/08/22 (木) 21:10:50</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : マイナス評価の方の意見を募集していた場所を「意見箱」としました。 (<span class="comment_date">2013/08/22 (木) 21:15:21</span>)</li>
+<li><strong>たかちゃん</strong> : 回答遅れました！実行すると、ファイルが見つかりません　とででしまいます！ (<span class="comment_date">2013/08/28 (水) 22:57:00</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : マウスカーソルは何を使っていますか? (<span class="comment_date">2013/08/30 (金) 09:38:45</span>)</li>
+<li><strong>たかちゃん</strong> : と言うと？ (<span class="comment_date">2013/08/31 (土) 20:49:48</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑原因がどうやってもわからないので、詳しい状況を調べて徹底的に調査しています。その調査にご協力願えますでしょうか。 (<span class="comment_date">2013/08/31 (土) 21:34:20</span>)</li>
+<li><strong>名無しさん</strong> : 上 (<span class="comment_date">2013/09/03 (火) 14:53:05</span>)</li>
+<li><strong>かずえもん</strong> : ↑失礼しました。誤ってEnterキーを押してしまいました。ファイルが見つかりませんの問題解決、手伝いましょうか？　 (<span class="comment_date">2013/09/03 (火) 14:54:31</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑いえ、ファイルが見つからないのは一回も設定を変えてないということなので、そこの対策は取ってありますから、問題ありません。 (<span class="comment_date">2013/09/03 (火) 21:46:19</span>)</li>
+<li><strong>かずえもん</strong> : ↑了解しました。ぼくも初起動時に見つかりません。に、なってました。 (<span class="comment_date">2013/09/07 (土) 09:35:40</span>)</li>
+<li><strong>たかちゃん</strong> : わかりました！ (<span class="comment_date">2013/09/07 (土) 10:57:27</span>)</li>
+<li><strong>たかちゃん</strong> : あ！その前に一回消してもう一度読み取ってみます (<span class="comment_date">2013/09/07 (土) 11:00:13</span>)</li>
+<li><strong>たかちゃん</strong> : 再よみこみしたけど治りませんでした&#128532; (<span class="comment_date">2013/09/07 (土) 11:17:14</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 暫定的な対処としては、STARTボタンによる操作方法切り替えが効くときは、それで切り替えてください。 (<span class="comment_date">2013/09/07 (土) 13:00:07</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : あと、プチコンが最新でないなら、プチコンをアップデートしてみてください。 (<span class="comment_date">2013/09/07 (土) 13:01:53</span>)</li>
+<li><strong>名無しさん</strong> : 前の話ですが、名称決めおかしくないですか?そもそも、ランチャーという名称候補が何故出たのですか?もしこれ(<strong>OSもどき</strong>)がランチャーなら他のやつ(OTYAXやPutixなど)もランチャーってことですよね?ですがそれらはランチャーと言ってませんよ?ここのコメントの、「専用プログラムを起動するプログラムが批判とは驚き」とは?全く筋が通ってませんよ。それと、「別に優秀なランチャーぐらいあるだろ　なんでOSもどき＞ランチャーって決めつけてんの？」ってどういうことです?今までOSもどきとしてやって来たDosankoMiniOSを、何故ランチャーに変えさせようとしてるんです?道産子さんにこっそりこの件を聞きました。そしたら、「DosankoMiniOSがランチャーに決まってしまわないか、とても不安でした。」と言ってました。無理はないですよ。ランチャーと決まってしまえばひとたまりもありませんよ。散々道産子さんとランチャー反対派を批判しましたよね?そのくせに何威張っているんです?あと、投票にでてきても、何故切り捨てなかったのですか?「道産子さんは投票の事に関して何も言っていないのにそんなに言ってると逆に道産子さんに迷惑がかかると思うんだけれど」って言ってますが、迷惑掛けているのはそっちではないですか?OSもどきをランチャーと言わせる方がよっぽど迷惑ですよ。なんで平気でいられるのです?道産子さんに代わって代弁しますよ。威張っている暇があるなら謝ってください。もし反論があるなら言ってくださいよ。一個ずつ質問していきますよ。(大変な長文失礼しました) (<span class="comment_date">2013/09/17 (火) 13:26:18</span>)</li>
+<li><strong>名無しさん</strong> : 質問:三行で (<span class="comment_date">2013/09/17 (火) 14:43:00</span>)</li>
+<li><strong>名無しさん</strong> : 募集して投票なんか行うから…　最初から自分で決めればよかったんや… (<span class="comment_date">2013/09/17 (火) 16:33:22</span>)</li>
+<li><strong>名無しさん</strong> : 何を今更 (<span class="comment_date">2013/09/17 (火) 18:48:29</span>)</li>
+<li><strong>名無しさん</strong> : PUTIXやOTYAXはデフォルトでいろいろ機能がついてるのに、道産子OSは専用アプリを起動するランチャ。 (<span class="comment_date">2013/09/17 (火) 20:48:09</span>)</li>
+<li><strong>名無しさん</strong> : ↑5意味不明 (<span class="comment_date">2013/09/17 (火) 20:49:29</span>)</li>
+<li><strong>あっとななし</strong> : OTYAXはわかるがPUTIXを例に上げたのはびっくりだぜ！そこはTopazOSのほうがいいのでは (<span class="comment_date">2013/09/17 (火) 21:34:51</span>)</li>
+<li><strong>名無しさん</strong> : 道産子さんがその話はご遠慮願いますって言ってるのにそういうコメントしてる時点でランチャーどうこう以前に迷惑 (<span class="comment_date">2013/09/18 (水) 15:16:00</span>)</li>
+<li><strong>たかちゃん</strong> : ↑１０．９ startボタンもききませんでした…　　プチコンも最新版です=まさか..........壊れ(殴 (<span class="comment_date">2013/09/18 (水) 19:58:42</span>)</li>
+<li><strong>かずえもん</strong> : ↑ 「まさか..........壊れ(殴 」 たぶんそうでしょう・・・・。 (<span class="comment_date">2013/09/18 (水) 20:29:22</span>)</li>
+<li><strong>かずえもん</strong> : URL書き込もうとしたら、「Runtime Erorr」ってでました。スパムと思われたみたい。Wikiのサイトなのに・・・。 乗せようと思ったサイトはこれ→投稿プログラム : ボタン入力テスト (<span class="comment_date">2013/09/18 (水) 20:31:02</span>)</li>
+<li><strong>名無しさん</strong> : <a href="http://wiki.hosiken.jp/petc/?Toukou%2F%A5%DC%A5%BF%A5%F3%C6%FE%CE%CF%A5%C6%A5%B9%A5%C8PRG" rel="nofollow">http://wiki.hosiken.jp/petc/?Toukou%2F%A5%DC%A5%BF%A5%F3%C6%FE%CE%CF%A5%C6%A5%B9%A5%C8PRG</a> URL入力した場合認証が出るはずだけど (<span class="comment_date">2013/09/18 (水) 20:50:28</span>)</li>
+<li><strong>.EXE</strong> : 日本語混ぜればおk (<span class="comment_date">2013/09/19 (木) 06:46:03</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : こちらの都合によりしばらく管理できませんでした。申し訳ございません。今回の件について誠実に対応いたします。まず、これ以上の議論は<a href="http://www53.atpages.jp/~dosankosoft/p-bbsa/p-bbsa.php" rel="nofollow">http://www53.atpages.jp/~dosankosoft/p-bbsa/p-bbsa.php</a>の方でお願いします。(さっき設立しました。) (<span class="comment_date">2013/09/19 (木) 21:13:42</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : なお、議論所について、台風のように荒れてしまった場合はこちらが収拾しに行きます。 (<span class="comment_date">2013/09/19 (木) 21:20:38</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×8 ごめんなさい・・・。これ以上考えられる原因はありません。もし手掛かりなど見つかりましたらお知らせ願います。 (<span class="comment_date">2013/09/19 (木) 21:22:55</span>)</li>
+<li><strong>みんちゃん</strong> : ｍｅｍ：ｄｓｏｓａｐｍｍがないって・・・？ (<span class="comment_date">2013/11/02 (土) 17:18:59</span>)</li>
+<li><strong>みんちゃん</strong> : どこだろ・・・ (<span class="comment_date">2013/11/02 (土) 17:21:51</span>)</li>
+<li><strong>みんちゃん</strong> : mem:dsoscsssもだ (<span class="comment_date">2013/11/02 (土) 17:31:52</span>)</li>
+<li><strong>名無しさん</strong> : 不具合大杉w (<span class="comment_date">2013/11/02 (土) 22:00:37</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑2〜4 いえ、問題ありません。設定をまだ一度も変更していないということでその動作もとってます。そのままお使いください。なお、一度設定を変更するとこのエラーはなくなります。apmmはアプリの保存データ、csssはカーソルの操作方法です。 (<span class="comment_date">2013/11/02 (土) 22:08:51</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : アップデートしました！ (<span class="comment_date">2013/11/03 (日) 22:31:07</span>)</li>
+<li><strong>名無しさん</strong> : これ上位osもどきじゃね？個人的見解だが (<span class="comment_date">2013/11/05 (火) 22:50:48</span>)</li>
+<li><strong>名無しさん</strong> : わざわざ荒れる話題を出さなくても (<span class="comment_date">2013/11/05 (火) 23:04:33</span>)</li>
+<li><strong>名無しさん</strong> : ↑そんなつもりはないんだが (<span class="comment_date">2013/11/05 (火) 23:32:42</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑×3 自分から上位と名乗るのはいかがなものかということで自分から上位とは言ってません。上位でもいいという声が多ければ上位にします。 (<span class="comment_date">2013/11/09 (土) 19:31:15</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 議論所(9月ログ参照)が静寂状態になってきたので消していいですか？それとも議論は終わっていませんか？ (<span class="comment_date">2013/11/30 (土) 23:41:04</span>)</li>
+<li><strong>名無しさん</strong> : ↑オッケーです。 (<span class="comment_date">2013/11/30 (土) 23:55:01</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑分かりました。では消しておきます。 (<span class="comment_date">2013/12/01 (日) 20:41:39</span>)
+</td></tr></table></li>
+<li><strong>ナス</strong> : バージョンfinal楽しみだなー。 (<span class="comment_date">2016/08/11 (木) 09:21:22</span>)</li>
+<li><strong>バカ</strong> : は？ (<span class="comment_date">2016/08/12 (金) 12:56:22</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑*2 期待をお寄せいただきありがとうございます。完全に停滞していたプロジェクトを、少しずつ再開させている状況です。今しばらくお待ち願います。 (<span class="comment_date">2016/08/17 (水) 18:35:26</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : dosankosoftのサイトへ誘導するリンクが古いままだった問題を修正しました。どなたかがそこに関する部分をコメントアウトしてくださっていたようです。ありがとうございます。 (<span class="comment_date">2016/08/17 (水) 18:36:33</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : また、意見箱や一言コメントについて投稿年別に折りたたんでページをすっきりさせた方もありがとうございます。 (<span class="comment_date">2016/08/17 (水) 18:37:50</span>)</li>
+<li><strong>SquidSky</strong> : あ、これがニコニコの道産子さん！開発お疲れさまです。いきなりお初なのに突撃質問になりますが、dosankoos3はいつ公開できますか？ (<span class="comment_date">2016/10/03 (月) 15:55:38</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : ↑OSXのFinalでさえ公開時期が定まっていないので、申し訳ありませんが、明確な時期についてはご案内出来ません。OS3については、OSXが完了してから取り掛かる事になります。 (<span class="comment_date">2016/12/14 (水) 21:58:10</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : 去年8月にお知らせしてから数日はプログラム作業していましたが、また停滞していました。これからしばらくの期間は、プログラミングに時間を割けるかどうか微妙です。 (<span class="comment_date">2017/10/18 (水) 22:05:46</span>)</li>
+<li><strong>道産子(dosankosoft)</strong> : どうしよう・・・「ジャガーマンシリーズ」とかいう動画群を見てたら色んな事ほっぽり投げて参入したくなってきたという・・・（←また遅らす気か (<span class="comment_date">2017/11/19 (日) 17:00:46</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/DosankoOSX" />
+  <input type="hidden" name="comment_no" value="1" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="976677086b6efb914ba52f5505064c8f" />
+  <label for="_p_comment_name_1" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_1" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_1" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_6_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2028d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2971d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1903d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1914d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2365d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2566d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2136d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1227d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (584d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2359d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_6_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2565d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_6_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (115d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (56d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (72d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (87d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (110d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (115d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (139d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (139d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (204d)">Petit Slash II</a></li>
+</ul>
+<h4>2021/04/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (217d)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (271d)">編集の練習用ページ</a></li>
+</ul>
+</div>
+
+<h3 id="content_6_3">オンライン情報</h3>
+<p>現在同時に 2 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.200 秒  | このページの最終更新 : 2017/11/20 (月) 22:00:35  (1468d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

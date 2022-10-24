@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 汎用三択クイズエンジン「プチ3Q」 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 汎用三択クイズエンジン「プチ3Q」 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, クイズ, まげ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 汎用三択クイズエンジン「プチ3Q」</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7">汎用三択クイズエンジン「プチ3Q」</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.078sec. -->
+<div class="contents">
+<ul><li><a href="#q9fffb88">  概要 </a></li>
+<li><a href="#fde276ff">  強化版 </a></li>
+<li><a href="#vfe470c9">  注意 </a></li>
+<li><a href="#i653755a">  遊び方 </a></li>
+<li><a href="#a945b3c6">  クイズの作り方 </a></li>
+<li><a href="#za46abb2">  戯れ言 </a></li>
+<li><a href="#i5ebf58c">  アンケート </a></li>
+<li><a href="#fbb15686">  公開キー </a></li>
+<li><a href="#c89ae54e">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2015年6月23日投稿 / 投稿者 : まげ / <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%AF%A5%A4%A5%BA">クイズ</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A4%DE%A4%B2">まげ</a> </span></p>
+<p>今日のアクセス：1　　トータルアクセス：2591</p>
+<h3 id="q9fffb88">概要</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;openfile=mg_p3qp1.jpg" title="mg_p3qp1.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;src=mg_p3qp1.jpg" alt="mg_p3qp1.jpg" title="mg_p3qp1.jpg" width="400" height="240" /></a></div>
+
+<p>三択クイズの問題をまぁまぁ簡単に作れて、それを実際にクイズゲームとして遊べるプログラムです。<br class="spacer" />
+サンプルのクイズデータも8種類ほど用意しました。<br class="spacer" />
+制作は旧3DS LLで行いました。</p>
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/ILWzmKCvagk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<h3 id="fde276ff">強化版</h3>
+<p>初版→改良版→新装版とアップグレードを重ね、現在は「強化版」という位置づけになりました。<br class="spacer" />
+主な変更点は、以下のとおりです。<br class="spacer" /></p>
+<p><strong>［新装版→強化版］</strong><br class="spacer" />
+●タイトル画面の<strong>「設定」</strong>で、クイズの解答に<strong>制限時間</strong>を設けることができます。<br class="spacer" />
+●タイトル画面の<strong>「作り方」</strong>で、<strong>クイズデータの作り方マニュアル</strong>をご覧いただけます（ここで説明しているのと同内容です）。<br class="spacer" />
+●「プチコ」の出番や種類が増えました(^^)。<br class="spacer" /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;openfile=mg_p3qp2.jpg" title="mg_p3qp2.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;src=mg_p3qp2.jpg" alt="mg_p3qp2.jpg" title="mg_p3qp2.jpg" width="400" height="240" /></a></div>
+
+<p><strong>［初版・改良版→新装版］</strong><br class="spacer" />
+●問題＆三択を、それまでのGPUTCHR表示から、<strong>ダイアログ表示</strong>に変更。文字が読みやすくなりました。<br class="spacer" />
+●表示をダイアログにしたことに伴い、解答方法がタッチ操作から、<strong>ボタン操作</strong>に変更。…これはタッチの方が個人的には好きだったので残念です。<br class="spacer" />
+●クイズデータの選択を、ファイルダイアログでの打ち込みから、ボタン操作だけでできるように変更。ラクチンです♪<br class="spacer" />
+●タイトル画面を付けました。グッとゲームっぽくなりました(^^)。<br class="spacer" />
+●オリジナルキャラ<strong>「プチコ」</strong>が、マスコットとして現われ、愛想をふりまきます(^^)。<br class="spacer" /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;openfile=mg_p3qn2.jpg" title="mg_p3qn2.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;src=mg_p3qn2.jpg" alt="mg_p3qn2.jpg" title="mg_p3qn2.jpg" width="320" height="240" /></a></div>
+
+<p>なお、クイズデータは前バージョンと同じファイルが使用可能です。（前バージョンも「MG_P3QB」という名前で同梱しています）<br class="spacer" /></p>
+
+<h3 id="vfe470c9">注意</h3>
+<p>このプログラムは、本体が入るスロット（通常はスロット0）の他に、<strong>スロット1</strong>を使います。<br class="spacer" />
+<strong>スロット1</strong>に他に必要なプログラムやデータがある場合は、先に保存してからプレイしてください。</p>
+
+<h3 id="i653755a">遊び方</h3>
+<p>ダウンロードした<strong>「PETIT3Q」</strong>内の<strong>「.START」</strong>を起動すると始まります。<br class="spacer" />
+起動して、フォルダチェックが終わると、タイトルが表示されます。Aボタンでゲームスタート、Yボタンで終了です。<br class="spacer" /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;openfile=mg_p3qn3.jpg" title="mg_p3qn3.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;src=mg_p3qn3.jpg" alt="mg_p3qn3.jpg" title="mg_p3qn3.jpg" width="400" height="240" /></a></div>
+
+<p>まず、どのクイズで遊ぶかを選択してください。十字ボタン上下で選択、Aボタンで決定、Yボタンでキャンセルです。<br class="spacer" />
+標準で、以下8種類のクイズを同梱しています。<br class="spacer" />
+<strong>●プチコン3号クイズ</strong><br class="spacer" />
+<strong>●江戸いろはがるたクイズ</strong><br class="spacer" />
+<strong>●上方いろはがるたクイズ</strong>［作：かつみ様］<br class="spacer" />
+<strong>●レトロアーケードゲームクイズ</strong><br class="spacer" />
+<strong>●世界の首都クイズ</strong><br class="spacer" />
+<strong>●流行語大賞クイズ</strong><br class="spacer" />
+<strong>●まげの好きな映画からクイズ</strong><br class="spacer" />
+<strong>●いろいろ雑学クイズ</strong><br class="spacer" /></p>
+<p>クイズデータを選んだら、タイトルが表示され、続いて出題となります。<br class="spacer" />
+ダイアログで問題と三択が表示されます。それぞれの選択肢にX、A、Bボタンが割り振られているので、正解だと思うボタンを押してください（Yボタンを押せば、ゲームを中断できます）。<br class="spacer" /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;openfile=mg_p3qn4.jpg" title="mg_p3qn4.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%C8%C6%CD%D1%BB%B0%C2%F2%A5%AF%A5%A4%A5%BA%A5%A8%A5%F3%A5%B8%A5%F3%A1%D6%A5%D7%A5%C13Q%A1%D7&amp;src=mg_p3qn4.jpg" alt="mg_p3qn4.jpg" title="mg_p3qn4.jpg" width="400" height="240" /></a></div>
+
+<p>解答すると正解か間違いかが判定され、次の出題に移ります。全問出し終えると、また同じクイズデータから問題を出し続けます。<br class="spacer" />
+初期状態では、5問ごとに成績を発表します。なお、解答の時間制限はありません。<br class="spacer" /></p>
+
+<h3 id="a945b3c6">クイズの作り方</h3>
+<p>サンプルクイズで遊んだ後、スロット1を見れば、サンプルのデータを見ることができます。<br class="spacer" /></p>
+<p>問題データの構造は以下の通りで、END以外は頭に「’」（REM）を付けます。 <br class="spacer" /></p>
+<p><strong>1行目：’クイズのタイトル</strong><br class="spacer" />
+<strong>2行目：’問題文，答え1（正解），答え2，答え3</strong><br class="spacer" />
+　・<br class="spacer" />
+　・<br class="spacer" />
+　・<br class="spacer" />
+<strong>最後の行：END</strong><br class="spacer" /></p>
+<p>2行目以降の、問題文とそれぞれの答えの区切りは「，」（コンマ）です。<br class="spacer" />
+例えば、「桃太郎のお供は犬と猿と？」という問題文で、答えが「キジ」の場合、<br class="spacer" /></p>
+<p><strong>’桃太郎のお供は犬と猿と？，キジ，トラ，クマ</strong></p>
+<p>となります。<br class="spacer" />
+出来たら普通のプログラム同様にSAVEするだけです。<br class="spacer" />
+（例えばスロット1で問題データを作ったのなら「SAVE ”PRG1:QUIZTEST”」）<br class="spacer" /></p>
+<p>なお、文字数を制限する仕組みは特に設けていないので、問題文や答えが長過ぎると、画面からハミ出しますからご注意を。</p>
+
+<h3 id="za46abb2">戯れ言</h3>
+<p><strong>［初版・改良版］</strong><br class="spacer" />
+実はGPUTCHRだと、特に漢字はツブれてしまって読みづらいという、クイズとしては致命的な問題があります(^^;)。<br class="spacer" />
+なので途中から、ダイアログで表示させるか、はたまた大喜利作品の漢字フォントライブラリーを拝借するか…と悩みました。<br class="spacer" />
+でも、「手作りゲーム感」を重視して、こうした次第です(^^)。<br class="spacer" /></p>
+<p><strong>［新装版］</strong><br class="spacer" />
+と言っていましたが、やはり致命的な問題があるのを良しとするのも筋違いかなぁ、と思い直した次第です(^^;)。<br class="spacer" />
+「エンジン」と名乗っているとおり、改造されることを前提にしていたので、シンプルにしていたのですが、まぁしませんよねぇ。<br class="spacer" />
+なので、遊びやすさと見やすさ、そして楽しさを大事に、この新装版を作りました。<br class="spacer" /></p>
+<p><strong>［強化版］</strong><br class="spacer" />
+たびたびすみません(^^;)。これで落ち着くと思います。<br class="spacer" /></p>
+<p>二次使用歓迎です。クイズデータだけでもいいですし、本体（改造OK）＋データセットでの配布も構いません。その際は、この投稿等へご一報いただけたら幸いです。<br class="spacer" /></p>
+
+<h3 id="i5ebf58c">アンケート</h3>
+<p>評価をお願いします。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/汎用三択クイズエンジン「プチ3Q」" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="2a18020f58455b039d8969172257e5ea" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">面白い</td>
+   <td align="right" class="vote_td2">10&nbsp;&nbsp;
+    <input type="submit" name="vote_CCCCC7F2A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">面白くない</td>
+   <td align="right" class="vote_td1">1&nbsp;&nbsp;
+    <input type="submit" name="vote_CCCCC7F2A4AFA4CAA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="fbb15686">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">S5EX3KQE</span>
+</div>
+</div>
+
+</div>
+
+<p>ダウンロード後、プロジェクト<strong>「PETIT3Q」</strong>内の<strong>「.START」</strong>を起動してください</p>
+
+<h3 id="c89ae54e">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (948d)">掲示板</a>へ)</p>
+<ul><li><strong>魔神</strong> : 使いやすくていいですね! (<span class="comment_date">2015/06/24 (水) 14:24:24</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞魔神さん：クイズを作るのって実は大変だから、せめてプログラムに組み込む部分は簡単になるようにしました(^^)。 (<span class="comment_date">2015/06/24 (水) 17:16:29</span>)</li>
+<li><strong>hanzo</strong> : まげさん作品の例に漏れず、本作もUIが直感的に理解しやすいです。惜しむらくは、ご自身でも指摘されているとおり、問題文が読みづらいことでしょうか。問題文データと並列にTALK用テキストデータを持たせて、問題文表示と同時に、TALKによる問題文読み上げを行うことで、そのあたりをある程度補えるかも知れませんね。 (<span class="comment_date">2015/06/24 (水) 20:54:01</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞hanzoさん：ご提案ありがとーございます。ただ、TALKは命令実行から発声までのタイムラグが致命的なんですよねぇ。何かボタンを押したらダイアログで捕捉…するんだったら、最初からダイアログ表示しろって話でしょうし…(^^;)。 (<span class="comment_date">2015/06/24 (水) 22:10:36</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ところで、付属クイズはプチコン3号編の他に、江戸いろはがるた編も付いています。「QUIZ_IROHA」です。こっちはタイトル以外はオールひらがななので、まだ読みやすいと思います♪ (<span class="comment_date">2015/06/24 (水) 22:12:55</span>)</li>
+<li><strong>まげ（投稿者）</strong> : 公開キーを、改良版のに変更しました。クイズデータを選びやすくしました〜♪ (<span class="comment_date">2015/06/25 (木) 17:47:20</span>)</li>
+<li><strong>まげ（投稿者）</strong> : 公開キーを、新装版のに変更しました。もはや別物です(^^;)。 (<span class="comment_date">2015/07/01 (水) 17:47:58</span>)</li>
+<li><strong>hanzo</strong> : おおっ！めちゃくちゃ豪華になってますねー。ダイヤログ表示になって問題文が読みやすくなった代わりに、タッチ操作ではなくなっていますが、私個人的には、ボタン操作の方がテンポが良いような気がします。ペンの持ちかえ動作が要らないせいでしょうか。私は映画に造詣が深くないので、映画クイズの正解率は低かったですが、タイトルだけはほとんど分かりました。レトロゲームクイズに至っては、ほとんどバッチリ。やっぱ同い年ですねー。 (<span class="comment_date">2015/07/01 (水) 18:20:08</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞hanzoさん：座標を割り出して意地でもタッチで…と考えましたがスグに無意味と悟りました(^^;)。ちなみに映画とレトロゲーは、記憶を頼りに問題作成→ネットで裏付け、という段取りで作りました。記憶の正解率は…聞かないで(^^;)。 (<span class="comment_date">2015/07/01 (水) 20:12:52</span>)</li>
+<li><strong>まげ（投稿者）</strong> : 公開キーを、強化版のに変更しました。ホント、これで落ち着きたい…(^^;)。 (<span class="comment_date">2015/07/03 (金) 20:40:56</span>)</li>
+<li><strong>名無しさん</strong> : つまんな (<span class="comment_date">2015/09/19 (土) 12:18:07</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞名無しさん：まぁ、クイズが好きか嫌いかで、評価は分かれるでしょうね。それでもわざわざコメントを残してくださるのが有り難いですね。 (<span class="comment_date">2015/09/23 (水) 20:18:33</span>)</li>
+<li><strong>名無しさん</strong> : 誤字報告ですが、首都問題でハノイがハイノになっています。 (<span class="comment_date">2017/09/28 (木) 19:05:45</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞名無しさん：おおー！　２年越しの誤字報告、恐れ入ります〜！　いやぁ〜、…ずっとハイノだと思ってましたぁ〜(^^;)。実際にハイノという名の地名もあるらしいので、なおややこしい話ですねぇ。…もちろん、出題的に正解はハノイですが(^^;)。 (<span class="comment_date">2017/09/28 (木) 20:25:41</span>)</li>
+<li><strong>takumi</strong> : 僕のosに入れさせていただきます!! (<span class="comment_date">2018/09/10 (月) 19:16:28</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞takumiさん：わかりました！！　 (<span class="comment_date">2018/09/10 (月) 21:25:19</span>)</li>
+<li><strong>takumi</strong> : 拡張版を作りました (<span class="comment_date">2018/09/12 (水) 20:12:48</span>)</li>
+<li><strong>takumi</strong> : 拡張版を作りました (<span class="comment_date">2018/09/12 (水) 20:15:12</span>)</li>
+<li><strong>まげ（投稿者）</strong> : ＞takumiさん：遅くなりました。ここにその公開キーを掲載していただいても問題はありませんからね。 (<span class="comment_date">2018/09/24 (月) 21:07:29</span>)</li>
+<li><strong>takumi</strong> : すみません。もう公開終わったので消してしまいました。また後日公開する予定です。 (<span class="comment_date">2018/09/24 (月) 22:05:58</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/汎用三択クイズエンジン「プチ3Q」" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="2a18020f58455b039d8969172257e5ea" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2002d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (870d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (268d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (16h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1826d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (220d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (10h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (117d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (15h)">編集の練習用ページ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (16h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (2d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表<span class="counter">(20)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (2d)">nikuラジオ<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (798d)">HERO2 一台で二人同時プレイ<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%CD%F0%C6%AE" title="Toukou/プチ乱闘 (831d)">【公開終了】プチ乱闘<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1691d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (66d)">【公開終了】弾幕音遊戯<span class="counter">(7)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 2 人がこのサイトを見ています</li>
+<li>このページはこれまでに 2591 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.087 秒  | このページの最終更新 : 2018/09/24 (月) 22:05:58  (888d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

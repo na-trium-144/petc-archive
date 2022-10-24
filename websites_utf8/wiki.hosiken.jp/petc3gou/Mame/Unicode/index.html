@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>ユニコードについて - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="ユニコードについて - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="Unicode, 特殊記号" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Mame%2FUnicode">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Mame%2FUnicode">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FUnicode">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Mame%2FUnicode">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>ユニコードについて</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Mame%2FUnicode">Unicode</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.065sec. -->
+<div class="contents">
+<ul><li><a href="#n9812915"> 概要 </a></li>
+<li><a href="#Unicode"> ユニコードの入力方法 </a></li>
+<li><a href="#uE0"> Unicodeの私用領域の表  </a></li></ul>
+</div>
+
+<p><span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=Unicode">Unicode</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%C6%C3%BC%EC%B5%AD%B9%E6">特殊記号</a> </span></p>
+<h3 id="n9812915">概要</h3>
+<p>プチコンでUnicodeを文字に変換するには、<br class="spacer" />
+<span class="basic-text smbas">CHR$()</span>関数を使います。<br class="spacer" />
+中にUTF-16のコードを入れて使います。<br class="spacer" />
+16進数を使いたい場合は、コードの前に<span class="basic-text smbas">＆H</span>を付けます。<br class="spacer" />
+<span class="basic-text smbas">＆H</span>は、16進数だということを表す記号です。<br class="spacer" />
+例えば、同じ文字を色々な表現方法で表すとこうなります。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">0x〇〇〇〇</th><th class="style_th"><span class="basic-text smbas">CHR$()</span>関数(10進数)</th><th class="style_th"><span class="basic-text smbas">CHR$()</span>関数(16進数)</th><th class="style_th">U+〇〇〇〇</th><th class="style_th">\u〇〇〇〇</th><th class="style_th">実際の表示</th></tr><tr><td class="style_td">0x0026</td><td class="style_td"><span class="basic-text smbas">CHR$(38)</span></td><td class="style_td"><span class="basic-text smbas">CHR$(＆H0026)</span></td><td class="style_td">U+0026</td><td class="style_td">\u0026</td><td class="style_td">&#x26;</td></tr></tbody></table></div>
+<p>※このページはNintendo SwitchかWii Uかニンテンドー3DSでの表示を推奨します。</p>
+
+<h3 id="Unicode">ユニコードの入力方法</h3>
+<p>例えば、</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">？ＣＨＲ＄（＆Ｈ００２５）＋ＣＨＲ＄（３７９１３）</span></li>
+</ol></code></div></div>
+<p>と入力すると、<br class="spacer" /></p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">％鐙</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<p>と表示されます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＡＬＯＧ　ＣＨＲ＄（＆ＨＥ０００）＋ＣＨＲ＄（＆ＨＥ０２０）＋ＣＨＲ＄（＆ＨＥ０３２）</span></li>
+</ol></code></div></div>
+<p>だと、<br class="spacer" />&#xe000;&#xe020;&#xe032;<br class="spacer" />となります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＡＬＯＧ　ＣＨＲ＄（＆ＨＥ０００）＋”：攻撃”＋ＣＨＲ＄（１０）＋ＣＨＲ＄（＆ＨＥ００１）＋”：防御”</span></li>
+</ol></code></div></div>
+<p>だと、
+<br class="spacer" />
+&#xe000;:攻撃
+<br class="spacer" />
+&#xe001;:防御
+<br class="spacer" />
+となります。</p>
+
+<h3 id="uE0">Unicodeの私用領域の表</h3>
+<p>U+E000〜U+F8FF(私用領域)は、自由に記号を割り当ててもいいことになっており、ニンテンドーDS以降の任天堂のハードではそこに記号が割り当てられています。<br />
+※コンソールでは豆腐になります。DIALOGで表示できる文字です。
+<br class="spacer" /><br class="spacer" /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">U+E</th><th class="style_th">0</th><th class="style_th">1</th><th class="style_th">2</th><th class="style_th">3</th><th class="style_th">4</th><th class="style_th">5</th><th class="style_th">6</th><th class="style_th">7</th><th class="style_th">8</th><th class="style_th">9</th><th class="style_th">A</th><th class="style_th">B</th><th class="style_th">C</th><th class="style_th">D</th><th class="style_th">E</th><th class="style_th">F</th></tr><tr><th class="style_th">00</th><td class="style_td">&#xe000;</td><td class="style_td">&#xe001;</td><td class="style_td">&#xe002;</td><td class="style_td">&#xe003;</td><td class="style_td">&#xe004;</td><td class="style_td">&#xe005;</td><td class="style_td">&#xe006;</td><td class="style_td">&#xe007;</td><td class="style_td">&#xe008;</td><td class="style_td">&#xe009;</td><td class="style_td">&#xe00a;</td><td class="style_td">&#xe00b;</td><td class="style_td">&#xe00c;</td><td class="style_td">&#xe00d;</td><td class="style_td">&#xe00e;</td><td class="style_td">&#xe00f;</td></tr><tr><th class="style_th">01</th><td class="style_td">&#xe010;</td><td class="style_td">&#xe011;</td><td class="style_td">&#xe012;</td><td class="style_td">&#xe013;</td><td class="style_td">&#xe014;</td><td class="style_td">&#xe015;</td><td class="style_td">&#xe016;</td><td class="style_td">&#xe017;</td><td class="style_td">&#xe018;</td><td class="style_td">&#xe019;</td><td class="style_td">&#xe01a;</td><td class="style_td">&#xe01b;</td><td class="style_td">&#xe01c;</td><td class="style_td">&#xe01d;</td><td class="style_td">&#xe01e;</td><td class="style_td">&#xe01f;</td></tr><tr><th class="style_th">02</th><td class="style_td">&#xe020;</td><td class="style_td">&#xe021;</td><td class="style_td">&#xe022;</td><td class="style_td">&#xe023;</td><td class="style_td">&#xe024;</td><td class="style_td">&#xe025;</td><td class="style_td">&#xe026;</td><td class="style_td">&#xe027;</td><td class="style_td">&#xe028;</td><td class="style_td">&#xe029;</td><td class="style_td">&#xe02a;</td><td class="style_td">&#xe02b;</td><td class="style_td">&#xe02c;</td><td class="style_td">&#xe02d;</td><td class="style_td">&#xe02e;</td><td class="style_td">&#xe02f;</td></tr><tr><th class="style_th">03</th><td class="style_td">&#xe030;</td><td class="style_td">&#xe031;</td><td class="style_td">&#xe032;</td><td class="style_td">&#xe033;</td><td class="style_td">&#xe034;</td><td class="style_td">&#xe035;</td><td class="style_td">&#xe036;</td><td class="style_td">&#xe037;</td><td class="style_td">&#xe038;</td><td class="style_td">&#xe039;</td><td class="style_td">&#xe03a;</td><td class="style_td">&#xe03b;</td><td class="style_td">&#xe03c;</td><td class="style_td">&#xe03d;</td><td class="style_td">&#xe03e;</td><td class="style_td">&#xe03f;</td></tr><tr><th class="style_th">04</th><td class="style_td">&#xe040;</td><td class="style_td">&#xe041;</td><td class="style_td">&#xe042;</td><td class="style_td">&#xe043;</td><td class="style_td">&#xe044;</td><td class="style_td">&#xe045;</td><td class="style_td">&#xe046;</td><td class="style_td">&#xe047;</td><td class="style_td">&#xe048;</td><td class="style_td">&#xe049;</td><td class="style_td">&#xe04a;</td><td class="style_td">&#xe04b;</td><td class="style_td">&#xe04c;</td><td class="style_td">&#xe04d;</td><td class="style_td">&#xe04e;</td><td class="style_td">&#xe04f;</td></tr><tr><th class="style_th">05</th><td class="style_td">&#xe050;</td><td class="style_td">&#xe051;</td><td class="style_td">&#xe052;</td><td class="style_td">&#xe053;</td><td class="style_td">&#xe054;</td><td class="style_td">&#xe055;</td><td class="style_td">&#xe056;</td><td class="style_td">&#xe057;</td><td class="style_td">&#xe058;</td><td class="style_td">&#xe059;</td><td class="style_td">&#xe05a;</td><td class="style_td">&#xe05b;</td><td class="style_td">&#xe05c;</td><td class="style_td">&#xe05d;</td><td class="style_td">&#xe05e;</td><td class="style_td">&#xe05f;</td></tr><tr><th class="style_th">06</th><td class="style_td">&#xe060;</td><td class="style_td">&#xe061;</td><td class="style_td">&#xe062;</td><td class="style_td">&#xe063;</td><td class="style_td">&#xe064;</td><td class="style_td">&#xe065;</td><td class="style_td">&#xe066;</td><td class="style_td">&#xe067;</td><td class="style_td">&#xe068;</td><td class="style_td">&#xe069;</td><td class="style_td">&#xe06a;</td><td class="style_td">&#xe06b;</td><td class="style_td">&#xe06c;</td><td class="style_td">&#xe06d;</td><td class="style_td">&#xe06e;</td><td class="style_td">&#xe06f;</td></tr><tr><th class="style_th">07</th><td class="style_td">&#xe070;</td><td class="style_td">&#xe071;</td><td class="style_td">&#xe072;</td><td class="style_td">&#xe073;</td><td class="style_td">&#xe074;</td><td class="style_td">&#xe075;</td><td class="style_td">&#xe076;</td><td class="style_td">&#xe077;</td><td class="style_td">&#xe078;</td><td class="style_td">&#xe079;</td><td class="style_td">&#xe07a;</td><td class="style_td">&#xe07b;</td><td class="style_td">&#xe07c;</td><td class="style_td">&#xe07d;</td><td class="style_td">&#xe07e;</td><td class="style_td">&#xe07f;</td></tr><tr><th class="style_th">08</th><td class="style_td">&#xe080;</td><td class="style_td">&#xe081;</td><td class="style_td">&#xe082;</td><td class="style_td">&#xe083;</td><td class="style_td">&#xe084;</td><td class="style_td">&#xe085;</td><td class="style_td">&#xe086;</td><td class="style_td">&#xe087;</td><td class="style_td">&#xe088;</td><td class="style_td">&#xe089;</td><td class="style_td">&#xe08a;</td><td class="style_td">&#xe08b;</td><td class="style_td">&#xe08c;</td><td class="style_td">&#xe08d;</td><td class="style_td">&#xe08e;</td><td class="style_td">&#xe08f;</td></tr><tr><th class="style_th">09</th><td class="style_td">&#xe090;</td><td class="style_td">&#xe091;</td><td class="style_td">&#xe092;</td><td class="style_td">&#xe093;</td><td class="style_td">&#xe094;</td><td class="style_td">&#xe095;</td><td class="style_td">&#xe096;</td><td class="style_td">&#xe097;</td><td class="style_td">&#xe098;</td><td class="style_td">&#xe099;</td><td class="style_td">&#xe09a;</td><td class="style_td">&#xe09b;</td><td class="style_td">&#xe09c;</td><td class="style_td">&#xe09d;</td><td class="style_td">&#xe09e;</td><td class="style_td">&#xe09f;</td></tr><tr><th class="style_th">0A</th><td class="style_td">&#xe0a0;</td><td class="style_td">&#xe0a1;</td><td class="style_td">&#xe0a2;</td><td class="style_td">&#xe0a3;</td><td class="style_td">&#xe0a4;</td><td class="style_td">&#xe0a5;</td><td class="style_td">&#xe0a6;</td><td class="style_td">&#xe0a7;</td><td class="style_td">&#xe0a8;</td><td class="style_td">&#xe0a9;</td><td class="style_td">&#xe0aa;</td><td class="style_td">&#xe0ab;</td><td class="style_td">&#xe0ac;</td><td class="style_td">&#xe0ad;</td><td class="style_td">&#xe0ae;</td><td class="style_td">&#xe0af;</td></tr><tr><th class="style_th">0B</th><td class="style_td">&#xe0b0;</td><td class="style_td">&#xe0b1;</td><td class="style_td">&#xe0b2;</td><td class="style_td">&#xe0b3;</td><td class="style_td">&#xe0b4;</td><td class="style_td">&#xe0b5;</td><td class="style_td">&#xe0b6;</td><td class="style_td">&#xe0b7;</td><td class="style_td">&#xe0b8;</td><td class="style_td">&#xe0b9;</td><td class="style_td">&#xe0ba;</td><td class="style_td">&#xe0bb;</td><td class="style_td">&#xe0bc;</td><td class="style_td">&#xe0bd;</td><td class="style_td">&#xe0be;</td><td class="style_td">&#xe0bf;</td></tr><tr><th class="style_th">0C</th><td class="style_td">&#xe0c0;</td><td class="style_td">&#xe0c1;</td><td class="style_td">&#xe0c2;</td><td class="style_td">&#xe0c3;</td><td class="style_td">&#xe0c4;</td><td class="style_td">&#xe0c5;</td><td class="style_td">&#xe0c6;</td><td class="style_td">&#xe0c7;</td><td class="style_td">&#xe0c8;</td><td class="style_td">&#xe0c9;</td><td class="style_td">&#xe0ca;</td><td class="style_td">&#xe0cb;</td><td class="style_td">&#xe0cc;</td><td class="style_td">&#xe0cd;</td><td class="style_td">&#xe0ce;</td><td class="style_td">&#xe0cf;</td></tr><tr><th class="style_th">0D</th><td class="style_td">&#57552;</td><td class="style_td">&#57553;</td><td class="style_td">&#57554;</td><td class="style_td">&#57555;</td><td class="style_td">&#57556;</td><td class="style_td">&#57557;</td><td class="style_td">&#57558;</td><td class="style_td">&#57559;</td><td class="style_td">&#57560;</td><td class="style_td">&#57561;</td><td class="style_td">&#57562;</td><td class="style_td">&#57563;</td><td class="style_td">&#57564;</td><td class="style_td">&#57565;</td><td class="style_td">&#57566;</td><td class="style_td">&#57567;</td></tr><tr><th class="style_th">0E</th><td class="style_td">&#57568;</td><td class="style_td">&#57569;</td><td class="style_td">&#57570;</td><td class="style_td">&#57571;</td><td class="style_td">&#57572;</td><td class="style_td">&#57573;</td><td class="style_td">&#57574;</td><td class="style_td">&#57575;</td><td class="style_td">&#57576;</td><td class="style_td">&#57577;</td><td class="style_td">&#57578;</td><td class="style_td">&#57579;</td><td class="style_td">&#57580;</td><td class="style_td">&#57581;</td><td class="style_td">&#57582;</td><td class="style_td">&#57583;</td></tr><tr><th class="style_th">0F</th><td class="style_td">&#57584;</td><td class="style_td">&#57585;</td><td class="style_td">&#57586;</td><td class="style_td">&#57587;</td><td class="style_td">&#57588;</td><td class="style_td">&#57589;</td><td class="style_td">&#57590;</td><td class="style_td">&#57591;</td><td class="style_td">&#57592;</td><td class="style_td">&#57593;</td><td class="style_td">&#57594;</td><td class="style_td">&#57595;</td><td class="style_td">&#57596;</td><td class="style_td">&#57597;</td><td class="style_td">&#57598;</td><td class="style_td">&#57599;</td></tr><tr><th class="style_th">10</th><td class="style_td">&#57600;</td><td class="style_td">&#57601;</td><td class="style_td">&#57602;</td><td class="style_td">&#57603;</td><td class="style_td">&#57604;</td><td class="style_td">&#57605;</td><td class="style_td">&#57606;</td><td class="style_td">&#57607;</td><td class="style_td">&#57608;</td><td class="style_td">&#57609;</td><td class="style_td">&#57610;</td><td class="style_td">&#57611;</td><td class="style_td">&#57612;</td><td class="style_td">&#57613;</td><td class="style_td">&#57614;</td><td class="style_td">&#57615;</td></tr><tr><th class="style_th">11</th><td class="style_td">&#57616;</td><td class="style_td">&#57617;</td><td class="style_td">&#57618;</td><td class="style_td">&#57619;</td><td class="style_td">&#57620;</td><td class="style_td">&#57621;</td><td class="style_td">&#57622;</td><td class="style_td">&#57623;</td><td class="style_td">&#57624;</td><td class="style_td">&#57625;</td><td class="style_td">&#57626;</td><td class="style_td">&#57627;</td><td class="style_td">&#57628;</td><td class="style_td">&#57629;</td><td class="style_td">&#57630;</td><td class="style_td">&#57631;</td></tr><tr><th class="style_th">12</th><td class="style_td">&#57632;</td><td class="style_td">&#57633;</td><td class="style_td">&#57634;</td><td class="style_td">&#57635;</td><td class="style_td">&#57636;</td><td class="style_td">&#57637;</td><td class="style_td">&#57638;</td><td class="style_td">&#57639;</td><td class="style_td">&#57640;</td><td class="style_td">&#57641;</td><td class="style_td">&#57642;</td><td class="style_td">&#57643;</td><td class="style_td">&#57644;</td><td class="style_td">&#57645;</td><td class="style_td">&#57646;</td><td class="style_td">&#57647;</td></tr><tr><th class="style_th">13</th><td class="style_td">&#57648;</td><td class="style_td">&#57649;</td><td class="style_td">&#57650;</td><td class="style_td">&#57651;</td><td class="style_td">&#57652;</td><td class="style_td">&#57653;</td><td class="style_td">&#57654;</td><td class="style_td">&#57655;</td><td class="style_td">&#57656;</td><td class="style_td">&#57657;</td><td class="style_td">&#57658;</td><td class="style_td">&#57659;</td><td class="style_td">&#57660;</td><td class="style_td">&#57661;</td><td class="style_td">&#57662;</td><td class="style_td">&#57663;</td></tr><tr><th class="style_th">14</th><td class="style_td">&#57664;</td><td class="style_td">&#57665;</td><td class="style_td">&#57666;</td><td class="style_td">&#57667;</td><td class="style_td">&#57668;</td><td class="style_td">&#57669;</td><td class="style_td">&#57670;</td><td class="style_td">&#57671;</td><td class="style_td">&#57672;</td><td class="style_td">&#57673;</td><td class="style_td">&#57674;</td><td class="style_td">&#57675;</td><td class="style_td">&#57676;</td><td class="style_td">&#57677;</td><td class="style_td">&#57678;</td><td class="style_td">&#57679;</td></tr><tr><th class="style_th">15</th><td class="style_td">&#57680;</td><td class="style_td">&#57681;</td><td class="style_td">&#57682;</td><td class="style_td">&#57683;</td><td class="style_td">&#57684;</td><td class="style_td">&#57685;</td><td class="style_td">&#57686;</td><td class="style_td">&#57687;</td><td class="style_td">&#57688;</td><td class="style_td">&#57689;</td><td class="style_td">&#57690;</td><td class="style_td">&#57691;</td><td class="style_td">&#57692;</td><td class="style_td">&#57693;</td><td class="style_td">&#57694;</td><td class="style_td">&#57695;</td></tr></tbody></table></div>
+<p>※Nintendo Switch,Wii U,ニンテンドー3DS以外だと、別の文字が表示されます。</p>
+<p>パソコン等で閲覧する方のために上記テーブルの『Newニンテンドー2DS LL』内蔵ブラウザーでの表示例を掲載します。<br /></p>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Mame%2FUnicode&amp;openfile=NEW2DS_EXFONT.jpg" title="NEW2DS_EXFONT.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Mame%2FUnicode&amp;src=NEW2DS_EXFONT.jpg" alt="NEW2DS_EXFONT.jpg" title="NEW2DS_EXFONT.jpg" width="670" height="410" /></a></div>
+
+<p>画像の範囲外(U+E080以降)は空白または豆腐として表示されます。<br /></p>
+<p>※ダイアログ専用絵文字はコンソールで表示不能だが、コンソール絵文字は基本的にダイアログ表示可能。<br />
+例外は行番号関連の絵文字で、ダイアログでは豆腐。</p>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2002d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (594d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (39d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (164d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (773d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (870d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (268d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (13m)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (709d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1826d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (220d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (1m)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (117d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (27d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="My parents are Yoshi. (1m)">My parents are Yoshi.</a></li>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (13m)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (19m)">トレインビジョンメーカーfor3DS</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1h)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (2d)">リズミカルおもちつきMC</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (3d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (4d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (6d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (6d)">リズミカルおもちつきNT</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (1h)">nikuラジオ<span class="counter">(26)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表<span class="counter">(26)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (15d)">スマイルツール・ランチャ<span class="counter">(12)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (773d)">サンプルプログラム集<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (798d)">HERO2 一台で二人同時プレイ<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (2d)">リズミカルおもちつきMC<span class="counter">(10)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1691d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(10)</span></a></li>
+ <li><span title="Mame/Unicode  (39d)">ユニコードについて<span class="counter">(9)</span></span></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (66d)">【公開終了】弾幕音遊戯<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?WorksLink" title="WorksLink (870d)">プチコン3号作品集<span class="counter">(8)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1274d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3613 回、本日は 3 回、昨日は 6 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.070 秒  | このページの最終更新 : 2021/01/21 (木) 19:48:52  (39d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

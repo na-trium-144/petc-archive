@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : JPRDR - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : JPRDR - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, QRコード, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FJPRDR">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FJPRDR">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FJPRDR">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FJPRDR">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : JPRDR</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FJPRDR">JPRDR</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.051sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#copyright">  使用/参考にさせていただいたもの </a></li></ul></li>
+<li><a href="#sebf3de6"> テキストデータの読み込みかた </a></li>
+<li><a href="#oa30517a"> バグ等情報 </a>
+<ul><li><a href="#kceb252c"> 対応文字等 </a></li>
+<li><a href="#i468d786"> 未対応文字等 </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  QR コード </a></li>
+<li><a href="#List">  プログラムリスト </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2013年2月2日投稿
+/ 投稿者 : @hnakai0909
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>JPRDR は JaPanese ReaDeR　の略です。
+Shift-JIS形式の文章を表示することができます。</p>
+
+<h4 id="copyright">使用/参考にさせていただいたもの</h4>
+<ul><li>「漢字データ」( <a href="http://wiki.hosiken.jp/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF" rel="nofollow">http://wiki.hosiken.jp/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF</a> )
+<ul><li>「美咲フォント」( <a href="http://www.geocities.jp/littlimi/misaki.htm" rel="nofollow">http://www.geocities.jp/littlimi/misaki.htm</a> )</li></ul></li>
+<li>「区点コードと-Shift_JIS」( <a href="http://slashdot.jp/journal/476584/%E5%8C%BA%E7%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A8-Shift_JIS" rel="nofollow">http://slashdot.jp/journal/476584/%E5%8C%BA%E7%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%A8-Shift_JIS</a> )</li></ul>
+<ul><li>「プチコン - Wikipedia」【文章データのサンプルとして】( <a href="http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%81%E3%82%B3%E3%83%B3" rel="nofollow">http://ja.wikipedia.org/wiki/%E3%83%97%E3%83%81%E3%82%B3%E3%83%B3</a> )</li></ul>
+
+<h3 id="sebf3de6">テキストデータの読み込みかた</h3>
+<ol><li>Shift-JIS形式で保存されたテキストデータを適宜用意する(現在48KB以下のみ対応)</li>
+<li>DSPCBMP ( <a href="http://www.aogondo.net/PetitCom/DSPCBMP/index.php" rel="nofollow">http://www.aogondo.net/PetitCom/DSPCBMP/index.php</a> )のバイナリ→GRP変換機能を使用してGRPデータに変換する</li>
+<li>公式QR変換ツールなどでQRコードに変換する</li>
+<li>プチコンmkIIに取り込む</li>
+<li>適宜プログラムの16行目の
+<div class="basic-source"><div class="basic-list"><code><ol start="16"><li>ＬＯＡＤ”ＧＲＰ２：ＳＪＩＳＴＥＸＴ”，ＦＡＬＳＥ</li>
+</ol></code></div></div>
+のファイル名を書き換える</li>
+<li>おしまい</li></ol>
+
+<h3 id="oa30517a">バグ等情報</h3>
+<ul><li>「漢字データ」のURLが間違っている</li></ul>
+
+<h4 id="kceb252c">対応文字等</h4>
+<ul><li>1バイト文字
+<ul><li>CR,LF</li>
+<li>タブ</li>
+<li>JIS X 0201(半角英字、半角数字、半角記号、半角カタカナ)</li></ul></li>
+<li>2バイト文字
+<ul><li>1,2区(全角記号)</li>
+<li>3区(全角英字、数字)</li>
+<li>4区(ひらがな)</li>
+<li>5区(カタカナ)　(※ヮヰヱヵヶ→ワイエカケに変換)</li>
+<li>8区(罫線)　(※太線細線関係なく表示)</li>
+<li>13区(機種依存全角記号)</li>
+<li>16〜47区(第1水準漢字)</li>
+<li>48〜84区(第2水準漢字)</li></ul></li></ul>
+
+<h4 id="i468d786">未対応文字等</h4>
+<ul><li>2バイト文字
+<ul><li>6,7区(ギリシャ文字、ロシア(キリル)文字)すべて</li>
+<li>89〜92,115〜119区(特殊漢字)</li></ul></li></ul>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=JPRDRSS.PNG" title="JPRDRSS.PNG"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=JPRDRSS.PNG" alt="JPRDRSS.PNG" title="JPRDRSS.PNG" width="256" height="192" /></a></div>
+
+
+<h3 id="QR">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="2">PRG:HNKSJIS(本体プログラム)</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=qr100.png" title="qr100.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=qr100.png" alt="qr100.png" title="qr100.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=qr101.png" title="qr101.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=qr101.png" alt="qr101.png" title="qr101.png" width="290" height="290" /></a></td></tr></tbody></table></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">GRP:SJISTEXT
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="2">GRP:SJISTEXT(Shift-JIS形式テキストデータのサンプル)</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr0.png" title="text_qr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr0.png" alt="text_qr0.png" title="text_qr0.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr1.png" title="text_qr1.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr1.png" alt="text_qr1.png" title="text_qr1.png" width="290" height="290" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr2.png" title="text_qr2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr2.png" alt="text_qr2.png" title="text_qr2.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr3.png" title="text_qr3.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr3.png" alt="text_qr3.png" title="text_qr3.png" width="290" height="290" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr4.png" title="text_qr4.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr4.png" alt="text_qr4.png" title="text_qr4.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr5.png" title="text_qr5.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr5.png" alt="text_qr5.png" title="text_qr5.png" width="290" height="290" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr6.png" title="text_qr6.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr6.png" alt="text_qr6.png" title="text_qr6.png" width="290" height="290" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr7.png" title="text_qr7.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr7.png" alt="text_qr7.png" title="text_qr7.png" width="290" height="290" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FJPRDR&amp;openfile=text_qr8.png" title="text_qr8.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FJPRDR&amp;src=text_qr8.png" alt="text_qr8.png" title="text_qr8.png" width="290" height="290" /></a></td><td class="style_td"></td></tr></tbody></table></div>
+</td></tr></table>
+
+<h3 id="List">プログラムリスト</h3>
+<p>※注意！
+「漢字データ」( <a href="http://wiki.hosiken.jp/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF" rel="nofollow">http://wiki.hosiken.jp/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF</a> )
+にあるGRP:MISAKIがプログラム内で必要になります。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>’ＪＰＲＤＲ００３</li>
+<li>’（ＪａＰａｎｅｓｅ　ＲｅａＤｅＲ）</li>
+<li>’”ＧＲＰ：ＳＪＩＳＴＥＸＴ”　ノ</li>
+<li>’ＳＨＩＦＴ−ＪＩＳ　ケイシキ　ＴＥＸＴ　ヲ　ヨミコンテ゛</li>
+<li>’カンシ゛　カナ　マシ゛リフ゛ン　ヲ　ヒョウシ゛スルヨ！</li>
+<li>’「ミサキフォント」</li>
+<li>’（　ｈｔｔｐ：／／ｗｗｗ．ｇｅｏｃｉｔｉｅｓ．ｊｐ／ｌｉｔｔｌｉｍｉ／ｍｉｓａｋｉ．ｈｔｍ　）</li>
+<li>’「カンシ゛テ゛−タ」</li>
+<li>’（　ｈｔｔｐ：／／ｗｉｋｉ．ｈｏｓｉｋｅｎ．ｊｐ／ｐｅｔｃ／？Ｔｏｕｋｏｕ％２Ｆ％Ｂ４％Ｃ１％ＢＢ％ＦＡ％Ａ５％Ｃ７％Ａ１％ＢＣ％Ａ５％ＢＦ　）</li>
+<li>’　ヲ　シヨウ　サセテ　イタタ゛キマシタ</li>
+<li>’Ａｕｔｈｏｒ：＠ｈｎａｋａｉ０９０９</li>
+<li></li>
+<li>ＡＣＬＳ</li>
+<li>ＣＬＥＡＲ</li>
+<li>ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ</li>
+<li>ＬＯＡＤ”ＧＲＰ２：ＳＪＩＳＴＥＸＴ”，ＦＡＬＳＥ</li>
+<li>ＬＯＡＤ”ＧＲＰ３：ＭＩＳＡＫＩ”，ＦＡＬＳＥ</li>
+<li>ＳＹＳＢＥＥＰ＝ＴＲＵＥ</li>
+<li>ＲＥＴＳＵ（０）＝１２８：ＲＥＴＳＵ（１）＝６４：ＲＥＴＳＵ（２）＝３２：ＲＥＴＳＵ（３）＝１６：ＲＥＴＳＵ（４）＝８：ＲＥＴＳＵ（５）＝４：ＲＥＴＳＵ（６）＝２：ＲＥＴＳＵ（７）＝１</li>
+<li>’モシ゛ヨミコミ</li>
+<li>’Ｋ＝＠ク，Ｂ＝＠ハ゛ン−１</li>
+<li>ＴＥＸＴＰ＝０</li>
+<li>ＧＯＳＵＢ　＠ＳＪＩＳ２ＡＳＣ</li>
+<li>ＦＯＲ　Ｊ＝０　ＴＯ　４８＊１０２４</li>
+<li>　Ｓ１＝ＧＳＰＯＩＴ（２，ＴＥＸＴＰ％２５６，ＦＬＯＯＲ（ＴＥＸＴＰ／２５６））</li>
+<li>　ＩＦ　Ｓ１＝＝０　ＴＨＥＮ　ＧＯＳＵＢ　＠ＮＥＸＴＰＡＧＥ：ＡＣＬＳ：ＢＥＥＰ　３：ＥＮＤ</li>
+<li>　ＴＥＸＴＰ＝ＴＥＸＴＰ＋１</li>
+<li>　Ｓ２＝ＧＳＰＯＩＴ（２，ＴＥＸＴＰ％２５６，ＦＬＯＯＲ（ＴＥＸＴＰ／２５６））</li>
+<li>　ＧＯＳＵＢ　＠ＳＪＩＳ２ＫＵＴＥＮ</li>
+<li>　ＩＦ　ＩＩ＞＝（３２＊２３）　ＴＨＥＮ　ＧＯＳＵＢ　＠ＮＥＸＴＰＡＧＥ</li>
+<li>　Ｑ＝Ｋ−１</li>
+<li>ＮＥＸＴ　Ｊ</li>
+<li></li>
+<li>＠ＳＪＩＳ２ＫＵＴＥＮ</li>
+<li>　ＧＰＡＧＥ　０，０，０</li>
+<li>　ＩＦ　！（（１２８＜Ｓ１　ＡＮＤ　Ｓ１＜１６０）ＯＲ（２２３＜Ｓ１　ＡＮＤ　Ｓ１＜２５３））　ＧＯＴＯ　＠ＯＮＥＢＹＴＥ</li>
+<li>　Ｂ＝０</li>
+<li>　ＩＦ　６３＜Ｓ２　ＡＮＤ　Ｓ２＜１２８　ＴＨＥＮ　Ｄ＝１：Ｂ＝Ｓ２−６４</li>
+<li>　ＩＦ　１２７＜Ｓ２　ＡＮＤ　Ｓ２＜１５９　ＴＨＥＮ　Ｄ＝１：Ｂ＝Ｓ２−６５</li>
+<li>　ＩＦ　１５８＜Ｓ２　ＡＮＤ　Ｓ２＜２５３　ＴＨＥＮ　Ｄ＝０：Ｂ＝Ｓ２−１５９</li>
+<li>　ＩＦ　１２８＜Ｓ１　ＡＮＤ　Ｓ１＜１５９　ＴＨＥＮ　Ｋ＝（（Ｓ１−１１２）＊２−Ｄ−３２）</li>
+<li>　ＩＦ　２３９＜Ｓ１　ＡＮＤ　Ｓ１＜２５３　ＴＨＥＮ　Ｋ＝（（Ｓ１−１７６）＊２−Ｄ−３２）</li>
+<li>　ＴＥＸＴＰ＝ＴＥＸＴＰ＋１</li>
+<li>　Ｑ＝Ｋ−１</li>
+<li>　ＧＯＳＵＢ　＠ＫＡＮＪＩ</li>
+<li>　ＲＥＴＵＲＮ</li>
+<li>＠ＯＮＥＢＹＴＥ</li>
+<li>　ＩＦ　Ｓ１＝＝１３　ＴＨＥＮ　ＩＩ＝ＦＬＯＯＲ（ＩＩ／３２）＊３２＋３２：ＲＥＴＵＲＮ</li>
+<li>　ＩＦ　Ｓ１＝＝１０　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>　ＩＦ　Ｓ１＝＝９　ＴＨＥＮ　ＩＩ＝ＩＩ＋４：ＲＥＴＵＲＮ</li>
+<li>　ＧＰＵＴＣＨＲ　（ＩＩ％３２）＊８，ＦＬＯＯＲ（ＩＩ／３２）＊８，”ＢＧＦ”，Ｓ１，０，１</li>
+<li>　ＩＩ＝ＩＩ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＫＡＮＪＩ</li>
+<li>　ＩＦ　！（Ｋ＝＝３　ＯＲ　Ｋ＝＝５　ＯＲ　Ｋ＝＝８）　ＧＯＴＯ　＠ＫＡＮＪＩ２</li>
+<li>　Ｂ＝Ｂ＋１</li>
+<li>　ＩＦ　Ｋ＝＝３　ＴＨＥＮ　ＧＰＵＴＣＨＲ　（ＩＩ％３２）＊８，ＦＬＯＯＲ（ＩＩ／３２）＊８，”ＢＧＦ”，ＡＳＣ（ＭＩＤ＄（Ｓ２ＡＴ２＄，Ｂ，１）），０，１：ＩＩ＝ＩＩ＋１</li>
+<li>　ＩＦ　Ｋ＝＝８　ＴＨＥＮ　ＧＰＵＴＣＨＲ　（ＩＩ％３２）＊８，ＦＬＯＯＲ（ＩＩ／３２）＊８，”ＢＧＦ”，ＡＳＣ（ＭＩＤ＄（Ｓ２ＡＴ３＄，Ｂ，１）），０，１：ＩＩ＝ＩＩ＋１</li>
+<li>　ＩＦ　Ｋ＝＝５　ＴＨＥＮ　ＧＯＳＵＢ　＠Ｓ２Ａ５ＫＵＬ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＫＡＮＪＩ２</li>
+<li>　ＦＯＲ　Ｉ＝０　ＴＯ　７：Ｃ（Ｉ）＝０：ＮＥＸＴ</li>
+<li>　Ｍ＄＝””：Ｎ＄＝””：Ｅ＄＝””</li>
+<li>　ＩＦ　２＜Ｋ　ＴＨＥＮ　Ｑ＝Ｑ−１</li>
+<li>　ＩＦ　４＜Ｋ　ＴＨＥＮ　Ｑ＝Ｑ−８</li>
+<li>　ＩＦ　１３＜Ｋ　ＴＨＥＮ　Ｑ＝Ｑ−２</li>
+<li>　Ｂ＝（Ｑ＊９４＋Ｂ）＊７</li>
+<li>　ＦＯＲ　Ｉ＝０　ＴＯ　６</li>
+<li>　　Ｃ（Ｉ）＝ＧＳＰＯＩＴ（３，（Ｉ＋Ｂ）％２５６，ＦＬＯＯＲ（（Ｉ＋Ｂ）／２５６））</li>
+<li>　　ＦＯＲ　ＪＪ＝０　ＴＯ　７</li>
+<li>　　　ＩＦ　！！（Ｃ（Ｉ）　ＡＮＤ　ＲＥＴＳＵ（ＪＪ））　ＴＨＥＮ　ＧＰＳＥＴ　（ＩＩ％３２）＊８＋ＪＪ，Ｉ＋ＦＬＯＯＲ（ＩＩ／３２）＊８，１５</li>
+<li>　　ＮＥＸＴ</li>
+<li>　ＮＥＸＴ</li>
+<li>　ＩＩ＝ＩＩ＋１</li>
+<li>　ＧＰＡＧＥ　１，３，３</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＮＥＸＴＰＡＧＥ</li>
+<li>　＠ＡＮＹＫＥＹ</li>
+<li>　　ＣＯＬＯＲ　１＋ＲＮＤ（１５）：ＬＯＣＡＴＥ　０，２３：？”　　　＃＃Ｐｒｅｓｓ　ａｎｙ　ｋｅｙ　ｏｒ　ｔｏｕｃｈ＃＃”；</li>
+<li>　　ＷＡＩＴ　５</li>
+<li>　ＩＦ　（ＢＵＴＴＯＮ（）＋ＴＣＨＳＴ）＝＝０　ＧＯＴＯ　＠ＡＮＹＫＥＹ</li>
+<li>　ＢＥＥＰ　９</li>
+<li>　ＩＩ＝０</li>
+<li>　ＣＬＳ</li>
+<li>　ＧＰＡＧＥ　０，０，０</li>
+<li>　ＦＯＲ　Ｚ＝０　ＴＯ　２１</li>
+<li>　　ＧＣＯＰＹ　０，０，８，２５５，１９１，０，０，１</li>
+<li>　ＶＳＹＮＣ　２</li>
+<li>　ＮＥＸＴ</li>
+<li>　ＧＣＬＳ</li>
+<li>　ＧＰＡＧＥ　１，３，３</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＳＪＩＳ２ＡＳＣ</li>
+<li>ＤＩＭ　Ｓ２Ａ５ＫＵ＄（９６）</li>
+<li>ＦＯＲ　Ｚ＝０　ＴＯ　５</li>
+<li>　ＲＥＡＤ　Ｓ２ＡＴ１＄</li>
+<li>　Ｓ２ＡＴ２＄＝Ｓ２ＡＴ２＄＋Ｓ２ＡＴ１＄</li>
+<li>ＮＥＸＴ</li>
+<li>ＦＯＲ　Ｚ＝０　ＴＯ　２</li>
+<li>　ＲＥＡＤ　Ｓ２ＡＴ１＄</li>
+<li>　Ｓ２ＡＴ３＄＝Ｓ２ＡＴ３＄＋Ｓ２ＡＴ１＄</li>
+<li>ＮＥＸＴ</li>
+<li>ＦＯＲ　Ｚ＝０　ＴＯ　９５</li>
+<li>　ＲＥＡＤ　Ｓ２ＡＴ１＄</li>
+<li>　Ｓ２Ａ５ＫＵ＄（Ｚ）＝Ｓ２ＡＴ１＄</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠Ｓ２Ａ５ＫＵＬ</li>
+<li>ＦＯＲ　ＱＺ＝０　ＴＯ　ＬＥＮ（Ｓ２Ａ５ＫＵ＄（Ｂ））−１</li>
+<li>ＧＰＵＴＣＨＲ　（ＩＩ％３２）＊８，ＦＬＯＯＲ（ＩＩ／３２）＊８，”ＢＧＦ”，ＡＳＣ（ＭＩＤ＄（Ｓ２Ａ５ＫＵ＄（Ｂ），ＱＺ，１）），０，１</li>
+<li>ＩＩ＝ＩＩ＋１</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>’ＳＪＩＳ２ＡＳＣ</li>
+<li>’３ＫＵ　０~９５</li>
+<li>ＤＡＴＡ”　　　　　　　　　　　　　　　　”</li>
+<li>ＤＡＴＡ”０１２３４５６７８９　　　　　　”</li>
+<li>ＤＡＴＡ”　ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯ”</li>
+<li>ＤＡＴＡ”ＰＱＲＳＴＵＶＷＸＹＺ　　　　　”</li>
+<li>ＤＡＴＡ”　ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏ”</li>
+<li>ＤＡＴＡ”ｐｑｒｓｔｕｖｗｘｙｚ　　　　　”</li>
+<li>’８ＫＵ　０~４７</li>
+<li>ＤＡＴＡ”　─│┌┐┘└├┬┤┴┼─│┌┐”</li>
+<li>ＤＡＴＡ”┘└├┬┤┴┼├┬┤┴┼├┬┤┴”</li>
+<li>ＤＡＴＡ”┼　　　　　　　　　　　　　　　”</li>
+<li>’５ＫＵ　０~９５</li>
+<li>ＤＡＴＡ　”　”，”ァ”，”ア”，”ィ”，”イ”，”ゥ”，”ウ”，”ェ”</li>
+<li>ＤＡＴＡ　”エ”，”ォ”，”オ”，”カ”，”カ゛”，”キ”，”キ゛”，”ク”</li>
+<li>ＤＡＴＡ　”ク゛”，”ケ”，”ケ゛”，”コ”，”コ゛”，”サ”，”サ゛”，”シ”</li>
+<li>ＤＡＴＡ　”シ゛”，”ス”，”ス゛”，”セ”，”セ゛”，”ソ”，”ソ゛”，”タ”</li>
+<li>ＤＡＴＡ　”タ゛”，”チ”，”チ゛”，”ッ”，”ツ”，”ツ゛”，”テ”，”テ゛”</li>
+<li>ＤＡＴＡ　”ト”，”ト゛”，”ナ”，”ニ”，”ヌ”，”ネ”，”ノ”，”ハ”</li>
+<li>ＤＡＴＡ　”ハ゛”，”ハ゜”，”ヒ”，”ヒ゛”，”ヒ゜”，”フ”，”フ゛”，”フ゜”</li>
+<li>ＤＡＴＡ　”ヘ”，”ヘ゛”，”ヘ゜”，”ホ”，”ホ゛”，”ホ゜”，”マ”，”ミ”</li>
+<li>ＤＡＴＡ　”ム”，”メ”，”モ”，”ャ”，”ヤ”，”ュ”，”ユ”，”ョ”</li>
+<li>ＤＡＴＡ　”ヨ”，”ラ”，”リ”，”ル”，”レ”，”ロ”，”ワ”，”ワ”</li>
+<li>ＤＡＴＡ　”イ”，”エ”，”ヲ”，”ン”，”ウ゛”，”カ”，”ケ”，”　”</li>
+<li>ＤＡＴＡ　”　”，”　”，”　”，”　”，”　”，”　”，”　”，”　”</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3016d)">掲示板</a>へ)</p>
+<ul><li><strong>カービィ★KIRBY</strong> : すげー！　プチコンでこんなことも出来るのかぁ！！ (<span class="comment_date">2013/02/02 (土) 17:03:15</span>)</li>
+<li><strong>11</strong> : おおー！！ﾌﾟﾁｺﾝの技術は発展した！！ (<span class="comment_date">2013/02/02 (土) 18:56:28</span>)</li>
+<li><strong>.EXE</strong> : 漢字がとても上手！おれもやってみたけど、無理だった。 (<span class="comment_date">2013/02/02 (土) 19:23:44</span>)</li>
+<li><strong>hnakai0909</strong> : 漢字データは美咲フォントですー (<span class="comment_date">2013/02/02 (土) 20:11:02</span>)</li>
+<li><strong>天郷思音</strong> : 私も作ろうと思ってたんですが、SJIS→JISの変換で挫折しました。 (<span class="comment_date">2013/02/03 (日) 09:55:20</span>)</li>
+<li><strong>Citrine</strong> : スマイルブームもびっくり！ (<span class="comment_date">2013/02/03 (日) 14:50:16</span>)</li>
+<li><strong>hnakai0909</strong> : なんだかプログラムの名前が落ち着かないですーｗ　結局HNKSJISになりそうです。 (<span class="comment_date">2013/02/03 (日) 22:03:49</span>)</li>
+<li><strong>名無しさん</strong> : そこまで言う程画期的、ではないとは思う。 (<span class="comment_date">2013/02/03 (日) 23:10:03</span>)</li>
+<li><strong>キービィ</strong> : 昨日QR読み込んだはいいんだけど、漢字データ入ってなかったせいで思いきりバグった…39枚読まなくちゃならないのか…気が滅入る… (<span class="comment_date">2013/02/06 (水) 07:14:52</span>)</li>
+<li><strong>名無しさん</strong> : これでさらに入力できるといいんだけどIME作らないといけないから難しいよなぁ (<span class="comment_date">2013/02/06 (水) 14:56:49</span>)</li>
+<li><strong>名無しさん</strong> : 入力したい (<span class="comment_date">2013/02/06 (水) 16:10:10</span>)</li>
+<li><strong>yuy@</strong> : 英語の小文字の部分をカタカナの濁点／半濁点にすれば読みやすくなると思う。だけどプチコンは自分で簡単に改造できるので解析してお持ち帰りします。 (<span class="comment_date">2013/04/14 (日) 18:45:33</span>)</li>
+<li><strong>yuy@</strong> : ↑逆かww (<span class="comment_date">2013/04/14 (日) 18:46:16</span>)</li>
+<li><strong>yuy@</strong> : ただそのかわり英語だと大文字しか使えなくなる。 (<span class="comment_date">2013/04/14 (日) 18:53:15</span>)</li>
+<li><strong>TNNJSOFT</strong> : おおお！webが見れる！あたりまえ！(殴 (<span class="comment_date">2013/08/18 (日) 21:09:17</span>)</li>
+<li><strong>名無しさん</strong> : 表示できても需要は無さそうだな (<span class="comment_date">2013/09/04 (水) 19:50:24</span>)</li>
+<li><strong>/・ω・\</strong> : 自分でテキストをつくるには、どうしたら良いですか？教えてください。 (<span class="comment_date">2013/11/19 (火) 19:17:16</span>)</li>
+<li><strong>引用</strong> : 名無しさん : これでさらに入力できるといいんだけど<span class="basic-text">ＩＭＥ</span>作らないといけないから難しいよなぁ (2013/02/06 (水) 14:56:49) (<span class="comment_date">2013/11/20 (水) 18:08:22</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑ここにある<a href="http://wiki.hosiken.jp/petc/?Toukou%2FJPRDR#sebf3de6" rel="nofollow">http://wiki.hosiken.jp/petc/?Toukou%2FJPRDR#sebf3de6</a> (<span class="comment_date">2013/11/20 (水) 18:30:58</span>)</li>
+<li><strong>Citringo</strong> : Unicode対応したら神やな (<span class="comment_date">2013/11/20 (水) 20:12:49</span>)</li>
+<li><strong>Citringo</strong> : やれるなら　3号まとう　ホトトギス (<span class="comment_date">2013/11/20 (水) 20:13:27</span>)</li>
+<li><strong>hnakai</strong> : IMEは作りかけで放置してます..<a href="http://twitpic.com/c2tdrp" rel="nofollow">http://twitpic.com/c2tdrp</a> (<span class="comment_date">2013/11/22 (金) 21:27:25</span>)</li>
+<li><strong>天郷思音</strong> : ほう (<span class="comment_date">2014/02/21 (金) 17:04:29</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/JPRDR" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="4160e3aa6139ffcecc8005071a092eae" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_6_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (555d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1662d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2606d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1538d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1549d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2000d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2201d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1771d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (861d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (219d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1993d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1732d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_6_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2199d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (19h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_6_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1563d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (85d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (107d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (126d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (126d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (159d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (208d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (211d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (219d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (227d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (338d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+</div>
+
+<h3 id="content_6_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.055 秒  | このページの最終更新 : 2014/02/21 (金) 18:10:12  (2471d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

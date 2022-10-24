@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : かめのサンプル改造シリーズ　零式sのプログラム改造も! - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : かめのサンプル改造シリーズ　零式sのプログラム改造も! - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, シューティングゲーム, サンプル, night, サンプル伝説入り, 零式Type R" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2Fnight%A4%CE%A1%D6%B8%C5%C5%B5%C5%AA%A1%D7%A5%B2%A1%BC%A5%E0%A5%B5%A5%F3%A5%D7%A5%EB%A4%F2%A5%AB%A5%AA%A5%B9%A4%CB%C6%F1%B0%D7%C5%D9UP%A4%B5%A4%BB%A4%C6%A4%DF%A4%BF%A1%AA%A5%B7%A5%EA%A1%BC%A5%BA">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2Fnight%A4%CE%A1%D6%B8%C5%C5%B5%C5%AA%A1%D7%A5%B2%A1%BC%A5%E0%A5%B5%A5%F3%A5%D7%A5%EB%A4%F2%A5%AB%A5%AA%A5%B9%A4%CB%C6%F1%B0%D7%C5%D9UP%A4%B5%A4%BB%A4%C6%A4%DF%A4%BF%A1%AA%A5%B7%A5%EA%A1%BC%A5%BA">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2Fnight%A4%CE%A1%D6%B8%C5%C5%B5%C5%AA%A1%D7%A5%B2%A1%BC%A5%E0%A5%B5%A5%F3%A5%D7%A5%EB%A4%F2%A5%AB%A5%AA%A5%B9%A4%CB%C6%F1%B0%D7%C5%D9UP%A4%B5%A4%BB%A4%C6%A4%DF%A4%BF%A1%AA%A5%B7%A5%EA%A1%BC%A5%BA">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2Fnight%A4%CE%A1%D6%B8%C5%C5%B5%C5%AA%A1%D7%A5%B2%A1%BC%A5%E0%A5%B5%A5%F3%A5%D7%A5%EB%A4%F2%A5%AB%A5%AA%A5%B9%A4%CB%C6%F1%B0%D7%C5%D9UP%A4%B5%A4%BB%A4%C6%A4%DF%A4%BF%A1%AA%A5%B7%A5%EA%A1%BC%A5%BA">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : かめのサンプル改造シリーズ　零式sのプログラム改造も!</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2Fnight%A4%CE%A1%D6%B8%C5%C5%B5%C5%AA%A1%D7%A5%B2%A1%BC%A5%E0%A5%B5%A5%F3%A5%D7%A5%EB%A4%F2%A5%AB%A5%AA%A5%B9%A4%CB%C6%F1%B0%D7%C5%D9UP%A4%B5%A4%BB%A4%C6%A4%DF%A4%BF%A1%AA%A5%B7%A5%EA%A1%BC%A5%BA">nightの「古典的」ゲームサンプルをカオスに難易度UPさせてみた！シリーズ</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.033sec. -->
+<div class="contents">
+<ul><li><a href="#Summary"> アクセスカウンター・更新履歴・記念日 </a>
+<ul><li><a href="#counter"> アクセスカウンター</a></li>
+<li><a href="#kousin">  ゲーム更新履歴 </a></li>
+<li><a href="#Komidashi1-2"> ページ更新履歴 </a></li>
+<li><a href="#Komidashi2"> 記念日  </a></li></ul></li>
+<li><a href="#tkn"> 概要 </a>
+<ul><li><a href="#niyou"> 内容</a></li>
+<li><a href="#rpg"> RPG「伝説の戦士と神剣」</a></li>
+<li><a href="#syt"> シューティング「最強のボスたちの逆襲」</a></li>
+<li><a href="#t4816d56">  簡単シューティング!!</a></li>
+<li><a href="#e8f53a3f"> final シューティング　(ver3.0より追加) </a></li>
+<li><a href="#f7333c33"> 会話ゲーム「リア充会話ゲーム」 </a></li>
+<li><a href="#set"> ガチ格闘ゲーム「先手必勝」</a></li>
+<li><a href="#wks"> 計算コンピュータ　「ワル様」</a></li></ul></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a>
+<ul><li><a href="#j1bd8cca"> お知らせ </a></li></ul></li></ul>
+</div>
+
+<p>2015年9月3日投稿
+(零式sプログラム改造第二弾投稿!)
+/投稿者 : かめ
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A5%B2%A1%BC%A5%E0">シューティングゲーム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B5%A5%F3%A5%D7%A5%EB">サンプル</a> <a href="/petc3gou/?cmd=taglist&amp;tag=night">night</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B5%A5%F3%A5%D7%A5%EB%C5%C1%C0%E2%C6%FE%A4%EA">サンプル伝説入り</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%CE%ED%BC%B0Type%20R">零式Type R</a> </span></p>
+<h3 id="Summary">アクセスカウンター・更新履歴・記念日</h3>
+
+<h4 id="counter">アクセスカウンター</h4>
+<p>今日来られた方:1</p>
+<p>(快挙)8/28 一日で50人達成!　零式s凄すぎるw</p>
+<p>これまで来られた方:3275</p>
+
+<h4 id="kousin">ゲーム更新履歴</h4>
+<p>現在ver3.0</p>
+<p>6/17　初版投稿</p>
+
+<h4 id="Komidashi1-2">ページ更新履歴</h4>
+<p>現在ページver3.0</p>
+
+<h4 id="Komidashi2">記念日</h4>
+<p>6/17　var1.0投稿！</p>
+<p>8/28    ver2.0投稿！</p>
+<p>9/3      ver3.0投稿!</p>
+
+<h3 id="tkn">概要</h3>
+<p>初心者講座でも「古典的」と言われたサンプルプログラム…そんなプログラム達を改造・改良してみました！</p>
+
+<h4 id="niyou">内容</h4>
+<p>・RPGリメイク ver1.0</p>
+<p>・簡易計算機リメイク ver1.0</p>
+<p>・会話ゲームリメイク ver1.0</p>
+<p>・格闘ゲームリメイク ver1.0</p>
+<p>・弾幕シューティングリメイク ver1.0</p>
+<p>・簡単シューティング！！　ver1.0</p>
+<p>・FINALシューティング ver1.0</p>
+
+<h4 id="rpg">RPG「伝説の戦士と神剣」</h4>
+<p>何もかもが大げさなRPG。HPも大きい、敵もかなり強い、そして、武器の名前も、強さも…</p>
+<p>古いRPGのお約束「最新の装備をそろえないと安心できない」も体験できる、面白いリメイク作です。</p>
+
+<h4 id="syt">シューティング「最強のボスたちの逆襲」</h4>
+<p>ボス達が強くなって帰って来た！攻撃は変わりませんが、防御力が…</p>
+<p>ちなみに、ステージ選択や無敵モードは出来ません。作者「不正は許さん」</p>
+
+<h4 id="t4816d56">簡単シューティング!!</h4>
+<p>簡単シューティング！！プログラムは、零式sのものをお借りしました。</p>
+<p>えっ？　「零式sのプログラムは簡単じゃない」だって?</p>
+<p>…そんなの知らん(殴</p>
+
+<h4 id="e8f53a3f">final シューティング　(ver3.0より追加)</h4>
+<p>零式sプログラム改造第二弾。今回は、最難関のあれを改造します。</p>
+
+<h4 id="f7333c33">会話ゲーム「リア充会話ゲーム」</h4>
+<p>最強のリア充と会話…ちなみに女と話す仕様なので、ご了承を。(声が男なのは仕方ない。)</p>
+
+<h4 id="set">ガチ格闘ゲーム「先手必勝」</h4>
+<p>なんと、HPは1！テクニックと勇気が求められます。</p>
+
+<h4 id="wks">計算コンピュータ　「ワル様」</h4>
+<p>自称「ワル様」が金を要求してくる…
+ネタだらけの簡易計算機。</p>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。
+ver3.0</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">KA32EL3</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (949d)">掲示板</a>へ)</p>
+<ul><li><strong>名前なんてなかった…</strong> : var→ver (<span class="comment_date">2015/06/18 (木) 07:16:38</span>)</li>
+<li><strong>MGウッディー</strong> : 金が好きとは…。悪よのぅ…。 (<span class="comment_date">2015/06/27 (土) 19:24:08</span>)</li>
+<li><strong>名無しさん</strong> : やばいーーーーー (<span class="comment_date">2015/11/29 (日) 09:33:38</span>)</li>
+<li><strong>い</strong> : 零式さん。お前の簡単は簡単じゃねーよ (<span class="comment_date">2015/11/30 (月) 17:53:55</span>)</li>
+<li><strong>支流</strong> : 無敵にできたやったー当たり判定をなくした。ww (<span class="comment_date">2016/02/08 (月) 21:16:53</span>)</li>
+<li><strong>project night</strong> : 無敵にされたー殺ったー（涙目） (<span class="comment_date">2016/07/06 (水) 16:41:45</span>)</li>
+<li><strong>project night</strong> : 大丈夫だ、問題ない。（汗 (<span class="comment_date">2016/07/06 (水) 16:42:39</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/nightの「古典的」ゲームサンプルをカオスに難易度UPさせてみた！シリーズ" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="baf64f06daf75a28afd6bcb1253aef73" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h4 id="j1bd8cca">お知らせ</h4>
+<p>作者のお知らせコーナー。</p>
+<ul><li><strong>night</strong> : おい、最速で50人越えたぞ…ヤバイ、ヤバすぎる… (<span class="comment_date">2015/06/17 (水) 21:11:43</span>)</li>
+<li><strong>名無しさん</strong> : 公式で「ためしにサンプルを改造してみようよ」とかあったし、この試みは良い。 (<span class="comment_date">2015/06/17 (水) 22:50:24</span>)</li>
+<li><strong>night(荒らし削除報告)</strong> : (荒らしと作者が判断したため、削除しました。) (<span class="comment_date">2015/06/18 (木) 09:14:18</span>)</li>
+<li><strong>零式</strong> : サンプルの改造と聞いて。主さん「KK3EEGD」やってみてください。(サンプルを改造したやつです)あのシューティング凄く時間が掛かるwww (<span class="comment_date">2015/06/20 (土) 07:17:20</span>)</li>
+<li><strong>零式</strong> : 全部すでに二ヶ月前にDLして遊びましたが感想書くの忘れた(((めちゃめちゃ凄い！あ、俺もあれから二ヶ月、更に難しくしましたw(自称ですが最凶を名乗ってます) (<span class="comment_date">2015/08/28 (金) 10:39:39</span>)</li>
+<li><strong>project night</strong> : ステージ1から旧3DSを殺しにかかった俺w　ちなみに、元プログラムが入っているのはミスですが、比較・紹介のため残しておきます。バックアップは消してOK。 (<span class="comment_date">2015/08/28 (金) 14:09:21</span>)</li>
+<li><strong>project night</strong> : うわ、1日で24人来てるwwww　零式s人気高すぎるww (<span class="comment_date">2015/08/28 (金) 14:11:26</span>)</li>
+<li><strong>project night</strong> : 1000人突破！ちなみにver4.0も企画しています。 (<span class="comment_date">2015/11/15 (日) 10:31:51</span>)</li>
+<li><strong>AR-3</strong> : 1000人突破おめでとうございます！　　本題:最近RNDを覚えた←遅ぇ　例のSTGにRNDを使ってみた。良ければDLを(((((((((( (<span class="comment_date">2015/11/15 (日) 16:57:28</span>)</li>
+<li><strong>project night</strong> : はい、また改造させて頂きます！ (<span class="comment_date">2015/11/15 (日) 19:58:03</span>)</li>
+<li><strong>い</strong> : リア充&#8265;&#65039; (<span class="comment_date">2015/11/30 (月) 13:57:53</span>)</li>
+<li><strong>鹿児島出身</strong> : んau (<span class="comment_date">2018/12/16 (日) 06:53:28</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/nightの「古典的」ゲームサンプルをカオスに難易度UPさせてみた！シリーズ" />
+  <input type="hidden" name="comment_no" value="1" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="baf64f06daf75a28afd6bcb1253aef73" />
+  <label for="_p_comment_name_1" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_1" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_1" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (649d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2002d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (594d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (39d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (644d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (164d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (773d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (870d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (268d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (57m)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (709d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1826d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1240d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (220d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (1h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (117d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (27d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (54m)">トレインビジョンメーカーfor3DS</a></li>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (57m)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (1h)">RecentDeleted</a></li>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (1h)">編集の練習用ページ</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1h)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (3h)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (3d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (6d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (6d)">リズミカルおもちつきNT</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FSqbattle%20Sagusagu%B2%FE%C2%A4%C8%C7" title="Toukou/Sqbattle Sagusagu改造版 (221d)">フィッシュトゥーン<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FM-OS" title="Toukou/M-OS (155d)">M-OS<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADKR" title="Toukou/リズミカルおもちつきKR (8d)">リズミカルおもちつきKR MAX<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fshuttlerun" title="Toukou/shuttlerun (812d)">シャトルランOSP<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fharudef" title="Toukou/harudef (812d)">選り抜き自作命令<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMIDORIOSP1" title="Toukou/MIDORIOSP1 (967d)">僕が目覚まし時計 他 10OSP(みどり制作)<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%CC%C2%CF%A9" title="Toukou/迷路 (128d)">迷路探索ゲーム-Chaesr-<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?WorksLink%2F2015-02" title="WorksLink/2015-02 (1821d)">プチコン作品リンク集 2015年2月<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMusicsDX" title="Toukou/MusicsDX (750d)">【公開終了】MusicsDX<span class="counter">(3)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FRemain" title="Toukou/Remain (126d)">Remain<span class="counter">(3)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1274d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3275 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.037 秒  | このページの最終更新 : 2018/12/16 (日) 06:53:28  (806d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

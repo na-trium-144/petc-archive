@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>サンプルプログラム集 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="サンプルプログラム集 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Sample">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Sample">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Sample">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Sample">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>サンプルプログラム集</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Sample">Sample</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.148sec. -->
+<p>初心者にも役に立つかもしれないサンプル的、および部品的なプログラムをここに集積しましょう。</p>
+<ul class="contentsx"><li><a href="#ka0b9a22">BASIC の基本</a><ul><li><a href="#y1a6f30b">こんにちは、世界</a></li><li><a href="#s0ce9da3">ダブルクォーテーションの表示</a></li><li><a href="#s592fbdf">個人情報を抽出</a></li><li><a href="#pfe34d29">ひたすら数える</a></li><li><a href="#beacf805">時計</a></li><li><a href="#z843bf7f">ボタン入力待ち</a></li><li><a href="#a3b36d29">ブロックIFの代わり</a></li><li><a href="#t28b78a3">下画面にスプライト表示</a></li><li><a href="#gb007a4c">超簡易ランチャー</a></li><li><a href="#u4ca82d9">少し違う無限ループ</a></li></ul></li><li><a href="#ub1508d9">使用例</a></li><li><a href="#t92afc58">サブルーチン</a><ul><li><a href="#pe064d24">ボタン入力</a></li><li><a href="#m54dd726">文字列を置き換える</a></li><li><a href="#h5b73e70">文字列の指定位置に文字列を挿入する</a></li><li><a href="#re830b88">それぞれのボタンの入力フレーム数を取得する</a></li><li><a href="#gd59d85f">' , ' で区切った文字列を分割する</a></li><li><a href="#j8789f00">指定位置から文字列に上書き</a></li><li><a href="#colbw">カラーパレットを白黒化</a></li><li><a href="#SinCosRing">楕円の描画</a></li><li><a href="#o52af76f">GPUTCHRで文字を表示する</a></li><li><a href="#e027ad13">連想配列のようなもの</a></li><li><a href="#ea6f9104">デバッグルーチン</a></li></ul></li></ul>
+<h3 id="ka0b9a22">BASIC の基本</h3>
+
+<h4 id="y1a6f30b">こんにちは、世界</h4>
+<p>最初の一歩。文字列を表示する場合はダブルクォーテーションで囲む必要があります。<br class="spacer" />
+なお、ダブルクォーテーションはコンソールに表示されません。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　”Ｈｅｌｌｏ，ｗｏｒｌｄ！”</li>
+</ol></code></div></div>
+
+<h4 id="s0ce9da3">ダブルクォーテーションの表示</h4>
+<p>ダブルクォーテーションをコンソールに表示する場合は<span class="basic-text">ＣＨＲ＄（）</span>関数を使用する必要があります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　ＣＨＲ＄（３４）</li>
+</ol></code></div></div>
+
+<h4 id="s592fbdf">個人情報を抽出</h4>
+<p>プチコンが個人情報を抽出して喜ぶプログラムです。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＩＮＰＵＴ　”アナタノ　ナマエハ”　；　ＮＡＭＥ＄</li>
+<li>ＩＮＰＵＴ　”オトシハ　イクツテ゛スカ”　；　ＡＧＥ</li>
+<li>ＰＲＩＮＴ　”アナタノ　ナマエハ　”　；　ＮＡＭＥ＄　；　”　テ゛”</li>
+<li>ＰＲＩＮＴ　”オトシハ　”　；　ＡＧＥ　；　”　サイ　テ゛スネ”</li>
+<li>ＰＲＩＮＴ　”コシ゛ンシ゛ョウホウヲ　オイシク　イタタ゛キマシタ、　ククク”</li>
+<li>ＷＡＩＴ　３０</li>
+</ol></code></div></div>
+
+<h4 id="pfe34d29">ひたすら数える</h4>
+<p>524287まで0から順に数えていきます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＬＯＯＰ</li>
+<li>ＰＲＩＮＴ　Ａ</li>
+<li>Ａ＝Ａ＋１</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="beacf805">時計</h4>
+<p>現在の時間を表示するだけのプログラム。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＴＩＭＥ</li>
+<li>ＬＯＣＡＴＥ　０，０：ＰＲＩＮＴ”Р”；ＴＩＭＥ＄</li>
+<li>ＶＳＹＮＣ　６０</li>
+<li>ＧＯＴＯ　＠ＴＩＭＥ</li>
+</ol></code></div></div>
+
+<h4 id="z843bf7f">ボタン入力待ち</h4>
+<p>一行でＡボタンの入力をまつプログラム。
+16のところをいじると、どのボタンの入力待ちでも出来ます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝０　ＴＯ　１：Ｉ＝ＢＵＴＴＯＮ（）＝＝１６：ＮＥＸＴ</li>
+</ol></code></div></div>
+
+<h4 id="a3b36d29">ブロックIFの代わり</h4>
+<p>FOR文を用いてブロックIFを実装しています。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＦＯＲ　Ｉ＝１　ＴＯ　Ａ</li>
+<li>　？”Ｂｌｏｃｋ　ＩＦ”</li>
+<li>ＮＥＸＴ</li>
+</ol></code></div></div>
+<p>この場合、<span class="basic-text">Ａ</span>の部分が条件式となり、<span class="basic-text">？”Ｂｌｏｃｋ　ＩＦ”</span>の部分が処理となります。</p>
+
+<h4 id="t28b78a3">下画面にスプライト表示</h4>
+<p>下画面にスプライトを表示するサンプルは以下の通り。付属のエディタ等で CHR リソースを作成しておく必要あり。(例ではファイル名 &quot;TCHR01&quot;)</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＶＩＳＩＢＬＥ　１，１，１，１，１，１</li>
+<li>ＰＮＬＴＹＰＥ　”ＯＦＦ”</li>
+<li>ＳＰＰＡＧＥ　１</li>
+<li>ＬＯＡＤ”ＳＰＳ０：ＴＣＨＲ０１”，ＦＡＬＳＥ</li>
+<li>ＳＰＳＥＴ　０，０，０，０，０，０</li>
+<li>ＳＰＯＦＳ　０，１００，１００</li>
+<li>ＶＳＹＮＣ　６００</li>
+</ol></code></div></div>
+
+<h4 id="gb007a4c">超簡易ランチャー</h4>
+<p>INPUTで文字列を取得し、それでEXECするプログラム。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＩＮＰＵＴ　Ａ＄</li>
+<li>ＥＸＥＣ　Ａ＄</li>
+</ol></code></div></div>
+
+<h4 id="u4ca82d9">少し違う無限ループ</h4>
+<p>ライオネルさんの「<span class="noexists">新しい無限ループ<a href="/petc/?cmd=edit&amp;page=Toukou%2F%BF%B7%A4%B7%A4%A4%CC%B5%B8%C2%A5%EB%A1%BC%A5%D7&amp;refer=Sample">?</a></span>」と同じです。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’ルーフ゜ないのしょりをかく</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>ＥＸＥＣ”このフ゜ロク゛ラムのファイルめい”</li>
+</ol></code></div></div>
+
+<h3 id="ub1508d9">使用例</h3>
+<p>ファイル名は「<span class="basic-text">ＰＲＧ：ＴＥＳＴ</span>」にしてください。<br /></p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＲＩＮＴ　Ａ</li>
+<li>Ａ＝Ａ＋１</li>
+<li>ＥＸＥＣ”ＴＥＳＴ”</li>
+</ol></code></div></div>
+
+<h3 id="t92afc58">サブルーチン</h3>
+<p>サブルーチンは単独では動きません。自作のプログラムに混ぜて使います。</p>
+
+<h4 id="pe064d24">ボタン入力</h4>
+
+<h5 id="l954b06b">変数表</h5>
+<ul><li><span class="basic-text">ＢＴＮ</span> : ボタン状態</li>
+<li><span class="basic-text">ＴＲＧ</span> : トリガ</li>
+<li><span class="basic-text">ＲＥＰ</span> : リピート</li></ul>
+
+<h5 id="q009c994">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＧＥＴＢＴＮ</li>
+<li>ＢＴＮ＝ＢＵＴＴＯＮ（）</li>
+<li>ＴＲＧ＝（ＮＯＴ　ＯＬＤ＿ＢＴＮ）ＡＮＤ　ＢＴＮ</li>
+<li>ＯＦＦＴＲＧ＝ＯＬＤ＿ＢＴＮ　ＡＮＤ（ＮＯＴ　ＢＴＮ）</li>
+<li>ＲＥＰ＝０</li>
+<li>ＲＥＰＣＮＴ＝ＲＥＰＣＮＴ＋１</li>
+<li>ＩＦ　ＯＬＤ＿ＢＴＮ！＝ＢＴＮ　ＴＨＥＮ　ＲＥＰＣＮＴ＝０</li>
+<li>ＩＦ　ＲＥＰＣＮＴ＝＝０　ＴＨＥＮ　ＲＥＰ＝ＢＴＮ：ＧＯＴＯ　＠＿ＧＥＴＢＴＮ０</li>
+<li>ＩＦ　ＲＥＰＣＮＴ＜３０　ＧＯＴＯ　＠＿ＧＥＴＢＴＮ０</li>
+<li>ＩＦ　（ＲＥＰＣＮＴ−３０）％５＝＝０　ＴＨＥＮ　ＲＥＰ＝ＢＴＮ</li>
+<li>＠＿ＧＥＴＢＴＮ０</li>
+<li>ＯＬＤ＿ＢＴＮ＝ＢＴＮ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h5 id="u2084a0f">使用例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＣＬＳ：Ｓ＝０</li>
+<li>＠ＬＯＯＰ</li>
+<li>　ＧＯＳＵＢ　＠ＧＥＴＢＴＮ</li>
+<li>　ＩＦ　（ＲＥＰ　ＡＮＤ　８）　ＴＨＥＮ　Ｓ＝（Ｓ＋１）％７０</li>
+<li>　ＩＦ　（ＲＥＰ　ＡＮＤ　４）　ＴＨＥＮ　Ｓ＝（Ｓ−１＋７０）％７０</li>
+<li>　ＩＦ　（ＴＲＧ　ＡＮＤ　１６）　ＴＨＥＮ　ＢＥＥＰ　Ｓ</li>
+<li>　ＬＯＣＡＴＥ　０，０：ＰＲＩＮＴ　Ｓ；”　　”</li>
+<li>　ＶＳＹＮＣ　１</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="m54dd726">文字列を置き換える</h4>
+
+<h5 id="a0185095">使い方</h5>
+<ol><li>置き換えたい文字列が入った文字列を <span class="basic-text">Ｈ１＄</span> に入れる</li>
+<li>置き換えたい文字列を <span class="basic-text">Ｈ２＄</span> に入れる</li>
+<li>置き換後の文字列を <span class="basic-text">Ｈ３＄</span> に入れる</li>
+<li><span class="basic-text">ＧＯＳＵＢ　＠ＯＫＩＫＡＥ</span> でサブルーチンを呼び出す
+すると変換された文字列が <span class="basic-text">Ｈ１＄</span> に入って帰ってくる。</li></ol>
+
+<h5 id="u0a2154d">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＯＫＩＫＡＥ</li>
+<li>Ｌ１＄＝Ｈ１＄：Ｌ２＄＝Ｈ２＄：Ｌ３＄＝Ｈ３＄</li>
+<li>Ｓ１＝ＬＥＮ（Ｌ２＄）：Ｓ２＝ＬＥＮ（Ｌ３＄）</li>
+<li>ＦＯＲ　ＲＩ＝０　ＴＯ　ＬＥＮ（Ｌ１＄）−１</li>
+<li>Ｍ１＄＝ＭＩＤ（Ｌ１＄，ＲＩ，１）</li>
+<li>Ｍ２＄＝ＭＩＤ（Ｌ２＄，Ｓ３，１）</li>
+<li>ＩＦ　Ｍ１＄！＝Ｍ２＄　ＴＨＥＮ　Ｓ３＝０：Ｍ３＄＝””</li>
+<li>ＩＦ　Ｍ１＄＝＝Ｍ２＄　ＴＨＥＮ　Ｓ３＝Ｓ３＋１：Ｍ３＄＝Ｍ３＄＋Ｍ１＄</li>
+<li>ＩＦ　Ｍ３＄＝＝Ｌ２＄　ＴＨＥＮ　Ｆ１＝１</li>
+<li>ＩＦ　Ｆ１　ＴＨＥＮ　Ｍ４＄＝ＭＩＤ＄（Ｌ１＄，０，ＲＩ−ＬＥＮ（Ｌ２＄）＋１）：Ｓ４＝ＬＥＮ（Ｍ４＄＋Ｌ２＄）：Ｓ５＝ＬＥＮ（Ｌ３＄）−ＬＥＮ（Ｌ２＄）：Ｍ５＄＝ＭＩＤ＄（Ｌ１＄，Ｓ４，２５５）</li>
+<li>ＩＦ　Ｆ１　ＴＨＥＮ　Ｍ６＄＝Ｍ４＄＋Ｌ３＄＋Ｍ５＄：Ｌ１＄＝Ｍ６＄：ＲＩ＝ＲＩ＋Ｓ５−１：Ｆ１＝０</li>
+<li>ＮＥＸＴ</li>
+<li>Ｒ１＄＝Ｌ１＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h5 id="k45ca7b8">使用例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＣＬＳ</li>
+<li>Ｈ１＄＝”アカン”</li>
+<li>Ｈ２＄＝”ア”</li>
+<li>Ｈ３＄＝”オ”</li>
+<li>ＧＯＳＵＢ　＠ＯＫＩＫＡＥ</li>
+<li>？Ｒ１＄</li>
+</ol></code></div></div>
+
+<h4 id="h5b73e70">文字列の指定位置に文字列を挿入する</h4>
+
+<h5 id="e9f543ad">使い方</h5>
+<ol><li>文字列を <span class="basic-text">Ｈ１＄</span> に入れる</li>
+<li>位置を  <span class="basic-text">Ｈ２＄</span> に入れる</li>
+<li>位置に挿入する文字列を  <span class="basic-text">Ｈ３＄</span> に入れる</li>
+<li><span class="basic-text">＠ＭＩＤＬ</span> を呼び出す。すると <span class="basic-text">Ｒ１＄</span> に変換された文字列が入って帰ってくる</li></ol>
+
+<h5 id="xb9f0f8f">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＭＩＤＬ</li>
+<li>Ｌ１＄＝Ｈ１＄：Ｌ２＄＝Ｈ２＄：Ｌ３＄＝Ｈ３＄</li>
+<li>Ｓ１＝ＶＡＬ（Ｌ２＄）</li>
+<li>Ｓ２＝ＬＥＮ（Ｌ１＄）</li>
+<li>Ｍ１＄＝ＭＩＤ＄（Ｌ１＄，０，Ｓ１）</li>
+<li>ＦＯＲ　ＲＩ＝０　ＴＯ　Ｓ１−Ｓ２−１</li>
+<li>Ｍ１＄＝Ｍ１＄＋”　”</li>
+<li>ＮＥＸＴ　ＲＩ</li>
+<li>Ｍ２＄＝ＭＩＤ＄（Ｌ１＄，Ｓ１＋１，２５５）</li>
+<li>Ｍ３＄＝Ｍ１＄＋Ｌ３＄＋Ｍ２＄　</li>
+<li>Ｒ１＄＝Ｍ３＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h5 id="ge802354">使用例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＣＬＳ</li>
+<li>Ｈ１＄＝”タラコ”</li>
+<li>Ｈ２＄＝”１”</li>
+<li>Ｈ３＄＝”ハ゛ス”</li>
+<li>？Ｈ１＄</li>
+<li>ＧＯＳＵＢ　＠ＭＩＤＬ</li>
+<li>？Ｒ１＄</li>
+</ol></code></div></div>
+
+<h4 id="re830b88">それぞれのボタンの入力フレーム数を取得する</h4>
+
+<h5 id="q26d91f5">使い方</h5>
+<p>まず、このサブルーチンを呼ぶ前に <span class="basic-text">ＤＩＭ　Ｂ（１２）</span> と配列を宣言しておいてください。</p>
+<ul><li><span class="basic-text">ＩＦ　Ｂ（０）＝＝１　ＴＨＥＮ</span></li></ul>
+<p>などとすることで、上ボタンが押された瞬間だけ <span class="basic-text">ＴＨＥＮ</span> 以降を実行するということもできます。</p>
+
+<h5 id="yc2817f7">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＢＴＮ</li>
+<li>Ｂ＝ＢＵＴＴＯＮ（）：ＢＡ＝１</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１１</li>
+<li>ＩＦ　Ｂ　ＡＮＤ　ＢＡ　ＴＨＥＮ　Ｂ（Ｉ）＝Ｂ（Ｉ）＋１</li>
+<li>ＩＦ　（Ｂ　ＡＮＤ　ＢＡ）＝＝０　ＴＨＥＮ　Ｂ（Ｉ）＝０</li>
+<li>ＢＡ＝ＢＡ＊２：ＮＥＸＴ：ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h5 id="h5bc05f1">使用例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＣＬＳ</li>
+<li>ＤＩＭ　Ｂ（１２）</li>
+<li>＠ＬＯＯＰ</li>
+<li>ＶＳＹＮＣ　１</li>
+<li>ＧＯＳＵＢ　＠ＢＴＮ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１１</li>
+<li>ＬＯＣＡＴＥ　０，Ｉ：？Ｂ（Ｉ）；”　　　　　”</li>
+<li>ＮＥＸＴ</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="gd59d85f">' , ' で区切った文字列を分割する</h4>
+
+<h5 id="a0bdd94f">使い方</h5>
+<ul><li><span class="basic-text">Ｈ＄</span> に <span class="basic-text">”Ａ，Ｂ，Ｃ”</span> のように文字列を区切って入れます。</li>
+<li>そして <span class="basic-text">＠ＢＮＫＴ</span> を呼び出すと <span class="basic-text">Ｌ＄（０~９）</span> にそれぞれ分割された文字列が入ります。</li></ul>
+
+<h5 id="kf601325">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＢＮＫＴ</li>
+<li>Ｆ１＝０：Ｓ１＝０：Ｍ３＄＝””</li>
+<li>ＦＯＲ　ＲＩ＝０　ＴＯ　ＬＥＮ（Ｈ＄）−１</li>
+<li>Ｆ１＝０</li>
+<li>ＩＦ　Ｍ１＄＝＝”，”ＴＨＥＮ　Ｌ＄（Ｓ１）＝Ｍ３＄：Ｓ１＝Ｓ１＋１：Ｍ３＄＝””：Ｆ１＝１</li>
+<li>Ｍ１＄＝ＭＩＤ＄（Ｈ＄，ＲＩ＋１，１）</li>
+<li>Ｍ２＄＝ＭＩＤ＄（Ｈ＄，ＲＩ，１）</li>
+<li>ＩＦ　Ｆ１＝＝０　ＴＨＥＮ　Ｍ３＄＝Ｍ３＄＋Ｍ２＄</li>
+<li>ＮＥＸＴ</li>
+<li>Ｌ＄（Ｓ１）＝Ｍ３＄：Ｓ１＝Ｓ１＋１：Ｍ３＄＝””：Ｆ１＝１</li>
+<li>Ｈ＄＝””</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="j8789f00">指定位置から文字列に上書き</h4>
+
+<h5 id="oe9e2c74">使い方</h5>
+<ul><li>すぐ上に書いた「' , ' で区切った文字列を分割する」のサブルーチンの内容が、プログラムのどこかに必要です。</li>
+<li><span class="basic-text">Ｈ＄</span> に &quot;文字列 , 開始位置 , 書き込む文字列&quot; と入れて <span class="basic-text">＠ＭＩＤＬ２</span> を呼び出すと、<span class="basic-text">Ｒ１＄</span> に上書きされた文字列が入って帰ってきます。</li></ul>
+
+<h5 id="z7735e0d">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＭＩＤＬ２</li>
+<li>ＧＯＳＵＢ　＠ＢＮＫＴ</li>
+<li>Ｍ１＄＝ＭＩＤ＄（Ｌ＄（０），０，ＶＡＬ（Ｌ＄（１）））</li>
+<li>ＦＯＲ　ＲＩ＝ＬＥＮ（Ｍ１＄）　ＴＯ　ＶＡＬ（Ｌ＄（１））−１</li>
+<li>Ｍ１＄＝Ｍ１＄＋”　”</li>
+<li>ＮＥＸＴ</li>
+<li>Ｍ２＄＝ＭＩＤ＄（Ｌ＄（０），ＬＥＮ（Ｍ１＄）＋ＬＥＮ（Ｌ＄（２）），２５５）</li>
+<li>Ｍ３＄＝Ｍ１＄＋Ｌ＄（２）＋Ｍ２＄</li>
+<li>Ｒ１＄＝Ｍ３＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h5 id="n8500b01">使用例</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＥＡＲ：ＣＬＳ</li>
+<li>Ｈ＄＝”アイウエオ，２，シテル”</li>
+<li>ＧＯＳＵＢ　＠ＭＩＤＬ２</li>
+<li>？Ｒ１＄</li>
+<li>＠ＬＯＯＰ</li>
+<li>ＧＯＴＯ　＠ＬＯＯＰ</li>
+</ol></code></div></div>
+
+<h4 id="colbw">カラーパレットを白黒化</h4>
+
+<h5 id="oe9e2c74">使い方</h5>
+<ul><li><span class="basic-text">＠ＣＯＬＢＷ</span> を呼び出すと、カラーパレットが白黒になります。</li></ul>
+
+<h5 id="colbw-List">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＣＯＬＢＷ</li>
+<li>ＦＯＲ　Ｐ＝０　ＴＯ　１</li>
+<li>ＢＧＰＡＧＥ　Ｐ</li>
+<li>ＳＰＰＡＧＥ　Ｐ</li>
+<li>ＧＰＡＧＥ　Ｐ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　２５５</li>
+<li>ＣＯＬＲＥＡＤ（”ＳＰ”，Ｉ），Ｒ，Ｇ，Ｂ</li>
+<li>ＣＯＬＳＥＴ　”ＳＰ”，Ｉ，ＨＥＸ＄（ＦＬＯＯＲ（（Ｒ＋Ｇ＋Ｂ）／３），２）＊３</li>
+<li>ＣＯＬＲＥＡＤ（”ＢＧ”，Ｉ），Ｒ，Ｇ，Ｂ</li>
+<li>ＣＯＬＳＥＴ　”ＢＧ”，Ｉ，ＨＥＸ＄（ＦＬＯＯＲ（（Ｒ＋Ｇ＋Ｂ）／３），２）＊３</li>
+<li>ＣＯＬＲＥＡＤ（”ＧＲＰ”，Ｉ），Ｒ，Ｇ，Ｂ</li>
+<li>ＣＯＬＳＥＴ　”ＧＲＰ”，Ｉ，ＨＥＸ＄（ＦＬＯＯＲ（（Ｒ＋Ｇ＋Ｂ）／３），２）＊３</li>
+<li>ＮＥＸＴ</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="SinCosRing">楕円の描画</h4>
+
+<h5 id="SinCosUse">使い方</h5>
+<ul><li>変数を設定して<span class="basic-text">＠ＲＩＮＧ</span>を呼び出すと、だ円を描くことができます
+<ul><li>プチコン標準機能の<span class="basic-text">ＧＣＩＲＣＬＥ</span>は、だ円を描くことができません。このプログラムでは、三角関数を利用してだ円を含む円を描くことができます。</li></ul></li></ul>
+
+<h5 id="SinCosVar">変数リスト</h5>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">変数</td><td class="style_td">意味</td></tr><tr><td class="style_td">X</td><td class="style_td">始点X</td></tr><tr><td class="style_td">X2</td><td class="style_td">終点X</td></tr><tr><td class="style_td">Y</td><td class="style_td">始点Y</td></tr><tr><td class="style_td">Y2</td><td class="style_td">終点Y</td></tr></tbody></table></div>
+
+<h5 id="SinCosList">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>Ｘ２＝０</li>
+<li>Ｘ＝０</li>
+<li>Ｙ２＝０</li>
+<li>Ｙ＝０</li>
+<li></li>
+<li>’−−−−−−−−−−−−−−−−−−−−</li>
+<li></li>
+<li>＠ＲＩＮＧ</li>
+<li></li>
+<li>ＢＸ＝０：ＢＹ＝０</li>
+<li>ＨＡＮＫＥＩＸ＝ＡＢＳ（Ｘ２−Ｘ）</li>
+<li>ＨＡＮＫＥＩＹ＝ＡＢＳ（Ｙ２−Ｙ）</li>
+<li>ＸＳ＝ＨＡＮＫＥＩＸ／２</li>
+<li>ＹＳ＝ＨＡＮＫＥＩＹ／２</li>
+<li></li>
+<li>ＦＯＲ　Ｇ＝０　ＴＯ　３６０</li>
+<li>　Ｘ４＝ＣＯＳ（ＲＡＤ（Ｇ））＊（ＸＳ）＋Ｘ＋ＸＳ</li>
+<li>　Ｙ４＝ＳＩＮ（ＲＡＤ（Ｇ））＊（ＹＳ）＋Ｙ＋ＹＳ</li>
+<li>　ＩＦ　ＢＸ＝＝０　ＡＮＤ　ＢＹ＝＝０　ＴＨＥＮ　ＢＸ＝Ｘ４：ＢＹ＝Ｙ４</li>
+<li>　ＧＬＩＮＥ　ＢＸ，ＢＹ，Ｘ４，Ｙ４，ＣＯＬ</li>
+<li>　ＢＸ＝Ｘ４：ＢＹ＝Ｙ４</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>Ｘ４＝ＣＯＳ（ＲＡＤ（０））＊（ＸＳ）＋Ｘ＋ＸＳ</li>
+<li>Ｙ４＝ＳＩＮ（ＲＡＤ（０））＊（ＹＳ）＋Ｙ＋ＹＳ</li>
+<li></li>
+<li>ＧＬＩＮＥ　ＢＸ，ＢＹ，Ｘ４，Ｙ４，ＣＯＬ</li>
+<li></li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="o52af76f">GPUTCHRで文字を表示する</h4>
+
+<h5 id="qe36a8a3">使い方</h5>
+<p><span class="basic-text">ＰＵＴ＄</span>に文字列、<span class="basic-text">ＰＵＴＸ</span>,<span class="basic-text">ＰＵＴＹ</span>に位置（1ドット単位）<span class="basic-text">ＰＵＴＣ</span>に文字色を入れて呼び出すと文字列をグラフィック面に描画します。</p>
+
+<h5 id="nd16d5f6">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＰＵＴ＄＝”ＨＥＬＬＯ　ＷＯＲＬＤ！”</li>
+<li>ＰＵＴＸ＝８０：ＰＵＴＹ＝９６</li>
+<li>ＧＯＳＵＢ　＠ＰＵＴＳＴＲ</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>＠ＰＵＴＳＴＲ</li>
+<li>ＤＲＡＷＸ＝ＰＵＴＸ：ＤＲＡＷＹ＝ＰＵＴＹ：ＤＲＡＷＣ＝ＰＵＴＣ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＬＥＮ（ＰＵＴ＄）−１</li>
+<li>　ＧＰＵＴＣＨＲ　ＤＲＡＷＸ，ＤＲＡＷＹ，”ＢＧＦ”，ＡＳＣ（ＭＩＤ＄（ＰＵＴ＄，Ｉ，１）），ＤＲＡＷＣ，１</li>
+<li>　ＤＲＡＷＸ＝ＤＲＡＷＸ＋８</li>
+<li>　ＩＦ　ＤＲＡＷＸ＞２４８　ＴＨＥＮ　ＤＲＡＷＸ＝ＤＲＡＷＸ−２４８：ＤＲＡＷＹ＝ＤＲＡＷＹ＋８</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="e027ad13">連想配列のようなもの</h4>
+
+<h5 id="h37b9b21">使い方</h5>
+<p>使用している変数やラベル名は全てHT_*</p>
+<ul><li>プログラム開始時に@HT_INITを呼ぶ</li>
+<li>HT_K$にキー, HT_V$に値を入れて@HT_SETを呼ぶと代入</li>
+<li>HT_K$にキーを入れて@HT_GETを呼ぶとHT_V$に値が戻ってくる</li></ul>
+
+<h5 id="p9367450">プログラムリスト</h5>
+<p>前半部分はサンプル</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＡＣＬＳ：ＣＬＥＡＲ：ＧＯＳＵＢ＠ＨＴ＿ＩＮＩＴ</li>
+<li></li>
+<li>ＨＴ＿Ｋ＄＝”ＡＨＯ”：ＨＴ＿Ｖ＄＝”ＨＡＧＥ”</li>
+<li>ＧＯＳＵＢ＠ＨＴ＿ＳＥＴ</li>
+<li>ＨＴ＿Ｋ＄＝”ＨＡＨＡＨＡ”：ＨＴ＿Ｖ＄＝”ＡＨＹＡ”</li>
+<li>ＧＯＳＵＢ＠ＨＴ＿ＳＥＴ</li>
+<li></li>
+<li>ＨＴ＿Ｋ＄＝”ＨＡＨＡＨＡ”</li>
+<li>ＧＯＳＵＢ＠ＨＴ＿ＧＥＴ</li>
+<li>？ＨＴ＿Ｖ＄</li>
+<li>ＨＴ＿Ｋ＄＝”ＡＨＯ”</li>
+<li>ＧＯＳＵＢ＠ＨＴ＿ＧＥＴ</li>
+<li>？ＨＴ＿Ｖ＄</li>
+<li></li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>＠ＨＴ＿ＩＮＩＴ</li>
+<li>　ＨＴ＿Ｐ＝０：ＨＴ＿Ｍ＝３０００</li>
+<li>　ＤＩＭ　ＨＴ＿Ｋ＄［ＨＴ＿Ｍ］，ＨＴ＿Ｖ＄［ＨＴ＿Ｍ］</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＨＴ＿ＩＮＤＥＸ　’ＨＴ＿Ｉ＝ＨＴ＿Ｋ＄</li>
+<li>　ＨＴ＿Ｉ＝−１</li>
+<li>　ＦＯＲ　ＨＴ＿ＩＮＤＥＸ＿Ｉ＝０　ＴＯ　ＨＴ＿Ｐ−１</li>
+<li>　　ＩＦ　ＨＴ＿Ｋ＄［ＨＴ＿ＩＮＤＥＸ＿Ｉ］＝＝ＨＴ＿Ｋ＄　ＴＨＥＮ　ＨＴ＿Ｉ＝ＨＴ＿ＩＮＤＥＸ＿Ｉ</li>
+<li>　ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＨＴ＿ＮＥＷＫＥＹ　’ＨＴ＿Ｋ＄</li>
+<li>　ＨＴ＿Ｋ＄［ＨＴ＿Ｐ］＝ＨＴ＿Ｋ＄</li>
+<li>　ＨＴ＿Ｉ＝ＨＴ＿Ｐ：ＨＴ＿Ｐ＝ＨＴ＿Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＨＴ＿ＧＥＴ　’ＨＴ＿Ｖ＄＝ＨＴ＿Ｋ＄</li>
+<li>　ＨＴ＿Ｖ＄＝ＣＨＲ＄（０）</li>
+<li>　ＧＯＳＵＢ＠ＨＴ＿ＩＮＤＥＸ</li>
+<li>　ＩＦ　ＨＴ＿Ｉ！＝−１　ＴＨＥＮ　ＨＴ＿Ｖ＄＝ＨＴ＿Ｖ＄［ＨＴ＿Ｉ］</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＨＴ＿ＳＥＴ　’ＨＴ＿Ｋ＄，ＨＴ＿Ｖ＄</li>
+<li>　ＧＯＳＵＢ＠ＨＴ＿ＩＮＤＥＸ</li>
+<li>　ＩＦ　ＨＴ＿Ｉ＝＝−１　ＴＨＥＮ　ＧＯＳＵＢ＠ＨＴ＿ＮＥＷＫＥＹ</li>
+<li>　ＨＴ＿Ｖ＄［ＨＴ＿Ｉ］＝ＨＴ＿Ｖ＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h4 id="ea6f9104">デバッグルーチン</h4>
+<p>ヤッフーさんの「<span class="noexists">デバッグルーチン<a href="/petc/?cmd=edit&amp;page=Toukou%2F%A5%C7%A5%D0%A5%C3%A5%B0%A5%EB%A1%BC%A5%C1%A5%F3&amp;refer=Sample">?</a></span>」と同じです。</p>
+
+<h5 id="z08b48f1">使い方</h5>
+<p>三行目までをプログラムの始めに、四行目からプログラムの最後に入れます。
+そして、プログラム内でDEBUG$にルーチン名を入れてGOSUBします。</p>
+
+<h5 id="ga54e007">プログラムリスト</h5>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＤＥＢＵＧ＄＝””</li>
+<li>ＧＯＳＵＢ　＠ＤＥＢＵＧ</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>＠ＤＥＢＵＧ</li>
+<li>ＩＦ　ＤＥＢＵＧ＄＝＝”＠”　ＯＲ　ＤＥＢＵＧ＄＝＝””　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>ＩＦ　ＤＥＢＵＧ＄！＝”＠”　ＴＨＥＮ　ＤＥＢＵＧ２＄＝”＠”＋ＤＥＢＵＧ＄</li>
+<li>ＧＯＴＯ　ＤＥＢＵＧ２＄</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (972d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2080d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (3023d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1956d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1966d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2418d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2618d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2188d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1279d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (637d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2411d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2150d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2617d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (14h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (167d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FShiftKey%20Store" title="Toukou/ShiftKey Store (4d)">Toukou/ShiftKey Store</a></li>
+</ul>
+<h4>2022/01/01</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FINSECTS%20FLIGHT%20-%BA%AB%C3%EE%C8%F4%B9%D4-" title="INSECTS FLIGHT ー昆虫飛行ー (17d)">INSECTS FLIGHT ー昆虫飛行ー</a></li>
+</ul>
+<h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (108d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (124d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (139d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (162d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (167d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (191d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (191d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (256d)">Petit Slash II</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.163 秒  | このページの最終更新 : 2015/06/07 (日) 16:13:22  (2418d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

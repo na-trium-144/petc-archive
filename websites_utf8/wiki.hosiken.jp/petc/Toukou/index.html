@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラムコーナー - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラムコーナー - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラムコーナー</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou">Toukou</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.541sec. -->
+<p><span class="basic-text">’　ЁЖ　フ゜チコン　トクセン　トウコウ　フ゜ロク゛ラム　コーナー　ЖЁ</span></p>
+<p>ここでは、初代プチコン/プチコンmkII用の BASIC プログラムを勝手に投稿できます。特選といっても、基本的に没にはなりません。</p>
+<p>画像添付機能を使って、プチコンmkII むけの QR コードを掲載することもできます。ただし、QR コードがないプログラムをプチコンに自動で取り込む方法は公式的には<strong>ありません</strong>。パソコンの画面を見ながら、プチコンに書き写すという昔ながらの手法が基本です。がんばれ。非公式な方法は<a href="/petc/?Link" title="Link (238d)">プチコンリンク集</a>をどうぞ。</p>
+<p>プログラムを投稿するには、<a href="/petc/?ToukouRule" title="ToukouRule (2689d)">プログラム投稿のルール</a>をご覧ください。また、プチコン3号用のプログラムは<a href="http://wiki.hosiken.jp/petc3gou/?Toukou" title="3gou:Toukou" rel="nofollow">3号のWiki</a>へどうぞ。</p>
+<h3 id="f5a1cc6f">投稿されたプログラム一覧</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc/?plugin=random&amp;refer=Toukou" rel="nofollow">ランダムジャンプ</a> - すべての投稿プログラムの中から、ランダムな作品にジャンプします</li></ul>
+<ul><li>????/??/?? : <a href="/petc/?Toukou%2FShiftKey%20Store" title="Toukou/ShiftKey Store (75d)">ShiftKey Store</a></li></ul>
+<h4 id="content_2_0">2021年8月</h4>
+<ul><li>2021/08/09 : <a href="/petc/?Toukou%2FDrop-m" title="Toukou/Drop-m (12d)">Drop-m(リズムゲーム)</a> <span style="color:silver">(Na)</span></li></ul>
+
+<h4 id="content_2_1">2020年8月</h4>
+<ul><li>2020/08/11 : <a href="/petc/?Toukou%2FDrop-e" title="Toukou/Drop-e (12d)">Drop-e(リズムゲーム)</a> <span style="color:silver">(Na)</span></li></ul>
+
+<h4 id="content_2_2">2020年4月</h4>
+<ul><li>2020/04/14 : <a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="Toukou/NaのmkII作品集 (715d)">NaのmkII作品集</a> <span style="color:silver">(Na)</span></li></ul>
+
+<h4 id="content_2_3">2017年7月</h4>
+<ul><li>2017/07/14 : <a href="/petc/?Toukou%2FGML" title="Toukou/GML (1720d)">GML</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_4">2017年2月</h4>
+<ul><li>2017/02/11 : <a href="/petc/?Toukou%2FLIFEOS" title="Toukou/LIFEOS (1483d)">LIFEOS (OSモドキ)</a> <span style="color:silver">(celeronist)</span></li></ul>
+
+<h4 id="content_2_5">2016年12月</h4>
+<ul><li>2016/12/07 : <a href="/petc/?Toukou%2FUBH" title="Toukou/UBH (1742d)">UBH</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_6">2016年6月</h4>
+<ul><li>2016/06/17 : <a href="/petc/?Toukou%2F%A5%B9%A5%E9%A5%A4%A5%E0" title="Toukou/スライム (2112d)">スライム</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/06/01 : <a href="/petc/?Toukou%2F%A5%E9%A5%A4%A5%F3%A5%A2%A1%BC%A5%C8" title="Toukou/ラインアート (1985d)">ラインアート</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_7">2016年5月</h4>
+<ul><li>2016/05/27 : <a href="/petc/?Toukou%2F%BB%B0%BB%B3%A4%AF%A4%BA%A4%B7" title="Toukou/三山くずし (2133d)">三山くずし</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/05/27 : <a href="/petc/?Toukou%2F%A5%CF%A5%E0%A5%E9%A5%D3" title="Toukou/ハムラビ (2133d)">ハムラビ</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_8">2016年4月</h4>
+<ul><li>2016/04/30 : <a href="/petc/?Toukou%2FH_OS" title="Toukou/H_OS (2063d)">H_OS</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2016/04/21 : <a href="/petc/?Toukou%2F%C8%F3%B8%F8%BC%B0%A5%DE%A5%C3%A5%D7%A5%D7%A5%EC%A5%A4%A5%E4%A1%BC" title="Toukou/非公式マッププレイヤー (2169d)">非公式マッププレイヤー</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/04/11 : <a href="/petc/?Toukou%2F%A5%C1%A5%A7%A5%C3%A5%AB%A1%BC" title="Toukou/チェッカー (2179d)">チェッカー</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_9">2016年3月</h4>
+<ul><li>2016/03/30 : <a href="/petc/?Toukou%2F%C0%EF%BC%D6" title="Toukou/戦車 (2191d)">戦車</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/03/30 : <a href="/petc/?Toukou%2FPN%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3" title="Toukou/PNアクション (2191d)">PNアクション</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/03/25 : <a href="/petc/?Toukou%2F%A5%AF%A5%EC%A5%A4%A5%B8%A1%BC%A5%A8%A5%A4%A5%C8" title="Toukou/クレイジーエイト (2196d)">クレイジーエイト</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/03/17 : <a href="/petc/?Toukou%2F%BF%CD%C0%B8%A5%B2%A1%BC%A5%E0%A4%E2%A4%C9%A4%AD" title="Toukou/人生ゲームもどき (2204d)">人生ゲームもどき</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2016/03/11 : <a href="/petc/?Toukou%2F%A4%D2%A4%C8%A4%EA%A5%DD%A1%BC%A5%AB%A1%BC" title="Toukou/ひとりポーカー (2210d)">ひとりポーカー</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2016/03/11 : <a href="/petc/?Toukou%2F%A4%C0%A4%A4%A4%B9%A1%F9%A4%AF%A4%A8%A4%B9%A4%C8" title="Toukou/だいす☆くえすと (2210d)">だいす☆くえすと</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_10">2016年2月</h4>
+<ul><li>2016/02/20 : <a href="/petc/?Toukou%2F%A5%DA%A5%A4%A5%F3%A5%C8%A5%D0%A5%C8%A5%EB" title="Toukou/ペイントバトル (2229d)">ペイントバトル</a> <span style="color:silver">(haru66kero)</span></li></ul>
+
+<h4 id="content_2_11">2016年1月</h4>
+<ul><li>2016/01/23 : <a href="/petc/?Toukou%2F%CC%EB%B6%F5%A4%CE%B2%D6%B2%D0%28%CC%FE%A4%B7%B7%CF%B2%D6%B2%D0%C2%C7%A4%C1%BE%E5%A4%B2%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%29" title="Toukou/夜空の花火(癒し系花火打ち上げアクション) (2028d)">夜空の花火</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2016/01/20 : <a href="/petc/?Toukou%2F%A5%B8%A5%E3%A5%F3%A5%B1%A5%F3elevator" title="Toukou/ジャンケンelevator (2241d)">ジャンケンelevator</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2016/01/11 : <a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="Toukou/イミテーション・イメージ (261d)">イミテーション・イメージ</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_12">2015年12月</h4>
+<ul><li>2015/12/30 : <a href="/petc/?Toukou%2F%A5%B9%A5%E9%A5%A4%A5%E0%A4%CE%C5%E3" title="Toukou/スライムの塔 (2260d)">スライムの塔 (固定画面アクション)</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2015/12/20 : <a href="/petc/?Toukou%2FGAMEBOOK" title="Toukou/GAMEBOOK (2220d)">GAME BOOK</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2015/12/05 : <a href="/petc/?Toukou%2F%A5%A4%A5%EB%A5%DF%A5%CD%A1%BC%A5%B7%A5%E7%A5%F3" title="Toukou/イルミネーション (2307d)">クリスマスイルミネーション</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2015/12/01 : <a href="/petc/?Toukou%2F%A5%B3%A5%A4%A5%F3%B2%D4%A4%AE%A5%B2%A1%BC%A5%E0" title="Toukou/コイン稼ぎゲーム (2247d)">コイン稼ぎゲーム</a> <span style="color:silver">(haru66kero)</span></li></ul>
+
+<h4 id="content_2_13">2015年11月</h4>
+<ul><li>2015/11/19 : <a href="/petc/?Toukou%2FAmazing%20marble%20race" title="Toukou/Amazing marble race (2319d)">Amazing marble race</a> <span style="color:silver">(haru66kero)</span></li>
+<li>2015/11/15 : <a href="/petc/?Toukou%2Fpress" title="Toukou/press (2327d)">press</a> <span style="color:silver">(haru66kero)</span></li></ul>
+
+<h4 id="content_2_14">2015年9月</h4>
+<ul><li>2015/09/23 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%CB%FC%B2%DA%B6%C0" title="Toukou/プチ万華鏡 (2381d)">プチ万華鏡</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2015/09/12 : <a href="/petc/?Toukou%2FSpace%20Snake" title="Toukou/Space Snake (2260d)">Space Snake (定番エサ食いゲーム)</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_15">2015年8月</h4>
+<ul><li>2015/08/01 : <a href="/petc/?Toukou%2FZone%28%C2%D0%C0%EF%B7%BF%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%29" title="Toukou/Zone(対戦型アクション) (2260d)">Zone (対戦型アクション)</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_16">2015年6月</h4>
+<ul><li>2015/06/20 : <a href="/petc/?Toukou%2FPonPon%20Athletics%28%BE%E5%B2%BC%A5%B9%A5%AF%A5%ED%A1%BC%A5%EB%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%29" title="Toukou/PonPon Athletics(上下スクロールアクション) (2260d)">PonPon Athletics (上下スクロールアクション)</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_17">2015年5月</h4>
+<ul><li>2015/05/31 : <a href="/petc/?Toukou%2FA.I%20Chronicle%A1%CA%B2%A3SCR%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A1%CB" title="Toukou/A.I Chronicle（横SCRシューティング） (2223d)">A.I Chronicle (横SCRシューティング)</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_18">2015年4月</h4>
+<ul><li>2015/04/11 : <a href="/petc/?Toukou%2FMARBLES" title="Toukou/MARBLES (2260d)">MARBLES (ビー玉おはじき風アクション)</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2015/04/07 : <a href="/petc/?Toukou%2F%BA%C7%B8%E5%A4%CE%C0%EF%A4%A4%28ff4-MML%29" title="Toukou/最後の戦い(ff4-MML) (2341d)">最後の戦い (FF4-MML)</a> <span style="color:silver">(koyo_k)</span></li>
+<li>2015/04/03 : <a href="/petc/?Toukou%2FPiet%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF" title="Toukou/Pietインタプリタ (2260d)">Pietインタプリタ</a> <span style="color:silver">(しーきゃ)</span></li></ul>
+
+<h4 id="content_2_19">2015年3月</h4>
+<ul><li>2015/03/15 : <a href="/petc/?Toukou%2F%CC%A4%CD%E8%B7%BF%A5%A4%A5%F3%A5%D9%A1%BC%A5%C0%A1%BC" title="Toukou/未来型インベーダー (2260d)">未来型インベーダー</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2015/03/03 : <a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="Toukou/ファイルエラー防止ルーチン (826d)">ファイルエラー防止ルーチン</a> <span style="color:silver">(あろー。)</span></li></ul>
+
+<h4 id="content_2_20">2015年2月</h4>
+<ul><li>2015/02/22 : <a href="/petc/?Toukou%2F%A5%D3%A5%C3%A5%B0%A5%D6%A5%EA%A5%C3%A5%C2%A4%CE%BB%E0%C6%AE%A1%DAMML%A1%DB" title="Toukou/ビッグブリッヂの死闘【MML】 (2307d)">ビッグブリッヂの死闘</a> <span style="color:silver">(koyo_k)</span></li>
+<li>2015/02/11 : <a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="Toukou/連鎖シミュレーター (699d)">連鎖Simulator (とことんぷ○ぷ○)</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2015/02/11 : <a href="/petc/?Toukou%2F%A5%A2%A5%AD%A5%CD%A5%A4%A5%BF%A1%BC" title="Toukou/アキネイター (2308d)">アキネイター</a> <span style="color:silver">(koyo_k)</span></li>
+<li>2015/02/04 : <a href="/petc/?Toukou%2F%A5%B0%A5%E9%A5%D5%A5%A3%A5%C3%A5%AF%A4%F2%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%D8%CA%D1%B4%B9" title="Toukou/グラフィックをスプライトへ変換 (2260d)">GRPをSPRITEへ縮小</a> <span style="color:silver">(koyo_k)</span></li>
+<li>2015/02/02 : <a href="/petc/?Toukou%2F%A5%B7%A5%F3%A5%D7%A5%EB%A4%CA%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A5%B2%A1%BC%A5%E0" title="Toukou/シンプルなシューティングゲーム (2260d)">シンプルなシューティングゲーム</a> <span style="color:silver">(ＴＥＸＴＥＲ)</span></li></ul>
+
+<h4 id="content_2_21">2014年12月</h4>
+<ul><li>2014/12/31 : <a href="/petc/?Toukou%2F%A4%B9%A4%E9%A4%A4%A4%E0%A5%D5%A5%A1%A5%AF%A5%C8%A5%EA%A1%BC" title="Toukou/すらいむファクトリー (2488d)">すらいむファクトリー</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/12/21 : <a href="/petc/?Toukou%2FShoot%20the%20Light" title="Toukou/Shoot the Light (2556d)">Shoot the Light!!</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/12/20 : <a href="/petc/?Toukou%2F%BB%B3%B3%D9%B4%D1%B8%F7%A5%BD%A5%D5%A5%C8" title="Toukou/山岳観光ソフト (2289d)">山岳観光ソフト</a> <span style="color:silver">(CRT)</span></li>
+<li>2014/12/20 : <a href="/petc/?Toukou%2FARROWsNEXT%20OS" title="Toukou/ARROWsNEXT OS (1957d)">ARROWsNEXT OS</a> <span style="color:silver">(あろー。)</span></li>
+<li>2014/12/19 : <a href="/petc/?Toukou%2F%A5%EF%A5%A4%A5%E4%A1%BC%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3" title="Toukou/ワイヤーアニメーション (2658d)">ワイヤーアニメーション</a> <span style="color:silver">(J2)</span></li>
+<li>2014/12/14 : <a href="/petc/?Toukou%2F%A5%A6%A5%A4%A5%EB%A5%B9%A1%A6%A5%D1%A5%CB%A5%C3%A5%AF%28%BF%D8%BC%E8%A4%EA%29" title="Toukou/ウイルス・パニック(陣取り) (2260d)">ウイルス・パニック (陣取りゲーム)</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/12/13 : <a href="/petc/?Toukou%2F%A4%AB%A4%D9%A4%CE%A4%DC%A4%EA" title="Toukou/かべのぼり (2231d)">かべのぼり</a> <span style="color:silver">(CRT)</span></li>
+<li>2014/12/07 : <a href="/petc/?Toukou%2F%B6%E1%CC%A4%CD%E8%A5%E9%A5%B8%A5%B3%A5%F3%A5%B5%A1%BC%A5%AD%A5%C3%A5%C8" title="Toukou/近未来ラジコンサーキット (2598d)">近未来ラジコンサーキット</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_22">2014年11月</h4>
+<ul><li>2014/11/24 : <a href="/petc/?Toukou%2F%A5%D4%A5%F3%A5%DC%A1%BC%A5%EB" title="Toukou/ピンボール (2118d)">ピンボール</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/11/16 : <a href="/petc/?Toukou%2F%A1%D6Doors%A1%D7%A4%A2%A4%CA%A4%BF%A4%CE%A5%D7%A5%C1%A5%B3%A5%F3%A4%F2%CA%D8%CD%F8%A4%CB%A4%B9%A4%EBOS" title="Toukou/「Doors」あなたのプチコンを便利にするOS (67d)">プチコンOS Doors</a> <span style="color:silver">(キャラクター製作所)</span></li>
+<li>2014/11/13 : <a href="/petc/?Toukou%2F%C3%C6%CB%EB%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B02" title="Toukou/弾幕シューティング2 (2337d)">弾幕シューティング2</a> <span style="color:silver">(NOVA)</span></li>
+<li>2014/11/11 : <a href="/petc/?Toukou%2F%C6%FC%CB%DC%C3%CF%BF%DE" title="Toukou/日本地図 (2326d)">日本地図</a> <span style="color:silver">(GrapeFactory)</span></li>
+<li>2014/11/03 : <a href="/petc/?Toukou%2FDQX%20%A5%B9%A5%ED%A5%C3%A5%C8%A5%AB%A5%A6%A5%F3%A5%BF%A1%BC" title="Toukou/DQX スロットカウンター (2705d)">DQX スロットカウンター</a> <span style="color:silver">(neko800)</span></li>
+<li>2014/11/02 : <a href="/petc/?Toukou%2F%BB%EB%CE%CF%B8%A1%BA%BA" title="Toukou/視力検査 (2408d)">視力検査</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/11/01 : <a href="/petc/?Toukou%2FSHEEP" title="Toukou/SHEEP (1481d)">SHEEP</a> <span style="color:silver">(BlackSoft)</span></li>
+<li>2014/11/01 : <a href="/petc/?Toukou%2FClacker" title="Toukou/Clacker (2223d)">Clacker</a> <span style="color:silver">(BlackSoft)</span></li></ul>
+
+<h4 id="content_2_23">2014年10月</h4>
+<ul><li>2014/10/31 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="Toukou/ポケットタクティクス（Ｓ・ＲＰＧ） (179d)">ポケットタクティクス (S・RPG)</a> <span style="color:silver">(ラリゴ)</span></li>
+<li>2014/10/31 : <a href="/petc/?Toukou%2F%A5%AB%A5%E9%A5%D5%A5%EB%A1%A6%A5%C9%A5%E9%A5%E0" title="Toukou/カラフル・ドラム (2565d)">カラフル・ドラム</a> <span style="color:silver">(ラリゴ)</span></li>
+<li>2014/10/26 : <a href="/petc/?Toukou%2F%A4%CF%A4%E4%A4%A6%A4%C1%A1%AA%A5%AD%A1%BC%A5%DC%A1%BC%A5%C9%A5%A4%A5%F3%A5%D9%A1%BC%A5%C0" title="Toukou/はやうち！キーボードインベーダ (2217d)">はやうち！キーボードインベーダ</a> <span style="color:silver">(キャラクター製作所)</span></li>
+<li>2014/10/16 : <a href="/petc/?Toukou%2F%C6%FC%C9%D5%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB" title="Toukou/日付をしゃべる (2223d)">日付をしゃべる</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/10/13 : <a href="/petc/?Toukou%2F%A5%D6%A5%EB%A1%BC%A5%A4%A5%F3%A5%D1%A5%EB%A5%B9%A1%CASTG%A1%CB" title="Toukou/ブルーインパルス（STG） (2717d)">ブルーインパルス (STG)</a> <span style="color:silver">(hanzo)</span></li>
+<li>2014/10/09 : <a href="/petc/?Toukou%2F%BB%FE%B9%EF%A4%F2%A4%B7%A4%E3%A4%D9%A4%EB" title="Toukou/時刻をしゃべる (2725d)">時刻をしゃべる</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/10/01 : <a href="/petc/?Toukou%2FFinalFantasy%A4%E2%A4%C9%A4%AD" title="Toukou/FinalFantasyもどき (2253d)">ファイナルファンタジー もどき</a> <span style="color:silver">(YouTuberアホテレビデオ)</span></li></ul>
+
+<h4 id="content_2_24">2014年9月</h4>
+<ul><li>2014/09/27 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%C8%A4%CF%A4%BF%A4%A2%A4%B2" title="Toukou/プチコちゃんとはたあげ (2673d)">プチコちゃんとはたあげ</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/09/23 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%CE%A5%CA%A5%EF%A5%C8%A5%D3" title="Toukou/プチコのナワトビ (2674d)">プチコのナワトビ</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/09/22 : <a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="Toukou/マリオBGM (614d)">マリオBGM</a> <span style="color:silver">(oy)</span></li>
+<li>2014/09/16 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%D7%A5%C1" title="Toukou/プチプチ (2488d)">プチプチ</a> <span style="color:silver">(道産子(dosankosoft))</span></li>
+<li>2014/09/15 : <a href="/petc/?Toukou%2F%A5%B9%A5%C8%A5%DC%A5%F3%A4%CE%A5%A4%A5%F3%A5%D9%A1%BC%A5%C0%A1%BC%A5%B2%A1%BC%A5%E0%A1%A3" title="Toukou/ストボンのインベーダーゲーム。 (1673d)">ストボンのインベーダーゲーム。</a> <span style="color:silver">(キャラクター製作所)</span></li>
+<li>2014/09/05 : <a href="/petc/?Toukou%2F%A5%C8%A5%EC%A5%A4%A5%F3" title="Toukou/トレイン (2740d)">トレイン</a> <span style="color:silver">(Gセーバー)</span></li></ul>
+
+<h4 id="content_2_25">2014年8月</h4>
+<ul><li>2014/08/23 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%ED%A5%DC%A4%CE%C0%EF%A4%A4" title="Toukou/プチコロボの戦い (2282d)">プチコロボの戦い</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/08/20 : <a href="/petc/?Toukou%2F%C3%C6%CB%EBSTG" title="Toukou/弾幕STG (2236d)">プチコンで弾幕STG</a> <span style="color:silver">(kyabetuさん)</span></li>
+<li>2014/08/18 : <a href="/petc/?Toukou%2FHIT%A1%F5BLOW" title="Toukou/HIT＆BLOW (2260d)">HIT&amp;BLOW</a> <span style="color:silver">(YOS G-spec)</span></li>
+<li>2014/08/10 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%C8%A5%EC%A1%BC%A5%C0%A1%BC%A5%D0%A5%C8%A5%EB" title="Toukou/プチコちゃんとレーダーバトル (2323d)">プチコちゃんとレーダーバトル</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/08/01 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%C0%D1%A4%DF" title="Toukou/プチコ積み (2722d)">プチコ積み</a> <span style="color:silver">(まげ)</span></li></ul>
+
+<h4 id="content_2_26">2014年7月</h4>
+<ul><li>2014/07/30 : <a href="/petc/?Toukou%2F%A5%A2%A5%B9%A5%AD%A1%BC%A5%AF%A5%A8%A5%B9%A5%C8" title="Toukou/アスキークエスト (2222d)">アスキークエスト</a> <span style="color:silver">(猫姫)</span></li>
+<li>2014/07/26 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3X" title="Toukou/プチコちゃんX (2430d)">プチコちゃんX</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/07/24 : <a href="/petc/?Toukou%2F%A3%B1%BF%CDUNO" title="Toukou/１人UNO (2252d)">1人UNO</a> <span style="color:silver">(スルメ)</span></li>
+<li>2014/07/19 : <a href="/petc/?Toukou%2F%CD%A6%BC%D4%B7%AF%A4%CE%C6%FC%BE%EF" title="Toukou/勇者君の日常 (2223d)">勇者君の日常</a> <span style="color:silver">(クロノ)</span></li>
+<li>2014/07/18 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%F2%C3%B5%A4%BB%A1%AA" title="Toukou/プチコちゃんを探せ！ (2734d)">プチコちゃんを探せ！</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/07/12 : <a href="/petc/?Toukou%2F%A5%B8%A5%E3%A5%F3%A5%B1%A5%F3%A5%B2%A1%BC%A5%E0%28Tachesci%29" title="Toukou/ジャンケンゲーム(Tachesci) (1860d)">ジャンケンゲーム</a> <span style="color:silver">(Tachesci)</span></li>
+<li>2014/07/11 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C8%A4%A4%A4%C4%A4%E2%A4%CE%B5%A2%A4%EA%C6%BB" title="Toukou/プチコといつもの帰り道 (2721d)">プチコといつもの帰り道</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/07/11 : <a href="/petc/?Toukou%2F%A5%AD%A5%E3%A5%E9%C1%C7%BA%E0" title="Toukou/キャラ素材 (2818d)">キャラ素材</a> <span style="color:silver">(クロノ)</span></li>
+<li>2014/07/11 : <a href="/petc/?Toukou%2F%A4%E8%A4%AF%A4%A2%A4%EBrpg%B2%FE" title="Toukou/よくあるrpg改 (2236d)">よくあるrpg改</a> <span style="color:silver">(クロノ)</span></li>
+<li>2014/07/07 : <a href="/petc/?Toukou%2F%A4%E8%A4%AF%A4%A2%A4%EBrpg" title="Toukou/よくあるrpg (2822d)">よくあるrpg</a> <span style="color:silver">(クロノ)</span></li>
+<li>2014/07/06 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%CE%20%C2%AD%A4%B7%BB%BBQUIZ%20%A5%D7%A5%E93" title="Toukou/プチコの 足し算QUIZ プラ3 (2806d)">プチコの足し算QUIZ プラ3</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/07/06 : <a href="/petc/?Toukou%2F%A5%AA%A5%E4%A5%B8%A5%E9%A5%F3%A5%C1%A5%E3%A1%BC" title="Toukou/オヤジランチャー (2260d)">オヤジランチャー</a> <span style="color:silver">(InDoor)</span></li></ul>
+
+<h4 id="content_2_27">2014年6月</h4>
+<ul><li>2014/06/28 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%CE%A5%B3%A5%B9%A5%D7%A5%ECSLOT" title="Toukou/プチコちゃんのコスプレSLOT (2260d)">プチコちゃんのコスプレSLOT</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/06/22 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%AC%C2%C7%BC%D4%A1%AA" title="Toukou/プチコちゃんが打者！ (2776d)">プチコちゃんが打者！</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/06/20 : <a href="/petc/?Toukou%2FNANARIS" title="Toukou/NANARIS (2334d)">NANARIS</a> <span style="color:silver">(A47)</span></li>
+<li>2014/06/14 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%EA%A4%F3%A4%B3" title="Toukou/プチコちゃりんこ (2421d)">プチコちゃりんこ</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/06/14 : <a href="/petc/?Toukou%2FPACHICOM%21" title="Toukou/PACHICOM! (2834d)">PACHICOM!</a> <span style="color:silver">(nemoj)</span></li>
+<li>2014/06/09 : <a href="/petc/?Toukou%2FSTAP%BA%D9%CB%A6%A4%C7%A4%AD%A4%EB%A4%AB%A4%CA%3F" title="Toukou/STAP細胞できるかな? (2340d)">STAP細胞できるかな？</a> <span style="color:silver">(スルメ)</span></li>
+<li>2014/06/08 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%CE%A5%DE%A5%B9%A5%BF%A1%BC%A5%DE%A5%A4%A5%F3%A5%C9" title="Toukou/プチコちゃんのマスターマインド (2673d)">プチコちゃんのマスターマインド</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/06/06 : <a href="/petc/?Toukou%2FGbtRichTextRoutine" title="Toukou/GbtRichTextRoutine (2817d)">GbtRichTeXTRoutine</a> <span style="color:silver">(<span style="color:#1abc9c">Gbt</span>)</span></li>
+<li>2014/06/03 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F315%A5%D1%A5%BA%A5%EB%A1%A6%A5%EA%A5%DF%A5%C6%A5%C3%A5%C9%C8%C7" title="Toukou/プチコちゃん15パズル・リミテッド版 (2430d)">プチコちゃん15パズル・リミテッド版</a> <span style="color:silver">(まげ)</span></li></ul>
+
+<h4 id="content_2_28">2014年5月</h4>
+<ul><li>2014/05/29 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%C8%CC%EE%B5%E5%B7%FD%A1%A6%A5%EA%A5%DF%A5%C6%A5%C3%A5%C9%C8%C7" title="Toukou/プチコちゃんと野球拳・リミテッド版 (33d)">プチコちゃんと野球拳・リミテッド版</a> <span style="color:silver">(まげ)</span></li>
+<li>2014/05/22 : <a href="/petc/?Toukou%2F%A4%CA%A4%E1%A4%B3%BA%CF%C7%DD%2B" title="Toukou/なめこ栽培+ (1860d)">ナメコ栽培 2</a> <span style="color:silver">(すすむ)</span></li>
+<li>2014/05/21 : <a href="/petc/?Toukou%2F%A5%B2%A5%C3%A5%C0%A5%F3" title="Toukou/ゲッダン (2687d)">ゲッダン</a> <span style="color:silver">(道産子(dosankosoft))</span></li>
+<li>2014/05/20 : <a href="/petc/?Toukou%2F%BF%E1%A4%C3%C0%DA%A4%EC%A4%BF" title="Toukou/吹っ切れた (2781d)">吹　っ　切　れ　た</a> <span style="color:silver">(道産子(dosankosoft))</span></li>
+<li>2014/05/19 : <a href="/petc/?Toukou%2F%A5%CA%A5%A4%A5%C8%A5%E9%A5%A4%A5%D5%A4%CEMENU%B2%E8%CC%CC%A4%CE%BA%C6%B8%BD" title="Toukou/ナイトライフのMENU画面の再現 (2872d)">ナイトライフのMENU画面の再現</a> <span style="color:silver">(Tachesci)</span></li>
+<li>2014/05/15 : <a href="/petc/?Toukou%2FGB%B2%E8%C1%FC%C9%BD%BC%A8%A5%C7%A1%BC%A5%BF%A4%CE%CA%D1%B4%B9" title="Toukou/GB画像表示データの変換 (2544d)">GB画像表示データ変換</a> <span style="color:silver">(スルメ)</span></li>
+<li>2014/05/12 : <a href="/petc/?Toukou%2F%C6%F3%BF%CD%A4%CE%CB%C1%B8%B1" title="Toukou/二人の冒険 (2260d)">二人の冒険</a> <span style="color:silver">(クロノ)</span></li>
+<li>2014/05/11 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%B0%E9%C0%AE%A5%B2%A1%BC%A5%E0" title="Toukou/プチ育成ゲーム (2258d)">プチ育成ゲーム</a> <span style="color:silver">(スムージー(ただの初心者))</span></li>
+<li>2014/05/07 : <a href="/petc/?Toukou%2FschoolOS2" title="Toukou/schoolOS2 (2260d)">SchoolOS 2.0</a> <span style="color:silver">(ありふれた)</span></li>
+<li>2014/05/05 : <a href="/petc/?Toukou%2F%A5%E1%A5%A4%A5%ED%A5%AA%A5%A6%A5%B3%A5%AF" title="Toukou/メイロオウコク (2787d)">メイロオウコク</a> <span style="color:silver">(PUSH)</span></li>
+<li>2014/05/05 : <a href="/petc/?Toukou%2FQuine" title="Toukou/Quine (2488d)">Quine</a> <span style="color:silver">(gbt)</span></li></ul>
+
+<h4 id="content_2_29">2014年4月</h4>
+<ul><li>2014/04/29 : <a href="/petc/?Toukou%2F%A5%B8%A5%E3%A5%F3%A5%B1%A5%F3%A5%B2%A1%BC%A5%E0" title="Toukou/ジャンケンゲーム (2889d)">ジャンケンゲーム</a> <span style="color:silver">(コンプチ)</span></li>
+<li>2014/04/27 : <a href="/petc/?Toukou%2FTyokusetsu%21" title="Toukou/Tyokusetsu! (2450d)">ひたすら「直接っ！」と言い続けるだけのプログラム</a> <span style="color:silver">(カービィ★KIRBY)</span></li>
+<li>2014/04/24 : <a href="/petc/?Toukou%2FP%A1%FB4%A4%CE%A5%DB%A1%BC%A5%E0%B2%E8%CC%CC%A4%E2%A4%C9%A4%AD" title="Toukou/P○4のホーム画面もどき (2544d)">P○4のホーム画面もどき</a> <span style="color:silver">(スルメ)</span></li>
+<li>2014/04/22 : <a href="/petc/?Toukou%2F%A5%DF%A5%E5%A1%BC%A5%B8%A5%C3%A5%AF%A5%B7%A1%BC%A5%B1%A5%F3%A5%B5%A1%BCmkII" title="Toukou/ミュージックシーケンサーmkII (2231d)">ミュージックエディッター Ver2.0</a> <span style="color:silver">(タマゴさん)</span></li>
+<li>2014/04/09 : <a href="/petc/?Toukou%2FWAVE%BA%C6%C0%B8%A5%BD%A5%D5%A5%C8%A5%A6%A5%A7%A5%A2" title="Toukou/WAVE再生ソフトウェア (2624d)">WAVE再生ソフトウェア</a> <span style="color:silver">(QES_Autoexec)</span></li>
+<li>2014/04/08 : <a href="/petc/?Toukou%2F%A5%C9%A5%E9%A5%E0%A4%E9%A4%B7%A4%AD%B2%BF%A4%AB" title="Toukou/ドラムらしき何か (2902d)">ドラムらしき何か</a> <span style="color:silver">(ライオネル)</span></li>
+<li>2014/04/05 : <a href="/petc/?Toukou%2FNoodel%20OS" title="Toukou/Noodel OS (2138d)">Noodel OS</a> <span style="color:silver">(Noodel Software)</span></li>
+<li>2014/04/03 : <a href="/petc/?Toukou%2F%A5%DC%A1%BC%A5%EB%A5%DA%A5%F3%B9%A9%BE%EC" title="Toukou/ボールペン工場 (2488d)">ボールペン工場</a> <span style="color:silver">(たかさん)</span></li>
+<li>2014/04/01 : <a href="/petc/?Toukou%2F%A5%DE%A5%C3%A5%CF%A5%DC%A5%A6%A5%EA%A5%F3%A5%B0" title="Toukou/マッハボウリング (2918d)">マッハボウリング</a> <span style="color:silver">(小６ 名無しさん)</span></li>
+<li>2014/04/01 : <a href="/petc/?Toukou%2FZEIRITU008" title="Toukou/ZEIRITU008 (2614d)">―消費税 8%―</a> <span style="color:silver">(バイカウントメルビル)</span></li></ul>
+
+<h4 id="content_2_30">2014年3月</h4>
+<ul><li>2014/03/31 : <a href="/petc/?Toukou%2F%C1%FD%C0%C7%A4%DE%A4%C7%A4%A2%A4%C8%A1%C4" title="Toukou/増税まであと… (2702d)">増税まであと…</a> <span style="color:silver">(あふあふ(Noodle Softwere))</span></li>
+<li>2014/03/31 : <a href="/petc/?Toukou%2F2048" title="Toukou/2048 (2223d)">2048</a> <span style="color:silver">(OBONO)</span></li>
+<li>2014/03/28 : <a href="/petc/?Toukou%2F%A5%A4%A5%F3%A5%D9%A1%BC%A5%C0%A1%BC%A1%CA%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A1%CB" title="Toukou/インベーダー（シューティング） (2649d)">インベーダー (シューティング)</a> <span style="color:silver">(神無月)</span></li>
+<li>2014/03/25 : <a href="/petc/?Toukou%2FCtrGE" title="Toukou/CtrGE (2260d)">Citringo Gadget Environment</a> <span style="color:silver">(Citringo)</span></li>
+<li>2014/03/16 : <a href="/petc/?Toukou%2F%CC%C2%CF%A9%C3%A6%BD%D0%A5%B2%A1%BC%A5%E0%28maze%20escape%29" title="Toukou/迷路脱出ゲーム(maze escape) (2260d)">迷路脱出ゲーム (maze escape)</a> <span style="color:silver">(hanzo)</span></li>
+<li>2014/03/16 : <a href="/petc/?Toukou%2FMOMENT" title="Toukou/MOMENT (2927d)">MOMENT</a> <span style="color:silver">(.EXEさん)</span></li>
+<li>2014/03/16 : <a href="/petc/?Toukou%2FMEIRO" title="Toukou/MEIRO (2229d)">MEIRO</a> <span style="color:silver">(ふっさ)</span></li>
+<li>2014/03/13 : <a href="/petc/?Toukou%2FDeepBeep" title="Toukou/DeepBeep (2939d)">DeepBeep</a> <span style="color:silver">(<span style="color:#2ecc71"><strong>gbt</strong></span>)</span></li>
+<li>2014/03/10 : <a href="/petc/?Toukou%2FPYQ" title="Toukou/PYQ (2209d)">PYQ</a> <span style="color:silver">(OBONO)</span></li></ul>
+
+<h4 id="content_2_31">2014年2月</h4>
+<ul><li>2014/02/24 : <a href="/petc/?Toukou%2FYABEEP" title="Toukou/YABEEP (2956d)">YABEEP</a> <span style="color:silver">(ゆうしゃアシスタント)</span></li>
+<li>2014/02/24 : <a href="/petc/?Toukou%2FCtrClock" title="Toukou/CtrClock (2260d)">Ctr Clock</a> <span style="color:silver">(Citringo)</span></li>
+<li>2014/02/22 : <a href="/petc/?Toukou%2FORE%20DAKE%20MAZE" title="Toukou/ORE DAKE MAZE (2260d)">ORE DAKE MAZE</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2014/02/16 : <a href="/petc/?Toukou%2F15bit%A5%AB%A5%E9%A1%BC%C9%BD%BC%A8" title="Toukou/15bitカラー表示 (2223d)">15bitカラー表示</a> <span style="color:silver">(Autoexec)</span></li>
+<li>2014/02/13 : <a href="/petc/?Toukou%2F%CC%C0%A4%EB%A4%B5%C4%B4%C0%B0%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%A1%CA%A5%EB%A1%BC%A5%C1%A5%F3%A1%CB" title="Toukou/明るさ調整プログラム（ルーチン） (2487d)">明るさ調整プログラム (サブルーチン)</a> <span style="color:silver">(Autoexec)</span></li>
+<li>2014/02/02 : <a href="/petc/?Toukou%2F47PZL" title="Toukou/47PZL (2915d)">47PZL</a> <span style="color:silver">(OBONO)</span></li>
+<li>2014/02/01 : <a href="/petc/?Toukou%2F%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A5%B2%A1%BC" title="Toukou/シューティングゲー (1860d)">シューティングゲー</a> <span style="color:silver">(暁)</span></li>
+<li>2014/02/01 : <a href="/petc/?Toukou%2F%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/シューティング (2227d)">シューティング</a> <span style="color:silver">(暁)</span></li>
+<li>2014/02/01 : <a href="/petc/?Toukou%2FCtrStringOptimizer" title="Toukou/CtrStringOptimizer (59d)">Ctr String Optimizer</a> <span style="color:silver">(Citringo)</span></li></ul>
+
+<h4 id="content_2_32">2014年1月</h4>
+<ul><li>2014/01/23 : <a href="/petc/?Toukou%2FRPG%C0%BD%BA%EE%BB%D9%B1%E7%A5%B5%A5%D6PRG" title="Toukou/RPG製作支援サブPRG (2687d)">RPG製作支援サブPRG</a> <span style="color:silver">(猫姫)</span></li>
+<li>2014/01/20 : <a href="/petc/?Toukou%2F%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%A3%D2%A3%D0%A3%C7" title="Toukou/アクションＲＰＧ (2976d)">アドベンチャラー！ (アクションRPG)</a> <span style="color:silver">(ラリゴ)</span></li>
+<li>2014/01/16 : <a href="/petc/?Toukou%2F%A5%E2%A5%B0%A5%E9%A5%BF%A5%BF%A5%AD%A5%B2%A1%BC%A5%E0%20Ver.1.3" title="Toukou/モグラタタキゲーム Ver.1.3 (2231d)">モグラタタキゲーム Ver.1.3</a> <span style="color:silver">(Tachesci)</span></li>
+<li>2014/01/16 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%BE%EB%A5%CF%A5%AB%A5%BB" title="Toukou/プチコン城ハカセ (2720d)">プチコン城ハカセ</a> <span style="color:silver">(猫姫)</span></li>
+<li>2014/01/16 : <a href="/petc/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%A2%A5%B7%A5%B9%A5%BF%A5%F3%A5%C8%A4%CA%A4%EA%A4%CE%B0%C5%B9%E6%B2%BD" title="Toukou/ゆうしゃアシスタントなりの暗号化 (2946d)">ゆうあしの暗号化システム</a> <span style="color:silver">(ゆうしゃアシスタント)</span></li>
+<li>2014/01/14 : <a href="/petc/?Toukou%2F%BC%AB%BC%A3%C2%CE%A5%B3%A5%EC%A5%AF%A5%B7%A5%E7%A5%F3%C5%D4%C6%BB%C9%DC%B8%A9%C8%C7" title="Toukou/自治体コレクション都道府県版 (2895d)">自治体コレクション都道府県版</a> <span style="color:silver">(ていこく)</span></li>
+<li>2014/01/11 : <a href="/petc/?Toukou%2FREVERSI" title="Toukou/REVERSI (2253d)">REVERSI (リバーシ)</a> <span style="color:silver">(imix)</span></li>
+<li>2014/01/04 : <a href="/petc/?Toukou%2Fsurajbt" title="Toukou/surajbt (2556d)">ジャンプバトルゲーム</a> <span style="color:silver">(sura)</span></li></ul>
+
+<h4 id="content_2_33">2013年12月</h4>
+<ul><li>2013/12/26 : <a href="/petc/?Toukou%2F%A5%AB%A5%A6%A5%F3%A5%BF%A1%BC" title="Toukou/カウンター (1860d)">カウンター　ver.2.3.2</a> <span style="color:silver">(ひろ)</span></li>
+<li>2013/12/19 : <a href="/petc/?Toukou%2F%A4%B8%A4%BF%A4%D0%A4%BF" title="Toukou/じたばた (2260d)">じたばた</a> <span style="color:silver">(InDoor)</span></li>
+<li>2013/12/18 : <a href="/petc/?Toukou%2F%A5%B9%A5%D7%A5%EC%A1%BC%A5%DA%A5%A4%A5%F3%A5%C8" title="Toukou/スプレーペイント (2891d)">スプレーペイント</a> <span style="color:silver">(IｎDoor)</span></li>
+<li>2013/12/18 : <a href="/petc/?Toukou%2FPetit%20Number%20Place" title="Toukou/Petit Number Place (2910d)">Petit Number Place</a> <span style="color:silver">(KITI)</span></li>
+<li>2013/12/08 : <a href="/petc/?Toukou%2F%A4%CF%A4%BF%A4%A2%A4%B2%A5%B2%A1%BC%A5%E0%A1%CA%A5%DC%A5%A4%A5%B9%A1%CB" title="Toukou/はたあげゲーム（ボイス） (3032d)">はたあげゲーム</a> <span style="color:silver">(hanzo)</span></li>
+<li>2013/12/07 : <a href="/petc/?Toukou%2F%B8%F8%BC%B0%C1%C7%BA%E0%A4%CE%A3%B4%BF%CD%C1%C8%A4%C8%A5%D7%A5%ED%C0%B8%A4%C1%A4%E3%A4%F3%A4%F2%C6%B1%BB%FE%A4%CB%BB%C8%A4%A6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/公式素材の４人組とプロ生ちゃんを同時に使うプログラム (3035d)">公式素材の４人組とプロ生ちゃんを同時に使うプログラム</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/12/07 : <a href="/petc/?Toukou%2FCUBING" title="Toukou/CUBING (3032d)">CUBING</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_34">2013年11月</h4>
+<ul><li>2013/11/28 : <a href="/petc/?Toukou%2F%B1%BF%C8%DD%C5%B7%C9%EA%B9%E2%B9%BB%CC%EE%B5%E5" title="Toukou/運否天賦高校野球 (3011d)">運否天賦 高校野球</a> <span style="color:silver">(ていこく)</span></li>
+<li>2013/11/27 : <a href="/petc/?Toukou%2FHighColor%2864k%29" title="Toukou/HighColor(64k) (2260d)">16bitカラー表示＋α</a> <span style="color:silver">(Autoexec)</span></li>
+<li>2013/11/22 : <a href="/petc/?Toukou%2FHI-JUMP%20JOHNNY2" title="Toukou/HI-JUMP JOHNNY2 (2690d)">HI-JUMP JOHNNEY2</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/11/17 : <a href="/petc/?Toukou%2F%A5%E6%A5%C3%A5%B1%A4%CE%C1%C7%BA%E0" title="Toukou/ユッケの素材 (2999d)">ユッケの素材</a> <span style="color:silver">(ユッケ)</span></li>
+<li>2013/11/17 : <a href="/petc/?Toukou%2F%A5%A4%A5%E9%A5%B9%A5%C8%A5%ED%A5%B8%A5%C3%A5%AF%A1%CA32%A1%DF32%A1%CB" title="Toukou/イラストロジック（32×32） (2260d)">イラストロジック (32×32)</a> <span style="color:silver">(hanzo)</span></li>
+<li>2013/11/16 : <a href="/petc/?Toukou%2FChargeManKen%21" title="Toukou/ChargeManKen! (2223d)">チャージマン研！BGM集</a> <span style="color:silver">(Citringo)</span></li>
+<li>2013/11/08 : <a href="/petc/?Toukou%2FSC-RPG" title="Toukou/SC-RPG (3056d)">SC-RPG</a> <span style="color:silver">(いりせ)</span></li>
+<li>2013/11/07 : <a href="/petc/?Toukou%2F%A5%D5%A1%BC%A5%EB%A5%AA%A5%F3%A5%B6%A5%D7%A5%C1%A5%B3%A5%F3" title="Toukou/フールオンザプチコン (3012d)">フール・オン・ザ・プチコン</a> <span style="color:silver">(ていこく)</span></li>
+<li>2013/11/06 : <a href="/petc/?Toukou%2F%A5%B3%A1%BC%A5%C9%A5%D6%A5%EC%A1%BC%A5%AB%A1%BC%A1%CA%BF%F4%C5%F6%A4%C6%A5%B2%A1%BC%A5%E0%A1%CB" title="Toukou/コードブレーカー（数当てゲーム） (3055d)">コードブレーカー (Hit＆Blow)</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2013/11/06 : <a href="/petc/?Toukou%2FSlide%20Puzzle" title="Toukou/Slide Puzzle (3048d)">Slide Puzzle</a> <span style="color:silver">(apoi)</span></li>
+<li>2013/11/04 : <a href="/petc/?Toukou%2F%A5%DF%A5%E5%A1%BC%A5%B8%A5%C3%A5%AF%A5%B7%A1%BC%A5%B1%A5%F3%A5%B5%A1%BC" title="Toukou/ミュージックシーケンサー (2231d)">ミュージックエディッター</a> <span style="color:silver">(タマゴさん)</span></li></ul>
+
+<h4 id="content_2_35">2013年10月</h4>
+<ul><li>2013/10/31 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%C0%A4%B3%A6%BB%FE%B7%D7" title="Toukou/簡易世界時計 (2958d)">簡易世界時計</a> <span style="color:silver">(1.5V(たかさん))</span></li>
+<li>2013/10/27 : <a href="/petc/?Toukou%2FRoyal%20nine%20%28%A5%ED%A5%A4%A5%E4%A5%EB%A5%CA%A5%A4%A5%F3%29" title="Toukou/Royal nine (ロイヤルナイン) (2607d)">Royal nine (ロイヤルナイン)</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/10/24 : <a href="/petc/?Toukou%2FWind%A1%FCws8" title="Toukou/Wind●ws8 (1619d)">プチコン版Wind●ws8</a> <span style="color:silver">(sou51)</span></li>
+<li>2013/10/22 : <a href="/petc/?Toukou%2FBGMTestor" title="Toukou/BGMTestor (1860d)">BGMテスター</a> <span style="color:silver">(テトロよんひょく)</span></li>
+<li>2013/10/13 : <a href="/petc/?Toukou%2FConway%27s%20Game%20of%20Life%20Simulator" title="Toukou/Conway's Game of Life Simulator (2223d)">ライフゲームシミュレーター</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/10/10 : <a href="/petc/?Toukou%2FRHYTHM" title="Toukou/RHYTHM (2989d)">RHYTHM</a> <span style="color:silver">(OBONO)</span></li>
+<li>2013/10/07 : <a href="/petc/?Toukou%2FGRPshop_v2_u1" title="Toukou/GRPshop_v2_u1 (2888d)">GRPshop_v2_u1</a> <span style="color:silver">(がんばるそふてに)</span></li>
+<li>2013/10/06 : <a href="/petc/?Toukou%2FMOTHER%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/MOTHERフォント (12d)">MOTHER風フォント</a> <span style="color:silver">(やらないか)</span></li></ul>
+
+<h4 id="content_2_36">2013年9月</h4>
+<ul><li>2013/09/18 : <a href="/petc/?Toukou%2F%C2%CA%B1%DF%A4%F2%C9%C1%A4%AF%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/楕円を描くプログラム (3112d)">楕円を描くプログラム</a> <span style="color:silver">(がんばるそふてに)</span></li>
+<li>2013/09/13 : <a href="/petc/?Toukou%2FJewel%20mine" title="Toukou/Jewel mine (2260d)">Jewel mine</a> <span style="color:silver">(Hiworldprg)</span></li>
+<li>2013/09/09 : <a href="/petc/?Toukou%2FDosankoMiniTablet" title="Toukou/DosankoMiniTablet (2260d)">DosankoMiniTablet</a> <span style="color:silver">(道産子(dosankosoft))</span></li></ul>
+
+<h4 id="content_2_37">2013年8月</h4>
+<ul><li>2013/08/31 : <a href="/petc/?Toukou%2F%A5%C8%A5%EB%A5%AF%A5%D7%A5%C1" title="Toukou/トルクプチ (2637d)">トルクプチ</a> <span style="color:silver">(かずえもん)</span></li>
+<li>2013/08/27 : <a href="/petc/?Toukou%2F%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%A5%B2%A1%BC%A5%E0" title="Toukou/シューティングゲーム (2929d)">シューティングゲーム</a> <span style="color:silver">(NOVA)</span></li>
+<li>2013/08/25 : <a href="/petc/?Toukou%2F_Q9OS%A5%A2%A5%D7%A5%EA%A4%C8%A4%AB" title="Toukou/_Q9OSアプリとか (3135d)">_Q9OSアプリ集</a> <span style="color:silver">(_Q9)</span></li>
+<li>2013/08/25 : <a href="/petc/?Toukou%2F_Q9OS" title="Toukou/_Q9OS (3115d)">_Q9OS</a> <span style="color:silver">(_Q9)</span></li>
+<li>2013/08/24 : <a href="/petc/?Toukou%2FEXCEED2" title="Toukou/EXCEED2 (2223d)">EXCEED</a> <span style="color:silver">(.EXE)</span></li>
+<li>2013/08/18 : <a href="/petc/?Toukou%2F%BF%F4%B9%D4%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%BB%A1%BC%A5%D0%A1%BC" title="Toukou/数行スクリーンセーバー (3137d)">数行スクリーンセーバー</a> <span style="color:silver">(_Q9)</span></li>
+<li>2013/08/14 : <a href="/petc/?Toukou%2FRPG%A5%C6%A5%B9%A5%C8" title="Toukou/RPGテスト (2908d)">RPGテスト</a> <span style="color:silver">(ウッホゥ)</span></li>
+<li>2013/08/09 : <a href="/petc/?Toukou%2F%BA%C6%A4%D3%C0%EE%A4%B4%A4%A8%A4%D1%A4%CB%A4%C3%A4%AF" title="Toukou/再び川ごえぱにっく (2218d)">再び川ごえぱにっく</a> <span style="color:silver">(ほしけん)</span></li>
+<li>2013/08/07 : <a href="/petc/?Toukou%2F%A5%DE%A5%B8%A5%C3%A5%AF%A5%D3%A5%F3%A5%B4" title="Toukou/マジックビンゴ (2814d)">マジックビンゴ</a> <span style="color:silver">(ディーラーK)</span></li>
+<li>2013/08/03 : <a href="/petc/?Toukou%2F%A5%D4%A5%AF%A5%BB%A5%EB%CC%B5%C1%D0" title="Toukou/ピクセル無双 (2488d)">ピクセル無双</a> <span style="color:silver">(0918nobita)</span></li></ul>
+
+<h4 id="content_2_38">2013年7月</h4>
+<ul><li>2013/07/30 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%A4%A5%E9%A5%A4%A5%E9%CB%C0" title="Toukou/プチイライラ棒 (3006d)">プチイライラ棒</a> <span style="color:silver">(きよす)</span></li>
+<li>2013/07/28 : <a href="/petc/?Toukou%2F%CD%CB%C6%FC%B4%CA%B0%D7%B7%D7%BB%BB%B5%A1" title="Toukou/曜日簡易計算機 (1860d)">曜日簡易計算機</a> <span style="color:silver">(がんばるそふてに)</span></li>
+<li>2013/07/28 : <a href="/petc/?Toukou%2F1%B2%E8%CC%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8%40%BB%B0%CC%D3%CD%F0%A5%B8%A5%A7%A5%ED" title="Toukou/1画面プログラム集@三毛乱ジェロ (2223d)">1画面プログラム集@三毛乱ジェロ</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/07/26 : <a href="/petc/?Toukou%2F%A5%D1%A5%CA%A5%AD%C0%B8%C0%AE%A5%C4%A1%BC%A5%EB" title="Toukou/パナキ生成ツール (2981d)">パナキ生成ツール</a> <span style="color:silver">(HENTAI)</span></li>
+<li>2013/07/22 : <a href="/petc/?Toukou%2F%CD%CB%C6%FC%C5%F6%A4%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/曜日当てプログラム (1860d)">曜日当てプログラム</a> <span style="color:silver">(mochi)</span></li>
+<li>2013/07/22 : <a href="/petc/?Toukou%2FOKOS" title="Toukou/OKOS (2260d)">OKOS</a> <span style="color:silver">(оｋ)</span></li>
+<li>2013/07/20 : <a href="/petc/?Toukou%2F30%C9%C3%A4%CE%C8%F4%B9%D4%CA%AA%C2%CE" title="Toukou/30秒の飛行物体 (2260d)">一画面 30秒の飛行物体</a> <span style="color:silver">(ダークネス)</span></li>
+<li>2013/07/17 : <a href="/petc/?Toukou%2F%A5%E2%A5%F3%A5%C0%A5%A4%A5%AD%A5%C3%A5%C8" title="Toukou/モンダイキット (2840d)">問題キット</a> <span style="color:silver">(イン)</span></li>
+<li>2013/07/17 : <a href="/petc/?Toukou%2FDECAGON%20TO%20STAR" title="Toukou/DECAGON TO STAR (2223d)">DECAGON TO STAR</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/07/17 : <a href="/petc/?Toukou%2F6%CC%CC%A5%AD%A5%E5%A1%BC%A5%D6" title="Toukou/6面キューブ (2223d)">6面キューブ</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/07/13 : <a href="/petc/?Toukou%2FIM" title="Toukou/IM (2950d)">IM</a> <span style="color:silver">(がんばる卓球部)</span></li>
+<li>2013/07/12 : <a href="/petc/?Toukou%2FCOMMAND%20PROMPT" title="Toukou/COMMAND PROMPT (837d)">コマンドプロンプト</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/07/11 : <a href="/petc/?Toukou%2FMijuOS" title="Toukou/MijuOS (2260d)">Miju OS</a> <span style="color:silver">(ミジュはると)</span></li>
+<li>2013/07/10 : <a href="/petc/?Toukou%2F%A5%A4%A5%E9%A5%B9%A5%C8%A5%ED%A5%B8%A5%C3%A5%AF" title="Toukou/イラストロジック (2260d)">イラストロジック (エディットツール付き)</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/07/09 : <a href="/petc/?Toukou%2FA%20SHOT" title="Toukou/A SHOT (2223d)">A SHOT</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/07/08 : <a href="/petc/?Toukou%2F%A5%C9%A5%EB%A5%C8%A5%EB" title="Toukou/ドルトル (2544d)">ドルトル</a></li>
+<li>2013/07/07 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%E2%A5%F3%CD%D1%A4%E1%A4%B6%A5%D1%B7%D7%BB%BB%B5%A1Ver.2" title="Toukou/ポケモン用めざパ計算機Ver.2 (2231d)">ポケモン用めざパ計算機 Ver.2</a> <span style="color:silver">(アネデパミ)</span></li>
+<li>2013/07/05 : <a href="/petc/?Toukou%2F%BF%DE%B7%C1%A5%C7%A1%BC%A5%BF%C9%BD%BC%A8%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%201%B2%E8%CC%CC%C8%C7%21" title="Toukou/図形データ表示プログラム 1画面版! (3127d)">図形データ表示プログラム 1画面版</a> <span style="color:silver">(cmk、)</span></li>
+<li>2013/07/02 : <a href="/petc/?Toukou%2FSUISUI" title="Toukou/SUISUI (2849d)">SUISUI</a> <span style="color:silver">(いぬまろ)</span></li>
+<li>2013/07/01 : <a href="/petc/?Toukou%2FGRAPHICSHOP" title="Toukou/GRAPHICSHOP (1860d)">osPAPアプリ (GRAPHICSHOP)</a> <span style="color:silver">(がんばるそふてに)</span></li></ul>
+
+<h4 id="content_2_39">2013年6月</h4>
+<ul><li>2013/06/30 : <a href="/petc/?Toukou%2F%A4%B0%A4%EB%A4%C3%A4%D1" title="Toukou/ぐるっぱ (2636d)">ぐるっぱ</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/06/28 : <a href="/petc/?Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/数字表示変換プログラム (2894d)">数字表示変換プログラム</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/06/25 : <a href="/petc/?Toukou%2FSPEED%20SUIJAKU" title="Toukou/SPEED SUIJAKU (3149d)">SPEED SUIJAKU</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/06/24 : <a href="/petc/?Toukou%2F%C6%FE%CC%E7%BC%D4%A5%A4%A5%F3%28%BE%AE5%29%A4%CE%A5%C6%A5%B9%A5%C8%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/入門者イン(小5)のテストプログラム (1860d)">入門者インのプログラム集</a> <span style="color:silver">(イン)</span></li>
+<li>2013/06/24 : <a href="/petc/?Toukou%2F%A5%B3%A5%F3%A5%DC%A5%B2%A1%BC%A5%E0" title="Toukou/コンボゲーム (3199d)">コンボゲーム</a> <span style="color:silver">(NOVA)</span></li>
+<li>2013/06/22 : <a href="/petc/?Toukou%2FHIT%203%20NUMBERS" title="Toukou/HIT 3 NUMBERS (3070d)">HIT 3 NUMBERS</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/06/21 : <a href="/petc/?Toukou%2FPZDR" title="Toukou/PZDR (1118d)">PZDR</a> <span style="color:silver">(OBONO)</span></li>
+<li>2013/06/19 : <a href="/petc/?Toukou%2F%A5%C8%A5%E9%A5%F3%A5%D7%A5%B2%A1%BC%A5%E0%A1%D6%A5%D4%A5%E9%A5%DF%A5%C3%A5%C9%A1%D7" title="Toukou/トランプゲーム「ピラミッド」 (3204d)">トランプゲーム「ピラミッド」</a> <span style="color:silver">(きよす)</span></li>
+<li>2013/06/17 : <a href="/petc/?Toukou%2FNO%20KEY%20JUMP%20NEO" title="Toukou/NO KEY JUMP NEO (2712d)">NO KEY JUMP NEO</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/06/17 : <a href="/petc/?Toukou%2FLCM%8E%A5GCM%B7%D7%BB%BB%B5%A1%20%20%28%B0%EC%B9%D4%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%29" title="Toukou/LCM･GCM計算機  (一行プログラム) (2927d)">LCM･GCM計算機 (一行プログラム)</a> <span style="color:silver">(cmk、)</span></li>
+<li>2013/06/17 : <a href="/petc/?Toukou%2F1%B2%E8%CC%CC%A1%A6%A5%B8%A5%E3%A5%F3%A5%D7%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%A5%B2%A1%BC%A5%E0" title="Toukou/1画面・ジャンプアクションゲーム (3208d)">1画面ジャンプアクションゲーム</a> <span style="color:silver">(ぷちぷち３級)</span></li>
+<li>2013/06/16 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3TV" title="Toukou/プチコンTV (1620d)">プチコンTV</a> <span style="color:silver">(cmk、)</span></li>
+<li>2013/06/16 : <a href="/petc/?Toukou%2F1%B2%E8%CC%CC%A5%BF%A5%C3%A5%C1%A5%B2%A1%BC%A5%E0" title="Toukou/1画面タッチゲーム (2488d)">1画面タッチゲーム</a> <span style="color:silver">(ぷちぷち３級)</span></li>
+<li>2013/06/15 : <a href="/petc/?Toukou%2F%C8%F2%A4%B1%B7%E2%A4%C1%A5%B2%A1%BC%A5%E0" title="Toukou/避け撃ちゲーム (3208d)">避け撃ちゲーム</a> <span style="color:silver">(ウイング)</span></li>
+<li>2013/06/15 : <a href="/petc/?Toukou%2Fcpu%A5%C1%A5%A7%A5%C3%A5%AF" title="Toukou/cpuチェック (3210d)">CPUチェック</a> <span style="color:silver">(がんばるそふてに)</span></li>
+<li>2013/06/14 : <a href="/petc/?Toukou%2F%CD%CB%C6%FC%B7%D7%BB%BB%A5%EB%A1%BC%A5%C1%A5%F3" title="Toukou/曜日計算ルーチン (1860d)">曜日計算ルーチン</a> <span style="color:silver">(Project Jerira)</span></li>
+<li>2013/06/12 : <a href="/petc/?Toukou%2F%A5%BF%A5%B9%A5%B1%A5%C6" title="Toukou/タスケテ (2760d)">「タスケテ Tasukete」</a> <span style="color:silver">(Topaz Soft.)</span></li>
+<li>2013/06/10 : <a href="/petc/?Toukou%2FDS%A4%CE%B3%B8%A4%F22%C9%C3%CA%C4%A4%B8%A4%BF%A4%E9%BD%AA%CE%BB%A4%B9%A4%EB%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/DSの蓋を2秒閉じたら終了するプログラム (2218d)">DSの蓋を2秒閉じたら終了するプログラム</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/06/09 : <a href="/petc/?Toukou%2F%A5%A2%A5%F3%A5%C9%A5%ED%A5%A4%A5%C9%A4%C3%A4%DD%A4%A4%A5%E9%A5%F3%A5%C1%A5%E3%A1%BC" title="Toukou/アンドロイドっぽいランチャー (2261d)">アンドロイドっぽいランチャー</a> <span style="color:silver">(壊れかけのPC)</span></li>
+<li>2013/06/08 : <a href="/petc/?Toukou%2F%A5%AB%A1%BC%A5%D3%A5%A3%A1%FAKIRBY%A4%CE%A4%AA%A4%E2%A4%C1%A4%E3%C8%A2" title="Toukou/カービィ★KIRBYのおもちゃ箱 (2231d)">カービィ★KIRBYのおもちゃ箱</a> <span style="color:silver">(カービィ★KIRBY)</span></li>
+<li>2013/06/01 : <a href="/petc/?Toukou%2FFunction%20PANIC%21" title="Toukou/Function PANIC! (2260d)">Function PANIC!</a> <span style="color:silver">(三毛乱ジェロ)</span></li></ul>
+
+<h4 id="content_2_40">2013年5月</h4>
+<ul><li>2013/05/25 : <a href="/petc/?Toukou%2F%A4%AC%A4%F3%A4%D0%A4%EB%C2%EE%B5%E5%C9%F4%A4%CE%A4%C1%A4%E7%A4%C3%A4%C8%A4%B7%A4%BF%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8" title="Toukou/がんばる卓球部のちょっとしたプログラム集 (2939d)">FTSoftware Rom</a> <span style="color:silver">(FTSoftware)</span></li>
+<li>2013/05/24 : <a href="/petc/?Toukou%2F%BF%DE%B7%C1%A5%C7%A1%BC%A5%BF%C9%BD%BC%A8%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%20%A1%C1ZUKEI%A1%C1" title="Toukou/図形データ表示プログラム 〜ZUKEI〜 (3131d)">図形データ表示プログラム 〜ZUKEI〜</a> <span style="color:silver">(cmk、さん)</span></li>
+<li>2013/05/23 : <a href="/petc/?Toukou%2F%B2%CB%A4%C0%A4%C3%A4%BF%A4%AB%A4%E9%BA%EE%A4%C3%A4%BF%A5%EC%A1%BC%A5%B9%A5%B2%A1%BC" title="Toukou/暇だったから作ったレースゲー (1700d)">暇だったから作ったレースゲー</a> <span style="color:silver">(暁)</span></li>
+<li>2013/05/23 : <a href="/petc/?Toukou%2F%A4%AA%B3%A8%C9%C1%A4%AD%A5%C4%A1%BC%A5%EB%A1%D6%A5%DA%A5%A4%A5%F3%A5%C8%A5%D1%A5%EC%A5%C3%A5%C8%A1%D7" title="Toukou/お絵描きツール「ペイントパレット」 (3219d)">PAINT PALLET</a> <span style="color:silver">(カービィ★KIRBY)</span></li>
+<li>2013/05/20 : <a href="/petc/?Toukou%2FThe%20endless%20RPG" title="Toukou/The endless RPG (2826d)">The endless RPG (エンドレスRPG)</a> <span style="color:silver">(dosankosoft(道産子))</span></li>
+<li>2013/05/19 : <a href="/petc/?Toukou%2F%A5%E2%A5%F3%A5%B9%A5%BF%A1%BC%B0%E9%C0%AE%A5%B2%A1%BC%A5%E0G" title="Toukou/モンスター育成ゲームG (2182d)">モンスター育成ゲームG</a> <span style="color:silver">(ウイング)</span></li>
+<li>2013/05/19 : <a href="/petc/?Toukou%2F%A4%E6%A4%E9%A4%E6%A4%E9" title="Toukou/ゆらゆら (3233d)">ゆらゆら</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/05/18 : <a href="/petc/?Toukou%2F%A5%B7%A5%AA%A5%F3%A5%BF%A5%A6%A5%F3" title="Toukou/シオンタウン (2118d)">耳コピ シオンタウン</a> <span style="color:silver">(ベルック)</span></li>
+<li>2013/05/15 : <a href="/petc/?Toukou%2F%C3%A6%BD%D0%A5%D1%A5%BA%A5%EB%20%28%C8%A2%C6%FE%CC%BC%29" title="Toukou/脱出パズル (箱入娘) (3092d)">脱出パズル「箱入娘」</a> <span style="color:silver">(きよす)</span></li>
+<li>2013/05/13 : <a href="/petc/?Toukou%2FNightSniper" title="Toukou/NightSniper (3129d)">Night Sniper</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2013/05/09 : <a href="/petc/?Toukou%2FColor%20Samples" title="Toukou/Color Samples (2260d)">Color Samples</a> <span style="color:silver">(テトロ)</span></li>
+<li>2013/05/08 : <a href="/petc/?Toukou%2FBG%A4%CE%A5%DE%A5%C3%A5%D7%A5%A8%A5%C7%A5%A3%A5%BF" title="Toukou/BGのマップエディタ (2260d)">BGでマップ！</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/05/08 : <a href="/petc/?Toukou%2FBG%A4%CE%A5%DE%A5%C3%A5%D7%A5%A8%A5%C7%A5%A3%A5%BF%A5%D7%A5%EC%A5%A4%A5%D0%A1%BC%A5%B8%A5%E7%A5%F3" title="Toukou/BGのマップエディタプレイバージョン (2260d)">BGでマップ！ PLAY VERSION</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/05/05 : <a href="/petc/?Toukou%2FYum%20Yum%20Sweets" title="Toukou/Yum Yum Sweets (2451d)">Yum Yum Sweets</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/05/05 : <a href="/petc/?Toukou%2FHIGH%20LOW%20%A5%B8%A5%E3%A5%C3%A5%B8" title="Toukou/HIGH LOW ジャッジ (2286d)">HIGH LOW ジャッジ</a> <span style="color:silver">(ディーラーKさん)</span></li>
+<li>2013/05/03 : <a href="/petc/?Toukou%2Fsake%20game" title="Toukou/sake game (2544d)">避けゲー</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/05/01 : <a href="/petc/?Toukou%2F%CC%B5%CD%FD%A5%B2%A1%BC%BD%B82nd" title="Toukou/無理ゲー集2nd (2230d)">無理ゲー集2nd</a> <span style="color:silver">(道産子)</span></li>
+<li>2013/05/01 : <a href="/petc/?Toukou%2F%A5%E4%A5%C3%A5%D5%A1%BC%A4%CE%A5%DF%A5%CB%A5%B5%A5%A6%A5%F3%A5%C9%BD%B8" title="Toukou/ヤッフーのミニサウンド集 (2231d)">Yahoo minisounds</a> <span style="color:silver">(ヤッフー)</span></li></ul>
+
+<h4 id="content_2_41">2013年4月</h4>
+<ul><li>2013/04/30 : <a href="/petc/?Toukou%2F%BE%D0%A4%C3%A4%C6%A4%A4%A4%AD%A4%DE%A4%B7%A4%E7%A1%C1%A5%B7%A5%EA%A1%BC%A5%BA" title="Toukou/笑っていきましょ〜シリーズ (2262d)">笑っていきましょ〜シリーズ</a> <span style="color:silver">(誰かさん)</span></li>
+<li>2013/04/27 : <a href="/petc/?Toukou%2FNIGHT%A4%AA%A4%D0%A4%B1%A4%CA%A4%F3%A4%C6%A4%CA%A4%A4%A4%B5" title="Toukou/NIGHTおばけなんてないさ (3035d)">NIGHTおばけなんてないさ</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/04/23 : <a href="/petc/?Toukou%2F%A5%B7%A5%EB%A5%A8%A5%C3%A5%C8%A5%D1%A5%BA%A5%EB" title="Toukou/シルエットパズル (2973d)">シルエットパズル</a> <span style="color:silver">(きよす)</span></li>
+<li>2013/04/20 : <a href="/petc/?Toukou%2F%A5%B4%A1%BC%A5%EB%A4%D8" title="Toukou/ゴールへ (2925d)">ゴールへ</a> <span style="color:silver">(0605)</span></li>
+<li>2013/04/20 : <a href="/petc/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%A2%A5%B9%A5%AD%A1%BC%B3%B0%C5%C12" title="Toukou/ゆうしゃアスキー外伝2 (2230d)">ゆうしゃアスキー外伝2</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/04/19 : <a href="/petc/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%A2%A5%B9%A5%AD%A1%BC2" title="Toukou/ゆうしゃアスキー2 (2357d)">ゆうしゃアスキー2</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/04/14 : <a href="/petc/?Toukou%2F%A5%CF%A5%F3%A5%B0%A5%B0%A5%E9%A5%A4%A5%C0%A1%BC%A1%BF%C2%E7%C9%D9GO%21%21" title="Toukou/ハンググライダー／大富GO!! (3013d)">ハンググライダー／大富GO!!</a> <span style="color:silver">(SUMA)</span></li>
+<li>2013/04/10 : <a href="/petc/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%A2%A5%B9%A5%AD%A1%BC%B3%B0%C5%C11" title="Toukou/ゆうしゃアスキー外伝1 (2761d)">ゆうしゃアスキー外伝1</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/04/08 : <a href="/petc/?Toukou%2F%B7%D7%BB%BB%A5%A2%A5%BF%A5%C3%A5%AF" title="Toukou/計算アタック (3274d)">計算アタック</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2013/04/04 : <a href="/petc/?Toukou%2F%A5%AF%A5%A9%A1%BC%A5%C8%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8" title="Toukou/クォートのプログラム集 (3063d)">クォートのプログラム集</a> <span style="color:silver">(　クォート（兄弟）)</span></li>
+<li>2013/04/01 : <a href="/petc/?Toukou%2F%A5%AF%A5%EB%A1%FB%A5%C3%A5%B3%A4%F2%A4%AA%A4%A4%A4%AB%A4%B1%A4%ED" title="Toukou/クル○ッコをおいかけろ (1860d)">くる○っこをおいかけろ!</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/04/01 : <a href="/petc/?Toukou%2FTekitou%20PZL" title="Toukou/Tekitou PZL (3255d)">TEKITOU PZL</a> <span style="color:silver">(ヤッフー)</span></li></ul>
+
+<h4 id="content_2_42">2013年3月</h4>
+<ul><li>2013/03/31 : <a href="/petc/?Toukou%2F%BC%EA%BD%F1%A4%AD%C6%FE%CE%CF%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/手書き入力プログラム (2260d)">手書き入力プログラム</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2013/03/30 : <a href="/petc/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%A2%A5%B9%A5%AD%A1%BC" title="Toukou/ゆうしゃアスキー (2616d)">ゆうしゃアスキー</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/03/29 : <a href="/petc/?Toukou%2FHI-JUMP%20JOHNEY" title="Toukou/HI-JUMP JOHNEY (3012d)">HI-JUMP JOHNEY</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/03/28 : <a href="/petc/?Toukou%2F%A5%AF%A5%EB%A5%AF%A5%EB%A1%F9%A5%C9%A5%C3%A5%AB%A5%F3" title="Toukou/クルクル☆ドッカン (2223d)">クルクル☆ドッカン</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/03/28 : <a href="/petc/?Toukou%2FDosankoOSX" title="Toukou/DosankoOSX (1591d)">DosankoOSX (旧 DosankoMiniOS)</a> <span style="color:silver">(道産子(dosankosoft))</span></li>
+<li>2013/03/28 : <a href="/petc/?Toukou%2F1000%A4%C7%BB%DF%A4%E1%A4%ED%21%A5%B2%A1%BC%A5%E0%20Part2" title="Toukou/1000で止めろ!ゲーム Part2 (2260d)">1000で止めろ！ゲーム Part2</a> <span style="color:silver">(道産子の初心者)</span></li>
+<li>2013/03/27 : <a href="/petc/?Toukou%2F%A4%E4%A4%C3%A4%C4%A4%B1%A5%D1%A5%BA%A5%EB" title="Toukou/やっつけパズル (3213d)">やっつけパズル</a> <span style="color:silver">(猫姫)</span></li>
+<li>2013/03/26 : <a href="/petc/?Toukou%2F%A5%E9%A5%B8%A5%AA%A4%E2%A4%C9%A4%AD" title="Toukou/ラジオもどき (1860d)">ラジオもどき</a> <span style="color:silver">(ミジュはると)</span></li>
+<li>2013/03/26 : <a href="/petc/?Toukou%2FBTTF" title="Toukou/BTTF (2223d)">BTTF風時計</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2013/03/25 : <a href="/petc/?Toukou%2F%A5%C7%A5%B8%A5%BF%A5%EB%A5%B9%A5%E9%A5%A4%A5%C9%A5%D1%A5%C3%A5%C9" title="Toukou/デジタルスライドパッド (2434d)">デジタルスライドパッド</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2013/03/24 : <a href="/petc/?Toukou%2F%CA%F5%C0%D0%B2%E8%C1%FC%A5%C7%A1%BC%A5%BF" title="Toukou/宝石画像データ (2919d)">宝石画像データ</a> <span style="color:silver">(OBONO)</span></li>
+<li>2013/03/21 : <a href="/petc/?Toukou%2FRecursive%20Figure" title="Toukou/Recursive Figure (2942d)">Recursive Figure</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/03/18 : <a href="/petc/?Toukou%2F%C3%AF%A4%AB%A4%CE%C1%D2%B8%CB" title="Toukou/誰かの倉庫 (1860d)">誰かの倉庫</a> <span style="color:silver">(誰かさん)</span></li>
+<li>2013/03/18 : <a href="/petc/?Toukou%2FIRAGAME" title="Toukou/IRAGAME (2636d)">IRAGAME</a> <span style="color:silver">(sekryy)</span></li>
+<li>2013/03/16 : <a href="/petc/?Toukou%2F%A1%D6%B5%CF%C9%F4%28%A4%AD%A4%CD%A4%D6%29%A1%D7%CD%D1%B3%A8%A5%C7%A1%BC%A5%BF%A5%D5%A5%A1%A5%A4%A5%EB%C3%D6%A4%AD%BE%EC" title="Toukou/「杵部(きねぶ)」用絵データファイル置き場 (3300d)">「杵部 (きねぶ)」用絵データファイル置き場</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/03/16 : <a href="/petc/?Toukou%2FDosankoComputer" title="Toukou/DosankoComputer (1860d)">DosankoComputer (道産子計算機)</a> <span style="color:silver">(道産子の初心者)</span></li>
+<li>2013/03/15 : <a href="/petc/?Toukou%2F%C0%D6%A4%A4%C6%AC%B6%D2%A4%F2%A4%AB%A4%D6%A4%C3%A4%BF%B0%AD%CB%E2" title="Toukou/赤い頭巾をかぶった悪魔 (2890d)">赤い頭巾をかぶった悪魔</a> <span style="color:silver">(SUMA)</span></li>
+<li>2013/03/14 : <a href="/petc/?Toukou%2FIN_GRP" title="Toukou/IN_GRP (2260d)">IN_GRPED</a> <span style="color:silver">(いぬまろ)</span></li>
+<li>2013/03/12 : <a href="/petc/?Toukou%2F%A5%B7%A5%A7%A5%EB%A5%D4%A5%F3%A5%B9%A5%AD%A1%BC%A4%CE%A5%AE%A5%E3%A5%B9%A5%B1%A5%C3%A5%C8" title="Toukou/シェルピンスキーのギャスケット (3259d)">シェルピンスキーのギャスケット</a> <span style="color:silver">(J2)</span></li>
+<li>2013/03/10 : <a href="/petc/?Toukou%2F%BB%B3%A4%DF%A4%BF%A4%A4%A4%CA%A4%E2%A4%CE" title="Toukou/山みたいなもの (2637d)">山みたいなもの</a> <span style="color:silver">(otya)</span></li>
+<li>2013/03/09 : <a href="/petc/?Toukou%2FOTYAX" title="Toukou/OTYAX (2230d)">OTYAX</a> <span style="color:silver">(otya)</span></li>
+<li>2013/03/09 : <a href="/petc/?Toukou%2FHydro%20OS" title="Toukou/Hydro OS (2601d)">Hydro OS</a> <span style="color:silver">(Hydro)</span></li>
+<li>2013/03/07 : <a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Toukou/Petit Slash II (327d)">Petit Slash II</a> <span style="color:silver">(o)</span></li>
+<li>2013/03/07 : <a href="/petc/?Toukou%2FKinetic%20Slide%20Block%20Puzzle%A1%D6%B5%CF%C9%F4%28%A4%AD%A4%CD%A4%D6%29%A1%D7" title="Toukou/Kinetic Slide Block Puzzle「杵部(きねぶ)」 (3093d)">Kinetic Slide Block Puzzle「杵部 (きねぶ)」</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/03/05 : <a href="/petc/?Toukou%2F%C1%C7%BF%F4%B7%D7%BB%BB%B5%A1" title="Toukou/素数計算機 (3278d)">素数計算機</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2013/03/05 : <a href="/petc/?Toukou%2F%B1%D3%BE%A7" title="Toukou/詠唱 (3311d)">詠唱</a> <span style="color:silver">(ウォルク)</span></li>
+<li>2013/03/03 : <a href="/petc/?Toukou%2F%A5%B9%A5%DE%C2%BCDX" title="Toukou/スマ村DX (2260d)">スマ村DX</a> <span style="color:silver">(SUMA)</span></li></ul>
+
+<h4 id="content_2_43">2013年2月</h4>
+<ul><li>2013/02/28 : <a href="/petc/?Toukou%2FSE%A5%D0%A5%C3%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/SEバッティング (2526d)">SEバッティング</a> <span style="color:silver">(YHY)</span></li>
+<li>2013/02/25 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%E2%A5%F3%CD%D1%A5%C0%A5%E1%A1%BC%A5%B8%B7%D7%BB%BB%B5%A1" title="Toukou/ポケモン用ダメージ計算機 (2604d)">ポケモン用ダメージ計算機</a> <span style="color:silver">(アネデパミ)</span></li>
+<li>2013/02/24 : <a href="/petc/?Toukou%2F%A5%C6%A5%C8%A5%ED%A4%CEMusic%20Library" title="Toukou/テトロのMusic Library (2877d)">テトロのMusic Library</a> <span style="color:silver">(テトロ)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2F%C5%C9%A4%EA%A4%C4%A4%D6%A4%B7%A5%EB%A1%BC%A5%C1%A5%F3" title="Toukou/塗りつぶしルーチン (3321d)">塗りつぶしルーチン</a> <span style="color:silver">(otya)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2F%C2%F9%C5%C0%A4%EF%A4%B1%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/濁点わけプログラム (3009d)">濁点わけプログラム</a> <span style="color:silver">(yuy@さん)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%E2%A5%F3%CD%D1%A4%E1%A4%B6%A5%D1%B7%D7%BB%BB%B5%A1" title="Toukou/ポケモン用めざパ計算機 (3188d)">ポケモン用めざパ計算機</a> <span style="color:silver">(アネデパミ)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2FRND%B4%D8%BF%F4%A4%F2%BB%C8%A4%EF%A4%CA%A4%A4%A5%B5%A5%A4%A5%B3%A5%ED" title="Toukou/RND関数を使わないサイコロ (1860d)">RND関数を使わないサイコロ</a> <span style="color:silver">(アネデパミ)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2FMinesweeper%20The%20world" title="Toukou/Minesweeper The world (2925d)">Minesweeper The world</a> <span style="color:silver">(RND128)</span></li>
+<li>2013/02/23 : <a href="/petc/?Toukou%2FBelook%A5%D7%A5%EC%A5%BC%A5%F3%A5%C4%A1%C1%A1%D6%CA%F5%C3%B5%A4%B7%A4%C4%A4%A5%21%21%A1%D7%A1%C1" title="Toukou/Belookプレゼンツ〜「宝探しつぅ!!」〜 (2868d)">Belookプレゼンツ〜「宝箱探し２!!」〜</a> <span style="color:silver">(ベルック)</span></li>
+<li>2013/02/22 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%E2%A5%F3%CD%D1%C5%D8%CE%CF%C3%CD%A5%AB%A5%A6%A5%F3%A5%BF%A1%BC" title="Toukou/ポケモン用努力値カウンター (3322d)">ポケモン用努力値カウンター</a> <span style="color:silver">(アネデパミ)</span></li>
+<li>2013/02/21 : <a href="/petc/?Toukou%2F%A5%DC%A5%A6%A5%CB%A5%F3" title="Toukou/ボウニン (2260d)">ボウニン</a> <span style="color:silver">(SUMA)</span></li>
+<li>2013/02/20 : <a href="/petc/?Toukou%2F%CC%C2%CF%A9%A5%B2%A1%BC%A5%E0" title="Toukou/迷路ゲーム (3226d)">迷路ゲーム</a> <span style="color:silver">(shiro)</span></li>
+<li>2013/02/19 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7JR%BB%FE%B9%EF%C9%BD%A1%A6%A5%AB%A5%A6%A5%F3%A5%C8%A5%C0%A5%A6%A5%F3" title="Toukou/プチコンでJR時刻表・カウントダウン (2223d)">JR時刻表・カウントダウン</a> <span style="color:silver">(mochi)</span></li>
+<li>2013/02/18 : <a href="/petc/?Toukou%2F%A5%B3%A5%F3%A5%BD%A1%BC%A5%EB%A4%AA%B3%A8%A4%AB%A4%AD" title="Toukou/コンソールお絵かき (2945d)">コンソールお絵かき</a> <span style="color:silver">(ヤッフー)</span></li>
+<li>2013/02/17 : <a href="/petc/?Toukou%2FSLIDER%2064" title="Toukou/SLIDER 64 (3108d)">SLIDER 64</a> <span style="color:silver">(らいむ)</span></li>
+<li>2013/02/15 : <a href="/petc/?Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1" title="Toukou/2,10,16進数変換機 (2222d)">2，10，16進数変換機</a> <span style="color:silver">(mochi)</span></li>
+<li>2013/02/11 : <a href="/petc/?Toukou%2F1.5%B2%E8%CC%CC%C0%EF%C6%AE" title="Toukou/1.5画面戦闘 (1860d)">1.5画面RPG戦闘</a> <span style="color:silver">(ハンバーガー)</span></li>
+<li>2013/02/10 : <a href="/petc/?Toukou%2F%A5%DE%A5%D3%A5%CE%A5%AE%CD%D1MML%A4%F2%CA%D1%B4%B9" title="Toukou/マビノギ用MMLを変換 (2146d)">マビノギ用MMLをプチコン用に変換</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/02/07 : <a href="/petc/?Toukou%2F%A5%B9%A5%DE%C2%BC" title="Toukou/スマ村 (2413d)">スマ村</a> <span style="color:silver">(SUMA)</span></li>
+<li>2013/02/07 : <a href="/petc/?Toukou%2F%A5%A2%A5%E9%A5%E9%A4%CE%BE%AE%A4%B5%A4%CA%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8" title="Toukou/アララの小さなプログラム集 (2633d)">アララの小さなプログラム集</a> <span style="color:silver">(アララ)</span></li>
+<li>2013/02/05 : <a href="/petc/?Toukou%2FEASY%20PAINTER" title="Toukou/EASY PAINTER (2223d)">EASY PAINTER</a> <span style="color:silver">(らいむ)</span></li>
+<li>2013/02/05 : <a href="/petc/?Toukou%2FEASY%20GAME" title="Toukou/EASY GAME (2260d)">EASY GAME (EYES&amp;BUBBLES)</a> <span style="color:silver">(らいむ)</span></li>
+<li>2013/02/04 : <a href="/petc/?Toukou%2F%A5%B5%A5%A6%A5%F3%A5%C9%A5%C6%A5%B9%A5%C8%A4%C8%A4%D2%A4%E9%A4%AC%A4%CA" title="Toukou/サウンドテストとひらがな (1860d)">サウンドテストとひらがな</a> <span style="color:silver">(tochikara)</span></li>
+<li>2013/02/03 : <a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="Toukou/RENGOKU LIBRARY (614d)">RENGOKU LIBRARY</a> <span style="color:silver">(テトロ)</span></li>
+<li>2013/02/02 : <a href="/petc/?Toukou%2FJPRDR" title="Toukou/JPRDR (2959d)">JPRDR</a> <span style="color:silver">(@hnakai0909)</span></li>
+<li>2013/02/02 : <a href="/petc/?Toukou%2F100%CA%AC%A4%CE1%A5%B2%A1%BC%A5%E0" title="Toukou/100分の1ゲーム (3332d)">100分の1ゲーム</a> <span style="color:silver">(トミー)</span></li>
+<li>2013/02/01 : <a href="/petc/?Toukou%2FCOLA" title="Toukou/COLA (2260d)">COLA</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_44">2013年1月</h4>
+<ul><li>2013/01/29 : <a href="/petc/?Toukou%2FUX_TXTED" title="Toukou/UX_TXTED (2260d)">プチコンテキストエディタ「UX_TXTED」 Ver.0.9</a> <span style="color:silver">(uxtuno_)</span></li>
+<li>2013/01/27 : <a href="/petc/?Toukou%2F%B6%CC%A4%A4%A4%EC%A5%B2%A1%BC%A5%E0" title="Toukou/玉いれゲーム (2259d)">玉入れゲーム</a> <span style="color:silver">(.EXE)</span></li>
+<li>2013/01/27 : <a href="/petc/?Toukou%2F%A5%DD%A5%EA%A5%B4%A5%F3%BB%FE%B7%D7" title="Toukou/ポリゴン時計 (2871d)">ポリゴンアナログ時計</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2013/01/27 : <a href="/petc/?Toukou%2F%A5%D5%A5%EA%A1%BC%A5%CF%A5%F3%A5%C9%CE%FD%BD%AC" title="Toukou/フリーハンド練習 (3317d)">フリーハンドの練習【Circle】</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/01/24 : <a href="/petc/?Toukou%2F%B8%B5%C1%C7%A4%F2%B8%AB%A4%EB%A4%C0%A4%B1%A4%CE%A4%E2%A4%CE" title="Toukou/元素を見るだけのもの (2385d)">元素を見るだけのもの　見るだけじゃなくなったっぽい</a> <span style="color:silver">(nao112641433)</span></li>
+<li>2013/01/23 : <a href="/petc/?Toukou%2FHebiHebi" title="Toukou/HebiHebi (2260d)">ヘビヘビ</a> <span style="color:silver">(CaptainMirai)</span></li>
+<li>2013/01/21 : <a href="/petc/?Toukou%2FPetit%20Slash" title="Toukou/Petit Slash (3119d)">Petit Slash</a> <span style="color:silver">(o)</span></li>
+<li>2013/01/19 : <a href="/petc/?Toukou%2FFALL%20OF%20THE%20ALPHABET" title="Toukou/FALL OF THE ALPHABET (2955d)">FALL OF THE ALPHABET</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2013/01/17 : <a href="/petc/?Toukou%2F%A5%B7%A5%F3%A5%D7%A5%EB%BB%FE%B7%D7" title="Toukou/シンプル時計 (3283d)">シンプル時計</a> <span style="color:silver">(道産子の初心者)</span></li>
+<li>2013/01/13 : <a href="/petc/?Toukou%2F%C1%ED%B9%E7%A4%B8%A4%E3%A4%F3%A4%B1%A4%F3Ai%A1%D6Tubame%A1%D7%A4%C4%A4%D0%A4%E1" title="Toukou/総合じゃんけんAi「Tubame」つばめ (3279d)">総合じゃんけんAi「Tubame」つばめ</a> <span style="color:silver">(＠ななし)</span></li>
+<li>2013/01/12 : <a href="/petc/?Toukou%2F3%B9%D4%A5%E9%A5%A4%A5%D5%A5%B2%A1%BC%A5%E0" title="Toukou/3行ライフゲーム (2217d)">3行ライフゲーム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2013/01/12 : <a href="/petc/?Toukou%2F2%A5%DC%A5%BF%A5%F3%A5%B8%A5%E3%A5%F3%A5%D1%A1%BC" title="Toukou/2ボタンジャンパー (2260d)">2ボタンジャンパー</a> <span style="color:silver">(nao112641433)</span></li>
+<li>2013/01/08 : <a href="/petc/?Toukou%2F%C1%E1%B2%A1%A4%B7%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/早押しシューティング (2260d)">早押しシューティング</a> <span style="color:silver">(いったん)</span></li>
+<li>2013/01/08 : <a href="/petc/?Toukou%2FPetit%20Tunnel" title="Toukou/Petit Tunnel (340d)">Petit Tunnel</a> <span style="color:silver">(o)</span></li>
+<li>2013/01/04 : <a href="/petc/?Toukou%2FRLESample" title="Toukou/RLESample (2942d)">RLE Sample</a> <span style="color:silver">(uniskie)</span></li>
+<li>2013/01/02 : <a href="/petc/?Toukou%2F%A5%ED%A5%B0%A5%A4%A5%F3%B2%E8%CC%CC" title="Toukou/ログイン画面 (3078d)">ログイン画面</a> <span style="color:silver">(BASIC-Ishida)</span></li></ul>
+
+<h4 id="content_2_45">2012年12月</h4>
+<ul><li>2012/12/31 : <a href="/petc/?Toukou%2F%CA%A3%BF%F4%A5%AB%A5%A6%A5%F3%A5%BF%A1%BC" title="Toukou/複数カウンター (3174d)">複数カウンター</a> <span style="color:silver">(mochi)</span></li>
+<li>2012/12/31 : <a href="/petc/?Toukou%2F%A5%AB%A5%A6%A5%F3%A5%C8%A5%C0%A5%A6%A5%F3%CD%D1" title="Toukou/カウントダウン用 (3376d)">カウントダウン</a> <span style="color:silver">(DtYaZsK)</span></li>
+<li>2012/12/31 : <a href="/petc/?Toukou%2FSOUND%20PLAYER" title="Toukou/SOUND PLAYER (1860d)">SOUND PLAYER</a> <span style="color:silver">(ロント)</span></li>
+<li>2012/12/30 : <a href="/petc/?Toukou%2F100%CC%E4%C2%AD%A4%B7%BB%BB%A5%A2%A5%BF%A5%C3%A5%AF" title="Toukou/100問足し算アタック (3375d)">100問足し算ATTACK</a> <span style="color:silver">(宮澤・ヨネ・直行（暇人Ａ))</span></li>
+<li>2012/12/24 : <a href="/petc/?Toukou%2F%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%A5%EA%A5%B9%A5%C8%A4%CE%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8%A5%AB%A5%E1%A5%E9" title="Toukou/プログラムリストのスクリーンショットカメラ (2961d)">プログラムリストのスクリーンショットカメラ</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/12/24 : <a href="/petc/?Toukou%2F%A5%CA%A5%CA%A5%B7%A5%CE%A5%B2%A5%A8%A5%E0%A4%E2%A4%C9%A4%AD" title="Toukou/ナナシノゲエムもどき (2383d)">ナナシノゲエムもどき</a> <span style="color:silver">(ベルック)</span></li>
+<li>2012/12/19 : <a href="/petc/?Toukou%2F%A5%C0%A5%A4%A5%CA%A5%DE%A5%A4%A5%C8%BF%C0%B7%D0%BF%EA%BC%E5" title="Toukou/ダイナマイト神経衰弱 (2839d)">ダイナマイト神経衰弱</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/12/18 : <a href="/petc/?Toukou%2F%A5%A8%A5%F3%A5%BF%A1%BC%A5%D7%A5%E9%A5%A4%A5%BA2" title="Toukou/エンタープライズ2 (1860d)">エンタープライズ２</a> <span style="color:silver">(YHY)</span></li>
+<li>2012/12/15 : <a href="/petc/?Toukou%2F%B1%A8%C5%B7%C6%B2%A4%CE%CE%A2%C1%D2%B8%CB" title="Toukou/烏天堂の裏倉庫 (67d)">烏天堂の裏倉庫</a> <span style="color:silver">(烏天)</span></li>
+<li>2012/12/11 : <a href="/petc/?Toukou%2FCustard%20or%20DIE" title="Toukou/Custard or DIE (2223d)">Custard or DIE (カスタード オア ダイ)</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/12/09 : <a href="/petc/?Toukou%2FPage" title="Toukou/Page (2260d)">ページ移動プログラム</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/12/06 : <a href="/petc/?Toukou%2FSLOT%40%B0%EC%B2%E8%CC%CC" title="Toukou/SLOT@一画面 (2461d)">スロットゲーム＠一画面</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/12/02 : <a href="/petc/?Toukou%2Ftrap%21" title="Toukou/trap! (2866d)">Trap!</a> <span style="color:silver">(くりいが)</span></li>
+<li>2012/12/02 : <a href="/petc/?Toukou%2F4%B9%D4%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%A5%D1%A5%E9%A5%E1%A1%BC%A5%BF%B7%D7%BB%BB%B5%A1" title="Toukou/4行パッケージパラメータ計算機 (2861d)">4行パッケージパラメータ計算機</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/12/01 : <a href="/petc/?Toukou%2F%A5%DB%A5%E9%A1%BC%A5%C0%A5%F3%A5%B8%A5%E7%A5%F32" title="Toukou/ホラーダンジョン2 (2777d)">ホラーダンジョン2</a> <span style="color:silver">(ショルダー)</span></li></ul>
+
+<h4 id="content_2_46">2012年11月</h4>
+<ul><li>2012/11/30 : <a href="/petc/?Toukou%2FSix%20Rock%20FRAGILE" title="Toukou/Six Rock FRAGILE (2846d)">Six Rock FRAGILE</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/11/29 : <a href="/petc/?Toukou%2FML-Timer" title="Toukou/ML-Timer (3322d)">ML-Timer</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/11/28 : <a href="/petc/?Toukou%2Fpirus%21%21%21" title="Toukou/pirus!!! (2252d)">プチコン用ウイルスセット</a> <span style="color:silver">(.tmtrary)</span></li>
+<li>2012/11/26 : <a href="/petc/?Toukou%2F%A5%D0%A5%C8%A5%EB%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/バトルシューティング (1572d)">バトルシューティング</a> <span style="color:silver">(minecrafter郎)</span></li>
+<li>2012/11/24 : <a href="/petc/?Toukou%2F%C1%FB%B2%BB%A5%D0%A5%B0%A4%CE%A4%E8%A4%A6%A4%CA%A4%E2%A4%CE%4015%B9%D4" title="Toukou/騒音バグのようなもの@15行 (1860d)">騒音バグみたいなもの</a> <span style="color:silver">(カービィ★KIRBY)</span></li>
+<li>2012/11/21 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%B9%A5%C8%A5%C3%A5%D7%A5%A6%A5%A9%A5%C3%A5%C1" title="Toukou/簡易ストップウォッチ (3192d)">かんいすとっぷうぉっちさん、ゆっくりしていってね！！！</a> <span style="color:silver">(さしわぎ　こーらん)</span></li>
+<li>2012/11/20 : <a href="/petc/?Toukou%2F%A5%E1%A5%C3%A5%BB%A1%BC%A5%B8%A5%DC%A5%C3%A5%AF%A5%B9" title="Toukou/メッセージボックス (2488d)">hightメッセージボックス ver1.00</a> <span style="color:silver">(咲柴稀　紅藍（進）)</span></li>
+<li>2012/11/19 : <a href="/petc/?Toukou%2F%A5%E9%A5%B8%A5%B3%A5%F3%C8%F4%B9%D4%B5%A1%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/ラジコン飛行機プログラム (3015d)">ラジコン飛行機プログラム</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/11/18 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%E9%A5%A4%A5%D5%A5%B2%A1%BC%A5%E0" title="Toukou/簡易ライフゲーム (2917d)">簡易ライフゲーム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/11/18 : <a href="/petc/?Toukou%2F%B9%E2%B5%A1%C7%BD%A5%E1%A5%C8%A5%ED%A5%CE%A1%BC%A5%E0" title="Toukou/高機能メトロノーム (3272d)">Ittan Metronome</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/11/16 : <a href="/petc/?Toukou%2F1%B9%D4%A5%DC%A5%BF%A5%F3%A5%B2%A1%BC%A5%E0" title="Toukou/1行ボタンゲーム (2944d)">1行ボタンゲーム</a> <span style="color:silver">(apoi)</span></li>
+<li>2012/11/15 : <a href="/petc/?Toukou%2F%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%C8%D6%B9%E6%C5%F6%A4%C6" title="Toukou/スプライト番号当て (3385d)">スプライト番号当て</a> <span style="color:silver">(やっと11さいくん)</span></li>
+<li>2012/11/13 : <a href="/petc/?Toukou%2F1%B9%D45%C9%C3%BB%DF%A4%E1" title="Toukou/1行5秒止め (3195d)">1行5秒止め</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/11/11 : <a href="/petc/?Toukou%2F%CA%B5%A5%B2%A1%BC2" title="Toukou/糞ゲー2 (2230d)">糞ゲー2</a> <span style="color:silver">(雲刻斉)</span></li>
+<li>2012/11/11 : <a href="/petc/?Toukou%2F%C3%CF%B7%C1%C5%C1%C0%E2" title="Toukou/地形伝説 (3083d)">地形伝説</a> <span style="color:silver">(neko800)</span></li>
+<li>2012/11/11 : <a href="/petc/?Toukou%2FhTML" title="Toukou/hTML (3279d)">hTML</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/11/10 : <a href="/petc/?Toukou%2F%A5%D9%A5%EB%A5%C3%A5%AF%A4%D7%A4%EC%A4%BC%A4%F3%A4%C4%A1%C1%A1%D6%CA%F5%C8%A2%C3%B5%A4%B7%A4%C3%21%A1%D7%A1%C1" title="Toukou/ベルックぷれぜんつ〜「宝箱探しっ!」〜 (3226d)">ベルックぷれぜんつ〜「宝箱探しっ!」〜</a> <span style="color:silver">(ベルック)</span></li>
+<li>2012/11/07 : <a href="/petc/?Toukou%2FListSorter" title="Toukou/ListSorter (2260d)">ListSorter</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/11/04 : <a href="/petc/?Toukou%2F%BE%E5%BB%AE%A4%C6%A4%F3%A4%D3%A4%F3" title="Toukou/上皿てんびん (2919d)">上皿てんびん</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/11/04 : <a href="/petc/?Toukou%2F%BD%EA%C1%A7%A4%B3%A4%CE%C0%A4%A4%CF%B6%E2%A4%CA%A4%CE%A4%B5" title="Toukou/所詮この世は金なのさ (3326d)">所詮この世は金なのさ!</a> <span style="color:silver">(ウイング)</span></li></ul>
+
+<h4 id="content_2_47">2012年10月</h4>
+<ul><li>2012/10/28 : <a href="/petc/?Toukou%2F%A5%C9%A5%E9%A5%AF%A5%A8%C9%F7%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/ドラクエ風フォント (2902d)">ドラクエ風フォント</a> <span style="color:silver">(YM)</span></li>
+<li>2012/10/27 : <a href="/petc/?Toukou%2F%A5%D0%A5%F3%A1%FB%A5%E9%A3%C4%A3%D8%A5%D5%A5%EA%A1%BC%B1%E9%C1%D5%A4%E2%A4%C9%A4%AD" title="Toukou/バン○ラＤＸフリー演奏もどき (2609d)">プチ演奏！バンドシスターズ</a> <span style="color:silver">(ボムチュウ)</span></li>
+<li>2012/10/23 : <a href="/petc/?Toukou%2F%BE%A1%A4%C6%A4%CA%A4%A4%A4%B8%A4%E3%A4%F3%A4%B1%A4%F3" title="Toukou/勝てないじゃんけん (3295d)">勝てないじゃんけん</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/10/22 : <a href="/petc/?Toukou%2F%CC%C2%B5%DC%C3%B5%B8%A1" title="Toukou/迷宮探検 (3115d)">迷宮探検</a> <span style="color:silver">(141)</span></li>
+<li>2012/10/22 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%A5%C1%A5%E3%A5%C3%A5%C8" title="Toukou/プチコンでチャット (2519d)">プチコンでチャット V.3.0</a> <span style="color:silver">(mochi)</span></li>
+<li>2012/10/21 : <a href="/petc/?Toukou%2F%C0%C4%BD%D5%A4%CE%A5%CB%A5%B3%A5%C9%A5%ED" title="Toukou/青春のニコドロ (2223d)">青春のニコドロ</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/10/21 : <a href="/petc/?Toukou%2FSKULL%20CRASH%20mkII" title="Toukou/SKULL CRASH mkII (2260d)">SKULL CRASH mkII</a> <span style="color:silver">(Hando)</span></li>
+<li>2012/10/21 : <a href="/petc/?Toukou%2FMAGICAL%20COIN2%20GOLD%20CAVE" title="Toukou/MAGICAL COIN2 GOLD CAVE (2217d)">MAGICAL COIN2 GOLD CAVE</a> <span style="color:silver">(Hando)</span></li>
+<li>2012/10/20 : <a href="/petc/?Toukou%2F%C6%B0%C2%CE%BB%EB%CE%CF%A4%F2%C3%C3%A4%A8%A4%E8%A4%A6%A3%F7%A3%F7%A3%F7" title="Toukou/動体視力を鍛えようｗｗｗ (1860d)">動体視力を鍛えようｗｗｗ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/10/20 : <a href="/petc/?Toukou%2F%A4%A4%A4%A2%A4%A4%A4%AE%A4%EA" title="Toukou/いあいぎり (2648d)">居合い切り</a> <span style="color:silver">(ルート)</span></li>
+<li>2012/10/20 : <a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%F3%A5%AF%A5%B7%A5%E7%A5%F3%A4%AA%A4%DF%A4%AF%A4%B8" title="Toukou/ファンクションおみくじ (3448d)">ファンクションおみくじ</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/10/16 : <a href="/petc/?Toukou%2FHTML%C5%AA%A4%CA%A4%E2%A4%CE%A4%F2%C9%BD%BC%A8" title="Toukou/HTML的なものを表示 (3146d)">HTML的なものを表示</a> <span style="color:silver">(uxtuno_)</span></li>
+<li>2012/10/14 : <a href="/petc/?Toukou%2F%CA%B5%A5%B2%A1%BC" title="Toukou/糞ゲー (2220d)">糞ゲー</a> <span style="color:silver">(雲刻斉)</span></li>
+<li>2012/10/10 : <a href="/petc/?Toukou%2F%A5%DD%A1%FB%A5%C7%A5%B0%A5%EB%A5%B0%A5%EB" title="Toukou/ポ○デグルグル (2488d)">ポ○デグルグル</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/10/09 : <a href="/petc/?Toukou%2F%C3%CF%B5%E5%A4%F2%BC%E9%A4%EC" title="Toukou/地球を守れ (2311d)">地球を守れ</a></li>
+<li>2012/10/08 : <a href="/petc/?Toukou%2F%A5%D5%A5%A9%A5%F3%A5%C8%A5%C7%A1%BC%A5%BF%B0%B5%BD%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/フォントデータ圧縮プログラム (2721d)">フォントデータ圧縮プログラム</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/10/08 : <a href="/petc/?Toukou%2FRubyTextReader" title="Toukou/RubyTextReader (3456d)">Ruby Text Reader</a> <span style="color:silver">(Amako Soft)</span></li>
+<li>2012/10/06 : <a href="/petc/?Toukou%2F%BC%EB%BF%FD%A4%CE1%B2%E8%CC%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/朱雀の1画面プログラム (2488d)">朱雀の1画面プログラム</a> <span style="color:silver">(朱雀)</span></li>
+<li>2012/10/06 : <a href="/petc/?Toukou%2FMAGICAL%20COIN" title="Toukou/MAGICAL COIN (2783d)">MAGICAL COIN</a> <span style="color:silver">(Hando)</span></li>
+<li>2012/10/02 : <a href="/petc/?Toukou%2F%B8%F7%A4%CE%A5%D1%A5%BA%A5%EB" title="Toukou/光のパズル (3079d)">Light Puzzle</a> <span style="color:silver">(いったん)</span></li></ul>
+
+<h4 id="content_2_48">2012年9月</h4>
+<ul><li>2012/09/29 : <a href="/petc/?Toukou%2FBGM%20Player" title="Toukou/BGM Player (1860d)">音楽再生機 (BGM Player)</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/09/28 : <a href="/petc/?Toukou%2FJDI" title="Toukou/JDI (2260d)">JDI</a> <span style="color:silver">(JDI members)</span></li>
+<li>2012/09/26 : <a href="/petc/?Toukou%2FY%27sSystem-PTC%B3%AB%C8%AF%A5%AD%A5%C3%A5%C8" title="Toukou/Y'sSystem-PTC開発キット (2260d)">Y'sSystem-PTC開発キット</a> <span style="color:silver">(涼季遊)</span></li>
+<li>2012/09/23 : <a href="/petc/?Toukou%2F%C1%D4%C2%E7%A4%CA%C1%D0%CF%BB%A5%B2%A1%BC%A5%E0%28%B1%B3%29" title="Toukou/壮大な双六ゲーム(嘘) (3149d)">烏天の壮大な双六ゲーム(嘘)</a> <span style="color:silver">(烏天)</span></li>
+<li>2012/09/23 : <a href="/petc/?Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF" title="Toukou/Befungeインタプリタ (2260d)">Befungeインタプリタ</a> <span style="color:silver">(麿)</span></li>
+<li>2012/09/20 : <a href="/petc/?Toukou%2FICBM%20DEFENDER" title="Toukou/ICBM DEFENDER (2260d)">ICBM DEFENDER [ミサイルコマンドっぽいなにか]</a> <span style="color:silver">(江戸八)</span></li>
+<li>2012/09/19 : <a href="/petc/?Toukou%2FVS%A5%B2%A1%BC%A5%E0" title="Toukou/VSゲーム (2810d)">VSゲーム</a> <span style="color:silver">(11才くん)</span></li>
+<li>2012/09/17 : <a href="/petc/?Toukou%2F%D1%EB%C6%E1%A4%CE%B8%AB%C0%DA%A4%EA%3F" title="Toukou/刹那の見切り? (3046d)">刹那の見切り？</a> <span style="color:silver">(ピカイッチ)</span></li>
+<li>2012/09/17 : <a href="/petc/?Toukou%2FRAYCAST%20MAZE" title="Toukou/RAYCAST MAZE (2369d)">RAYCAST MAZE (3D迷路)</a> <span style="color:silver">(Hepebell)</span></li>
+<li>2012/09/17 : <a href="/petc/?Toukou%2FINSECTS%20FLIGHT%20-%BA%AB%C3%EE%C8%F4%B9%D4-" title="Toukou/INSECTS FLIGHT -昆虫飛行- (88d)">INSECTS FLIGHT ー昆虫飛行ー</a> <span style="color:silver">(タマゴさん)</span></li>
+<li>2012/09/16 : <a href="/petc/?Toukou%2FSHtax" title="Toukou/SHtax (3001d)">SHtaxバージョン2.01-p</a> <span style="color:silver">(進)</span></li>
+<li>2012/09/15 : <a href="/petc/?Toukou%2F%C3%C4%BB%D2%A4%AC%BF%A9%A4%D9%A4%BF%A4%A4%A4%C3%21" title="Toukou/団子が食べたいっ! (1124d)">団子が食べたいっ!</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/09/15 : <a href="/petc/?Toukou%2F%A5%E2%A5%F3%A5%B9%A5%BF%A1%BC%B0%E9%C0%AEGAME" title="Toukou/モンスター育成GAME (2945d)">モンスター育成GAME</a> <span style="color:silver">(魚雷)</span></li>
+<li>2012/09/10 : <a href="/petc/?Toukou%2FPLANE%20%C5%AA%C5%F6%A4%C6" title="Toukou/PLANE 的当て (3478d)">PLANE 的当て</a> <span style="color:silver">(<span style="color:#038499; background-color:#FFFFFF"><strong><em>LV100</em></strong></span>)</span></li>
+<li>2012/09/09 : <a href="/petc/?Toukou%2FCLEANER%20GAME" title="Toukou/CLEANER GAME (3032d)">CLEANER GAME</a> <span style="color:silver">(<span style="color:#0099AA; background-color:#FFFFFF"><strong><em>Lv100</em></strong></span>)</span></li>
+<li>2012/09/03 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%B0%C5%B9%E6%B2%BD%20%28%A5%D1%A5%B9%A5%EF%A1%BC%A5%C9%C9%D4%CD%D7%29" title="Toukou/簡易暗号化 (パスワード不要) (2149d)">簡易暗号化プログラム(パスワード不要)</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/09/01 : <a href="/petc/?Toukou%2F%A5%ED%A1%BC%A5%DE%BB%FA%A5%EF%A1%BC%A5%D7%A5%ED" title="Toukou/ローマ字ワープロ (3423d)">ローマ字ワープロ</a> <span style="color:silver">(わぁぃ＠)</span></li></ul>
+
+<h4 id="content_2_49">2012年8月</h4>
+<ul><li>2012/08/29 : <a href="/petc/?Toukou%2FCOMAND%A5%B2%A1%BC%A5%E0" title="Toukou/COMANDゲーム (2945d)">COMANDゲーム</a> <span style="color:silver">(ピカイッチ)</span></li>
+<li>2012/08/24 : <a href="/petc/?Toukou%2F%B5%B4%A4%CE%A5%DC%A1%BC%A5%EB%A5%B9%A5%AB%A5%C3%A5%B7%A5%E5" title="Toukou/鬼のボールスカッシュ (3041d)">鬼のボールスカッシュ</a> <span style="color:silver">(いのっち)</span></li>
+<li>2012/08/24 : <a href="/petc/?Toukou%2FLADDER" title="Toukou/LADDER (2230d)">LADDER</a> <span style="color:silver">(タマゴさん)</span></li>
+<li>2012/08/23 : <a href="/petc/?Toukou%2F%A5%CD%A5%AE%BF%B6%A4%EA" title="Toukou/ネギ振り (3231d)">ネギ振り</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/08/23 : <a href="/petc/?Toukou%2FKEMURI%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF" title="Toukou/KEMURIインタプリタ (3478d)">KEMURIインタプリタ</a> <span style="color:silver">(麿)</span></li>
+<li>2012/08/20 : <a href="/petc/?Toukou%2Fvs%20%A5%AF%A5%EA%A1%BC%A5%D1%A1%BC" title="Toukou/vs クリーパー (2383d)">vs クリーパー (射撃ゲーム)</a> <span style="color:silver">(minecrafter郎)</span></li>
+<li>2012/08/19 : <a href="/petc/?Toukou%2FOTYAX%20%28OS%A4%E2%A4%C9%A4%AD%29" title="Toukou/OTYAX (OSもどき) (2072d)">OTYAX (OSもどき)</a> <span style="color:silver">(otyaken)</span></li>
+<li>2012/08/19 : <a href="/petc/?Toukou%2FNICOGAME" title="Toukou/NICOGAME (2691d)">NICOGAME</a> <span style="color:silver">(タマゴさん)</span></li>
+<li>2012/08/17 : <a href="/petc/?Toukou%2F%CF%A2%C2%C7%A5%B2%A1%BC%A5%E0" title="Toukou/連打ゲーム (3464d)">連打ゲーム</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/08/17 : <a href="/petc/?Toukou%2F%BF%DE%B7%C1%A5%C7%A5%E2" title="Toukou/図形デモ (2260d)">ワイヤーフレーム (図形デモ)</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/08/17 : <a href="/petc/?Toukou%2F%A5%BF%A5%A4%A5%DE%A1%BC%C9%D5%A4%AD%BB%FE%B7%D7" title="Toukou/タイマー付き時計 (3452d)">タイマー付き時計</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/08/16 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A5%DD%A5%A4%A5%F3%A5%C8%B9%D6%BA%C2" title="Toukou/プチコンポイント講座 (3404d)">プチコンkoza / Puchikon course</a> <span style="color:silver">(進)</span></li>
+<li>2012/08/16 : <a href="/petc/?Toukou%2F%A4%A2%A4%C6%A4%EB%A4%AF%A4%F3" title="Toukou/あてるくん (2230d)">あてるくん</a> <span style="color:silver">(マリオ師匠)</span></li>
+<li>2012/08/15 : <a href="/petc/?Toukou%2F%C2%C0%CD%DB%B6%E1%CB%B5%A4%CE%C0%B1%A1%B9" title="Toukou/太陽近傍の星々 (2230d)">太陽近傍の星々</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/08/15 : <a href="/petc/?Toukou%2F%A5%E1%A5%EB%A5%D3%A5%EB%A4%CE%C1%C7%BA%E0%BD%B8" title="Toukou/メルビルの素材集 (2230d)">メルビルの素材集</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/08/15 : <a href="/petc/?Toukou%2F%A5%C9%A5%A2%A4%DE%A4%C7%C7%A6%BC%D4%21" title="Toukou/ドアまで忍者! (2230d)">ドアまで忍者!</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/08/15 : <a href="/petc/?Toukou%2FDOTS" title="Toukou/DOTS (1860d)">DOTS〜ホラー〜</a> <span style="color:silver">(ロジウム)</span></li>
+<li>2012/08/13 : <a href="/petc/?Toukou%2F%B0%BF%A4%EB%B1%AB%A4%CE%C6%FC%A4%CE%C9%F7%B7%CA" title="Toukou/或る雨の日の風景 (2801d)">或る雨の日の風景</a> <span style="color:silver">(<strong><em>Lv100</em></strong>)</span></li>
+<li>2012/08/13 : <a href="/petc/?Toukou%2F16%BF%CA%CA%B8%BB%FA%CE%F3%B0%B5%BD%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/16進文字列圧縮プログラム (2260d)">16進文字列圧縮プログラム</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/08/12 : <a href="/petc/?Toukou%2FTraffic%20accident" title="Toukou/Traffic accident (3039d)">Traffic accident</a> <span style="color:silver">(タマゴさん)</span></li>
+<li>2012/08/10 : <a href="/petc/?Toukou%2F%A4%E2%A4%C9%A4%AD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8" title="Toukou/もどきプログラム集 (1860d)">もどきプログラム集</a> <span style="color:silver">(ウイング)</span></li>
+<li>2012/08/09 : <a href="/petc/?Toukou%2F%A5%B7%A5%E5%A5%EF%A5%C3%A5%C1" title="Toukou/シュワッチ (2897d)">シュワッチ! 16連射 / 高橋名人的連射ゲーム</a> <span style="color:silver">(江戸八)</span></li>
+<li>2012/08/08 : <a href="/petc/?Toukou%2F%A4%EF%A4%F3%A4%D1%A4%AF%A4%AF%A4%F3%A4%CE%B7%D7%BB%BB%A5%B2%A1%BC%A5%E0" title="Toukou/わんぱくくんの計算ゲーム (2649d)">わんぱくくんの計算ゲーム</a> <span style="color:silver">(とりあえず作者)</span></li>
+<li>2012/08/06 : <a href="/petc/?Toukou%2F%BF%C6%A4%CB%B8%AB%A4%E9%A4%EC%A4%C6%A4%E2%B0%C2%BF%B4%3F" title="Toukou/親に見られても安心? (1860d)">親に見られても安心？</a> <span style="color:silver">(進)</span></li>
+<li>2012/08/05 : <a href="/petc/?Toukou%2F%C9%D4%B2%F7%BB%D8%BF%F4%B7%D7" title="Toukou/不快指数計 (2230d)">不快指数計算機</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/08/05 : <a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="Toukou/マインスイーパ (574d)">マインスイーパ</a> <span style="color:silver">(ともや)</span></li>
+<li>2012/08/04 : <a href="/petc/?Toukou%2F%A5%D4%A5%A2%A5%CE" title="Toukou/ピアノ (3484d)">ピアノ</a> <span style="color:silver">(ともや)</span></li>
+<li>2012/08/04 : <a href="/petc/?Toukou%2F%A4%AB%A4%CA%CA%B8%BB%FA%B9%E7%C0%AE%A5%C4%A1%BC%A5%EB" title="Toukou/かな文字合成ツール (2914d)">かな文字合成ツール</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/08/04 : <a href="/petc/?Toukou%2FWestern%20Duel" title="Toukou/Western Duel (3232d)">Western Duel</a> <span style="color:silver">(たゆん)</span></li>
+<li>2012/08/03 : <a href="/petc/?Toukou%2FHQ9%2B%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF" title="Toukou/HQ9+インタプリタ (2819d)">HQ9+インタプリタ</a> <span style="color:silver">(麿)</span></li>
+<li>2012/08/01 : <a href="/petc/?Toukou%2FRENSYA" title="Toukou/RENSYA (3475d)">RENSYA</a> <span style="color:silver">(いぬまろ)</span></li></ul>
+
+<h4 id="content_2_50">2012年7月</h4>
+<ul><li>2012/07/30 : <a href="/petc/?Toukou%2F%C6%F3%BC%A1%B4%D8%BF%F4%A5%B0%A5%E9%A5%D5%BA%EE%C0%AE" title="Toukou/二次関数グラフ作成 (2368d)">二次関数グラフ作成</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/07/26 : <a href="/petc/?Toukou%2F%A4%EF%A4%A1%A4%A3%A1%F7%A4%CE%B0%EC%B2%E8%CC%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/わぁぃ＠の一画面プログラム (2980d)">投稿プログラム集 : 天郷思音の一画面プログラム</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/07/21 : <a href="/petc/?Toukou%2F%A5%A2%A5%AF%A5%B7%A5%E7%A5%F3%A5%D5%A5%A3%A1%BC%A5%EB%A5%C9" title="Toukou/アクションフィールド (3166d)">アクションフィールド</a> <span style="color:silver">(Sagek)</span></li>
+<li>2012/07/19 : <a href="/petc/?Toukou%2F8%CA%FD%B8%FE%A5%AD%A5%E3%A5%E9" title="Toukou/8方向キャラ (3240d)">8方向キャラ</a> <span style="color:silver">(PAN)</span></li>
+<li>2012/07/15 : <a href="/petc/?Toukou%2F%A5%C7%A5%D5%A5%A9%A5%EB%A5%C8216%BF%A7%A4%CB%CA%D1%B4%B9" title="Toukou/デフォルト216色に変換 (2230d)">デフォルト216色に変換</a> <span style="color:silver">(orirakkusu)</span></li>
+<li>2012/07/15 : <a href="/petc/?Toukou%2F30%20Panels" title="Toukou/30 Panels (3521d)">30 Panels/パネル早押しゲーム</a> <span style="color:silver">(江戸八)</span></li>
+<li>2012/07/14 : <a href="/petc/?Toukou%2F%A5%ED%A1%BC%A5%DE%BB%FA%A4%CE%B5%D9%C6%FC" title="Toukou/ローマ字の休日 (3266d)">ローマ字の休日 (ローマ字変換ライブラリ)</a> <span style="color:silver">(ＡｍａｋｏＳｏｆｔ)</span></li>
+<li>2012/07/14 : <a href="/petc/?Toukou%2FEnglishQuiz" title="Toukou/EnglishQuiz (3240d)">EnglishQuiz</a> <span style="color:silver">(わぁぃ＠)</span></li>
+<li>2012/07/12 : <a href="/petc/?Toukou%2F%B7%B2%E6%C6%20%28%A4%B0%A4%F3%A4%B7%A4%E7%A4%A6%29" title="Toukou/群翔 (ぐんしょう) (3456d)">群翔 (ぐんしょう)</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/07/08 : <a href="/petc/?Toukou%2F%A4%E2%A4%B8%A4%E2%A4%B8" title="Toukou/もじもじ (1860d)">もじもじ</a> <span style="color:silver">(モハメド・ヨネ)</span></li>
+<li>2012/07/08 : <a href="/petc/?Toukou%2FBGM%A4%CB%A5%A8%A5%B3%A1%BC%A4%F2%A4%AB%A4%B1%A4%EBPRG" title="Toukou/BGMにエコーをかけるPRG (3451d)">BGMにエコーをかけるPRG</a> <span style="color:silver">(カービィ★KIRBY)</span></li>
+<li>2012/07/07 : <a href="/petc/?Toukou%2F%A5%B9%A1%BC%A5%D1%A1%BC%A5%CB%A5%B3%A5%C1%A5%E3%A5%F3%20%28%A5%B5%A5%F3%A5%D7%A5%EB2%B2%FE%C2%A4%29" title="Toukou/スーパーニコチャン (サンプル2改造) (2364d)">サンプル2改造 スーパーニコチャン</a> <span style="color:silver">(Uxtuno_)</span></li>
+<li>2012/07/03 : <a href="/petc/?Toukou%2FDROP%20SHOOT" title="Toukou/DROP SHOOT (1681d)">DROP SHOOT</a> <span style="color:silver">(MOT)</span></li></ul>
+
+<h4 id="content_2_51">2012年6月</h4>
+<ul><li>2012/06/30 : <a href="/petc/?Toukou%2FLv100%A4%CE%A5%AA%A5%EA%A5%B8%A5%CA%A5%EB%C1%C7%BA%E0" title="Toukou/Lv100のオリジナル素材 (2542d)">Lv100のオリジナル素材</a> <span style="color:silver">(Lv100)</span></li>
+<li>2012/06/30 : <a href="/petc/?Toukou%2FCB3HTN" title="Toukou/CB3HTN (2488d)">CB3 コンビニ無双 + hatena</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/06/24 : <a href="/petc/?Toukou%2F%A5%A8%A5%AF%A5%B9%A5%D7%A5%ED%A1%BC%A5%E9%A1%BC" title="Toukou/エクスプローラー (2231d)">エクスプローラー</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/06/23 : <a href="/petc/?Toukou%2FCB3" title="Toukou/CB3 (3240d)">CB3 コンビニ無双</a> <span style="color:silver">(.EXEさん)</span></li>
+<li>2012/06/21 : <a href="/petc/?Toukou%2FPSG%A4%C7%A5%B9%A1%BC%A5%D1%A1%BC%A5%D2%A1%BC%A5%ED%A1%BC%A5%BF%A5%A4%A5%E0%21" title="Toukou/PSGでスーパーヒーロータイム! (2257d)">PSGでスーパーヒーロータイム!</a> <span style="color:silver">(neko800)</span></li>
+<li>2012/06/20 : <a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="Toukou/太鼓の○人 (12d)">太鼓の○人</a> <span style="color:silver">(太鼓つくりたい)</span></li>
+<li>2012/06/17 : <a href="/petc/?Toukou%2F%C7%AF%B7%EE%C6%FC%BB%FE%CA%AC%C9%C3%C9%BD%BC%A8%B5%A1" title="Toukou/年月日時分秒表示機 (1860d)">年月日時分秒表示機</a> <span style="color:silver">(マリオ師匠)</span></li>
+<li>2012/06/17 : <a href="/petc/?Toukou%2F%A4%D5%A4%C8%CA%B8%BB%FA" title="Toukou/ふと文字 (1860d)">太文字</a> <span style="color:silver">(.EXEさん)</span></li>
+<li>2012/06/17 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%CA%F8%B2%F5%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/プチコン崩壊プログラム (2230d)">プチコン崩壊プログラム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/06/16 : <a href="/petc/?Toukou%2Fthe%20Enterprise" title="Toukou/the Enterprise (1860d)">the Enterprise</a> <span style="color:silver">(YHY)</span></li>
+<li>2012/06/15 : <a href="/petc/?Toukou%2F%B7%D7%BB%BB%A5%C8%A5%E9%A5%A4%A5%A2%A5%BF%A5%C3%A5%AF%20%B0%B5%BD%CC%C8%C7" title="Toukou/計算トライアタック 圧縮版 (3333d)">計算トライアタック 圧縮版</a> <span style="color:silver">(わぁぃ＠)</span></li>
+<li>2012/06/09 : <a href="/petc/?Toukou%2FGRP%A4%AC%C7%D8%B7%CA%A4%CB%A4%CA%A4%C3%A4%C6%A4%EB%A5%E9%A5%F3%A5%C1%A5%E3" title="Toukou/GRPが背景になってるランチャ (3183d)">GRPが背景になってるランチャ</a> <span style="color:silver">(ぜあ)</span></li>
+<li>2012/06/09 : <a href="/petc/?Toukou%2FGO%21GO%21%A5%B9%A5%A4%A5%AB%B3%E4%A4%EA" title="Toukou/GO!GO!スイカ割り (2230d)">GO!GO!スイカ割り</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/06/08 : <a href="/petc/?Toukou%2F%A5%CC%A1%BC%A5%F3%A5%B2%A1%BC%A5%E0" title="Toukou/ヌーンゲーム (2917d)">ヌーンゲーム</a></li>
+<li>2012/06/06 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A5%AC%A5%C1%A5%E3" title="Toukou/プチコンガチャ (3226d)">プチコンガチャ</a> <span style="color:silver">(うらゝ)</span></li>
+<li>2012/06/05 : <a href="/petc/?Toukou%2F%C0%A4%B3%A6%BB%FE%B7%D7" title="Toukou/世界時計 (2589d)">世界時計</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/06/05 : <a href="/petc/?Toukou%2F%A5%E9%A5%F3%A5%C0%A5%E0BEEP" title="Toukou/ランダムBEEP (1860d)">ランダムBEEP</a> <span style="color:silver">(ウイング)</span></li>
+<li>2012/06/05 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%A5%B2%A1%BC%A5%E0%A5%DF%A5%E5%A1%BC%A5%B8%A5%C3%A5%AF" title="Toukou/プチコンでゲームミュージック (2230d)">プチコンでゲームミュージック</a> <span style="color:silver">(neko800)</span></li>
+<li>2012/06/04 : <a href="/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF%20%28SPU%29" title="Toukou/漢字データ (SPU) (59d)">美咲ゴシック漢字データ＆表示プログラム (SPU版)</a> <span style="color:silver">(Tyks)</span></li>
+<li>2012/06/04 : <a href="/petc/?Toukou%2FRUNAWAY" title="Toukou/RUNAWAY (2231d)">RUNAWAY</a> <span style="color:silver">(wakaru)</span></li>
+<li>2012/06/03 : <a href="/petc/?Toukou%2FTheHunt" title="Toukou/TheHunt (2986d)">TheHunt</a> <span style="color:silver">(TravelerJoe)</span></li>
+<li>2012/06/03 : <a href="/petc/?Toukou%2FBALLOON%20FLUTTER" title="Toukou/BALLOON FLUTTER (1944d)">BALOON FLUTTER</a> <span style="color:silver">(TACHIVANA)</span></li></ul>
+
+<h4 id="content_2_52">2012年5月</h4>
+<ul><li>2012/05/29 : <a href="/petc/?Toukou%2F%C1%C7%B0%F8%BF%F4%CA%AC%B2%F2" title="Toukou/素因数分解 (1095d)">素因数分解</a> <span style="color:silver">(Lv100)</span></li>
+<li>2012/05/28 : <a href="/petc/?Toukou%2FVS%A4%CE%A4%E8%A4%A6%A4%CA%A4%E2%A4%CE" title="Toukou/VSのようなもの (1860d)">VSのようなもの</a> <span style="color:silver">(orirakkusu)</span></li>
+<li>2012/05/26 : <a href="/petc/?Toukou%2F%A5%DD%A5%ED%A1%A6%A5%D6%A5%ED%A5%C3%A5%AF%A5%B9" title="Toukou/ポロ・ブロックス (3595d)">ポロ・ブロックス</a> <span style="color:silver">(アポ伊108)</span></li>
+<li>2012/05/25 : <a href="/petc/?Toukou%2F777LUCK" title="Toukou/777LUCK (2963d)">777LUCK</a> <span style="color:silver">(ロジウム)</span></li>
+<li>2012/05/24 : <a href="/petc/?Toukou%2F%A5%AB%A5%F3%A5%D0%A5%B9%A4%D9%A4%C3%A4%BF%A4%F3%21" title="Toukou/カンバスべったん! (2986d)">カンバスべったん!</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/05/24 : <a href="/petc/?Toukou%2F%A1%D6%C6%BB%A1%D7%A4%E8%A4%EA" title="Toukou/「道」より (3579d)">「道」より</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/05/24 : <a href="/petc/?Toukou%2FIN%20THE%20ROOM" title="Toukou/IN THE ROOM (2260d)">IN THE ROOM</a> <span style="color:silver">(Lv100)</span></li>
+<li>2012/05/22 : <a href="/petc/?Toukou%2F%A5%D5%A5%A9%A5%F3%A5%C8%A5%A2%A5%EC%A5%F3%A5%B87%BC%EF%B5%CD%A4%E1%B9%E7%A4%EF%A4%BB" title="Toukou/フォントアレンジ7種詰め合わせ (60d)">フォントアレンジ7種詰め合わせ</a> <span style="color:silver">(Sunny Clouds)</span></li>
+<li>2012/05/22 : <a href="/petc/?Toukou%2F%A5%B5%A5%A4%A5%E2%A5%F3%A5%B2%A1%BC%A5%E0" title="Toukou/サイモンゲーム (3200d)">サイモンゲーム</a> <span style="color:silver">(Lv100)</span></li>
+<li>2012/05/21 : <a href="/petc/?Toukou%2F%C7%CF%A4%CF%C1%F6%A4%EB%A4%E8%A4%C9%A4%B3%A4%DE%A4%C7%A4%E2" title="Toukou/馬は走るよどこまでも (2509d)">馬は走るよどこまでも</a> <span style="color:silver">(ウイング)</span></li>
+<li>2012/05/20 : <a href="/petc/?Toukou%2F%CD%E5%BF%CB%C8%D7DS" title="Toukou/羅針盤DS (2372d)">羅針盤DS</a> <span style="color:silver">(Oskar)</span></li>
+<li>2012/05/20 : <a href="/petc/?Toukou%2F%C1%D2%B8%CB%C8%D6" title="Toukou/倉庫番 (2488d)">倉庫番ver2.4.6</a> <span style="color:silver">(PAN)</span></li>
+<li>2012/05/20 : <a href="/petc/?Toukou%2F%A5%A2%A5%CB%A5%E1%A1%BC%A5%B7%A5%E7%A5%F3%BA%EE%C0%AE" title="Toukou/アニメーション作成 (3526d)">アニメーション作成</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/05/19 : <a href="/petc/?Toukou%2FMEM%A5%EA%A5%BD%A1%BC%A5%B9%B0%C5%B9%E6%B2%BD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%A1%D6ANGORN%A1%D7" title="Toukou/MEMリソース暗号化プログラム「ANGORN」 (2895d)">MEMリソース暗号化プログラム「ANGORN」</a> <span style="color:silver">(nao sato)</span></li>
+<li>2012/05/19 : <a href="/petc/?Toukou%2F256%A5%DA%A1%BC%A5%B8%A4%CE%A5%CE%A1%BC%A5%C8" title="Toukou/256ページのノート (3198d)">256ページのノート</a> <span style="color:silver">(ぜあ)</span></li>
+<li>2012/05/18 : <a href="/petc/?Toukou%2F%A5%BB%A5%D6%A5%F3%A5%A4%A5%EC%A2%FE%A5%F3%A5%D0%A5%C8%A5%EB" title="Toukou/セブンイレ◯ンバトル (2753d)">セブンイレ◯ンバトル</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/05/16 : <a href="/petc/?Toukou%2F%A4%AA%C3%C2%C0%B8%C6%FC%A4%AA%A4%E1%A4%C7%A4%C8%A4%A6%21" title="Toukou/お誕生日おめでとう! (2488d)">お誕生日おめでとう！</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/05/14 : <a href="/petc/?Toukou%2F%A5%DE%A1%BC%A5%B8%A5%E3%A5%F3%A5%BD%A5%EA%A5%C6%A5%A3%A5%A2" title="Toukou/マージャンソリティア (2857d)">マージャンソリティア</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/05/13 : <a href="/petc/?Toukou%2F%B8%B5%C1%C7%BC%AD%BD%F1" title="Toukou/元素辞書 (2812d)">元素辞書</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/05/13 : <a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%AE%A5%BF%A1%BC" title="Toukou/プチギター (2813d)">プチギター</a> <span style="color:silver">(shiro)</span></li>
+<li>2012/05/13 : <a href="/petc/?Toukou%2F%A5%C6%A5%EC%A5%D3%A4%E2%A4%C9%A4%AD" title="Toukou/テレビもどき (2595d)">テレビもどき</a> <span style="color:silver">(ウイング)</span></li>
+<li>2012/05/12 : <a href="/petc/?Toukou%2F%CA%B8%BB%FA%CE%F3%A5%A2%A1%BC%A5%AB%A5%A4%A5%D0" title="Toukou/文字列アーカイバ (3428d)">文字列アーカイバ</a> <span style="color:silver">(涼季遊)</span></li>
+<li>2012/05/12 : <a href="/petc/?Toukou%2F%A5%EB%A1%BC%A5%EC%A5%C3%A5%C8" title="Toukou/ルーレット (3206d)">ルーレット</a> <span style="color:silver">(初心 者太郎)</span></li>
+<li>2012/05/12 : <a href="/petc/?Toukou%2F8Cheeses" title="Toukou/8Cheeses (2260d)">8Cheeses</a> <span style="color:silver">(サブ)</span></li>
+<li>2012/05/11 : <a href="/petc/?Toukou%2F%CA%C9%BC%B0%CC%C2%CF%A9%A5%B2%A1%BC%A5%E0" title="Toukou/壁式迷路ゲーム (2230d)">壁式迷路ゲーム</a> <span style="color:silver">(neko800)</span></li>
+<li>2012/05/09 : <a href="/petc/?Toukou%2F%B4%E9%C5%F6%A4%C6%A5%B2%A1%BC%A5%E0" title="Toukou/顔当てゲーム (2636d)">顔当てゲーム</a> <span style="color:silver">(KITI)</span></li>
+<li>2012/05/08 : <a href="/petc/?Toukou%2F%A5%ED%A1%BC%A2%FE%A5%F3%A4%CE%CB%C1%B8%B1" title="Toukou/ロー◯ンの冒険 (2230d)">ロー◯ンの冒険</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/05/08 : <a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%DF%A5%EA%A1%BC%A2%FE%A1%BC%A5%C8%A5%D0%A5%C8%A5%EB" title="Toukou/ファミリー◯ートバトル (3505d)">ファミリー◯ートバトル</a> <span style="color:silver">(中１プログラマー？)</span></li>
+<li>2012/05/07 : <a href="/petc/?Toukou%2F%A4%BD%A4%F3%A4%CA%A4%CE%B4%D8%B7%B8%A4%CD%A4%A7%21%20%A5%B9%A5%C8%A5%C3%A5%D7%A5%A6%A5%A9%A5%C3%A5%C1" title="Toukou/そんなの関係ねぇ! ストップウォッチ (2984d)">そんなの関係ねぇ！ストップウォッチ</a> <span style="color:silver">(たかさん)</span></li>
+<li>2012/05/05 : <a href="/petc/?Toukou%2FBLOCK%27N" title="Toukou/BLOCK'N (2260d)">BLOCK'N</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/05/04 : <a href="/petc/?Toukou%2F%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%A5%D1%A5%E9%A5%E1%A1%BC%A5%BF%C0%B8%C0%AE" title="Toukou/パッケージパラメータ生成 (2230d)">パッケージパラメータ生成</a> <span style="color:silver">(ぜあ)</span></li>
+<li>2012/05/03 : <a href="/petc/?Toukou%2F%B9%F5%A4%A4%A5%AD%A1%BC%A5%DC%A1%BC%A5%C9" title="Toukou/黒いキーボード (3210d)">黒いキーボード</a> <span style="color:silver">(ぜあ)</span></li>
+<li>2012/05/01 : <a href="/petc/?Toukou%2F%A5%B0%A5%E9%A5%C7%A1%BC%A5%B7%A5%E7%A5%F3%BA%EE%C0%AE%A1%F7%BB%B0%B9%D4%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/グラデーション作成＠三行プログラム (3488d)">グラデーション作成＠三行プログラム</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/05/01 : <a href="/petc/?Toukou%2FMPZL" title="Toukou/MPZL (2488d)">MPZL (アクションパズルゲーム)</a> <span style="color:silver">(moskau)</span></li></ul>
+
+<h4 id="content_2_53">2012年4月</h4>
+<ul><li>2012/04/28 : <a href="/petc/?Toukou%2F%B0%C5%B9%E6%A4%AF%A4%F3" title="Toukou/暗号くん (2945d)">暗号くん</a> <span style="color:silver">(ＡｍａｋｏＳｏｆｔ)</span></li>
+<li>2012/04/28 : <a href="/petc/?Toukou%2F%A5%DA%A5%F3%A5%AD%B2%B0%A4%B5%A4%F3" title="Toukou/ペンキ屋さん (3619d)">ペンキ屋さん</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/04/27 : <a href="/petc/?Toukou%2F%BF%F4%BB%FA%C6%C9%A4%DF%BE%E5%A4%B2" title="Toukou/数字読み上げ (3288d)">よみあげくん</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/04/26 : <a href="/petc/?Toukou%2FHSSAM" title="Toukou/HSSAM (2230d)">宝石商サム</a> <span style="color:silver">(いのっち)</span></li>
+<li>2012/04/26 : <a href="/petc/?Toukou%2F%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A5%AD%A5%E3%A5%E9%C7%DB%C3%D6%C4%B4%C0%B0" title="Toukou/スプライトキャラ配置調整 (3251d)">スプライトキャラ配置調整</a> <span style="color:silver">(KITI)</span></li>
+<li>2012/04/23 : <a href="/petc/?Toukou%2F%A5%E2%A1%BC%A5%EB%A5%B9%BF%AE%B9%E6%B2%F2%C0%CF" title="Toukou/モールス信号解析 (2169d)">モールス信号解析</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/04/22 : <a href="/petc/?Toukou%2F%C7%C8%B7%C1%A5%E1%A5%E2%A5%EA%B2%BB%BF%A7%BC%AB%C6%B0%C0%B8%C0%AE%B5%A1%C7%BD%C9%D5%A4%ADMML%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%CD%D1%A5%B9%A5%B1%A5%EB%A5%C8%A5%F3" title="Toukou/波形メモリ音色自動生成機能付きMMLプログラム用スケルトン (3468d)">波形メモリ音色自動生成機能付きMMLプログラム用スケルトン</a> <span style="color:silver">(neko800)</span></li>
+<li>2012/04/22 : <a href="/petc/?Toukou%2F10%B7%E5%A4%DE%A4%C7%A4%CE%C0%B0%BF%F4%A4%F2%A5%AB%A5%A6%A5%F3%A5%C8" title="Toukou/10桁までの整数をカウント (3240d)">10桁までの整数をカウント</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/04/21 : <a href="/petc/?Toukou%2F%CA%A3%BF%F4%A4%CE%A5%EA%A5%BD%A1%BC%A5%B9%A4%F2%A4%DE%A4%C8%A4%E1%A4%C6%CA%DD%C2%B8" title="Toukou/複数のリソースをまとめて保存 (2636d)">複数のリソースをまとめて保存</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/04/21 : <a href="/petc/?Toukou%2FGravitational%20Pazzle" title="Toukou/Gravitational Pazzle (2230d)">Gravitational Puzzle</a> <span style="color:silver">(アポ伊108)</span></li>
+<li>2012/04/20 : <a href="/petc/?Toukou%2F%A4%E6%A4%EB%A5%AD%A5%E5%A1%BC%A5%D6" title="Toukou/ゆるキューブ (2636d)">ゆるキューブ</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/04/19 : <a href="/petc/?Toukou%2F%A5%B2%A1%BC%A5%E0%A5%D7%A5%C1%C2%EE" title="Toukou/ゲームプチ卓 (3255d)">ゲームプチ卓</a> <span style="color:silver">(きよす)</span></li>
+<li>2012/04/18 : <a href="/petc/?Toukou%2F%B9%E2%B5%A1%C7%BD%A5%AD%A5%E3%A5%E9%A5%AF%A5%BF%A1%BC%A5%A8%A5%C7%A5%A3%A5%BF%A1%BC" title="Toukou/高機能キャラクターエディター (2986d)">高機能キャラクターエディター「UX_CHRED」</a> <span style="color:silver">(uxtuno_)</span></li>
+<li>2012/04/18 : <a href="/petc/?Toukou%2F%A5%D1%A5%EF%A1%BC%A5%A2%A5%C3%A5%D7%B1%E9%BB%BB%A5%BD%A5%D5%A5%C8" title="Toukou/パワーアップ演算ソフト (3602d)">パワーアップ演算ソフト</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/04/17 : <a href="/petc/?Toukou%2F%A4%AB%A4%CA%A5%D5%A5%A9%A5%F3%A5%C8PETIKANA" title="Toukou/かなフォントPETIKANA (59d)">プチコン用ひらがなフォント「PETIKANA」</a> <span style="color:silver">(こあ)</span></li>
+<li>2012/04/15 : <a href="/petc/?Toukou%2FDTMF%A5%A8%A5%F3%A5%B3%A1%BC%A5%C0" title="Toukou/DTMFエンコーダ (3342d)">DTMFエンコーダ</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/04/14 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8%A5%AB%A5%E1%A5%E9" title="Toukou/簡易スクリーンショットカメラ (2705d)">簡易スクリーンショットカメラ</a> <span style="color:silver">(わぁぃ＠（天郷思音）<br class="spacer" />)</span></li>
+<li>2012/04/14 : <a href="/petc/?Toukou%2F%B2%BB%A5%D0%A5%B9%A5%B1%A5%C3%A5%C8" title="Toukou/音バスケット (3510d)">音バスケット</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/04/14 : <a href="/petc/?Toukou%2F%A5%C0%A1%BC%A5%AF%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/ダークフォント (1860d)">ダークフォント</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/04/13 : <a href="/petc/?Toukou%2F%C3%C6%CB%EB%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/弾幕シューティング (2066d)">弾幕シューティング</a> <span style="color:silver">(ジオライド)</span></li>
+<li>2012/04/13 : <a href="/petc/?Toukou%2FBINGO1%B2%E8%CC%CC" title="Toukou/BINGO1画面 (3215d)">BINGO 1画面</a> <span style="color:silver">(＠hpn)</span></li>
+<li>2012/04/10 : <a href="/petc/?Toukou%2F%B4%C1%BB%FA%A5%C7%A1%BC%A5%BF" title="Toukou/漢字データ (2260d)">美咲ゴシック漢字データ＆表示プログラム (GRP版)</a> <span style="color:silver">(Tyks)</span></li>
+<li>2012/04/08 : <a href="/petc/?Toukou%2F%B8%F7%C1%D5%B4%EF" title="Toukou/光奏器 (3623d)">光奏器</a> <span style="color:silver">(hoy@kayama)</span></li>
+<li>2012/04/08 : <a href="/petc/?Toukou%2FFREECELL" title="Toukou/FREECELL (2231d)">フリーセル</a> <span style="color:silver">(わかん)</span></li>
+<li>2012/04/08 : <a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%DF%A5%B3%A5%F3%C9%F7%A5%D5%A5%A9%A5%F3%A5%C8" title="Toukou/ファミコン風フォント (838d)">ファミコン風フォント</a> <span style="color:silver">(どこかの人)</span></li>
+<li>2012/04/08 : <a href="/petc/?Toukou%2F%C7%C8%B7%C1%A5%E9%A5%F3%A5%C0%A5%E0%BA%EE%C0%AE%A5%BD%A5%D5%A5%C8" title="Toukou/波形ランダム作成ソフト (2980d)">RANDOM WAVE MIXER</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/04/08 : <a href="/petc/?Toukou%2FPetitPainter" title="Toukou/PetitPainter (3533d)">PetitPainter</a> <span style="color:silver">(＠hpn)</span></li>
+<li>2012/04/07 : <a href="/petc/?Toukou%2F%A5%AD%A1%BC%A5%DC%A1%BC%A5%C9%B2%A3%BC%E8%A4%EA%C2%E7%BA%EE%C0%EF" title="Toukou/キーボード横取り大作戦 (3085d)">キーボード横取り大作戦</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/04/05 : <a href="/petc/?Toukou%2F%A5%EC%A5%F3%A5%AC%B2%F5%A4%B7" title="Toukou/レンガ壊し (1860d)">レンガ壊し</a> <span style="color:silver">(ドナルド)</span></li>
+<li>2012/04/04 : <a href="/petc/?Toukou%2F%C2%BF%B2%BB%BF%A7%A5%D4%A5%A2%A5%CE" title="Toukou/多音色ピアノ (3302d)">多音色ピアノ</a> <span style="color:silver">(いったん)</span></li>
+<li>2012/04/04 : <a href="/petc/?Toukou%2F%A4%BD%A4%ED%A4%D0%A4%F3" title="Toukou/そろばん (1860d)">そろばん</a> <span style="color:silver">(とらお)</span></li>
+<li>2012/04/04 : <a href="/petc/?Toukou%2F%B2%A1%A4%B9%A4%CA%A4%E8%A1%A9" title="Toukou/押すなよ？ (1860d)">「絶対押すなよ?」ゲーム@1行</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/04/03 : <a href="/petc/?Toukou%2F%A5%CA%A5%F3%A5%D7%A5%EC%20%28%A1%FB%C6%C8%29" title="Toukou/ナンプレ (○独) (2230d)">ナンプレ○独</a> <span style="color:silver">(アポ伊108)</span></li>
+<li>2012/04/02 : <a href="/petc/?Toukou%2Fufoshot" title="Toukou/ufoshot (3240d)">UFO SHOT</a> <span style="color:silver">(いのっち)</span></li>
+<li>2012/04/02 : <a href="/petc/?Toukou%2F8bitDA" title="Toukou/8bitDA (3503d)">8bitDA</a> <span style="color:silver">(Oskar)</span></li>
+<li>2012/04/01 : <a href="/petc/?Toukou%2FWSGTEST" title="Toukou/WSGTEST (3462d)">WSGTESTプログラム</a> <span style="color:silver">(Hando)</span></li>
+<li>2012/04/01 : <a href="/petc/?Toukou%2FSix%20Rock%20chain%21" title="Toukou/Six Rock chain! (3087d)">Six Rock chain!</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/04/01 : <a href="/petc/?Toukou%2F3D_CAR_RACE_Ver2.0" title="Toukou/3D_CAR_RACE_Ver2.0 (2260d)">3D CAR RACE Ver2.0</a> <span style="color:silver">(下手な人)</span></li></ul>
+
+<h4 id="content_2_54">2012年3月</h4>
+<ul><li>2012/03/30 : <a href="/petc/?Toukou%2F%B2%BB%BF%A7%B3%CE%C7%A7%A5%BD%A5%D5%A5%C8MMLTES" title="Toukou/音色確認ソフトMMLTES (3653d)">音色確認ソフトMMLTES</a> <span style="color:silver">(monyfula)</span></li>
+<li>2012/03/29 : <a href="/petc/?Toukou%2FBINGO" title="Toukou/BINGO (3283d)">BINGO抽選機</a> <span style="color:silver">(Tyks)</span></li>
+<li>2012/03/28 : <a href="/petc/?Toukou%2F%B6%A5%C7%CF%A5%B2%A1%BC%A5%E0" title="Toukou/競馬ゲーム (2677d)">競馬的な鑑賞ソフト</a> <span style="color:silver">(R-gray)</span></li>
+<li>2012/03/28 : <a href="/petc/?Toukou%2F%A5%A2%A5%CA%A5%ED%A5%B0%BB%FE%B7%D7" title="Toukou/アナログ時計 (36d)">アナログ時計</a> <span style="color:silver">(BASIC-Ishida)</span></li>
+<li>2012/03/28 : <a href="/petc/?Toukou%2FBEEP%A4%F2%BB%C8%A4%C3%A4%BF%BD%AC%BA%EE" title="Toukou/BEEPを使った習作 (1860d)">BEEPを使った習作</a> <span style="color:silver">(暇人A)</span></li>
+<li>2012/03/27 : <a href="/petc/?Toukou%2F%A5%AA%A5%B7%A5%E3%A5%D9%A5%EA%A5%AF%A5%F3" title="Toukou/オシャベリクン (3512d)">オシャベリクン</a> <span style="color:silver">(きよす)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2F%C8%BF%BC%CD%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="Toukou/反射シミュレーター (839d)">反射シミュレータ</a> <span style="color:silver">(nao112641433)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2F%C4%B7%A4%F3%A4%C7%CD%B7%A4%D6%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/跳んで遊ぶだけのプログラム (3224d)">跳んで遊ぶだけのプログラム</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2F%A5%B5%A5%A6%A5%F3%A5%C9%A5%C6%A5%B9%A5%C8" title="Toukou/サウンドテスト (839d)">サウンドテスト</a> <span style="color:silver">(ロジウム)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2FBlockAtack" title="Toukou/BlockAtack (912d)">BlockAtack</a> <span style="color:silver">(Hando)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2F4%B9%D4%A4%AA%B3%A8%A4%AB%A4%AD" title="Toukou/4行お絵かき (2385d)">4行お絵かき</a> <span style="color:silver">(お茶犬)</span></li>
+<li>2012/03/25 : <a href="/petc/?Toukou%2F1%B9%D4%A4%AA%B3%A8%A4%AB%A4%AD" title="Toukou/1行お絵かき (3633d)">1行お絵かき</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/03/21 : <a href="/petc/?Toukou%2F%A5%DB%A5%E9%A1%BC%A5%C0%A5%F3%A5%B8%A5%E7%A5%F3" title="Toukou/ホラーダンジョン (3267d)">ホラーダンジョン</a> <span style="color:silver">(ショルダー)</span></li>
+<li>2012/03/20 : <a href="/petc/?Toukou%2F%B0%CB%C0%AA" title="Toukou/伊勢 (3586d)">伊勢</a> <span style="color:silver">(三毛乱ジェロ)</span></li>
+<li>2012/03/20 : <a href="/petc/?Toukou%2FPetitcoLOID" title="Toukou/PetitcoLOID (2230d)">PetitcoLOID</a> <span style="color:silver">(sou51)</span></li>
+<li>2012/03/16 : <a href="/petc/?Toukou%2FMML%B2%BB%B8%BB%A5%AD%A1%BC%A5%DC%A1%BC%A5%C9" title="Toukou/MML音源キーボード (3071d)">MML音源キーボード</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/03/12 : <a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%AF%A5%B7%A5%E7%A5%F3%A5%DE%A5%C8%A5%EA%A5%E7%A1%BC%A5%B7%A5%AB" title="Toukou/ファクションマトリョーシカ (2925d)">ファンクションマトリョーシカ</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/03/11 : <a href="/petc/?Toukou%2F%BB%B0%B3%D1%B7%C1%A4%CE%BD%C5%BF%B4%A4%F2%A4%C4%A4%C4%A4%AF%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/三角形の重心をつつくだけのプログラム (3374d)">G-BREAKER</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/03/11 : <a href="/petc/?Toukou%2F2%B9%D4%A4%AA%B3%A8%A4%AB%A4%AD" title="Toukou/2行お絵かき (3045d)">2行お絵かき</a> <span style="color:silver">(hatena)</span></li>
+<li>2012/03/04 : <a href="/petc/?Toukou%2F5ubtraction" title="Toukou/5ubtraction (3324d)">5ubtraction</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/03/03 : <a href="/petc/?Toukou%2F%A5%E9%A1%BC%A5%E1%A5%F3%A5%BF%A5%A4%A5%DE%A1%BC" title="Toukou/ラーメンタイマー (2724d)">ラーメンタイマー</a> <span style="color:silver">(orirakkusu)</span></li></ul>
+
+<h4 id="content_2_55">2012年2月</h4>
+<ul><li>2012/02/27 : <a href="/petc/?Toukou%2FGRP%A5%EA%A5%BD%A1%BC%A5%B9%A4%F2%BB%C8%A4%C3%A4%BF%CA%B8%BB%FA%A4%CE%B5%AD%CF%BF" title="Toukou/GRPリソースを使った文字の記録 (3427d)">GRPリソースに文字を記録</a> <span style="color:silver">(orirakkusu)</span></li>
+<li>2012/02/18 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%E1%A5%C8%A5%ED%A5%CE%A1%BC%A5%E0" title="Toukou/簡易メトロノーム (2909d)">超簡易メトロノーム</a> <span style="color:silver">(わぁぃ@)</span></li></ul>
+
+<h4 id="content_2_56">2012年1月</h4>
+<ul><li>2012/01/29 : <a href="/petc/?Toukou%2F%BF%BF%CD%FD%C3%CD%C9%BD%BA%EE%C0%AE%A5%BD%A5%D5%A5%C8" title="Toukou/真理値表作成ソフト (3491d)">真理値表作成ソフト</a></li>
+<li>2012/01/23 : <a href="/petc/?Toukou%2F%A5%A4%A5%F3%A5%C1%A5%AD%BC%EA%BD%F1%A4%AD%C6%FE%CE%CF" title="Toukou/インチキ手書き入力 (2775d)">インチキ手書き入力</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/01/22 : <a href="/petc/?Toukou%2F%C5%C5%C2%EE" title="Toukou/電卓 (2695d)">電卓</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/01/21 : <a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="Toukou/電子ピアノ (261d)">電子ピアノ</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li>
+<li>2012/01/14 : <a href="/petc/?Toukou%2FBMI%BB%BB%BD%D0%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/BMI算出プログラム (2223d)">BMI算出プログラム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/01/10 : <a href="/petc/?Toukou%2F%A5%BD%A5%D5%A5%C8%A5%AD%A1%BC%A5%DC%A1%BC%A5%C9" title="Toukou/ソフトキーボード (3032d)">ソフトキーボード</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2012/01/06 : <a href="/petc/?Toukou%2FTENORI-MV" title="Toukou/TENORI-MV (3515d)">TENORI-MV</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2012/01/04 : <a href="/petc/?Toukou%2F%BF%F4%A5%D0%A5%C8%A5%EB%20%281%B2%E8%CC%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%29" title="Toukou/数バトル (1画面プログラム) (3506d)">数バトル (1画面プログラム)</a> <span style="color:silver">(わぁぃ@)</span></li></ul>
+
+<h4 id="content_2_57">2011年12月</h4>
+<ul><li>2011/12/22 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%C5%AA%A4%CA%B5%E5%A4%F2%C9%C1%A4%AF%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/簡易的な球を描くプログラム (2469d)">簡易的な球を描くプログラム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2011/12/21 : <a href="/petc/?Toukou%2FTENORI-COM" title="Toukou/TENORI-COM (3287d)">TENORI-COM</a> <span style="color:silver">(shiro)</span></li>
+<li>2011/12/20 : <a href="/petc/?Toukou%2F%C1%C7%BF%F4%A4%F2%C3%B5%A4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/素数を探すプログラム (3339d)">素数検索</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/12/17 : <a href="/petc/?Toukou%2F%A4%BB%A4%DE%A4%BB%A4%DE%A5%B7%A5%E5%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0" title="Toukou/せませまシューティング (3507d)">せませまシューティング</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/12/09 : <a href="/petc/?Toukou%2FPIC%A5%C7%A5%B3%A1%BC%A5%C0" title="Toukou/PICデコーダ (3643d)">PICデコーダ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/12/09 : <a href="/petc/?Toukou%2FPIC%A5%A8%A5%F3%A5%B3%A1%BC%A5%C0" title="Toukou/PICエンコーダ (3642d)">PICエンコーダ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/12/07 : <a href="/petc/?Toukou%2F%B4%CA%C1%C7%A5%D6%A5%ED%A5%C3%A5%AF%A4%AF%A4%BA%A4%B7" title="Toukou/簡素ブロックくずし (3325d)">簡素ブロックくずし</a> <span style="color:silver">(shiro)</span></li>
+<li>2011/12/01 : <a href="/petc/?Toukou%2F%A5%EA%A1%BC%A5%C1%A5%B2%A1%BC%A5%E0Ver2" title="Toukou/リーチゲームVer2 (3325d)">リーチゲームVer2</a> <span style="color:silver">(shiro)</span></li></ul>
+
+<h4 id="content_2_58">2011年11月</h4>
+<ul><li>2011/11/06 : <a href="/petc/?Toukou%2F%CA%B8%BB%FA%B3%C8%C2%E7%A1%DC%BB%FE%B7%D7" title="Toukou/文字拡大＋時計 (3001d)">文字拡大 + 時計</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li></ul>
+
+<h4 id="content_2_59">2011年10月</h4>
+<ul><li>2011/10/30 : <a href="/petc/?Toukou%2F%C1%F0%BC%E8%A5%B2%A1%BC%A5%E0" title="Toukou/草取ゲーム (2230d)">草取ゲーム</a> <span style="color:silver">(バイカウントメルビル)</span></li>
+<li>2011/10/29 : <a href="/petc/?Toukou%2F3D%A5%B0%A5%E9%A5%D5%A5%A3%A5%C3%A5%AF%A5%A8%A5%C7%A5%A3%A5%BF" title="Toukou/3Dグラフィックエディタ (2223d)">3Dグラフィックエディタ</a> <span style="color:silver">(バイカウントメルビル)</span></li></ul>
+
+<h4 id="content_2_60">2011年9月</h4>
+<ul><li>2011/09/13 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF" title="Toukou/簡易フォントエディタ (2580d)">簡易フォントエディタ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/09/04 : <a href="/petc/?Toukou%2F%C4%B6%B4%CA%B0%D7MML" title="Toukou/超簡易MML (2260d)">超簡易MML</a> <span style="color:silver">(天郷思音（わぁぃ＠）)</span></li></ul>
+
+<h4 id="content_2_61">2011年8月</h4>
+<ul><li>2011/08/11 : <a href="/petc/?Toukou%2F%C6%CD%B7%E2%A5%A2%A5%B9%A5%C6%A5%ED%A5%A4%A5%C9" title="Toukou/突撃アステロイド (2230d)">突撃! アステロイド</a> <span style="color:silver">(ウル)</span></li>
+<li>2011/08/08 : <a href="/petc/?Toukou%2F%BE%E5%B2%E8%CC%CC%CD%D1%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%F2%B2%BC%B2%E8%CC%CC%CD%D1%A5%B9%A5%D7%A5%E9%A5%A4%A5%C8%A4%CB%A5%B3%A5%D4%A1%BC%A4%B9%A4%EB" title="Toukou/上画面用スプライトを下画面用スプライトにコピーする (3654d)">上画面用スプライトを下画面用スプライトにコピーする</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/08/03 : <a href="/petc/?Toukou%2F%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%A4%CE%A5%DE%A1%BC%A5%B8" title="Toukou/プログラムのマージ (3654d)">プログラムのマージ</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_62">2011年7月</h4>
+<ul><li>2011/07/21 : <a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%E2%A5%F3AR%A5%DE%A1%BC%A5%AB%A1%BC%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/ポケモンARマーカーを表示するだけのプログラム (2230d)">ポケモンARマーカー表示プログラム</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/07/19 : <a href="/petc/?Toukou%2F%C0%BA%CC%A9%A5%B0%A5%E9%A5%D5%A5%A3%A5%C3%A5%AF%A5%A8%A5%C7%A5%A3%A5%BF" title="Toukou/精密グラフィックエディタ (3456d)">精密グラフィックエディタ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/07/19 : <a href="/petc/?Toukou%2FBGM%BA%C6%C0%B8%A5%BD%A5%D5%A5%C8" title="Toukou/BGM再生ソフト (3195d)">BGM再生プログラムのようなもの</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/07/07 : <a href="/petc/?Toukou%2F%A5%D9%A5%B8%A5%A7%B6%CA%C0%FE%A4%F2%C9%BD%BC%A8%A4%B9%A4%EB%A4%C0%A4%B1%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="Toukou/ベジェ曲線を表示するだけのプログラム (3463d)">ベジェ曲線を表示するだけのプログラム</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_63">2011年5月</h4>
+<ul><li>2011/05/10 : <a href="/petc/?Toukou%2F%A5%C9%A5%DF%A5%CB%A5%AA%A5%F3%A5%BB%A5%EC%A5%AF%A5%BF" title="Toukou/ドミニオンセレクタ (3491d)">ドミニオンセレクタ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/04 : <a href="/petc/?Toukou%2F%A5%D6%A5%ED%A5%C3%A5%AF%A5%AD%A5%E3%A5%C3%A5%C1" title="Toukou/ブロックキャッチ (3217d)">ブロックキャッチ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/03 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%E9%A5%F3%A5%C1%A5%E3" title="Toukou/簡易ランチャ (3646d)">簡易ランチャ</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/03 : <a href="/petc/?Toukou%2F%B4%CA%B0%D7%A5%B5%A5%A6%A5%F3%A5%C9%A5%C6%A5%B9%A5%C8" title="Toukou/簡易サウンドテスト (839d)">簡易サウンドテスト</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/03 : <a href="/petc/?Toukou%2F%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%A4%CE%A5%A8%A5%AF%A5%B9%A5%DD%A1%BC%A5%C8" title="Toukou/プログラムのエクスポート (3329d)">プログラムのエクスポート</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/03 : <a href="/petc/?Toukou%2F%A5%B7%A5%B9%A5%C6%A5%E0%A5%A2%A5%A4%A5%B3%A5%F3%A5%C6%A5%B9%A5%C8" title="Toukou/システムアイコンテスト (3048d)">システムアイコンテスト</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/03 : <a href="/petc/?Toukou%2F%A5%AD%A5%C3%A5%C1%A5%F3%A5%BF%A5%A4%A5%DE%A1%BC" title="Toukou/キッチンタイマー (3226d)">キッチンタイマー</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/01 : <a href="/petc/?Toukou%2F%A5%A2%A5%B9%A5%C6%A5%ED%A5%A4%A5%C9%A1%A6%A5%EF%A1%BC%A5%EB%A5%C9" title="Toukou/アステロイド・ワールド (3580d)">アステロイド・ワールド</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/05/01 : <a href="/petc/?Toukou%2F3D%20CAR%20RACE%20%28%B0%DC%BF%A2%A1%A7%B2%BC%BC%EA%A4%CA%BF%CD%29" title="Toukou/3D CAR RACE (移植：下手な人) (2260d)">3D CAR RACE</a> <span style="color:silver">(下手な人)</span></li>
+<li>2011/05/01 : <a href="/petc/?Toukou%2F3D%20CAR%20RACE%20DS" title="Toukou/3D CAR RACE DS (2260d)">3D CAR RACE DS</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_64">2011年4月</h4>
+<ul><li>2011/04/24 : <a href="/petc/?Toukou%2F%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8%C0%A9%B8%E6" title="Toukou/スクリプト制御 (3140d)">スクリプト制御</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/04/24 : <a href="/petc/?Toukou%2FQR%A5%B3%A1%BC%A5%C9%BA%EE%C0%AE" title="Toukou/QRコード作成 (3197d)">QRコード作成</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/04/07 : <a href="/petc/?Toukou%2F%A5%CA%A5%F3%A5%D7%A5%EC%B2%F2%CB%A1%401%B2%E8%CC%CC" title="Toukou/ナンプレ解法@1画面 (2230d)">ナンプレ解法@1画面</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/04/03 : <a href="/petc/?Toukou%2F%A5%DF%A5%CB%A5%C9%A5%E9%A5%E0%B1%E9%C1%D5" title="Toukou/ミニドラム演奏 (3447d)">ミニドラム演奏</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/04/02 : <a href="/petc/?Toukou%2FMineSweeper" title="Toukou/MineSweeper (2231d)">Minesweeper SEMI-AUTO</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+<h4 id="content_2_65">2011年3月</h4>
+<ul><li>2011/03/31 : <a href="/petc/?Toukou%2F%A4%C8%A4%EA%A4%C7%A4%CE%B9%B6%CB%C9" title="Toukou/とりでの攻防 (3069d)">とりでの攻防</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/03/27 : <a href="/petc/?Toukou%2F%B2%A6%BE%AD%A5%D1%A5%BA%A5%EB" title="Toukou/王将パズル (2225d)">王将パズル</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/03/25 : <a href="/petc/?Toukou%2F%A5%EC%A5%A4%A5%C8%A5%EC%A1%BC%A5%B7%A5%F3%A5%B0" title="Toukou/レイトレーシング (2231d)">レイトレーシング</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/03/22 : <a href="/petc/?Toukou%2F%C5%AA%C5%F6%A4%C6%A5%DB%A5%C3%A5%B1%A1%BC%401%B2%E8%CC%CC" title="Toukou/的当てホッケー@1画面 (2260d)">的当てホッケー@1画面</a> <span style="color:silver">(名無しさん)</span></li>
+<li>2011/03/17 : <a href="/petc/?Toukou%2FTYPING%20GAME" title="Toukou/TYPING GAME (2909d)">TYPING GAME</a> <span style="color:silver">(名無しさん)</span></li></ul>
+
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (1043d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2151d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (3094d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (2026d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (2037d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2488d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2689d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2259d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1349d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (32d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2481d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (12d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_5_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2688d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (7h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_5_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (238d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/03/18</h4>
+<ul>
+ <li><a href="/petc/?Contact" title="管理人へ連絡 (12d)">管理人へ連絡</a></li>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (12d)">太鼓の○人</a></li>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (12d)">Drop-m(リズムゲーム)</a></li>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (12d)">Drop-e(リズムゲーム)</a></li>
+ <li><a href="/petc/?Toukou%2FMOTHER%A5%D5%A5%A9%A5%F3%A5%C8" title="MOTHER風フォント (12d)">MOTHER風フォント</a></li>
+</ul>
+<h4>2022/03/17</h4>
+<ul>
+ <li><a href="/petc/?RecentDeleted" title="RecentDeleted (13d)">RecentDeleted</a></li>
+</ul>
+<h4>2022/02/27</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (32d)">OFコーナー</a></li>
+</ul>
+<h4>2022/02/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A4%C1%A4%E3%A4%F3%A4%C8%CC%EE%B5%E5%B7%FD%A1%A6%A5%EA%A5%DF%A5%C6%A5%C3%A5%C9%C8%C7" title="プチコちゃんと野球拳・リミテッド版 (33d)">プチコちゃんと野球拳・リミテッド版</a></li>
+</ul>
+<h4>2022/02/22</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A2%A5%CA%A5%ED%A5%B0%BB%FE%B7%D7" title="アナログ時計 (36d)">アナログ時計</a></li>
+</ul>
+<h4>2022/01/31</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A4%AB%A4%CA%A5%D5%A5%A9%A5%F3%A5%C8PETIKANA" title="プチコン用ひらがなフォント「PETIKANA」 (59d)">プチコン用ひらがなフォント「PETIKANA」</a></li>
+</ul>
+</div>
+
+<h3 id="content_5_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.549 秒  | このページの最終更新 : 2014/11/19 (水) 00:34:09  (2689d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : CHR解凍ルーチン - プチコンまとめWiki (初代/mkII)</title>
+	<link rel="stylesheet" href="../sys/skin/standard-3gou.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 数行プログラム, 画像圧縮, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+		<h2 id="header-navigation">ナビゲーション</h2>
+
+		<h3 id="header-search">ウィキ</h3>
+
+		<div id="block-topbox">
+
+			<p><strong>ウィキ メニュー</strong>
+
+				&nbsp;:&nbsp;
+				<a href="/petc/?cmd=edit&amp;page=Toukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3">編集</a> -
+				<a href="/petc/?cmd=diff&amp;page=Toukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3">差分</a> -
+				<a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3">添付</a> -
+				<a href="/petc/?plugin=newpage&amp;refer=Toukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3">新規</a> -
+				<a href="/petc/?cmd=search">検索</a> -
+				<a href="/petc/?cmd=list">一覧</a> -
+				<a href="/petc/?RecentChanges">新着</a> -
+				<a href="/petc/?Help">ヘルプ</a>
+			</p>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc3gou/">プチコン3号</a></li>
+			<li id="active">プチコン初代/mkII</li>
+		<ul>
+	</div>
+
+
+	<div id="block-body">
+
+		<div id="block-sidemenu">
+
+			<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (129d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (38d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (534d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (573d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (189d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (325d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (129d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (129d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (6d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (11d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a>
+<ul><li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1314589236/l50" rel="nofollow">総合スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1345877567/l50" rel="nofollow">質問スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1340598492/l50" rel="nofollow">意見/要望スレッド</a></li></ul></li>
+<li><a href="/petc/?Chat" title="Chat (13d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (918d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_5_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (128d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (3d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_5_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (33d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2015/03/27</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D3%A5%C3%A5%B0%A5%D6%A5%EA%A5%C3%A5%C2%A4%CE%BB%E0%C6%AE%A1%DAMML%A1%DB" title="Toukou/ビッグブリッヂの死闘【MML】 (22h)">Toukou/ビッグブリッヂの死闘【MML】</a></li>
+ <li><a href="/petc/?Toukou%2Fvs%20%A5%AF%A5%EA%A1%BC%A5%D1%A1%BC" title="Toukou/vs クリーパー (1d)">Toukou/vs クリーパー</a></li>
+</ul>
+<h4>2015/03/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FGO%21GO%21%A5%B9%A5%A4%A5%AB%B3%E4%A4%EA" title="Toukou/GO!GO!スイカ割り (3d)">Toukou/GO!GO!スイカ割り</a></li>
+ <li><a href="/petc/?Toukou%2F%A1%DAMineCraft%A1%DBpiano2.ogg%A1%DAComposed%A1%DB" title="Toukou/【MineCraft】piano2.ogg【Composed】 (3d)">Toukou/【MineCraft】piano2.ogg【Composed】</a></li>
+</ul>
+<h4>2015/03/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3TV" title="Toukou/プチコンTV (3d)">Toukou/プチコンTV</a></li>
+ <li><a href="/petc/?SandBox" title="SandBox (3d)">SandBox</a></li>
+</ul>
+<h4>2015/03/23</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%B9%A5%DE%C2%BCDX" title="Toukou/スマ村DX (4d)">Toukou/スマ村DX</a></li>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="Toukou/連鎖シミュレーター (4d)">Toukou/連鎖シミュレーター</a></li>
+</ul>
+<h4>2015/03/22</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CA%C9%BC%B0%CC%C2%CF%A9%A5%B2%A1%BC%A5%E0" title="Toukou/壁式迷路ゲーム (5d)">Toukou/壁式迷路ゲーム</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%AB%A5%E9%A5%D5%A5%EB%A1%A6%A5%C9%A5%E9%A5%E0" title="Toukou/カラフル・ドラム (6d)">Toukou/カラフル・ドラム</a></li>
+</ul>
+</div>
+
+<h3 id="content_5_3">オンライン情報</h3>
+<p>現在同時に 6 人がこのサイトを見ています</p>
+
+			</div>
+
+		</div>
+
+		<div id="block-body-container" class="with-sidemenu">
+
+			<h2>投稿プログラム : CHR解凍ルーチン</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3">CHR解凍ルーチン</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<!--  / 0.033sec. -->
+<div class="contents">
+<ul><li><a href="#rd1b3d39">  概要 </a></li>
+<li><a href="#t788f2b1"> Q&amp;A </a></li>
+<li><a href="#x0df2594"> 使い方 </a></li>
+<li><a href="#c0b34122"> 何でこんなPRG作ったんだ? </a></li>
+<li><a href="#c50eced0"> で、圧縮はどうすんだよ? </a></li>
+<li><a href="#x2195110">  スクリーンショット・動画 </a></li>
+<li><a href="#s52e01f0">  QR コード </a></li>
+<li><a href="#d8c537ff">  プログラムリスト </a>
+<ul><li><a href="#n3555179"> V1.00 </a></li></ul></li>
+<li><a href="#ua14d436"> 投票 </a></li>
+<li><a href="#hf8b77be">  バグ報告&amp;拡張依頼 </a></li>
+<li><a href="#y8fd9e5f">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2013年10月16日投稿
+/ 投稿者 : 名無しさん
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%BF%F4%B9%D4%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">数行プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%B2%E8%C1%FC%B0%B5%BD%CC">画像圧縮</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="rd1b3d39">概要</h3>
+<p>圧縮したCHRを解凍するプログラムです。</p>
+
+<h3 id="t788f2b1">Q&amp;A</h3>
+<ul><li>Q.「圧縮ツールはよ」なんて選択肢作るんだったら初めから用意しとけよ<br class="spacer" />
+A.圧縮率を下げるのが難しいんです。</li></ul>
+
+<h3 id="x0df2594">使い方</h3>
+<p>MM$に解凍前の文字列を入れて@KAITOとやると、KEK$に解凍後の文字列が出てきます。</p>
+
+<h3 id="c0b34122">何でこんなPRG作ったんだ?</h3>
+<p><span style="font-size:3px">個人的にマイクラもどきを作っている時に「自分(=素=頭)でできる圧縮方はないか」と思い発明しました。</span><br class="spacer" />
+<span style="font-size:3px">なので解凍ルーチ(ry</span></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/CHR解凍ルーチン" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="ed6cb4c6f36493a95de1dddcd93a2bf2" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">言い訳乙</td>
+   <td align="right" class="vote_td2">7&nbsp;&nbsp;
+    <input type="submit" name="vote_B8C0A4A4CCF5B2B5" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<p><span style="font-size:3px">で、マイクラ依存(当たり判定のタイプなど)の部分を取り除き今回投稿しました。</span></p>
+
+<h3 id="c50eced0">で、圧縮はどうすんだよ?</h3>
+<p>やろうと思えば人の手で圧縮できます。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">人の手による圧縮方法
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>同じパターンが連続で繰り返されている場合(000E000E・・・など)</p>
+<pre>[繰り返されている文字列(一回分)]/[繰り返されている回数],</pre>
+<p>しかし、繰り返されていない場合もあります。その際は</p>
+<pre>[繰り返されていないところ],</pre>
+<p>でOKです。</p>
+<p>例を上げておきましょう。</p>
+<pre>000EACD000E000E</pre>
+<p>という文字列があった場合、最初の</p>
+<pre>000E</pre>
+<p>はその直後には繰り返されておりませんので、</p>
+<pre>000E,</pre>
+<p>という形になります。
+その次の</p>
+<pre>ACD</pre>
+<p>も同様、</p>
+<pre>ACD,</pre>
+<p>です。
+次の</p>
+<pre>000E000E</pre>
+<p>はよく考えると000Eが2つ連続していますね。ということは今度は</p>
+<pre>000E/2,</pre>
+<p>となるわけです。
+実際に</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＭＭ＄＝”０００Ｅ，ＡＣＤ，０００Ｅ／２，”</li>
+<li>ＧＯＳＵＢ＠ＫＡＩＴＯ</li>
+<li>？ＫＥＫ＄</li>
+</ol></code></div></div>
+<p>とやると</p>
+<pre>000EACD000E000E</pre>
+<p>と出ると思います。</p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/CHR解凍ルーチン" />
+    <input type="hidden" name="vote_no" value="1" />
+    <input type="hidden" name="digest"  value="ed6cb4c6f36493a95de1dddcd93a2bf2" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">なるほどわからん</td>
+   <td align="right" class="vote_td2">14&nbsp;&nbsp;
+    <input type="submit" name="vote_A4CAA4EBA4DBA4C9A4EFA4ABA4E9A4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">なるほどわかった</td>
+   <td align="right" class="vote_td1">4&nbsp;&nbsp;
+    <input type="submit" name="vote_A4CAA4EBA4DBA4C9A4EFA4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">説明下手すぎﾜﾛﾀwwww</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_C0E2CCC0B2BCBCEAA4B9A4AE8EDC8EDB8EC077777777" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+</td></tr></table>
+
+<h3 id="x2195110">スクリーンショット・動画</h3>
+<p>サブルーチンなので存在しません。</p>
+
+<h3 id="s52e01f0">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+
+<h3 id="d8c537ff">プログラムリスト</h3>
+
+<h4 id="n3555179">V1.00</h4>
+<div class="basic-source"><div class="basic-list"><code><ol><li>＠ＫＡＩＴＯ</li>
+<li>ＫＥＫ＄＝””</li>
+<li>ＦＯＲ　ＩＩ＝０　ＴＯ　ＬＥＮ（ＭＭ＄）</li>
+<li>　ＭＭ２＄＝ＭＩＤ＄（ＭＭ＄，ＩＩ，１）</li>
+<li>　ＭＭ３＄＝ＭＩＤ＄（ＭＭ＄，ＩＩ，２５５）</li>
+<li>　ＩＦ　ＩＮＳＴＲ（ＭＭ３＄，”，”）！＝−１　ＴＨＥＮ　ＭＭ４＄＝ＭＩＤ＄（ＭＭ３＄，０，ＩＮＳＴＲ（ＭＭ３＄，”，”））　ＥＬＳＥ　ＭＭ４＄＝””</li>
+<li>　ＩＦ　ＭＭ４＄！＝””　ＡＮＤ　ＩＮＳＴＲ（ＭＭ４＄，”／”）！＝−１　ＴＨＥＮ　ＭＭ５＄＝ＭＩＤ＄（ＭＭ４＄，ＩＮＳＴＲ（ＭＭ４＄，”／”）＋１，２５５）　ＥＬＳＥ　ＭＭ５＄＝””</li>
+<li>　ＩＦ　ＭＭ５＄！＝””　ＴＨＥＮ　ＭＭ６＄＝ＭＩＤ＄（ＭＭ４＄，０，ＩＮＳＴＲ（ＭＭ４＄，”／”））　ＥＬＳＥ　ＭＭ６＄＝””</li>
+<li>　ＩＦ　ＭＭ５＄！＝””　　ＴＨＥＮ　ＫＥＫ＄＝ＫＥＫ＄＋（ＭＭ６＄＊ＶＡＬ（ＭＭ５＄））：ＧＯＴＯ　＠ＫＡＩＴＯ＿２</li>
+<li>　ＩＦ　ＭＭ４＄！＝””　ＡＮＤ　ＭＭ５＄＝＝””　ＴＨＥＮ　ＫＥＫ＄＝ＫＥＫ＄＋ＭＭ４＄</li>
+<li>　＠ＫＡＩＴＯ＿２</li>
+<li>　ＩＩ＝ＩＮＳＴＲ（ＩＩ＋１，ＭＭ＄，”，”）</li>
+<li>　ＩＦ　ＩＩ＝＝−１　ＴＨＥＮ　ＩＩ＝９９９</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+
+<h3 id="ua14d436">投票</h3>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/CHR解凍ルーチン" />
+    <input type="hidden" name="vote_no" value="2" />
+    <input type="hidden" name="digest"  value="ed6cb4c6f36493a95de1dddcd93a2bf2" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">圧縮ツールはよ</td>
+   <td align="right" class="vote_td2">19&nbsp;&nbsp;
+    <input type="submit" name="vote_B0B5BDCCA5C4A1BCA5EBA4CFA4E8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">プログラムに使いますね</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5D7A5EDA5B0A5E9A5E0A4CBBBC8A4A4A4DEA4B9A4CD" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">打ち込んだはいいが使い方がわからん</td>
+   <td align="right" class="vote_td2">2&nbsp;&nbsp;
+    <input type="submit" name="vote_C2C7A4C1B9FEA4F3A4C0A4CFA4A4A4A4A4ACBBC8A4A4CAFDA4ACA4EFA4ABA4E9A4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">いいね!</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4A4A4A4A4CD21" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダメだね!</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5E1A4C0A4CD21" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">何これ美味しいの?</td>
+   <td align="right" class="vote_td1">12&nbsp;&nbsp;
+    <input type="submit" name="vote_B2BFA4B3A4ECC8FECCA3A4B7A4A4A4CE3F" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<ul><li>何者かによって投票がいじられていたため修復しました。</li></ul>
+
+<h3 id="hf8b77be">バグ報告&amp;拡張依頼</h3>
+<br />
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div>
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/CHR解凍ルーチン" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="ed6cb4c6f36493a95de1dddcd93a2bf2" />
+  <label for="_p_comment_name_0">お名前: </label><input type="text" name="name" id="_p_comment_name_0" size="15" />
+
+  <input type="text"   name="msg_text" id="_p_comment_comment_0" size="70" />
+  <input type="submit" name="comment" value="コメントの挿入" />
+ </div>
+</form>
+
+<h3 id="y8fd9e5f">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (944d)">掲示板</a>へ)</p>
+<div><p>最新の10件を表示しています。 <a href="/petc/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2FCHR%B2%F2%C5%E0%A5%EB%A1%BC%A5%C1%A5%F3" title="コメント/Toukou/CHR解凍ルーチン (344d)">コメントページを参照</a></p>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+<ul><li><strong>名無しさん</strong> : ↑圧縮出来てないしw (<span class="comment_date">2013/10/25 (金) 07:03:17</span>)</li>
+<li><strong>名無しさん</strong> : 普通にランレングス圧縮の方がよさそう。それとサンプルの最初のコロンはなんの意味が？ (<span class="comment_date">2013/10/26 (土) 02:28:00</span>)</li>
+<li><strong>名無しさん</strong> : というか000E、ACD、000E、000Eで文字列揃ってないのなら０００ＥＡＣＤ，０００Ｅ／２でいいんじゃ？ (<span class="comment_date">2013/10/26 (土) 12:52:46</span>)</li>
+<li><strong>名無しさん</strong> : 文字列じゃなくて長さか (<span class="comment_date">2013/10/26 (土) 12:53:01</span>)</li>
+<li><strong>名無しさん</strong> : あああ (<span class="comment_date">2013/10/26 (土) 17:37:02</span>)</li>
+<li><strong>名無しさん</strong> : ０文字コード2番ASC(3)ＥＡＣＤ，０００Ｅ文字コード2番ASC(2)でやれば<span class="basic-text">０ВＥＡＣＤ，０００ＥБ</span>と言う感じに圧縮出来そう (<span class="comment_date">2013/10/26 (土) 20:55:38</span>)</li></ul>
+<hr class="full_hr" />
+<pre>pcomment以降のコメント</pre>
+<ul><li><strong>作者</strong> : お知らせです。圧縮ツールは別ページとして投稿することが決定しました。ちなみに圧縮ツールの完成度ですが、現在一文字単位の圧縮は可能です。初期のBGU0バンクの00〜0Fまでは圧縮率がすごく高まっております。あとは複数文字の処理だけです。 (<span class="comment_date">2013/10/28 (月) 12:12:36</span>)</li>
+<li><strong>天郷思音</strong> : そりゃRLEなら当たり前だと思うんだが。 (<span class="comment_date">2013/11/27 (水) 17:57:01</span>)</li>
+<li><strong>りょう</strong> : マイクラもどきだして (<span class="comment_date">2014/04/17 (木) 15:10:41</span>)</li>
+<li><strong>作者</strong> : ↑開発放棄したうえに公開するのがものすごい面倒なのでしません。 (<span class="comment_date">2014/04/17 (木) 21:22:35</span>)</li></ul>
+
+  <div>
+  <input type="hidden" name="digest" value="8ec84b6ac9363ad404a47b4144f46e04" />
+  <input type="hidden" name="plugin" value="pcomment" />
+  <input type="hidden" name="refer"  value="Toukou/CHR解凍ルーチン" />
+  <input type="hidden" name="page"   value="[[コメント/Toukou/CHR解凍ルーチン]]" />
+  <input type="hidden" name="nodate" value="" />
+  <input type="hidden" name="dir"    value="1" />
+  <input type="hidden" name="count"  value="10" />
+   お名前:  <input type="text" name="name" size="15" /> <input type="text" name="msg" size="70" />
+  <input type="submit" value="コメントの挿入" />
+  </div></form>
+</div>
+
+</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about"><strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.039 秒  | このページの最終更新 : 2015/01/26 (月) 20:08:31  (60d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

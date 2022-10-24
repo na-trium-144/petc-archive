@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : プチフォントエディタ Ver.1.40 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : プチフォントエディタ Ver.1.40 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, フォント, BIG対応" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : プチフォントエディタ Ver.1.40</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF">プチフォントエディタ</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.053sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#g7f66b09">  使い方 </a>
+<ul><li><a href="#y9d75f61">  操作方法 </a></li>
+<li><a href="#ta39b177">  メニューの説明 </a></li></ul></li>
+<li><a href="#ueaff093">  サンプルデータについて </a></li>
+<li><a href="#jbf96bf5">  作成したフォントの実装サンプルについて </a>
+<ul><li><a href="#l202623c">  フォントライブラリ (SETFONT命令) を自分のプログラムにコピペする </a></li>
+<li><a href="#hb790d75">  フォントデータを自分のプログラムにコピペする </a></li>
+<li><a href="#d3908d32">  フォントデータの読み込みプログラムを作る (コピペする) </a></li>
+<li><a href="#mce3cbb5">  白黒モードのフォントの見栄えを変更する </a></li>
+<li><a href="#p18cf8d7">  サンプルプログラムを直接フォントエディタに読ませる </a></li></ul></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#History">  バージョン履歴 </a>
+<ul><li><a href="#tff6a603">  Version 1.40 (2016/12/21 更新) </a></li>
+<li><a href="#x8028e9c">  Version 1.30 (2015/10/20 更新) </a></li>
+<li><a href="#x8028e9c">  Version 1.21 (2015/7/1 更新) </a></li>
+<li><a href="#x8028e9c">  Version 1.20 (2015/6/20 更新) </a></li>
+<li><a href="#s09515bb">  Version 1.11 (2015/3/26 更新) </a></li>
+<li><a href="#kc103391">  Version 1.10 (2014/11/30 更新) </a></li></ul></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2014年11月24日投稿
+/ 2016年12月21日更新
+/ 投稿者 : ほしけん
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%D5%A5%A9%A5%F3%A5%C8">フォント</a> <a href="/petc3gou/?cmd=taglist&amp;tag=BIG%C2%D0%B1%FE">BIG対応</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>プチコンのコンソール画面に表示する文字フォントを編集するツールです。(これはプチコン3号/BIG用です。<a href="http://wiki.hosiken.jp/petc4/?Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF" title="4:Toukou/プチフォントエディタ" rel="nofollow">プチコン4版はこちら</a>)</p>
+<p>フォントデータとして DATA 文を PRG3 スロットに生成します。最新バージョンでは、プチコンBIGの16&#10005;16ドット文字の編集にも対応しました(プログラム冒頭部分の書き換えが必要です)。</p>
+<p>フォントの作成に特化した「白黒モード」と、4096色使える「カラーモード」を文字それぞれに対して設定できます。</p>
+<ul><li>「白黒モード」は白と透過色しか使えませんが、そのかわりサクサク文字を作れてデータ量も小さく、作ったフォントデータを読み込むときにグラデーションや影を付けて見栄えを良くすることもできます。</li>
+<li>「カラーモード」は、FONTDEF 命令で実現できることがすべてできます。また、FONTDEF にそのまま渡す文字コードと文字列の組み合わせを生成するので使い方も簡単です。</li></ul>
+<p>ひとつのフォントデータ内に、両方のモードを共存させることができます。</p>
+
+<h4 id="g7f66b09">使い方</h4>
+<p>ダウンロードしたプロジェクトから FONTEDITOR という名前のプログラムを実行します。</p>
+<p>プチコンBIGの16&#10005;16ドット文字の編集をしたい場合は、プログラム冒頭部分の XON WIIU のコメントをはずし、18 行目 EDITSCALE% の数値を 2 に書き換えてください。</p>
+<p>このプログラムは、作成したフォントデータをスロット3に書き込みます。ただし、プチフォントエディタをスロット3にロードして実行している場合は、スロット2に書き込みます。</p>
+<p>編集した文字は白色、編集していなくてデータがない文字は灰色で表示されます。</p>
+
+<h5 id="y9d75f61">操作方法</h5>
+<dl><dt>画面タッチ</dt>
+<dd>編集画面をタッチすることでドットを打ったり、消したりすることができます。</dd>
+<dt>十字キー</dt>
+<dd>カーソルを移動します。</dd>
+<dt>LRボタンを押しながら十字キー、またはアナログスティック</dt>
+<dd>編集する文字を選択します。</dd>
+<dt>LRボタンを押しながら「SAVE」にタッチ</dt>
+<dd>別のファイル名で保存します。</dd>
+<dt>Aボタン</dt>
+<dd>カーソルの位置にドットを打ちます。</dd>
+<dt>Bボタン</dt>
+<dd>カーソルの位置のドットを消します。</dd>
+<dt>Xボタン、またLRボタンを押しながらタッチ (カラーモードのみ)</dt>
+<dd>スポイトです。カーソル位置、またはタッチ位置の色を取得します。</dd>
+<dt>Yボタンを押しながら十字キー (カラーモードのみ)</dt>
+<dd>パレットの色を選択します。</dd></dl>
+
+<h5 id="ta39b177">メニューの説明</h5>
+<dl><dt>?</dt>
+<dd>しょぼいヘルプを表示します。</dd>
+<dt>グリッド / GRID</dt>
+<dd>グリッドの表示を切り替えます。</dd>
+<dt>ズーム / ZOOM</dt>
+<dd>縮小して、編集中の文字の周辺にある文字も表示します。縮小しても、ドットを編集できるのはカーソルがある文字のみです。</dd>
+<dt>カラー / COL</dt>
+<dd>編集中の文字のカラーモードを切り替えます。カラーモードから白黒モードに変更する場合、ドットがすべて白色に変換されます。</dd>
+<dt>セーブ / SAVE</dt>
+<dd>作成したフォントを保存します。すでに保存済みの場合は上書き保存しますが、別名で保存したい場合はLかRを押しながらSAVEにタッチしてください。。</dd>
+<dt>ロード / LOAD</dt>
+<dd>作成したフォントを読み込みます。</dd>
+<dt>初期化 / NEW</dt>
+<dd>編集中のデータをすべて破棄します。</dd>
+<dt>文字の初期化 / DELETE</dt>
+<dd>編集中の文字のみデータを削除します。</dd>
+<dt>↑＼↓</dt>
+<dd>全体を上下反転します。</dd>
+<dt>←｜→</dt>
+<dd>全体を左右反転します。</dd>
+<dt>ぐるんとなった矢印</dt>
+<dd>全体を90゜回転します。</dd>
+<dt>三角マーク</dt>
+<dd>全体を指定した方向にずらします。</dd>
+<dt>削除 / CLEAR (CL)</dt>
+<dd>編集中の文字のドットをすべてクリアします。</dd>
+<dt>元に戻す(戻す) / UNDO (UN)</dt>
+<dd>直前の状態に戻します。</dd>
+<dt>コピー(コピ) / COPY(CP)・ペースト(ペー) / PASTE(PA)</dt>
+<dd>全体をコピペできます。</dd>
+<dt>白黒反転(INVERT)</dt>
+<dd>白黒反転します。カラーモードの時は色をネガ反転します。</dd>
+<dt>&lt;&lt; メニューへ (&lt;&lt; MENU)</dt>
+<dd>メニューに切り替えます。</dd>
+<dt>&gt;&gt; パレットへ (PALETTE)</dt>
+<dd>カラーパレットに切り替えます。カラーパレットはカラーモードのときにのみ表示されます。</dd></dl>
+
+<h4 id="ueaff093">サンプルデータについて</h4>
+<p>サンプルデータとして、このツールで作成したフォントデータが多数入っています。フォントを作るのがめんどうな方はどうぞ使ってください。</p>
+<p>なお、MISAKI.FNT、MISAKIMIN.FNT は <a href="http://www.geocities.jp/littlimi/misaki.htm" rel="nofollow">美咲ゴシック・美咲明朝</a> のひらがな・カタカナ・英字・記号です。</p>
+
+<h4 id="jbf96bf5">作成したフォントの実装サンプルについて</h4>
+<p>FONTSAMPLE というプログラムをご覧ください。</p>
+<p>プチコン BIG 用に 16x16 ドットフォントの読み込み機能を追加した FONTSAMPLE_BIG もあります。8x8 のデータを 16x16 に拡大して適用する機能もあります (少し処理が遅いです)。</p>
+
+<h5 id="l202623c">フォントライブラリ (SETFONT命令) を自分のプログラムにコピペする</h5>
+<p>50〜182行目の「このままつかえるフォントライブラリ」の部分を他のプログラム内にコピーペーストすると、白黒モードで作成したフォントデータを設定する「SETFONT」というオリジナル命令が使えるようになります。使い方は FONTDEF 命令と同じですが、1ビットの白黒データなので渡すデータは16文字で済みます。</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">’　ビックリマークのもじパターンをせってい</span></li>
+<li><span class="smbas">ＳＥＴＦＯＮＴ　＆Ｈ２１，”Ｂ８３８３８３０３０００３０００”</span></li>
+</ol></code></div></div>
+
+<h5 id="hb790d75">フォントデータを自分のプログラムにコピペする</h5>
+<p>プチフォントエディタで作成したフォントデータは、プチフォントエディタを終了した直後のPRG3スロット (トップメニューに戻るボタンの左にある「3」番ボタン) に、DATA文の形式で並んでいます。セーブしたフォントデータも同じ形式です。これも自分のプログラム内の末尾にコピーします。</p>
+<p>1文字文のデータは文字コードと、パターンデータの文字列です。パターンデータは、白黒モードなら16文字、カラーモードだとFONTDEF命令にそのまま使える256文字になります。</p>
+<p>データの開始位置をハッキリさせるため、最初に「@FONTDATA」のようなラベルを追加します。また、データの終わりをハッキリさせるため、最後の行に「DATA -1,&quot;&quot;」と追加しておきます。</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">’　ラベルは　じぶんでついか</span></li>
+<li><span class="smbas">＠ＦＯＮＴＤＡＴＡ</span></li>
+<li><span class="smbas">’　フォントデータは　コピペ</span></li>
+<li><span class="smbas">ＤＡＴＡ　＆Ｈ００２１，”Ｂ８３８３８３０３０００３０００”</span></li>
+<li><span class="smbas">ＤＡＴＡ　＆Ｈ００２２，”３６３６６Ｃ００００００００００”</span></li>
+<li><span class="smbas">　　　　　　　　　：</span></li>
+<li><span class="smbas">’　これは　じぶんでついか</span></li>
+<li><span class="smbas">ＤＡＴＡ　−１，””</span></li>
+</ol></code></div></div>
+
+<h5 id="d3908d32">フォントデータの読み込みプログラムを作る (コピペする)</h5>
+<p>そして、サンプル71〜111行目を参考に(そのまま自分のプログラムにコピペでもOK)、DATA文を1文字分のデータずつREADしてフォントデータをセットします。データが256文字だとカラーモードのパターンなので、FONTDEF命令でデータをセットします。それ以外は白黒モードと見なして、SETFONT命令でデータをセットします。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＧＯＳＵＢ　＠ＦＯＮＴＩＮＩＴ：ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＦＯＮＴＩＮＩＴ</span></li>
+<li><span class="smbas">ＲＥＳＴＯＲＥ　＠ＦＯＮＴＤＡＴＡ</span></li>
+<li><span class="smbas">ＷＨＩＬＥ　１</span></li>
+<li><span class="smbas">　　ＲＥＡＤ　ＣＨＲＣＯＤＥ％，ＰＡＴ＄</span></li>
+<li><span class="smbas">　　’　ＣＨＲＣＯＤＥ％がマイナスだと　しゅうりょう</span></li>
+<li><span class="smbas">　　ＩＦ　ＣＨＲＣＯＤＥ％＜０　ＴＨＥＮ　ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">　　ＩＦ　ＬＥＮ（ＰＡＴ＄）＝＝２５６　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　’　２５６もじだから　カラーモード</span></li>
+<li><span class="smbas">　　　　ＦＯＮＴＤＥＦ　ＣＨＲＣＯＤＥ％，ＰＡＴ＄</span></li>
+<li><span class="smbas">　　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　　　’　たぶん１６もじなので　しろくろモード</span></li>
+<li><span class="smbas">　　　　ＳＥＴＦＯＮＴ　ＣＨＲＣＯＤＥ％，ＰＡＴ＄</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">ＷＥＮＤ</span></li>
+<li><span class="smbas">ＲＥＴＵＲＮ</span></li>
+</ol></code></div></div>
+<p>ここまでやれば、初期化のタイミングで「GOSUB @FONTINIT」とすることで、フォントが初期化されます。</p>
+
+<h5 id="mce3cbb5">白黒モードのフォントの見栄えを変更する</h5>
+<p>また、サンプルの97行目(SETFONTPAT 命令の中身)で、コメントを付けたり外したりすると、白黒モードで作成したフォントに、グラデーションや影を付けて、見栄えを良くすることができます。サンプルでは、すでにグラデーションも影も有効になっています。</p>
+<p>99〜105行目の VAR FONTGRAD%= のうち、ひとつだけコメントを外すと、外したものに応じて見栄えが変わります。また、110〜112行目をコメントアウトすると、影が付かなくなります。</p>
+
+<h5 id="p18cf8d7">サンプルプログラムを直接フォントエディタに読ませる</h5>
+<p>プチフォントエディタは、フォントデータっぽいDATA文を探し出して書き換えるので、フォントサンプルブログラムをそのままプチフォントエディタに読ませてパターンを編集することもできます。同じような形式でフォントデータを組み込んだ他のプログラムも編集できますが、よく似たDATA文があると誤って書き換えるかもしれないのでそこはご注意ください。</p>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<p><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;openfile=screenshot.jpg" title="screenshot.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;src=screenshot.jpg" alt="screenshot.jpg" title="screenshot.jpg" width="384" height="512" /></a>
+<a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;openfile=sample.jpg" title="sample.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;src=sample.jpg" alt="sample.jpg" title="sample.jpg" width="512" height="384" /></a>
+<a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;openfile=ColorMode.jpg" title="ColorMode.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2F%A5%D7%A5%C1%A5%D5%A5%A9%A5%F3%A5%C8%A5%A8%A5%C7%A5%A3%A5%BF&amp;src=ColorMode.jpg" alt="ColorMode.jpg" title="ColorMode.jpg" width="512" height="384" /></a></p>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">Z32E52NE</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="History">バージョン履歴</h3>
+
+<h4 id="tff6a603">Version 1.40 (2016/12/21 更新)</h4>
+<ul><li>プチコン3号 Ver.3.2 以降、プチコンBIG 専用バージョンです</li>
+<li>プチコンBIG の16&#10005;16ドットフォントの編集に対応しました。</li></ul>
+
+<h4 id="x8028e9c">Version 1.30 (2015/10/20 更新)</h4>
+<ul><li>プチコン3号 Ver.3.2 専用バージョンです</li>
+<li>ダイアログを含め全ての表示を英語に対応</li>
+<li>サンプルフォントを30種ぐらい追加</li>
+<li>書き換えてカスタマイズできる部分をさらに前に出して分かりやすくした</li>
+<li>サンプルプログラムの整理、英語コメントの追加、およびカスタマイズしやすいようにした</li>
+<li>プロジェクト内のファイル数が特定個数のとき、ファイルダイアログでエラーになるバグを修正</li>
+<li>カラーモードを標準設定にしたとき、未作成の文字の初期状態がおかしくなるのを修正</li>
+<li>未作成の文字にカーソルを合わせたときの左上のちらつきを修正</li></ul>
+
+<h4 id="x8028e9c">Version 1.21 (2015/7/1 更新)</h4>
+<ul><li>プチコン3号 Ver.3.2 専用バージョンです</li>
+<li>サンプルフォントに美咲ゴシック、美咲明朝を追加</li>
+<li>編集できる文字に「ヵ」「ヶ」など若干の追加</li></ul>
+
+<h4 id="x8028e9c">Version 1.20 (2015/6/20 更新)</h4>
+<ul><li>プチコン3号 Ver.3.2 専用バージョンです</li>
+<li>ロードするファイル名の入力を、タッチペンやパッドで選択できるようになりました。</li>
+<li>セーブするファイル名の入力を、プチコン内蔵のダイアログに変更しました。</li>
+<li>ダイアログのメッセージを漢字化しました。</li>
+<li>メニューを日本語化しました。(プログラムの最初のほう、変数 MENULANG% を書き換えると以前と同じに戻せます)</li>
+<li>内部的にプチコン3号の新機能を使うようにしました。(ELSEIF とか、漢字のコメントとか、定数リテラルとか)</li>
+<li>白黒モードのときはパレットの代わりにメッセージを表示するようにしました。</li>
+<li>編集中の文字に点滅カーソルを表示するようにしました。</li>
+<li>サンプルフォントを追加しました。</li></ul>
+
+<h4 id="s09515bb">Version 1.11 (2015/3/26 更新)</h4>
+<ul><li>プチコン3号 Ver.3.1 専用バージョンです</li>
+<li>未編集の文字を編集するとき、デフォルトのパターンが編集欄に表示されるようになりました
+<ul><li>従来のとおり空白がいい場合は、23行目を TRUE に書き換えてください</li></ul></li></ul>
+
+<h4 id="kc103391">Version 1.10 (2014/11/30 更新)</h4>
+<ul><li>カラーモードを追加</li>
+<li>ZOOM、GRID、NEW、DELETE ボタンを追加</li>
+<li>操作性の細かい変更</li>
+<li>スロット3から実行できるように修正</li></ul>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (1220d)">掲示板</a>へ)</p>
+<ul><li><strong>neko800</strong> : Aボタンを離すとbefore any PRG function in 0:508となります (<span class="comment_date">2014/11/24 (月) 15:34:43</span>)</li>
+<li><strong>neko800</strong> : サンプルをロードしていない状態で編集しようとした場合にエラーがでるようですね。解決しました。素晴らしいソフトを作ってくれてありがとうございます。 (<span class="comment_date">2014/11/24 (月) 15:40:43</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : すいません! 29行目に <span class="basic-text smbas">:PRGEDIT 3</span> を付け足すとなおります。公開キーは今差し替えました。ありがとうございます。よければ使いまくってください! (<span class="comment_date">2014/11/24 (月) 15:43:57</span>)</li>
+<li><strong>キービィ</strong> : 管理人さんも頑張ってますね。 (<span class="comment_date">2014/11/25 (火) 18:35:41</span>)</li>
+<li><strong>名無しさん</strong> : このツールホント使いやすい。 GJ (<span class="comment_date">2014/11/26 (水) 19:13:32</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : ありがとうございます! もうすぐフルカラーにも対応します。プチコン3号が作りやすすぎてさくっと実装できました。 (<span class="comment_date">2014/11/26 (水) 21:13:18</span>)</li>
+<li><strong>名無しさん</strong> : よくわからないです〜 (<span class="comment_date">2014/11/28 (金) 20:46:29</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : 分からないところを具体的に言っていただければ答えますよ (<span class="comment_date">2014/11/29 (土) 15:59:30</span>)</li>
+<li><strong>えいだ</strong> : 使いやすくてすばらしいです。一つ調べていただきたいことが。サンプルのアタリフォントの小文字のgの字形が小文字のjになっているように思います。 (<span class="comment_date">2014/11/30 (日) 09:23:32</span>)</li>
+<li><strong>えいだ</strong> : 使いやすくてすばらしいです。一つ調べていただきたいことが。サンプルのアタリフォントの小文字のgの字形が小文字のjになっているように思います。 (<span class="comment_date">2014/11/30 (日) 09:47:04</span>)</li>
+<li><strong>えいだ</strong> : 誤再送失礼しました。前のコメントですが、v1.10に更新したら直りました。お騒がせしました。 (<span class="comment_date">2014/11/30 (日) 11:07:52</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : いえいえ! サンプルデータは全体的に手直ししました。 (<span class="comment_date">2014/11/30 (日) 22:05:34</span>)</li>
+<li><strong>名無しさん</strong> : この作ったフォントを自分のプログラムで使うにはどのように打ちこめばよいのでしょうか？ (<span class="comment_date">2014/12/06 (土) 19:00:28</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : PRGスロット3にDATA文が生成されています。使い方はFONTSAMPLEというプログラムを見てください。解説は明日までに書きます。 (<span class="comment_date">2014/12/06 (土) 20:21:06</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : 解説書きました。わからないことがあったら聞いてください。 (<span class="comment_date">2014/12/07 (日) 01:19:23</span>)</li>
+<li><strong>名無しさん</strong> : 解説見てなんとかできました…！ありがとうございます。 (<span class="comment_date">2014/12/08 (月) 21:24:52</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : 説明を書いてたらなんか複雑な気がしたので不安でしたが、無事伝わってよかったです! (<span class="comment_date">2014/12/09 (火) 00:11:27</span>)</li>
+<li><strong>まげ</strong> : 遅ればせながら使わせていただきました。さりげなく行う動作が思った結果になるという、ユーザーインターフェースを熟知した、とても快適な操作感ですね。 (<span class="comment_date">2015/03/21 (土) 07:13:30</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : ありがとうございます! プチコン3号が作りやすいので、UIもしっくりくる形に作りやすかったです。 (<span class="comment_date">2015/03/26 (木) 02:21:13</span>)</li>
+<li><strong>mintyan</strong> : さすがですねほしけんさん 片っ端からこれをよんでやればここまで出来るなんて感動です 使わせていただきます (<span class="comment_date">2015/04/29 (水) 14:11:44</span>)</li>
+<li><strong>Newきゃらくたぁ製作所</strong> : <a href="https://miiverse.nintendo.net/posts/AYIHAAAEAABEVRTpflteFg" rel="nofollow">https://miiverse.nintendo.net/posts/AYIHAAAEAABEVRTpflteFg</a> (<span class="comment_date">2015/07/14 (火) 07:46:59</span>)</li>
+<li><strong>anek</strong> : 素晴らしいエディタです。が、スロット2と3ともに埋まった状態で起動すると動きませんね・・・。 (<span class="comment_date">2015/11/14 (土) 17:34:22</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : スロット3に大きいプログラムがあると、そこからフォントデータを探し始めるので起動に時間がかかります。RUNSLOT%=〜 に1を入れるようにするとスロット1を対象に編集できます。 (<span class="comment_date">2015/11/15 (日) 14:33:12</span>)</li>
+<li><strong>やら</strong> : トップメニューって何? (<span class="comment_date">2017/01/31 (火) 15:50:11</span>)</li>
+<li><strong>いるのか？。。。。。。？がありますはどうでもないのかなんぷちゃんとかなのかなんか。！</strong> : あ、これRwiiugさんが使ってたやつ (<span class="comment_date">2017/10/25 (水) 05:48:52</span>)</li>
+<li><strong>SOU</strong> : 役に立ちました！ありがとうございます！ (<span class="comment_date">2017/12/17 (日) 16:03:43</span>)</li>
+<li><strong>Moi</strong> : 文字のグラデーションを消す方法を教えてください。 (<span class="comment_date">2017/12/19 (火) 19:16:04</span>)</li>
+<li><strong>Moi</strong> : &#8679;サンプルの話です (<span class="comment_date">2017/12/21 (木) 18:08:38</span>)</li>
+<li><strong>思うに</strong> : FONTDEF形式なので0000とFFFF以外をFFFFに書き換えれば? (<span class="comment_date">2018/03/03 (土) 11:40:45</span>)</li>
+<li><strong>moi</strong> : なるほど (<span class="comment_date">2018/03/03 (土) 18:12:44</span>)</li>
+<li><strong>プチコンまとめWiki管理人</strong> : いまさらの回答ですいません。フォントの読み込みサンプルにて、グラデーションの設定ができる場所がありますので、設定を書き換えてください。コメントに詳細を記載しています。(何行目か忘れた) (<span class="comment_date">2018/03/09 (金) 12:41:28</span>)</li>
+<li><strong>moi</strong> : 出来ました！ (<span class="comment_date">2018/03/09 (金) 18:05:26</span>)</li>
+<li><strong>yasu325</strong> : ああああ (<span class="comment_date">2018/07/15 (日) 17:50:31</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : これいいね！ (<span class="comment_date">2019/02/11 (月) 15:44:55</span>)</li>
+<li><strong>名無しさん</strong> : EDITモードでフォントを使うにはどうしたらよいでしょうか (<span class="comment_date">2019/04/01 (月) 13:28:51</span>)</li>
+<li><strong>名無しさん</strong> : @A P&#8203;R&#8203;G&#8203;E&#8203;D&#8203;I&#8203;T&#8203; &#8203;3消さないで (<span class="comment_date">2019/04/01 (月) 13:33:05</span>)</li>
+<li><strong>名無し</strong> : これすご (<span class="comment_date">2020/03/03 (火) 08:24:49</span>)</li>
+<li><strong>名無しさん</strong> : デフォルトのサンプルプログラムに全然あっていいレベル (<span class="comment_date">2020/03/03 (火) 08:42:02</span>)</li>
+<li><strong>名無しさん</strong> : 自分が使ってるのはこれとは別のフォントエディタ (<span class="comment_date">2020/03/03 (火) 11:26:09</span>)</li>
+<li><strong>名無しさん</strong> : 確認したら、FONT_EDITAというフォルダ名で、FONTDEFというかファイル名のものでした。 (<span class="comment_date">2020/03/03 (火) 17:09:25</span>)</li>
+<li><strong>名無しさん</strong> : ↑のフォントエディタ作った人のNNIDわかりました。Yoshi-Lupin0622です。 (<span class="comment_date">2021/01/01 (金) 18:28:44</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/プチフォントエディタ" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="12edd6e5b6006417a040f88129ae277e" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (836d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2273d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (865d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (310d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (915d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (110d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1044d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (256d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (540d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (980d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1511d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (492d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (389d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (99d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/11/28</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A4%D2%A4%ED%A4%CE%A5%C4%A1%BC%A5%EB%BD%B8" title="ひろのツール集 (4h)">ひろのツール集</a></li>
+</ul>
+<h4>2021/11/26</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CF%A5%AB%A5%BB%A4%CE%B5%B4%A4%B4%A4%C3%A4%B3" title="ハカセの鬼ごっこ (1d)">ハカセの鬼ごっこ</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%AC%A4%E9%A4%AF%A4%BF%A5%DC%A5%C3%A5%AF%A5%B9" title="ツールアンドゲーム（元がらくたボックス） (1d)">ツールアンドゲーム（元がらくたボックス）</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CF%A5%AB%A5%BB%A4%F2%C5%DD%A4%B9" title="ハカセを倒す (1d)">ハカセを倒す</a></li>
+</ul>
+<h4>2021/11/25</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D4%A5%A2%A5%CE%2C%A5%AE%A5%BF%A1%BC%A4%CE%A5%B3%A1%BC%A5%C9%CE%FD%BD%AC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="ピアノ、ギターのコード練習プログラム (2d)">ピアノ、ギターのコード練習プログラム</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%B8%F7%CD%E3%A4%CE%A5%EA%A5%F3%A5%C9%A5%D6%A5%EB%A5%E0" title="光翼のリンドブルム (3d)">光翼のリンドブルム</a></li>
+</ul>
+<h4>2021/11/24</h4>
+<ul>
+ <li><a href="/petc3gou/?CK2KYDG6" title="CK2KYDG6 (3d)">CK2KYDG6</a></li>
+ <li><a href="/petc3gou/?Toukou%2FM-OS" title="M-OS (3d)">M-OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FSHSENDER" title="SHSENDER (3d)">SHSENDER</a></li>
+</ul>
+<h4>2021/11/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (4d)">リズミカルおもちつきTG NEO</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A4%D2%A4%ED%A4%CE%A5%C4%A1%BC%A5%EB%BD%B8" title="Toukou/ひろのツール集 (4h)">ひろのツール集<span class="counter">(14)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO" title="Toukou/HERO (1036d)">HERO -君は、愛する人を守り抜くことが出来るか？<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%AC%A4%E9%A4%AF%A4%BF%A5%DC%A5%C3%A5%AF%A5%B9" title="Toukou/がらくたボックス (1d)">ツールアンドゲーム（元がらくたボックス）<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (6d)">Nintendo全記号Unicode一覧表<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%B2%BB%B3%DA%A4%C4%A4%AF%A4%ED%A4%A6%A4%BC%A1%AA" title="Toukou/音楽つくろうぜ！ (369d)">音楽つくろうぜ！<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSHSENDER" title="Toukou/SHSENDER (3d)">SHSENDER<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (731d)">NCF MUSEQ STATION<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%AA%A4%E2%A4%C1%A4%B5%A4%F3%C6%F3%CF%BA" title="Toukou/おもちさん二郎 (186d)">おもちさん二郎<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C6%E6%A4%CE%B3%CA%C6%AE%A5%B2%A1%BC%A5%E0%A1%CA%C2%CE%B8%B3%C8%C7%A1%CB" title="Toukou/謎の格闘ゲーム（体験版） (206d)">謎の格闘ゲーム（体験版）<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%DF%A5%AF%A5%ED%A5%F3%A5%E2%A5%F3%A5%B9%A5%BF%A1%BC" title="Toukou/ミクロンモンスター (110d)">ミクロンモンスター<span class="counter">(5)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1545d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 6476 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.057 秒  | このページの最終更新 : 2021/01/01 (金) 18:28:44  (330d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

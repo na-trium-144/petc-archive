@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン3号&amp;BIG 非公式初心者講座 : 第7章 サンプルプログラム3 (前) - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン3号&amp;BIG 非公式初心者講座 : 第7章 サンプルプログラム3 (前) - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Beginner%2FChapter7">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Beginner%2FChapter7">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter7">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Beginner%2FChapter7">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン3号&amp;BIG 非公式初心者講座 : 第7章 サンプルプログラム3 (前)</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Beginner">Beginner</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Beginner%2FChapter7">Chapter7</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.194sec. -->
+<div style="margin-bottom:2em;">
+<div style="text-align:center">[ <a href="/petc3gou/?Beginner%2FChapter6" title="Beginner/Chapter6 (1692d)">← 第6章へ</a>
+|
+<a href="/petc3gou/?Beginner#beginner-contents" title="Beginner (564d)">もくじに戻る</a>
+|
+<a href="/petc3gou/?Beginner%2FChapter8" title="Beginner/Chapter8 (1694d)">第8章へ →</a> ]</div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+<h3 id="fcbdaf0d">プログラマーからひとこと</h3>
+<p>配列変数のことはもう大丈夫ですか？<br />
+もはやこの章ではあたりまえのように配列がFOR文といっしょに使われています。<br />
+一歩ひきかえすのもいいかもしれません。何度も読んだり、自分で打ってみて、ついでにちょっと書き換えたりしてみて、自分のものになることもあるものです。<br />
+<br />
+心配のしすぎだったでしょうか。<br />
+<br />
+前回はかなりプログラムっぽいことをやったので、今回はちょっと方向をかえてリアルタイムのキー入力や、十字ボタンの操作なんてやってみます。<br />
+「リアルタイム」というのは、まあいろいろ意味はあるんですが、いまは「押したらすぐ動く」みたいなものと思っていいんじゃないでしょうか。<br />
+けっこうゲームっぽいですね。<br />
+<br />
+そういう意味ではけっこう大事なことをまなぶサンプルかもしれません。<br />
+けっこう長くなっているので、今回と次回の２つにわけて見ていきましょう。<br />
+<br />
+あと、BEEP命令で音を出すヒントもちょっとついてますよ。</p>
+</div>
+
+<h3 id="ee359b3b">SYSBEEP変数</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>サンプルプログラム３は、まあちょっとした楽器プログラムじゃな。</p>
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤ”ＳＹＳ／ＥＸ３ＫＥＹＤＲＵＭ”</span></li>
+<li><span class="smbas">ＲＵＮ</span></li>
+</ol></code></div></div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter7&amp;src=screenshot_exdrum.jpg" alt="screenshot_exdrum.jpg" title="screenshot_exdrum.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これを読んでいるPCなどの前のみんなも、サンプルを<span class="basic-text smbas">ＲＵＮ</span>してためしてみよう！　前も言ったけど。<br class="spacer" />今回はプログラムリストを3DSで見ながら読むとわかりやすいよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ピアノ風のキーボードが１オクターブと、ドラムが４音使えるんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>実はもっとエキスパート向きのMMLという音楽機能もプチコン3号にはあるのじゃが……まあ、最初のウチはあっさり目におぼえるのがよかろう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ツーバスやハイハットを考えてねェあたり好感がもてるぜ。だがピアノなんざ資産階級のオモチャじゃねえか！　いただけねえな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ワンパク君はいささか音楽的にかたよったエイキョウばかり受けている気がするんじゃが、まあピアノがイヤならプログラムを改造するというコトもできるぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムをサイショから見ていこうか。まず気になるのはどこかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>１〜21行まではだいたいおなじみの画面表示だね。８行目が引っかかるなあ。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="8"><li><span class="smbas">ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ　　’システムＳＥをオフ</span></li>
+</ol></code></div></div>
+<p>「<span class="basic-text smbas">＝</span>」を使ってるってことは、変数？</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いいところに気がついたね。この<span class="basic-text smbas">ＳＹＳＢＥＥＰ</span>は「システム変数」という、変数の一種なんだ。システム変数はプチコンの動作にかかわるデータが入るようになっているよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウンザリだぜ！　配列変数をやっとオボえたってのに、また変数のバリエーションかよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>今はこんがらがりそうだから変数のことは考えずに、命令として丸暗記しておいた方が早いかもしれないね。<br class="spacer" />「<span class="basic-text smbas">ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ</span>」と書くと、プチコンのシステム音が鳴らなくなるんだよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>オボエるのがそれだけなら、まあカンタンかな。このプログラムでキーボードを打っても、いつもの「コッ」ていう音が出なかったのは<span class="basic-text smbas">ＳＹＳＢＥＥＰ</span>を使ったからなんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そういや<span class="basic-text smbas">ＢＥＥＰ</span>はサウンドを鳴らす命令だったな。<span class="basic-text smbas">ＳＹＳＢＥＥＰ</span>の「SYS」ってのはシステムの「シス」ってコトか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>「FALSE」は「まちがった」って意味だと思ったけど……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>プログラムの世界ではちょっと意味が変わって「偽」などと言うのじゃが、どう見てもイッパンテキではないのう。おおざっぱなオボエかたじゃが、アリ・ナシの「ナシ」がFALSE、とオボエると今後なにかとワカりやすいぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>システムのBEEPが「ナシ」、つまりシステム音を鳴らさない、ってコトか……ワカりやすいが、じゃあ鳴らすようにモドすにはどうすりゃイイんだ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left">
+<p>イッキにプログラムのサイゴになるが、82行で使っておるな。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="82"><li><span class="smbas">ＳＹＳＢＥＥＰ＝ＴＲＵＥ</span></li>
+</ol></code></div></div>
+<p>「TRUE」は「真」と言うが、これも「アリ」とオボエておけばよかろう。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ワカモノコトバをムリに使ってるカンジもするが、ワカりやすいことはタシカだな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>それ、ワシに言っとるのかの……？</p>
+
+ </div>
+</div>
+
+<h3 id="s411fb28">インデント</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>24〜43行は、配列とFOR〜NEXT、READ・DATAを使ったおなじみのプログラムだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>配列変数<span class="basic-text smbas">Ｎ＄［］</span>にキーボードを左から順に入れてるのはだいたいワカったゼ。たぶん、そのウチこの変数を使うんだろ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>39行で使っている変数<span class="basic-text smbas">ＫＣＮＴ</span>は何なんだろう？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="39"><li><span class="smbas">ＫＣＮＴ＝１８</span></li>
+<li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　ＫＣＮＴ−１</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ケンバンの数、すなわち18コと考えてもらえばいいかの。「Kenban」の「CouNT」じゃから<span class="basic-text smbas">ＫＣＮＴ</span>じゃ。変数の名前を決めるのはけっこうナヤむところじゃわい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>おっと待った、こういうコトにはオレはうるさいゼ！　わざわざ変数にしなくても、<span class="basic-text smbas">ＦＯＲ　Ｉ＝０　ＴＯ　１７</span>でいいんじゃねェか!?</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>う、ウム。このアトにも１回しか使っておらんし、そうとも言えるのう。じゃが、コレはケンバンの数をふやす改造をするトキにベンリなように作っておるのじゃよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>まァそのヘンはいいとしてもよォ、42行で１文字スペースがあいてんのはナンかイミあんのか？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="41"><li><span class="smbas">ＦＯＲ　Ｉ＝０　ＴＯ　ＫＣＮＴ−１</span></li>
+<li><span class="smbas">　ＲＥＡＤ　Ｎ＄［Ｉ］</span></li>
+<li><span class="smbas">ＮＥＸＴ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>これはプログラム用語で「インデント」というヤツじゃな。カンタンに言えば、FORやGOTOで「くり返しているナカミ」のブブンだけ、１文字スペースを空けておるのじゃ。<br class="spacer" />これはまだ１行じゃからあまりイミはないが、ナカミが何行もあったりFORの中にFORがあったりするトキには、なかなか見やすくなっててイイものじゃぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>「<span class="basic-text smbas">’</span>」のコメントもそうだけど、プログラムがどう動いているのか、リストを他人が見てもすぐわかるように書くのはダイジだよね。<br />
+たとえば次の46〜47行みたいに、変数のイミをコメントで書いておいたりとかね。ハンオンブンとだけ書かれても、結局イミがイマイチよくわからなかったりするけど。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="46"><li><span class="smbas">Ｆ＝１００　’ハンオンブン</span></li>
+<li><span class="smbas">Ｖ＝２２　’おんしょく</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>インテリ君は上げてから落とすのがウマいのう……。</p>
+
+ </div>
+</div>
+
+<h3 id="oc2291c6">BEEP命令のピッチ</h3>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="46"><li><span class="smbas">Ｆ＝１００　’ハンオンブン</span></li>
+<li><span class="smbas">Ｖ＝２２　’おんしょく</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>この変数のイミを教えるには、まず<span class="basic-text smbas">ＢＥＥＰ</span>命令についてもっとクワしく説明がヒツヨウじゃな。<br class="spacer" /><span class="basic-text smbas">ＢＥＥＰ　２２</span>でピアノの音を鳴らす、ココまでは知っておるハズじゃな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>このプログラムでも使っている音色ですね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>その先はボクが説明しようか。<span class="basic-text smbas">ＢＥＥＰ</span>命令にはもっとフクザツな使い方があって、ピッチを決めることもできるんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ビ……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>「PITCH」は「音高」とも言うんだけど、カンタンに言えば音の高さのことだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>音の……タカ……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ワンパク君は音楽にはくわしいと思っていただけに、さすがにその反応にはオドロキを隠せないよ。<br class="spacer" />たとえばドレミの「ミ」の音は「ド」より「高い」という言い方をするよね。ドからレ、レからミ、ファソラシド……と先に行くほどピッチが高くなる、と思えばだいたいマチガイじゃないよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>音楽リロンを気にしてるようじゃパンクじゃねーゼ！　もっとストレートにセツメイしやがれ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>たとえば<span class="basic-text smbas">ＢＥＥＰ　２２，０</span>はピアノのドの音が鳴って、<span class="basic-text smbas">ＢＥＥＰ　２２，２００</span>でレの音になると言えば実感できるかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>「<span class="basic-text smbas">，</span>」の後の数字がピッチになっているんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>それイジョウ難しいコトをさえずるようなら、オレのベースが火をふくゼ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ワンパク君にとってのベースギターは人をナグる武器だからなあ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>うーん、じゃあこう説明しよう。ドレミをセイカクに言うと「ド・ド＃・レ・レ＃・ミ・ファ・ファ＃・ソ・ソ＃・ラ・ラ＃・シ」だね。最初の「ド」がピッチ<span class="basic-text smbas">０</span>だと考えて、ひとつ右に行くごとにピッチの数字が<span class="basic-text smbas">１００</span>ずつ増えるとおぼえるといいんじゃないかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>フーム……まったくリクツがワカった気はしねえが、そういうモンだとわりきってオボエればいいってコトだな！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>（ワンパク君のロックと、ボクらが知ってるロックは少しちがうのかもしれない……）</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ハナシはワカったようじゃな。そこで46行目にモドるが、<span class="basic-text smbas">Ｆ＝１００</span>というのはまさにピッチを増やすキジュンの数、<span class="basic-text smbas">Ｖ＝２２</span>はピアノの音色の番号というワケじゃ。あとあと<span class="basic-text smbas">ＢＥＥＰ</span>命令でこの変数を使っておるからオボエておいてくれい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>つまり変数<span class="basic-text smbas">Ｖ</span>の数を変えればピアノ以外の音も出せるってワケだな。<span class="basic-text smbas">Ｖ＝２０</span>なんかロックでいいんじゃねェか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ここを読んでるみんなも数字を変えて<span class="basic-text smbas">ＲＵＮ</span>してみよう！</p>
+
+ </div>
+</div>
+
+<h3 id="c2cedb79">BUTTON()命令</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムリストは50行からメインループに入るね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>その「メインループ」ってのはナンだ？　メインなのはなんとなくオレにもワカるけどよォ、ループするってコトは無限ループになったりすんのか？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>そうマチガっとるワケでもないぞい。じゃが、やってはならない無限ループとちがって、これはヒツヨウなループなのじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ちょっと実感がわかないけど、先を読むとわかってくるのかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>まずドラムが、54〜60行目か。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="54"><li><span class="smbas">’−−−　ドラム</span></li>
+<li><span class="smbas">Ｂ＝ＢＵＴＴＯＮ（１）</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　１　ＴＨＥＮ　ＢＥＥＰ　５２</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　２　ＴＨＥＮ　ＢＥＥＰ　５３</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　４　ＴＨＥＮ　ＢＥＥＰ　６２</span></li>
+<li><span class="smbas">ＩＦ　Ｂ　ＡＮＤ　８　ＴＨＥＮ　ＢＥＥＰ　２５</span></li>
+<li><span class="smbas">ＩＦ　Ｂ＝＝６４　ＧＯＴＯ　＠ＥＸＩＴ</span></li>
+</ol></code></div></div>
+<p>ワカらねえコトだらけで、ドコから手をつければいいのかもワカらねえぜ！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そういうことなら、まず55行目の<span class="basic-text smbas">Ｂ＝ＢＵＴＴＯＮ（１）</span>がポイントだね。こう書くと、3DSの何ボタンが押されたか、変数<span class="basic-text smbas">Ｂ</span>に入るようになっているんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ボタンっていうと、3DSのＡボタンみたいな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>3DSのボタンはだいたい全部だね。この表を見てごらん。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td" style="background-color:white;">1</td><th class="style_th">Aボタン</th><td class="style_td" style="background-color:white;">16</td><th class="style_th">Lボタン</th><td class="style_td" style="background-color:white;">256</td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td" style="background-color:white;">2</td><th class="style_th">Bボタン</th><td class="style_td" style="background-color:white;">32</td><th class="style_th">Rボタン</th><td class="style_td" style="background-color:white;">512</td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td" style="background-color:white;">4</td><th class="style_th">Xボタン</th><td class="style_td" style="background-color:white;">64</td><td class="style_td"></td><td class="style_td" style="background-color:white;"></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td" style="background-color:white;">8</td><th class="style_th">Yボタン</th><td class="style_td" style="background-color:white;">128</td><td class="style_td"></td><td class="style_td" style="background-color:white;"></td></tr></tbody></table></div>
+<p>たとえば十字ボタンの上を押したときは、変数<span class="basic-text smbas">Ｂ</span>には<span class="basic-text smbas">１</span>が入る。右ボタンなら<span class="basic-text smbas">４</span>だね。</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナンだってこんなハンパな数なんだ？　<span class="basic-text smbas">２</span>の次は<span class="basic-text smbas">３</span>でいいじゃねェか！　ジュンバンに数字をふれば１〜12ですむハナシだろ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>じゃあ十字ボタンの左上を押したときを考えてごらん。左は<span class="basic-text smbas">４</span>、上は<span class="basic-text smbas">１</span>だね。だから<span class="basic-text smbas">４＋１</span>で、変数には<span class="basic-text smbas">５</span>が入ることになるんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>同時押しされた時を考えて、わざと数字に間をあけてるってコト？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>フツウはまずないことだけど、上と下が同時に押されれば<span class="basic-text smbas">１＋２</span>で<span class="basic-text smbas">３</span>、さらに左も押せば<span class="basic-text smbas">３＋４</span>で<span class="basic-text smbas">７</span>だね。こういうふうにどんな組み合わせで何個ボタンを押しても、同じ数字が出てこないようにできてるんだよ。もともとはビット演算という考えかたが……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>おっと、ヤヤコシそうなハナシはゴメンだぜ！　とにかくシクミはワカッたぜ。タブンその後のIF文で変数<span class="basic-text smbas">Ｂ</span>にあわせた音を鳴らしたりしてんだろ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>たしかにほぼそのトオリじゃ。ワンパク君のいろいろすっとばしたリカイリョクには、野生のたくましさを感じるのう。</p>
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h4 id="yc960a40">ボタンの定数リテラル</h4>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/hakase.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-right"><p>ワシじゃよ、プチコンで会いに行けるアイドルとよばれとるハカセじゃ。<br />
+押されているボタンをとる方法はわかっても、どのボタンがどの数字に対応しているかは、ワシだってなかなか覚えられないもんじゃ。</p>
+
+ </div>
+</div>
+
+<h5 id="o0f48e7e">定数リテラル</h5>
+<p>ボタンの入力を<span class="basic-text smbas">IF</span>で比較するとき、ジツは数字のかわりに以下の文字が使えるんじゃ。これは定数リテラルと呼ばれておるが、名前は覚えなくてもいいぞい。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td"><span class="basic-text smbas">#UP</span></td><th class="style_th">Aボタン</th><td class="style_td"><span class="basic-text smbas">#A</span></td><th class="style_th">Lボタン</th><td class="style_td"><span class="basic-text smbas">#L</span></td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td"><span class="basic-text smbas">#DOWN</span></td><th class="style_th">Bボタン</th><td class="style_td"><span class="basic-text smbas">#B</span></td><th class="style_th">Rボタン</th><td class="style_td"><span class="basic-text smbas">#R</span></td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td"><span class="basic-text smbas">#LEFT</span></td><th class="style_th">Xボタン</th><td class="style_td"><span class="basic-text smbas">#X</span></td><td class="style_td"></td><td class="style_td"></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td"><span class="basic-text smbas">#RIGHT</span></td><th class="style_th">Yボタン</th><td class="style_td"><span class="basic-text smbas">#Y</span></td><td class="style_td"></td><td class="style_td"></td></tr></tbody></table></div>
+<p>たとえば、「十字ボタン→」の入力を知りたい場合、</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＩＦ　Ａ　ＡＮＤ　８　ＴＨＥＮ　．．．</span></li>
+</ol></code></div></div>
+<p>と書くかわりに……</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＩＦ　Ａ　ＡＮＤ　＃ＲＩＧＨＴ　ＴＨＥＮ　．．．</span></li>
+</ol></code></div></div>
+<p>と書くことができるぞい。覚えやすいし、読む人にもやさしいのじゃ。</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ　＃ＲＩＧＨＴ</span></li>
+<li><span class="smbas">８</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<p>この正体は、数字が入ったただのハコじゃ。こうみると変数みたいじゃが、変数とちがって中身はエイエンに変わらないんじゃ。じゃから定数とよぶのじゃな。プチコン3号には、ボタン用だけでなく、COLOR命令用など、さまざまな種類の定数リテラルが用意されているぞい。</p>
+</div>
+
+<h3 id="f7ce4d22">メインループ</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>このままプログラムリストの先に進んでもいいけど、その前にさっきもちらっと出てきた「ループ」の考え方を知っておくほうがよさそうだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナンだかフクザツなハナシのヨカンを感じるぜ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>いやいや、フクザツにならないための予習さ。ちょっとDIRECTモード <img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter1&amp;src=key_direct.png" alt="key_direct.png" title="key_direct.png" width="42" height="26" /> で<span class="basic-text smbas">ＮＥＷ</span>と打ってごらん。</p>
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＮＥＷ</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>これがナンだってんだ？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あ、EDITモード <img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter1&amp;src=key_edit.png" alt="key_edit.png" title="key_edit.png" width="42" height="26" /> にすると……</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter1&amp;src=screenshot_edit.jpg" alt="screenshot_edit.jpg" title="screenshot_edit.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プ、プログラムリストがゼンブ消えてるじゃねェか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムリストを消すのが<span class="basic-text smbas">ＮＥＷ</span>命令なのか……マチガって使ったらコワいね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>サンプルプログラムはまた<span class="basic-text smbas">ＬＯＡＤ</span>しなおせばいいけど、自分のプログラムは消す前に<span class="basic-text smbas">ＳＡＶＥ</span>を忘れずにね！<br />
+じゃあループの話にもどって、このプログラムを打ってみよう。プログラムのイミは分かるかな？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＩＮＰＵＴ”にゅうりょく”；Ａ</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”こたえは”；Ａ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>またずいぶんシンプルな……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>オレをバカにしてんのか？　ヨウするに<span class="basic-text smbas">ＩＮＰＵＴ</span>で変数<span class="basic-text smbas">Ａ</span>を入れさせて、それを<span class="basic-text smbas">ＰＲＩＮＴ</span>してるだけじゃねェか！</p>
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＲＵＮ</span></li>
+<li><span class="smbas">にゅうりょく？１</span></li>
+<li><span class="smbas">こたえは１</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>その通り。じゃあ、<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令を使って同じことをするにはどうすればいいかな？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>１行ふえちまうが、こういうコトだな？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ”にゅうりょく”</span></li>
+<li><span class="smbas">Ａ＝ＢＵＴＴＯＮ（１）</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”こたえは”；Ａ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＲＵＮ</span></li>
+<li><span class="smbas">にゅうりょく</span></li>
+<li><span class="smbas">こたえは０</span></li>
+<li><span class="smbas">ＯＫ</span></li>
+</ol></code></div></div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>あれ？　なにもしないうちにプログラムが終わっちゃったよ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>どういうコトだチクショー！　ボタンを押してねェんだからそりゃ「<span class="basic-text smbas">こたえは０</span>」だろうぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そこだよ！　<span class="basic-text smbas">ＩＮＰＵＴ</span>命令とちがって、<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令では「ボタンを押してない」ことも入力のウチなんだ。だから<span class="basic-text smbas">ＲＵＮ</span>したとたんに終わっちゃうんだね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>じゃあどうすりゃボタンを押すまで待ってもらえるってんだ、ナットクできねえぞ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>何回でも<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令をやり直すってことだよね。こうすればいいのかな？</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ”にゅうりょく”</span></li>
+<li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li><span class="smbas">Ａ＝ＢＵＴＴＯＮ（１）</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”こたえは”；Ａ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+</ol></code></div></div>
+<p>……あ、これじゃダメだ……。</p>
+
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter7&amp;src=screenshot_button1.jpg" alt="screenshot_button1.jpg" title="screenshot_button1.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>やっぱり。<span class="basic-text smbas">ＰＲＩＮＴ</span>文もループの中に入ってるからどんどん書き続けちゃう……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>でもなかなか悪くないよ。ボタン入力の結果を<span class="basic-text smbas">ＰＲＩＮＴ</span>するのはデキてるからね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>タシカに、ボタンを押したシュンカンだけは「<span class="basic-text smbas">こたえは</span>」の後にちゃんと数字が入ってる……ような気がする……チクショウ、見づれえんだよ！<br class="spacer" />ボタンを押すと同時にSTARTボタンで止めてやる！</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter7&amp;src=screenshot_button2.jpg" alt="screenshot_button2.jpg" title="screenshot_button2.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>……ン？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>なんだかヘンだね。ボタンは押しっぱなしなのに、これだと何度もボタンを押してるような……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そこに気が付いたか。そう、この<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令の使い方なら、本当はボタンを押したその時だけ変数に数字が入る命令だったよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>うまく動いてねえじゃねェか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>そこで、ちゃんと<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令が動くように、もう１つ命令を入れるよ。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="5"><li><span class="smbas">ＶＳＹＮＣ　１</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＶＳＹＮＣ</span>……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>読みカタすらもワカらねェぜ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>タシカに読みづらいが、これは「ブイ・シンク」と読むのがイッパンテキじゃな。<br class="spacer" />もともとは「ヴァーティカル・シンクロナイゼーション (Vertical-Synchronization)」のことで……</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>よしワカッた、そのセツメイはいらねェ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-cry-rev.png" alt="ハカセ(泣)">
+ </div>
+ <div class="kaiwa-text-left"><p>まあそんなトコじゃろうな……。<br class="spacer" />ザックリ言えば、プログラムを一時停止する命令じゃ。<span class="basic-text smbas">ＶＳＹＮＣ　１</span>なら60分の１秒だけ止まり、<span class="basic-text smbas">ＶＳＹＮＣ　６０</span>ならピッタリ１秒止まるコトになっとるぞい。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>つまり、この行でも60分の１秒だけプログラムを止めてるってこと……？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プログラムが止まると、<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令がうまく動くってのが、よくワカんねェな……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>プチコンはすごいスピードでプログラムを動かしているよね。特にこんな短いループなんかは、こうしてちょっとブレーキをかけておかないと、<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令がウラでやってる仕事が終わる前に、何回も<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令がはじまっちゃってついていけない……ような、そんなカンジかな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>フーム……そのセツメイはわからないでもねェが、そのワリにスッキリと言いきらねえじゃねェか。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>すごくおおざっぱに説明したから、プログラムにくわしい人にはツッコミどころなんだよね。まあ深く考えずに、<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令のループには<span class="basic-text smbas">ＶＳＹＮＣ</span>をセットで入れるようにしておくとうまく動くよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そう言われるとわかりやすいけど、話はすっとばしたなあ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>この命令はアクションゲームなんかによく使われておる。今はまだこのテイドしか使うところがないが、そのウチずいぶん助かる命令になるじゃろう。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>そんなものかなあ……あれ？　<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令がうまく動くと、うまく動いてるかどうかがよく見えなくなるね……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>一瞬で通りすぎちゃうから、見づらいどころじゃないかな？　<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>命令の「<span class="basic-text smbas">１</span>」を「<span class="basic-text smbas">０</span>」に変えてみよう。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ”にゅうりょく”</span></li>
+<li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li style="color:cyan"><span class="smbas">Ａ＝ＢＵＴＴＯＮ（０）</span></li>
+<li><span class="smbas">ＰＲＩＮＴ”こたえは”；Ａ</span></li>
+<li><span class="smbas">ＶＳＹＮＣ　１</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+</ol></code></div></div>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>命令のあとの数字で動きが変わるの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>その通り。<span class="basic-text smbas">ＢＵＴＴＯＮ（１）</span>だと、ボタンを押したシュンカンだけ変数に数字が入ったよね。<span class="basic-text smbas">ＢＵＴＴＯＮ（０）</span>命令で、はとにかくボタンが押してあれば、いつでも変数に数字が入るんだ。プログラムを<span class="basic-text smbas">ＲＵＮ</span>して見てみよう！</p>
+
+ </div>
+</div>
+<div class="img_margin" style="text-align:left"><img src="/petc3gou/?plugin=ref&amp;page=Beginner%2FChapter7&amp;src=screenshot_button3.jpg" alt="screenshot_button3.jpg" title="screenshot_button3.jpg" width="400" height="240" /></div>
+
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ナルホド。ボタンを押してる間はずっと変数Ａのナカミに数字が入るってワケか。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>ここまででわかったけど、このタイプの命令は何回もくり返さないと思ったように動かないね。そのためには<span class="basic-text smbas">ＧＯＴＯ</span>でループを作らないといけないんだ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>さよう。こういうリアルタイムで入力を待つプログラムは、入力を待っているとアッというまに終わってしまうので、ループを作って入力を待ち続けるのがキホンじゃな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ハハーン、それが「メインループ」になるってワケか！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ジッサイにはこれ以外にもすぐ通りすぎちゃう命令や、くり返さないとイミがないコトもプログラムにはたくさんあって、そういうのをまとめてひとつのループにするのが「メインループ」になるね。<br class="spacer" />まあ、プログラムをおぼえていくうちに自然に身につくハズさ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>今つくったプログラムは無限ループだったけど、本当にやりたかったように作るとどうなるの？</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right">
+<p>まだ見おぼえのない書き方もまじるけど、これでいいんじゃないかな。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ”にゅうりょく”</span></li>
+<li><span class="smbas">＠ＬＯＯＰ</span></li>
+<li><span class="smbas">Ａ＝ＢＵＴＴＯＮ（０）</span></li>
+<li><span class="smbas">ＩＦ　Ａ！＝０　ＴＨＥＮ　ＰＲＩＮＴ”こたえは”；Ａ：ＥＮＤ</span></li>
+<li><span class="smbas">ＧＯＴＯ　＠ＬＯＯＰ</span></li>
+</ol></code></div></div>
+<p>みんなも打ってみてね！</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>ウゥ……マジで見たことねェ書き方しやがって、ヨウシャのねえヤロウだぜ！</p>
+
+ </div>
+</div>
+
+<h3 id="z239bfe9">比較演算子</h3>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right">
+<p>この行がモンダイなんだね。</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol start="4"><li><span class="smbas">ＩＦ　Ａ！＝０　ＴＨＥＮ　ＰＲＩＮＴ”こたえは”；Ａ：ＥＮＤ</span></li>
+</ol></code></div></div>
+<p>今までの話から、これが「もしも変数<span class="basic-text smbas">Ａ</span>がゼロじゃなければ〜する」ってIF文だとはなんとなく分かるんだけど……</p>
+
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>気になるのは「変数<span class="basic-text smbas">！＝</span>数字」のカタチだよね。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+ </div>
+ <div class="kaiwa-text-right"><p>「<span class="basic-text smbas">＝＝</span>」もビックリだったけど、「<span class="basic-text smbas">！＝</span>」だって初めて見るよ！</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ほっほっほ。ソコはそうムズカシいモノでもないぞ。いわゆる「≠（等号否定）」と同じイミで、まあ右と左が「ちがう」というくらいのことじゃな。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>まさか、またムカシのコンピューターに「≠」の字がなかったから「<span class="basic-text smbas">！＝</span>」と書いたとか、そんなことじゃねェだろうな……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>それでだいたい合っておるそうじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>コ、コンピューターにタイするゲンソウがどんどんウシナわれていくぜェ……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-right">
+   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+ </div>
+ <div class="kaiwa-text-left"><p>ほかにも「<span class="basic-text smbas">＜</span> (小なり)」「<span class="basic-text smbas">＞</span> (大なり)」を使うこともあるが、「≦ (小なりイコール)」は「<span class="basic-text smbas">＜＝</span>」、「≧ (大なりイコール)」は「<span class="basic-text smbas">＞＝</span>」と書くのじゃ。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そんなのばっかりか！　なんかもう、コンカイはオレもいろいろダキョウしてる気がするぜェ……。</p>
+
+ </div>
+</div>
+<div class="kaiwa">
+ <div class="kaiwa-img-left">
+   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+ </div>
+ <div class="kaiwa-text-right"><p>そろそろ元気がなくなってきたかな。色々おぼえたし、いったん一休みしよう！</p>
+
+ </div>
+</div>
+<div class="block-info" style="width:60%;margin:auto;margin-bottom:1em;padding-left:2em;padding-right:2em;padding-bottom:2em;">
+
+<h3 id="skip">今回のまとめ</h3>
+
+<h4 id="ra04ee6b">インデント</h4>
+<p>行の先頭に空白スペースを入れることを「インデント」といいます。プログラムの動作には関係ありませんが、リストを見やすくするのに使います。FOR〜NEXTの中に使うのがいちばん一般的ですね。</p>
+
+<h4 id="b27c97f4">NEW命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＮＥＷ</span></li>
+</ol></code></div></div>
+<p>DIRECTモードで使います。プログラムが消去されます。</p>
+
+<h4 id="k4a16fcd">SYSBEEP変数</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＳＹＳＢＥＥＰ＝ＦＡＬＳＥ</span></li>
+<li><span class="smbas">ＳＹＳＢＥＥＰ＝ＴＲＵＥ</span></li>
+</ol></code></div></div>
+<p><span class="basic-text smbas">ＦＡＬＳＥ</span>ならシステム音を消し、<span class="basic-text smbas">ＴＲＵＥ</span>ならシステム音が鳴るようになります。</p>
+
+<h4 id="g168574e">BEEP命令のピッチ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＢＥＥＰ　（音色），（ピッチ）</span></li>
+</ol></code></div></div>
+<p>ピッチ<span class="basic-text smbas">０</span>が「ド」の音、<span class="basic-text smbas">−１００</span>だと半音下、<span class="basic-text smbas">１００</span>で半音上になります。</p>
+
+<h4 id="s99370a8">BUTTON()命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">変数＝ＢＵＴＴＯＮ（機能）</span></li>
+</ol></code></div></div>
+<p>変数に押されたボタンの情報が入ります。機能が「<span class="basic-text smbas">０</span>」のときは押されている間、「<span class="basic-text smbas">１</span>」のときは押した瞬間のみです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td">1</td><th class="style_th">Aボタン</th><td class="style_td">16</td><th class="style_th">Lボタン</th><td class="style_td">256</td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td">2</td><th class="style_th">Bボタン</th><td class="style_td">32</td><th class="style_th">Rボタン</th><td class="style_td">512</td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td">4</td><th class="style_th">Xボタン</th><td class="style_td">64</td><td class="style_td"></td><td class="style_td"></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td">8</td><th class="style_th">Yボタン</th><td class="style_td">128</td><td class="style_td"></td><td class="style_td"></td></tr></tbody></table></div>
+<p>たとえば左上に押せば4+1で<span class="basic-text smbas">５</span>が、何も押さなければ<span class="basic-text smbas">０</span>が入ります。</p>
+<p>ボタンに対応した数字の代わりに、定数リテラルも使えます。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">十字ボタン↑</th><td class="style_td"><span class="basic-text smbas">#UP</span></td><th class="style_th">Aボタン</th><td class="style_td"><span class="basic-text smbas">#A</span></td><th class="style_th">Lボタン</th><td class="style_td"><span class="basic-text smbas">#L</span></td></tr><tr><th class="style_th">十字ボタン↓</th><td class="style_td"><span class="basic-text smbas">#DOWN</span></td><th class="style_th">Bボタン</th><td class="style_td"><span class="basic-text smbas">#B</span></td><th class="style_th">Rボタン</th><td class="style_td"><span class="basic-text smbas">#R</span></td></tr><tr><th class="style_th">十字ボタン←</th><td class="style_td"><span class="basic-text smbas">#LEFT</span></td><th class="style_th">Xボタン</th><td class="style_td"><span class="basic-text smbas">#X</span></td><td class="style_td"></td><td class="style_td"></td></tr><tr><th class="style_th">十字ボタン→</th><td class="style_td"><span class="basic-text smbas">#RIGHT</span></td><th class="style_th">Yボタン</th><td class="style_td"><span class="basic-text smbas">#Y</span></td><td class="style_td"></td><td class="style_td"></td></tr></tbody></table></div>
+
+<h4 id="q392ce67">VSYNC命令</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＶＳＹＮＣ　（数）</span></li>
+</ol></code></div></div>
+<p>プログラムを一時停止します。<span class="basic-text smbas">ＶＳＹＮＣ　６０</span>で１秒、<span class="basic-text smbas">ＶＳＹＮＣ　１</span>なら60分の１秒だけ遅くなります。</p>
+
+<h4 id="i9768dc0">比較演算子</h4>
+<p>IF〜THEN命令の条件文で使います。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="2">変数AとBを比べる場合</th></tr><tr><th class="style_th"><span class="basic-text smbas">A==B</span></th><td class="style_td">AとBの内容が同じ</td></tr><tr><th class="style_th"><span class="basic-text smbas">A!=B</span></th><td class="style_td">AとBの内容が違う</td></tr><tr><th class="style_th"><span class="basic-text smbas">A＜B</span></th><td class="style_td">AよりBが大きい</td></tr><tr><th class="style_th"><span class="basic-text smbas">A＜=B</span></th><td class="style_td">AよりBが大きいか、同じ</td></tr><tr><th class="style_th"><span class="basic-text smbas">A＞B</span></th><td class="style_td">AよりBが小さい</td></tr><tr><th class="style_th"><span class="basic-text smbas">A＞=B</span></th><td class="style_td">AよりBが小さいか、同じ</td></tr></tbody></table></div>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＩＦ　（変数）！＝（数）　ＴＨＥＮ　（命令）</span></li>
+</ol></code></div></div>
+<p>変数と数が一致しないときだけ命令を実行します。</p>
+</div>
+<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><strong><a href="/petc3gou/?Beginner%2FChapter8" title="Beginner/Chapter8 (1694d)">次のページへ</a></strong></span></div>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_125_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (7h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_125_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (1h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_125_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (6h)">編集の練習用ページ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (7h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_125_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (23h)">Nintendo全記号Unicode一覧表<span class="counter">(17)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (1d)">nikuラジオ<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (797d)">HERO2 一台で二人同時プレイ<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (65d)">【公開終了】弾幕音遊戯<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO" title="Toukou/HERO (763d)">HERO -君は、愛する人を守り抜くことが出来るか？<span class="counter">(5)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_125_4">オンライン情報</h3>
+<ul><li>現在同時に 3 人がこのサイトを見ています</li>
+<li>このページはこれまでに 4043 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.202 秒  | このページの最終更新 : 2016/07/10 (日) 15:40:03  (1694d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

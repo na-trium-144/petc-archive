@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : MON-OS - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : MON-OS - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, OS, OSもどき, 実用ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FMON-OS">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FMON-OS">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FMON-OS">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FMON-OS">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : MON-OS</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FMON-OS">MON-OS</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.056sec. -->
+<div class="contents">
+<ul><li><a href="#SEISAKUSYA">  制作者情報 </a>
+<ul><li><a href="#MMSOFT">  M/MSOFT </a>
+<ul><li><a href="#osirase">  お知らせ </a></li></ul></li></ul></li>
+<li><a href="#Summary">  概要 </a>
+<ul><li><a href="#unpack"> Ver.0.7以降の場合</a></li>
+<li><a href="#kntmstmi">  簡単な説明</a>
+<ul><li><a href="#monosver01"> Ver.0.1</a></li>
+<li><a href="#mon03"> Ver.0.3</a></li>
+<li><a href="#mon05"> Ver.0.5</a></li>
+<li><a href="#mon07"> Ver.0.7</a></li>
+<li><a href="#mon075"> Ver.0.7.5</a></li>
+<li><a href="#mon08"> Ver.0.8</a></li>
+<li><a href="#mon09"> Ver.0.9 </a></li>
+<li><a href="#mon1"> Ver.1.0 </a></li></ul></li>
+<li><a href="#Soft">  ソフト(最新版の場合) </a>
+<ul><li><a href="#boyomikun"> ボーよみくん(Ver.3.0)</a></li>
+<li><a href="#moncon"> モンコン(Ver.1.0)</a></li>
+<li><a href="#osb"> OSビュアー(Ver.0.5)</a></li>
+<li><a href="#musicskk"> Musics King(Ver.4.0.1)</a></li>
+<li><a href="#hnzsk"> Drifters(Ver.1.0)</a></li>
+<li><a href="#consol"> コンソル君(Ver.1.0)</a></li>
+<li><a href="#hitcmd"> コマンド打ち込みゲーム(Ver.1.1.1)</a></li></ul></li>
+<li><a href="#Bagu"> 不具合</a>
+<ul><li><a href="#vb033"> Ver.β0.3.3 </a></li>
+<li><a href="#v07"> Ver.0.7</a></li>
+<li><a href="#vb075"> Ver.β0.7.5(20190327BetaEdition)</a></li>
+<li><a href="#v08"> Ver.0.8</a></li>
+<li><a href="#v09"> Ver.0.9</a></li></ul></li></ul></li>
+<li><a href="#ScreenShots">  画像・動画 </a></li>
+<li><a href="#QR">  公開キー </a>
+<ul><li><a href="#v042a06b">  Ver.β0.7.5(@20190310BetaEdition) </a></li>
+<li><a href="#v042a06c">  Ver.β0.7.5(@20190327BetaEdition) </a></li>
+<li><a href="#pfc7369f">  Ver.0.1 </a></li>
+<li><a href="#u792fc64">  Ver.0.3 </a></li>
+<li><a href="#sdf35592">  Ver.0.5 </a></li>
+<li><a href="#v042a06a">  Ver.0.7 </a></li>
+<li><a href="#yt8746yq0">  Ver.0.7.5 </a></li>
+<li><a href="#e28568a6">  Ver.0.8 </a></li>
+<li><a href="#j3bba0f8">  Ver.0.9 </a></li>
+<li><a href="#lb26c005">  Ver.1.0 </a></li></ul></li>
+<li><a href="#fumeiComments">  意味不明なコメント</a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント)</a></li></ul>
+</div>
+
+<p>2020年2月2日投稿 /
+(プレリリース版は2019年2月2日投稿)</p>
+<p>投稿者 : MoriKawa/(M/MSOFT:MoriKawa/Midorimori)</p>
+<p><span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=OS">OS</a> <a href="/petc3gou/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> </span></p>
+<h3 id="SEISAKUSYA">制作者情報</h3>
+
+<h4 id="MMSOFT"><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FMON-OS%2F%C0%A9%BA%EE%BC%D4" rel="nofollow">M/MSOFT</a></h4>
+
+<h5 id="osirase">お知らせ</h5>
+<ul><li>MON-OS Ver.0.5 のサポートは1月31日に終了しました。詳しくはこちらをご覧ください。</li>
+<li><a href="https://alicex.jp/m123main/12/" rel="nofollow">MON-OS Ver.0.5 のサポート終了について</a></li></ul>
+
+<h3 id="Summary">概要</h3>
+<p><span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px">もう、迷わない。</span></p>
+<ul><li>MON-OS は、他のOSと違ってシンプルだから、迷うことがありません。</li></ul>
+<p><span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px">使いやすいボタン操作</span></p>
+<ul><li>HomeMenu で、なにかを選択するときも、ボタンを押すだけで簡単に選択できます。</li></ul>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FMON-OS&amp;openfile=8.jpg" title="8.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FMON-OS&amp;src=8.jpg" alt="8.jpg" title="8.jpg" width="530" height="530" /></a></div>
+
+
+<h4 id="unpack">Ver.0.7以降の場合</h4>
+<p>初回起動時は-UNPACK-を起動してください。</p>
+
+<h4 id="kntmstmi">簡単な説明</h4>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">過去バージョン
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h5 id="monosver01">Ver.0.1</h5>
+<p>MON-OSの初期バージョン「Ver.0.1」。
+できることはかなり少ないですが、制作者はプチコン歴1か月ちょっとなのです。アドバイスくれると嬉しいです。</p>
+
+<h5 id="mon03">Ver.0.3</h5>
+<p>MON-OSの正式公開バージョン2番目の「Ver.0.3」。
+Ver.0.1から機能は変わっていませんが起動画面などが進化。</p>
+
+<h5 id="mon05">Ver.0.5</h5>
+<p>Ver.0.5は、ソフトが追加されました。</p>
+
+<h5 id="mon07">Ver.0.7</h5>
+<p>更にソフトが増え、使用可能ボタンが無くなりました。</p>
+
+<h5 id="mon075">Ver.0.7.5</h5>
+<p>アプリメニューとログイン機能が追加されました。</p>
+
+<h5 id="mon08">Ver.0.8</h5>
+<p>約7ヶ月ぶりの更新。アカウントを作れるようになりました。何もできないBIOSも実は追加されました。</p>
+
+<h5 id="mon09">Ver.0.9</h5>
+<p>BIOSのセーフモードを完成させ、細かい部分の修正を行いました。</p>
+</td></tr></table>
+
+<h5 id="mon1">Ver.1.0</h5>
+<p>Ver.0.1公開から1年、正式版がリリース。</p>
+
+<h4 id="Soft">ソフト(最新版の場合)</h4>
+
+<h5 id="boyomikun">ボーよみくん(Ver.3.0)</h5>
+<p>ボーよみくんに何か喋らせることができます。Powered by M/MSOFT</p>
+
+<h5 id="moncon">モンコン(Ver.1.0)</h5>
+<p>無能な電卓です。1回計算するごとにホームに戻ります。Powered by M/MSOFT</p>
+
+<h5 id="osb">OSビュアー(Ver.0.5)</h5>
+<p>OS上で仮想のOSを起動できます。Powered by M/MSOFT</p>
+
+<h5 id="musicskk">Musics King(Ver.4.0.1)</h5>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FMusicsKK" rel="nofollow">Musics King</a>です。十字ボタン上で終了できるように改造しています。Powered by takumi</p>
+
+<h5 id="hnzsk">Drifters(Ver.1.0)</h5>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FDrifters" rel="nofollow">Drifters</a>です。Powered by hanzosoft</p>
+
+<h5 id="consol">コンソル君(Ver.1.0)</h5>
+<p>コンソル君です。Powered by ペンコ改</p>
+
+<h5 id="hitcmd">コマンド打ち込みゲーム(Ver.1.1.1)</h5>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%A5%B3%A5%DE%A5%F3%A5%C9%C2%C7%A4%C1%B9%FE%A4%DF%A5%B2%A1%BC%A5%E0" rel="nofollow">コマンド打ち込みゲーム</a>です。バグが発生していたので、M/MSOFTが一部修正しています。Powered by strs2</p>
+
+<h4 id="Bagu">不具合</h4>
+
+<h5 id="vb033">Ver.β0.3.3</h5>
+<ul><li>START=EXITが表示されない。</li></ul>
+
+<h5 id="v07">Ver.0.7</h5>
+<ul><li>-UNPACK-が-UNPARK-になっている。</li></ul>
+
+<h5 id="vb075">Ver.β0.7.5(20190327BetaEdition)</h5>
+<ul><li>-UNPACK-がUNPACKになっている。探すのが大変かと思いますが、下の方にあるので、ダウンロードしたら少し面倒かも知れません。</li></ul>
+
+<h5 id="v08">Ver.0.8</h5>
+<ul><li>セットアップ終了後、-USER.MST-というファイルが作成される。不要なので削除してください。</li>
+<li>BIOSからシャットダウンや再起動をすると、「終了処理をしています」でイメージが表示されない。</li>
+<li>ボーよみくんVer.3.0を搭載しているのに、ホームで確認するとVer.2.0.1と表示される。</li></ul>
+
+<h5 id="v09">Ver.0.9</h5>
+<ul><li>セットアップ終了後、-OLDBEEP.EXE-というファイルが作成される。前バージョンで使用していましたが今バージョンでは不要なので削除してください。</li>
+<li>BIOSやセーフモードの状態からシャットダウンや再起動をすると、「終了処理をしています」でイメージが表示されない。</li></ul>
+
+<h3 id="ScreenShots">画像・動画</h3>
+<p>画像や動画がある方はご自由にお貼りください。</p>
+<ul><li><a href="https://alicex.jp/m123main/album/1/" rel="nofollow">公式のスクリーンショット</a>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FMON-OS&amp;openfile=2.jpg" title="2.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FMON-OS&amp;src=2.jpg" alt="2.jpg" title="2.jpg" width="507" height="250" /></a></div>
+</li>
+<li><a href="https://alicex.jp/m123main/11/" rel="nofollow">公式の動画</a>
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/ClLIlix79b4" frameborder="0" allowfullscreen></iframe>
+</div>
+</li>
+<li>MoriKawa/Midorimori(IS04) さんのスクリーンショット
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FMON-OS&amp;openfile=DSC_0317.JPG" title="DSC_0317.JPG"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FMON-OS&amp;src=DSC_0317.JPG" alt="DSC_0317.JPG" title="DSC_0317.JPG" width="2592" height="1944" /></a></div>
+</li></ul>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">β版
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h4 id="v042a06b">Ver.β0.7.5(@20190310BetaEdition)</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">サポート終了</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="v042a06c">Ver.β0.7.5(@20190327BetaEdition)</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">サポート終了</span>
+</div>
+</div>
+
+</div>
+
+</td></tr></table>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プレリリース版
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h4 id="pfc7369f">Ver.0.1</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">サポート終了</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="u792fc64">Ver.0.3</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">サポート終了</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="sdf35592">Ver.0.5</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">サポート終了</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="v042a06a">Ver.0.7</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">JD5E3V4E</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="yt8746yq0">Ver.0.7.5</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">4KH4XEX3</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="e28568a6">Ver.0.8</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">D3A3EP8X</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="j3bba0f8">Ver.0.9</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">4RNJZ3Y3</span>
+</div>
+</div>
+
+</div>
+
+</td></tr></table>
+
+<h4 id="lb26c005">Ver.1.0</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">BBCYS3N4</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="fumeiComments">意味不明なコメント</h3>
+<ul><li><strong>MoriKawa/Midorimori</strong> : スマホかパソコンゲットしたら動画あげるけど、既にパソコンあってそれで動画投稿してたのにカメラにしてたエクペリが壊れて使えなくなった自分語り(<span class="comment_date">2019/02/09 (土) 18:54:05</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : あー、スプライト大体分かった。(独り言) (<span class="comment_date">2019/02/16 (土) 20:38:04</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : 次のVer.0.5はまあ2月中だけどまあギリギリ2月頃って感じかな。(要は2月末。)フォントをつける可能性があり、そうなると日本語ほぼ非対応フォントになるから漢字は勿論カタカナも使えなくてひらがなしか使えなくなって開発言語英語にしようみたいになってるから悩み中。 (<span class="comment_date">2019/02/17 (日) 08:57:58</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : ダーレーカー (<span class="comment_date">2019/02/17 (日) 18:48:17</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : 最近使ってねえここ (<span class="comment_date">2019/10/05 (土) 22:39:41</span>)</li></ul>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (564d)">掲示板</a>へ)</p>
+<div><p>最新の15件を表示しています。 <a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2FMON-OS" title="コメント/Toukou/MON-OS (9d)">コメントページを参照</a></p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="efc7aab5fa0aad35226081eb347f51d5" tabindex="22" /><strong>MoriKawa/Midorimori</strong> : 10月中を目安というか目標にやってけばいいですね。さすがに半年近く更新してないのはあれなので。 (<span class="comment_date">2019/10/06 (日) 16:36:40</span>)
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="542a2b4ae28d04c282d71c469e35d048" tabindex="21" /><strong>MoriKawa/Midorimori</strong> : あっ... (<span class="comment_date">2019/11/01 (金) 20:55:46</span>)</li></ul></li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="0381c28691f33a653c8acfe685a56589" tabindex="20" /><strong>TASさん</strong> : あ… (<span class="comment_date">2019/11/02 (土) 18:38:18</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="161cd133daa14399d8b35c61011f8dae" tabindex="19" /><strong>MoriKawa/Midorimori</strong> : 結局何もやってなさすぎて草が生えなくて草 (<span class="comment_date">2020/01/09 (木) 21:17:56</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="b9801d00accf8667c2057a309028c362" tabindex="18" /><strong>MoriKawa/Midorimori</strong> : MON-OSの動画は説明はありませんが一応出しました。まだVer.0.1とVer.0.3だけだけど。明日くらいにPC使ってうらる貼りますね。 (<span class="comment_date">2020/01/09 (木) 21:19:31</span>)
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="d0f696d54b4747b18ad565fd29acee9b" tabindex="17" /><strong>MoriKawa/Midorimori(Win10)</strong> : 動画貼りますね。 (<span class="comment_date">2020/01/10 (金) 20:19:21</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="129cdd41b787dae87a93788789857bb0" tabindex="16" /><strong>MoriKawa/Midorimori(Win10)</strong> : 動画貼りました。今後増えると思うのでVer.0.1だけです。リンクからすべて見れます。 (<span class="comment_date">2020/01/10 (金) 20:32:16</span>)</li></ul></li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="f8a6d81a5c9d571e0874960903c38eb3" tabindex="15" /><strong>MoriKawa/Midorimori</strong> : Ver.0.8はほぼ完成した状態で数ヶ月放置してました... (<span class="comment_date">2020/01/09 (木) 21:20:18</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="4e3d93183ea14e8bcce81513e99396ae" tabindex="14" /><strong>MoriKawa/Midorimori</strong> : Consol優先って言っときながら結局まだ公開されてなくて草生えなくて草生えなくて草 (<span class="comment_date">2020/01/09 (木) 21:21:19</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="a1be4971fb739f95c332e98abe541ce4" tabindex="13" /><strong>MoriKawa/Midorimori</strong> : 1周年にVer.1.0出します!!!Ver.0.8は明日か明後日かその内!!! (<span class="comment_date">2020/01/09 (木) 21:21:57</span>)
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="8c8240f89ad202125e00d5e2dffa4092" tabindex="12" /><strong>MoriKawa/Midorimori(Win10)</strong> : 3連休(主に土日)にやっていきます。 (<span class="comment_date">2020/01/10 (金) 20:19:01</span>)</li></ul></li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="23f11d4f2f436aa495e5e5edb7493635" tabindex="11" /><strong>MoriKawa/Midorimori</strong> : 約7か月ぶりの更新。Ver.0.8をリリースしました! (<span class="comment_date">2020/01/18 (土) 12:40:28</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="f6f6922f19ff8b5073f467d7d97b80ed" tabindex="10" /><strong>MoriKawa/Midorimori</strong> : その内βVer.0.7.5の2つはサポート終了します。 (<span class="comment_date">2020/01/19 (日) 11:07:26</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="1c543577ec6555ab837f860d007397a6" tabindex="9" /><strong>MoriKawa/Midorimori</strong> : 未だにBGMFILE時代のMusicsを搭載していますがクレーム等がなければ正式版もそのままでいきます。 (<span class="comment_date">2020/01/19 (日) 11:08:26</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="6af98bf0e961d12ce73bc55e50b60043" tabindex="8" /><strong>takumi</strong> : 全然Musics4使ってくれて嬉しいのですが、楽曲が更新されていなかったり、サポートは既に終了しているので、ぼちぼちMusicsGかMusics Kingへの移動も考えていってほしいです(勝手ですみません)。 (<span class="comment_date">2020/01/19 (日) 17:17:34</span>)
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="07225ed31690bbb16070c4152fbf4907" tabindex="7" /><strong>MoriKawa/Midorimori</strong> : おけです (<span class="comment_date">2020/01/23 (木) 06:49:07</span>)</li></ul></li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="29a361c9519621d64a75aa39eeac0008" tabindex="6" /><strong>MoriKawa/Midorimori</strong> : Ver.0.9をその内出して、2月2日にVer.1.0を出します。1.0でMusics Kingの最新版に移行する予定です。BIOSは、多分間に合いません。 (<span class="comment_date">2020/01/24 (金) 23:25:43</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="9a140bdb5b15830c3265c99658097202" tabindex="5" /><strong>MoriKawa/Midorimori</strong> : Vet.0.9を公開しました。 (<span class="comment_date">2020/01/25 (土) 13:24:27</span>)
+<ul><li class="pcmt"><input class="pcmt" type="radio" name="reply" value="821ab7057af4a2fa95308589558426aa" tabindex="4" /><strong>MoriKawa/Midorimori</strong> : Vet.0.9ってなんやねん (<span class="comment_date">2020/01/26 (日) 09:08:36</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="751c013e6799428f60eac62acb6b2b84" tabindex="3" /><strong>MoriKawa/Midorimori</strong> : 正しくはVer.0.9だね (<span class="comment_date">2020/01/26 (日) 16:01:14</span>)</li></ul></li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="16612a451491520aba8536756639a830" tabindex="2" /><strong>MoriKawa/Midorimori</strong> : ぼちぼちページを更新していきます。 (<span class="comment_date">2020/01/27 (月) 18:42:27</span>)</li>
+<li class="pcmt"><input class="pcmt" type="radio" name="reply" value="52b68a7d9473403044b096647f4a1872" tabindex="1" /><strong>MoriKawa/Midorimori</strong> : Ver.1.0を公開しました。 (<span class="comment_date">2020/02/02 (日) 09:10:15</span>)</li></ul>
+
+  <div>
+  <input type="hidden" name="digest" value="212887f530a610a981ff5a86dc29b863" />
+  <input type="hidden" name="plugin" value="pcomment" />
+  <input type="hidden" name="refer"  value="Toukou/MON-OS" />
+  <input type="hidden" name="page"   value="コメント/Toukou/MON-OS" />
+  <input type="hidden" name="nodate" value="" />
+  <input type="hidden" name="dir"    value="1" />
+  <input type="hidden" name="count"  value="15" />
+  <input type="radio" name="reply" value="0" tabindex="0" checked="checked" /> お名前:  <input type="text" name="name" size="15" value="" placeholder="お名前" /> <input type="text" name="msg" size="70" placeholder="コメント" />
+  <input type="submit" value="コメントの投稿" />
+  </div></form>
+</div>
+
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_8_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (264d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (181d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (1618d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (209d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (1d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (259d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (65d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (388d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (486d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (75d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (17d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (324d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1442d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_8_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (855d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (511d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (10h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_8_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (234d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (1d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/02/11</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMindows" title="Mindows XP (2h)">Mindows XP</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Player" title="TAGeLorix Player (3h)">TAGeLorix Player</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="リズミカルおもちつきSZ 8.01 / b9.0 (6h)">リズミカルおもちつきSZ 8.01 / b9.0</a></li>
+</ul>
+<h4>2020/02/10</h4>
+<ul>
+ <li><a href="/petc3gou/?Mame%2FMusic_Format" title="プチコン音楽広場 (18h)">プチコン音楽広場</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="プチコンmkII at 3号 ver3.1 (18h)">プチコンmkII at 3号 ver3.1</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2FSmartphone_Mock" title="コメント/Toukou/Smartphone_Mock (18h)">コメント/Toukou/Smartphone_Mock</a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmartphone_Mock" title="Smartphone Mock (18h)">Smartphone Mock</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="リズミカルおもちつきΣ (20h)">リズミカルおもちつきΣ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FMusicsKK" title="Musics King (22h)">Musics King</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%D7%A5%C1%A5%B8%A5%E3%A5%F3" title="コメント/Toukou/プチジャン (1d)">コメント/Toukou/プチジャン</a></li>
+</ul>
+</div>
+
+<h3 id="content_8_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="Toukou/リズミカルおもちつきΣ (20h)">リズミカルおもちつきΣ<span class="counter">(70)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (1d)">弾幕音遊戯<span class="counter">(57)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="Toukou/リズミカルおもちつきSZ (6h)">リズミカルおもちつきSZ 8.01 / b9.0<span class="counter">(52)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter2" title="Beginner/Chapter2 (189d)">初心者講座 :  第2章 変数のはなし<span class="counter">(47)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (1d)">リズミカルおもちつきTG<span class="counter">(45)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter4" title="Beginner/Chapter4 (1311d)">初心者講座 :  第4章 ラベルとGOTOのはなし<span class="counter">(34)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMindows" title="Toukou/Mindows (2h)">Mindows XP<span class="counter">(32)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter3" title="Beginner/Chapter3 (639d)">初心者講座 :  第3章 サンプルプログラム1<span class="counter">(28)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (388d)">サンプルプログラム集<span class="counter">(19)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="Toukou/プチコンmkII_at3号 (18h)">プチコンmkII at 3号 ver3.1<span class="counter">(18)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (889d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_8_4">オンライン情報</h3>
+<ul><li>現在同時に 7 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1877 回、本日は 5 回、昨日は 7 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.061 秒  | このページの最終更新 : 2020/02/07 (金) 17:00:16  (3d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

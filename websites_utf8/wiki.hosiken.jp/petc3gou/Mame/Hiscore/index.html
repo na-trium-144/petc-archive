@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>ハイスコアの保存方法 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="ハイスコアの保存方法 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Mame%2FHiscore">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Mame%2FHiscore">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FHiscore">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Mame%2FHiscore">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>ハイスコアの保存方法</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Mame%2FHiscore">Hiscore</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.047sec. -->
+<div class="contents">
+<ul><li><a href="#h27f29fe"> 自己紹介 </a></li>
+<li><a href="#zd0db076">  mk2で言うMEMリソースの変わり </a></li>
+<li><a href="#j634bba5">  STR$関数 </a></li>
+<li><a href="#c894a15a">  TXTの保存 </a></li>
+<li><a href="#teedb66d">  TXTの読み込み </a></li>
+<li><a href="#t0c829e1">  VAL関数 </a></li>
+<li><a href="#b6ca8948">  コメント欄 </a></li></ul>
+</div>
+
+<h3 id="h27f29fe">自己紹介</h3>
+<p>どうも、キャラクター製作所ですｏ(＾-＾)ｏ</p>
+<p>今回は、豆知識ということで、まだあんまりないハイスコアが保存されるゲームの作り方を紹介します。</p>
+<p>今日は、1人、これまでに、7079人<br />
+ご覧いただき誠にありがとうございます(v^-ﾟ)</p>
+
+<h3 id="zd0db076">mk2で言うMEMリソースの変わり</h3>
+<p>プチコンでついにTXTリソースができました！とゆうことで、</p>
+<ol><li>ハイスコア(数値)をTXTに変換する方法</li>
+<li>TXTのセーブとロードの方法</li></ol>
+<p>大きく分けてこの二つを説明したいと思います。</p>
+
+<h3 id="j634bba5">STR$関数</h3>
+<p>この関数を使うと数値を文字列(TXT)として扱うことができます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">？１８７８２＊２</span></li>
+<li><span class="smbas">？ＳＴＲ＄（１８７８２）＊２</span></li>
+</ol></code></div></div>
+<p>多分このような結果になったと思います。</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">３７５６４</span></li>
+<li><span class="smbas">１８７８２１８７８２</span></li>
+</ol></code></div></div>
+<p>数字の場合 18782*2 = 18782+18782 = 37564</p>
+<p>文字列の場合 &quot;18782&quot;*2 = &quot;18782&quot;+&quot;18782&quot; = &quot;1878218782&quot;</p>
+<p>と、なるので、</p>
+<p>これで多分、文字列に変換できたことがなんとなくでもわかったと思います。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Mame/Hiscore" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="7d6b9d5841829aded3726fb59f26d56a" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">わかりました</td>
+   <td align="right" class="vote_td2">140&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">わかりません</td>
+   <td align="right" class="vote_td1">83&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4BBA4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="c894a15a">TXTの保存</h3>
+<p>ハイスコアを文字列に変換出来たので、保存してみましょう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＳＡＶＥ”ＴＸＴ：ＴＥＳＴＨＩ”，ＳＴＲ＄（１８７８２）</span></li>
+</ol></code></div></div>
+<p>そうしたら｢作品を見る｣→デフォルトに設定しているプロジェクトに
+TESTHIというファイルができているはずです。(ABCのアイコン)</p>
+<p>開いて見ると･･･エラーが起こるのでEDITボタンを押してください</p>
+<div class="basic-source-bk"><div class="basic-list"><code><ol><li><span class="smbas">１８７８２</span></li>
+</ol></code></div></div>
+<p>となっているはずです。</p>
+<p>これでなんとなくでも保存できたことがわかると思います。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Mame/Hiscore" />
+    <input type="hidden" name="vote_no" value="1" />
+    <input type="hidden" name="digest"  value="7d6b9d5841829aded3726fb59f26d56a" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">わかりました</td>
+   <td align="right" class="vote_td2">28&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">わかりません</td>
+   <td align="right" class="vote_td1">14&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4BBA4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="teedb66d">TXTの読み込み</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤ　”ＴＸＴ：ＴＥＳＴＨＩ”　ＯＵＴ　ＨＩ＄</span></li>
+<li><span class="smbas">？ＨＩ＄</span></li>
+</ol></code></div></div>
+<p>↓結果</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">１８７８２</span></li>
+</ol></code></div></div>
+<p>これで読み込めたことがわかると思います。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Mame/Hiscore" />
+    <input type="hidden" name="vote_no" value="2" />
+    <input type="hidden" name="digest"  value="7d6b9d5841829aded3726fb59f26d56a" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">わかりました</td>
+   <td align="right" class="vote_td2">14&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">わかりません</td>
+   <td align="right" class="vote_td1">8&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4BBA4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="t0c829e1">VAL関数</h3>
+<p>表示だけなら問題ありませんが、このままだと、ハイスコアを更新したかの判断をIF文で行うことが出来ません。</p>
+<p>そこで、VAL関数で、数値に戻します。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤ　”ＴＸＴ：ＴＥＳＴＨＩ”　ＯＵＴ　ＨＩ＄</span></li>
+<li><span class="smbas">？ＶＡＬ（ＨＩ＄）＊２</span></li>
+<li><span class="smbas">？ＨＩ＄＊２</span></li>
+</ol></code></div></div>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">３７５６４</span></li>
+<li><span class="smbas">１８７８２１８７８２</span></li>
+</ol></code></div></div>
+<p>わかりますね？</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Mame/Hiscore" />
+    <input type="hidden" name="vote_no" value="3" />
+    <input type="hidden" name="digest"  value="7d6b9d5841829aded3726fb59f26d56a" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">わかりました</td>
+   <td align="right" class="vote_td2">16&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">わかりません</td>
+   <td align="right" class="vote_td1">8&nbsp;&nbsp;
+    <input type="submit" name="vote_A4EFA4ABA4EAA4DEA4BBA4F3" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="b6ca8948">コメント欄</h3>
+<p>荒らしは&quot;やあ、荒らし(・ω・)&quot;に適当に置き換えます。</p>
+<ul><li><strong>魔神</strong> : 頑張ってください (<span class="comment_date">2014/12/01 (月) 21:47:47</span>)</li>
+<li><strong>名無しさん</strong> : 楽しみ&#8252;&#65038;&#8252;&#65038; (<span class="comment_date">2014/12/01 (月) 22:13:25</span>)</li>
+<li><strong>キャラクター製作所</strong> : あれ？何かもうコメントきてるｗｗ (<span class="comment_date">2014/12/01 (月) 22:29:50</span>)</li>
+<li><strong>名無しさん</strong> : STR$関数の説明で&quot;STR$(18782)*2&quot;について説明があった方がいいと思います。 (<span class="comment_date">2014/12/02 (火) 07:30:16</span>)</li>
+<li><strong>名無しさん</strong> : STR$関数で文字列に変換されたため文字列に&quot;*2&quot;の演算をすると文字列の内容が2回繰り返されるとか説明があったらいいかなと思いました。 (<span class="comment_date">2014/12/02 (火) 07:33:20</span>)</li>
+<li><strong>キャラクター製作所</strong> : はい、追加しますね^^それと、もしよければ、勝手に付け足してもいいですよ。その際はコメントで教えてください。「何々を追加しました。」程度でいいです。 (<span class="comment_date">2014/12/03 (水) 20:15:54</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : 実はこれだけだとちょっとした問題が・・・ハイスコアは「4桁でも5桁でも」 (<span class="comment_date">2014/12/07 (日) 21:27:26</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : 途中送信したので続き。「4桁でも5桁でも数字としてあり得ますが、STRだとその桁数しか保存できないので解凍が困難」ってのがあります。さてそういう場合どうしたらいいでしょうか(答えは分かってますがあえて書かない私) (<span class="comment_date">2014/12/07 (日) 21:29:26</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : つまり「1234点と56789点を保存して解凍する時にどこで区切ればいいのかプログラムでは分からない」という事です。 (<span class="comment_date">2014/12/07 (日) 21:31:08</span>)</li>
+<li><strong><span style="color:#4169e1; background-color:#00ff7f"><span class="basic-text smbas">キャラクター</span><strong>製作所</strong></span></strong> : うーん(ﾟ-ﾟ)何のことを言っているのかわかりません・・・( TДT)ｺﾞﾒﾝﾖｰ (<span class="comment_date">2014/12/08 (月) 14:53:40</span>)</li>
+<li><strong><span style="color:#4169e1; background-color:#00ff7f"><span class="basic-text smbas">キャラクター</span><strong>製作所</strong></span></strong> : もしかして、「1234点と56789点を両方保存する」って事ですか？その方法は、「初心者には、難しいかなぁ。」なんて思ったので、書いてません。 (<span class="comment_date">2014/12/08 (月) 14:57:25</span>)</li>
+<li><strong><span style="color:#4169e1; background-color:#00ff7f"><span class="basic-text smbas">キャラクター</span><strong>製作所</strong></span></strong> : ここに書いてあるのは、一つのハイスコアを保存する方法だけです。何か生意気ですいません。(｡-人-｡) (<span class="comment_date">2014/12/08 (月) 14:59:09</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : なるほど、そりゃ失礼。 (<span class="comment_date">2014/12/08 (月) 23:48:18</span>)</li>
+<li><strong>くぉくぉくぉ</strong> : 最大の桁数(ここでは6桁)を決めて「001234056789」で保存。解凍する際6桁で取り出して、左から「0」以外が出るまで「0」を省き続けて、そのあとVAL()で数値に戻すってことですかね (<span class="comment_date">2014/12/09 (火) 00:03:46</span>)</li>
+<li><strong>くぉくぉくぉ</strong> : 分かりにくいですね。すいませんm(_ _)m (<span class="comment_date">2014/12/09 (火) 00:04:26</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑初心者だけど、結構分かり易かったよ (<span class="comment_date">2014/12/09 (火) 00:09:40</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : いや、001234でもVALにすると1234になりますよ。むしろ「どうやって0を継ぎ足して6桁に固定すればいいのか」を考える方が(答えは分かってますがまだ書かない (<span class="comment_date">2014/12/09 (火) 00:12:44</span>)</li>
+<li><strong>くぉくぉくぉ</strong> : たしか文字数を出す関数があったような。それを使えば6桁に達するまでに必要な「0」の数が分かるということでしょうか (<span class="comment_date">2014/12/09 (火) 00:16:50</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : もっともっとシンプルに行きましょう。ちなみに文字数を出す関数はLEN()です (<span class="comment_date">2014/12/09 (火) 00:25:58</span>)</li>
+<li><strong>三毛乱ジェロ</strong> : 勿体付けるのもアレですので私なりの回答。TXT$=RIGHT$(&quot;000000&quot;+STR$(HI),6)　これでHIが1234であると設定して「0を6つ足して0000001234→RIGHT$で右から6つだけ拾うので001234」になりますよ。皆さんはどんな風に考えてました? (<span class="comment_date">2014/12/09 (火) 00:30:14</span>)</li>
+<li><strong>くぉくぉくぉ</strong> : あぁ！確かにそうですね！！これはかなりシンプルだけど思いつかなかったな… (<span class="comment_date">2014/12/09 (火) 00:33:07</span>)</li>
+<li><strong>キャラクター製作所</strong> : 僕mk2の時から知ってたんだし、やっぱり暇なときに分かりやすいように頑張って書いてみる。あぁ、また生意気です。すいません。m(_ _)m (<span class="comment_date">2014/12/09 (火) 00:52:07</span>)</li>
+<li><strong>名無しさん</strong> : つFORMAT$ (<span class="comment_date">2014/12/09 (火) 03:13:38</span>)</li>
+<li><strong><span style="color:#4169e1; background-color:#00ff7f"><span class="basic-text smbas">キャラクター</span><strong>製作所</strong></span></strong> : こ、、これは！！！Σ(ノ°▽°)ノΣ(ノ°▽°)ノΣ(ノ°▽°)ノΣ(ノ°▽°)ノΣ(ノ°▽°)ノ (<span class="comment_date">2014/12/09 (火) 15:39:58</span>)</li>
+<li><strong>名無しさん</strong> : HEXで桁揃えって案外知られていない？ (<span class="comment_date">2014/12/09 (火) 16:41:37</span>)</li>
+<li><strong>名無しさん</strong> : HEX$(HI,5)で文字列化してVAL(&quot;&amp;H&quot;+MID$(HI$,0,5))で数値化 (<span class="comment_date">2014/12/09 (火) 16:44:06</span>)</li>
+<li><strong>初心者</strong> : VAL関数がよくわかりません。 (<span class="comment_date">2014/12/21 (日) 12:01:15</span>)</li>
+<li><strong>名無しさん</strong> : S$=&quot;100&quot;としてS$×2は&quot;100&quot;×2で&quot;100100&quot;だけどVAL(S$)×2だと100×2で200になる (<span class="comment_date">2014/12/21 (日) 12:22:04</span>)</li>
+<li><strong>名無しさん</strong> : そこじゃなくてVAL関数自体を聞いているのでは (<span class="comment_date">2014/12/21 (日) 13:51:48</span>)</li>
+<li><strong>名無しさん</strong> : 文字列を数値に戻す関数、という説明でいいかな。 (<span class="comment_date">2014/12/21 (日) 15:23:24</span>)</li>
+<li><strong>名無しさん</strong> : 文字列を改行で区切って配列で返す命令(jsのString.split(&quot;\n&quot;))を作ればできるんじゃね (<span class="comment_date">2015/01/05 (月) 13:01:45</span>)</li>
+<li><strong>Newキャラクター製作所</strong> : 「わからない」と、答えた人が意外と多い・・・。何かわからないことがあったら、気軽に質問してください♪ (<span class="comment_date">2015/01/09 (金) 21:15:50</span>)</li>
+<li><strong>猫姫</strong> : 3号は配列変数をDATファイルで保存できるので、例えば、HISCORE(I)って配列に入れれば、文字列変換使わず保存できますよ。詳しくはSAVEのヘルプ４ページ目だったかな。 (<span class="comment_date">2015/01/22 (木) 08:31:22</span>)</li>
+<li><strong>Newきゃらくたぁ製作所</strong> : あ、そうだ、DAT使えば、ランキングごと保存するのも楽に出来る・・・！ (<span class="comment_date">2015/01/24 (土) 13:51:13</span>)</li>
+<li><strong>名無しさん</strong> : プチコンの使用上ロードにいちいち確認でるからハイスコアは実装しないほうがいいのかもしれない (<span class="comment_date">2015/01/27 (火) 21:01:16</span>)</li>
+<li><strong>名無しさん</strong> : セーブの間違いでは (<span class="comment_date">2015/01/27 (火) 21:39:03</span>)</li>
+<li><strong>ＴＥＸＴＥＲ</strong> : 21:01の名無しさん&gt;&gt;LOADでは、読み出すファイル名の後に「,FALSE」を追加する事で確認ダイアログが表示されなくなります。SAVEではできません。 (<span class="comment_date">2015/02/04 (水) 23:59:46</span>)</li>
+<li><strong>ゴースト4</strong> : DATってどうやる？ (<span class="comment_date">2015/05/20 (水) 23:37:37</span>)</li>
+<li><strong>Newきゃらくたぁ製作所</strong> : あー。DAT版のハイスコアの保存方法のページも作ろうかとは思ってるんですけど、忙しくてなかなか時間が・・・。 (<span class="comment_date">2015/07/19 (日) 12:04:28</span>)</li>
+<li><strong>イェァ</strong> : 複数の数字を保存する時、MID$で特定の記号を取得してるのは俺だけ？ (<span class="comment_date">2015/07/30 (木) 16:27:28</span>)
+<ul><li><strong>天郷思音</strong> : 桁数が少ないときデータが小さいってメリットがある。てかINSTRが便利。 (<span class="comment_date">2015/07/30 (木) 17:16:37</span>)</li></ul></li>
+<li><strong>§1</strong> : やあ、荒らし(・ω・) (<span class="comment_date">2015/10/10 (土) 03:49:06</span>)</li>
+<li><strong>ぷちぷち</strong> : 18782･･･ 37564･･･ これは･･･　　あ、とても分かりやすかったです！ (<span class="comment_date">2015/11/19 (木) 17:31:24</span>)</li>
+<li><strong>Newきゃらくたぁ製作所</strong> : ぷちぷちさん&#187;計算機のテストはまずこの計算っていうw (<span class="comment_date">2016/01/24 (日) 20:33:04</span>)</li>
+<li><strong>名無しさん</strong> : なるほど、18782(いやなやつ)、37564(わかるよね)か。 (<span class="comment_date">2021/03/28 (日) 15:47:10</span>)</li>
+<li><strong>名無しさん</strong> : 1234/214/2341 みたいにデータごとに記号で区切って、ロードするときは左から文字を一つづつ取っていくっていうゴリ押しでやってる(これだと最大桁数とか気にしなくていいので) (<span class="comment_date">2021/03/30 (火) 00:36:43</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/Hiscore" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="7d6b9d5841829aded3726fb59f26d56a" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (698d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (614d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2051d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (643d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (88d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (693d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (213d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (822d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (34d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (317d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (3h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (758d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1875d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1289d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (269d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (19h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (166d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (76d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/04/19</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (3h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%BF%A4%EB%A4%C8%A4%CE%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BD%B8" title="たるとプログラム「更新停止中...」 (4h)">たるとプログラム「更新停止中...」</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADDKC" title="リズミカルおもちつきDKC (6h)">リズミカルおもちつきDKC</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (11h)">リズミカルおもちつきTG NEO</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%B9%A5%BF%A5%F3%A5%C0%A1%BC%A5%C8%B7%D7%BB%BB%B5%A1" title="スタンダード計算機 (1d)">スタンダード計算機</a></li>
+</ul>
+<h4>2021/04/18</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%CD%F0%C6%AE" title="【公開終了】プチ乱闘 (1d)">【公開終了】プチ乱闘</a></li>
+ <li><a href="/petc3gou/?Toukou%2F3D%C5%AA%A4%CA%A5%DE%A5%C3%A5%D7" title="3Dっぽい何か (1d)">3Dっぽい何か</a></li>
+ <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (1d)">ピクトチャット2</a></li>
+ <li><a href="/petc3gou/?Toukou%2FChatine" title="Chatine (1d)">Chatine</a></li>
+ <li><a href="/petc3gou/?Toukou%2FFINDEX" title="FINDEX-ブラウザもどき (1d)">FINDEX-ブラウザもどき</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADDKC" title="Toukou/リズミカルおもちつきDKC (6h)">リズミカルおもちつきDKC<span class="counter">(41)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (166d)">Miiverse終了後の避難先まとめ<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (822d)">サンプルプログラム集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FVISION%20QUEST%200" title="Toukou/VISION QUEST 0 (809d)">VISION QUEST 0<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHTML%A4%CEUnicode%A4%F2%CA%B8%BB%FA%CE%F3%A4%CB%CA%D1%B4%B9%A1%AA" title="Toukou/HTMLのUnicodeを文字列に変換！ (37d)">投稿QSP : HTMLのUnicodeを文字列に変換！<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FPTCLIB%2FReference" title="Toukou/PTCLIB/Reference (930d)">PTCLIB: リファレンス<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FRemain" title="Toukou/Remain (175d)">Remain<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="Toukou/リズミカルおもちつきΣ (95d)">リズミカルおもちつきΣ<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMONA%27S%20FLYING" title="Toukou/MONA'S FLYING (1298d)">MONA'S FLYING<span class="counter">(4)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FTJAPlayer" title="Toukou/TJAPlayer (26d)">TJAPlayer beta<span class="counter">(4)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1323d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 4 人がこのサイトを見ています</li>
+<li>このページはこれまでに 7079 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.054 秒  | このページの最終更新 : 2021/03/30 (火) 00:36:43  (21d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 航空機着陸シミュレーター - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 航空機着陸シミュレーター - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, フライトシミュレータ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FSunshine%20Airport">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FSunshine%20Airport">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FSunshine%20Airport">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FSunshine%20Airport">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 航空機着陸シミュレーター</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FSunshine%20Airport">Sunshine Airport</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.032sec. -->
+<div class="contents">
+<ul><li><a href="#n2fe331d">  概要 </a></li>
+<li><a href="#ye115f72">  起動方法 </a></li>
+<li><a href="#a925e444">  画面紹介 </a></li>
+<li><a href="#ec2adad4">  遊び方 </a>
+<ul><li><a href="#b2da7351">  タイトル画面 </a></li>
+<li><a href="#o55f1a0f">  空港選択画面 </a>
+<ul><li><a href="#f99e6535">  ご注意 </a></li></ul></li>
+<li><a href="#sf077703">  ゲーム中の操作 </a>
+<ul><li><a href="#qe0d7cee">  逆噴射手順 </a></li></ul></li>
+<li><a href="#v42188c0">  計器類の見方 </a>
+<ul><li><a href="#na123fee">  ご注意 </a></li></ul></li>
+<li><a href="#w8cbab93">  結果表示画面 </a>
+<ul><li><a href="#u6fa0cbd">  おしらせ </a></li></ul></li></ul></li>
+<li><a href="#gc6fbfab">  アンケート </a></li>
+<li><a href="#nf3222f3">  公開キー </a></li>
+<li><a href="#w228179c">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2017年6月3日投稿
+/ 投稿者 : hanzo
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%A5%D5%A5%E9%A5%A4%A5%C8%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF">フライトシミュレータ</a> </span></p>
+<h3 id="n2fe331d">概要</h3>
+<p>10km先に見える空港の滑走路に、自機を無事着陸させるゲームです。</p>
+<p>本日のアクセス数：1　　トータルアクセス数：3192</p>
+
+<h3 id="ye115f72">起動方法</h3>
+<p>ダウンロードしたプロジェクトから HNZLNDA を実行してください。</p>
+
+<h3 id="a925e444">画面紹介</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FSunshine%20Airport&amp;openfile=hnzlnda02.jpg" title="hnzlnda02.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FSunshine%20Airport&amp;src=hnzlnda02.jpg" alt="hnzlnda02.jpg" title="hnzlnda02.jpg" width="400" height="240" /></a></td></tr></tbody></table></div>
+
+<h3 id="ec2adad4">遊び方</h3>
+
+<h4 id="b2da7351">タイトル画面</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FSunshine%20Airport&amp;openfile=hnzlnda00.jpg" title="hnzlnda00.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FSunshine%20Airport&amp;src=hnzlnda00.jpg" alt="hnzlnda00.jpg" title="hnzlnda00.jpg" width="400" height="240" /></a></td></tr></tbody></table></div>
+<p>Aボタンで、空港選択画面に切り換わります。</p>
+
+<h4 id="o55f1a0f">空港選択画面</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FSunshine%20Airport&amp;openfile=hnzlnda01.jpg" title="hnzlnda01.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FSunshine%20Airport&amp;src=hnzlnda01.jpg" alt="hnzlnda01.jpg" title="hnzlnda01.jpg" width="400" height="240" /></a></td></tr></tbody></table></div>
+<ul><li>スライドパッドまたは十字ボタン・・・空港選択</li>
+<li>Aボタン・・・決定（ゲーム画面への切り換え）</li></ul>
+
+<h5 id="f99e6535">ご注意</h5>
+<ul><li>各空港間の難易度の差はありません。</li>
+<li>風向、風速、雲の有無およびBGMは、ゲーム開始時にランダムに決まります。</li></ul>
+
+<h4 id="sf077703">ゲーム中の操作</h4>
+<ul><li>スライドパッド上／下・・・機首下げ／上げ（機体のピッチ角制御）</li>
+<li>スライドパッド左／右・・・左／右旋回（機体のロール角制御）</li>
+<li>Rボタン・・・エンジンパワーアップ</li>
+<li>Lボタン・・・エンジンパワーダウン／逆噴射</li></ul>
+
+<h5 id="qe0d7cee">逆噴射手順</h5>
+<ul><li>Lボタンを押して、エンジンパワーをダウンさせる。</li>
+<li>エンジンパワーがゼロになったら、一旦Lボタンを放す。</li>
+<li>再度、Lボタンを押す</li></ul>
+
+<h4 id="v42188c0">計器類の見方</h4>
+<p>以下の番号は、下画面に表示しているサンプルの1〜8に相当します。</p>
+<ul><li>1. 対気速度計（ノット）</li>
+<li>2. 水平儀</li>
+<li>3. 高度計（長針が×100フィート、短針が×1000フィートを表します）</li>
+<li>4. ILS表示（理想航跡からの上下左右のズレを表します）</li>
+<li>5. 滑走路までの距離（m）</li>
+<li>6. 風向表示</li>
+<li>7. 風速表示（m/s）</li>
+<li>8. エンジンパワー表示（Rは逆噴射を表します）</li></ul>
+
+<h5 id="na123fee">ご注意</h5>
+<ul><li>過度に左右旋回または上昇を行うと、飛行禁止エリアに進入してしまい、強制飛行終了となります。</li>
+<li>着地後に逆噴射を使用しないと、滑走路上で停止できず、オーバーランします。</li>
+<li>逆噴射は飛行中も使えますが、逆噴射により機速を落とし過ぎると、機体が失速降下します。</li></ul>
+
+<h4 id="w8cbab93">結果表示画面</h4>
+<p>フライトの結果（飛行航跡と5段階評価）を表示します。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FSunshine%20Airport&amp;openfile=hnzlnda03.jpg" title="hnzlnda03.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FSunshine%20Airport&amp;src=hnzlnda03.jpg" alt="hnzlnda03.jpg" title="hnzlnda03.jpg" width="400" height="240" /></a></td></tr></tbody></table></div>
+
+<h5 id="u6fa0cbd">おしらせ</h5>
+<p>5段階評価は「滑走路上の適切なポイントに、適切な角度で進入したかどうか」「滑走路の中心軸近傍に着地したか」「滑走路のなるべく手前で停止したか」に依拠します。従って、高評価を得るには、次の3点を意識しましょう。</p>
+<ul><li>ILSの十字の交点が、常に円の中心に来るように、機体のピッチ／ロール角をコントロールする。</li>
+<li>滑走路接地直前には、失速ギリギリまで機速を落とす。</li>
+<li>滑走路左側の「精密進入経路表示灯」が「白2つ、赤2つ」の状態を維持する。
+</li></ul>
+
+<h3 id="gc6fbfab">アンケート</h3>
+<p>ダウンロードされた方は、できればご投票願います。</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/Sunshine Airport" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="b3d010a7f55c2fda31c45047f6b9f67e" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダウンロードした</td>
+   <td align="right" class="vote_td2">48&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B7A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="nf3222f3">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">7Z5QA334</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="w228179c">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (948d)">掲示板</a>へ)</p>
+<ul><li><strong>いいにくスター</strong> : 待ってました！ (<span class="comment_date">2017/06/03 (土) 20:49:55</span>)</li>
+<li><strong>hanzo</strong> : お待たせ致しました！ 自分の作品を期待していただけると言うのは、ありがたいことです。 (<span class="comment_date">2017/06/03 (土) 21:41:07</span>)</li>
+<li><strong>ULM</strong> : hanzo氏の新作ktkr いつも楽しく遊ばしてもらってます (<span class="comment_date">2017/06/03 (土) 22:35:53</span>)</li>
+<li><strong>hanzo</strong> : 恐れ入ります。楽しんでいただけて何よりです。 (<span class="comment_date">2017/06/04 (日) 09:35:15</span>)</li>
+<li><strong>SEKI22(てりやきセッキー)</strong> : これがプチコンっていうと凄すぎる (<span class="comment_date">2017/06/04 (日) 10:05:13</span>)</li>
+<li><strong>hanzo</strong> : プチコン自体の潜在能力がすごいんですよ。実際のところ、プチコンの限界がどこにあるのか（そもそも限界があるのか）私にもはっきり解りません・・・ (<span class="comment_date">2017/06/04 (日) 12:02:04</span>)</li>
+<li><strong>PUSH</strong> : 感動です！　まさかここまでできるとは・・・。管制官の声までついてるし。BGMもカッコ良くてトップランディングを思い出します。 (<span class="comment_date">2017/06/05 (月) 00:10:57</span>)</li>
+<li><strong>hanzo</strong> : 感動していただけて光栄です。そうなんです、このテのゲーム制作にあたって、「トップランディング」の影響を回避することはできませんでした。ちなみに音関係では、管制の声やBGMよりもむしろエンジン音が難しかったです。 (<span class="comment_date">2017/06/05 (月) 08:19:20</span>)</li>
+<li><strong>hakase </strong> : 着陸シリーズはいろいろやりましたが凄そうです (<span class="comment_date">2017/06/13 (火) 20:12:08</span>)</li>
+<li><strong>hakase </strong> : papiとかまで再現されていますねフラシムなんかをやっていたりするのですか？ (<span class="comment_date">2017/06/13 (火) 20:13:35</span>)</li>
+<li><strong>hanzo</strong> : フライトシミュレーターをフラシムって略すのは、実は今はじめて知りました。恐縮です。上述のとおり、本作は「トップランディング」のパク･･･影響を受けていますが、PAPIも「トップランディング」や、同じくタイトーの「ジェットでGO」で再現されていたので、本作でも是非再現したいと思い、実現させた次第です。 (<span class="comment_date">2017/06/13 (火) 23:19:35</span>)</li>
+<li><strong>うし</strong> : ゲーセンのトップランディングのファンですが、素晴らしい完成度で感動しました (<span class="comment_date">2017/09/12 (火) 21:10:38</span>)</li>
+<li><strong>hanzo</strong> : さすがに完成度は、本家トップランディングとは比較にならないと自覚していますが、それでも感動していただけて何よりです。 (<span class="comment_date">2017/09/12 (火) 22:56:46</span>)</li>
+<li><strong>名無しさん</strong> : たーのしー！ (<span class="comment_date">2017/09/12 (火) 23:11:47</span>)</li>
+<li><strong>hanzo</strong> : ありがとうございます！ (<span class="comment_date">2017/09/13 (水) 06:34:14</span>)</li>
+<li><strong>hu</strong> : いまからつくります。おたのしみに。 (<span class="comment_date">2017/09/24 (日) 19:37:41</span>)</li>
+<li><strong>名無し2</strong> : ダウンロードが出来なくなっていますよ (<span class="comment_date">2018/04/22 (日) 13:12:26</span>)</li>
+<li><strong>hanzo</strong> : 先ほど、2018/04/22現在の公開キー「7Z5QA334」で本作のダウンロードを試みたところ、正常にダウンロードができました。公開キーの入力にお間違いがないか、今一度ご確認願います。（&quot;Z&quot;と&quot;2&quot;は、割とよく間違います。また、公開キーを読み方で覚えていると間違いやすいのが、&quot;Q&quot;と&quot;9&quot;です。） (<span class="comment_date">2018/04/22 (日) 21:06:39</span>)</li>
+<li><strong>名無しさん</strong> : 少なくとも、これまでプチコンで遊んだゲームの中でも一番面白いです！ 続編も期待してます！ (<span class="comment_date">2018/07/14 (土) 20:24:58</span>)</li>
+<li><strong>hanzo</strong> : ありがとうございます。面白い作品が山ほど投稿されている当wikiの中で一番と言っていただけて、誠に光栄です。 (<span class="comment_date">2018/07/15 (日) 21:34:55</span>)</li>
+<li><strong>はやピー</strong> : スゲー&#10071;ヤバいサイコー&#128515;&#10548;&#10548; (<span class="comment_date">2018/11/25 (日) 20:07:11</span>)</li>
+<li><strong>hanzo</strong> : ストレートにほめていただき、ありがとうございます。 (<span class="comment_date">2018/11/26 (月) 22:45:52</span>)</li>
+<li><strong>さとし</strong> : 公開キーは阪神関係ないですよね？(7Z5QA 334 ) (<span class="comment_date">2019/04/14 (日) 13:34:36</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/Sunshine Airport" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="b3d010a7f55c2fda31c45047f6b9f67e" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (10h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (4h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (9h)">編集の練習用ページ</a></li>
+</ul>
+<h4>2021/02/28</h4>
+<ul>
+ <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (10h)">OFコーナー3号</a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表</a></li>
+</ul>
+<h4>2021/02/27</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (2d)">nikuラジオ</a></li>
+</ul>
+<h4>2021/02/26</h4>
+<ul>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+</ul>
+<h4>2021/02/25</h4>
+<ul>
+ <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+</ul>
+<h4>2021/02/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
+ <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表<span class="counter">(19)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (2d)">nikuラジオ<span class="counter">(15)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (797d)">HERO2 一台で二人同時プレイ<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (459d)">NCF MUSEQ STATION<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%E6%A4%A6%A4%B7%A4%E3%A5%E1%A1%BC%A5%AB%A1%BC" title="Toukou/ゆうしゃメーカー (1010d)">ゆうしゃメーカー<span class="counter">(6)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 2 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3192 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.035 秒  | このページの最終更新 : 2019/04/14 (日) 13:34:36  (686d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

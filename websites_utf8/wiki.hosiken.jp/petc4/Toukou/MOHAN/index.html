@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : ペイントツール「MOHAN」 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : ペイントツール「MOHAN」 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, お絵描きツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Toukou%2FMOHAN">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Toukou%2FMOHAN">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FMOHAN">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Toukou%2FMOHAN">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : ペイントツール「MOHAN」</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li><a href="/petc4/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Toukou%2FMOHAN">MOHAN</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.171sec. -->
+<div class="contents">
+<ul><li><a href="#s1cb6ec0">  概要 </a>
+<ul><li><a href="#w9549888">  操作方法 </a></li></ul></li>
+<li><a href="#ja8771b5">  プチコン4でペンタブレット接続 </a>
+<ul><li><a href="#g668d4fa">  概要: </a></li>
+<li><a href="#vf764d55">  説明 </a></li>
+<li><a href="#i2d44ccd">  問題点 </a></li>
+<li><a href="#j7cd0041">  必要なハード </a>
+<ul><li><a href="#d223cd88">  ペンタブレット </a></li>
+<li><a href="#m3d9e9d3">  Arduino ProMicro </a></li>
+<li><a href="#k6878e99">  MicroUSBケーブル*2 </a></li>
+<li><a href="#d0e7c961">  PC(Win/MAC/Linux/RaspberryPi) </a></li>
+<li><a href="#b5fef8d8">  その他､リード線*3､ </a></li></ul></li>
+<li><a href="#wbbcd579"> あれば便利 </a>
+<ul><li><a href="#b48c8eeb">  ブレッドボード等 </a></li>
+<li><a href="#ke389bdd">  OTGケーブル あるいは HORI社「USBハブ」 </a></li>
+<li><a href="#e76e7eda">  マウス </a></li></ul></li>
+<li><a href="#xbb727a2">  必要なこと </a></li>
+<li><a href="#l7f1c3b4">  python処理系のインストール </a>
+<ul><li><a href="#r52ed48c">  RaspberryPiOS(32bit) </a></li>
+<li><a href="#ecbaec88">  Windows10 </a></li></ul></li>
+<li><a href="#ee8b78a4">  コンソールの開き方 </a>
+<ul><li><a href="#e123f263">  RasPi </a></li>
+<li><a href="#p0e17862">  windows10 </a></li></ul></li>
+<li><a href="#w9612655">  シリアルポート制御ライブラリのインストール(PySerial) ~ </a></li>
+<li><a href="#n11a8667">  Windows10でペンタブレット情報取得用ライブラリのインストール(PySide2) ~ </a></li>
+<li><a href="#mdc21feb">  RaspberryPiOS(32bit)でペンタブレット情報取得用ライブラリのインストール(PySide2) ~ </a></li>
+<li><a href="#o54743c6">  pythonプログラム </a></li>
+<li><a href="#pd883df2">  pythonプログラムの実行 </a>
+<ul><li><a href="#tacfd589">  RasPi </a></li>
+<li><a href="#h9a404a9">  windows10 </a></li></ul></li>
+<li><a href="#xcbba1df">  更に高速化 </a></li>
+<li><a href="#ibffb65d">  動作確認: </a></li>
+<li><a href="#e377b3f0">  参考資料: </a></li></ul></li>
+<li><a href="#s89cd3de">  公開キー </a>
+<ul><li><a href="#bde4c032">  更新履歴 </a></li></ul></li></ul>
+</div>
+
+<p>2020年07月14日投稿<br />
+2022年4月3日更新<br />
+/ 投稿者 : 妄碌庵
+/ <span class="tag">タグ : <a href="/petc4/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc4/?cmd=taglist&amp;tag=%A4%AA%B3%A8%C9%C1%A4%AD%A5%C4%A1%BC%A5%EB">お絵描きツール</a> </span></p>
+<h3 id="s1cb6ec0">概要</h3>
+<p>フリーハンドに特化したお絵描きツールです
+16レイヤーの32bitフルカラーペイントが可能です</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=MOHAN%A5%D7%A5%C1%A5%B3%A5%F34build702FJNSWVGVIAAqBHm.jpg" title="MOHANプチコン4build702FJNSWVGVIAAqBHm.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=MOHAN%A5%D7%A5%C1%A5%B3%A5%F34build702FJNSWVGVIAAqBHm.jpg" alt="MOHANプチコン4build702FJNSWVGVIAAqBHm.jpg" title="MOHANプチコン4build702FJNSWVGVIAAqBHm.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=%A5%D7%A5%C1%A5%B3%A5%F34MOHANEZgEvoJVcAAAk_V.jpg" title="プチコン4MOHANEZgEvoJVcAAAk_V.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=%A5%D7%A5%C1%A5%B3%A5%F34MOHANEZgEvoJVcAAAk_V.jpg" alt="プチコン4MOHANEZgEvoJVcAAAk_V.jpg" title="プチコン4MOHANEZgEvoJVcAAAk_V.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=%A5%D7%A5%C1%A5%B3%A5%F34MOHANEaPVwHLWoAA9u5a.jpg" title="プチコン4MOHANEaPVwHLWoAA9u5a.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=%A5%D7%A5%C1%A5%B3%A5%F34MOHANEaPVwHLWoAA9u5a.jpg" alt="プチコン4MOHANEaPVwHLWoAA9u5a.jpg" title="プチコン4MOHANEaPVwHLWoAA9u5a.jpg" width="1280" height="720" /></a></div>
+
+
+<h4 id="w9549888">操作方法</h4>
+<p>起動するとすぐ描けるようになります
+アイコンヘルプはYボタンを押下後調べたいアイコンを押してみて下さい､インフォメーションゲージに説明が表示されます
+上下ボタンでタブを切り替えします</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=04_Color%A5%BF%A5%D6.jpg" title="04_Colorタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=04_Color%A5%BF%A5%D6.jpg" alt="04_Colorタブ.jpg" title="04_Colorタブ.jpg" width="1280" height="720" /></a></div>
+
+<p>GUI非表示はLボタンでトグル動作します</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=00_GUI%C8%F3%C9%BD%BC%A8.jpg" title="00_GUI非表示.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=00_GUI%C8%F3%C9%BD%BC%A8.jpg" alt="00_GUI非表示.jpg" title="00_GUI非表示.jpg" width="1280" height="720" /></a></div>
+
+<p>スクリーンショットやSNS等に投稿したい場合などフルスクリーン表示を行いたい場合はViewタブからフルスクリーン表示を行います</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=01_%A5%D5%A5%EB%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%C9%BD%BC%A8.jpg" title="01_フルスクリーン表示.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=01_%A5%D5%A5%EB%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%C9%BD%BC%A8.jpg" alt="01_フルスクリーン表示.jpg" title="01_フルスクリーン表示.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=02_files%A5%BF%A5%D6.jpg" title="02_filesタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=02_files%A5%BF%A5%D6.jpg" alt="02_filesタブ.jpg" title="02_filesタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=03_config%A5%BF%A5%D6.jpg" title="03_configタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=03_config%A5%BF%A5%D6.jpg" alt="03_configタブ.jpg" title="03_configタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=05_Palette%A5%BF%A5%D6.jpg" title="05_Paletteタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=05_Palette%A5%BF%A5%D6.jpg" alt="05_Paletteタブ.jpg" title="05_Paletteタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=06_Brush%A5%BF%A5%D6.jpg" title="06_Brushタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=06_Brush%A5%BF%A5%D6.jpg" alt="06_Brushタブ.jpg" title="06_Brushタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=07_Layer%A5%BF%A5%D6.jpg" title="07_Layerタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=07_Layer%A5%BF%A5%D6.jpg" alt="07_Layerタブ.jpg" title="07_Layerタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=08_View%A5%BF%A5%D6.jpg" title="08_Viewタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=08_View%A5%BF%A5%D6.jpg" alt="08_Viewタブ.jpg" title="08_Viewタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=09_Edit%A5%BF%A5%D6.jpg" title="09_Editタブ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=09_Edit%A5%BF%A5%D6.jpg" alt="09_Editタブ.jpg" title="09_Editタブ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=10_%A5%A4%A5%E1%A1%BC%A5%B8%A5%DB%A1%BC%A5%B9.jpg" title="10_イメージホース.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=10_%A5%A4%A5%E1%A1%BC%A5%B8%A5%DB%A1%BC%A5%B9.jpg" alt="10_イメージホース.jpg" title="10_イメージホース.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=11_%A5%B8%A5%C3%A5%BF%A1%BC%A5%D6%A5%E9%A5%B7.jpg" title="11_ジッターブラシ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=11_%A5%B8%A5%C3%A5%BF%A1%BC%A5%D6%A5%E9%A5%B7.jpg" alt="11_ジッターブラシ.jpg" title="11_ジッターブラシ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=12_%A5%B9%A5%AD%A5%DE%C2%D0%B1%FE%C5%C9%A4%EA%A4%C4%A4%D6%A4%B7.jpg" title="12_スキマ対応塗りつぶし.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=12_%A5%B9%A5%AD%A5%DE%C2%D0%B1%FE%C5%C9%A4%EA%A4%C4%A4%D6%A4%B7.jpg" alt="12_スキマ対応塗りつぶし.jpg" title="12_スキマ対応塗りつぶし.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=13_%A5%AB%A5%E9%A1%BC%A5%D4%A5%C3%A5%AB%A1%BC.jpg" title="13_カラーピッカー.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=13_%A5%AB%A5%E9%A1%BC%A5%D4%A5%C3%A5%AB%A1%BC.jpg" alt="13_カラーピッカー.jpg" title="13_カラーピッカー.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=14_%A4%DC%A4%AB%A4%B7%A5%D6%A5%E9%A5%B7.jpg" title="14_ぼかしブラシ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=14_%A4%DC%A4%AB%A4%B7%A5%D6%A5%E9%A5%B7.jpg" alt="14_ぼかしブラシ.jpg" title="14_ぼかしブラシ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=15_%A5%BF%A5%A4%A5%EB%A5%D6%A5%E9%A5%B7.jpg" title="15_タイルブラシ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=15_%A5%BF%A5%A4%A5%EB%A5%D6%A5%E9%A5%B7.jpg" alt="15_タイルブラシ.jpg" title="15_タイルブラシ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=16_%BB%D8%C9%AE.jpg" title="16_指筆.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=16_%BB%D8%C9%AE.jpg" alt="16_指筆.jpg" title="16_指筆.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=17_%A5%D6%A5%E9%A5%B7.jpg" title="17_ブラシ.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=17_%A5%D6%A5%E9%A5%B7.jpg" alt="17_ブラシ.jpg" title="17_ブラシ.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=18_%A5%D5%A5%E9%A5%C3%A5%C8%A5%DA%A5%F3.jpg" title="18_フラットペン.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=18_%A5%D5%A5%E9%A5%C3%A5%C8%A5%DA%A5%F3.jpg" alt="18_フラットペン.jpg" title="18_フラットペン.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=19_%A5%C9%A5%C3%A5%C8%A5%DA%A5%F3.jpg" title="19_ドットペン.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=19_%A5%C9%A5%C3%A5%C8%A5%DA%A5%F3.jpg" alt="19_ドットペン.jpg" title="19_ドットペン.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=20_%BE%C3%A4%B7%A5%B4%A5%E0.jpg" title="20_消しゴム.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=20_%BE%C3%A4%B7%A5%B4%A5%E0.jpg" alt="20_消しゴム.jpg" title="20_消しゴム.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=21_%BF%A7%C1%EA%A5%B8%A5%C3%A5%BF%A1%BC%C2%B0%C0%AD.jpg" title="21_色相ジッター属性.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=21_%BF%A7%C1%EA%A5%B8%A5%C3%A5%BF%A1%BC%C2%B0%C0%AD.jpg" alt="21_色相ジッター属性.jpg" title="21_色相ジッター属性.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=22_%A4%B6%A4%E9%A4%C4%A4%AD%C2%B0%C0%AD.jpg" title="22_ざらつき属性.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=22_%A4%B6%A4%E9%A4%C4%A4%AD%C2%B0%C0%AD.jpg" alt="22_ざらつき属性.jpg" title="22_ざらつき属性.jpg" width="1280" height="720" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=23_%C8%AF%B8%F7%C2%B0%C0%AD.jpg" title="23_発光属性.jpg"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=23_%C8%AF%B8%F7%C2%B0%C0%AD.jpg" alt="23_発光属性.jpg" title="23_発光属性.jpg" width="1280" height="720" /></a></div>
+
+
+<h3 id="ja8771b5">プチコン4でペンタブレット接続</h3>
+
+<h4 id="g668d4fa">概要:</h4>
+<p>プチコン4でペンタブレット接続を実現するものである｡</p>
+
+<h4 id="vf764d55">説明</h4>
+<p>Python処理系とライブラリ「PySide2」(ペンタブレットの情報取得用&amp;GUI)､「pyserial」(シリアルポート送信用)を使用してキーコード変換し､れい氏(@rei_software)作PC-Switchファイル転送ソフト「petit4send」でキーボード押下状態としてSwitchに送信､プチコン側でペンタブ入力情報として複合することによりプチコン4でペンタブレット接続を実現するものである｡</p>
+<div class="img_margin" style="text-align:left"><a href="/petc4/?plugin=attach&amp;refer=Toukou%2FMOHAN&amp;openfile=%A5%D7%A5%C1%A5%B3%A5%F34%A5%DA%A5%F3%A5%BF%A5%D6%C2%D0%B1%FE%B7%D7%B2%E8%C0%DC%C2%B3%BF%DE20220303090631.png" title="プチコン4ペンタブ対応計画接続図20220303090631.png"><img src="/petc4/?plugin=ref&amp;page=Toukou%2FMOHAN&amp;src=%A5%D7%A5%C1%A5%B3%A5%F34%A5%DA%A5%F3%A5%BF%A5%D6%C2%D0%B1%FE%B7%D7%B2%E8%C0%DC%C2%B3%BF%DE20220303090631.png" alt="プチコン4ペンタブ対応計画接続図20220303090631.png" title="プチコン4ペンタブ対応計画接続図20220303090631.png" width="1280" height="960" /></a></div>
+
+
+<h4 id="i2d44ccd">問題点</h4>
+<p>・Switch側からはキーボードとしてしか認識されていないため､ソースコードエディタ上で実行するとキーコードが高速で入力されることになる｡このためプログラムエディタ及びファイルセーブ等のダイアログ表示時の使用はほぼ不可能､プチコン4側での対応が必要となる｡<br />
+<del>・モニタ接続でのドックのUSBはキーコードの同期が行うことができなかった､必然的に接続形態はテーブルモードでの接続となる~</del>
+2022-02-28追記:ドッグ経由での接続に成功しましたのでモニタ表示で使用が可能となります
+2022-03-02追記:(build0758以降で使用可能となりました)</p>
+<p>現時点でのプチコン4側の対応は拙作ペイントツール「MOHAN」のみだが､サンプルコードを添付したプロジェクトを公開します
+「ペンタブテスト」 sbkey【48A44V394】</p>
+
+<h4 id="j7cd0041">必要なハード</h4>
+
+<h5 id="d223cd88">ペンタブレット</h5>
+<p>pySide2で動作するもの､WACOM社「OneByWacom」推奨<br />
+6000円ぐらい<br />
+<a href="https://www.amazon.co.jp/%E3%83%AF%E3%82%B3%E3%83%A0-%E3%83%9A%E3%83%B3%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88-Wacom-%E3%83%9A%E3%83%B3%E5%85%A5%E5%8A%9B%E5%B0%82%E7%94%A8%E3%83%A2%E3%83%87%E3%83%AB-CTL-672/dp/B07583VVY5" rel="nofollow">https://www.amazon.co.jp/%E3%83%AF%E3%82%B3%E3%83%A0-%E3%83%9A%E3%83%B3%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88-Wacom-%E3%83%9A%E3%83%B3%E5%85%A5%E5%8A%9B%E5%B0%82%E7%94%A8%E3%83%A2%E3%83%87%E3%83%AB-CTL-672/dp/B07583VVY5</a> <br /></p>
+
+<h5 id="m3d9e9d3">Arduino ProMicro</h5>
+<p>5V-16MHz品*2<br />
+Amazonで1個<del>600円</del>750円〜3000円ぐらい(純正品は2400円ぐらいだが互換品だと安い､typeCコネクタのも有)<br />
+要するに「petit4send」のハード部分(ファームウェアもそのまま)を使う<br />
+<a href="http://rei.to/petit4send.html" rel="nofollow">http://rei.to/petit4send.html</a> <br />
+を参照(v1.2.0以降､v1.2.2で動作検証)<br /></p>
+
+<h5 id="k6878e99">MicroUSBケーブル*2</h5>
+<p>データ通信ができるもの</p>
+
+<h5 id="d0e7c961">PC(Win/MAC/Linux/RaspberryPi)</h5>
+<p>タブレットを接続するコンピュータ一台<br />
+Python処理系とライブラリ「Pyside2」「pyserial」が導入されていること<br />
+「petit4send」及び､ペンタブを接続するため最低USBコネクタが２つ必要<br />
+(RaspberryPiは3+で動作検証)<br /></p>
+
+<h5 id="b5fef8d8">その他､リード線*3､</h5>
+
+<h4 id="wbbcd579">あれば便利</h4>
+
+<h5 id="b48c8eeb">ブレッドボード等</h5>
+<p>千石電商で220円</p>
+
+<h5 id="ke389bdd">OTGケーブル あるいは HORI社「USBハブ」</h5>
+<p>300円ぐらい､テーブルモードでの使用に利用<br />
+<a href="https://hori.jp/products/nsw/usb_hub_stand/" rel="nofollow">https://hori.jp/products/nsw/usb_hub_stand/</a> <br />
+4ポート版､希望小売価格4378円とのこと(4000円前後) <br /></p>
+
+<h5 id="e76e7eda">マウス</h5>
+<p>モニタ表示時にペンタブモードに切り替える場合に必要</p>
+
+<h4 id="xbb727a2">必要なこと</h4>
+<p>「petit4send」を完成させる (必須)<br />
+端末にPython処理系をインストール(win)(省略可)<br />
+Pythonのインポートライブラリとして「PySide2」「pyserial」のインストール(省略可)<br />
+ペンタブ情報転送用pythonプログラムソースの用意(TabSend_nn.py)(省略可)<br />
+PCから送信用Pythonスクリプト/送信ソフトの実行 (必須)<br />
+対応プチコン4ソフトの起動 (必須)<br /></p>
+
+<h4 id="l7f1c3b4">python処理系のインストール</h4>
+
+<h5 id="r52ed48c">RaspberryPiOS(32bit)</h5>
+<p>→最初から入っている3.9系を使用</p>
+
+<h5 id="ecbaec88">Windows10</h5>
+<p>→<a href="https://www.python.org/" rel="nofollow">https://www.python.org/</a> にアクセス <br />
+→downloads <br />
+→インストーラdownload for windowsをダウンロード <br />
+→実行 <br />
+→『Add Python 3.x to Path』にチェックを入れてから『Install now』をクリック <br /></p>
+
+<h4 id="ee8b78a4">コンソールの開き方</h4>
+
+<h5 id="e123f263">RasPi</h5>
+<p>→GUIの左上あたりにある黒いアイコン(コンソールアイコン)をクリック</p>
+
+<h5 id="p0e17862">windows10</h5>
+<p>→Explorer(ファイルマネージャー)を開く <br />
+→alt+D <br />
+→「cmd」と打ち込んでenter <br />
+→現在フォルダでコマンドラインが立ち上がる <br /></p>
+
+<h4 id="w9612655">シリアルポート制御ライブラリのインストール(PySerial) ~</h4>
+<p>win/RasPi共通
+コンソールで以下を実行(すべて小文字)</p>
+<pre>   pip install pyserial</pre>
+
+<h4 id="n11a8667">Windows10でペンタブレット情報取得用ライブラリのインストール(PySide2) ~</h4>
+<p>コンソールで以下を実行(大文字小文字を区別する)</p>
+<pre>   pip install PySide2</pre>
+
+<h4 id="mdc21feb">RaspberryPiOS(32bit)でペンタブレット情報取得用ライブラリのインストール(PySide2) ~</h4>
+<p>コンソールで以下を実行(超絶に長いのでコピペ推奨)(64bitOS不可)</p>
+<pre>   sudo apt-get install python3-pyside2.qt3dcore python3-pyside2.qt3dinput python3-pyside2.qt3dlogic python3-pyside2.qt3drender python3-pyside2.qtcharts python3-pyside2.qtconcurrent python3-pyside2.qtcore python3-pyside2.qtgui python3-pyside2.qthelp python3-pyside2.qtlocation python3-pyside2.qtmultimedia python3-pyside2.qtmultimediawidgets python3-pyside2.qtnetwork python3-pyside2.qtopengl python3-pyside2.qtpositioning python3-pyside2.qtprintsupport python3-pyside2.qtqml python3-pyside2.qtquick python3-pyside2.qtquickwidgets python3-pyside2.qtscript python3-pyside2.qtscripttools python3-pyside2.qtsensors python3-pyside2.qtsql python3-pyside2.qtsvg python3-pyside2.qttest python3-pyside2.qttexttospeech python3-pyside2.qtuitools python3-pyside2.qtwebchannel python3-pyside2.qtwebsockets python3-pyside2.qtwidgets python3-pyside2.qtx11extras python3-pyside2.qtxml python3-pyside2.qtxmlpatterns python3-pyside2uic</pre>
+
+<h4 id="o54743c6">pythonプログラム</h4>
+<p>以下からダウンロード  <br />
+(2022-03-18)妄碌庵版より速いPythonスクリプトをユざ氏(TwitterID:__yuza__)が作ってくれましたので､こちらの方を使用してください <br />
+<a href="http://moh6an.o.oo7.jp/moh/PenTablet_petitcom4_petit4send_9600.py" rel="nofollow">http://moh6an.o.oo7.jp/moh/PenTablet_petitcom4_petit4send_9600.py</a>  (win用)<br />
+<a href="http://moh6an.o.oo7.jp/moh/PenTablet_petitcom4_petit4send_9600_pi.py" rel="nofollow">http://moh6an.o.oo7.jp/moh/PenTablet_petitcom4_petit4send_9600_pi.py</a>  (win/RaspberryPi兼用)<br />
+<del>ttp://moh6an.o.oo7.jp/moh/TabSend_16.py </del> <br /></p>
+
+<h4 id="pd883df2">pythonプログラムの実行</h4>
+
+<h5 id="tacfd589">RasPi</h5>
+<p>→TabSend_nn.py(nnには数字が入ります)をクリック､プログラムエディタが立ち上がる <br />
+→「f5」キーで実行 <br />
+→シリアルポートを選んで「run」ボタンを押下 <br /></p>
+
+<h5 id="h9a404a9">windows10</h5>
+<p>→TabSend_nn.py(nnには数字が入ります)をクリックするだけ <br />
+→シリアルポートを選んで「run」ボタンを押下 <br /></p>
+
+<h4 id="xcbba1df">更に高速化</h4>
+<p>ユざ氏(TwitterID:__yuza__)がwindows上で単体で動くc#の送信ソフトを作成してくださいました､ありがとうございます <br />
+<a href="https://github.com/yuza-tw/Petit4Tablet" rel="nofollow">https://github.com/yuza-tw/Petit4Tablet</a> <br />
+ソフト直リンク:<br />
+<a href="https://github.com/yuza-tw/Petit4Tablet/releases/download/1.1/Petit4Tablet.exe" rel="nofollow">https://github.com/yuza-tw/Petit4Tablet/releases/download/1.1/Petit4Tablet.exe</a> <br /></p>
+<p>↓ユざ氏のPythonスクリプトにより標準状態のpetit4sendで十分な速度になったため､不要となった <br />
+<del>petit4sendのファームウェアを書き換えると､追従性が向上する（がpetit4sendと兼用できなくなる､=ペンタブ専用になる)</del><br />
+<del>以上のことを承知の上での専用ファーム及びソースをZipで固めたもの</del><br />
+<del>(Python環境のインストールされていないWindows端末用のexeバイナリ同梱)</del><br />
+<del>→ttp://moh6an.o.oo7.jp/moh/PenTablet_petitcom4_002.zip </del> <br /></p>
+
+<h4 id="ibffb65d">動作確認:</h4>
+<p>ペンタブレットは以下で動作確認しました<br />
+Wacom製品<br />
+「OneByWacom」<br />
+「Intuos4Large」<br />
+「Cintiq22」<br />
+ドスパラ ペンタブ対応タブレット<br />
+「RayTrekTab8(初期型)」<br />
+「RayTrekTab10」<br /></p>
+<p>ホストPCとして自作PC及びノートパソコン(ThinkPadP14s)､RaspberryPi3B+/4B(32bitRaspberryPiOS)で動作確認しました</p>
+<p>動作報告として以下のタブレットでの動作を受けています<br />
+「XP-PEN Artist Pro 16」<br />
+「Intuos Small CTH-490」<br /></p>
+
+<h4 id="e377b3f0">参考資料:</h4>
+<p>petit4send <br />
+<a href="http://rei.to/petit4send.html" rel="nofollow">http://rei.to/petit4send.html</a> <br /></p>
+<p>Raspberry Pi GPIOを使用したシリアル通信<br />
+<a href="https://www.ingenious.jp/articles/howto/raspberry-pi-howto/gpio-uart/" rel="nofollow">https://www.ingenious.jp/articles/howto/raspberry-pi-howto/gpio-uart/</a> <br /></p>
+<p>Raspberry Piのシリアルポート設定（UART）を理解する<br />
+<a href="https://toki-blog.com/pi-serial/" rel="nofollow">https://toki-blog.com/pi-serial/</a> <br /></p>
+<p>Pythonインストール(Win10)編<br />
+<a href="https://qiita.com/New_enpitsu_15/items/ee95bde0858e9f77acf0" rel="nofollow">https://qiita.com/New_enpitsu_15/items/ee95bde0858e9f77acf0</a> <br /></p>
+<p>NicoHood/HID: Bring enhanced HID functions to your Arduino! <br />
+<a href="https://github.com/NicoHood/HID" rel="nofollow">https://github.com/NicoHood/HID</a> <br /></p>
+<p>Installing PySide2 on Raspberry Pi | Qt Forum <br />
+<a href="https://forum.qt.io/topic/112813/installing-pyside2-on-raspberry-pi" rel="nofollow">https://forum.qt.io/topic/112813/installing-pyside2-on-raspberry-pi</a> <br /></p>
+<p>QTabletEvent &#8212; Qt for Python <br />
+<a href="https://doc.qt.io/qtforpython-5/PySide2/QtGui/QTabletEvent.html" rel="nofollow">https://doc.qt.io/qtforpython-5/PySide2/QtGui/QTabletEvent.html</a> <br /></p>
+<p>QWidget &#8212; Qt for Python setTabletTracking  <br />
+<a href="https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QWidget.html#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setTabletTracking" rel="nofollow">https://doc.qt.io/qtforpython-5/PySide2/QtWidgets/QWidget.html#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setTabletTracking</a></p>
+
+<h3 id="s89cd3de">公開キー</h3>
+<div>
+<div class="ptcmid">
+build0756<br />
+<div class="key">
+<span class="smbas">4NZX53383</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="bde4c032">更新履歴</h4>
+<p>build0777 (2022-03-19)<br />
+・ペンタブレット接続時､ジッターペンを使用すると無限ループで固まる不具合を修正<br />
+・ペンタブレットでTV接続時､スティックでの遅くなる不具合を修正<br />
+・ペンタブスタイラスのボタンによるUNDOが2回暴発する場合がある不具合を修正<br /></p>
+<p>build0776 (2022-03-18)<br />
+・ペンタブレットのスタイラスボタンをUNDOに割り当てしました
+・ユざ氏(TwitterID:__yuza__)がPC側のPythonスクリプトとC#で作ったバイナリを作ってくれました､9800bpsでも十分な速度になったのでpetit4sendは標準状態のままで使えるようになりました｡ユざ氏に感謝｡
+・これに伴い送信ソフトの挙動が変わったため､MOHANの仕様を変更､自動接続でペンタブレットの接続を行い切り替えアイコンの押下が不要になりました｡
+・キーコードが送信されていない場合にファイル保存等の押下を可能にしました</p>
+<p>build0774 (2022-03-14)<br />
+・ペンタブ接続待機時に効果音が鳴らなくなるデグレが発生していたため修正<br />
+・ドットペンでサイズ8以下で右/下端を描画するときにエラーが発生していた不具合を修正<br />
+・レイヤーマージ(mix)時合成編集領域が1ピクセル少なくなっていて､右/下端端部がセーブ領域になっていなかった不具合を修正<br /></p>
+<p>build0772 (2022-03-13)<br />
+・自動モンキーテストを行い､見つかった不具合をいくつか修正しました､安定性向上｡ <br />
+・ペンタブレット接続時に､右スティックによる編集画面拡縮を行えるようにした <br /></p>
+<p>build0769 (2022-03-12) <br />
+・非常用セーブ命令「SALVAGEImgSV」実装､プログラムが非常停止したときに利用､同名のファイルが残っていた場合でも削除しない不具合を修正 <br />
+・携帯モード時の右スティックズーム､左スティックを動かしているときに右スティックを動かすと回転してしまう不具合を修正､左右スティックの動作を分離した､左スティックで移動しながら右スティックで拡縮可能 <br /></p>
+<p>build0767 (2022-03-12) <br />
+・投げ縄塗りつぶしで中途の線が描画されなくなっているデグレを修正 <br /></p>
+<p>build0766 (2022-03-11) <br />
+・広い範囲を塗りつぶした後にネイティブセーブしても正常に範囲が広がっていない不具合を修正 <br />
+・1*1ピクセルペンでレイヤの上端と左端のピクセルに書き込めない不具合を修正 <br />
+・GRP形式の大きなファイルを読み込むとGUIが壊れる不具合を修正 <br />
+・ヘルプ機能､再度Yボタンでキャンセルできるようにした <br />
+・携帯モード時に右スティックでズームできるように実装 <br />
+・22.5度オプションon時､回転/拡縮アイコンで二度処理してしまう不具合を修正 <br />
+・レイヤクリアを行った直後にUNDOを行うとそのレイヤはネイティブセーブができなくなる不具合を修正 <br /></p>
+<p>build0764 (2022-03-07) <br />
+・ペンタブレット使用時に不具合が起こる動作の修正(パレット登録､プリセットブラシ登録､編集画面移動系アイコンの動作) <br />
+・ペンタブレット接続完了時のチャイム､タブ切り替え時に瞬断が起こるためうるさいのでオミット <br />
+・ペンタブレット接続時にループシフトを使用不可にしていたのだが使用可能にする <br />
+・いくつかの未使用関数をコメントアウト <br /></p>
+<p>build0762 (2022-03-06) <br />
+・IRカメラを有効化(configタブ)onになると背景にオーバーレイする､ 80*60(mode3)→160*120(mode2)→320*160(mode1)→非表示のトグル､ 解像度が高いと更新秒数が長い(0.5〜4秒)､あとはベースカラーを半透明にするなり参照するなりお好みで使用してください <br />
+・ペンタブレット接続､接続同期検索→同期完了時に音を出すようにした､メッセージも少し変更 <br />
+・ZL+スライド動作によるブラシサイズ変更時､Errorが発生してうまく描画できない不具合を修正 <br /></p>
+<p>build0760 (2022-03-02) <br />
+・ペンタブレット使用時に全画面表示からの復帰をペンタブから行えなかったのを修正 <br /></p>
+<p>build0758 (2022-03-01) <br />
+・ペンタブ接続時､ドックに接続しディスプレイモードでの動作ができるようになった <br />
+・ペンタブ接続しテーブルモード時に色相環の選択が意図しない動作になる不具合を修正 <br /></p>
+<p>build0756 (2022-02-24) <br />
+・ペンタブレット接続対応(configタブ) <br />
+・接続にはUSBを2つ持つPCとれい氏(TwitterID:@rei_software)「petit4send」のハードウェア部が必要</p>
+<p>build0754 (2022-02-12) <br />
+・ネイティブ画像ファイルロード後UNDOを行うとロード以前の画像もUNDOできてしまう不具合を修正 <br />
+・レイヤー非表示属性を付加､選択レイヤサムネイル(赤枠)を更に押下すると適用(トグル動作で解除)､状態はセーブファイルに保存される</p>
+<p>build0750 (2022-02-10) <br />
+・アイコン情報を更新していなかったため表示が崩れる不具合を修正 <br />
+・サムネイル選択ロード実行中に＋ボタンで強制終了をキャンセルした場合にメインループに表示が変わらないまま戻ってしまう不具合を修正</p>
+<p>build0748 (2022-02-09) <br />
+・最大作成レイヤ数が増加(12枚→16枚)</p>
+<p>build0747 (2022-02-08) <br />
+・スライドショーモードを実装(FILEタブ) <br />
+左右orY/Aボタンで画像送り､LRボタンでBGM変更､Bボタンで終了</p>
+<p>build0746 (2022-02-07) <br />
+・投げ縄フィル使用時､輪郭線の色を編集画面色から反転した見やすい色を取得するように改良</p>
+<p>build0745 (2022-02-06) <br />
+・投げ縄フィルの描画時に左端X座標の1ピクセルが描画されない不具合を修正</p>
+<p>build0743 (2022-02-06) <br />
+・投げ縄フィルを実装(ブラシタブ) <br />
+・メモリ表示を「セーブファイルサイズ/フリー連続メモリ」→「フリー空メモリ/フリー連続メモリ」に変更</p>
+<p>build0741 (2022-02-04) <br />
+・グリッド線を表示させてカラーピッカーを使用したとき削れてしまう不具合を修正 <br />
+・セーブファイルのサイズを15MB弱に固定して空きメモリを30MB増やした､上記の更新により､旧フォーマットのファイルが起動時のみしか読み出せなくなった(ファイルを読み出そうとすると終了するので注意) <br />
+旧フォーマットのネイティブ画像ファイルを起動時に検出し見つかったらダイアログを表示します</p>
+<p>build0739 (2022-02-02) <br />
+・カラーピッカー(スポイト)設定を実装､変更はCONFIGタブから <br />
+DISP(黒):標準設定､表示色を取得する､不透明度の変更はしない <br />
+LAYER(青):変更設定､レイヤ色を取得する､不透明度の取得も行うが0の場合無視する <br />
+・現在色/変更色表示領域の表示処理に一貫性が保たれていないので修正､上段が現在色､下段が変更色に統一 <br />
+・フラットペンとドットペンの描画不透明度が設定通りになっていなかったのを修正 <br />
+・上記の修正に伴いフラットペンを使用時に最低設定不透明度が25にあがるストッパーを廃止</p>
+<p>build0737(2022-01-31) <br />
+・デバッグ用コードが残っていたためZRボタンを押下すると編集画面が破壊される不具合を修正</p>
+<p>build0736(2022-01-31) <br />
+・アルファロック/解除時のフリンジが発生する不具合を修正 <br />
+・Editタブ､Rotete(編集画面上下回転)アイコン押下後､UNDOがクリアされていなかったため画像が破壊される不具合を修正</p>
+<p>build0733(2022-01-29) <br />
+・指筆の端部での描画処理が意図した通りではなかったため修正 <br />
+・イメージホース用の素材追加(MOHAN_IH002.GRP)</p>
+<p>build0730 (2022-01-27) <br />
+・タイルブラシの座標指定ができない不具合を修正</p>
+<p>build0729 (2022-01-27) <br />
+・タイルブラシとイメージホースのテクスチャ座標設定変数を分離した <br />
+・指筆使用時に編集画面端部を描画しようとすると終了する不具合を修正 <br />
+・グリッド線を表示したまま画像ファイルのロード/キャンセルを行うと終了する不具合を修正 <br />
+・グリッド線を表示時にファイルセーブ/キャンセルしてもグリッド線が表示されなくなる不具合を修正 <br />
+・広い面積の画像ファイルが存在すると､選択ロード実行時に色相環カーソル画像が上書きされる不具合を修正 <br /></p>
+<p>build0727 (2022-01-27) <br />
+・イメージホースの疑似筆圧にCDI関数を経由することによりなめらかな筆圧で描画できるようになった <br />
+・高速にストロークを動かした場合線の描画が欠ける不具合を修正 <br /></p>
+<p>build0724 (2022-01-25) <br />
+・イメージホースブラシを擬似筆圧対応にしてみた <br />
+・スキマ対応塗りつぶし､リファレンスレイヤ参照時に編集領域に限定することにより少しだけ高速化</p>
+<p>build0720 (2022-01-23) <br />
+・レイヤ交換時にUNDO情報の交換を全捜査せず半分しかおこなっていなかった潜在的な不具合を修正 <br />
+・通常GPAINT条件が不透明度設定を無視していた不具合修正。 <br />
+・塗りつぶし処理時間表示を小数点以下2桁に変更 <br /></p>
+<p>build0718 (2022-01-23) <br />
+・塗りつぶし処理を２つのパラメータが0で参照レイヤと編集レイヤが同じ場合のみ、通常のGPAINT塗りつぶし処理にもどす､その他の条件の場合、塗りつぶし境界は不透明度のみ検知 <br />
+・ イメージホース編集モードに移行時の現在色を登録してしまい、通常モードに戻るときに色変えしてしまう不具合を修正。</p>
+<p>build0716 (2022-01-22) <br />
+・隙間対応塗りつぶし､命令等を最適化してさらに高速化､省メモリ化 <br />
+・ネイティブ画像ロード時にウエイトアイコンが表示されなくなっていたのを修正</p>
+<p>build0714 (2022-01-22) <br />
+・隙間対応塗りつぶしを高速化､概ね2秒から10秒ぐらいの処理速度に収まる <br />
+・許容範囲の不透明度設定スライダーを追加､ブラシに対して200ぐらいの設定だと塗り残しが発生せずきれいに塗りつぶせた</p>
+<p>build0712 (2022-01-21) <br />
+・DOTペンと消しゴムを切り替えて使うと描画に異常が起こる不具合を習性</p>
+<p>build0710 (2022-01-20) <br />
+・ブラシプレビューをドットペン､イメージホースにも対応
+・すべての描画処理でブラシの事前計算を廃止しリアルタイムでブラシ生成を行う様に変更 <br />
+・起動が少し速くなった <br />
+・レイヤの削除機能を実装､レイヤが編集されていないか初期化直後の場合レイヤを削除可能(そのレイヤのundoはできなくなる) <br />
+・上記に伴い連続でレイヤ追加できなくするストッパーを廃止 <br />
+・不要になったソースコード整理 <br />
+・5MBぐらい起動直後の空きメモリが増(68→73MB)</p>
+<p>build0707 (2022-01-19) <br />
+・イメージホースの90度単位での回転描画設定を実装､チップ画像の選択時にXYボタンで方向を回転､別画像を作成せずに描画方向を回転できるようにした｡</p>
+<p>build0705 (2022-01-18) <br />
+・イメージホースをストロークに沿って回転させる機能を実装（ブラシタブ最下部） <br />
+・ブラシ属性扱いだが現時点で対応はイメージホースのみ</p>
+<p>build0703 (2022-01-17) <br />
+・【不具合修正】JPGファイルが読み出しできなくなっていた不具合を修正</p>
+<p>build0702 (2022-01-16) <br />
+・GRPファイルの読み込み時にテクスチャ領域(GRP4)へのロードを選択できるようにした(座標指定可能) <br />
+・イメージホース編集モードをトグル式に変更､グリッド線に円形を追加(回転時の欠落境界) <br />
+・イメージホース素材を貼付(.GRP形式) <br /></p>
+<p>build0700 (2022-01-14) <br />
+・編集画面の矩形領域をGRP4の座標に転送する機能を実装､オリジナルのイメージホースチップ画像を作成するときもGAHAKU割り込み起動が不要になった｡ <br />
+・ファイル読み込み時にワーク用にGRP4を使用していて､上書きされてしまっていたので使用しないようにGRP0ワークに変更</p>
+<p>build0699 (2022-01-12) <br />
+・イメージホースの描画サイズをブラシサイズ設定と連動する､元のチップ画像サイズに関係なくブラシサイズ設定に比例して大きなサイズで描画される</p>
+<p>#petitcom #MOHAN_petitcom #プチコン4 #Smilebasic #NintendoSwitch
+build0697 (2022-01-12) <br />
+・グリッド線表示モードを追加(Viewタブ)セーブ時には無視されます(非表示化) <br />
+・イメージホース作成用モードを追加(Editタブ)ベースシート色を完全に透明にして､グリッド線を表示する <br />
+(.GRP形式で保存してGAHAKUを割り込み起動させてGRP4にロードするとイメージホース用画像として使用できます) <br /></p>
+<p>build0694 (2022-01-10) <br />
+・イメージホースGUIの座標設定を縦画面及び右側GUIに設定していなかったため､レイアウトが崩れていた不具合を修正</p>
+<p>build0693 (2022-01-10) <br />
+・イメージホース実装､GRP4内の16-128ピクセルサイズの正方形画像を取り込み､ブラシ描画します <br />
+・タイルブラシと共有のためGRP4の初期化をしないダイアログを追加 <br />
+・GAHAKUを割り込み起動させて任意の画像をブラシにすることが可能 <br /></p>
+<p>build0686 (2021-12-27) <br />
+・ドットペン実装 <br />
+・マウスの中ボタン処理の不具合対応 <br /></p>
+<p>build0684 (2021-12-23) <br />
+・【bugfix】セーブ時に行っていたサイズチェックをロード時にも行う､RESIZEエラーが再現しなくなった</p>
+<p>build0683 (2021-12-18) <br />
+・【bugfix】何らかの状況でセーブファイル配列がリサイズされてしまった場合元のサイズに戻す､セーブ時に配列サイズ不足でMOHANが落ちる現象を改善</p>
+<p>build0682 (2021-05-27) <br />
+・【仕様変更】アルファロック時レイヤーストレートRGBとして認識し塗りつぶしたときにフリンジが発生しないようにした、このため今までのデータを読み込ませると輪郭線の合成が変わってしまう場合あり注意 <br />
+・NiP(パートレイヤーデータ)を読み込ませたときに同名のNi1/Ni2データが存在していると読み込んでしまう不具合を修正 <br /></p>
+<p>build0677 (2021-05-21) <br />
+・アニメーションフラグがONの場合にレイヤクリア直後にアンドゥを行うとエラー終了する不具合を修正</p>
+<p>build0676 (2021-05-18) <br />
+・Build0674で発生したフラットペンでブラシサイズ20の場合に前回座標の線がつながる不具合を修正 <br />
+・タイトル、フェードアウト/フェードイン時間を短くした</p>
+<p>build0674 (2021-05-18) <br />
+・縦表示でコントローラーを外したときのサムネイルロード時のカーソル移動方向、サムネイル表示させてからの脱着に対応していなかったので修正 <br />
+・ブラシの補間パラメータを調整 <br />
+サイズ20以下＞サブピクセルブラシ <br />
+サイズ80以下＞通常補間 <br />
+サイズ81以上＞補間を行わない <br />
+・レイヤ不透明度を操作した時の色チャネルの合成をAOPMADで統一する＞混色の不具合がなくなり彩度が保持されるようになった <br />
+・タイトルから編集画面へのフェードアウト/フェードイン <br /></p>
+<p>build0667 (2021-05-17) <br />
+・表示用レイヤ合成をベース色不透明度が最大ならばG_ALPHA処理に変更、速度向上 <br />
+・縦表示でコントローラーを外したときのサムネイルロードのコントローラー移動方向が合わない不具合を修正 <br />
+・ストロークが離れたときのアンドゥ回数表示がコメントアウトしてしまっていた、修正</p>
+<p>build0664 (2021-05-14) <br />
+・単色ブラシ/フラットペンを25%程度高速化 <br />
+・JPGロード時に画面が白くなる、ネイティブ画像ロード直後、最初の一筆が意図しない描画になる不具合を修正 <br /></p>
+<p>build0661 (2021-05-10) <br />
+・フレームサンプル補間のパラメータを削除、常に2フレーム目から描画処理を開始する <br />
+・消しゴムからペンに切り替えた直後に線を引くと前回のストロークの座標を拾ってしまっていた不具合を修正 <br />
+・ジッターペン使用時のSEがVSYNCを使用してないため重なってノイズになっていたので間引きして発音するように修正 <br />
+・空き容量表示を全体空き容量から連続空き容量に変更 <br />
+・ストローク開始ブラシサイズを0にする、ストロークの「入り」が擬似的に入れられるようになった <br /></p>
+<p>build0659 (2021-05-10) <br />
+・レイヤクリアー時にUNDOができなくなっていた不具合を修正、なおメモリの開放は行われるため、クリアすると高速化します｡ <br />
+・連続してレイヤを作成できないようにストッパーを実装、最上位レイヤなにか編集するとレイヤを作成できます <br /></p>
+<p>build0657 (2021-05-10) <br />
+・GUIツールが右配置の時、不透明度及びブラシサイズバーの表示の不具合を修正</p>
+<p>build0656 (2021-05-09) <br />
+・GUIツール非表示時にカラーピッカーを使用するとペンプレビューに色が反映されない不具合を修正 <br />
+・高速にペンと消しゴムを切り替えて使用すると意図しない描画が発生する不具合を修正 <br /></p>
+<p>build0655 (2021-05-09) <br />
+・フラットペン使用時、ストローク開始時に意図しない描画がされる不具合を修正 <br />
+・左GUI表示でペンプレビュー表示座標が編集領域として描画されない不具合を修正 <br />
+・消しゴム切り替えトグルでペンプレビューを画面端に表示しないようにした <br />
+・ペンプレビューはブラシサイズ設定後、即座に消すように変更 <br /></p>
+<p>build0653 (2021-05-08) <br />
+・サブピクセルブラシをフラットペンにも適用した</p>
+<p>build0648 (2021-05-07) <br />
+・座標ズレ要素がまだ一つ残っていたので修正 <br />
+・不透明度パラメータによっては描き始めに濃いPixelを描画してしまう不具合を修正 <br /></p>
+<p>build0646 (2021-05-07) <br />
+・ブラシサイズの整数部がストローク内で切り替わるときに発生する座標ズレを修正、描画品質が向上(特に半透明時の)</p>
+<p>build0640 (2021-05-06) <br />
+・レイヤクリア(全消去時含む)時にレイヤメモリを開放する処理を追加 <br />
+・バケツ塗りつぶし使用時に編集範囲外を指定するとアンドゥメモリが破壊される不具合を修正 <br /></p>
+<p>build0637 (2021-05-06) <br />
+・ストローク立ち上がりのブラシサイズを調整、太くならないようにする</p>
+<p>build0635 (2021-05-05) <br />
+・ブラシ描画が重すぎるのでサブピクセルブラシの有効範囲をブラシサイズ20までに限定する <br />
+・ピンチ動作時の拡大縮小移動処理の挙動改善 <br /></p>
+<p>build0630 (2021-05-04) <br />
+・ユざさん (TwitterID:@__yuza__) の協力で臨界減衰関数を利用した座標補間およびサブピクセルブラシを実装、ブラシ及びフラットペンに適用する、感謝｡ <br />
+・上記の実装により座標サンプル補間は必要なくなったので最大値を5に変更、将来的にオミット予定 <br /></p>
+<p>build0626 (2021-05-03) <br />
+・ヘルプアイコン及びYボタンを押すとマウスを押下しない限り無限ループになる不具合を修正、ごめんなさい <br />
+・うっかり終了防止コード実装、＋ボタンで即座に終了せずダイアログを出すようにした、ユざさんに感謝 <br /></p>
+<p>build0623 (2021-05-02) <br />
+・カラーピッカー使用時の致命的なバグ混入のため仕切り直しでBuild0609に戻しやりなおし <br />
+・臨界減衰の座標補間は一旦削除 <br />
+・マウス使用時の中ボタン移動のカーソルとの移動ズレを軽減 <br /></p>
+<p>build0614 (2021-04-29) <br />
+・ユざさん (TwitterID:@__yuza__) の協力で臨界減衰関数を利用した座標補間を実装、ブラシ及びフラットペンに適用する、感謝｡ <br />
+・上記の実装により座標サンプル補間は必要なくなったので最大値を5に変更、将来的にオミット予定 <br /></p>
+<p>build0609 (2021-04-24) <br />
+・携帯モードでもマウスが使えるようにしてみた、サポート外 <br />
+・カーソルはマウス未使用で3秒経過すると消える仕様 <br /></p>
+<p>build0608 (2021-04-23) <br />
+・Viewタブにて移動系アイコンをマウスボタンで短時間に連続して押下するとエラーでプログラムを終了する不具合を修正 <br />
+・ViewタブにてFLIPアイコンを押下すると、CONFIGタブに遷移していた不具合を修正 <br /></p>
+<p>build0607 (2021-04-23) <br />
+・Build0606のダウンロードファイルにMOHAN.INIが入っていたのを削除、上書きしてしまった人ごめんなさい <br />
+・ファイルロードにNiP/Ni0があると読み込み途中でカーソルが自動選択される不具合を修正 <br />
+・サムネイルロードはアイコンタッチが離されてからロードするように修正 <br /></p>
+<p>build0606 (2021-04-21) <br />
+・Ni0ファイル削除時にNi1/Ni2ファイルも存在していたら削除するように修正 <br />
+・NiPファイル保存時にNi1/Ni2ファイルも存在していたら削除していた不具合を修正 <br /></p>
+<p>build0604 (2021-04-20) <br />
+・極端に短いフレーム数のダブルタッチがあった場合、それ以前のUNDOができなくなる不具合を修正 <br />
+・ダブルタッチによる自動UNDOの感度を上げた <br /></p>
+<p>build0602 (2021-04-19) <br />
+・build0580~build0600で発生していた座標補完値より少ないストロークフレーム数の描画があった場合、それ以前のUNDOができなくなる不具合を修正しました</p>
+<p>build0600 (2021-04-19) <br />
+・マウスでサムネイルロードの操作ができなかったので修正 <br />
+・左ボタン=ファイルロード <br />
+・右ボタン=キャンセル <br />
+・中ボタン=Ni0ファイルのサムネイルロード <br /></p>
+<p>build0599 (2021-04-17) <br />
+・ファイルロード、リスト一番最後の画像が表示されない不具合を修正</p>
+<p>build0598 (2021-04-17) <br />
+・読み込みファイル数が少ない場合の上下左右ボタン移動の挙動に不具合があったため修正</p>
+<p>build0597 (2021-04-17) <br />
+・サムネイルリストによるファイルロードを実装、 <br />
+・R/Lでページ切り替え、上下左右及びタッチでファイル選択 <br />
+・ファイルリストからYボタンでの削除動作を実装 <br />
+・読込中も操作可能 <br />
+・アイコンエディタはオミットしました <br />
+・現在透明色の背景の間に編集画面が重なって見にくいので編集画面の位置に関わらず背景が表示されるように修正 <br /></p>
+<p>build0584 (2021-04-14) <br />
+・Build0581の筆圧補完を実装後、線の抜きがでなくなってしまったので、線補完の係数値が5以下の場合、筆圧補完を行わないようにし ~た、「抜き」の描画を行いたい場合係数値を5以下にしてください｡ <br />
+・アンチエイリアス線と直径3Pixelのブラシ線がスムーズに繋がって見えるようにパラメータを調整 <br />
+・パレット及びグラデーション操作時に効果音が出るようにした <br /></p>
+<p>build0581 (2021-04-13) <br />
+・接触面積による擬似筆圧も補完するようにしました <br /></p>
+<p>build0580 (2021-04-13) <br />
+・線補完の座標サンプル数を標準4サンプルに上げ、調整可能にしました(CFGタブ、紫のスライダーで調整) <br /></p>
+<p>build0573 (2021-04-12) <br />
+・ヘルプ及び起動時のバージョン表示が表示されていなかったので戻す <br />
+・タイルパターンに「斜め線(SLASH)」及び「点(DOT)」を追加 <br /></p>
+<p>build0570 (2021-04-10) <br />
+・build0569まで「ファイルセーブダイアログをキャンセルするとそのままプログラム終了してしまう」不具合を修正 <br />
+・ファイルサイズが大きくなる場合仕様上圧縮16MBまで対応していないため、ファイル分割保存を行うよう改良 <br />
+・5レイヤー以上で非圧縮レイヤーサイズ合計が15MBを超えると分割保存を行います <br />
+・分割保存を行う場合事前にダイアログで表示されます <br /></p>
+<p>build0565 (2021-04-09) <br />
+・タイルペイントのサイズを40/80Pixel単位に変更(ループシフトでピッタリ収まるため) <br />
+・タイルペイントを乗算で現在設定色を混色することが可能になった、色相ジッターも適用可能 <br />
+・これにより二値/モノトーンのタイルを拡充、水玉模様はサイズ変更した <br />
+・縦縞/横縞/格子のタイルパターンを追加 <br /></p>
+<p>build0558 (2021-04-08) <br />
+・色相ジッターのスライダー表示が実際のジッター値の色相範囲と異なっていたので修正 <br />
+・色相ジッタースライダーをカラースポイトと連動するようにした</p>
+<p>build0556 (2021-04-06) <br />
+・タイルパターン自動生成機能実装、グラデーションパレットの登録色を元にパターンを自動生成 <br />
+(現在、市松、ギンガム、タータン、青海波、水玉) <br />
+・移動系アイコン画像変更 <br /></p>
+<p>build0553 (2021-04-05) <br />
+・特に機能追加はないけどViewタブの移動系アイコンを押したときにアイコンが変わるようにした <br />
+・見た目は変わってないけど移動系アイコンの96Pixel化準備 <br /></p>
+<p>build0544 (2021-04-04) <br />
+・縦画面モード時にパレットのアイコンがずれていたのを修正、ごめんなさい</p>
+<p>build0542 (2021-04-01) <br />
+・バケツ塗りつぶし、リファレンスレイヤと編集レイヤが同一だった場合、塗りつぶし以外の画像を消してしまう不具合を修正 <br /></p>
+<p>build0541 (2021-03-31) <br />
+・消しゴムバケツモードを実装、バケツ塗りモードから消しゴムモードに遷移すると透明色で塗りつぶす、リファレンスレイヤ対応 <br />
+・スキマ対応値を0にすると穴埋め検知処理を省略して高速化 <br /></p>
+<p>build0538 (2021-03-31) <br />
+・縦画面時のHSVサークル内SV三角形の右端から色を拾った値がRGB値に変換した場合どれかが0になってなかったので修正 <br />
+・縦画面時の画面移動アイコンの上下左右の配置が間違ってたので修正 <br /></p>
+<p>build0536 (2021-03-30) <br />
+・縦画面時編集画面移動系アイコンの押下判定と表示がずれていたのを修正 <br />
+・縦画面時のHSVサークル内SV三角形の明度計算が間違っていたので修正 <br />
+・TVモード時右スティック操作対応 <br /></p>
+<p>build0534 (2021-03-29) <br />
+・タイトル画面を追加、タッチするか10秒待つと編集画面に遷移する <br />
+・個別アイコンファイルを廃止、スキン画像 <br />
+・匿名希望の謎の人物にアイコンを描いてもらった、感謝 <br /></p>
+<p>build0525 (2021-03-28) <br />
+・ザラつき（rough)属性を有効にしてかつ消しゴムモードの場合、一定密度以下にはならないように修正｡ <br />
+・グラデーション0/1のデフォルト色をTE○AKI_dtのデフォルト色っぽくした <br /></p>
+<p>build0524 (2021-03-24) <br />
+・不透明度を最低(現時点では5)にしてベースシート色の変更を行った場合ベースシートの不透明度を0にするようにした <br /></p>
+<p>build0523 (2021-03-21) <br />
+・アイコンを64ピクセル幅に変更、それに伴いアイコンを全部書き換え <br />
+・ベースシート色を透明にして全画面表示をしたときにGUIアイコンが透過されていたので市松模様が先に表示されるようにzを修正 <br />
+・起動直後にレイヤ変更してバケツブラシを使うと落ちる <br /></p>
+<p>build0514 (2020-12-13) <br />
+・TVモード時のマウス操作5ボタンマウスに対応 <br />
+4ボタン＞UNDO <br />
+5ボタン＞REDO <br />
+・SETTINGタブにマウス感度スライダーを実装 <br />
+値が高いほどマウス速度が遅くなります <br /></p>
+<p>build0503 (2020-12-05) <br />
+・画面回転時の中ボタンドラッグによる編集画面移動が同期していなかった不具合の修正 <br /></p>
+<p>build0502 (2020-12-05) <br />
+・TVモード時にマウスでのお絵描きに対応 <br />
+・左ボタン=描画 <br />
+・右ボタン=消しゴムトグル <br />
+・ホイール=拡大縮小(テーブルモードでも有効) <br />
+・中ボタンドラッグ=編集画面移動 <br />
+・中ボタンを押しながら右ボタン=スポイトモード <br /></p>
+<p>build0499 (2020-10-13) <br />
+・レイヤマージの処理後動作改善､処理後UNDOができるようになった <br />
+・レイヤマージの処理後､一段下のレイヤに編集レイヤを変更するようにした <br />
+・暫定措置だったAボタンのファイルメニューを廃止､ファイルタブを開くようにした <br /></p>
+<p>build0497 (2020-10-04) <br />
+・起動直後にファイルタブからファイルロードを行いすぐキャンセルすると落ちる不具合を修正 <br /></p>
+<p>build0496 (2020-09-30) <br />
+・文字列表示の直接上書きによる末尾ゴミ表示を修整、空白上書きでゴミ文字列が残らないようにした <br />
+・アイコンのヘルプモードをZRボタンからYボタンに変更（置いて操作時にボタン誤爆するため） <br /></p>
+<p>build0495 (2020-09-28) <br />
+・パレットタブのグラデーションを10列に増加した <br />
+・縦持ち時のHSVカラーピッカーを回転して同じ向きにした <br />
+・誤爆するので縦持ち時のプリセットアイコン及び､UNDO/REDOを移動 <br /></p>
+<p>build0490 (2020-09-26) <br />
+・レイヤータブの遷移関連で押しっぱなしにしたときの表示にゴミが残るのがちょっと気になったので違和感のないように修正｡</p>
+<p>build0489 (2020-09-25) <br />
+・縦画面レイアウト時のGUI座標の配置ミスにより特定アイコンの押下がしにくくなっていたので修正 <br />
+・縦画面レイアウト時､特定アイコンが重なっていて表示されていなかったので修正 <br />
+・塗りつぶしツールで特定色(RGB(255,0,0))の時塗りつぶし範囲に不具合が生じていたので修正 <br /></p>
+<p>build0486 (2020-09-22) <br />
+・指筆使用時に左下端及び右下端の特定座標で「配列を超えたアクセスです」でエラー終了する不具合を修正</p>
+<p>build0484 (2020-09-22) <br />
+・グラデーションパレットの座標が数Pixelずれていたのを修正 <br />
+・タッチスクリーンを押しっぱなしにしてMOHANを起動すると､離さないと表示がおかしくなる不具合を修正</p>
+<p>build0482 (2020-09-21) <br />
+・EDITタブのループシフト(全レイヤ)のプレビューが動作していないデグレ不具合の修正</p>
+<p>build0481 (2020-09-20) <br />
+・GUIを閉じているときにZL+上下キーのレイヤ切り替えを行うと､レイヤ不透明度スライダーが表示される場合がある不具合の修正</p>
+<p>build0480 (2020-09-20) <br />
+・塗りつぶしツール､無関係な線を塗りつぶさない様変更､線の真ん中で塗りつぶすように変更</p>
+<p>build0478 (2020-09-19) <br />
+・そもそもBuild0477をアップロードしてなかった､陳謝m(_ _)m <br />
+・レイヤー反転(上下/左右)の直後にUNDOを行うとレイヤが破壊されてしまう不具合の修正 <br /></p>
+<p>build0477 (2020-09-18) <br />
+・レイヤー単位でのループシフト機能を実装､ <br />
+・予定していた機能の実装をすべて完了したので､しばらくバグつぶしだけのフェーズに入る予定 <br /></p>
+<p>build0475 (2020-09-17) <br />
+・マルチタッチ時に線を消す処理､規定フレーム数(現在20フレーム)以下にする､(通常ペイント時にマルチタッチして長いストロークが全部消えるという誤爆に対応) <br /></p>
+<p>build0474 (2020-09-16) <br />
+・グラデーションパレットを実装､各パレットは長押しで現在色(不透明度は考慮されない)を設定､対に配置されているパレット色から自動的にグラデーションが生成される <br /></p>
+<p>build0470 (2020-09-14) <br />
+・「スキマ対応塗りつぶし」実装､スライドバーで許容ギャップ幅(隙間の幅)を設定できる､すごい時間がかかるので処理中はアイコンを回転させる <br />
+・UNDO範囲は塗りつぶし範囲に関わらず全画面行う <br />
+・上記の実装に伴いバケツブラシは削除｡ <br /></p>
+<p>build0465 (2020-09-05) <br />
+・プリセットブラシ登録機能実装､現在のブラシ設定を長押しすることで登録して使用する <br />
+・何も登録してない場合のサンプルとして3つのデフォルトブラシをプリセット(ソースのDEFpresetPEN関数を参照のこと) <br /></p>
+<p>build0461 (2020-09-05) <br />
+・画面描きかえに時間がかかるのでバックグラウンドで細切れに行い､操作を行ってから再度操作可能になるまでの時間を速くした(これによりレイヤ関連処理のボタン反応が高速化) <br />
+・縦持ちモード時にレイヤ反転がアイコンの見た目通りになってないので機能を垂直反転/水平反転で交換する <br />
+・画面を編集せずにレイヤ反転処理を行おうとするとエラーで落ちていた不具合を修正 <br />
+・HSVカーソルにゴミが混じるので対応､若干カーソルサイズが大きくなった <br />
+・なんかいらん画像ファイルが混じってたので削除 <br /></p>
+<p>build0452 (2020-09-03) <br />
+・座標ジッター設定時のvsyncの条件式を間違えたため､編集領域が高速移動してしまう不具合を修正</p>
+<p>build0451 (2020-09-03) <br />
+・設定外部ファイル保存を実装､CFGタブのINIセーブアイコンで現在設定をセーブする､(色､ブラシサイズ､不透明度､画面レイアウト､アニメーション設定､回転角度固定設定等が起動時に読み込まれるイニシャライズファイルが保存される)</p>
+<p>build0446 (2020-09-03) <br />
+・タッチ時座標を動かさない場合のの描画回数を変更、いずれの場合も最低1回は描画、ぼかしペン/座標ジッターペンの場合、同一座標でも連続描画、座標ジッター時vsyncも切る</p>
+<p>build0442 (2020-09-02) <br />
+・デフォルトレイアウト以外のGUI配置が崩れていたのを修正 <br />
+・BREPEATが起動直後即座にREPEATが始まるように設定されていたのを修正(たぶんレガシーコード混入)､(タブ切替を押しっぱなしで連続切替できるようにした)</p>
+<p>build04349 (2020-09-01) <br />
+・座標ジッターを実装､ブラシタブ上部に配置､XYアイコン右上スライダーが座標ジッター幅､右下スライダーがブラシサイズジッター､最小値だとブラシ幅は一定だが､値が上がると小さいブラシ幅の描画もされるようになる(設定ブラシ幅以上の描画は行わない)</p>
+<p>build0441 (2020-09-01) <br />
+・GRP4ページを使用したテキストタイリングブラシを実装､選択するとGRPの領域選択モードに入る <br />
+・選択が完了したらブラシで描画 <br />
+・通常ブラシの色相ジッターはフレーム毎＞ストローク毎に変更､今までのフレーム毎色相ジッターブラシを使用したい場合座標ジッターで代用のこと</p>
+<p>build0437 (2020-09-01) <br />
+・「表示左右反転」を実装､こちらはデッサン狂いの確認用､合成画像スプライトを左右反転表示する､反転してもそのまま任意の場所に描くことが可能､左右反転しか行わないので縦画面モード時には縦構図で左右反転表示される｡ <br /></p>
+<p>build0434 (2020-08-31) <br />
+・レイヤー「上下反転」､と「左右反転」を追加､すでに実装済みの上下回転と異なる <br />
+・主に､デッサン狂いの確認の為ではなくレイヤー複写と合わせてシンメトリとか鏡面反射の絵を描きたい場合を想定 <br />
+・故に､レイヤ単位での編集となり､あまり高速ではない <br /></p>
+<p>build0433 (2020-08-31) <br />
+・UNDO/レイヤ変更時のアニメーション機能のoff機能をつけた(起動時デフォルトon、設定タブに配置) <br /></p>
+<p>build0429 (2020-08-30) <br />
+・フォークされていた描画処理コードを整理､ブラシの処理をフラットペンにも転用､フラットペンの抜きの描画がおかしかった不具合が修正された <br />
+・build0345で実装していたリアルタイムブラシレンダリングがbuild0425で除外されていたので復活</p>
+<p>build0428 (2020-08-30) <br />
+・タッチの接触面積を基に不透明度を変更するようにした､抜きの描画がすっと抜けるようになった <br /></p>
+<p>build0427 (2020-08-29) <br />
+・線が細いときにざらつき属性のブラシ形状に同一性があったので細いときのみさらに乱数をかける(細いときでも鉛筆っぽくなった) <br />
+・バケツブラシ使用時にざらつき属性がかかっていなかった不具合の修正 <br /></p>
+<p>build0425 (2020-08-29) <br />
+・色相ジッターにジッター範囲調整スライダーを実装､上が色相､下が彩度/明度ジッター <br />
+・ざらつき属性に密度調整スライダーを実装､値が低いほど密度が低下する､最大値はざらつきなし <br /></p>
+<p>build0417 (2020-08-26) <br />
+・ブラシ属性に「ざらつき」を実装､onにすると描画範囲がざらつく､すべてのブラシに有効(指筆/ぼかしも対象)</p>
+<p>build0412 (2020-08-25) <br />
+・縦画面モード時にレイヤ不透明度スライダーを縦に表示するように改修 <br />
+・HSVカラーピッカーの明度輝度設定が適切に選択できなかった不具合を修正 <br /></p>
+<p>build0408 (2020-08-24) <br />
+・固定値拡縮回転モードを実装､onにすると回転は22.5度単位､拡縮は0.5倍から50倍まで12段階の固定値で拡縮回転 <br />
+・縦画面モードのαロック表示がずれていた､修正 <br /></p>
+<p>build0399 (2020-08-21) <br />
+・横画面モードでJoyCON(L)を取り外して操作した場合の操作不具合を補正</p>
+<p>build0398 (2020-08-21) <br />
+・縦画面モードでJoyCON(L)を取り外して操作した場合の操作不具合を補正</p>
+<p>build0396  (2020-08-19) <br />
+・縦画面モード時にレイヤ変更等のキーアサイン(ZL+左ボタン系)を変更していなかったのを修正 <br /></p>
+<p>build0395 (2020-08-19) <br />
+・縦画面モードを実装 <br />
+・アイコン座標の整理､微調整 <br />
+・ぼかし筆のブラシ濃度形状も指筆と同様､指数関数形状から平坦に変更した <br />
+・RGB及びα/描画半径に数値表示を追加 <br /></p>
+<p>build0388 (2020-08-17) <br />
+・加算ペン使ってるとき消しゴム使えない不具合を修正 <br />
+・色スポイト使用後のペンモードアイコンが戻らない不具合を修正 <br />
+・指筆のブラシ濃度形状を指数関数形状から平坦に変更した <br /></p>
+<p>build0385 (2020-08-17) <br />
+・指筆のブラシが編集画面端部にかかったときの描画処理がおかしかったので修正</p>
+<p>build0382 (2020-08-15) <br />
+・指筆実装</p>
+<p>build0379 (2020-08-13) <br />
+・ぼかしブラシ実装 <br />
+・プリレンダリングのブラシ濃度設定を間違えて設定していた､このため今までのプリレンダ濃度が薄かった為255に設定､描画濃度がかなり濃くなった(255/150=1.7倍) <br />
+・上記の変更に伴いいくつかの初期パラメータを変更､ブラシ使用時の最小不透明度を5に変更する､フラットペンのエッジ増幅を廃止､やや描き味が変わったかもしれない｡ <br /></p>
+<p>build0369 (2020-08-11) <br />
+・UNDO/REDO時にも全体レイヤアニメーションしていたのでこれをUNDO箇所のみとして別にアニメーション処理させる <br /></p>
+<p>build0366 (2020-08-10) <br />
+・レイヤ変更時にレイヤ情報を拡大処理して動かしてみた､少し分かりやすくなったかも｡ <br />
+・ループシフトを配列処理からGRP領域を使用した処理に変更､フラグメンテーションが原因のcopy失敗エラーを回避､高速化した｡ <br />
+・各種機能ボタン実装 <br />
+・ZL+↑↓にてレイヤー変更 <br />
+・ZL+←にてブラシタブ表示 <br />
+・ZL+→にてカラーピッカータグ表示 <br />
+・ZL+フリックにてブラシサイズ変更を実装 <br /></p>
+<p>build0357 (2020-08-08) <br />
+・ループシフト実装､画像の上下左右を繋げた状態で位置をずらします <br />
+・ブラシのパラメータ調整､ちょっとだけ抜き描画がスムーズになった <br /></p>
+<p>build0346 (2020-08-05) <br />
+・左ボタンショートカットでスポイトを使うと強制的に普通のブラシに戻っていた不具合を修正</p>
+<p>build0345 (2020-07-30) <br />
+・ブラシサイズ7以下1以上のレンダリングをリアルタイムで行うことにより､ブラシ描画の滑らかさを向上した</p>
+<p>build0342 (2020-07-24) <br />
+・画面編集領域を拡大してカラーピッカーを押下時にブラシサイズスライダーが誤動作する不具合を修正 <br />
+・不透明度ロックをかけて消しゴムモードでペイントを行った場合､色を黒に置き換えてしまうため､描画処理自体を行わないようにした ~(メッセージを出力) <br /></p>
+<p>build0339 (2020-07-22) <br />
+・スポイト用のレイヤ合成モードを旧式のまま放置していたため､レイヤーを通常以外にしてかつレイヤ不透明度モード実装時にスポイト色取得に不具合が生じていた､修正｡ <br /></p>
+<p>build0338 (2020-07-20) <br />
+・レイヤ不透明度の比率がおかしかったのを修正 <br />
+・build0335-0337迄のレイヤ不透明度を使用してセーブされた画像は､ロード時不透明度が変わってしまいます <br /></p>
+<p>build0337 (2020-07-18) <br />
+・レイヤ統合機能が上手く動かない不具合を修正 <br />
+・レイヤ不透明度スライダの反応が悪いのを改修 <br /></p>
+<p>build0335 (2020-07-15) <br />
+・レイヤー不透明度設定を実装</p>
+<p>build0333 (2020-06-12) <br />
+・エクスポートセーブ時(JPG/GRP)に合成間違えてたので修正</p>
+<p>build0332 (2020-06-12) <br />
+・編集領域端部でスポイト使うと落ちる不具合修正 <br /></p>
+<p>build0329 (2020-06-08) <br />
+・上下回転を実装 <br /></p>
+<p>build0326 (2020-06-02) <br />
+・スポイトの座標取得が間違っていることに起因する不具合を修正 <br />
+・レイヤの合成方法を1枚スプライト方式に戻す <br />
+・GUIツールの開閉でキャンバスが移動してしまう不具合を修正 <br /></p>
+<p>build0320 (2020-05-30) <br />
+・限定的なピンチイン・ピンチアウトによる拡大縮小を実装､L2ボタン併用で使用､一本指で移動も可能､回転は不便なので実装してない <br /></p>
+<p>build0312 (2020-05-28) <br />
+・ファイルロード時の初期化し忘れバグを修正 <br />
+・レイヤの表示がしっぱなしバグを修正 <br />
+・build0300で混入したNiP/JPG/GRP/ファイルセーブの不具合を修正 <br /></p>
+<p>build0311 (2020-05-28) <br />
+・バケツブラシ､デバッグ用の設定を消し忘れたのを修正､全てのレイヤーが通常属性でないと､なんか変なの出る <br /></p>
+<p>build0308 (2020-05-27) <br />
+・build0300で全画面表示が上手くできてなかったのを修正 <br />
+・微妙に使い所がわからないバケツブラシを実装(髪の毛の塗りにはほぼ使えない上に不安定) <br /></p>
+<p>build0300 (2020-05-25) <br />
+・レイヤ合成モードの追加(通常/加算/乗算/スクリーン/オーバーレイ) <br />
+・通常以外の合成モードが一つでもあるとレイヤ切り替えが遅くなります､ごめんなさい｡ <br /></p>
+<p>build0290 (2020-05-23) <br />
+・UNDO回数管理ロジックの修正､突然REDOで戻れない事があったため､1から書き直し､シンプルな挙動にする｡ <br /></p>
+<p>build0283 (2020-05-22) <br />
+・GRP保存､NiP保存､ベースシートカラー変更､全レイヤ初期化を実装 <br />
+・ファイル保存の安定性を向上 <br />
+・UNDO最大回数を40回に倍増 <br />
+・細い線で高速に編集領域の端部を動かすと､編集矩形領域拡張に失敗し､保存矩形領域を取りこぼす不具合を修正 <br /></p>
+<p>build0275 (2020-05-21) <br />
+・ボタンレイアウト変更 <br />
+・上下キー=タブ切り替え <br />
+・右キー=消しゴムトグル <br />
+・L1キーGUI開閉 <br /></p>
+<p>build0272 (2020-05-20) <br />
+・そもそもフラットペンのUNDOが効いてなかった不具合を修正orzそのまま使うとレイヤが破壊される <br /></p>
+<p>build0271 (2020-05-20) <br />
+・Ni0ロードでサムネイルロードして､ファイルロードをキャンセルするとレイヤ情報が破壊されてるのを修正 <br />
+・全画面表示するとベースシートがずれるのを修正 <br /></p>
+<p>build0268 (2020-05-20) <br />
+・UNDO用GRP領域の周回遅れ保存によるレイヤ破壊不具合を修正(領域に関わらず破壊されなくなった) <br />
+・UNDO用GRP領域を2倍にした(全画面で4回は保証､最大20回) <br />
+・残りUNDO回数の表示不具合修正 <br /></p>
+<p>build0255 (2020-05-19) <br />
+・UNDOを「GRPにブロック単位で退避する」方式に変更､このためあまり広い面積を複数回UNDOはしにくくなった(全画面で最大2回) <br />
+・(最大回数は20回と変わらず) <br /></p>
+<p>build0226 (2020-05-17) <br />
+・加算ブラシ､色相ジッター､αロック機能､簡易ヘルプ､レイヤマージ､レイヤ初期化を実装 <br /></p>
+<p>build0226 (2020-05-16) <br />
+・編集画面移動速度係数を半分にした <br />
+・サイズの大きいブラシの出方が悪かったので修正 <br />
+・レイヤサムネイルにフリンジが発生してたので修正 <br />
+・拡大時の画面移動が垂直平行になっていなかったので修正 <br /></p>
+<p>build0219 (2020-05-15) <br />
+・座標系の改良､視点(画面中央)中心に拡大縮小回転ができるようになった <br />
+・倍率100%全画面表示モード追加 <br />
+・表示座標制限は廃止した､座標がわからなくなったら全画面モードでリセットしてください <br /></p>
+<p>build0209 (2020-05-14) <br />
+・右位置常時表示してたアイコンの表示廃止 <br />
+・ブラシタブとViewタブにそれぞれ振り分け <br />
+・2回以上ロードした時にメモリ足りないエラー担っていた不具合の対策 <br />
+・編集画面移動系の移動制限をつけた <br /></p>
+<p>build0205 (2020-05-13) <br />
+・多段レイヤを確保した後､矩形範囲の広い描画を繰り返すとメモリエラーで落ちる不具合の対応 <br /></p>
+<p>build0204 (2020-05-13) <br />
+・セーブファイルメモリを先に確保することによる安定性の向上 <br />
+・選択タブを反転表示するようにした <br />
+・レイヤータブの選択が10レイヤ以上だと不具合が発生していたのを修正 <br /></p>
+<p>build0198 (2020-05-12) <br />
+・種類別にタブ切り替えっぽくした <br />
+・レイヤ管理タブを作成､各レイヤのサムネイル表示 <br />
+・タッチでレイヤ選択､アイコンでスワップ､新規レイヤ生成とかできる｡ <br />
+・Lボタンで色設定タブに変更､GUIの開閉 <br /></p>
+<p>build0180 (2020-05-10) <br />
+・build171で混入した､GRP/JPGセーブ不具合修正 <br />
+・スポイト不具合修正 <br />
+・全画面表示不具合修正 <br />
+・移動アイコン､一秒押下後に処理する改修 <br />
+・ブラシで線の抜きの色が濃く出てしまう問題の低減 <br /></p>
+<p>build0174 (2020-05-09) <br />
+・スポイトが効かなくなる <br />
+・JPG/GRPセーブが真っ黒の画面が保存される状態になっていたのを修正 <br /></p>
+<p>build0171 (2020-05-09) <br />
+・内部編集レイヤ合成をスプライト合成に変更､速度的にはあまり変わらなかった・・・orz <br />
+・各種インフォメーション表示 <br />
+・補完線のしきい値を20から40に変更 <br /></p>
+<p>build0157 (2020-05-07) <br />
+・回転アイコン誤押下防止の為レイアウト微調整 <br />
+・SV3角のカーソルの大きさを等倍に戻す <br />
+・クローズアイコン/Ni0セーブアイコンが押しにくかったのを修正 <br /></p>
+<p>build152 (2020-05-06) <br />
+・GUIのレイアウトを左に移す</p>
+<p>build0148 (2020-05-05) <br />
+・編集したレイヤが1レイヤだと上手くロードできない不具合を修正 <br />
+・HSVカラーサークルの色相取得不具合を修正 <br />
+・編集初期倍率を1倍(1280*720)に変更 <br />
+・ベース色を白に変更 <br />
+・MOHANのイメージキャラクタとして「紫神もはる(しがみもはる)」さんを設定､よしなに(何) <br /></p>
+<p>build0139 (2020-05-04) <br />
+・フラットペンのエッジを立つようにした <br />
+・セーブ・ロードbugfix <br />
+・倍率表示 <br />
+・格子模様の描画をテキストスクリーンに変更 <br />
+・SaveMEM:計算セーブファイルサイズ/Freemem()空きメモリの表示(MB)(あまり役に立たないけど参考程度) <br /></p>
+<p>build0133 (2020-05-03) <br />
+・UNDO誤爆防止の為､GUIエリアクローズ時に右側アイコン群も非表示にする <br />
+・スポイト使用時アイコンの座標を上にずらす <br />
+・UNDO/REDOアイコンを描き直した <br /></p>
+<p>build0131 (2020-05-02) <br />
+・1ピクセル幅時の描画がおかしかったので修正(アイコンエディタ使用時に異常に気が付き修正) <br /></p>
+<p>build0130 (2020-05-01) <br />
+・プロジェクトアイコンエディタをオミットしてMOHANのGUIアイコンエディタを差し込んだ <br />
+・アイコン選択して編集モード(レイヤ2) <br />
+・ブラシアイコン横にアイコンセーブボタンをつけた <br /></p>
+<p>build0127 (2020-04-30) <br />
+・描画半径が最も細くなった時にアンチエイリアスをかけるようにした <br />
+・上記に伴い最細線を1pxに変更 <br />
+・半径スライダー(黄色/水色)を指数関数的カーブで変化するように変更した､細めの線の調整をしやすくするため｡ <br /></p>
+<p>build0119 (2020-04-29) <br />
+・GUIを非表示にして全画面モードにしたときも画面のパンズーム移動回転ができるようにした(主にスクショ用) <br /></p>
+<p>build0118 (2020-04-28) <br />
+・セーブファイルNi0のロードに不具合があり､ロードされたファイルを再セーブすると上手く保存されない現象を修正 <br />
+・パートレイヤーファイルNIPが実装されていなかったのを実装 <br />
+・保存ファイルサイズ表示(暫定) <br /></p>
+<p>build0114 (2020-04-27) <br />
+・レイヤをたくさん作成して広範囲矩形を編集するとメモリ確保エラーで落ちていたのでUNDOバッファ自動開放を有効にする､ <br />
+・UNDO回数と空メモリ表示を復活(システムで開放されるのであまりFreemem命令の意味はないけど一応) <br /></p>
+<p>build0112 (2020-04-27) <br />
+・拡縮回転をL2ボタン+スティックに変更 <br />
+・アイコン言語の自動判別(スプライトページのプチコン4のロゴの画像チェックサムで判別) <br /></p>
+<p>build0109 (2020-04-25) <br />
+・フラットペンを追加(1ストローク内で描画透明度限界があるペン､マーカーのような描画) <br />
+・最低不透明度を調整 <br />
+・ファイルメニューでエラー終了してたのをつぶす <br /></p>
+<p>build0107 (2020-04-23) <br />
+・ペンと消しゴムのサイズを別パラメータに分離 <br />
+・消しゴムモードの時サイズスライダー(黄色)が水色に変わる <br /></p>
+<p>build0105  (2020-04-22) <br />
+・消しゴムモードの時エッジが何故か明るくなってしまっていたのを修正 <br />
+・レイヤ交換を行った時UNDOバッファのレイヤ指定がずれてしまったのを修正(レイヤは交換されたままUNDOを行う) <br /></p>
+<p>build0097(2020-04-20) <br />
+・HSVカラーピッカーを色相環にした</p>
+<p>build0094(2019-11-18) <br />
+・初公開</p>
+<ul><li><strong>妄碌庵</strong> : 感想ほしい(´・ω・｀) (<span class="comment_date">2022/03/18 (金) 19:53:32</span>)</li>
+<li><strong>たけふらっと</strong> : 便利かも。 (<span class="comment_date">2022/03/19 (土) 14:16:12</span>)</li>
+<li><strong>たけふらっと</strong> : 機能神すぎる (<span class="comment_date">2022/03/20 (日) 12:41:50</span>)</li></ul>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/MOHAN" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="de2fc2ff10a947cab1924a4b64c92a54" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (390d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (1048d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (153d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (18d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (15d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (15d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (15d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (15d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (62d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (11h)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (747d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (15d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_4_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (1047d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (1047d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (1d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (293d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/04/03</h4>
+<ul>
+ <li>ペイントツール「MOHAN」</li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADOCT" title="リズミカルおもちつきOCT β版 (34m)">リズミカルおもちつきOCT β版</a></li>
+</ul>
+<h4>2022/04/02</h4>
+<ul>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (11h)">OFコーナー4</a></li>
+</ul>
+<h4>2022/04/01</h4>
+<ul>
+ <li><a href="/petc4/?SandBox" title="覚悟の準備用ページ (1d)">覚悟の準備用ページ</a></li>
+</ul>
+<h4>2022/03/29</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD Forward (4d)">リズミカルおもちつきHD Forward</a></li>
+</ul>
+<h4>2022/03/27</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO for Nintendo Switch (6d)">リズミカルおもちつきTG NEO for Nintendo Switch</a></li>
+</ul>
+<h4>2022/03/21</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (12d)">TAGeLorix Sounds</a></li>
+</ul>
+<h4>2022/03/20</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA%A1%A6%B2%FE" title="幻想楽遊戯・改 (13d)">幻想楽遊戯・改</a></li>
+</ul>
+<h4>2022/03/19</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A4%DE%A1%BC%A4%B8%A4%E3%A4%F3%A4%CE%A4%E8%A4%A6%A4%CA%A4%E2%A4%CE%A1%A3for%20Switch" title="まーじゃんのようなもの。for Switch (14d)">まーじゃんのようなもの。for Switch</a></li>
+</ul>
+<h4>2022/03/18</h4>
+<ul>
+ <li><a href="/petc4/?Contact" title="管理人へ連絡 (15d)">管理人へ連絡</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_4">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADOCT" title="Toukou/リズミカルおもちつきOCT (34m)">リズミカルおもちつきOCT β版<span class="counter">(25)</span></a></li>
+ <li><a href="/petc4/?FAQ" title="FAQ (15d)">よくある質問集<span class="counter">(17)</span></a></li>
+ <li><span title="Toukou/MOHAN  (14m)">ペイントツール「MOHAN」<span class="counter">(16)</span></span></li>
+ <li><a href="/petc4/?Toukou%2F%A5%C9%A5%AD%A5%E5%A5%E1%A5%F3%A5%C8%A5%C4%A1%BC%A5%EB%A1%D6My-style%20Docs%A1%D7" title="Toukou/ドキュメントツール「My-style Docs」 (678d)">ドキュメントツール「My-style Docs」<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FIppitsu" title="Toukou/Ippitsu (473d)">一筆 IPPITSU<span class="counter">(3)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FFLOW_GRP_VIEWER" title="Toukou/FLOW_GRP_VIEWER (1014d)">FLOW 画像ビューア<span class="counter">(3)</span></a></li>
+ <li><a href="/petc4/?Sample" title="Sample (15d)">サンプルプログラム集<span class="counter">(3)</span></a></li>
+ <li><a href="/petc4/?Toukou%2Fkaleido_trigger" title="Toukou/kaleido_trigger (901d)">Kaleido Trigger（カレトリ）<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%E9%A1%BC%A5%CB%A5%F3%A5%B0%A5%B7%A5%F3%A5%BB%A5%B5%A5%A4%A5%B6%A1%BC%20from%20%A4%BF%A4%AB%A4%D2%A4%ED%20DEMO" title="Toukou/ラーニングシンセサイザー from たかひろ DEMO (497d)">ラーニングシンセサイザー from たかひろ DEMO<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FQRLib" title="Toukou/QRLib (874d)">QRLib<span class="counter">(2)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (1048d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_5">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1395 回、本日は 6 回、昨日は 10 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.180 秒  | このページの最終更新 : 2022/04/03 (日) 00:37:39  (14m) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

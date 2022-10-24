@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン音楽広場 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン音楽広場 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Mame%2FMusic_Format">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Mame%2FMusic_Format">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FMusic_Format">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Mame%2FMusic_Format">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン音楽広場</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Mame%2FMusic_Format">Music_Format</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.085sec. -->
+<div class="contents">
+<ul><li><a href="#p0419a17">  フォーマット一覧 </a></li>
+<li><a href="#i5054b86">  各フォーマットの仕様 </a></li>
+<li><a href="#ma5c97f4">  各フォーマットの記述例 </a>
+<ul><li><a href="#z3810ce4">  Extended MML </a></li>
+<li><a href="#e905a1b0">  BED </a></li>
+<li><a href="#dce29c26">  BHD </a>
+<ul><li><a href="#lb42b9f3">  BHD Ver.1.0 </a></li>
+<li><a href="#w915399c">  BHD Ver.2.0 </a></li>
+<li><a href="#sd4570f7">  注意 </a></li></ul></li>
+<li><a href="#o05db532">  MML Carrier Data </a></li>
+<li><a href="#f1bd38b4">  NNM </a></li>
+<li><a href="#TGM">  TGM </a></li>
+<li><a href="#s2f30c49">  NMPACKS </a></li>
+<li><a href="#w8f7376c">  LYB </a></li>
+<li><a href="#NTP"> NTP</a></li>
+<li><a href="#u6c8e6eb">  GMD </a></li></ul></li>
+<li><a href="#x39c37cf">  フォーマットを利用した作品 </a></li>
+<li><a href="#ad367f11">  各作品の簡単なご紹介 </a>
+<ul><li><a href="#uae8aaf7">  MPlay1(by Na) </a></li>
+<li><a href="#hcd7ff89">  Musics12(by takumi) </a></li>
+<li><a href="#content_1_20">  Musics12 Pro(by takumi) [#h]</a></li>
+<li><a href="#u69a57e3">  MML Carrier for SB3(by イスターリャ) </a></li>
+<li><a href="#s92983bf">  オトヒロバ(by 高原のな) </a></li>
+<li><a href="#m5521197">  TAGeLorix Player+(by ☆Tatsukin★) </a></li>
+<li><a href="#b3d433a5">  TAGeLorix Player Wide(by ☆Tatsukin★) </a></li>
+<li><a href="#jfa284c6">  LYB Player(by takumi) </a></li>
+<li><a href="#xf0eed1e">  All over the MMLs(by ☆Tatsukin★) </a></li></ul></li>
+<li><a href="#c1fdef53"> コメント </a></li></ul>
+</div>
+
+<p>プチコンで使われているMMLについて色々まとめました。<br />
+最後の方にMML紹介所があるのでMMLを紹介したい場合はコメントしてください。<br /></p>
+<h3 id="p0419a17">フォーマット一覧</h3>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Mame%2F%A5%D7%A5%C1%A5%B3%A5%F3%A4%C7%BB%C8%A4%EF%A4%EC%A4%EB%B3%C8%C4%A5%BB%D2%A4%DE%A4%C8%A4%E1" rel="nofollow">こちら</a>とできるだけかぶらないようにしています。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">拡張子</th><th class="style_th">制作者</th><th class="style_th">詳細</th><th class="style_th">説明</th></tr><tr><td class="style_td">.MML</td><td class="style_td">Na</td><td class="style_td">Extended MML フォーマット<br class="spacer" />（<a href="/petc3gou/?Toukou%2FExtendedMML" title="Toukou/ExtendedMML (729d)">Toukou/ExtendedMML</a>）</td><td class="style_td">MML読み込みは通常のMMLファイルと同様。マクロ定義と同じようにタイトルや制作者を指定可能。略称ExMML。</td></tr><tr><td class="style_td">.BED</td><td class="style_td">takumi</td><td class="style_td">BEDフォーマット<br class="spacer" />（<a href="/petc3gou/?Toukou%2FBED-FORMAT" title="Toukou/BED-FORMAT (841d)">Toukou/BED-FORMAT</a>）</td><td class="style_td">タイトルとMMLのみ保存できる。冒頭で全楽曲数を指定する必要がある。</td></tr><tr><td class="style_td">.BHD</td><td class="style_td">takumi</td><td class="style_td">BHDフォーマット<br class="spacer" />（<a href="/petc3gou/?Toukou%2FBHDPLAYER" title="Toukou/BHDPLAYER (797d)">Toukou/BHDPLAYER</a>,<br class="spacer" />　<a href="/petc3gou/?Toukou%2FBHD_v2.0" title="Toukou/BHD_v2.0 (702d)">Toukou/BHD_v2.0</a>）</td><td class="style_td">BEDより進化し、タイトルや制作者も一緒に保存可能。Ver.1とVer.2があり、両者に互換性はない。</td></tr><tr><td class="style_td">.MCD</td><td class="style_td">イスターリャ</td><td class="style_td">MML Carrier Data<br class="spacer" />（<a href="/petc3gou/?Toukou%2FMML_CARRIER_forSB3" title="Toukou/MML_CARRIER_forSB3 (860d)">Toukou/MML_CARRIER_forSB3</a>）</td><td class="style_td">MMLを複数行にわたって記述可能。説明文を入れることができる。MMLを素材として扱うことを重視。</td></tr><tr><td class="style_td">.NNM</td><td class="style_td">Na&amp;高原のな</td><td class="style_td">NNMフォーマット<br class="spacer" />（<a href="/petc3gou/?Toukou%2F%B2%BB%B3%DA%A5%D1%A5%C3%A5%AF%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8%A1%D6NNM%A1%D7" title="Toukou/音楽パックフォーマット「NNM」 (678d)">Toukou/音楽パックフォーマット「NNM」</a>）</td><td class="style_td">単純なMML記述形式であるが、ExMML連携拡張によりExMML相当の機能が使える。MMLをデータとして扱うことを重視。</td></tr><tr><td class="style_td">.TGM</td><td class="style_td">☆Tatsukin★</td><td class="style_td">TGMフォーマット<br class="spacer" />（<a href="/petc3gou/?Toukou%2FTAGeLorix%20Player" title="Toukou/TAGeLorix Player (461d)">Toukou/TAGeLorix Player</a>）</td><td class="style_td">MML全体の音量を設定できる。音量を0にすると、自動的に70に設定される。また、CHOMMLの記述も可能。</td></tr><tr><td class="style_td">.NMP</td><td class="style_td">高原のな</td><td class="style_td">NMPACKS<br class="spacer" />（<a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3%A5%B7%A5%EA%A1%BC%A5%BA%B6%A6%C4%CC%B2%BB%B3%DA%A5%D1%A5%C3%A5%AF%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8%20NMPACKS" title="Toukou/プチコンシリーズ共通音楽パックフォーマット NMPACKS (767d)">Toukou/プチコンシリーズ共通音楽パックフォーマット NMPACKS</a>）</td><td class="style_td">サポートおよび公開終了のはずだが稀に使われている。Extended MMLの要素関連の仕様はこれに由来。以下「.NMP」と略記。</td></tr><tr><td class="style_td">.LYB</td><td class="style_td">takumi</td><td class="style_td">LYRIC BGM DATA<br class="spacer" />（<a href="/petc3gou/?Toukou%2FLYB%20Player" title="Toukou/LYB Player (526d)">Toukou/LYB Player</a>）</td><td class="style_td">カラオケ風に歌詞を表示できる。</td></tr><tr><td class="style_td">.NTP</td><td class="style_td">☆Tatsukin★</td><td class="style_td">NTPフォーマット<br class="spacer" />(<a href="/petc3gou/?Toukou%2FNTP%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8" title="Toukou/NTPフォーマット (414d)">Toukou/NTPフォーマット</a>)</td><td class="style_td">NMPACKとTGMを合わせたようなフォーマット。曲の並び替え、追加、削除が簡単。</td></tr></tbody></table></div>
+
+<h3 id="i5054b86">各フォーマットの仕様</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" style="text-align:center;">　</th><th class="style_th" style="text-align:center;">ExMML</th><th class="style_th" style="text-align:center;">BED</th><th class="style_th" style="text-align:center;">BHD1</th><th class="style_th" style="text-align:center;">BHD2</th><th class="style_th" style="text-align:center;">MCD</th><th class="style_th" style="text-align:center;">NNM</th><th class="style_th" style="text-align:center;">TGM</th><th class="style_th" style="text-align:center;">.NMP</th><th class="style_th" style="text-align:center;">LYB</th><th class="style_th" style="text-align:center;">NTP</th></tr><tr><th class="style_th" style="text-align:center;">複数曲の収録</th><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">タイトル表記</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">制作者表記</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">曲別説明文表記</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">ファイル別説明文表記</th><td class="style_td" style="text-align:center;">―<a id="notetext_1" href="#notefoot_1" class="note_super" title="「曲別説明文」と同等">*1</a></td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×<a id="notetext_2" href="#notefoot_2" class="note_super" title="ExMML連携拡張では〇">*2</a></td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">標準命令集有無</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇<a id="notetext_3" href="#notefoot_3" class="note_super" title="ExMML連携拡張ライブラリを同...">*3</a></td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td></tr><tr><th class="style_th" style="text-align:center;">MML複数行化</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;"><a href="/petc3gou/?Toukou%2F%A4%C1%A4%E7%A1%BCMML%28CHOMML%29" title="Toukou/ちょーMML(CHOMML) (2478d)">CHOMML</a>の記述</th><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">説明文の改行</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">―<a id="notetext_4" href="#notefoot_4" class="note_super" title="そもそも説明文の設定ができない">*4</a></td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">音量設定</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">△<a id="notetext_5" href="#notefoot_5" class="note_super" title="標準要素未収録。要素名はVOLを...">*5</a></td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td></tr><tr><th class="style_th" style="text-align:center;">WAVSET</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">WAVSETA</th><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td></tr><tr><th class="style_th" style="text-align:center;">独自要素作成</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">他バージョンMML</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">◎<a id="notetext_6" href="#notefoot_6" class="note_super" title="ただし記述方法が複雑">*6</a></td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td></tr><tr><th class="style_th" style="text-align:center;">ジャケット表示</th><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×<a id="notetext_7" href="#notefoot_7" class="note_super" title="プチコン4版は背景画像が設定可能">*7</a></td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td></tr><tr><th class="style_th" style="text-align:center;">歌詞表示設定</th><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×<a id="notetext_8" href="#notefoot_8" class="note_super" title="最新版では標準要素から削除された">*8</a></td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">△</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td></tr><tr><th class="style_th" style="text-align:center;">歌詞自動送り機能</th><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">×</td><td class="style_td" style="text-align:center;">〇</td><td class="style_td" style="text-align:center;">×</td></tr></tbody></table></div>
+<ul><li>「他バージョンMML」の〇は、そのまま読み込めるプチコンのバージョンの指定が可能なもの、◎は別バージョンのプチコン用のMMLも併記可能なものを表す。</li>
+<li>「歌詞表示設定」の△は、歌詞指定のフォーマットが設定されていないことを表す。</li>
+<li>ExMMLとNMPACKS、NTPは独自要素の定義を行うことで事実上すべての機能に対応できるため、標準要素の有無を掲載した</li>
+<li>NNMはMML終端がDATA 0のためREADするときに細工が必要</li>
+<li>NNM単体は対応機能が非常に限定されているが、ExMMLとの連携を開発者がサポートしており、それによってかなり多くの機能が使用可能となる</li></ul>
+
+<h3 id="ma5c97f4">各フォーマットの記述例</h3>
+
+<h4 id="z3810ce4">Extended MML</h4>
+<ul><li>MMLマクロ同様、{}でしっかりと括って指定する。</li>
+<li>指定できるものはCOMP(作曲者名)、TEXT(詳細テキスト)など多数ある(NMPACKSのものを縮約したものである)。
+<ul><li>また、その指定に順序は問わないほか、独自に要素を定義可能である。</li>
+<li>ただしMMLマクロの制約上、要素名は7文字に制限される。</li></ul></li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">｛ＴＩＴＬＥ＝サンプル｝</span></li>
+<li><span class="smbas">｛ＡＬＢＵＭ＝サンプル｝</span></li>
+<li><span class="smbas">｛ＶＥＲ＝３｝</span></li>
+<li><span class="smbas">：０＠１４４Ｑ８Ｌ４ＣＤＥＦ　　’ＭＭＬ記述欄</span></li>
+<li><span class="smbas">ＧＡＢ＜Ｃ</span></li>
+<li><span class="smbas">｛ＴＥＸＴ＝ここで改行→</span></li>
+<li><span class="smbas">改行終わり｝</span></li>
+</ol></code></div></div>
+<ul><li>MML文字列中の改行はBGMPLAYには影響を及ぼさないのでEDITモードで編集可能。</li>
+<li>通常のMMLとして読み込むことができる(そのまま読み込んでもMML解釈のエラーを発生しない)。</li></ul>
+
+<h4 id="e905a1b0">BED</h4>
+<ul><li>DATA 楽曲数が定義楽曲数より大きいとエラーになる。</li>
+<li>@STARTと@NAMEで分ける必要がある。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＢＥＤ</span></li>
+<li><span class="smbas">ＤＡＴＡ　楽曲数</span></li>
+<li><span class="smbas">＠ＳＴＡＲＴ</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列１</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列２</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列３</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列４</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列５</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列６</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列７</span></li>
+<li><span class="smbas">＠ＮＡＭＥ</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列１の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列２の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列３の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列４の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列５の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列６の題名</span></li>
+<li><span class="smbas">ＤＡＴＡ　ＭＭＬ文字列７の題名</span></li>
+<li><span class="smbas">＠ＴＥＸＴ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ステータスメッセージ”</span></li>
+</ol></code></div></div>
+<ul><li>読み込みが楽。</li>
+<li>フォーマットファイルが作りやすい。</li></ul>
+
+<h4 id="dce29c26">BHD</h4>
+
+<h5 id="lb42b9f3">BHD Ver.1.0</h5>
+<ul><li>DATA 楽曲数が定義楽曲数より大きいとエラーになる。</li>
+<li>BEDとラベルが若干異なる。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＢＨＤ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　楽曲数</span></li>
+<li><span class="smbas">＠ＢＨＤ＿ＴＩＴＬＥ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”アルバム”</span></li>
+<li><span class="smbas">＠ＭＭＬＤＡＴＡ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”タイトル１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”制作者１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”コメント１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ジャンル１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”時間１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ＭＭＬ文字列１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　０</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">　ＤＡＴＡ　”タイトル２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”制作者２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”コメント２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ジャンル２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”時間２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ＭＭＬ文字列２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　０</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＴＥＸＴ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ステータスメッセージ”</span></li>
+<li><span class="smbas">＠ＤＡＴＥ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”最終更新日”</span></li>
+</ol></code></div></div>
+<ul><li>時間を記述可能。</li></ul>
+
+<h5 id="w915399c">BHD Ver.2.0</h5>
+<ul><li>(初期の告知とは異なり、)<strong>BHD Ver.1.0との互換性がない</strong>書式である。</li>
+<li>新たにMML複数行化に対応。</li>
+<li>全楽曲数の指定は必要無し。</li>
+<li>ジャケット表示対応
+<ul><li>画像解像度は160×160、それ以上は表示されない。</li></ul></li>
+<li>これらの変更に対応するため、@TEXTの前に ｢DATA &quot;-1&quot;｣ が必要となった。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＢＨＤ２＿ＴＩＴＬＥ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”アルバム”</span></li>
+<li><span class="smbas">＠ＭＭＬＤＡＴＡ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”タイトル１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”制作者１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”コメント１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”画像ファイル名１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”時間１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ＭＭＬ文字列１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”０”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">　ＤＡＴＡ　”タイトル２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”制作者２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”コメント２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”画像ファイル名２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”時間２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ＭＭＬ文字列２−１”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ＭＭＬ文字列２−２”</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”０”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">　ＤＡＴＡ　”−１”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＴＥＸＴ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”ステータスメッセージ”</span></li>
+<li><span class="smbas">＠ＤＡＴＥ</span></li>
+<li><span class="smbas">　ＤＡＴＡ　”最終更新日”</span></li>
+</ol></code></div></div>
+
+<h5 id="sd4570f7">注意</h5>
+<ul><li>V2.0はV1.0と<strong>互換性がない</strong>。
+<ul><li>読み込み方法が全く異なる。</li></ul></li></ul>
+
+<h4 id="o05db532">MML Carrier Data</h4>
+<ul><li>定義前@MCDラベルが必要。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＭＣＤ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”制作者名”</span></li>
+<li><span class="smbas">’曲データ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”タイトルＡ”，　”説明Ａ”，　”ＭＭＬ　Ａ”，　”０”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”タイトルＢ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”説明Ｂ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ　Ｂ　（１）”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ　Ｂ　（２）”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ　Ｂ　（３）”，　”０”</span></li>
+<li><span class="smbas">’終了</span></li>
+<li><span class="smbas">ＤＡＴＡ　”−１”</span></li>
+<li><span class="smbas">＠ＣＯＭ</span></li>
+<li><span class="smbas">ＤＡＴＡ”共通の説明文”</span></li>
+</ol></code></div></div>
+<ul><li>制作者名、曲のタイトル、説明、MMLをDATA文で列挙する形式。</li>
+<li>コメント改行は/nで可能(対応作品の場合)。</li>
+<li>プチコン4では終端の0、-1は文字列でない数値でも可。</li>
+<li>プチコン4ではプレイヤーの背景画像を設定できる。</li></ul>
+
+<h4 id="f1bd38b4">NNM</h4>
+<ul><li>楽曲定義の前に@BGM◯ラベルを0から順に使うということを決めただけで、その他の点は何の機能もない。
+<ul><li>ただし、標準命令集同梱の「NNM with Extended MML」を使用することで、Extended MML相当の機能を使用できる。</li></ul></li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＢＧＭ０</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＣＤＥＲＣＤＥＲＣＤＥ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　０</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’↓ＮＮＭ　ｗｉｔｈ　Ｅｘｔｅｎｄｅｄ　ＭＭＬ向け</span></li>
+<li><span class="smbas">＠ＢＧＭ１</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＴＩＴＬＥ＝ＦＡＤＥ｝｛ＣＯＭＰ＝高原のな｝”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＴＥＸＴ＝Ｐｏｌｙｇｌｏｔ｝”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＤＡＴＥＮＤ＝｝”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＦＡＤＥ　Ｌ８ＦＧＡＢ−Ｌ４Ｂ＋．”</span></li>
+<li><span class="smbas">ＤＡＴＡ　０</span></li>
+</ol></code></div></div>
+<ul><li>NNM with Extended MMLを使用する際は、@NNMラベル内にExtended MML同様の形式でメタデータを書いておくと、MML内に検索している要素が発見できなかった時に検索される。</li>
+<li>MMLデータの末端にDATA 0を使用するため、BGMSETD命令以外を使用して読み込む場合は工夫が必要になる。</li></ul>
+
+<h4 id="TGM">TGM</h4>
+<ul><li>MMLは@MML_DATA◯に0から順に記述。</li>
+<li>@MML_TITLEのデータ数(最後の空文字列を除く)がMMLの数を超過してる場合はエラー。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＭＭＬ＿ＴＩＴＬＥ</span></li>
+<li><span class="smbas">’ＤＡＴＡ　音量，”曲名”，”作曲者”，”編曲者”，”コメント”</span></li>
+<li><span class="smbas">ＤＡＴＡ　０７０，”曲Ａ”，”あああ”，””，””</span></li>
+<li><span class="smbas">ＤＡＴＡ　０８０，”曲Ｂ”，”いいい”，””，””</span></li>
+<li><span class="smbas">ＤＡＴＡ　０００，””，””，””，””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＭＭＬ＿ＤＡＴＡ０</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ文字列”</span></li>
+<li><span class="smbas">ＤＡＴＡ　””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＭＭＬ＿ＤＡＴＡ１</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ文字列（１行目）”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ文字列（２行目）”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＭＭＬ文字列（３行目）”</span></li>
+<li><span class="smbas">ＤＡＴＡ　””</span></li>
+</ol></code></div></div>
+<ul><li>MMLの音量設定が可能</li>
+<li>音量を0にした場合、自動的に64に設定される(付属プレーヤーの場合)。</li>
+<li><a href="/petc3gou/?Toukou%2F%A4%C1%A4%E7%A1%BCMML%28CHOMML%29" title="Toukou/ちょーMML(CHOMML) (2478d)">CHOMML</a>の記述が可能(MMLの1行目にDATA &quot;*CHO*&quot;が必要)。</li>
+<li>プチコン4ではMMLの末端はDATA 0でも可。</li></ul>
+
+<h4 id="s2f30c49">NMPACKS</h4>
+<ul><li>公式にはサポート終了としているが、一部機能がまだNNMに取り込まれていないため、一部では新規採用されたりもしている。
+<ul><li>ただし、2020年1月20日時点では標準ライブラリが公開終了となったままのため、全機能への対応は若干手間が大きい。</li></ul></li>
+<li>@NMTRACKSにラベル名の@D_や@M_を除く部分を列挙、@NMPACKには各MMLのデータ部分に検索している要素が発見できなかった時に検索される内容を記述する。</li>
+<li>@D_からはじまるラベル内にはメタデータを「要素名：内容」の形式で記述する。要素名の大文字小文字は区別されない。</li>
+<li>@M_からはじまるラベル内にはMMLデータを記述し、データの最後は空文字と0を連続させて終わる。
+<ul><li>その他記述形態がとにかく複雑なのでこのページでは詳細は説明しない。</li></ul></li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＮＭＴＲＡＣＫＳ</span></li>
+<li><span class="smbas">ＤＡＴＡ”ＭＹＢＧＭ１”</span></li>
+<li><span class="smbas">ＤＡＴＡ”ＭＹＢＧＭ２”</span></li>
+<li><span class="smbas">ＤＡＴＡ””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＮＭＰＡＣＫ</span></li>
+<li><span class="smbas">ＤＡＴＡ”ａｌｂｕｍ：はじめての　きょくパック”</span></li>
+<li><span class="smbas">ＤＡＴＡ””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｄ＿ＭＹＢＧＭ１</span></li>
+<li><span class="smbas">ＤＡＴＡ”ｔｉｔｌｅ：はじめての　きょく”</span></li>
+<li><span class="smbas">ＤＡＴＡ”ｃｏｍｐｏｓｅｒ：○○○○”</span></li>
+<li><span class="smbas">ＤＡＴＡ””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｍ＿ＭＹＢＧＭ１</span></li>
+<li><span class="smbas">ＤＡＴＡ”（中略：ＭＭＬデータ）”</span></li>
+<li><span class="smbas">ＤＡＴＡ””，０</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｄ＿ＭＹＢＧＭ２</span></li>
+<li><span class="smbas">ＤＡＴＡ”ｔｉｔｌｅ：かっこいい　きょく”</span></li>
+<li><span class="smbas">ＤＡＴＡ”ｃｏｍｐｏｓｅｒ：○○○○”</span></li>
+<li><span class="smbas">ＤＡＴＡ””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｍ＿ＭＹＢＧＭ２</span></li>
+<li><span class="smbas">ＤＡＴＡ”（中略：ＭＭＬデータ）”</span></li>
+<li><span class="smbas">ＤＡＴＡ””，０</span></li>
+</ol></code></div></div>
+
+<h4 id="w8f7376c">LYB</h4>
+<ul><li>歌詞表示に特化したMMLファイル</li>
+<li>&lt; &gt;内の数値分その行の歌詞を表示できる(単位:秒)</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＬＹＢ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”１．０”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”色は匂へど散りぬるを”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”幽閉サテライト”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”Ｃ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”Ｔ１３８：０［＠８８Ｖ９３，Ａ８＜Ｃ８Ｄ２．．．”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”＜０６＞色は匂へど　散りぬるを”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”＜１０＞さ迷う事さえ　許せなかった．．．”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">省略</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＡＴＡ　”＜０８＞悪夢が優しく私を弄ぶ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”０”</span></li>
+</ol></code></div></div>
+
+<h4 id="NTP">NTP</h4>
+<ul><li>NMPACKとTGMを合わせたようなフォーマット。</li></ul>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＠ＮＴＰ＿ＩＮＦＯ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＡＬＢＵＭ＝テストアルバム｝”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＴＥＸＴ＝ステータスメッセージ｝”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”｛ＤＡＴＥＮＤ＝｝”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠ＮＴＰ＿ＬＩＳＴ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”曲名”，”作曲者”，”編曲者”，”コメント”，”ＩＤ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＡＡＡ”，”ＢＢＢ”，”ＣＣＣ”，”○○の曲”，”ＡＢＣ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　””，””，””，””，””</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｂ＿ＩＤ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＣＤＥＦＧＡＢ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”０”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＠Ｂ＿ＡＢＣ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”：０＠８８”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＣＤＥＦＥＤＣＲ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”ＥＦＧＡＧＦＥＲ”</span></li>
+<li><span class="smbas">ＤＡＴＡ　”０”</span></li>
+</ol></code></div></div>
+<ul><li><a href="/petc3gou/?Toukou%2F%A4%C1%A4%E7%A1%BCMML%28CHOMML%29" title="Toukou/ちょーMML(CHOMML) (2478d)">CHOMML</a>の記述が可能(MMLの1行目にDATA &quot;*CHO*&quot;が必要)。</li>
+<li>@B_からはじまるラベル内にはMMLデータを記述し、データの最後は&quot;0&quot;で終わる。</li></ul>
+
+<h4 id="u6c8e6eb">GMD</h4>
+<ul><li><strong>プチコン4用フォーマット。</strong></li>
+<li>GRPからMML情報を取得する。</li>
+<li>複数曲(最高50曲)まで1枚のGRPに保存可能。</li>
+<li>MML文字列として読み込むので<strong>ExMML形式で読み込む必要がある</strong>。</li>
+<li>3号ではGPGET命令で正しい数値が返ってこない(近似値？)ので再現は不可能。
+<ul><li>文字列を32^3通りの1つとして表示、取得することも可能な気がするが面倒臭い</li></ul></li>
+<li>仕様
+<ul><li>MML文字列をmid$で1文字ずつ取得し、文字コードを色としてGRPの座標に描写する</li>
+<li>描写後は座標を1ずつずらす</li>
+<li>MMLが全て描写されたら#C_REDを描写</li></ul></li></ul>
+
+<h3 id="x39c37cf">フォーマットを利用した作品</h3>
+
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">　</th><th class="style_th">最新版Ver.</th><th class="style_th">曲数の上限</th><th class="style_th">ファイル数の上限</th><th class="style_th">ExMML</th><th class="style_th">BED</th><th class="style_th">BHD1</th><th class="style_th">BHD2</th><th class="style_th">MCD</th><th class="style_th">NNM</th><th class="style_th">TGM</th><th class="style_th">.NMP</th><th class="style_th">LYB</th><th class="style_th">NTP</th><th class="style_th">備考</th></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FMusics12" title="Toukou/Musics12 (440d)">Musics12</a></th><td class="style_td">ver.1.0</td><td class="style_td">約500曲</td><td class="style_td">なし</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">△</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">×</td><td class="style_td">音色ランダム機能<a id="notetext_9" href="#notefoot_9" class="note_super" title="@&lt;S&gt;で音色をラン...">*9</a>対応</td></tr><tr><th class="style_th"><a href="http://wiki.hosiken.jp/petc4/?Toukou%2FMusics12" title="4:Toukou/Musics12" rel="nofollow">Musics12 Pro</a></th><td class="style_td">ver.3.0</td><td class="style_td">約10000曲</td><td class="style_td">なし</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">△</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">音色ランダム機能<a id="notetext_10" href="#notefoot_10" class="note_super" title="@&lt;S&gt;で音色をラン...">*10</a>対応</td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FMML_CARRIER_forSB3" title="Toukou/MML_CARRIER_forSB3 (860d)">MML Carrier for SB3</a></th><td class="style_td">Ver.03</td><td class="style_td">23曲<a id="notetext_11" href="#notefoot_11" class="note_super" title="表示に不具合あり">*11</a></td><td class="style_td">なし</td><td class="style_td">〇</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">△<a id="notetext_12" href="#notefoot_12" class="note_super" title="埋め込み構文非対応">*12</a></td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td"></td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FOtohiroba" title="Toukou/Otohiroba (579d)">オトヒロバ</a></th><td class="style_td">ver.2.3.0</td><td class="style_td">なし</td><td class="style_td">なし</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">△</td><td class="style_td">〇</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td"></td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FTAGeLorix%20Player%2B" title="Toukou/TAGeLorix Player+ (482d)">TAGeLorix Player+</a></th><td class="style_td">ver.1.20</td><td class="style_td">1024曲<a id="notetext_13" href="#notefoot_13" class="note_super" title="FREEMEMの関係で実質500...">*13</a></td><td class="style_td">128</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td"></td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FTAGeLorix%20Player%20Wide" title="Toukou/TAGeLorix Player Wide (112d)">TAGeLorix Player Wide</a></th><td class="style_td">ver.1.10</td><td class="style_td">1024曲<a id="notetext_14" href="#notefoot_14" class="note_super" title="FREEMEMの関係で実質500...">*14</a></td><td class="style_td">128</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td">〇</td><td class="style_td"></td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FLYB%20Player" title="Toukou/LYB Player (526d)">LYB Player</a></th><td class="style_td">Ver.1.0</td><td class="style_td">230曲</td><td class="style_td">なし</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">×</td><td class="style_td"></td></tr><tr><th class="style_th"><a href="/petc3gou/?Toukou%2FAll_MML" title="Toukou/All_MML (70d)">All over the MMLs</a></th><td class="style_td">2020/11/3</td><td class="style_td">なし</td><td class="style_td">なし</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">×</td><td class="style_td">〇</td><td class="style_td">プチコン上のあらゆるMMLが収録</td></tr></tbody></table></div>
+<ul><li>NNMの〇はNNM with Extended MML対応を表す。</li>
+<li>TGMの△はCHOMMLと音量設定に非対応を表す。</li></ul>
+<p>※各フォーマットの概要は、サンプルを元に制作しています。作品の中には対応していない機能がある場合があります(例:MusicsGでのTGM Vol機能)。※<br />
+※ほかにもありましたら各自追加・コメントにてお知らせください。</p>
+
+<h3 id="ad367f11">各作品の簡単なご紹介</h3>
+
+<h4 id="uae8aaf7">MPlay1(by Na)</h4>
+<ul><li>元はMCDとNMPACKS用のプレイヤーだったが、現在は沢山のMMLフォーマットに対応している。</li>
+<li>Visual MMLでMMLを可視化できる。(ver2.0以降)</li>
+<li>初公開は2019年6月(公開終了)。</li></ul>
+
+<h4 id="hcd7ff89">Musics12(by takumi)</h4>
+<ul><li>BED、BHD1、BHD2の公式音楽プレーヤー。</li>
+<li>初めて検索エンジンを導入。</li>
+<li>従来のMusicsより若干読込みが速くなっている。</li>
+<li>初公開は2020年7月。</li></ul>
+
+<h4 id="content_1_20">Musics12 Pro(by takumi) [#h]</h4>
+<ul><li>VMML+ Switchに対応したプレーヤー。</li>
+<li>SB4で(恐らく)初のNTP対応プレーヤー。</li>
+<li>10000曲ほど読み込める。</li>
+<li>All over the MMLs(SB3用)内の殆どの曲を読みこむことが可能。</li>
+<li>初公開は2020年10月。</li></ul>
+
+<h4 id="u69a57e3">MML Carrier for SB3(by イスターリャ)</h4>
+<ul><li>MCDの公式音楽プレーヤー。</li>
+<li>プチコン4版は画像表示にも対応している。</li>
+<li>初公開は2019年6月。</li></ul>
+
+<h4 id="s92983bf">オトヒロバ(by 高原のな)</h4>
+<ul><li>NNMの開発者の片方で.NMPの開発者が好き勝手やってるプレイヤー(公式プレイヤーではない)。</li>
+<li>グラフィックにこだわっており、ファイル別にMMLを取得する。</li>
+<li>初公開は2019年9月。</li></ul>
+
+<h4 id="m5521197">TAGeLorix Player+(by ☆Tatsukin★)</h4>
+<ul><li>TGMの公式音楽プレーヤー。</li>
+<li>LYBの歌詞表示にも対応。</li>
+<li>初公開は2020年3月。</li></ul>
+
+<h4 id="b3d433a5">TAGeLorix Player Wide(by ☆Tatsukin★)</h4>
+<ul><li>TGM、NTPの公式音楽プレーヤー。</li>
+<li>TAGeLorix Playerの上位互換。ファイルの詳細などが表示されるようになった。</li>
+<li>初公開は2020年8月。</li></ul>
+
+<h4 id="jfa284c6">LYB Player(by takumi)</h4>
+<ul><li>LYBの公式音楽プレーヤー。</li>
+<li>歌詞を漢字ライブラリで綺麗に表示。</li>
+<li>初公開は2020年3月。</li></ul>
+
+<h4 id="xf0eed1e">All over the MMLs(by ☆Tatsukin★)</h4>
+<ul><li>公式音楽プレーヤーというよりは、MML集に近いかも。</li>
+<li>プチコン界にあるあらゆるMMLが収録。検索機能や並び替え機能がある。</li>
+<li>初公開は2020年6月。</li></ul>
+
+<h3 id="c1fdef53">コメント</h3>
+<ul><li><strong>高原のな</strong> : オトヒロバ　バージョン2に関して勝手に加筆修正しました (<span class="comment_date">2019/12/25 (水) 00:49:16</span>)</li>
+<li><strong>名無しさん</strong> : BHD正確には時間の前にジャンル(？)が入るのでは？ (<span class="comment_date">2019/12/25 (水) 16:53:12</span>)</li>
+<li><strong>Na</strong> : フォーマットではないですがよく使われるものに<a href="/petc3gou/?Toukou%2F%A4%C8%A4%EA%A4%D7%A4%EC%A4%A4%A4%E4%A1%BC" title="Toukou/とりぷれいやー (588d)">Toukou/とりぷれいやー</a>、<a href="/petc3gou/?Toukou%2F%CB%FC%C7%BDMML%A5%D7%A5%EC%A5%A4%A5%E4%A1%BC" title="Toukou/万能MMLプレイヤー (648d)">Toukou/万能MMLプレイヤー</a>がありますね (<span class="comment_date">2019/12/25 (水) 17:07:27</span>)</li>
+<li><strong>高原のな</strong> : NMPACKSをNMPと略されるの不本意なので伸ばしました、ごめんなさい (<span class="comment_date">2019/12/25 (水) 17:26:26</span>)</li>
+<li><strong>名無しさん</strong> : ↑そもそも拡張子NMPなんですがそれは…() (<span class="comment_date">2019/12/25 (水) 17:36:31</span>)</li>
+<li><strong>高原のな</strong> : NMPACKS自体が略称であること、慣例的に拡張子は3文字とすること(DOSだ！)という理由です (<span class="comment_date">2019/12/25 (水) 17:41:18</span>)</li>
+<li><strong>名無しさん</strong> : PCだと別に3文字じゃない拡張子とかあるので(jsonとかjpegとか)いいのでは…？ (<span class="comment_date">2019/12/25 (水) 17:56:28</span>)</li>
+<li><strong>名無しさん</strong> : (Nona Music PACKSと推測) (<span class="comment_date">2019/12/25 (水) 17:57:04</span>)</li>
+<li><strong>高原のな</strong> : さすがにファイル自体の文字数制限がある環境で6文字拡張子は厳しいでしょう。フォーマット自体を指してNMPと呼ばなければ構いません(たとえばNMPファイル、とかならOKです) (<span class="comment_date">2019/12/25 (水) 18:01:32</span>)</li>
+<li><strong>Na</strong> : BHDについて、勝手にジャンル追加しました (<span class="comment_date">2019/12/25 (水) 18:25:01</span>)</li>
+<li><strong>takumi</strong> : ありがとうございます。 (<span class="comment_date">2019/12/26 (木) 10:50:41</span>)</li>
+<li><strong>takumi</strong> : オトヒロバは、プチバース振り返ってたらあったので書きました。 (<span class="comment_date">2019/12/26 (木) 10:51:05</span>)</li>
+<li><strong>名無しさん</strong> : BHDライブラリ作ってくれよな〜頼むよ〜 (<span class="comment_date">2019/12/26 (木) 13:30:47</span>)</li>
+<li><strong>takumi</strong> : 互換性をなくし、ジャケット対応にしようかと考えています。 (<span class="comment_date">2019/12/26 (木) 13:36:33</span>)</li>
+<li><strong>高原のな</strong> : ExMML、NNMの特徴的な点について追記、表現統一を目指し一部修正、一部コメント化をしました (<span class="comment_date">2019/12/26 (木) 16:08:38</span>)</li>
+<li><strong>高原のな</strong> : 表現統一を目指し一部修正についてなんですが、「自作命令」よりも「ライブラリ」とか「基本命令集」とした方が良いかと思われます(たぶんそういうことを言いたかったのではないかという推測ですが) (<span class="comment_date">2019/12/26 (木) 16:10:35</span>)</li>
+<li><strong>高原のな</strong> : あと「オトヒロバ」はExMML, (<span class="comment_date">2019/12/26 (木) 16:12:09</span>)</li>
+<li><strong>高原のな</strong> : 失礼しました。「オトヒロバ」はExMMLとNNMの特徴を活かして、独自拡張をいくつか行うので、「フォーマットのサンプル」には該当しないという扱いでお願いします。 (<span class="comment_date">2019/12/26 (木) 16:13:13</span>)</li>
+<li><strong>takumi</strong> : 了解です。 (<span class="comment_date">2019/12/26 (木) 16:36:25</span>)</li>
+<li><strong>Na</strong> : &gt;最後の方にMML紹介所があるので どこに() (<span class="comment_date">2019/12/26 (木) 17:09:15</span>)</li>
+<li><strong>takumi</strong> : 一応ここなんです (<span class="comment_date">2019/12/26 (木) 17:36:46</span>)</li>
+<li><strong>takumi</strong> : BHDV2.0の仕様を、240*240から160*160に変更します。 (<span class="comment_date">2019/12/26 (木) 17:37:22</span>)</li>
+<li><strong>takumi</strong> : 240だとでかすぎたのです。 (<span class="comment_date">2019/12/26 (木) 17:37:40</span>)</li>
+<li><strong>高原のな</strong> : BHD v2読み込み関係ですが、自前でMCDを実装しているならそれを少し改造すればプログラムの大部分が流用できますね。TGMもNMPACKS読み込みを若干改造すれば使えそうです。 (<span class="comment_date">2019/12/29 (日) 16:29:17</span>)</li>
+<li><strong>takumi</strong> : そうですね……まぁ僕は色々苦労しましたが。 (<span class="comment_date">2020/01/03 (金) 22:02:24</span>)</li>
+<li><strong>高原のな</strong> : そういえば、MCDはフォーマット名でもなければ、ただの拡張子であったので、NMPACKSと一緒に扱い方を変更しておきました (<span class="comment_date">2020/01/13 (月) 22:18:24</span>)</li>
+<li><strong>Na</strong> : MCDはMML Carrier Dataの略称では? (<span class="comment_date">2020/01/13 (月) 22:27:54</span>)</li>
+<li><strong>Na</strong> : フォーマット名MCDで合ってると思いますよ (<span class="comment_date">2020/01/13 (月) 22:28:19</span>)</li>
+<li><strong>高原のな</strong> : すみません、どこかで間違って記憶していたようです。 (<span class="comment_date">2020/01/15 (水) 18:30:23</span>)</li>
+<li><strong>高原のな</strong> : それと、ExMMLと関連性の高いNNMをExMMLの次の項目としておきたいのですが、制作者なのでなんとなくやりづらいです。そのように変更してよいですかね？ (<span class="comment_date">2020/01/15 (水) 18:34:14</span>)</li>
+<li><strong>Na</strong> : ExMMLを後ろに持ってきたらいいと思います (<span class="comment_date">2020/01/15 (水) 19:14:01</span>)</li>
+<li><strong>高原のな</strong> : どっちでも構いませんが、その点の判断は該当項目の制作者じゃない人に任せたいですね (<span class="comment_date">2020/01/15 (水) 19:28:43</span>)</li>
+<li><strong>高原のな</strong> : と、NNMとExMMLの項目の位置関係を、という話をしていたのですが、NNMからExMMLを明確に切り離すことにしたので今の位置で続行でいいと思います (<span class="comment_date">2020/01/15 (水) 19:59:02</span>)</li>
+<li><strong>名無しさん</strong> : 崩れてたので直した (<span class="comment_date">2020/03/12 (木) 16:58:55</span>)</li>
+<li><strong>名無しさん</strong> : ↑25 今更だが、ファイルとフォーマットの違いがわからん(拡張子のことを指してファイルとかフォーマットとか言ってるので) (<span class="comment_date">2020/05/25 (月) 14:51:08</span>)</li>
+<li><strong>名無しさん</strong> : つまり自分の中では拡張子=フォーマット、その拡張子が使われてるもの=ファイル (<span class="comment_date">2020/05/25 (月) 14:52:14</span>)</li>
+<li><strong>高原のな</strong> : 拡張子は人のための識別記号で、フォーマットはコンピュータのための識別記号(プロトコル)という認識でいます。変な話ですが、(フォーマットを解析して処理するプログラムの場合は)jpgという拡張子でも中身がpngならpngとして表示したりできます(推奨はしません)。 (<span class="comment_date">2020/05/25 (月) 19:13:53</span>)</li>
+<li><strong>高原のな</strong> : 拡張子がコンピュータにとって無関係という意味で言ったわけではないです。もうすこしわかりやすい言い方をすると、ファイルがあって、そのファイルの中身の書き方がフォーマット、ファイルの名前の付け方のルールの一部として拡張子があるといった感じだと思います(間違っているようなら教えてください)。 (<span class="comment_date">2020/05/25 (月) 19:16:16</span>)</li>
+<li><strong>☆Tatsukin★</strong> : 今更ですが、TAGeLorix Player(+を含む)は、曲数自体の上限は2048曲(とは言ってもFREEMEMの関係で500曲くらいまでしか入らないと思う)、プロジェクト内のファイル数は128までという制約があります。 (<span class="comment_date">2020/06/18 (木) 15:56:33</span>)</li>
+<li><strong>名無しさん</strong> : DAFは結局どうなった？ (<span class="comment_date">2020/10/04 (日) 07:50:33</span>)</li>
+<li><strong>名無しさん</strong> : GMD結局公開されてなくて草 (<span class="comment_date">2021/02/05 (金) 13:23:13</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/Music_Format" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="af47179a4e630c73617cf7ff10c1313e" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (837d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (2273d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (865d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (310d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (915d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (111d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (1044d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (256d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (540d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (980d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (1511d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (492d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (389d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (99d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/11/28</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A4%D2%A4%ED%A4%CE%A5%C4%A1%BC%A5%EB%BD%B8" title="ひろのツール集 (4h)">ひろのツール集</a></li>
+</ul>
+<h4>2021/11/26</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CF%A5%AB%A5%BB%A4%CE%B5%B4%A4%B4%A4%C3%A4%B3" title="ハカセの鬼ごっこ (1d)">ハカセの鬼ごっこ</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%AC%A4%E9%A4%AF%A4%BF%A5%DC%A5%C3%A5%AF%A5%B9" title="ツールアンドゲーム（元がらくたボックス） (1d)">ツールアンドゲーム（元がらくたボックス）</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%CF%A5%AB%A5%BB%A4%F2%C5%DD%A4%B9" title="ハカセを倒す (1d)">ハカセを倒す</a></li>
+</ul>
+<h4>2021/11/25</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D4%A5%A2%A5%CE%2C%A5%AE%A5%BF%A1%BC%A4%CE%A5%B3%A1%BC%A5%C9%CE%FD%BD%AC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0" title="ピアノ、ギターのコード練習プログラム (2d)">ピアノ、ギターのコード練習プログラム</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%B8%F7%CD%E3%A4%CE%A5%EA%A5%F3%A5%C9%A5%D6%A5%EB%A5%E0" title="光翼のリンドブルム (3d)">光翼のリンドブルム</a></li>
+</ul>
+<h4>2021/11/24</h4>
+<ul>
+ <li><a href="/petc3gou/?CK2KYDG6" title="CK2KYDG6 (3d)">CK2KYDG6</a></li>
+ <li><a href="/petc3gou/?Toukou%2FM-OS" title="M-OS (3d)">M-OS</a></li>
+ <li><a href="/petc3gou/?Toukou%2FSHSENDER" title="SHSENDER (3d)">SHSENDER</a></li>
+</ul>
+<h4>2021/11/23</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (4d)">リズミカルおもちつきTG NEO</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A4%D2%A4%ED%A4%CE%A5%C4%A1%BC%A5%EB%BD%B8" title="Toukou/ひろのツール集 (4h)">ひろのツール集<span class="counter">(14)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FHERO" title="Toukou/HERO (1036d)">HERO -君は、愛する人を守り抜くことが出来るか？<span class="counter">(11)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A4%AC%A4%E9%A4%AF%A4%BF%A5%DC%A5%C3%A5%AF%A5%B9" title="Toukou/がらくたボックス (1d)">ツールアンドゲーム（元がらくたボックス）<span class="counter">(9)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FSHSENDER" title="Toukou/SHSENDER (3d)">SHSENDER<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (6d)">Nintendo全記号Unicode一覧表<span class="counter">(8)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%B2%BB%B3%DA%A4%C4%A4%AF%A4%ED%A4%A6%A4%BC%A1%AA" title="Toukou/音楽つくろうぜ！ (369d)">音楽つくろうぜ！<span class="counter">(7)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FNCF-MUSEQ" title="Toukou/NCF-MUSEQ (731d)">NCF MUSEQ STATION<span class="counter">(6)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C6%E6%A4%CE%B3%CA%C6%AE%A5%B2%A1%BC%A5%E0%A1%CA%C2%CE%B8%B3%C8%C7%A1%CB" title="Toukou/謎の格闘ゲーム（体験版） (206d)">謎の格闘ゲーム（体験版）<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FPetitWorld" title="Toukou/PetitWorld (368d)">PetitWorld ver1.3<span class="counter">(5)</span></a></li>
+ <li><a href="/petc3gou/?WorksLink" title="WorksLink (256d)">プチコン3号作品集<span class="counter">(5)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1545d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 5 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1723 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+<p id="notes">
+<a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">「曲別説明文」と同等</span><br />
+<a id="notefoot_2" href="#notetext_2" class="note_super">*2</a>
+<span class="small">ExMML連携拡張では〇</span><br />
+<a id="notefoot_3" href="#notetext_3" class="note_super">*3</a>
+<span class="small">ExMML連携拡張ライブラリを同梱</span><br />
+<a id="notefoot_4" href="#notetext_4" class="note_super">*4</a>
+<span class="small">そもそも説明文の設定ができない</span><br />
+<a id="notefoot_5" href="#notetext_5" class="note_super">*5</a>
+<span class="small">標準要素未収録。要素名はVOLを推奨</span><br />
+<a id="notefoot_6" href="#notetext_6" class="note_super">*6</a>
+<span class="small">ただし記述方法が複雑</span><br />
+<a id="notefoot_7" href="#notetext_7" class="note_super">*7</a>
+<span class="small">プチコン4版は背景画像が設定可能</span><br />
+<a id="notefoot_8" href="#notetext_8" class="note_super">*8</a>
+<span class="small">最新版では標準要素から削除された</span><br />
+<a id="notefoot_9" href="#notetext_9" class="note_super">*9</a>
+<span class="small">@&lt;S&gt;で音色をランダム指定すること</span><br />
+<a id="notefoot_10" href="#notetext_10" class="note_super">*10</a>
+<span class="small">@&lt;S&gt;で音色をランダム指定すること</span><br />
+<a id="notefoot_11" href="#notetext_11" class="note_super">*11</a>
+<span class="small">表示に不具合あり</span><br />
+<a id="notefoot_12" href="#notetext_12" class="note_super">*12</a>
+<span class="small">埋め込み構文非対応</span><br />
+<a id="notefoot_13" href="#notetext_13" class="note_super">*13</a>
+<span class="small">FREEMEMの関係で実質500曲位</span><br />
+<a id="notefoot_14" href="#notetext_14" class="note_super">*14</a>
+<span class="small">FREEMEMの関係で実質500曲位</span><br /></p>
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.089 秒  | このページの最終更新 : 2021/02/05 (金) 13:23:13  (296d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

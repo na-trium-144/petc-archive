@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>PXIILIB-0.3.1 パーサコンビネータライブラリ - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="PXIILIB-0.3.1 パーサコンビネータライブラリ - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, ライブラリ, うつりきまぐれ, 構文解析, パーサ, パーサコンビネータ, オブジェクト, JSON" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Toukou%2FPXLIB">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Toukou%2FPXLIB">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPXLIB">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Toukou%2FPXLIB">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>PXIILIB-0.3.1 パーサコンビネータライブラリ</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li><a href="/petc4/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Toukou%2FPXLIB">PXLIB</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.114sec. -->
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">目次
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>目次</p>
+<div class="contents">
+<ul><li><a href="#Summary">  これは何？ </a></li>
+<li><a href="#UseLibrary">  ライブラリの使用 </a>
+<ul><li><a href="#LoadLibrary">  ライブラリを読み込む </a></li>
+<li><a href="#DefineGrammar">  文法を定義する </a></li>
+<li><a href="#Parse">  構文解析を行う </a></li>
+<li><a href="#ExtendParsers">  パーサを拡張する ( v0.3.1 から ) </a></li>
+<li><a href="#UseObjects">  オブジェクトを扱う </a></li></ul></li>
+<li><a href="#ReferenceParsing">  構文解析のリファレンス </a>
+<ul><li><a href="#PXDEFPC">  PXDEFPC …… パーサに名前を付ける </a>
+<ul><li><a href="#r0b21aef">  引数 </a></li></ul></li>
+<li><a href="#PXPARSE">  PXPARSE …… 構文解析を実行する </a>
+<ul><li><a href="#q213c3d1">  引数 </a></li>
+<li><a href="#vd659415">  戻り値 </a></li></ul></li>
+<li><a href="#PXGETPCOBJ">  PXGETPCOBJ …… パーサの名前からパーサオブジェクトを取得 </a>
+<ul><li><a href="#ca4a8bac">  引数 </a></li>
+<li><a href="#s552a595">  戻り値 </a></li></ul></li></ul></li>
+<li><a href="#ParserCombinators">  パーサコンビネータのリファレンス </a>
+<ul><li><a href="#TEXTP">  BASEP …… 基底パーサ </a></li>
+<li><a href="#ACTP">  ACTP …… アクションつきパーサ </a>
+<ul><li><a href="#zd2b04df">  引数 </a></li></ul></li>
+<li><a href="#EXTP">  EXTP …… 展開パーサ </a>
+<ul><li><a href="#zd2b04df">  引数 </a></li></ul></li>
+<li><a href="#TEXTP">  TEXTP …… 文字列パーサ </a>
+<ul><li><a href="#qb96ca0e">  引数 </a></li></ul></li>
+<li><a href="#CHARP">  CHARP …… 文字パーサ </a>
+<ul><li><a href="#a45aa2f4">  引数 </a></li></ul></li>
+<li><a href="#REGEXP">  REGEXP …… 正規表現パーサ </a>
+<ul><li><a href="#hf9bf7cd">  引数 </a></li>
+<li><a href="#MetaCharacters">  利用できる正規表現の一覧 </a></li>
+<li><a href="#RegexFlags">  フラグ一覧 </a></li></ul></li>
+<li><a href="#OPTP">  OPTP …… 省略可能パーサ </a>
+<ul><li><a href="#fe44584f">  引数 </a></li></ul></li>
+<li><a href="#AHEADP">  AHEADP …… 肯定先読みパーサ </a>
+<ul><li><a href="#s72990c7">  引数 </a></li></ul></li>
+<li><a href="#NOTP">  NOTP …… 否定先読みパーサ </a>
+<ul><li><a href="#z052cad2">  引数 </a></li></ul></li>
+<li><a href="#ORP">  ORP …… 選択パーサ </a>
+<ul><li><a href="#r6c3279c">  引数 </a></li></ul></li>
+<li><a href="#SEQP">  SEQP …… シーケンスパーサ </a>
+<ul><li><a href="#m1e7c1ed">  引数 </a></li>
+<li><a href="#t25254e1">  追加の結果オブジェクトのキー </a></li></ul></li>
+<li><a href="#REPP">  REPP …… 繰り返しパーサ </a>
+<ul><li><a href="#zbacd094">  引数 </a></li>
+<li><a href="#d5bdd86e">  追加の結果オブジェクトのキー </a></li></ul></li>
+<li><a href="#LISTP">  LISTP …… リストパーサ </a>
+<ul><li><a href="#y03a349f">  引数 </a></li>
+<li><a href="#p4140182">  追加の結果オブジェクトのキー </a></li></ul></li></ul></li>
+<li><a href="#ReferenceObject">  オブジェクトのリファレンス </a>
+<ul><li><a href="#OBJECT">  OBJECT …… 空のオブジェクトを生成 </a>
+<ul><li><a href="#x6bc8960">  戻り値 </a></li></ul></li>
+<li><a href="#OBJGET">  OBJGET …… オブジェクトから値を取得 </a>
+<ul><li><a href="#a1114ed9">  引数 </a></li>
+<li><a href="#eb51724c">  戻り値 </a></li></ul></li>
+<li><a href="#OBJSET">  OBJSET …… オブジェクトに値を設定 </a>
+<ul><li><a href="#p82585b0">  引数 </a></li></ul></li>
+<li><a href="#OBJHAS">  OBJHAS …… オブジェクトにキーが存在するか確認 </a>
+<ul><li><a href="#q71abf9a">  引数 </a></li>
+<li><a href="#yf575346">  戻り値 </a></li></ul></li>
+<li><a href="#OBJDEL">  OBJDEL …… オブジェクトからキーを削除 </a>
+<ul><li><a href="#e4f33325">  引数 </a></li></ul></li>
+<li><a href="#OBJPATHS">  OBJPATHS …… オブジェクトからキーを削除 </a>
+<ul><li><a href="#e4f33325">  引数 </a></li>
+<li><a href="#u92c6e81">  戻り値 </a></li></ul></li>
+<li><a href="#OBJGETH">  OBJGETH …… オブジェクトからインデックスヒントつきで値を取得 </a>
+<ul><li><a href="#h06f9d42">  引数 </a></li>
+<li><a href="#w25e8779">  戻り値 </a></li></ul></li>
+<li><a href="#OBJSETH">  OBJSETH …… オブジェクトにインデックスヒントつきで値を設定 </a>
+<ul><li><a href="#l0fddbf1">  引数 </a></li></ul></li>
+<li><a href="#ISOBJECT">  ISOBJECT …… オブジェクトかどうかを判定 </a>
+<ul><li><a href="#a2fa1624">  引数 </a></li>
+<li><a href="#m7209519">  戻り値 </a></li></ul></li>
+<li><a href="#OBJFIND">  OBJFIND …… オブジェクトのキーを検索 (internal) </a>
+<ul><li><a href="#r7f6c2bd">  引数 </a></li>
+<li><a href="#t1b72bca">  戻り値 </a></li></ul></li>
+<li><a href="#OBJFINDEND">  OBJFINDEND …… オブジェクトのキーを検索 (internal) </a>
+<ul><li><a href="#jc9021d2">  引数 </a></li>
+<li><a href="#yc546d28">  戻り値 </a></li></ul></li>
+<li><a href="#JSON2OBJ">  JSON2OBJ …… JSON から オブジェクトを生成 </a>
+<ul><li><a href="#v7a08774">  引数 </a></li>
+<li><a href="#gb9b0ce7">  戻り値 </a></li></ul></li>
+<li><a href="#OBJ2JSON">  OBJ2JSON …… オブジェクトから JSON を生成 </a>
+<ul><li><a href="#h198461c">  引数 </a></li>
+<li><a href="#ta00bc37">  戻り値 </a></li></ul></li></ul></li>
+<li><a href="#Samples">  サンプル </a>
+<ul><li><a href="#SampleCalc">  計算機 </a></li></ul></li>
+<li><a href="#PublicKey">  公開キー </a></li>
+<li><a href="#Releases">  更新履歴 </a>
+<ul><li><a href="#Release_0_3_1">  v0.3.1 ( 2020/03/26 ) </a></li>
+<li><a href="#Release_0_3_0">  v0.3.0 ( 2020/03/23 ) </a></li></ul></li>
+<li><a href="#Comments">  コメント </a></li></ul>
+</div>
+
+</td></tr></table>
+<p>2020年3月20日投稿
+/ 2020年3月26日更新
+/ 投稿者 : うつりきまぐれ
+/ <span class="tag">タグ : <a href="/petc4/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ライブラリ</a> <a href="/petc4/?cmd=taglist&amp;tag=%A4%A6%A4%C4%A4%EA%A4%AD%A4%DE%A4%B0%A4%EC">うつりきまぐれ</a> <a href="/petc4/?cmd=taglist&amp;tag=%B9%BD%CA%B8%B2%F2%C0%CF">構文解析</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%D1%A1%BC%A5%B5">パーサ</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%D1%A1%BC%A5%B5%A5%B3%A5%F3%A5%D3%A5%CD%A1%BC%A5%BF">パーサコンビネータ</a> <a href="/petc4/?cmd=taglist&amp;tag=%A5%AA%A5%D6%A5%B8%A5%A7%A5%AF%A5%C8">オブジェクト</a> <a href="/petc4/?cmd=taglist&amp;tag=JSON">JSON</a> </span></p>
+<h3 id="Summary">これは何？</h3>
+<p>プチコン4上で文法を定義して構文解析するためのライブラリです。構文解析とはプログラムを先頭から読んで単語ごとに切り分け、それらを項や式、文、ブロックといったまとまりごとに構造的なデータ (構文木) に整理します。( 厳密には最初の単語ごとの分解処理は「字句解析」という構文解析の前の別のステップです。) 構文解析については説明が難しいのでまあググってもらえると助かります。</p>
+<p>このライブラリが追加で使用するオブジェクトライブラリと JSON 解析・生成ライブラリ、および actorbug さんが製作した <a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="3gou:Toukou/正規表現ライブラリ" rel="nofollow">正規表現ライブラリ</a> の移植版がひとつのファイルになっています。</p>
+<p>このライブラリでは文法を定義するのにパーサコンビネータというものを使います。詳しい説明は<del>ググれカス</del> このライブラリを使おうと思っている皆さんは知っているだろうという前提で進めます。</p>
+<p>サンプルプログラムとして四則演算と括弧が利用できる計算機を用意しています。また、ライブラリ内にもパーサコンビネータを実際に利用した JSON 解析ライブラリを内蔵しています ( 逆に生成もできます ) 。</p>
+
+<h3 id="UseLibrary">ライブラリの使用</h3>
+
+<h4 id="LoadLibrary">ライブラリを読み込む</h4>
+<p>構文解析ライブラリおよびオブジェクトライブラリの本体は <strong>PXII.LIB</strong> という名前です。以下のようにしてライブラリを読み込み、実行します。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＥＸＥＣ　”ＰＸＩＩ．ＬＩＢ”，１</span></li>
+</ol></code></div></div>
+<p>別のプロジェクトから参照するときは <span class="basic-text smbas">EXEC</span> がエラーになるので、代わりに <span class="basic-text smbas">LOAD</span> でスロットに読み込んでから <span class="basic-text smbas">EXEC</span> で実行してください。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤ　”ＰＸＩＩＬＩＢ−０．３．０／ＰＸＩＩ．ＬＩＢ”，１</span></li>
+<li><span class="smbas">ＥＸＥＣ　１</span></li>
+</ol></code></div></div>
+<p>ライブラリの初期化のための <span class="basic-text smbas">DEF</span> や <span class="basic-text smbas">GOSUB</span> の呼び出しは特に必要ありません。</p>
+
+<h4 id="DefineGrammar">文法を定義する</h4>
+<p>構文解析を行うより先に、次のように文法を定義してください。これは整数の四則演算の例です。符号はありません。……なお、実際に計算を行うには <span class="basic-text smbas">ACTP</span> を使ってアクションというコールバック <span class="basic-text smbas">DEF</span> も指定しなければならないため、これよりも少々複雑になります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＸＤＥＦＰＣ　＠＿ＳＰＡＣＥ，ＲＥＧＥＸＰ（”\ｓ＊”）</span></li>
+<li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＥＸＰＲ，ＬＩＳＴＰ（＠ＴＥＲＭ，ＣＨＡＲＰ（”＋−”））</span></li>
+<li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＴＥＲＭ，ＬＩＳＴＰ（＠ＴＥＲＭ，ＣＨＡＲＰ（”＊／”））</span></li>
+<li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＦＡＣＴ，ＯＲＰ（＠ＲＥＡＬ，ＳＥＱＰ（”（”，＠ＥＸＰＲ，”）”））</span></li>
+<li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＲＥＡＬ，ＲＥＧＥＸＰ（”［０−９］＋”）</span></li>
+</ol></code></div></div>
+<p>用意されているパーサを組み合わせて、新たなパーサを作成します。パーサは通常の変数に代入して利用できますが、これでは上記のような再帰文法が定義できません。( Undefined variable となる) そのため、別の手段として <a href="#PXDEFPC"><span class="basic-text smbas">PXDEFPC</span></a> を用いて <span class="basic-text smbas">@</span> からはじまる名前をつけます。この名前は上記の <span class="basic-text smbas">@EXPR</span> のように再帰できます。( ただし自身の名前が含まれる再定義は現在のところできません ) またパーサコンビネータの実体はオブジェクトですが、代わりに名前を指定できるようになります。ただし <span class="basic-text smbas">@_SPACE</span> という名前は、スキップパーサを示すために予約されており、ここに指定したものは <a href="#PXPARSE"><span class="basic-text smbas">PXPARSE</span></a> が呼び出されるたびにパースされ無視されます。</p>
+<p>また、<span class="basic-text smbas">@</span> から始まらない文字列を直接指定した場合は、自動的に <a href="#TEXTP"><span class="basic-text smbas">TEXTP</span></a> に変換されます。つまり、<span class="basic-text smbas">@</span> から始まらない文字列を読み取る場合は <a href="#TEXTP"><span class="basic-text smbas">TEXTP</span></a> を省略できます。</p>
+<p>用意されているすべてのパーサコンビネータの詳細は <a href="#ParserCombinators">パーサコンビネータのリファレンス</a> を参照してください。</p>
+
+<h4 id="Parse">構文解析を行う</h4>
+<p>実際に構文解析を行うには次のようにします。</p>
+<div class="basic-source"><div class="basic-list"><code><ol start="6"><li><span class="smbas">ＤＩＭ　ＳＯＵＲＣＥ＝”１１＋（９−５）＊７”</span></li>
+<li><span class="smbas">ＤＩＭ　ＲＥＳ＝ＰＸＰＡＲＳＥ（ＳＯＵＲＣＥ，０，＠ＥＸＰＲ）</span></li>
+</ol></code></div></div>
+<p>第1引数に入力、第2引数に開始位置、第3引数にパーサコンビネータを指定します。結果はオブジェクトでまとめて返るため、情報を取得するには <a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> などでキーから値を得る必要があります。オブジェクトの使い方については <a href="#UseObjects">オブジェクトを扱う</a> を参照してください。</p>
+<p>次のようにして、パースが成功したかどうかと次回の開始位置 ( 終端位置 + 1 ) および読み取った文字列を取得できます。パースが失敗した場合は、その時点での位置になります。</p>
+<div class="basic-source"><div class="basic-list"><code><ol start="8"><li><span class="smbas">ＤＩＭ　ＳＵＣＣＥＳＳ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＳＵＣＣＥＳＳ”）</span></li>
+<li><span class="smbas">ＤＩＭ　ＥＰＯＳ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＰＯＳ”）</span></li>
+<li><span class="smbas">ＤＩＭ　ＢＵＦＦ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＢＵＦＦ”）</span></li>
+</ol></code></div></div>
+<p>また <a href="#SEQP"><span class="basic-text smbas">SEQP</span></a> や <a href="#REPP"><span class="basic-text smbas">REPP</span></a> など一部のパーサコンビネータは別のパーサコンビネータを引数にとるため、これらの結果を参照できるように、<span class="basic-text smbas">”SUCCESS”</span> と <span class="basic-text smbas">”POS”</span> および <span class="basic-text smbas">”BUFF”</span> のほかにも追加の情報が入っています。たとえば <a href="#SEQP"><span class="basic-text smbas">SEQP</span></a> では、<span class="basic-text smbas">”SEQ0”</span> に最初に指定したパーサコンビネータの結果が入ります。これもまたひとつの結果オブジェクトなので <span class="basic-text smbas">”POS”</span> などのキーを持っています。</p>
+
+<h4 id="ExtendParsers">パーサを拡張する ( v0.3.1 から )</h4>
+<p><span class="basic-text smbas">PXDEFPC</span> で定義した名前は再定義できるので、このライブラリを用いて言語処理系などを作ると、外部からパーサを変更することができます。たいていは後に出る例のように、そのパーサ自身を含むように拡張することになります。</p>
+<p>しかし、その場合には問題があります。たとえば <span class="basic-text smbas">@FACT</span> という名前のパーサがあったとします。先ほどの計算機で変数も利用できるように、次のように<strong> <span class="basic-text smbas">@FACT</span> を使って</strong> <span class="basic-text smbas">@FACT</span> を再定義すると、パース時に Stack overflow エラーになることがあります。( 以下の例で <span class="basic-text smbas">@VAR</span> は既に定義されているものとします )</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＦＡＣＴ，ＯＲＰ（＠ＦＡＣＴ，＠ＶＡＲ）</span></li>
+</ol></code></div></div>
+<p>これを回避するには、再定義する対象のパーサを <a href="#EXTP"><span class="basic-text smbas">EXTP</span></a> で包みます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＸＤＥＦＰＣ　＠ＦＡＣＴ，ＯＲＰ（ＥＸＴＰ（＠ＦＡＣＴ），＠ＶＡＲ）</span></li>
+</ol></code></div></div>
+<p>バージョン v0.3.1 以上で利用できます。</p>
+
+<h4 id="UseObjects">オブジェクトを扱う</h4>
+<p>この構文解析ライブラリでは、パーサコンビネータを保存したりパースの結果を返すのにオブジェクトが使われます。このオブジェクトは JavaScript のオブジェクトと同じようなものです。オブジェクトの実体は文字列配列ですが、値にキーという名前 ( 文字列の添え字のようなものです ) を付けて、あとからその名前で取得できるようになります。</p>
+<p>オブジェクトには次の種類の値を格納することができます。</p>
+<ul><li>デフォルト値</li>
+<li>整数</li>
+<li>実数</li>
+<li>文字列</li>
+<li>別のオブジェクト</li></ul>
+<p>オブジェクトライブラリを使った例です。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’　オブジェクトを生成</span></li>
+<li><span class="smbas">ＶＡＲ　Ａ＝ＯＢＪＥＣＴ（）</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　数値や文字列を入れる</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ａ，”ＳＣＯＲＥ”，８０</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ｂ，”ＣＯＭＭＥＮＴ”，”おめでとう”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　内容を表示</span></li>
+<li><span class="smbas">？　”あなたの点数は”；ＯＢＪＧＥＴ（Ａ，”ＳＣＯＲＥ”）</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　別のオブジェクトを生成</span></li>
+<li><span class="smbas">ＶＡＲ　Ｂ＝ＯＢＪＥＣＴ（）</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　同じように数値や文字列を入れる</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ｂ，”ＮＡＭＥ”，”山田”</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ｂ，”ＡＧＥ”，２２</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　オブジェクトに別のオブジェクトを格納</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ｂ，”ＲＥＳＵＬＴ”，Ａ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　ピリオドで階層を指定</span></li>
+<li><span class="smbas">？　ＯＢＪＧＥＴ（Ｂ，”ＲＥＳＵＬＴ．ＣＯＭＭＥＮＴ”）；”！”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　こうすることもできる　（こちらの方は遅い）</span></li>
+<li><span class="smbas">？　ＯＢＪＧＥＴ（ＯＢＪＧＥＴ（Ｂ，”ＲＥＳＵＬＴ”），”ＣＯＭＭＥＮＴ”）；”！”</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’　ＯＢＪＳＥＴ　にもピリオドを使える</span></li>
+<li><span class="smbas">ＯＢＪＳＥＴ　Ｂ，”ＲＥＳＵＬＴ．ＳＣＯＲＥ”，０</span></li>
+</ol></code></div></div>
+<p>オブジェクトのキーを <span class="basic-text smbas">CHR$(＆HFFFF)</span> から始めることはできません。<span class="basic-text smbas">CHR$(＆HFFFF)</span> というキーはオブジェクトの終端を表すのに使用されています。</p>
+<p>あらかじめ文字列配列内でのインデックスが予測できる場合は <a href="#OBJGETH"><span class="basic-text smbas">OBJGETH</span></a> などを利用し、ヒントとしてインデックスを与えて高速化する方法もあります。</p>
+
+<h3 id="ReferenceParsing">構文解析のリファレンス</h3>
+<p>パーサコンビネータを定義したり実際に構文解析を行うための <span class="basic-text smbas">DEF</span> です。</p>
+
+<h4 id="PXDEFPC"><span class="basic-text smbas">PXDEFPC</span> …… パーサに名前を付ける</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＰＸＤＥＦＰＣ　ＰＣＤＥＦ，ＰＣ</span></li>
+</ol></code></div></div>
+
+<h5 id="r0b21aef">引数</h5>
+<ul><li><span class="basic-text smbas">PCDEF</span> : 新しいパーサコンビネータの <span class="basic-text smbas">@</span> から始まる名前</li>
+<li><span class="basic-text smbas">PC</span> : パーサコンビネータ ( オブジェクトか <span class="basic-text smbas">@</span> で始まる名前 )</li></ul>
+<p>新しいパーサコンビネータを名前を付けて定義します。変数に格納することとの違いは、定義前に利用できるため再帰的な文法が定義できることです。</p>
+<p>スキップパーサを指定するには <span class="basic-text smbas">@_SPACE</span> という名前で定義します。スキップパーサはかならず成功する必要があります。</p>
+
+<h4 id="PXPARSE"><span class="basic-text smbas">PXPARSE</span> …… 構文解析を実行する</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＰＸＰＡＲＳＥ　ＳＯＵＲＣＥ，ＳＰＯＳ，ＰＣ　ＯＵＴ　ＲＥＳ</span></li>
+</ol></code></div></div>
+
+<h5 id="q213c3d1">引数</h5>
+<ul><li><span class="basic-text smbas">SOURCE</span> : ソースとなる文字列</li>
+<li><span class="basic-text smbas">SPOS</span> : 開始位置 ( 通常は 0 )</li>
+<li><span class="basic-text smbas">PC</span> : パーサコンビネータ ( オブジェクトか <span class="basic-text smbas">@</span> で始まる名前 )</li></ul>
+
+<h5 id="vd659415">戻り値</h5>
+<ul><li><span class="basic-text smbas">RES</span> : 結果オブジェクト
+<ul><li><span class="basic-text smbas">”POS”</span> : 終端位置 + 1</li>
+<li><span class="basic-text smbas">”BUFF”</span> : 読み取った文字列</li></ul></li></ul>
+<p>構文解析を実行します。結果はオブジェクトで返ってきます。</p>
+
+<h4 id="PXGETPCOBJ"><span class="basic-text smbas">PXGETPCOBJ</span> …… パーサの名前からパーサオブジェクトを取得</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＰＸＰＡＲＳＥ　ＰＣ　ＯＵＴ　ＰＣＯＢＪ</span></li>
+</ol></code></div></div>
+
+<h5 id="ca4a8bac">引数</h5>
+<ul><li><span class="basic-text smbas">PC</span> : パーサコンビネータ ( オブジェクトか <span class="basic-text smbas">@</span> で始まる名前 )</li></ul>
+
+<h5 id="s552a595">戻り値</h5>
+<ul><li><span class="basic-text smbas">PCOBJ</span> : パーサオブジェクト</li></ul>
+<p><a href="#PXDEFPC"><span class="basic-text smbas">PXDEFPC</span></a> で定義したパーサの名前から、その実体を取得します。未定義の場合はエラーとなります。</p>
+
+<h3 id="ParserCombinators">パーサコンビネータのリファレンス</h3>
+<p>PX.LIB に用意されているパーサコンビネータです。</p>
+
+<h4 id="TEXTP"><span class="basic-text smbas">BASEP</span> …… 基底パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＢＡＳＥＰ（）</span></li>
+</ol></code></div></div>
+<p>何も読み取らないパーサを作成します。パースは常に成功します。</p>
+
+<h4 id="ACTP"><span class="basic-text smbas">ACTP</span> …… アクションつきパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＡＣＴＰ（ＳＵＢＰＣ，ＡＣＡＬＬ）</span></li>
+</ol></code></div></div>
+
+<h5 id="zd2b04df">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li>
+<li><span class="basic-text smbas">ACALL</span> : <span class="basic-text smbas">DEF</span> の名前</li></ul>
+<p>別のあるパーサを引数にとり、その読み取りが成功したときにアクションというコールバック <span class="basic-text smbas">DEF</span> を呼び出すパーサを返します。アクションには引数として結果オブジェクトが渡されます。このオブジェクトは改変することができるので、<span class="basic-text smbas">”BUFF”</span> ( 読み取った文字列 ) を加工したり、追加の情報を設定することもできます。実際に同梱されている計算機のサンプル ( 簡易版のプログラムが <a href="#SampleCalc">こちら</a> にあります ) では <span class="basic-text smbas">”VALUE”</span> という名前で計算結果を格納しています。</p>
+<p><span class="basic-text smbas">COMMON</span> でない <span class="basic-text smbas">DEF</span> を指定する際は <span class="basic-text smbas">0:</span> のように、スロットプレフィックスを加える必要があります。</p>
+
+<h4 id="EXTP"><span class="basic-text smbas">EXTP</span> …… 展開パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＥＸＴＰ（ＳＵＢＰＣ）</span></li>
+</ol></code></div></div>
+
+<h5 id="zd2b04df">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li></ul>
+<p>別のあるパーサを引数にとり、そのパーサを展開したものを返します。その展開とは、名前で指定したパーサを取得することです。すでにパーサの実体である場合はそのまま返されます。やっていることは <a href="#PXGETPCOBJ"><span class="basic-text smbas">PXGETPCOBJ</span></a> と完全に同じです。</p>
+<p>これが有用なのはパーサを拡張するときです。<a href="#ExtendParser">こちら</a> をご覧ください。</p>
+
+<h4 id="TEXTP"><span class="basic-text smbas">TEXTP</span> …… 文字列パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＴＥＸＴＰ（ＴＥＸＴ）</span></li>
+</ol></code></div></div>
+
+<h5 id="qb96ca0e">引数</h5>
+<ul><li><span class="basic-text smbas">TEXT</span> : 読み取る文字列</li></ul>
+<p>固定の文字列を読み取るパーサを作成します。文字列が <span class="basic-text smbas">@</span> から始まる場合を除いて、<span class="basic-text smbas">TEXTP</span> は省略できます。つまり、パーサコンビネータに文字列を直接指定することができ、自動的に <span class="basic-text smbas">TEXTP</span> に変換されます。</p>
+
+<h4 id="CHARP"><span class="basic-text smbas">CHARP</span> …… 文字パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＣＨＡＲＰ（［ＣＨＡＲＳ］）</span></li>
+</ol></code></div></div>
+
+<h5 id="a45aa2f4">引数</h5>
+<ul><li><span class="basic-text smbas">CHARS</span> (省略可) : 想定する文字を並べた文字列。</li></ul>
+<p>現在位置の1文字が指定された文字列に含まれる場合、その1文字を読み取るパーサを作成します。空文字列にしたり、引数そのものを省略した場合は、どんな場合でも 1 文字読み取ります ( ただし既に EOF である場合は失敗します ) 。</p>
+
+<h4 id="REGEXP"><span class="basic-text smbas">REGEXP</span> …… 正規表現パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＲＥＧＥＸＰ（ＲＥＧＥＸ［，ＦＬＡＧＳ］）</span></li>
+</ol></code></div></div>
+
+<h5 id="hf9bf7cd">引数</h5>
+<ul><li><span class="basic-text smbas">REGEX</span> : 正規表現の文字列。</li>
+<li><span class="basic-text smbas">FLAGS</span> (省略可) : フラグ。省略時は 0</li></ul>
+<p>正規表現にマッチする文字列を読み取るパーサを作成します。第1引数には文字列で直接指定します。<span class="basic-text smbas">REGEX</span> で生成した正規表現オブジェクトを指定するわけではありません。またオプションで大文字小文字を区別しないといったフラグを指定できます。</p>
+<p>actorbug さんの <a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="3gou:Toukou/正規表現ライブラリ" rel="nofollow">正規表現ライブラリ</a> を移植して使用しています。</p>
+
+<h5 id="MetaCharacters">利用できる正規表現の一覧</h5>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="3gou:Toukou/正規表現ライブラリ" rel="nofollow">こちら</a> よりそのまま引用しています。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">メタ文字</th><th class="style_th">説明</th></tr><tr><td class="style_td">\</td><td class="style_td">直後のメタ文字を無効化して通常文字として扱う</td></tr><tr><td class="style_td">\n</td><td class="style_td">LF、CHR$(10)</td></tr><tr><td class="style_td">\r</td><td class="style_td">CR、CHR$(13)</td></tr><tr><td class="style_td">\t</td><td class="style_td">Tab、CHR$(9)</td></tr><tr><td class="style_td">\xFF</td><td class="style_td">16進2桁で文字コード指定</td></tr><tr><td class="style_td">\uFFFF</td><td class="style_td">16進4桁で文字コード指定</td></tr><tr><td class="style_td">[]</td><td class="style_td">文字クラス、括弧内の文字のいずれかにマッチ、-で範囲指定可能</td></tr><tr><td class="style_td">[^]</td><td class="style_td">否定文字クラス、括弧内の文字以外にマッチ、-で範囲指定可能</td></tr><tr><td class="style_td">.</td><td class="style_td">任意の1文字(改行を除く)にマッチ、単一行モードなら改行もマッチ</td></tr><tr><td class="style_td">\d</td><td class="style_td">数字、[0-9]と同じ</td></tr><tr><td class="style_td">\D</td><td class="style_td">非数字、[^0-9]と同じ</td></tr><tr><td class="style_td">\w</td><td class="style_td">単語構成文字、[a-zA-Z0-9_]と同じ</td></tr><tr><td class="style_td">\W</td><td class="style_td">非単語文字、[^a-zA-Z0-9_]と同じ</td></tr><tr><td class="style_td">\s</td><td class="style_td">空白文字、[ \n\r\t]と同じ</td></tr><tr><td class="style_td">\S</td><td class="style_td">非空白文字、[^ \n\r\t]と同じ</td></tr><tr><td class="style_td">^</td><td class="style_td">文字列の先頭、複数行モードなら改行の次にもマッチ</td></tr><tr><td class="style_td">$</td><td class="style_td">文字列の末尾 or 最後が改行ならその前、複数行モードなら改行の前にもマッチ</td></tr><tr><td class="style_td">\A</td><td class="style_td">文字列の先頭</td></tr><tr><td class="style_td">\Z</td><td class="style_td">文字列の末尾 or 最後が改行ならその前</td></tr><tr><td class="style_td">\z</td><td class="style_td">文字列の末尾</td></tr><tr><td class="style_td">\b</td><td class="style_td">単語境界</td></tr><tr><td class="style_td">\B</td><td class="style_td">単語境界以外</td></tr><tr><td class="style_td">\1〜\9</td><td class="style_td">後方参照</td></tr><tr><td class="style_td">()</td><td class="style_td">グループ化 &amp; キャプチャ</td></tr><tr><td class="style_td">(?:)</td><td class="style_td">グループ化(キャプチャなし)</td></tr><tr><td class="style_td">(?=)</td><td class="style_td">肯定の先読み</td></tr><tr><td class="style_td">(?!)</td><td class="style_td">否定の先読み</td></tr><tr><td class="style_td">(?&lt;=)</td><td class="style_td">肯定の戻り読み(通常文字・文字クラス・一部アンカーのみ使用可)</td></tr><tr><td class="style_td">(?&lt;!)</td><td class="style_td">否定の戻り読み(通常文字・文字クラス・一部アンカーのみ使用可)</td></tr><tr><td class="style_td">(?&gt;)</td><td class="style_td">アトミックなグループ</td></tr><tr><td class="style_td">(?修飾子)</td><td class="style_td">モード修飾子(?i)(?-i)など</td></tr><tr><td class="style_td">(?修飾子:)</td><td class="style_td">モード修飾子の範囲(?i:...)など</td></tr><tr><td class="style_td">&#x7c;</td><td class="style_td">選択</td></tr><tr><td class="style_td">*</td><td class="style_td">直前の式の0回以上の繰り返し、{0,}と同じ</td></tr><tr><td class="style_td">+</td><td class="style_td">直前の式の1回以上の繰り返し、{1,}と同じ</td></tr><tr><td class="style_td">?</td><td class="style_td">直前の式が0回か1回現れる、{0,1}と同じ</td></tr><tr><td class="style_td">{n}</td><td class="style_td">直前の式のn回の繰り返し</td></tr><tr><td class="style_td">{m,}</td><td class="style_td">直前の式のm回以上の繰り返し</td></tr><tr><td class="style_td">{m,n}</td><td class="style_td">直前の式のm回以上n回以下の繰り返し</td></tr><tr><td class="style_td">*?</td><td class="style_td">直前の式の0回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">+?</td><td class="style_td">直前の式の1回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">??</td><td class="style_td">直前の式が0回か1回現れる(最短マッチ)</td></tr><tr><td class="style_td">{m,}?</td><td class="style_td">直前の式のm回以上の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">{m,n}?</td><td class="style_td">直前の式のm回以上n回以下の繰り返し(最短マッチ)</td></tr><tr><td class="style_td">*+</td><td class="style_td">直前の式の0回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">++</td><td class="style_td">直前の式の1回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">?+</td><td class="style_td">直前の式が0回か1回現れる(強欲)</td></tr><tr><td class="style_td">{m,}+</td><td class="style_td">直前の式のm回以上の繰り返し(強欲)</td></tr><tr><td class="style_td">{m,n}+</td><td class="style_td">直前の式のm回以上n回以下の繰り返し(強欲)</td></tr></tbody></table></div>
+
+<h5 id="RegexFlags">フラグ一覧</h5>
+<p><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="3gou:Toukou/正規表現ライブラリ" rel="nofollow">こちら</a> よりそのまま引用しています。</p>
+<p>オプションは数値で指定してください。複数指定する場合は足します。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">オプション</th><th class="style_th">値</th><th class="style_th">説明</th></tr><tr><td class="style_td">RXOPT_IC</td><td class="style_td">1</td><td class="style_td">大文字小文字を区別しない</td></tr><tr><td class="style_td">RXOPT_SL</td><td class="style_td">2</td><td class="style_td">単一行モード(&quot;.&quot;が改行にもマッチする)</td></tr><tr><td class="style_td">RXOPT_ML</td><td class="style_td">4</td><td class="style_td">複数行モード(&quot;^&quot;,&quot;$&quot;が改行前後にもマッチする)</td></tr></tbody></table></div>
+
+<h4 id="OPTP"><span class="basic-text smbas">OPTP</span> …… 省略可能パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＰＴＰ（ＳＵＢＰＣ）</span></li>
+</ol></code></div></div>
+
+<h5 id="fe44584f">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li></ul>
+<p>別のあるパーサを引数にとり、読み取りに失敗しても位置を戻して成功と扱うパーサを作成します。</p>
+<p>失敗することがないので省略可能な部分を定義するのに利用します。</p>
+
+<h4 id="AHEADP"><span class="basic-text smbas">AHEADP</span> …… 肯定先読みパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＡＨＥＡＤＰ（ＳＵＢＰＣ）</span></li>
+</ol></code></div></div>
+
+<h5 id="s72990c7">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li></ul>
+<p>別のあるパーサを引数にとり、読み取ったあとに位置を戻すパーサを作成します。読み取れなかった場合は失敗します。</p>
+
+<h4 id="NOTP"><span class="basic-text smbas">NOTP</span> …… 否定先読みパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＮＯＴＰ（ＳＵＢＰＣ）</span></li>
+</ol></code></div></div>
+
+<h5 id="z052cad2">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li></ul>
+<p>別のあるパーサを引数にとり、読み取れた場合は逆に失敗し、読み取れなかった場合にその位置で成功するパーサを作成します。</p>
+<p>特定の識別子を読み取り、直後にアルファベットや数字などの、識別子を構成する文字が続いていないかどうかを確認できます。</p>
+
+<h4 id="ORP"><span class="basic-text smbas">ORP</span> …… 選択パーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＲＰ（．．．）</span></li>
+</ol></code></div></div>
+
+<h5 id="r6c3279c">引数</h5>
+<ul><li><span class="basic-text smbas">...</span> : 1個以上のパーサ</li></ul>
+<p>別の複数のパーサを引数にとり、それらを順番にパースしていき、どれかが成功すればその結果をこのパーサの結果とするパーサを返します。</p>
+<p>最初に成功したパーサの結果オブジェクトが、このパーサの結果オブジェクトとなります。どれかが成功した後は、それ以降のパーサは実行されません。</p>
+
+<h4 id="SEQP"><span class="basic-text smbas">SEQP</span> …… シーケンスパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＳＥＱＰ（．．．）</span></li>
+</ol></code></div></div>
+
+<h5 id="m1e7c1ed">引数</h5>
+<ul><li><span class="basic-text smbas">...</span> : 1個以上のパーサ</li></ul>
+
+<h5 id="t25254e1">追加の結果オブジェクトのキー</h5>
+<ul><li><span class="basic-text smbas">”SEQ#”</span> : 結果の数。<span class="basic-text smbas">SEQP</span> に渡した引数の数と一致します。</li>
+<li><span class="basic-text smbas">”SEQ0”</span> : シーケンスの 0 番目の (最初の) パーサの結果。同様に 1 番目以降も指定できます。<span class="basic-text smbas">”SEQ0.BUFF”</span> のようにすれば、シーケンスの最初のパーサが読み取った文字列を取得できます。</li></ul>
+<p>別の複数のパーサを引数にとり、それらを順番にパースしていき、最後まで成功した場合をこのパーサが成功したと扱うパーサを返します。</p>
+<p>それぞれのパーサの結果オブジェクトが、このパーサの結果オブジェクトに格納されます。それらすべてを後から参照することが可能となります。</p>
+
+<h4 id="REPP"><span class="basic-text smbas">REPP</span> …… 繰り返しパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＲＥＰＰ（ＳＵＢＰＣ，ＭＩＮＣ，ＭＡＸＣ）</span></li>
+</ol></code></div></div>
+<p>別のあるパーサを引数にとり、指定した回数の範囲、繰り返されるパーサを返します。ただし、正規表現が使える場合は、<a href="#REGEXP"><span class="basic-text smbas">REGEXP</span></a> の方が高速です。</p>
+
+<h5 id="zbacd094">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : パーサ</li>
+<li><span class="basic-text smbas">MINC</span> : 最小回数。制限を設けない場合は 0 を指定。</li>
+<li><span class="basic-text smbas">MAXC</span> : 最大回数。制限を設けない場合は 0 を指定。</li></ul>
+
+<h5 id="d5bdd86e">追加の結果オブジェクトのキー</h5>
+<ul><li><span class="basic-text smbas">”REP#”</span> : 結果の数。繰り返し読み取った回数です。</li>
+<li><span class="basic-text smbas">”REP0”</span> : 最初に読み取った結果。同様に 1 番目以降も指定できます。<span class="basic-text smbas">”REP0.BUFF”</span> のようにすれば、1 回目にパーサが読み取った文字列を取得できます。</li></ul>
+<p>それぞれの回の結果オブジェクトが、このパーサの結果オブジェクトに格納されます。それらすべてを後から参照することが可能となります。</p>
+
+<h4 id="LISTP"><span class="basic-text smbas">LISTP</span> …… リストパーサ</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＬＩＳＴＰ（ＳＵＢＰＣ，ＤＥＬＰＣ）</span></li>
+</ol></code></div></div>
+
+<h5 id="y03a349f">引数</h5>
+<ul><li><span class="basic-text smbas">SUBPC</span> : 項目を読み取るパーサ</li>
+<li><span class="basic-text smbas">DELPC</span> : 区切りを読み取るパーサ</li></ul>
+
+<h5 id="p4140182">追加の結果オブジェクトのキー</h5>
+<ul><li><span class="basic-text smbas">”LIST#”</span> : 項目の数。項目は (項目数 - 1) 番目、デリミタは (項目数 - 2) 番目まで有効です。</li>
+<li><span class="basic-text smbas">”LISTSUB0”</span> : 0 番目の項目の結果オブジェクト。1 番目以降も指定できます。</li>
+<li><span class="basic-text smbas">”LISTDEL0”</span> : 0 番目の項目の結果オブジェクト。1 番目以降も指定できます。</li></ul>
+<p>項目用のパーサとデリミタ ( 区切り ) 用のパーサを引数にとり、デリミタで区切られたリストを読み取るパーサを返します。</p>
+<p>それぞれの項目の結果オブジェクトが、このパーサの結果オブジェクトに格納されます。</p>
+
+<h3 id="ReferenceObject">オブジェクトのリファレンス</h3>
+<p>階層化可能なオブジェクトを実現するための <span class="basic-text smbas">DEF</span> 。JSON を扱うこともできます。</p>
+
+<h4 id="OBJECT"><span class="basic-text smbas">OBJECT</span> …… 空のオブジェクトを生成</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＥＣＴ　ＯＵＴ　ＯＢＪ</span></li>
+</ol></code></div></div>
+
+<h5 id="x6bc8960">戻り値</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : 空のオブジェクト</li></ul>
+<p>新しい空のオブジェクトを生成します。やっていることは <span class="basic-text smbas">ARRAY$(0)</span> と同じです。</p>
+
+<h4 id="OBJGET"><span class="basic-text smbas">OBJGET</span> …… オブジェクトから値を取得</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＧＥＴ　ＯＢＪ，ＰＡＴＨ　ＯＵＴ　ＶＡＬＵＥ</span></li>
+</ol></code></div></div>
+
+<h5 id="a1114ed9">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 取得するためのキー。ピリオドで階層を指定できます。</li></ul>
+
+<h5 id="eb51724c">戻り値</h5>
+<ul><li><span class="basic-text smbas">VALUE</span> : 取得した値</li></ul>
+<p>オブジェクトから、キーを指定して値を取得します。</p>
+<p>値は数値や文字列のようにプリミティブな型である場合も、オブジェクトである場合もあります。取得したオブジェクトからさらに値を取得したい場合、<a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> で取得したオブジェクトに対してさらに <a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> を使うより、ピリオドに続けて一気に指定した方が高速です。</p>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">’　上よりも下のほうが速い</span></li>
+<li><span class="smbas">ＯＢＪＧＥＴ（ＯＢＪＧＥＴ（ＯＢＪ，”ＦＯＯ”），”ＢＡＲ”）</span></li>
+<li><span class="smbas">ＯＢＪＧＥＴ（ＯＢＪ，”ＦＯＯ．ＢＡＲ”）</span></li>
+</ol></code></div></div>
+<p>なおキーが存在しない場合はデフォルト値が返ってきます。<span class="basic-text smbas">TYPEOF</span> で判定することができますが、存在を確認するだけならば <a href="#OBJHAS"><span class="basic-text smbas">OBJHAS</span></a> という関数もあります。</p>
+
+<h4 id="OBJSET"><span class="basic-text smbas">OBJSET</span> …… オブジェクトに値を設定</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＳＥＴ　ＯＢＪ，ＰＡＴＨ，ＶＡＬＵＥ</span></li>
+</ol></code></div></div>
+
+<h5 id="p82585b0">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 設定するためのキー。ピリオドで階層を指定できます。</li>
+<li><span class="basic-text smbas">VALUE</span> : 設定する値</li></ul>
+<p>オブジェクトに、キーを指定して値を設定します。<a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> と同じくピリオドを使って階層を指定できます。キーが存在しなければ追加され、存在すれば上書きされます。</p>
+
+<h4 id="OBJHAS"><span class="basic-text smbas">OBJHAS</span> …… オブジェクトにキーが存在するか確認</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＨＡＳ　ＯＢＪ，ＰＡＴＨ　ＯＵＴ　ＨＡＳ</span></li>
+</ol></code></div></div>
+
+<h5 id="q71abf9a">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 存在を確認するキー。ピリオドで階層を指定できます。</li></ul>
+
+<h5 id="yf575346">戻り値</h5>
+<ul><li><span class="basic-text smbas">HAS</span> : キーが存在するかどうか</li></ul>
+<p>オブジェクトに、指定したキーがあるかどうかを確認します。存在すれば <span class="basic-text smbas">#TRUE</span> しなければ　<span class="basic-text smbas">#FALSE</span> が返ります。</p>
+<p>オブジェクトにあるキーの一覧を取得するには <a href="#OBJPATHS"><span class="basic-text smbas">OBJPATHS</span></a> を使います。</p>
+
+<h4 id="OBJDEL"><span class="basic-text smbas">OBJDEL</span> …… オブジェクトからキーを削除</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＤＥＬ　ＯＢＪ，ＰＡＴＨ</span></li>
+</ol></code></div></div>
+
+<h5 id="e4f33325">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 削除するキー。ピリオドで階層を指定できます。</li></ul>
+<p>オブジェクトから、キーを削除します。そのキーの値がオブジェクトだった場合はオブジェクトごと削除されます。キーが存在しない場合は何も起こりません。</p>
+
+<h4 id="OBJPATHS"><span class="basic-text smbas">OBJPATHS</span> …… オブジェクトからキーを削除</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＰＡＴＨＳ　ＯＢＪ，ＳＵＢ　ＯＵＴ　ＰＡＴＨＳ</span></li>
+</ol></code></div></div>
+
+<h5 id="e4f33325">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">SUB</span> : 子オブジェクト以下のキーも取得するかどうか</li></ul>
+
+<h5 id="u92c6e81">戻り値</h5>
+<ul><li><span class="basic-text smbas">PATHS</span> : キーの一覧</li></ul>
+<p>オブジェクトのキーの一覧を文字列配列で取得します。第2引数に <span class="basic-text smbas">#FALSE</span> を指定したときは直下のキーのみを取得しますが、<span class="basic-text smbas">#TRUE</span> を指定したときはキーの値がオブジェクトだった場合に再帰的にそのオブジェクトのキーの一覧も加えます。このキーの一覧はソートされています。</p>
+
+<h4 id="OBJGETH"><span class="basic-text smbas">OBJGETH</span> …… オブジェクトからインデックスヒントつきで値を取得</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＧＥＴＨ　ＯＢＪ，ＩＮＤＥＸ，ＰＡＴＨ　ＯＵＴ　ＶＡＬＵＥ</span></li>
+</ol></code></div></div>
+
+<h5 id="h06f9d42">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">INDEX</span> : キーがある可能性が高いインデックス。</li>
+<li><span class="basic-text smbas">PATH</span> : 取得するためのキー。ピリオドで階層を指定できます。</li></ul>
+
+<h5 id="w25e8779">戻り値</h5>
+<ul><li><span class="basic-text smbas">VALUE</span> : 取得した値</li></ul>
+<p>オブジェクトから、キーを指定して値を取得します。</p>
+<p><a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> と違うのは、インデックスという追加の引数を指定するという点です。インデックスとはオブジェクトの実体である文字列配列における添え字のことです。オブジェクトに入るキーが初めから決まっている、あるいはそうでなくてもキーのあるインデックスが固定値または計算で予測できる場合はヒントとしてそのインデックスを渡すことで、インデックスで指定した位置がまさにそのキーであった場合にはキーを検索せずそのままその位置を参照するため、高速になります。インデックスが異なった場合、つまり指定したインデックスにキーがなかった場合は <span class="basic-text smbas">OBJGET</span> と同様にキーを検索します。</p>
+<p><span class="basic-text smbas">OBJGETH</span> では数値と文字列のみを取得できます。子オブジェクトには対応していません。</p>
+
+<h4 id="OBJSETH"><span class="basic-text smbas">OBJSETH</span> …… オブジェクトにインデックスヒントつきで値を設定</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＳＥＴＨ　ＯＢＪ，ＩＮＤＥＸ，ＰＡＴＨ，ＶＡＬＵＥ</span></li>
+</ol></code></div></div>
+
+<h5 id="l0fddbf1">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">INDEX</span> : キーがある可能性が高いインデックス。</li>
+<li><span class="basic-text smbas">PATH</span> : 設定するためのキー。ピリオドで階層を指定できます。</li>
+<li><span class="basic-text smbas">VALUE</span> : 設定する値</li></ul>
+<p>オブジェクトに、キーを指定して値を設定します。<a href="#OBJGET"><span class="basic-text smbas">OBJGET</span></a> と同じくピリオドを使って階層を指定できます。キーが存在しなければ追加され、存在すれば上書きされます。</p>
+<p><a href="#OBJSET"><span class="basic-text smbas">OBJSET</span></a> と違う点は <a href="#OBJGETH"><span class="basic-text smbas">OBJGETH</span></a> にある説明と同じく、キーのある可能性が高い位置を同時に指定して、その位置が指定したキーだった場合にその位置を直接参照することです。</p>
+<p><span class="basic-text smbas">OBJSETH</span> では数値と文字列のみを設定できます。子オブジェクトには対応していません。</p>
+
+<h4 id="ISOBJECT"><span class="basic-text smbas">ISOBJECT</span> …… オブジェクトかどうかを判定</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＩＳＯＢＪＥＣＴ　ＶＡＬＵＥ　ＯＵＴ　ＩＳＯＢＪＥＣＴ</span></li>
+</ol></code></div></div>
+
+<h5 id="a2fa1624">引数</h5>
+<ul><li><span class="basic-text smbas">VALUE</span> : 判定する値</li></ul>
+
+<h5 id="m7209519">戻り値</h5>
+<ul><li><span class="basic-text smbas">ISOBJECT</span> : オブジェクトかどうか</li></ul>
+<p>渡された値がオブジェクトかどうかを調べます。やっていることは <span class="basic-text smbas">TYPEOF(VALUE)==#T_STRARRAY</span> と同じです。</p>
+
+<h4 id="OBJFIND"><span class="basic-text smbas">OBJFIND</span> …… オブジェクトのキーを検索 (internal)</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＦＩＮＤ　ＯＢＪ，ＰＡＴＨ，ＳＩＮＤＥＸ，ＥＩＮＤＥＸ　ＯＵＴ　ＩＮＤＥＸ</span></li>
+</ol></code></div></div>
+
+<h5 id="r7f6c2bd">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 検索するキー。ピリオドで階層を指定できます。</li>
+<li><span class="basic-text smbas">SINDEX</span> : 検索する先頭位置 - 1 。オブジェクトの先頭から検索する場合は -1 です。</li>
+<li><span class="basic-text smbas">EINDEX</span> : 検索する末尾位置 + 1 。オブジェクトの末尾まで検索する場合は <span class="basic-text smbas">LEN(OBJ)</span> です。</li></ul>
+
+<h5 id="t1b72bca">戻り値</h5>
+<ul><li><span class="basic-text smbas">INDEX</span> : キーのあるオブジェクト上のインデックス</li></ul>
+<p>オブジェクトのキーのあるべき位置を取得します。キーがない場合はキーを追加 ( <span class="basic-text smbas">INSERT</span> ) する場合の位置となります。キーの値がオブジェクトだった場合は先頭の位置を返します ( そのオブジェクトの先頭のキーはその次の位置にあります )。終端位置は同じキーで <a href="#OBJFINDEND"><span class="basic-text smbas">OBJFINDEND</span></a> を使用します。</p>
+<p>通常使用ではあまり推奨していません。</p>
+
+<h4 id="OBJFINDEND"><span class="basic-text smbas">OBJFINDEND</span> …… オブジェクトのキーを検索 (internal)</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪＦＩＮＤＥＮＤ　ＯＢＪ，ＰＡＴＨ，ＳＩＮＤＥＸ，ＥＩＮＤＥＸ　ＯＵＴ　ＩＮＤＥＸ</span></li>
+</ol></code></div></div>
+
+<h5 id="jc9021d2">引数</h5>
+<ul><li><span class="basic-text smbas">OBJ</span> : オブジェクト</li>
+<li><span class="basic-text smbas">PATH</span> : 検索するキー。ピリオドで階層を指定できます。</li>
+<li><span class="basic-text smbas">SINDEX</span> : 検索する先頭位置 - 1 。通常は <a href="#OBJFIND"><span class="basic-text smbas">OBJFIND</span></a> の戻り値を使用します。</li>
+<li><span class="basic-text smbas">EINDEX</span> : 検索する末尾位置 + 1 。オブジェクトの末尾まで検索する場合は <span class="basic-text smbas">LEN(OBJ)</span> です。</li></ul>
+
+<h5 id="yc546d28">戻り値</h5>
+<ul><li><span class="basic-text smbas">INDEX</span> : キーのあるオブジェクト上のインデックス</li></ul>
+<p>キーの値がオブジェクトの場合、終端位置を取得するのに使われます。<span class="basic-text smbas">OBJFIND(OBJ,PATH+”.”+CHR$(&amp;amp;HFFFF),SINDEX,EINDEX)</span> と同じです。</p>
+<p>通常使用ではあまり推奨していません。</p>
+
+<h4 id="JSON2OBJ"><span class="basic-text smbas">JSON2OBJ</span> …… JSON から オブジェクトを生成</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＪＳＯＮ２ＯＢＪ　ＪＳＯＮ　ＯＵＴ　ＶＡＬＵＥ</span></li>
+</ol></code></div></div>
+
+<h5 id="v7a08774">引数</h5>
+<ul><li><span class="basic-text smbas">JSON</span> : JSON 文字列</li></ul>
+
+<h5 id="gb9b0ce7">戻り値</h5>
+<ul><li><span class="basic-text smbas">VALUE</span> : 生成されたオブジェクトまたはプリミティブ値</li></ul>
+<p><a href="https://ja.wikipedia.org/wiki/JSON" rel="nofollow">JSON</a> をもとに新しいオブジェクトを生成します。SmileBASIC の文字列リテラルに直接 JSON を記述することも踏まえて文字列リテラルを <span class="basic-text smbas">”</span> ではなく <span class="basic-text smbas">'</span> で括ることもできるように拡張されています。エスケープシーケンスも有効です。</p>
+
+<h4 id="OBJ2JSON"><span class="basic-text smbas">OBJ2JSON</span> …… オブジェクトから JSON を生成</h4>
+<div class="basic-noline"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＯＢＪ２ＪＳＯＮ　ＶＡＬＵＥ　ＯＵＴ　ＪＳＯＮ</span></li>
+</ol></code></div></div>
+
+<h5 id="h198461c">引数</h5>
+<ul><li><span class="basic-text smbas">VALUE</span> : オブジェクトまたはプリミティブ値</li></ul>
+
+<h5 id="ta00bc37">戻り値</h5>
+<ul><li><span class="basic-text smbas">JSON</span> : 生成された JSON 文字列</li></ul>
+<p>オブジェクトまたは単独の数値、文字列から <a href="https://ja.wikipedia.org/wiki/JSON" rel="nofollow">JSON</a> を生成します。生成される JSON にはスペースやインデントは含まれません。</p>
+
+<h3 id="Samples">サンプル</h3>
+
+<h4 id="SampleCalc">計算機</h4>
+<p>テキトーに作ったものです</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＯＰＴＩＯＮ　ＳＴＲＩＣＴ</span></li>
+<li><span class="smbas">ＡＣＬＳ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＬＯＡＤ　”ＰＸＩＩＬＩＢ−０．３．０／ＰＸＩＩ．ＬＩＢ”，１</span></li>
+<li><span class="smbas">ＥＸＥＣ　１</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＩＮＩＴＰＣ</span></li>
+<li><span class="smbas">ＬＯＯＰ</span></li>
+<li><span class="smbas">　ＬＩＮＰＵＴ　”？”；ＥＸＰＲ</span></li>
+<li><span class="smbas">　ＰＲＩＮＴ　”＝”；ＥＶＡＬ（ＥＸＰＲ）</span></li>
+<li><span class="smbas">ＥＮＤＬＯＯＰ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＩＮＩＴＰＣ</span></li>
+<li><span class="smbas">　ＰＸＤＥＦＰＣ　＠＿ＳＰＡＣＥ，ＲＥＧＥＸＰ（”［\ｘ２０］＊”）</span></li>
+<li><span class="smbas">　ＰＸＤＥＦＰＣ　＠ＥＸＰＲ，ＡＣＴＰ（ＬＩＳＴＰ（＠ＴＥＲＭ，ＣＨＡＲＰ（”＋−”）），”０：ＯＮＣＡＬＣＢ”）</span></li>
+<li><span class="smbas">　ＰＸＤＥＦＰＣ　＠ＴＥＲＭ，ＡＣＴＰ（ＬＩＳＴＰ（＠ＦＡＣＴ，ＣＨＡＲＰ（”＊／％”）），”０：ＯＮＣＡＬＣＢ”）</span></li>
+<li><span class="smbas">　ＰＸＤＥＦＰＣ　＠ＦＡＣＴ，ＡＣＴＰ（ＳＥＱＰ（ＲＥＧＥＸＰ（”［−］＊”），ＯＲＰ（＠ＲＥＡＬ，ＳＥＱＰ（”（”，＠ＥＸＰＲ，”）”））），”０：ＯＮＦＡＣＴ”）</span></li>
+<li><span class="smbas">　ＰＸＤＥＦＰＣ　＠ＲＥＡＬ，ＲＥＧＥＸＰ（”（［０−９］＋（\．［０−９］＊）？｜［０−９］＊\．［０−９］＋）”）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＥＶＡＬ（ＥＸＰＲ）</span></li>
+<li><span class="smbas">　ＤＩＭ　ＲＥＳ＝ＰＸＰＡＲＳＥ（ＥＸＰＲ，０，＠ＥＸＰＲ）</span></li>
+<li><span class="smbas">　ＩＦ　ＯＢＪＧＥＴ（ＲＥＳ，”ＳＵＣＣＥＳＳ”）　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＲＥＴＵＲＮ　ＯＢＪＧＥＴ（ＲＥＳ，”ＶＡＬＵＥ”）</span></li>
+<li><span class="smbas">　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　ＲＥＴＵＲＮ　ＰＯＷ（２，１０２４）＊０　’ｎａｎ</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＯＮＦＡＣＴ　ＲＥＳ</span></li>
+<li><span class="smbas">　ＤＩＭ　ＳＩＧＮ＝１−（ＬＥＮ（ＯＢＪＧＥＴ（ＲＥＳ，”ＳＥＱ０．ＢＵＦＦ”））　ＭＯＤ　２）＊２</span></li>
+<li><span class="smbas">　ＤＩＭ　ＢＵＦＦ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＳＥＱ１．ＢＵＦＦ”）</span></li>
+<li><span class="smbas">　ＩＦ　ＬＥＦＴ＄（ＢＵＦＦ，１）＝＝”（”　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＯＢＪＳＥＴ　ＲＥＳ，”ＶＡＬＵＥ”，ＳＩＧＮ＊ＯＢＪＧＥＴ（ＲＥＳ，”ＳＥＱ１．ＳＥＱ１．ＶＡＬＵＥ”）</span></li>
+<li><span class="smbas">　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　ＯＢＪＳＥＴ　ＲＥＳ，”ＶＡＬＵＥ”，ＳＩＧＮ＊ＶＡＬ（ＢＵＦＦ）</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＯＮＣＡＬＣＢ　ＲＥＳ</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｉ，Ｏ，Ａ，Ｂ</span></li>
+<li><span class="smbas">　Ａ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＬＩＳＴＳＵＢ０．ＶＡＬＵＥ”）</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ＝１　ＴＯ　ＯＢＪＧＥＴ（ＲＥＳ，”ＬＩＳＴ＃”）−１</span></li>
+<li><span class="smbas">　　Ｏ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＬＩＳＴＤＥＬ”＋ＳＴＲ＄（Ｉ−１）＋”．ＢＵＦＦ”）</span></li>
+<li><span class="smbas">　　Ｂ＝ＯＢＪＧＥＴ（ＲＥＳ，”ＬＩＳＴＳＵＢ”＋ＳＴＲ＄（Ｉ）＋”．ＶＡＬＵＥ”）</span></li>
+<li><span class="smbas">　　Ａ＝ＣＡＬＣＢ（Ｏ，Ａ，Ｂ）</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＯＢＪＳＥＴ　ＲＥＳ，”ＶＡＬＵＥ”，Ａ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＣＡＬＣＢ（Ｏ，Ａ，Ｂ）</span></li>
+<li><span class="smbas">　ＣＡＳＥ　Ｏ</span></li>
+<li><span class="smbas">　　ＷＨＥＮ　”＋”：ＲＥＴＵＲＮ　Ａ＋Ｂ</span></li>
+<li><span class="smbas">　　ＷＨＥＮ　”−”：ＲＥＴＵＲＮ　Ａ−Ｂ</span></li>
+<li><span class="smbas">　　ＷＨＥＮ　”＊”：ＲＥＴＵＲＮ　Ａ＊Ｂ</span></li>
+<li><span class="smbas">　　ＷＨＥＮ　”／”：ＲＥＴＵＲＮ　Ａ／Ｂ</span></li>
+<li><span class="smbas">　　ＷＨＥＮ　”％”：ＲＥＴＵＲＮ　Ａ　ＭＯＤ　Ｂ</span></li>
+<li><span class="smbas">　ＥＮＤＣＡＳＥ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+
+<h3 id="PublicKey">公開キー</h3>
+<p>プチコン4用の公開キーです。</p>
+<div>
+<div class="ptcmid">
+プチコン4 公開キー<br />
+<div class="key">
+<span class="smbas">4RK33W34V</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Releases">更新履歴</h3>
+
+<h4 id="Release_0_3_1">v0.3.1 ( 2020/03/26 )</h4>
+<ul><li>パーサを展開するための <span class="basic-text smbas">EXTP</span> を追加。パーサを再定義する際に使用できます。詳しい解説は <a href="#ExtendParsers">パーサを拡張する</a> を参照。</li></ul>
+
+<h4 id="Release_0_3_0">v0.3.0 ( 2020/03/23 )</h4>
+<ul><li>初版。</li></ul>
+
+<h3 id="Comments">コメント</h3>
+<p>PXIILIB に関する感想や意見・要望ならなんでもどうぞ。バグ報告もこちらでお願いします。</p>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PXLIB" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="ca05d6033b059d2bd4d99e5969786e2f" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (264d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (922d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (28d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (504d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (602d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (610d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (550d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (15d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (11d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (5d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (621d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (922d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_5_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_5_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (921d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (921d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (271d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_5_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (167d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/11/22</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%C2%ED%B8%BC%C2%C0%CF%BA" title="瀧玄太郎のMMLs　改 (5d)">瀧玄太郎のMMLs　改</a></li>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (5d)">OFコーナー4</a></li>
+</ul>
+<h4>2021/11/21</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="MMLPAC-2 (6d)">MMLPAC-2</a></li>
+ <li><a href="/petc4/?Toukou%2F%A4%DF%A4%F3%A4%CA%A4%CE%A5%E9%A5%B8%A5%AA" title="みんなのラジオ！ (6d)">みんなのラジオ！</a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD Forward (7d)">リズミカルおもちつきHD Forward</a></li>
+</ul>
+<h4>2021/11/16</h4>
+<ul>
+ <li><a href="/petc4/?Demand" title="プチコン4への要望 (11d)">プチコン4への要望</a></li>
+</ul>
+<h4>2021/11/12</h4>
+<ul>
+ <li><a href="/petc4/?WorksLink" title="プチコン4 作品集 (15d)">プチコン4 作品集</a></li>
+</ul>
+<h4>2021/11/06</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%B7%A5%EA%A5%A6%A5%B9%A4%CE%B8%B7%C1%AA%BC%AB%BA%EE%B6%CA%BD%B8" title="シリウスの厳選自作曲+アレンジ曲集 (21d)">シリウスの厳選自作曲+アレンジ曲集</a></li>
+</ul>
+<h4>2021/10/31</h4>
+<ul>
+ <li><a href="/petc4/?Mame" title="まめちしき (28d)">まめちしき</a></li>
+</ul>
+<h4>2021/10/29</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2%20Switch%20Ver" title="リズミカルおもちつきΣ Nintendo Switch Ver. (30d)">リズミカルおもちつきΣ Nintendo Switch Ver.</a></li>
+</ul>
+</div>
+
+<h3 id="content_5_4">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc4/?Toukou%2F%C2%ED%B8%BC%C2%C0%CF%BA" title="Toukou/瀧玄太郎 (5d)">瀧玄太郎のMMLs　改<span class="counter">(15)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FPC8801_for_PETITCOM4" title="Toukou/PC8801_for_PETITCOM4 (110d)">PC8801_エミュ for プチコン４号<span class="counter">(8)</span></a></li>
+ <li><a href="/petc4/?Sample" title="Sample (550d)">サンプルプログラム集<span class="counter">(8)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="Toukou/Mmlpac (6d)">MMLPAC-2<span class="counter">(7)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="Toukou/リズミカルおもちつきHD (7d)">リズミカルおもちつきHD Forward<span class="counter">(7)</span></a></li>
+ <li><a href="/petc4/?FAQ" title="FAQ (602d)">よくある質問集<span class="counter">(6)</span></a></li>
+ <li><a href="/petc4/?Link" title="Link (167d)">プチコン4 リンク集<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FSBDBG" title="Toukou/SBDBG (330d)">SmileBASIC Debugger<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Bug" title="Bug (610d)">既知の不具合<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FnFEP" title="Toukou/nFEP (780d)">日本語入力フロントエンドプロセッサ -nFEP-<span class="counter">(4)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (922d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_5_5">オンライン情報</h3>
+<ul><li>現在同時に 2 人がこのサイトを見ています</li>
+<li>このページはこれまでに 653 回、本日は 1 回、昨日は 1 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.118 秒  | このページの最終更新 : 2020/03/26 (木) 17:24:13  (611d) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

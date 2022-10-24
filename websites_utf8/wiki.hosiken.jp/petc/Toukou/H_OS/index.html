@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : H_OS - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : H_OS - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 1画面プログラム, OSもどき, QRコード, ゲーム, mkII専用, 実用ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FH_OS">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FH_OS">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FH_OS">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FH_OS">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : H_OS</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FH_OS">H_OS</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.085sec. -->
+<div class="contents">
+<ul><li><a href="#fed82066">  ついに完成! </a>
+<ul><li><a href="#tf2d3419">  ログイン </a></li>
+<li><a href="#zec3c8bc">  アプリ </a>
+<ul><li><a href="#jad4b4f6">  インターネット(ランチャ) </a></li>
+<li><a href="#h90c5884">  ミュージック </a></li>
+<li><a href="#me39ec1b">  TALKテスト </a></li>
+<li><a href="#t548b015">  ゲーム </a></li>
+<li><a href="#c063fd12">  メモ帳 </a></li>
+<li><a href="#x0c5b85f">  タイムマシン </a></li></ul></li></ul></li>
+<li><a href="#r7904a7a">  このプログラムが不要になったら </a></li>
+<li><a href="#nb4b8fb9">  参考 </a></li>
+<li><a href="#ndbae26b">  QR コード </a>
+<ul><li><a href="#i2081d13">  PRG </a></li>
+<li><a href="#fb70d80d"> CHR </a></li></ul></li>
+<li><a href="#o55ed7f2">  プログラムリスト </a></li>
+<li><a href="#x2ef54a6"> ご感想をどうぞ </a>
+<ul><li><a href="#fc8c269c">  良かった所 </a></li></ul></li>
+<li><a href="#u11a6928">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2016年4月30日投稿
+/ 投稿者 : haru66kero
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=1%B2%E8%CC%CC%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">1画面プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> <a href="/petc/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> </span></p>
+<h3 id="fed82066">ついに完成!</h3>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">実用的な</span>OSもどきです。</p>
+
+<h4 id="tf2d3419">ログイン</h4>
+<p>絵をクリックして、パスワードを入れログインしてください。
+初めての人は、”００００”と入力してください。
+ユーザー名、パスワード、絵は設定で変えられます。</p>
+
+<h4 id="zec3c8bc">アプリ</h4>
+
+<h5 id="jad4b4f6">インターネット(ランチャ)</h5>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">ありそうでなかった、説明付きランチャ!</span><br />
+プログラムの名前だけでなく、プログラムの説明までつけられるランチャです!<br />
+これがあると、分かりにくいファイル名のプログラムでも、<br />
+どんなプログラムか、見ただけで分かります!<br />
+追加、変更、削除も簡単!</p>
+
+<h5 id="h90c5884">ミュージック</h5>
+<p>OSもどきには良くあるBGM再生アプリですが、このミュージックアプリは、<br />
+<span style="font-size:30px;display:inline-block;line-height:130%;text-indent:0px">BGMだけでなく、BEEP音まで鳴らせます。</span><br />
+ピッチや、音量も簡単に変えられるので、<br />
+<span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px">自作ゲームの効果音の研究にピッタリです!</span></p>
+
+<h5 id="me39ec1b">TALKテスト</h5>
+<p><span style="color:#FF0000">これも、ありそうでなかった機能!</span><br />
+コマンドの意味も一目で分かります!<br />
+<span style="font-size:30px;display:inline-block;line-height:130%;text-indent:0px">もう、いちいち説明書を見る必要はありません!</span></p>
+
+<h5 id="t548b015">ゲーム</h5>
+<p><span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px">ゲームも充実しています！</span><br />
+ちなみに、4つとも一画面プログラムです。<br />
+あと、ファイルをクリックするといきなりゲームが始まりますので、
+注意してください。</p>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">RED＆BLUE</span><br />
+画面が青いときを狙って、ボタンを長押しして右に進みます。<br />
+画面が完全に赤いときに動くと、ゲームオーバーです。<br />
+また、左上のタイムが0になっても同様です。<br />
+右端にたどり着いたらクリアです。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ：ＧＣＬＳ　０：ＧＣ＝８：Ｂ＝６：Ｆ＝０：Ｇ＝０</li>
+<li>ＳＰＳＥＴ　９９，６４，５，０，０，０：ＴＩＭＥ＝６００</li>
+<li>ＦＯＲ　Ｉ＝ＴＩＭＥ　ＴＯ　０　ＳＴＥＰ　−１</li>
+<li>ＬＯＣＡＴＥ　０，０：？　Ｉ”　”</li>
+<li>ＧＯＳＵＢ＠ＧＡＭＥＧＲＡ：ＳＰＯＦＳ　９９，Ｆ，１２８</li>
+<li>Ｗ＝Ｗ＋１：ＩＦ　Ｗ＝＝２　ＴＨＥＮ　ＷＡＩＴ　１：Ｗ＝０</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）＝＝０　ＴＨＥＮ　＠ＳＫＩＰ</li>
+<li>Ｆ＝Ｆ＋１：ＩＦ　Ｇ＝＝２４８　ＴＨＥＮ　Ｉ＝０</li>
+<li>ＩＦ　Ｆ＝＝２４０　ＴＨＥＮ　Ｉ＝−１０</li>
+<li>＠ＳＫＩＰ</li>
+<li>ＮＥＸＴ：ＬＯＣＡＴＥ　１３，１１：ＳＰＣＬＲ　９９</li>
+<li>ＩＦ　Ｉ＝＝−１１　ＴＨＥＮ　？”ＣＬＥＡＲ”：Ｂ＝４</li>
+<li>ＩＦ　Ｉ！＝−１１　ＴＨＥＮ　？”ＭＩＳＳ”：Ｂ＝６</li>
+<li>ＢＧＭＰＬＡＹ　Ｂ：ＩＦ　Ｂ＞４ＴＨＥＮ　ＷＡＩＴ　１７０</li>
+<li>ＷＡＩＴ　１８０：ＣＯＬＩＮＩＴ”ＧＲＰ”，１ＥＮＤ</li>
+<li>＠ＧＡＭＥＧＲＡ</li>
+<li>ＩＦ　Ｇ＜＝０　ＴＨＥＮ　ＧＣ＝８</li>
+<li>Ｒ＄＝ＨＥＸ＄（Ｇ）：Ｂ＄＝ＨＥＸ＄（２５５−Ｇ）</li>
+<li>ＩＦ　Ｇ＜１６　ＴＨＥＮ　Ｒ＄＝”０”＋Ｒ＄</li>
+<li>ＩＦ　Ｇ＞２３９　ＴＨＥＮ　Ｂ＄＝”０”＋Ｂ＄</li>
+<li>ＣＯＬＳＥＴ”ＧＲＰ”，１，Ｒ＄＋”００”＋Ｂ＄</li>
+<li>Ｇ＝Ｇ＋ＧＣ：ＩＦ　Ｇ＞＝２４８　ＴＨＥＮ　ＧＣ＝−８</li>
+<li>ＧＣＬＳ　１：ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">脳トレ</span><br />
+画面に表示された文字の色をファンクションキーで<br />
+答えるゲームです。<br />
+＊文字をそのまま答えるわけではないので注意!<br />
+全10問で、正解数と、かかった時間が表示されます。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ：Ｗ＝０：Ｃ（０）＝１３：Ｍ＄（０）＝”アカ”</li>
+<li>Ｃ（１）＝９：Ｍ＄（１）＝”アオ”</li>
+<li>Ｃ（２）＝３：Ｍ＄（２）＝”キイロ”</li>
+<li>Ｃ（３）＝４：Ｍ＄（３）＝”ミト゛リ”</li>
+<li>ＫＥＹ　５，””：ＦＯＲ　Ｉ＝０　ＴＯ　３</li>
+<li>ＫＥＹ　Ｉ＋１，Ｍ＄（Ｉ）：ＮＥＸＴ</li>
+<li>ＦＯＲ　Ｉ＝１　ＴＯ　１０：？　Ｉ”モンメ”</li>
+<li>Ｒ１＝ＲＮＤ（４）：ＣＯＬＯＲ　Ｃ（Ｒ１）</li>
+<li>Ｒ２＝ＲＮＤ（４）：？　Ｍ＄（Ｒ２）</li>
+<li>ＦＯＲ　Ｊ＝０　ＴＯ　１：Ｊ＝ＦＵＮＣＮＯ</li>
+<li>ＷＡＩＴ　１：Ｖ＝Ｖ＋１：ＮＥＸＴ：ＣＯＬＯＲ　０</li>
+<li>ＩＦ　Ｊ！＝Ｒ１＋２　ＴＨＥＮ　？”フ”；：ＢＥＥＰ</li>
+<li>ＩＦ　Ｊ＝＝Ｒ１＋２　ＴＨＥＮ　ＢＥＥＰ　３：Ｗ＝Ｗ＋１</li>
+<li>？”セイカイ！”：ＮＥＸＴ：Ｓ＝Ｖ＋６０</li>
+<li>？”シュウリョウ！”：ＷＡＩＴ　６０</li>
+<li>？”カカッタノハ”Ｓ”ヒ゛ョウ！”：ＷＡＩＴ　６０</li>
+<li>？”セイカイスウ”Ｗ”／１０カイ！”：ＷＡＩＴ　６０</li>
+<li>？”ＰＵＳＨ　ＡＮＹ　ＢＵＴＴＯＮ”</li>
+<li>ＦＯＲ　Ｉ＝０ＴＯ　１：Ｉ＝ＢＵＴＴＯＮ（）：ＮＥＸＴ</li>
+<li>ＫＥＹ　１，”ＦＩＬＥＳ”</li>
+<li>ＫＥＹ　２，”ＬＯＡＤ”＋ＣＨＲ＄（３４）</li>
+<li>ＫＥＹ　３，”ＳＡＶＥ”＋ＣＨＲ＄（３４）</li>
+<li>ＫＥＹ　４，”ＣＯＮＴ”：ＫＥＹ　５，”ＲＵＮ”</li>
+<li>ＥＮＤ</li>
+</ol></code></div></div>
+</td></tr></table>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">KIOKU MAZE</span><br />
+最初に三種類の矢印が１０個表示されるので、すべて覚えてください。<br />
+その後、矢印のとおりに、キーを押して扉を開けてください。<br />
+（矢印は左から順番に）<br />
+間違えると、落とし穴に落ちてゲームオーバーになります。<br />
+全10問です。<br /></p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ：Ｄ＄＝””：ＦＯＲ　Ｉ＝０　ＴＯ　９</li>
+<li>Ｄ＄＝Ｄ＄＋ＳＴＲ＄（ＲＮＤ（３））：ＮＥＸＴ</li>
+<li>ＬＯＣＡＴＥ　１０，６：？”ヨークオホ゛エヨウ！！””</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　９</li>
+<li>ＬＯＣＡＴＥ　１０＋Ｉ，８：Ｉ＄＝ＭＩＤ＄（Ｄ＄，Ｉ，１）</li>
+<li>ＩＦ　Ｉ＄＝＝”０”　ＴＨＥＮ　？”←”</li>
+<li>ＩＦ　Ｉ＄＝＝”１”　ＴＨＥＮ　？”↑”</li>
+<li>ＩＦ　Ｉ＄＝＝”２”　ＴＨＥＮ　？”→”</li>
+<li>ＮＥＸＴ：ＷＡＩＴ　３００：ＣＬＳ：Ｉ＝０</li>
+<li>ＬＯＣＡＴＥ　１０，８：？”ト゛ノト゛アヲアケル？”</li>
+<li>ＬＯＣＡＴＥ　１０，１０：？”Щ　　　Щ　　　Щ”</li>
+<li>ＦＯＲ　Ｊ＝０ＴＯ　９：Ｂ＝ＢＴＲＩＧ（）ＶＳＹＮＣ　１</li>
+<li>ＩＦ　Ｂ＝＝０　ＴＨＥＮ　Ｊ＝Ｊ−１：ＮＥＸＴ</li>
+<li>Ｉ＄＝ＭＩＤ＄（Ｄ＄，Ｊ，１）：ＢＥＥＰ　３</li>
+<li>ＩＦ　Ｂ＝＝４ＡＮＤ　Ｉ＄＝＝”０”ＴＨＥＮ　＠ＭＮＥＸＴ</li>
+<li>ＩＦ　Ｂ＝＝１ＡＮＤ　Ｉ＄＝＝”１”ＴＨＥＮ　＠ＭＮＥＸＴ</li>
+<li>ＩＦ　Ｂ＝＝８ＡＮＤ　Ｉ＄＝＝”２”ＴＨＥＮ　＠ＭＮＥＸＴ</li>
+<li>Ｉ＝Ｊ：Ｊ＝５０：ＮＥＸＴ</li>
+<li>ＣＬＳ：ＬＯＣＡＴＥ　５，１０：？”オトシアナニオチタ”</li>
+<li>？”　ＳＣＯＲＥ：”Ｉ：ＷＡＩＴ　３００：ＥＮＤ</li>
+<li>＠ＭＮＥＸＴ</li>
+<li>ＮＥＸＴ</li>
+<li>ＣＬＳ：ＬＯＣＡＴＥ　５，１０：？”タカラヲテニイレタ”</li>
+<li>？”　ＳＣＯＲＥ：１０”：ＷＡＩＴ　３００：ＥＮＤ</li>
+</ol></code></div></div>
+</td></tr></table>
+<p><span style="font-size:40px;display:inline-block;line-height:130%;text-indent:0px">電車でG○！</span><br />
+ブレーキを操作して、電車をうまく停車させるゲームです。<br />
+左上が速度で、上が残り距離です。<br />
+Bボタンを押すと、ブレーキがかかり、速度が減っていきます。<br />
+Aボタンでブレーキ解除です。(それでも、速度は少しづつ減っていく)<br />
+Xボタンは警笛です。得に意味はありません。<br />
+速度が0kmになったとき、残り距離が０m前後だったらクリアです。<br />
+１m以上の誤差があったらゲームオーバーです。</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button4" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary4').style.display!='none'){
+		document.getElementById('rgn_summary4').style.display='none';
+		document.getElementById('rgn_content4').style.display='block';
+		document.getElementById('rgn_bracket4').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button4').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary4').style.display='block';
+		document.getElementById('rgn_content4').style.display='none';
+		document.getElementById('rgn_bracket4').style.borderStyle='none';
+		document.getElementById('rgn_button4').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket4" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary4" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content4" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>ＣＬＳ：ＧＣＬＳ　０：ＣＯＬＯＲ　１：Ｂ＝１</li>
+<li>Ｍ＝２５０＋ＲＮＤ（５００）：Ｋ＝４０</li>
+<li>ＭＭ＝１００：ＦＯＲ　Ｉ＝１　ＴＯ　０　ＳＴＥＰ　−１</li>
+<li>ＣＬＳ：ＭＭ＄＝ＳＴＲ＄（ＭＭ）</li>
+<li>ＩＦ　ＭＭ＜１０　ＴＨＥＮ　ＭＭ＄＝”０”＋ＭＭ＄</li>
+<li>Ｇ＄＝ＭＩＤ＄（ＭＭ＄，ＬＥＮ（ＭＭ＄）−２，２）</li>
+<li>Ｇ＝ＶＡＬ（Ｇ＄）：ＧＦＩＬＬ　０，０，２００，１００，６</li>
+<li>ＧＦＩＬＬ　０，１００，２００，２５０，１１</li>
+<li>ＧＢＯＸ　Ｇ，Ｇ，２００−Ｇ，２００−Ｇ，０</li>
+<li>ＧＬＩＮＥ　０，２５０，１００，１００，０</li>
+<li>ＧＬＩＮＥ　２００，２５０，１００，１００，０</li>
+<li>ＭＭ＝ＭＭ−１：ＩＦ　ＭＭ＝＝０　ＴＨＥＮ　ＭＭ＝１００</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）　ＴＨＥＮ　Ｂ＝２</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）　ＴＨＥＮ　Ｂ＝１０</li>
+<li>ＩＦ　ＢＵＴＴＯＮ（）　ＴＨＥＮ　ＢＥＥＰ　０</li>
+<li>ＬＯＣＡＴＥ　１，１：？　Ｋ”Ｋｍ　”Ｍ”ｍ　”</li>
+<li>Ｋ＝Ｋ−Ｂ／１００：Ｍ＝Ｍ−Ｋ／５０</li>
+<li>ＷＡＩＴ　１：Ｉ＝Ｋ＋１：ＮＥＸＴ</li>
+<li>ＬＯＣＡＴＥ　１０，１０：Ｍ＝ＡＢＳ（Ｍ）</li>
+<li>ＩＦ　ＦＬＯＯＲ（Ｍ）＝＝０　ＴＨＥＮ　？”ＣＬＥＡＲ”</li>
+<li>ＩＦ　ＦＬＯＯＲ（Ｍ）！＝０　ＴＨＥＮ　？”ＭＩＳＳ”</li>
+<li>ＢＧＭＰＬＡＹ　５：ＶＳＹＮＣ　１２０：ＥＮＤ</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h5 id="c063fd12">メモ帳</h5>
+<p>２５６文字のメモを48個保存できるメモ帳です。<br />
+方向キーで点滅しているカーソルを移動できます。<br />
+「これって、プログラムリストに直接書いて保存したほうが早いじゃん」<br />
+と言う人がいるかもしれませんが、このメモをつかえば個人情報は守られます。</p>
+
+<h5 id="x0c5b85f">タイムマシン</h5>
+<p>ジョークアプリです。<br />
+家の時計とDSの時計があっていることを確認した後、OKを押すとDSのまわりがワープ空間に包まれます。(と言う設定)<br />
+1分経過すると、家の時計が1秒進んでます。つまり1秒未来に来たのです。<br />
+たった1秒と思う人もいると思いますが、1時間経過すると1分未来に来ていることが分かります。1日なら24分です。<br />
+何度も言いますが、ジョークアプリです。</p>
+<p>ほかにも、ファンクションキー登録アプリや、タイマー、サイコロがあります。</p>
+
+<h3 id="r7904a7a">このプログラムが不要になったら</h3>
+<p>以下のファイルを削除してください。</p>
+<ul><li>PRG：H＿OS</li>
+<li>CHR：H＿OSCHR</li>
+<li>GRP：H＿OSGRP</li></ul>
+
+<h3 id="nb4b8fb9">参考</h3>
+<p>このOSのマウスカーソルの動きは、otyaさんの”OTYAX”を参考にしました。</p>
+
+<h3 id="ndbae26b">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+
+<h4 id="i2081d13">PRG</h4>
+<p><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr600.png" title="qr600.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr600.png" alt="qr600.png" title="qr600.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr601.png" title="qr601.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr601.png" alt="qr601.png" title="qr601.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr602.png" title="qr602.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr602.png" alt="qr602.png" title="qr602.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr603.png" title="qr603.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr603.png" alt="qr603.png" title="qr603.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr604.png" title="qr604.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr604.png" alt="qr604.png" title="qr604.png" width="210" height="210" /></a>
+<a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr605.png" title="qr605.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr605.png" alt="qr605.png" title="qr605.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr606.png" title="qr606.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr606.png" alt="qr606.png" title="qr606.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr607.png" title="qr607.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr607.png" alt="qr607.png" title="qr607.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr608.png" title="qr608.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr608.png" alt="qr608.png" title="qr608.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr609.png" title="qr609.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr609.png" alt="qr609.png" title="qr609.png" width="210" height="210" /></a>
+<a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr610.png" title="qr610.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr610.png" alt="qr610.png" title="qr610.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr611.png" title="qr611.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr611.png" alt="qr611.png" title="qr611.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr612.png" title="qr612.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr612.png" alt="qr612.png" title="qr612.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr613.png" title="qr613.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr613.png" alt="qr613.png" title="qr613.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr614.png" title="qr614.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr614.png" alt="qr614.png" title="qr614.png" width="210" height="210" /></a>
+<a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr615.png" title="qr615.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr615.png" alt="qr615.png" title="qr615.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr616.png" title="qr616.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr616.png" alt="qr616.png" title="qr616.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr617.png" title="qr617.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr617.png" alt="qr617.png" title="qr617.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr618.png" title="qr618.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr618.png" alt="qr618.png" title="qr618.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr619.png" title="qr619.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr619.png" alt="qr619.png" title="qr619.png" width="210" height="210" /></a></p>
+
+<h4 id="fb70d80d">CHR</h4>
+<p><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr650.png" title="qr650.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr650.png" alt="qr650.png" title="qr650.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr651.png" title="qr651.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr651.png" alt="qr651.png" title="qr651.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr652.png" title="qr652.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr652.png" alt="qr652.png" title="qr652.png" width="210" height="210" /></a><a href="/petc/?plugin=attach&amp;refer=Toukou%2FH_OS&amp;openfile=qr653.png" title="qr653.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FH_OS&amp;src=qr653.png" alt="qr653.png" title="qr653.png" width="210" height="210" /></a></p>
+
+<h3 id="o55ed7f2">プログラムリスト</h3>
+<p>このプログラムはmkII専用命令を使っているので、<br />
+初代の人が入力してもできないようになっています。<br />
+よって、プログラムリストはなしとします。</p>
+
+<h3 id="x2ef54a6">ご感想をどうぞ</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button5" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary5').style.display!='none'){
+		document.getElementById('rgn_summary5').style.display='none';
+		document.getElementById('rgn_content5').style.display='block';
+		document.getElementById('rgn_bracket5').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button5').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary5').style.display='block';
+		document.getElementById('rgn_content5').style.display='none';
+		document.getElementById('rgn_bracket5').style.borderStyle='none';
+		document.getElementById('rgn_button5').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket5" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary5" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">感想
+</td><td valign="top" id="rgn_content5" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/H_OS" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="4c4746f464f55a94d52412f1d6d6b8db" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">読み込んでみた</td>
+   <td align="right" class="vote_td2">4&nbsp;&nbsp;
+    <input type="submit" name="vote_C6C9A4DFB9FEA4F3A4C7A4DFA4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">最高</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_BAC7B9E2" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">良い</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CEC9A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">普通</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_C9E1C4CC" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">微妙</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_C8F9CCAF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">悪い</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_B0ADA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">面白い</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CCCCC7F2A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">つまらない</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4C4A4DEA4E9A4CAA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">便利</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_CAD8CDF8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">不便</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_C9D4CAD8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">すごい</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4B9A4B4A4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">この位つくれる</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4B3A4CEB0CCA4C4A4AFA4ECA4EB" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ありそうでなかった</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4A2A4EAA4BDA4A6A4C7A4CAA4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">ありきたり</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A4A2A4EAA4ADA4BFA4EA" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h4 id="fc8c269c">良かった所</h4>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/H_OS" />
+    <input type="hidden" name="vote_no" value="1" />
+    <input type="hidden" name="digest"  value="4c4746f464f55a94d52412f1d6d6b8db" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ログイン</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5EDA5B0A5A4A5F3" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">インターネット</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5A4A5F3A5BFA1BCA5CDA5C3A5C8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ミュージック</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5DFA5E5A1BCA5B8A5C3A5AF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">ゲーム”RED＆BLUE”</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5B2A1BCA5E0A1C9524544A1F5424C5545A1C9" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ゲーム”ノウトレ”</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5B2A1BCA5E0A1C9A5CEA5A6A5C8A5ECA1C9" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">ゲーム”KIOKU MAZE”</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5B2A1BCA5E0A1C94B494F4B55204D415A45A1C9" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ゲーム”電車でG○！”</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5B2A1BCA5E0A1C9C5C5BCD6A4C747A1FBA1AAA1C9" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">TALKテスト</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_54414C4BA5C6A5B9A5C8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">メモ帳</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5E1A5E2C4A2" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">タイムマシン</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5BFA5A4A5E0A5DEA5B7A5F3" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">タイマー</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5BFA5A4A5DEA1BC" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">サイコロ</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A5B5A5A4A5B3A5ED" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+</td></tr></table>
+
+<h3 id="u11a6928">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3381d)">掲示板</a>へ)</p>
+<ul><li><strong>さすらいの名無し</strong> : GRPとCHRのリソースが無いので評価のしようがないです。 (<span class="comment_date">2016/05/01 (日) 20:11:10</span>)</li>
+<li><strong>haru66kero</strong> : すみません。CHRのQRコードを忘れていました。 (<span class="comment_date">2016/05/02 (月) 08:13:24</span>)</li>
+<li><strong>haru66kero</strong> : GRPのデータは最初はないです。　これからはこのようなことがないように気をつけます。 (<span class="comment_date">2016/05/02 (月) 08:18:39</span>)</li>
+<li><strong>hagetixyan719</strong> : |・ω・`)ｼｮﾎﾞｰﾝ mkIIまだやってるひと居た… (<span class="comment_date">2016/05/07 (土) 20:20:23</span>)</li>
+<li><strong>おっちゃん</strong> : 公開キーがない！ (<span class="comment_date">2016/07/27 (水) 16:13:13</span>)</li>
+<li><strong>ナス(3号から)</strong> : mkIIですか！DLしてみます。 (<span class="comment_date">2016/07/29 (金) 21:05:06</span>)</li>
+<li><strong>プチコンmk2</strong> : した画面のキーボードは、仕様ですか？ (<span class="comment_date">2016/08/05 (金) 12:49:25</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/H_OS" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="4c4746f464f55a94d52412f1d6d6b8db" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_9_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2028d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2971d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1903d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1914d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2365d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2566d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2136d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1226d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (584d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2358d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_9_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2565d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (8h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_9_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (115d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (56d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (72d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (87d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (110d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (115d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (139d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (139d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (204d)">Petit Slash II</a></li>
+</ul>
+<h4>2021/04/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (217d)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (271d)">編集の練習用ページ</a></li>
+</ul>
+</div>
+
+<h3 id="content_9_3">オンライン情報</h3>
+<p>現在同時に 3 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.089 秒  | このページの最終更新 : 2016/08/05 (金) 12:49:25  (1941d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

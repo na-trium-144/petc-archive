@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : MM-DOS - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : MM-DOS - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, OS, OSもどき, M/MSOFT" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FMM-DOS">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FMM-DOS">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FMM-DOS">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FMM-DOS">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : MM-DOS</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FMM-DOS">MM-DOS</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.035sec. -->
+<div class="contents">
+<ul><li><a href="#SEISAKUSYA">  制作者情報 </a>
+<ul><li><a href="#MMSOFT">  M/MSOFT </a>
+<ul><li><a href="#osirase">  お知らせ </a></li></ul></li></ul></li>
+<li><a href="#Summary">  概要 </a>
+<ul><li><a href="#HowToPlay">  使い方 </a></li>
+<li><a href="#meirei">  命令表 </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  公開キー </a>
+<ul><li><a href="#verm1m0">  Ver.1.0</a></li></ul></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a>
+<ul><li><a href="#u2ac76ab"> コメント形式を変更しました。 </a></li>
+<li><a href="#yac0e737"> 良ければコメントもどぞー </a></li></ul></li></ul>
+</div>
+
+<p>2019年9月16日投稿
+/ 投稿者 : MoriKawa/(M/MSOFT:MoriKawa/Midorimori)
+/ <span class="tag">タグ : <a href="/petc3gou/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc3gou/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc3gou/?cmd=taglist&amp;tag=OS">OS</a> <a href="/petc3gou/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> <a href="/petc3gou/?cmd=taglist&amp;tag=M%2FMSOFT">M/MSOFT</a> </span></p>
+<h3 id="SEISAKUSYA">制作者情報</h3>
+
+<h4 id="MMSOFT"><a href="http://wiki.hosiken.jp/petc3gou/?Toukou%2FMON-OS%2F%C0%A9%BA%EE%BC%D4" rel="nofollow">M/MSOFT</a></h4>
+
+<h5 id="osirase">お知らせ</h5>
+<ul><li>無し</li></ul>
+
+<h3 id="Summary">概要</h3>
+<p><a href="/petc3gou/?Toukou%2FPinux" title="Toukou/Pinux (8d)">Toukou/Pinux</a>と<a href="/petc3gou/?Toukou%2FLinex" title="Toukou/Linex (30d)">Toukou/Linex</a>を誠に勝手ながら改造させてもらいました。問題があるようならば対処します。なお、PinuxとLinexは更新が途絶えているようですがこちらはしばらくは続ける予定です。</p>
+
+<h4 id="HowToPlay">使い方</h4>
+<p>命令を打って実行するだけ！命令を間違えると5秒間ブルースクリーンになります。めっちゃ謎だし鬱陶しいです。</p>
+
+<h4 id="meirei">命令表</h4>
+<ul><li>CD [ディレクトリ名]: カレントディレクトリを変更</li>
+<li>DD if=[RAW元] of=[書き込み先] : RAWライター</li>
+<li>UNAME [-A]：システムinfo</li>
+<li>HARDINFO [--CPU,GPU,DSP] : ハードウェア情報を表示</li>
+<li>SU [-] : スーパーユーザー権限をリクエスト</li>
+<li>SHUTDOWN : システムを終了(スーパーユーザーである必要あり)</li>
+<li>HALT : システムを即座に終了</li>
+<li>REBOOT : 再起動</li>
+<li>SUDO APT-GET UPDATE ：システムアプリのアップデート</li>
+<li>START SERVICE MUSICPLAYER：MUSICPLAYERを起動</li>
+<li>START SERVICE YOMIAGEKUN：読み上げ君を起動</li>
+<li>LS : ファイルとディレクトリの一覧を表示</li>
+<li>HELP：ヘルプを表示</li></ul>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc3gou/?plugin=attach&amp;refer=Toukou%2FMM-DOS&amp;openfile=7.jpg" title="7.jpg"><img src="/petc3gou/?plugin=ref&amp;page=Toukou%2FMM-DOS&amp;src=7.jpg" alt="7.jpg" title="7.jpg" width="342" height="342" /></a></div>
+
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+
+<h4 id="verm1m0">Ver.1.0</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">7K2N44NX</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc3gou/?Board" title="Board (564d)">掲示板</a>へ)</p>
+<form action="/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div>
+  <input type="hidden" name="article_no" value="0" />
+  <input type="hidden" name="plugin" value="article" />
+  <input type="hidden" name="digest" value="deba5cc8cbc78830968bf669796048a0" />
+  <input type="hidden" name="refer" value="Toukou/MM-DOS" />
+  <label for="_p_article_name_0">お名前: </label>
+  <input type="text" name="name" id="_p_article_name_0" size="24" value="" placeholder="お名前" /><br />
+  <label for="_p_article_subject_0">題名: </label>
+  <input type="text" name="subject" id="_p_article_subject_0" size="60" placeholder="題名" /><br />
+  <textarea name="msg" rows="5" cols="70" placeholder="本文">
+</textarea><br />
+  <input type="submit" name="article" value="記事の投稿" />
+ </div>
+</form>
+
+<h4 id="u2ac76ab">コメント形式を変更しました。</h4>
+<blockquote><p class="quotation"><span class="noexists">MoriKawa/Midorimori<a href="/petc3gou/?cmd=edit&amp;page=MoriKawa%2FMidorimori&amp;refer=Toukou%2FMM-DOS">?</a></span> (2019/10/12 (土) 15:11:06)<br />
+<br />
+よろしくー<br /></p></blockquote>
+<ul><li><strong>MoriKawa/Midorimori(IS04)</strong> : どこにコメントしたら分からんかったら下の「良ければコメントもどぞー」へ。 (<span class="comment_date">2019/10/13 (日) 08:52:18</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : 若干戸惑うかもですけど() (<span class="comment_date">2020/01/23 (木) 07:00:55</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/MM-DOS" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="deba5cc8cbc78830968bf669796048a0" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+
+<h4 id="yac0e737">良ければコメントもどぞー</h4>
+<blockquote><p class="quotation"><span class="noexists">MoriKawa/Midorimori<a href="/petc3gou/?cmd=edit&amp;page=MoriKawa%2FMidorimori&amp;refer=Toukou%2FMM-DOS">?</a></span> (2019/09/21 (土) 16:09:28)<br />
+<br />
+良ければコメントもどぞー<br /></p></blockquote>
+<ul><li><strong>Kazusoft </strong> : Ver 1.1は？、バグ修正も頑張って下さい! (<span class="comment_date">2019/09/21 (土) 17:12:13</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : はい (<span class="comment_date">2019/09/21 (土) 21:07:17</span>)</li>
+<li><strong>どっかの〇学生（Syncled)</strong> : 改造していただきありがとう？ございます。 (<span class="comment_date">2020/01/05 (日) 21:54:43</span>)</li>
+<li><strong>MoriKawa/Midorimori(Win10)</strong> : こちらこそ(？) (<span class="comment_date">2020/01/10 (金) 20:38:27</span>)</li>
+<li><strong>MoriKawa/Midorimori</strong> : そろそろ更新しようかな (<span class="comment_date">2020/01/23 (木) 07:01:30</span>)</li></ul>
+<br />
+<form action="/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/MM-DOS" />
+  <input type="hidden" name="comment_no" value="1" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="deba5cc8cbc78830968bf669796048a0" />
+  <label for="_p_comment_name_1" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_1" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_1" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (264d)">トップページ</a></li>
+<li><a href="/petc3gou/?Beginner" title="Beginner (180d)">非公式初心者講座</a></li>
+<li><a href="/petc3gou/?Toukou" title="Toukou (1617d)">投稿プログラム</a></li>
+<li><a href="/petc3gou/?Mame" title="Mame (209d)">まめちしき</a></li>
+<li><a href="/petc3gou/?Memo" title="Memo (1d)">プチコン3号メモ</a></li>
+<li><a href="/petc3gou/?FAQ" title="FAQ (259d)">よくある質問集</a></li>
+<li><a href="/petc3gou/?Bug" title="Bug (65d)">既知の不具合</a></li>
+<li><a href="/petc3gou/?Sample" title="Sample (388d)">サンプルプログラム集</a></li>
+<li><a href="/petc3gou/?WorksLink" title="WorksLink (485d)">プチコン3号作品集</a></li>
+<li><a href="/petc3gou/?Demand" title="Demand (75d)">プチコン3号への要望</a></li>
+<li><a href="/petc3gou/?OverFlow" title="OverFlow (17d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="/petc3gou/?Chat" title="Chat (324d)">チャットルーム</a></li>
+<li><a href="/petc3gou/?Contact" title="Contact (1441d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc3gou/?Help" title="Help (855d)">ヘルプ</a></li>
+<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (511d)">プログラム投稿ルール</a></li>
+<li><a href="/petc3gou/?SandBox" title="SandBox (2h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (234d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="/petc3gou/?Link" title="Link (22h)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/02/10</h4>
+<ul>
+ <li><a href="/petc3gou/?Toukou%2FMindows" title="Mindows XP (8h)">Mindows XP</a></li>
+ <li><a href="/petc3gou/?Mame%2FMusic_Format" title="プチコン音楽広場 (10h)">プチコン音楽広場</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="プチコンmkII at 3号 ver3.1 (11h)">プチコンmkII at 3号 ver3.1</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="リズミカルおもちつきSZ 8.01 / b9.0 (11h)">リズミカルおもちつきSZ 8.01 / b9.0</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2FSmartphone_Mock" title="コメント/Toukou/Smartphone_Mock (11h)">コメント/Toukou/Smartphone_Mock</a></li>
+ <li><a href="/petc3gou/?Toukou%2FSmartphone_Mock" title="Smartphone Mock (11h)">Smartphone Mock</a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="リズミカルおもちつきΣ (13h)">リズミカルおもちつきΣ</a></li>
+ <li><a href="/petc3gou/?Toukou%2FMusicsKK" title="Musics King (15h)">Musics King</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%D7%A5%C1%A5%B8%A5%E3%A5%F3" title="コメント/Toukou/プチジャン (17h)">コメント/Toukou/プチジャン</a></li>
+ <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="コメント/Toukou/リズミカルおもちつきΣ (17h)">コメント/Toukou/リズミカルおもちつきΣ</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="Toukou/リズミカルおもちつきΣ (13h)">リズミカルおもちつきΣ<span class="counter">(60)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (18h)">弾幕音遊戯<span class="counter">(46)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTG" title="Toukou/リズミカルおもちつきTG (22h)">リズミカルおもちつきTG<span class="counter">(39)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSZ" title="Toukou/リズミカルおもちつきSZ (11h)">リズミカルおもちつきSZ 8.01 / b9.0<span class="counter">(35)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2FMindows" title="Toukou/Mindows (8h)">Mindows XP<span class="counter">(25)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter4" title="Beginner/Chapter4 (1311d)">初心者講座 :  第4章 ラベルとGOTOのはなし<span class="counter">(21)</span></a></li>
+ <li><a href="/petc3gou/?Beginner%2FChapter2" title="Beginner/Chapter2 (189d)">初心者講座 :  第2章 変数のはなし<span class="counter">(18)</span></a></li>
+ <li><a href="/petc3gou/?Sample" title="Sample (388d)">サンプルプログラム集<span class="counter">(18)</span></a></li>
+ <li><a href="/petc3gou/?Memo" title="Memo (1d)">プチコンメモ<span class="counter">(16)</span></a></li>
+ <li><a href="/petc3gou/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3mkII_at3%B9%E6" title="Toukou/プチコンmkII_at3号 (11h)">プチコンmkII at 3号 ver3.1<span class="counter">(15)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (889d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 6 人がこのサイトを見ています</li>
+<li>このページはこれまでに 432 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.039 秒  | このページの最終更新 : 2020/01/23 (木) 07:01:30  (19d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

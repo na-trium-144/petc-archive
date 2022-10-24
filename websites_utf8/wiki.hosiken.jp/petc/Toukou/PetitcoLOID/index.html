@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<title>投稿プログラム : PetitcoLOID - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : PetitcoLOID - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, QRコード, 実用ツール, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FPetitcoLOID">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FPetitcoLOID">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPetitcoLOID">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FPetitcoLOID">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : PetitcoLOID</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FPetitcoLOID">PetitcoLOID</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.050sec. -->
+<ul class="contentsx"><li><a href="#Summary">概要</a></li><li><a href="#ja03f870">PeticoLOID α3言語仕様</a><ul><li><a href="#o0024cce">正規表現(間違ってるかも…)</a></li></ul></li><li><a href="#j66fa7e5">変数について</a></li><li><a href="#n41aa2fb">フォントについて</a><ul><li><a href="#c3bc7214">ひらがなのキーボードマッピングについて</a></li></ul></li><li><a href="#sb10dbc2">MMLの注意点</a></li><li><a href="#ScreenShots">スクリーンショット・動画</a></li><li><a href="#QR">QR コード</a></li><li><a href="#List">プログラムリスト</a></li><li><a href="#Comments">CHECKER FLAG (ひとことコメント)</a></li></ul>
+<p>2012年03月20日投稿
+/ 投稿者 : sou51
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>プチコンのTALK命令を使って歌わせるツールです。<br />
+勝手に機能拡張・変更・修正して使っていただいて構いません。</p>
+<p>このプログラム自体にはデータ編集ツール機能はありません。<br />
+プログラムリスト内の@PLL、@MMLのデータを編集して好きな歌を歌わせるためのプログラムです。</p>
+
+<h3 id="ja03f870">PeticoLOID α3言語仕様</h3>
+<p>PeticoLOID α3の言語仕様は以下のようになっています。</p>
+
+<h4 id="o0024cce">正規表現(間違ってるかも…)</h4>
+<pre>([&lt;&gt;]*[CDEFGABR][+#-]?[1-9][0-9]*\.*['/|_.?!%ヲ-゜\-]+(\[([^]]|\\\])*]\])?)*</pre>
+<p>先頭から、相対オクターブ移動、音階/休符、音の長さ、発話文字列、出力文字列、となっています。</p>
+
+<h5 id="ifbba772">相対オクターブ移動</h5>
+<p>これはMMLと同じです。Oコマンドによる絶対指定はできません。<br />
+オクターブ移動しない場合は省略可能です。</p>
+
+<h5 id="kbc00616">音階/休符</h5>
+<p>これもMMLと同じです。CDEFGABで音階、Rで休符となります。<br />
+省略不可。</p>
+
+<h5 id="qb50f0d2">音の長さ</h5>
+<p>これもMMLと同様ですが、省略不可です。<br />
+仕様上1以上の数字の指定ができますし、付点もいくらでもつけられると思いますが、<br />
+あまり意味が無いことになると思います。</p>
+
+<h5 id="ud70f59d">発話文字列</h5>
+<p>TALK文で発音する文字列です。カナ文字以外では、'|_.?!%が指定出来ます。<br />
+ただしPHF変数が1の場合、末尾に自動的に音の長さに合わせた長音が付加されるため、<br />
+発話文字列が記号などで終わっていた場合、TALKでエラーになると思われます。<br />
+音階/休符で、休符を指定した場合は、不要です。(記述するとエラーになります。)</p>
+
+<h5 id="za4639c1">出力文字列</h5>
+<p>PS$に格納される文字列です。[]で囲った文字列がそのまま格納されます。<br />
+文字列に[を含めたい場合は、円マークをつけてエスケープしてください。<br />
+円マークは常に次の文字をそのまま出力するため、円マークを出力する場合は2個連続して記述してください。</p>
+
+<h3 id="j66fa7e5">変数について</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">PL$</th><td class="style_td">入力</td><td class="style_td">PetitcoLOID Languageを格納します</td></tr><tr><th class="style_th">PTMP</th><td class="style_td">入力</td><td class="style_td">テンポ(BPM)を格納します</td></tr><tr><th class="style_th">PHF</th><td class="style_td">入力</td><td class="style_td">1にすると、音の長さに応じて発話文字列の末尾に長音が追加されます。</td></tr><tr><th class="style_th">PE</th><td class="style_td">出力</td><td class="style_td">解析エラーがあると1になります</td></tr><tr><th class="style_th">PLE</th><td class="style_td">出力</td><td class="style_td">PL$末尾に到達すると1になります</td></tr><tr><th class="style_th">PW</th><td class="style_td">出力</td><td class="style_td">待機すべきフレーム数です</td></tr><tr><th class="style_th">PS$</th><td class="style_td">出力</td><td class="style_td">出力文字列が格納されます。出力文字列が無い場合は空文字列となります。</td></tr></tbody></table></div>
+
+<h3 id="n41aa2fb">フォントについて</h3>
+<p><a href="http://www.geocities.jp/littlimi/misaki.htm" rel="nofollow">美咲フォント</a>を使用しています。<br />
+美咲フォントのライセンス<br /></p>
+<pre>These fonts are free softwares.
+Unlimited permission is granted to use, copy, and distribute it, with or without modification, either commercially and noncommercially.
+THESE FONTS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY.
+これらのフォントはフリー（自由な）ソフトウエアです。
+あらゆる改変の有無に関わらず、また商業的な利用であっても、自由にご利用、複製、再配布することができますが、全て無保証とさせていただきます。 </pre>
+<p>ということなので、QRコードの方にはBGF0も付けています。
+<br />
+ひらがなもPCGにマッピングしているため、ひらがな、カタカナ、アルファベットの混在が可能です。<br />
+サンプルコードでは、出力文字列にひらがなを使用しています。</p>
+
+<h4 id="c3bc7214">ひらがなのキーボードマッピングについて</h4>
+<p>ひらがなは、キーボード上で、カタカナ入力にできるだけ対応するようにマッピングしています。<br /></p>
+
+<h5 id="d27aff18">「お」について</h5>
+<p>「お」は <span class="basic-text">★</span> にマッピングしていましたが、Ver.2.0現在、改行に化けるため、<br />
+回避策として <span class="basic-text">В</span> にもマッピングしています。</p>
+<p>実際に出力文字列の「あさひににおう」に「お」が使用されていたため、<br />
+最初のバージョンではそこが改行に化け、正しく歌えませんでした。</p>
+
+<h5 id="s084600d">拗音のマッピング</h5>
+<p>ただし、拗音のみ同じようにマッピングできないため、以下のようにしています。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th"><span class="basic-text">■</span></th><th class="style_th"><span class="basic-text">▲</span></th><th class="style_th"><span class="basic-text">▼</span></th><th class="style_th"><span class="basic-text">О</span></th><th class="style_th"><span class="basic-text">Ж</span></th><th class="style_th"><span class="basic-text">↓</span></th><th class="style_th"><span class="basic-text">ж</span></th><th class="style_th"><span class="basic-text">↑</span></th><th class="style_th"><span class="basic-text">и</span></th></tr><tr><td class="style_td">ぁ</td><td class="style_td">ぃ</td><td class="style_td">ぅ</td><td class="style_td">ぇ</td><td class="style_td">ぉ</td><td class="style_td">っ</td><td class="style_td">ゃ</td><td class="style_td">ゅ</td><td class="style_td">ょ</td></tr></tbody></table></div>
+
+<h3 id="sb10dbc2">MMLの注意点</h3>
+<p>BGMPLAYの最初にR16程度の休止を入れると、割とぴったり合うと思います。<br />
+また進むにつれて微妙に遅れるていくので、適当なタイミングで16分〜32分程度短くして調整してやってください。</p>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<p>このバージョンの動画は以下です。</p>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm17312315" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm17312315">thumb/sm17312315</a></iframe>
+</div>
+<p>以下は、旧バージョンの動画ですが、歌唱能力自体は同程度なので参考にしてください。</p>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm17302864" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm17302864">thumb/sm17302864</a></iframe>
+</div>
+<div class="nicovideo movie-wrap" style="">
+	<iframe class="nicovideo" width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm17300108" scrolling="no" frameborder="0">【ニコニコ動画】<a href="http://ext.nicovideo.jp/watch/thumb/sm17300108">thumb/sm17300108</a></iframe>
+</div>
+
+<h3 id="QR">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。<br />
+美咲フォントが設定されたBGF0データも含みます。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">1/6</th><th class="style_th">2/6</th><th class="style_th">3/6</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr0_2.png" title="qr0_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr0_2.png" alt="qr0_2.png" title="qr0_2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr1_2.png" title="qr1_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr1_2.png" alt="qr1_2.png" title="qr1_2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr2_2.png" title="qr2_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr2_2.png" alt="qr2_2.png" title="qr2_2.png" width="210" height="210" /></a></td></tr><tr><th class="style_th">4/6</th><th class="style_th">5/6</th><th class="style_th">6/6</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr3_2.png" title="qr3_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr3_2.png" alt="qr3_2.png" title="qr3_2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr4_2.png" title="qr4_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr4_2.png" alt="qr4_2.png" title="qr4_2.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FPetitcoLOID&amp;openfile=qr5_2.png" title="qr5_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FPetitcoLOID&amp;src=qr5_2.png" alt="qr5_2.png" title="qr5_2.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h3 id="List">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’　ＰｅｔｉｔｃｏＬＯＩＤ　Ｖｅｒ．Ａｌｐｈａ　３</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’　ＰＬ＄ニ　ＰｅｔｉｃｏＬＯＩＤ　Ｌａｎｇｕａｇｅヲ</li>
+<li>’　キシ゛ュツシ　＠ＰＬＴＡＬＫヲ　ヨフ゛ト</li>
+<li>’　１ツ　ハツワ　サレル。</li>
+<li>’　ＶＳＹＮＣテ゛　ＰＷフ゛ン　マッテカラ</li>
+<li>’　フタタヒ゛＠ＰＬＴＡＬＫヲ　ヨフ゛</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’　ＰＭＴＭＰ＝Ｂｅａｔ　Ｐｅｒ　Ｍｉｎｕｔｅ</li>
+<li>’　ＰＥ＝ＥＲＲＯＲノ　ハ゛アイ　１</li>
+<li>’　ＰＬＥ＝ＰＬ＄マツヒ゛ニ　トウタツスルト　１</li>
+<li>’　ＰＨＦ＝１ニスルト　ハツワ　マツヒ゛ニ”−”ツイカ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’ＰＭＴＭＰハ　ＶＳＹＮＣノ　カンケイシ゛ョウ</li>
+<li>’　ス゛レカ゛　ショウシ゛ナイ　テンホ゜ト　オンフ゜ハ</li>
+<li>’　　イカノ　ヨウニナリマス</li>
+<li>’　　　　１２３４６８ＡＢＣフ゛オンフ゜</li>
+<li>’　５０　○○○○○○○○○　Ａ＝１２フ゛</li>
+<li>’　６０　○○○○○○○○○　Ｂ＝１６フ゛</li>
+<li>’　７２　○○м○м○м○м　Ｃ＝２４フ゛</li>
+<li>’　８０　○○○○○м○мм　３フ゛＝１フ゛ノ３レンフ゜</li>
+<li>’　９０　○○м○м○○○м　６フ゛＝２フ゛ノ３レンフ゜</li>
+<li>’　９６　○○○м○мммм　１２フ゛＝４フ゛ノ３レンフ゜</li>
+<li>’１００　○○○○○○○○○　２４フ゛＝８フ゛ノ３レンフ゜</li>
+<li>’１２０　○○○○○○○м○</li>
+<li>’１４４　○○м○ммммм</li>
+<li>’１５０　○○○○○○○○○</li>
+<li>’１６０　○○○м○мммм</li>
+<li>’１８０　○○м○м○м○м</li>
+<li>’１９２　○м○м○мммм</li>
+<li>’２００　○○○○○○○м○</li>
+<li>’２２５　○○м○м○м○м</li>
+<li>’２４０　○○○○○м○мм　ＭＭＬサイタ゛イ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’　ＰｅｔｉｔｃｏＬＯＩＤ　Ｌａｎｇｕａｇｅ（ＰＬＬ）</li>
+<li>’　　　　　　　　　　　　Ｖｅｒ．Ａｌｐｈａ　３　シヨウ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>’　　オクタ−フ゛イト゛ウ　オンカイ　オンチョウ　ハツワ　モシ゛レツ</li>
+<li>’　　　テ゛、１セット。</li>
+<li>’　　オクタ−フ゛イト゛ウ：　［＜＞］？</li>
+<li>’　　オンカイ：［ＲＣＤＥＦＧＡＢ］［＋＃−］？</li>
+<li>’　　オンチョウ：［０−９］＋￥．＊</li>
+<li>’　　ハツワ：［��＿／．？！’ヲ−ン］＋</li>
+<li>’　　モシ゛レツ：（￥［．＋￥］）？</li>
+<li>’　オクタ−フ゛イト゛ウ　イカ゛イハ　ショウリャク　フカ</li>
+<li>’　キュウフノ　ハ゛アイ　ハツワ　フヨウ</li>
+<li>’　モシ゛レツ　ショウリャク　カノウ</li>
+<li>’−−−−−−−−−−−−−−−−−−−−−−−−−−−</li>
+<li>ＧＯＴＯ＠ＭＡＩＮ</li>
+<li></li>
+<li>＠ＰＬＬ</li>
+<li>ＤＡＴＡ”Ａ４サ［─┐л　─┐л］Ａ４クＢ２ラＡ４サＡ４クＢ２ラ</li>
+<li>ＤＡＴＡ”Ａ４ノ［▽дУё　─кё］Ｂ４ヤ＜Ｃ４マ＞Ｂ４モＡ４サＢ８トＡ８オＦ２モ</li>
+<li>ＤＡＴＡ”Ｅ４ミ［Т┥╂┼　┌┬Цм］Ｃ４ワＥ４タＦ４スＥ４カＥ８キ゛Ｃ８イ＞Ｂ２リ</li>
+<li>ＤＡＴＡ”＜Ａ４カ［┌┼Т┌　┐ё┌］Ｂ４ス＜Ｃ４ミ＞Ｂ４カＡ４クＢ８モＡ８オＦ２カ</li>
+<li>ＤＡＴＡ”Ｅ４ア［а─Ь◎　◎ВЯ］Ｃ４サＥ４ヒＦ４ニＥ４ニＥ８オＣ８オ＞Ｂ２ウ</li>
+<li>ＤＡＴＡ”＜Ａ４サ［─┐л　─┐л］Ａ４クＢ２ラＡ４サＡ４クＢ２ラ</li>
+<li>ＤＡＴＡ”Ｅ４ハ［Ю○─Ц┌м］Ｆ４ナＢ８サ゛Ａ８アＦ４カＥ１リ</li>
+<li>ＤＡＴＡ””</li>
+<li></li>
+<li>＠ＭＭＬ</li>
+<li>ＤＡＴＡ”Ｔ７２Ｒ１６Ｌ４ＡＡＢ２ＡＡＢ２</li>
+<li>ＤＡＴＡ”ＡＢ＜Ｃ＞ＢＡＢ８Ａ８Ｆ２</li>
+<li>ＤＡＴＡ”ＥＣＥＦＥＥ８Ｃ８＞Ｂ２</li>
+<li>ＤＡＴＡ”＜ＡＢ＜Ｃ＞ＢＡＢ８Ａ８Ｆ２</li>
+<li>ＤＡＴＡ”ＥＣＥＦＥＥ８Ｃ８＞Ｂ２</li>
+<li>ＤＡＴＡ”＜ＡＡＢ２ＡＡＢ２</li>
+<li>ＤＡＴＡ”ＥＦＢ８Ａ８Ｆ４Ｅ１</li>
+<li>ＤＡＴＡ　０</li>
+<li></li>
+<li>＠ＭＡＩＮ</li>
+<li>ＣＬＥＡＲ</li>
+<li>ＤＩＭ　Ｎ（１４），ＮＭ（７）</li>
+<li>ＲＥＳＴＯＲＥ　＠ＮＤＡＴＡ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　１３：ＲＥＡＤ　Ｎ（Ｉ）：ＮＥＸＴ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　６：ＲＥＡＤ　ＮＭ（Ｉ）：ＮＥＸＴ</li>
+<li>ＢＧＭＳＥＴＤ　１２８，＠ＭＭＬ</li>
+<li></li>
+<li>ＧＯＳＵＢ　＠ＰＬＩＮＩＴ</li>
+<li>ＲＥＳＴＯＲＥ　＠ＰＬＬ</li>
+<li>ＲＥＡＤ　ＰＬ＄</li>
+<li>ＶＳＹＮＣ　０</li>
+<li>ＢＧＭＰＬＡＹ　１２８</li>
+<li>＠ＰＬＰ</li>
+<li>ＧＯＳＵＢ　＠ＰＬＴＡＬＫ</li>
+<li>ＩＦ　ＰＳ＄！＝””　ＴＨＥＮ　？ＰＳ＄</li>
+<li>ＶＳＹＮＣ　ＰＷ</li>
+<li>ＩＦ　！ＰＥ　ＡＮＤ　！ＰＬＥ　ＴＨＥＮ　ＧＯＴＯ＠ＰＬＰ</li>
+<li>ＲＥＡＤ　ＰＬ＄：Ｐ＝０：ＰＬＥ＝０</li>
+<li>ＩＦ　ＬＥＮ（ＰＬ＄）＞０　ＴＨＥＮ　＠ＰＬＰ</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>＠ＰＬＩＮＩＴ</li>
+<li>Ｐ＝０：ＰＬ＄＝””：ＰＭ＝０：ＰＯ＝０：ＰＷ＝０</li>
+<li>ＰＥ＝０：ＰＴＭＰ＝７２：ＰＨＦ＝１：ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＰＬＴＡＬＫ</li>
+<li>ＰＬＥ＝（Ｐ＞＝ＬＥＮ（ＰＬ＄））：ＰＥ＝０</li>
+<li>ＩＦ　ＰＬＥ　ＡＮＤ　ＰＭ＜３　ＴＨＥＮ　ＰＷ＝０：ＲＥＴＵＲＮ</li>
+<li>ＧＯＳＵＢ＠ＰＬＲＩ</li>
+<li>ＧＯＴＯ　”＠ＰＭ”＋ＳＴＲ＄（ＰＭ）</li>
+<li></li>
+<li>’オンカイ</li>
+<li>＠ＰＭ０</li>
+<li>ＩＦ　Ｃ＝＝６０　ＴＨＥＮ　ＰＯ＝ＰＯ＋（ＰＯ＜２）：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li>ＩＦ　Ｃ＝＝６２　ＴＨＥＮ　ＰＯ＝ＰＯ−（ＰＯ＞−２）：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li>ＩＦ　Ｃ＝＝８２　ＴＨＥＮ　ＰＲ＝１：ＰＭ＝１：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li>ＩＦ　Ｃ＜６５　ＯＲ　Ｃ＞７１　ＴＨＥＮ　？”ＥＲＲＯＲ０＠”；Ｐ；”：”；ＣＨＲ＄（Ｃ）：ＰＥ＝１：ＲＥＴＵＲＮ</li>
+<li>ＰＭ＝１：ＰＲ＝０：Ｃ１＝Ｃ−６５：ＧＯＳＵＢ＠ＰＬＲ</li>
+<li>ＩＦ　Ｃ！＝４３　ＡＮＤ　Ｃ！＝３５　ＡＮＤ　Ｃ！＝４５　ＴＨＥＮ　ＰＴ＝ＰＯ＊６９０＋Ｎ（ＮＭ（Ｃ１））：ＧＯＴＯ　＠ＰＬＴＡＬＫ</li>
+<li>Ｐ＝Ｐ＋１：ＰＴ＝ＰＯ＊６９０＋Ｎ（ＮＭ（Ｃ１）−（Ｃ＝＝４５）＋（Ｃ＝＝４３　ＯＲ　Ｃ＝＝３５））</li>
+<li>ＧＯＴＯ　＠ＰＬＴＡＬＫ</li>
+<li></li>
+<li>’オンチョウ</li>
+<li>＠ＰＭ１</li>
+<li>ＩＦ　Ｃ＜４９　ＯＲ　Ｃ＞５７　ＴＨＥＮ　？”ＥＲＲＯＲ１＠”；Ｐ；”：”；ＣＨＲ＄（Ｃ）：ＰＥ＝１：ＲＥＴＵＲＮ</li>
+<li>ＰＭ＝２＋ＰＲ：Ｃ１＝Ｃ−４８</li>
+<li>＠ＰＭ１Ａ</li>
+<li>ＧＯＳＵＢ＠ＰＬＲ</li>
+<li>ＩＦ　Ｃ！＝４６　ＡＮＤ（Ｃ＜４８　ＯＲ　Ｃ＞５７）ＴＨＥＮ　ＰＷ＝１４４００／ＰＴＭＰ／Ｃ１：ＰＨ＝ＦＬＯＯＲ（１６／Ｃ１）−１：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＩＦ　Ｃ！＝４６　ＴＨＥＮ　Ｃ１＝Ｃ１＊１０＋Ｃ−４８：ＧＯＴＯ　＠ＰＭ１Ａ</li>
+<li>Ｃ２＝１．５：Ｃ３＝４</li>
+<li>＠ＰＭ１Ｂ</li>
+<li>ＧＯＳＵＢ＠ＰＬＲ</li>
+<li>ＩＦ　Ｃ＝＝４６　ＴＨＥＮ　Ｐ＝Ｐ＋１：Ｃ２＝Ｃ２＋１／Ｃ３：Ｃ３＝Ｃ３＋１：ＧＯＴＯ＠ＰＭ１Ｂ</li>
+<li>ＰＷ＝１４４００／ＰＴＭＰ／Ｃ１＊Ｃ２：ＰＨ＝ＦＬＯＯＲ（１６／Ｃ１＊Ｃ２）−１：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li></li>
+<li>’ハツオンモシ゛レツ</li>
+<li>＠ＰＭ２</li>
+<li>Ａ＝Ｃ！＝９５　ＡＮＤ　Ｃ！＝３９　ＡＮＤ　Ｃ！＝３７　ＡＮＤ　Ｃ！＝４７　ＡＮＤ　Ｃ！＝１２４　ＡＮＤ　Ｃ！＝４６　ＡＮＤ　Ｃ！＝３３　ＡＮＤ　Ｃ！＝６３　ＡＮＤ（Ｃ＜１６６　ＯＲ　Ｃ＞２２３）</li>
+<li>Ａ＝Ａ　ＡＮＤ　Ｃ！＝４５</li>
+<li>ＩＦ　Ａ　ＴＨＥＮ　？”ＥＲＲＯＲ２＠”Ｐ”：”ＣＨＲ＄（Ｃ）：ＰＥ＝１：ＲＥＴＵＲＮ</li>
+<li>ＰＴ＄＝Ｃ＄</li>
+<li>＠ＰＭ２Ａ</li>
+<li>ＧＯＳＵＢ＠ＰＬＲ</li>
+<li>Ｂ＝（Ｃ＜１６６　ＯＲ　Ｃ＞２２３）</li>
+<li>Ａ＝Ｃ！＝９５　ＡＮＤ　Ｃ！＝３９　ＡＮＤ　Ｃ！＝３７　ＡＮＤ　Ｃ！＝４７　ＡＮＤ　Ｃ！＝１２４　ＡＮＤ　Ｃ！＝４６　ＡＮＤ　Ｃ！＝３３　ＡＮＤ　Ｃ！＝６３　ＡＮＤ　Ｂ　ＡＮＤ　Ｃ！＝４５</li>
+<li>ＩＦ　！Ａ　ＴＨＥＮ　Ｐ＝Ｐ＋１：ＰＴ＄＝ＰＴ＄＋Ｃ＄：ＧＯＴＯ＠ＰＭ２Ａ</li>
+<li>ＰＭ＝３</li>
+<li>ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li></li>
+<li>’シュツリョクモシ゛レツ</li>
+<li>＠ＰＭ３</li>
+<li>ＰＳ＄＝””</li>
+<li>ＩＦ　Ｃ！＝９１　ＴＨＥＮ　Ｐ＝Ｐ−１：ＰＭ＝４＋ＰＲ：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li>＠ＰＭ３Ａ</li>
+<li>ＧＯＳＵＢ＠ＰＬＲ</li>
+<li>ＩＦ　Ｃ＝＝０　ＴＨＥＮ　ＰＥ＝１：ＲＥＴＵＲＮ</li>
+<li>ＩＦ　Ｃ＝＝９２　ＴＨＥＮ　Ｐ＝Ｐ＋１：ＧＯＳＵＢ＠ＰＬＲ：ＰＳ＄＝ＰＳ＄＋Ｃ＄：ＧＯＴＯ＠ＰＭ３Ａ</li>
+<li>ＩＦ　Ｃ！＝９３　ＴＨＥＮ　Ｐ＝Ｐ＋１：ＰＳ＄＝ＰＳ＄＋Ｃ＄：ＧＯＴＯ＠ＰＭ３Ａ</li>
+<li>Ｐ＝Ｐ＋１：ＰＭ＝４＋ＰＲ：ＧＯＴＯ＠ＰＬＴＡＬＫ</li>
+<li></li>
+<li>＠ＰＭ４</li>
+<li>’ハツオン</li>
+<li>Ｔ＄＝”＠Ｅ１６＠Ｎ”＋ＳＴＲ＄（ＰＴ）＋ＰＴ＄＋”−”＊（ＰＨ＋（Ｃ１＝＝０））＊ＰＨＦ</li>
+<li>’？Ｔ＄</li>
+<li>ＴＡＬＫ　Ｔ＄</li>
+<li>＠ＰＭ５</li>
+<li>ＰＷＭ＝ＰＷＭ＋ＰＷ％１：ＰＭ２＝（ＰＷＭ＞０）＊（ＦＬＯＯＲ（ＰＷＭ））：ＰＷ＝ＰＷ＋ＰＭ２：ＰＷＭ＝ＰＷＭ−ＰＭ２</li>
+<li>Ｐ＝Ｐ−１＋（Ｐ＞＝ＬＥＮ（ＰＬ＄））：ＰＭ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＰＬＲ</li>
+<li>ＩＦ　Ｐ＞＝ＬＥＮ（ＰＬ＄）　ＴＨＥＮ　Ｃ＄＝””：Ｃ＝０　ＲＥＴＵＲＮ</li>
+<li>Ｃ＄＝ＭＩＤ＄（ＰＬ＄，Ｐ，１）：Ｃ＝ＡＳＣ（Ｃ＄）</li>
+<li>’？Ｃ＄；</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＬＲＩ</li>
+<li>ＩＦ　Ｐ＞＝ＬＥＮ（ＰＬ＄）　ＴＨＥＮ　Ｃ＄＝””：Ｃ＝０　ＲＥＴＵＲＮ</li>
+<li>Ｃ＄＝ＭＩＤ＄（ＰＬ＄，Ｐ，１）：Ｃ＝ＡＳＣ（Ｃ＄）</li>
+<li>’？Ｃ＄”＊”；</li>
+<li>Ｐ＝Ｐ＋１：ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＮＤＡＴＡ</li>
+<li>ＤＡＴＡ　１４０３，１４４７，１５１０，１５５９，１６２６</li>
+<li>ＤＡＴＡ　１６８６，１７４５，１７９２，１８５８，１９１６</li>
+<li>ＤＡＴＡ　１９７１，２０３１，２０９３，２１３７</li>
+<li>＠ＮＭＡＰ</li>
+<li>ＤＡＴＡ　１０，１２，１，３，５，６，８</li>
+</ol></code></div></div>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3342d)">掲示板</a>へ)</p>
+<ul><li><strong>バイカウントメルビル</strong> : うぽつー！ (<span class="comment_date">2012/03/21 (水) 12:39:21</span>)</li>
+<li><strong>名無しさん</strong> : うぽつ( ^_^)／ (<span class="comment_date">2012/03/21 (水) 14:34:21</span>)</li>
+<li><strong>アレクサンドロ・ハーバー（仮）</strong> : す〜げ〜な〜 (<span class="comment_date">2012/03/21 (水) 22:28:37</span>)</li>
+<li><strong>名無しさん</strong> : これMkIIかどうかの判定入れないとだめでないかなぁ… (<span class="comment_date">2012/03/21 (水) 22:38:31</span>)</li>
+<li><strong>名無しさん</strong> : ↑どうしてそんなことをする必要があるんだ? 配信終了している初代にこのプログラムを入力する人がいるとは思えないし、たとえ入れたとしても、どうせTALKを実行しようとした時点でエラーになるし。 (<span class="comment_date">2012/03/22 (木) 05:37:38</span>)</li>
+<li><strong>名無しさん</strong> : スゴイ (<span class="comment_date">2012/03/22 (木) 13:50:09</span>)</li>
+<li><strong>名無しさん</strong> : 混在表示って<a href="http://d.hatena.ne.jp/eidaht/20120129/1327802409" rel="nofollow">http://d.hatena.ne.jp/eidaht/20120129/1327802409</a>これと同じようなもの? (<span class="comment_date">2012/03/22 (木) 15:38:06</span>)</li>
+<li><strong>sou51</strong> : PCGにひらがなを置いているという点では似ています。リンク先では、カナに対応した位置にシフトさせて配置していますが、PeticoLOID同梱のBGFではPCGキーボードで入力しやすいように配置しているので文字コード順だとバラバラな並びです。処理は全く違います。リンク先では\H、\Kでひらがなモード、カタカナモードを切り替えて、カナ文字をシフトしたりしなかったりしていますが、プチコロイド同梱のフォントは単にPCGを自分で入力するだけです。 (<span class="comment_date">2012/03/22 (木) 22:21:33</span>)</li>
+<li><strong>sou51</strong> : んー、解析処理がちょっと重たいかなー。微妙に遅れていくかも。 (<span class="comment_date">2012/03/22 (木) 23:04:58</span>)</li>
+<li><strong>名無しさん</strong> : プチコロイドって名前どこにも歌う要素が入ってないけどいいですね。 (<span class="comment_date">2012/03/23 (金) 01:38:54</span>)</li>
+<li><strong>ななしさん</strong> : ↑おそらく某DTMソフトのリスペクトだろうｗ (<span class="comment_date">2012/03/23 (金) 22:20:15</span>)</li>
+<li><strong>sou51</strong> : プチカロイドにしちゃうとプチコン色が薄くなっちゃう感じがしたので、&quot;プチコ&quot;まで引っ張った感じ。コでもCが被ってたりするし。 (<span class="comment_date">2012/03/23 (金) 23:15:13</span>)</li>
+<li><strong>sou51</strong> : 逐次解析じゃなくて、一括解析した後、再生するような改造をしてみたけど、ズレはほぼ変わらない感じだった。VSYNCだけで同期させるのはこの辺が限界なのかなー (<span class="comment_date">2012/03/23 (金) 23:16:17</span>)</li>
+<li><strong>名無しさん</strong> : これって、さくらの音楽がきけるプログラムdayona  (<span class="comment_date">2012/03/24 (土) 17:43:50</span>)</li>
+<li><strong>名無しさん</strong> : さくらがきけただけ (<span class="comment_date">2012/03/24 (土) 19:35:14</span>)</li>
+<li><strong>sou51</strong> : データ部分(@PLL、@MML)にそれぞれプチコロイド用の記述とMMLを記述すれば、好きなように歌わせることができます。「プログラムを作る」からロードして、該当データ部分を書き換えてお楽しみください。 (<span class="comment_date">2012/03/25 (日) 12:29:21</span>)</li>
+<li><strong>ロジウム</strong> : このプログラムの題名がS51PTCL3で、PTCLはプチコロイドのことだと思うの (<span class="comment_date">2012/03/25 (日) 08:56:43</span>)</li>
+<li><strong>ロジウム</strong> : ですがS51はなんですか? (<span class="comment_date">2012/03/25 (日) 08:57:35</span>)</li>
+<li><strong>sou51</strong> : S51は単に、自分のハンドルから取ってるだけです。(大量になったときに作者ごとにまとめたりできるので) (<span class="comment_date">2012/03/25 (日) 12:31:21</span>)</li>
+<li><strong>ロジウム</strong> : なるほど (<span class="comment_date">2012/03/25 (日) 18:32:15</span>)</li>
+<li><strong>名無しさん</strong> : コロイド溶液? (<span class="comment_date">2012/03/28 (水) 12:04:47</span>)</li>
+<li><strong>ロジウム</strong> : えっと、QRコードに美咲フォントはどうやって入れたんですか? (<span class="comment_date">2012/03/29 (木) 09:51:33</span>)</li>
+<li><strong>sou51</strong> : BGF0をパッケージングしただけですよー。SAVE&quot;S51PTCL3&quot;,&quot;1000&quot; (<span class="comment_date">2012/03/31 (土) 20:05:22</span>)</li>
+<li><strong>sou51</strong> : ボーカルというにはあまりに弱いので、Cだけ重複しとけばいいかという考えです。いずれにしても命令形で文句言われる筋合いは無いと思っています。 (<span class="comment_date">2012/04/06 (金) 23:55:42</span>)</li>
+<li><strong>カービィ★KIRBY</strong> : うお、スゲー！ プチコンが歌った！ (<span class="comment_date">2012/06/03 (日) 13:16:26</span>)</li>
+<li><strong>Lv100</strong> : 動画が見れない… (<span class="comment_date">2012/06/03 (日) 15:56:42</span>)</li>
+<li><strong>名無しさん</strong> : ↑　確かに、ページに埋め込んだ方がいいかもしれません。 (<span class="comment_date">2015/01/10 (土) 22:49:23</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/PetitcoLOID" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="6cdc25777a442045256382a25127d0ca" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (881d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1988d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2932d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1864d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1875d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2326d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2526d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2096d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1187d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (545d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2319d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2058d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2525d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (18h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (76d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (16d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (32d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (48d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (70d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (76d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (99d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (99d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (165d)">Petit Slash II</a></li>
+</ul>
+<h4>2021/04/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (178d)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (232d)">編集の練習用ページ</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 2 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.054 秒  | このページの最終更新 : 2016/02/20 (土) 20:04:54  (2068d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

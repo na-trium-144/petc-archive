@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 2，10，16進数変換機 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 2，10，16進数変換機 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 2，10，16進数変換機</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1">2,10,16進数変換機</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.019sec. -->
+<div class="contents">
+<ul><li><a href="#n041d178">  概要 </a></li>
+<li><a href="#c3661055">  説明 </a></li>
+<li><a href="#g0f8abcc">  その他 </a></li>
+<li><a href="#r7c7e3d6">  QRコード </a></li>
+<li><a href="#o5bb6e7b">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+
+<p>2013年2月15日投稿</p>
+
+<p>投稿者 : mochi</p>
+
+<p><span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> </span></p>
+
+<h3 id="n041d178">概要</h3>
+<p>このプログラムは、２進数、１０進数、１６進数をそれぞれ変換出来るプログラムです。</p>
+
+<h3 id="c3661055">説明</h3>
+<p>2進数と16進数は、コンピューターでよく使われる数です。</p>
+<p>10進数は、よく身近に使ってる数字です。</p>
+<p>では、プログラムの説明をします。</p>
+<p>モードは全部で６種類あります。</p>
+<p>2進数→10進数、2進数→16進数</p>
+<p>10進数→2進数、10進数→16進数</p>
+<p>16進数→10進数、16進数→2進数</p>
+<p>2進数→10進数は、モード選択後、2進数を入力してください。</p>
+<p>入力後、2進数で入力した値が10進数に変換されて表示されます。</p>
+<p>2進数→16進数は、モード選択後、2進数を入力すると、その入力した値が16進数に変換されて表示されます。</p>
+<p>10進数→2進数は、モード選択後、10進数を入力し、その入力した値が2進数に変換されて表示されます。</p>
+<p>10進数→16進数は、モード選択後、10進数を入力してください。</p>
+<p>入力後、その10進数を入力した値が16進数に変換されて表示されます。</p>
+<p>※10進数からの変換は、数によって変換に時間がかかる場合があります。</p>
+<p>16進数→10進数は、モード選択後、16進数を入力し、その入力した値が10進数に変換して表示されます。</p>
+<p>16進数→2進数は、モード選択後、16進数を入力し、その入力した値が2進数に変換されて表示されます。</p>
+<p>10進数からの変換は、プチコンでの最大値524287まで変換出来ます。</p>
+<p>2進数、16進数からの変換の場合は、10進数の524287より上になると、０表示されます。</p>
+
+<h3 id="g0f8abcc">その他</h3>
+<p>もし、違う値に変換された場合は、コメントにて報告ください。</p>
+
+<h3 id="r7c7e3d6">QRコード</h3>
+<p>コメント報告ありがとうございます。</p>
+<p>新しく改良しました↓既に持っている人は上書きしてください。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">PRG:HENKAN</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1&amp;openfile=henkan_2.png" title="henkan_2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F2%2C10%2C16%BF%CA%BF%F4%CA%D1%B4%B9%B5%A1&amp;src=henkan_2.png" alt="henkan_2.png" title="henkan_2.png" width="290" height="870" /></a></td></tr></tbody></table></div>
+
+<h3 id="o5bb6e7b">CHECKER FLAG (ひとことコメント)</h3>
+<ul><li><strong>いぬまろ</strong> : 16から10に変える時数字がおかしいのでは？ (<span class="comment_date">2013/02/14 (木) 16:56:13</span>)</li>
+<li><strong>名無しさん</strong> : もっとも短くできそう (<span class="comment_date">2013/02/14 (木) 21:11:27</span>)</li>
+<li><strong>名無しさん</strong> : マイナス反映されt (<span class="comment_date">2013/02/14 (木) 21:50:37</span>)</li>
+<li><strong>名無しさん</strong> : UIの改良を頼みたいとこです。 (<span class="comment_date">2013/02/18 (月) 03:08:22</span>)</li>
+<li><strong>mochi</strong> : UIの改良とは？ (<span class="comment_date">2013/03/02 (土) 18:09:25</span>)</li>
+<li><strong>12さいくん(13)</strong> : UI=ユーザーインターフェイス。デザインの改良って意味ですかね。 (<span class="comment_date">2014/05/06 (火) 12:38:15</span>)</li></ul>
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/2,10,16進数変換機" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="bee327d79e757bdf355d06d84d9166ab" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (552d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (1660d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2603d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1536d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1546d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (1998d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2198d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (1768d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (859d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (217d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (1991d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (1730d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2197d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (12h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (1560d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2020/09/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%A4%A5%F3%A5%B9%A5%A4%A1%BC%A5%D1" title="マインスイーパ (83d)">マインスイーパ</a></li>
+</ul>
+<h4>2020/08/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (105d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2020/07/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FRENGOKU%20LIBRARY" title="RENGOKU LIBRARY (124d)">RENGOKU LIBRARY</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM" title="マリオBGM (124d)">マリオBGM</a></li>
+</ul>
+<h4>2020/06/21</h4>
+<ul>
+ <li><a href="/petc/?Mame%2FPTCFileSystem" title="PTCファイル、mkIIのQRコード仕様と内部コード (157d)">PTCファイル、mkIIのQRコード仕様と内部コード</a></li>
+</ul>
+<h4>2020/05/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="太鼓の○人 (205d)">太鼓の○人</a></li>
+</ul>
+<h4>2020/04/30</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="連鎖Simulator (とことんぷ○ぷ○) (208d)">連鎖Simulator (とことんぷ○ぷ○)</a></li>
+</ul>
+<h4>2020/04/22</h4>
+<ul>
+ <li><a href="/petc/?OverFlow" title="OFコーナー (217d)">OFコーナー</a></li>
+</ul>
+<h4>2020/04/14</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FNa%A4%CEmkII%BA%EE%C9%CA%BD%B8" title="NaのmkII作品集 (224d)">NaのmkII作品集</a></li>
+</ul>
+<h4>2019/12/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%A5%A8%A5%E9%A1%BC%CB%C9%BB%DF%A5%EB%A1%BC%A5%C1%A5%F3" title="ファイルエラー防止ルーチン (336d)">ファイルエラー防止ルーチン</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.023 秒  | このページの最終更新 : 2016/02/28 (日) 22:49:33  (1731d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

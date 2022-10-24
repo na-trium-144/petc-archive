@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : OTYAX - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : OTYAX - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, OSもどき, ツール, QRコード, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FOTYAX">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FOTYAX">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FOTYAX">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FOTYAX">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : OTYAX</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FOTYAX">OTYAX</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.100sec. -->
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">長い
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="contents">
+<ul><li><a href="#s6fb5f68"> 変更点 </a>
+<ul><li><a href="#je23be6b"> タスクを開き過ぎると以後新しくタスクを作成できなくなっていた問題を修正 </a></li>
+<li><a href="#p1e5081e"> タスクを開き過ぎるとシステムタスクが侵食される問題を修正 </a></li>
+<li><a href="#a6be7423"> CAVE,MINE,GAME1,INVなどでウィンドウの一部を画面外に移動すると表示がおかしくなる問題を修正(GCOPYの仕様) </a></li>
+<li><a href="#be7d5442"> POKOPOKOで時計が消えなくなっていた問題を修正 </a></li>
+<li><a href="#b083acb4"> POKOPOKOを二回目に起動するとエラーが出ていた問題を修正 </a></li>
+<li><a href="#oed1302d"> POKOPOKOでキャラの位置がずれていたため修正 </a></li>
+<li><a href="#c8f0e3b4"> HTNPでWINFLGが2じゃなくても描画される問題を修正 </a></li>
+<li><a href="#w991bb69"> COMを終了しても文字が画面に残る問題を修正 </a></li>
+<li><a href="#wd37cf59"> MEVで文字とテキストボックスの位置が被っていたため修正 </a></li>
+<li><a href="#mcad52f0"> LEDで1行目の状態でUPを押すとエラーが出ていた問題を修正 </a></li>
+<li><a href="#l151c63d"> CAVEMでスコアがオーバーフローする問題を修正 </a></li>
+<li><a href="#h881349b"> タスクバーの表示の負荷を減らした </a></li>
+<li><a href="#i56144dc"> タスクバーでアクティブタスクは白くなるようにセーブを忘れていたため再実装 </a></li>
+<li><a href="#m7cf2b85"> タスクを限界まで起動すると閉じても開けなくなっていた問題を修正 </a></li>
+<li><a href="#j641cb09"> タスクを限界まで起動するとシステムタスクを侵食していた問題を修正 </a></li>
+<li><a href="#o0e4291f"> MINEでアクティブじゃなくてもクリックできる問題を修正 </a></li>
+<li><a href="#x82ba90f"> 引き継ぎプログラムに不具合があったので修正 </a></li>
+<li><a href="#q78ce4f1"> @WINBUFFCPYを追加 </a></li>
+<li><a href="#z1102151"> @WINBUFFCPY2を追加 </a></li>
+<li><a href="#w444ede5"> EXITでボタンを触れなかった問題を修正 </a></li>
+<li><a href="#c97d49e2"> EXITを終了するとウィンドウサイズがおかしくなることが有った問題を修正 </a></li>
+<li><a href="#h2266d6d"> セーブデータを引き継げるようになった </a></li>
+<li><a href="#ydbb4bf6"> 今までマウスはSPSをコピーしてたがリソースを使用できるようになった </a></li>
+<li><a href="#ed1765fb"> タスクバーが少しまともに </a></li>
+<li><a href="#z379204b"> タスクバーでアクティブなタスクを白くするようにした </a></li>
+<li><a href="#bbf271d8"> CLOCKがRESIZEに対応 </a></li>
+<li><a href="#c28d9e51"> @WINTXTBOXのカーソルが点滅するように </a></li>
+<li><a href="#dbf062a9"> @WINTXTBOXでカーソルをマウスで選択できるように </a></li>
+<li><a href="#m35dc743"> @WINBTNでWINDOWの移動中でもボタンが反応していたのを修正 </a></li>
+<li><a href="#je7e90c9"> RUNがRESIZEに対応 </a></li>
+<li><a href="#p9c392f3"> RUNのTXTBOXでラベルの限界以上は文字が打てないように修正 </a></li>
+<li><a href="#oa28309a"> @WINFLAGの動作が変更 </a></li>
+<li><a href="#t0ab3917"> @WINDOWSの動作が変更 </a></li>
+<li><a href="#z0f7af36"> @WINRESIZEを追加 </a></li>
+<li><a href="#p1533c7b"> @WINTXTBOXのバグを修正 </a></li>
+<li><a href="#p706afe4"> CAVEでゲームオーバー時のメッセージがおかしかった問題を修正 </a></li>
+<li><a href="#d557d682"> アプリS_Vで文章が途切れていた問題を修正 </a></li>
+<li><a href="#g2b8332d"> WINDOWDESIGNがNORMALの時タイトルバーの文字色がおかしくなる事がある問題を修正 </a></li>
+<li><a href="#vf697a26"> WINDOWの移動の仕様変更に成功 </a></li>
+<li><a href="#q8f96497"> アプリSNOTE2を追加 </a></li>
+<li><a href="#kb98ca29"> タスクバーの描画優先順位を変更 </a></li>
+<li><a href="#n332fbb0"> 非アクティブウィンドウでもボタンにマウスが反応していた問題を修正 </a></li>
+<li><a href="#j623be8a"> @WINEXEのOTYAXのシステム変数書き換えるタイミングをずらした </a></li>
+<li><a href="#cefb3733"> デフォルトデザインのNORMALでWINDOWの範囲外をクリックしても非アクティブ化にならなかった問題を修正 </a></li>
+<li><a href="#k237d832"> タスクバーを修正した際EXITを開くとタスクバーが点滅していた問題を修正 </a></li>
+<li><a href="#g3f18336"> メッセージの追加 </a>
+<ul><li><a href="#g8098ed4"> WINMES$[TSKMAX,WINMESMAX] </a></li>
+<li><a href="#leaa87f2"> WINMES_ID[TSKMAX,WINMESMAX] </a></li>
+<li><a href="#m10eb710"> WINMES_I[TSKMAX] </a></li>
+<li><a href="#bffa6350"> @WINNEW_MES </a></li>
+<li><a href="#l27fa004"> @WINRECV_MES </a></li>
+<li><a href="#e98afe7b"> @WINSEND_MES </a></li></ul></li>
+<li><a href="#k691618f"> 相互変換API </a>
+<ul><li><a href="#wa00aaec"> @WINNAME2ID </a></li>
+<li><a href="#if0a9698"> @WINID2TSK </a></li>
+<li><a href="#j62e799d"> タスク番号-&gt;タスク名 </a></li>
+<li><a href="#bb552996"> タスク番号-&gt;ID </a></li></ul></li>
+<li><a href="#d577b628"> IDの追加 </a>
+<ul><li><a href="#t15228e2"> WINID[TSKMAX] </a></li></ul></li>
+<li><a href="#vb99e5cd"> タスクマネージャ </a></li></ul></li>
+<li><a href="#c2046631">  概要 </a>
+<ul><li><a href="#g5fc314c">  アプリ </a></li></ul></li>
+<li><a href="#a9d24c40">  スクリーンショット・動画 </a></li>
+<li><a href="#ee966fa6">  QR コード </a></li>
+<li><a href="#j78b09d9"> アプリの仕様など </a></li>
+<li><a href="#o5643191"> マウスカーソルの変え方 </a></li>
+<li><a href="#c52169a4">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+</td></tr></table>
+<p>2013年03月09日投稿
+/ 投稿者 : otya
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=OS%A4%E2%A4%C9%A4%AD">OSもどき</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="s6fb5f68">変更点</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">変更点
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+
+<h4 id="je23be6b">タスクを開き過ぎると以後新しくタスクを作成できなくなっていた問題を修正</h4>
+
+<h4 id="p1e5081e">タスクを開き過ぎるとシステムタスクが侵食される問題を修正</h4>
+
+<h4 id="a6be7423">CAVE,MINE,GAME1,INVなどでウィンドウの一部を画面外に移動すると表示がおかしくなる問題を修正(GCOPYの仕様)</h4>
+
+<h4 id="be7d5442">POKOPOKOで時計が消えなくなっていた問題を修正</h4>
+
+<h4 id="b083acb4">POKOPOKOを二回目に起動するとエラーが出ていた問題を修正</h4>
+
+<h4 id="oed1302d">POKOPOKOでキャラの位置がずれていたため修正</h4>
+
+<h4 id="c8f0e3b4">HTNPでWINFLGが2じゃなくても描画される問題を修正</h4>
+
+<h4 id="w991bb69">COMを終了しても文字が画面に残る問題を修正</h4>
+
+<h4 id="wd37cf59">MEVで文字とテキストボックスの位置が被っていたため修正</h4>
+
+<h4 id="mcad52f0">LEDで1行目の状態でUPを押すとエラーが出ていた問題を修正</h4>
+
+<h4 id="l151c63d">CAVEMでスコアがオーバーフローする問題を修正</h4>
+
+<h4 id="h881349b">タスクバーの表示の負荷を減らした</h4>
+
+<h4 id="i56144dc">タスクバーでアクティブタスクは白くなるようにセーブを忘れていたため再実装</h4>
+
+<h4 id="m7cf2b85">タスクを限界まで起動すると閉じても開けなくなっていた問題を修正</h4>
+
+<h4 id="j641cb09">タスクを限界まで起動するとシステムタスクを侵食していた問題を修正</h4>
+
+<h4 id="o0e4291f">MINEでアクティブじゃなくてもクリックできる問題を修正</h4>
+
+<h4 id="x82ba90f">引き継ぎプログラムに不具合があったので修正</h4>
+
+<h4 id="q78ce4f1">@WINBUFFCPYを追加</h4>
+<p>BF=バッファ<br class="spacer" />
+BF_X,BF_Y 始点座標<br class="spacer" />
+BF_X2,BF_Y2 終点座標<br class="spacer" />
+コピー場所はWFX,WFY固定。それ以外の場所は@WINBUFFCPY2を<br class="spacer" /></p>
+
+<h4 id="z1102151">@WINBUFFCPY2を追加</h4>
+<p>BF=バッファ<br class="spacer" />
+BF_X,BF_Y 始点座標<br class="spacer" />
+BF_X2,BF_Y2 終点座標<br class="spacer" />
+BF_X3,BF_Y3 コピーされる座標<br class="spacer" />
+ウィンドウの相対座標で実際は+WFX,+WFYされるので画面からの座標で表示する際は-WFX,-WFYして渡すこと<br class="spacer" /></p>
+
+<h4 id="w444ede5">EXITでボタンを触れなかった問題を修正</h4>
+<p>WINFLG[]しか設定してなくてWINBTNはWINFLGを見ていた</p>
+
+<h4 id="c97d49e2">EXITを終了するとウィンドウサイズがおかしくなることが有った問題を修正</h4>
+<p>TSKが初期化されていなかった</p>
+
+<h4 id="h2266d6d">セーブデータを引き継げるようになった</h4>
+<p>文字数が少ないと引き継ぐ
+そのせいでおかしなデータになった場合はDELETE&quot;MEM:OTWINI&quot;を</p>
+
+<h4 id="ydbb4bf6">今までマウスはSPSをコピーしてたがリソースを使用できるようになった</h4>
+<p>引き継ぎはそのため<br class="spacer" />
+その場合</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">0</td><td class="style_td">通常</td></tr><tr><td class="style_td">1</td><td class="style_td">選択</td></tr><tr><td class="style_td">2</td><td class="style_td">処理中</td></tr></tbody></table></div>
+<p>で並んでいる必要がある</p>
+
+<h4 id="ed1765fb">タスクバーが少しまともに</h4>
+<p>RUN  TSKの状態でTSKをクリックすると<br class="spacer" />
+TSK  RUNになってたのを修正<br class="spacer" /></p>
+
+<h4 id="z379204b">タスクバーでアクティブなタスクを白くするようにした</h4>
+<p>これによってわかりやすくなった</p>
+
+<h4 id="bbf271d8">CLOCKがRESIZEに対応</h4>
+<p>大きさに応じて時計のサイズが変わる</p>
+
+<h4 id="c28d9e51">@WINTXTBOXのカーソルが点滅するように</h4>
+<p>ただしMAINCNTLを利用した簡易的なもの</p>
+
+<h4 id="dbf062a9">@WINTXTBOXでカーソルをマウスで選択できるように</h4>
+<p>テキスト選択は未実装</p>
+
+<h4 id="m35dc743">@WINBTNでWINDOWの移動中でもボタンが反応していたのを修正</h4>
+<p>WINACTVではなくWINFLGを見るように</p>
+
+<h4 id="je7e90c9">RUNがRESIZEに対応</h4>
+<p>元からTXTBOXのサイズはWINX2で指定してあったためフラグ立てて大きさの下限を設定して少々デザインを修正しただけ</p>
+
+<h4 id="p9c392f3">RUNのTXTBOXでラベルの限界以上は文字が打てないように修正</h4>
+<p>@WIN_************
+で12文字まで</p>
+
+<h4 id="oa28309a">@WINFLAGの動作が変更</h4>
+<p>WIN_MODEだったのをWIN_MODEとWIN_Rにした。
+WIN_MODEとWIN_Rの初期化をするようにした。
+WIN_Rはリサイズ用フラグ</p>
+
+<h4 id="t0ab3917">@WINDOWSの動作が変更</h4>
+<p>リサイズ処理
+WINFLG[TSKMAX]の動作が変更
+内容が4の場合リサイズ中</p>
+
+<h4 id="z0f7af36">@WINRESIZEを追加</h4>
+<p>リサイズ処理</p>
+
+<h4 id="p1533c7b">@WINTXTBOXのバグを修正</h4>
+<p>別のウィンドウで隠れたTXTBOXをクリックすると一瞬だけカーソルが表示されるバグを修正</p>
+
+<h4 id="p706afe4">CAVEでゲームオーバー時のメッセージがおかしかった問題を修正</h4>
+<blockquote><p class="quotation">SCORE  RESE CLICK</p></blockquote>
+<p>を</p>
+<blockquote><p class="quotation">SCORE</p>
+<p class="quotation">RESET CLICK</p></blockquote>
+<p>に修正</p>
+
+<h4 id="d557d682">アプリS_Vで文章が途切れていた問題を修正</h4>
+<blockquote><p class="quotation">ﾀﾀﾞｼNORMALﾆｶｷﾞ</p></blockquote>
+<p>を</p>
+<blockquote><p class="quotation">ﾀﾀﾞｼNORMALﾆｶｷﾞﾙ</p></blockquote>
+<p>に修正</p>
+
+<h4 id="g2b8332d">WINDOWDESIGNがNORMALの時タイトルバーの文字色がおかしくなる事がある問題を修正</h4>
+<p>文字色の初期化ミス</p>
+
+<h4 id="vf697a26">WINDOWの移動の仕様変更に成功</h4>
+<p>より自然に</p>
+
+<h4 id="q8f96497">アプリSNOTE2を追加</h4>
+<p>付箋アプリ</p>
+
+<h4 id="kb98ca29">タスクバーの描画優先順位を変更</h4>
+<p>文字がWINDOWより上で不自然だったため変更</p>
+
+<h4 id="n332fbb0">非アクティブウィンドウでもボタンにマウスが反応していた問題を修正</h4>
+<p>LNKLABELではならなかった</p>
+
+<h4 id="j623be8a">@WINEXEのOTYAXのシステム変数書き換えるタイミングをずらした</h4>
+<p>TSK変数を書き換えるため直後のプログラムに影響を与えていた。</p>
+
+<h4 id="cefb3733">デフォルトデザインのNORMALでWINDOWの範囲外をクリックしても非アクティブ化にならなかった問題を修正</h4>
+<p>WINDOWDESIGNがMACだと正常に非アクティブ化していた。</p>
+
+<h4 id="k237d832">タスクバーを修正した際EXITを開くとタスクバーが点滅していた問題を修正</h4>
+<p>EXITの画面はちらつき防止にグラフィック面を交互に表示していたためグラフィック面に差異があると点滅したようになる</p>
+
+<h4 id="g3f18336">メッセージの追加</h4>
+
+<h5 id="g8098ed4">WINMES$[TSKMAX,WINMESMAX]</h5>
+<p>メッセージ</p>
+
+<h5 id="leaa87f2">WINMES_ID[TSKMAX,WINMESMAX]</h5>
+<p>送信したID</p>
+
+<h5 id="m10eb710">WINMES_I[TSKMAX]</h5>
+<p>WINMESMAXはデフォルトじゃ16</p>
+
+<h5 id="bffa6350">@WINNEW_MES</h5>
+<p>WINMES$[WINMESI,]を初期化</p>
+
+<h5 id="l27fa004">@WINRECV_MES</h5>
+<p>WINRECVRESULT$がメッセージ
+WINRECVRESULTIDが送信したタスク
+WINSEND_RESULTが1だと受信失敗</p>
+
+<h5 id="e98afe7b">@WINSEND_MES</h5>
+<p>WINSEND$　送信するタスク名<br class="spacer" />
+WINSEND_MES$　送信するメッセージ<br class="spacer" />
+WINIDMLTが指定するMLT(複数の同じタスクが起動してるときの識別子　普段は指定しない)<br class="spacer" />
+WINSEND_RESULTが1だと送信失敗<br class="spacer" /></p>
+
+<h4 id="k691618f">相互変換API</h4>
+<p>WINNAME$がタスク名[TSK]がタスク番号</p>
+
+<h5 id="wa00aaec">@WINNAME2ID</h5>
+<p>タスク名をIDに変換<br class="spacer" />
+WINIDNAME$タスク名<br class="spacer" />
+WINIDMLTが指定するMLT(複数の同じタスクが起動してるときの識別子　普段は指定しない)<br class="spacer" />
+WINIDNが変換結果<br class="spacer" />
+WINID_RESULTが1なら変換失敗<br class="spacer" /></p>
+
+<h5 id="if0a9698">@WINID2TSK</h5>
+<p>IDをタスク番号に変換<br class="spacer" />
+WIN_IDがID<br class="spacer" />
+WINID_RESULTが1なら変換失敗<br class="spacer" />
+WINID_TSKがタスク番号<br class="spacer" /></p>
+
+<h5 id="j62e799d">タスク番号-&gt;タスク名</h5>
+<p>WINNAME$[タスク番号]</p>
+
+<h5 id="bb552996">タスク番号-&gt;ID</h5>
+<p>WINID[タスク番号]</p>
+
+<h4 id="d577b628">IDの追加</h4>
+
+<h5 id="t15228e2">WINID[TSKMAX]</h5>
+<p>タスク固有の番号<br class="spacer" />
+タスクを起動するたびに+1されていく</p>
+
+<h4 id="vb99e5cd">タスクマネージャ</h4>
+<p>タスクマネージャにIDを表示するように</p>
+</td></tr></table>
+
+<h3 id="c2046631">概要</h3>
+<p>OSもどきです。</p>
+
+<h4 id="g5fc314c">アプリ</h4>
+<p>アプリについて<br /></p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">名前</th><th class="style_th">説明</th></tr><tr><td class="style_td">HELLO</td><td class="style_td">HELLOと表示</td></tr><tr><td class="style_td">HELLO2</td><td class="style_td">GUIテスト</td></tr><tr><td class="style_td">SETTING</td><td class="style_td">設定</td></tr><tr><td class="style_td">FREE</td><td class="style_td">FREEVAR</td></tr><tr><td class="style_td">RUN</td><td class="style_td">名前を指定して実行</td></tr><tr><td class="style_td">LED</td><td class="style_td">簡易エディタ</td></tr><tr><td class="style_td">MEV</td><td class="style_td">MEMビューワ</td></tr><tr><td class="style_td">CLOCK</td><td class="style_td">時計</td></tr><tr><td class="style_td">SEIUN</td><td class="style_td">STARの設定</td></tr><tr><td class="style_td">STAR</td><td class="style_td">星</td></tr><tr><td class="style_td">CAVE</td><td class="style_td">酔っ払いゲーム</td></tr><tr><td class="style_td">GAME1</td><td class="style_td">よく分らないゲーム</td></tr><tr><td class="style_td">MINE</td><td class="style_td">マインスイーパ</td></tr><tr><td class="style_td">INV</td><td class="style_td">インベータ</td></tr><tr><td class="style_td">ABOUT</td><td class="style_td">バージョン</td></tr><tr><td class="style_td">COM</td><td class="style_td">コマンドプロンプト</td></tr><tr><td class="style_td">S_HKT</td><td class="style_td">伯方の塩</td></tr><tr><td class="style_td">HTNP</td><td class="style_td">ペイント</td></tr><tr><td class="style_td">HAHAHA</td><td class="style_td">ははは</td></tr><tr><td class="style_td">POKOPOKO</td><td class="style_td">ニコチャン叩き</td></tr><tr><td class="style_td">TSKF</td><td class="style_td">タスクの実行にかかる時間</td></tr><tr><td class="style_td">BG</td><td class="style_td">背景の変更</td></tr><tr><td class="style_td">HELP</td><td class="style_td">(カタカナで見にくい)ヘルプ</td></tr><tr><td class="style_td">SNOTE2</td><td class="style_td">付箋</td></tr><tr><td class="style_td">MOUSET</td><td class="style_td">マウスのCHRを変更</td></tr><tr><td class="style_td">VIRUS</td><td class="style_td">ジョークアプリ</td></tr><tr><td class="style_td">BGMP</td><td class="style_td">BGMプレーヤ</td></tr></tbody></table></div>
+<p><br />
+サードパーティ製のOTYAX向けアプリ<br /></p>
+<ul class="lsx"><li><a href="/petc/?Toukou%2FOTYAX%2FHEE" title="Toukou/OTYAX/HEE">HEE</a></li><li><a href="/petc/?Toukou%2FOTYAX%2FMV" title="Toukou/OTYAX/MV">MV</a></li><li><a href="/petc/?Toukou%2FOTYAX%2FMZGRP" title="Toukou/OTYAX/MZGRP">MZGRP</a></li><li><a href="/petc/?Toukou%2FOTYAX%2FPREV" title="Toukou/OTYAX/PREV">PREV</a></li><li><a href="/petc/?Toukou%2FOTYAX%2FSSHOT" title="Toukou/OTYAX/SSHOT">SSHOT</a></li></ul>
+
+<h3 id="a9d24c40">スクリーンショット・動画</h3>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=SS5.png" title="SS5.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=SS5.png" alt="SS5.png" title="SS5.png" width="256" height="192" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=SS6.png" title="SS6.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=SS6.png" alt="SS6.png" title="SS6.png" width="256" height="192" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=SS7.png" title="SS7.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=SS7.png" alt="SS7.png" title="SS7.png" width="256" height="192" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=SS9.png" title="SS9.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=SS9.png" alt="SS9.png" title="SS9.png" width="256" height="192" /></a></td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=SSD.png" title="SSD.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=SSD.png" alt="SSD.png" title="SSD.png" width="256" height="192" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=qr.png" title="qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=qr.png" alt="qr.png" title="qr.png" width="202" height="237" /></a></td></tr></tbody></table></div>
+<p>OTYAX41からPRIMEは最初から入れているので注意</p>
+
+<h3 id="ee966fa6">QR コード</h3>
+<div class="img_margin" style="text-align:left"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FOTYAX&amp;openfile=OTYAX41.png" title="OTYAX41.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FOTYAX&amp;src=OTYAX41.png" alt="OTYAX41.png" title="OTYAX41.png" width="870" height="2900" /></a></div>
+
+
+<h3 id="j78b09d9">アプリの仕様など</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button3" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary3').style.display!='none'){
+		document.getElementById('rgn_summary3').style.display='none';
+		document.getElementById('rgn_content3').style.display='block';
+		document.getElementById('rgn_bracket3').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button3').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary3').style.display='block';
+		document.getElementById('rgn_content3').style.display='none';
+		document.getElementById('rgn_bracket3').style.borderStyle='none';
+		document.getElementById('rgn_button3').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket3" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary3" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">折り畳み
+</td><td valign="top" id="rgn_content3" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>’ショキセッテイ</li>
+<li>＠Ｓ＿ＴＳＴ</li>
+<li>　ＷＩＮＣＬＳ＝１’コノフラク゛カ゛ＴＲＵＥタ゛トｘホ゛タンカ゛オサレタトキニ＠Ｃ＿ＴＳＴカ゛ヨハ゛レル</li>
+<li>　ＷＩＮＸ２＝１２８　’サイス゛</li>
+<li>　ＷＩＮＹ２＝９６　’サイス゛</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＷＩＮ＿ＴＳＴ</li>
+<li>　’メイン</li>
+<li>　ＷＩＮＳＸ＝０　’Ｘ</li>
+<li>　ＷＩＮＳＹ＝０　’Ｙ</li>
+<li>　ＷＩＮＳＣ＝１　’ハ゜レット</li>
+<li>　ＷＩＮＳＴＲ＄＝”Ｈｅｌｌｏ，Ｗｏｒｌｄ！！”　’モシ゛</li>
+<li>　ＧＯＳＵＢ＠ＷＩＮＳＴＲＰＵＴ　’文字表示ルーチン</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>’シュウリョウショリ</li>
+<li>＠Ｃ＿ＴＳＴ</li>
+<li>　’トシ゛ル</li>
+<li>　ＧＯＳＵＢ＠ＷＩＮＣＬＯＳＥ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="o5643191">マウスカーソルの変え方</h3>
+<p>MOUSETを起動してファイル名を指定<br class="spacer" />
+CHRの中身は</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">0</td><td class="style_td">通常</td></tr><tr><td class="style_td">1</td><td class="style_td">選択</td></tr><tr><td class="style_td">2</td><td class="style_td">処理中</td></tr></tbody></table></div>
+<p>である必要がある</p>
+
+<h3 id="c52169a4">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (3381d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : 使い方が　さっぱり分からない(ガリレオ風) (<span class="comment_date">2013/04/25 (木) 23:35:56</span>)</li>
+<li><strong>名無しさん</strong> : アプリ一覧にあるアプリ名で気になる物を (<span class="comment_date">2013/04/26 (金) 00:08:21</span>)</li>
+<li><strong>名無しさん</strong> : メニューからRUNを起動して実行してけばいいかと (<span class="comment_date">2013/04/26 (金) 00:08:55</span>)</li>
+<li><strong>名無しさん</strong> : 名前をミスってたらエラーが出るのは今のところ防ぎようがありません (<span class="comment_date">2013/04/26 (金) 00:09:31</span>)</li>
+<li><strong>シトリン</strong> : このソフトを理由にON ERROR GOTO 〜がほしいね (<span class="comment_date">2013/04/26 (金) 07:25:53</span>)</li>
+<li><strong>名無しさん</strong> : 入力された文字列にアルファベットか数字かアンダーバー以外が含まれていたらLOADをスキップしたらいいと思う。 (<span class="comment_date">2013/04/26 (金) 18:44:02</span>)</li>
+<li><strong>otya</strong> : スキップしてますよー (<span class="comment_date">2013/04/26 (金) 18:50:27</span>)</li>
+<li><strong>名無しさん</strong> : OTYAXのアプリケーションを作ろうとしたが挫折したぜ。 (<span class="comment_date">2013/04/26 (金) 19:40:17</span>)</li>
+<li><strong>名無しさん</strong> : 同じく (<span class="comment_date">2013/04/26 (金) 19:41:14</span>)</li>
+<li><strong>誰かさん</strong> : OTYAXで情報表示プログラムとランチャーみたいなもの作ったぜ。載せる？(Toukou/OTYAX/誰かさんのパードサーティーアプリ　のページ名で) (<span class="comment_date">2013/04/30 (火) 14:47:23</span>)</li>
+<li><strong>暁</strong> : バージョンの違うotyaxなのかよくわからないけどHello等のアプリがない (<span class="comment_date">2013/05/03 (金) 00:30:52</span>)</li>
+<li><strong>名無しさん</strong> : 載せてもらって構いませんよ (<span class="comment_date">2013/05/03 (金) 00:38:40</span>)</li>
+<li><strong>名無しさん</strong> : OTYAX_1を読み込んでAPPENDしましたか？LOAD&quot;OTYAX_0&quot;:APPEND&quot;OTYAX_1&quot; (<span class="comment_date">2013/05/03 (金) 00:39:08</span>)</li>
+<li><strong>otya</strong> : もしページ作るのなら名前は付けないほうがいい気がします。 (<span class="comment_date">2013/05/03 (金) 07:58:43</span>)</li>
+<li><strong>名無しさんの親</strong> : 起動方法教えて (<span class="comment_date">2013/05/03 (金) 08:40:25</span>)</li>
+<li><strong>名無しさん</strong> : LOAD&quot;OTYAX_0&quot;:APPEND&quot;OTYAX_1&quot;:RUNです (<span class="comment_date">2013/05/03 (金) 09:40:21</span>)</li>
+<li><strong>名無しさん</strong> : あと〜が多すぎでは (<span class="comment_date">2013/05/03 (金) 09:40:38</span>)</li>
+<li><strong>暁</strong> : どうでもいいけどプログラムの最初にAPPEND<strong>OTYAX_1</strong>を付ければ作業も減るような...?何いってんだろう俺、取り合えず再DLしよう (<span class="comment_date">2013/05/03 (金) 11:41:58</span>)</li>
+<li><strong>暁</strong> : あ、ちなみにHello等のアプリがないだけでMAINやクロック、ゲーム1とかはありますお (<span class="comment_date">2013/05/03 (金) 11:44:09</span>)</li>
+<li><strong>暁</strong> : ↑あ、RUNで呼ぶのか (<span class="comment_date">2013/05/03 (金) 11:50:20</span>)</li>
+<li><strong>otya</strong> : APPENDはプログラム中使えないんで (<span class="comment_date">2013/05/03 (金) 12:20:26</span>)</li>
+<li><strong>名無しさん</strong> : あまりにも読んでない人が多いので最初からAPPEND版も用意しようかな (<span class="comment_date">2013/05/03 (金) 12:28:35</span>)</li>
+<li><strong>名無しさん</strong> : ↑↑↑プログラムからはAPPENDは実行できない＆起動するたびにどんどん増えるぞそれ (<span class="comment_date">2013/05/03 (金) 12:41:53</span>)</li>
+<li><strong>名無しさん</strong> : ↑おっと衝突 (<span class="comment_date">2013/05/03 (金) 12:42:11</span>)</li>
+<li><strong>暁</strong> : ↑↑なんかよくわかんないけどすまそ (<span class="comment_date">2013/05/04 (土) 09:11:50</span>)</li>
+<li><strong>名無しさんの親</strong> : 名無しさんとりあえずやってみます (<span class="comment_date">2013/05/07 (火) 20:09:08</span>)</li>
+<li><strong>名無しさんの親</strong> : 出来なかった(<span class="comment_date">2013/05/08 (水) 18:37:41</span>)</li>
+<li><strong>名無しさんの親</strong> : どうしたらOTYAX_0にアプリを表示出来るの (<span class="comment_date">2013/05/08 (水) 18:41:49</span>)</li>
+<li><strong>名無しさんの親</strong> : お願いします教えて(<span class="comment_date">2013/05/08 (水) 18:43:11</span>)</li>
+<li><strong>名無しさん</strong> : うるさかったので編集 (<span class="comment_date">2013/05/08 (水) 18:44:18</span>)</li>
+<li><strong>名無しさん</strong> : LOAD&quot;OTYAX_0&quot;:APPEND&quot;OTYAX_1&quot;:RUNしてください（何度目） (<span class="comment_date">2013/05/08 (水) 18:44:46</span>)</li>
+<li><strong>名無しさんの親</strong> : やってみたけど出来なかった (<span class="comment_date">2013/05/08 (水) 18:46:44</span>)</li>
+<li><strong>oTYAXさんに質問</strong> : プログラムリスト付けて (<span class="comment_date">2013/05/08 (水) 18:51:43</span>)</li>
+<li><strong>名無しさん</strong> : OTYAX_1は読み込みましたか？(何度目) (<span class="comment_date">2013/05/08 (水) 18:52:56</span>)</li>
+<li><strong>otya</strong> : プログラムリストは長くなるので付けません (<span class="comment_date">2013/05/08 (水) 18:55:36</span>)</li>
+<li><strong>名無しさん</strong> : 前に付けてもらった異がありますが編集に邪魔だったのでどけました (<span class="comment_date">2013/05/08 (水) 19:50:02</span>)</li>
+<li><strong>名無しさんの親</strong> : 読み込んだ (<span class="comment_date">2013/05/09 (木) 19:59:27</span>)</li>
+<li><strong>otya</strong> : デスクトップにプログラムリスト置いてたのでどうせもう編集しないだろうからつけてみました (<span class="comment_date">2013/05/11 (土) 17:47:17</span>)</li>
+<li><strong>名無しさんの親</strong> : APPENDしてみたのですが、できませんでした (<span class="comment_date">2013/05/11 (土) 19:01:21</span>)</li>
+<li><strong>名無しさん</strong> : どのように入力して実行したのか、エラーはでたのか、エラーが出た場合どのようなエラーなのか、を詳しくお願いします (<span class="comment_date">2013/05/11 (土) 19:40:43</span>)</li>
+<li><strong>otya</strong> : さりげなくアプリ追加APPENDなどで&#32363;げてPRIMEを実行すれば起動します (<span class="comment_date">2013/05/12 (日) 01:54:18</span>)</li>
+<li><strong>5年生</strong> : 名無しさんありがとうございます。 (<span class="comment_date">2013/05/12 (日) 18:49:04</span>)</li>
+<li><strong>5年生</strong> : こういうのほしかったんだよ~! (<span class="comment_date">2013/05/12 (日) 19:57:40</span>)</li>
+<li><strong>はうむめ</strong> : タスクが出ずにエラーがでます (<span class="comment_date">2013/06/09 (日) 20:51:26</span>)</li>
+<li><strong>はうむめ</strong> : タスクが出ずにエラーがでます (<span class="comment_date">2013/06/09 (日) 20:55:00</span>)</li>
+<li><strong>名無しさん</strong> : &quot;LOAD&quot;OTYAX_0&quot;:APPEND&quot;OTYAX_1&quot;:RUNしてください（何度目） (<span class="comment_date">2013/06/09 (日) 21:40:54</span>)</li>
+<li><strong>名無しさん</strong> : 苦労人ですなぁｗ (<span class="comment_date">2013/06/09 (日) 21:48:11</span>)</li>
+<li><strong>はうむめ</strong> : HAHAHAが面白いw (<span class="comment_date">2013/06/12 (水) 20:41:14</span>)</li>
+<li><strong>はうむめ</strong> : ウィンドウ全部閉じてもエラー音がする（このソフトのなかで (<span class="comment_date">2013/06/12 (水) 20:43:28</span>)</li>
+<li><strong>はうむめ</strong> : ウィンドウ全部閉じてもエラー音がする（このソフトのなかで (<span class="comment_date">2013/06/12 (水) 21:01:17</span>)</li>
+<li><strong>東欧者</strong> : どういう状況でしょうか (<span class="comment_date">2013/06/12 (水) 21:42:28</span>)</li>
+<li><strong>はうむめ</strong> : はははなどのアプリで、全部出しきってアプリを全部消しても、アプリが開けません (<span class="comment_date">2013/06/13 (木) 06:30:45</span>)</li>
+<li><strong>名無しさん</strong> : <a href="http://jbbs.shitaraba.net/bbs/read.cgi/computer/43199/1340598492/620" rel="nofollow">http://jbbs.shitaraba.net/bbs/read.cgi/computer/43199/1340598492/620</a> の事ですが、直下に作ってもよろしいでしょうか? (<span class="comment_date">2013/12/13 (金) 16:31:10</span>)</li>
+<li><strong>otyaken</strong> : 大丈夫です (<span class="comment_date">2013/12/13 (金) 20:05:31</span>)</li>
+<li><strong>名無しさん</strong> : #lsx(prefix=Toukou/OTYAX/) こんな感じでいいんじゃないかと。 (<span class="comment_date">2013/12/14 (土) 15:24:30</span>)</li>
+<li><strong>ぷちぷち</strong> : 本当にアプリが作りやすいwww (<span class="comment_date">2014/01/29 (水) 21:39:48</span>)</li>
+<li><strong>かずえもん</strong> : なんかこのページにアクセスしたらほかのページにリダイレクトされたんですがｗ (<span class="comment_date">2014/02/13 (木) 19:30:00</span>)</li>
+<li><strong>アララ</strong> : あの、VIRUSの「スキャンチュウ」に (<span class="comment_date">2014/02/15 (土) 16:51:06</span>)
+<br />
+<form action="/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/OTYAX" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="ba835198eb83746c688ef7e5433243cf" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form></li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_7_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (920d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (2028d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (2971d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (1903d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (1914d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (2365d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (2566d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (2136d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (1226d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (584d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
+<li><a href="/petc/?Chat" title="Chat (2359d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (2098d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_7_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (2565d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (9h)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_7_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (115d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/10/03</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%DD%A5%B1%A5%C3%A5%C8%A5%BF%A5%AF%A5%C6%A5%A3%A5%AF%A5%B9%A1%CA%A3%D3%A1%A6%A3%D2%A3%D0%A3%C7%A1%CB" title="ポケットタクティクス (S・RPG) (56d)">ポケットタクティクス (S・RPG)</a></li>
+</ul>
+<h4>2021/09/17</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-m" title="Drop-m(リズムゲーム) (72d)">Drop-m(リズムゲーム)</a></li>
+</ul>
+<h4>2021/09/01</h4>
+<ul>
+ <li><a href="/petc/?Mame%2F%A5%EA%A5%BD%A1%BC%A5%B9%A4%CE%BB%C8%A4%A4%A4%C9%A4%B3%A4%ED" title="Mame/リソースの使いどころ (87d)">Mame/リソースの使いどころ</a></li>
+</ul>
+<h4>2021/08/10</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FDrop-e" title="Drop-e(リズムゲーム) (110d)">Drop-e(リズムゲーム)</a></li>
+</ul>
+<h4>2021/08/04</h4>
+<ul>
+ <li><a href="/petc/?Link" title="リンク集 (115d)">リンク集</a></li>
+</ul>
+<h4>2021/07/12</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%A4%A5%DF%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3%A1%A6%A5%A4%A5%E1%A1%BC%A5%B8" title="イミテーション・イメージ (139d)">イミテーション・イメージ</a></li>
+ <li><a href="/petc/?Toukou%2F%C5%C5%BB%D2%A5%D4%A5%A2%A5%CE" title="電子ピアノ (139d)">電子ピアノ</a></li>
+</ul>
+<h4>2021/05/07</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Slash%20II" title="Petit Slash II (204d)">Petit Slash II</a></li>
+</ul>
+<h4>2021/04/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Petit Tunnel (217d)">Petit Tunnel</a></li>
+</ul>
+<h4>2021/03/01</h4>
+<ul>
+ <li><a href="/petc/?SandBox" title="編集の練習用ページ (271d)">編集の練習用ページ</a></li>
+</ul>
+</div>
+
+<h3 id="content_7_3">オンライン情報</h3>
+<p>現在同時に 2 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.104 秒  | このページの最終更新 : 2016/02/20 (土) 20:42:51  (2107d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

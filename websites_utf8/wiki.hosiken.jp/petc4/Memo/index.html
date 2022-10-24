@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>プチコン4 メモ - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="プチコン4 メモ - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Memo">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Memo">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Memo">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Memo">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>プチコン4 メモ</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Memo">Memo</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.030sec. -->
+<p>知って得するプチコンメモ! BASIC 書きのお供にどうぞ。<a href="http://wiki.hosiken.jp/petc3gou/?Memo" title="3号:Memo" rel="nofollow">3号Wiki</a>や<a href="http://wiki.hosiken.jp/petc/?Memo" title="mk2:Memo" rel="nofollow">初代/mkII Wiki</a>を参考に、何かありましたらどうぞ。なお、<a href="https://sup4.smilebasic.com/doku.php?id=tips" rel="nofollow">公式のまめちしき</a>もあります。</p>
+<div class="contents">
+<ul><li><a href="#l0f493a6">  PUSHKEY 命令の特殊キー一覧 </a></li>
+<li><a href="#ee4c0aab"> プチコンBIGのフォント </a></li>
+<li><a href="#vea56bfd"> 隠し関数・命令 </a>
+<ul><li><a href="#mea84770">  UISTATE() </a></li></ul></li>
+<li><a href="#xdd3f28e"> MILLISEC()の正確さ </a></li>
+<li><a href="#DefaultVolume">  デフォルトの音量 </a></li>
+<li><a href="#Comments">  コメント </a></li></ul>
+</div>
+
+<h3 id="l0f493a6">PUSHKEY 命令の特殊キー一覧</h3>
+<p>PUSHKEY 命令で、引数に 65536 以上の数を与えると特殊な効果がある場合があります。その引数と効果の一覧です。</p>
+<ul><li>65576 - ソフトキーボードの表示トグル</li>
+<li>65619 - 上書きモード、挿入モードの切り替え</li>
+<li>65621 - ソフトキーボードを表示</li>
+<li>65622 - ソフトキーボードを非表示</li>
+<li>65624 - パフォーマンスメーターの表示トグル</li>
+<li>65627 - ソフトキーボードが右に移動</li>
+<li>65628 - ソフトキーボードが下に移動</li>
+<li>65629 - ソフトキーボードが左に移動</li>
+<li>65630 - ソフトキーボードが上に移動</li></ul>
+
+<h3 id="ee4c0aab">プチコンBIGのフォント</h3>
+<p>#SYSプロジェクトの中にプチコンBIGの16ドットフォントのファイルがある。</p>
+<p>使用方法は</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＬＯＡＤＧ”＃ＳＹＳ／ＢＩＧＦＯＮＴ１６”，５，０，１０２４</span></li>
+</ol></code></div></div>
+
+<h3 id="vea56bfd">隠し関数・命令</h3>
+
+<h4 id="mea84770">UISTATE()</h4>
+<ul><li>0~5の引数を渡すと数値が返ってくる。</li>
+<li>それ以外の数値を渡すとOut of range</li>
+<li>ソフトウェアキーボードの位置によって返値が変わる
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">返値</td><td class="style_td">位置</td></tr><tr><td class="style_td">0</td><td class="style_td">無し</td></tr><tr><td class="style_td">1</td><td class="style_td">右</td></tr><tr><td class="style_td">17</td><td class="style_td">下</td></tr><tr><td class="style_td">33</td><td class="style_td">左</td></tr><tr><td class="style_td">49</td><td class="style_td">上</td></tr></tbody></table></div></li></ul>
+
+<h3 id="xdd3f28e">MILLISEC()の正確さ</h3>
+<p>軽く実験したので結果を乗せました。</p>
+<div class="youtube movie-wrap">
+	<iframe width="320" height="265" src="https://www.youtube.com/embed/F3BQ7BHM27I" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<ul><li>VSYNC 60とMILLISEC()の1000は等しい</li>
+<li><del>TIME$()の変更周期とMILLISEC()の1000は等しくない</del></li></ul>
+<p>MILLISECは「ミリ秒」という意味ですから、1秒にちょうど1000増加しないとおかしいのですが、<del>なぜか一致しません</del>。<br />
+時間を延ばして実験したところ1秒平均が1000に近づくことが分かったので、検証プログラムの処理時間による誤差のようです。<br />
+<br />
+再試験の結果</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">TIME$()</th><th class="style_th">MILLISEC()</th><th class="style_th">開始からの増加量</th><th class="style_th">経過秒数</th><th class="style_th">増加量/秒</th></tr><tr><td class="style_td">21:24:11</td><td class="style_td">66370</td><td class="style_td">----</td><td class="style_td">----</td><td class="style_td">----</td></tr><tr><td class="style_td">21:24:12</td><td class="style_td">67373</td><td class="style_td">1003</td><td class="style_td">1</td><td class="style_td">1003.00</td></tr><tr><td class="style_td">21:24:13</td><td class="style_td">68377</td><td class="style_td">2007</td><td class="style_td">2</td><td class="style_td">1003.50</td></tr><tr><td class="style_td">21:24:14</td><td class="style_td">69334</td><td class="style_td">2964</td><td class="style_td">3</td><td class="style_td">988.00</td></tr><tr><td class="style_td">21:24:15</td><td class="style_td">70338</td><td class="style_td">3968</td><td class="style_td">4</td><td class="style_td">992.00</td></tr><tr><td class="style_td">21:24:16</td><td class="style_td">71342</td><td class="style_td">4972</td><td class="style_td">5</td><td class="style_td">994.40</td></tr><tr><td class="style_td">21:24:17</td><td class="style_td">72345</td><td class="style_td">5975</td><td class="style_td">6</td><td class="style_td">995.83</td></tr><tr><td class="style_td">21:24:18</td><td class="style_td">73351</td><td class="style_td">6981</td><td class="style_td">7</td><td class="style_td">997.29</td></tr><tr><td class="style_td">21:24:19</td><td class="style_td">74355</td><td class="style_td">7985</td><td class="style_td">8</td><td class="style_td">998.13</td></tr><tr><td class="style_td">21:24:20</td><td class="style_td">75359</td><td class="style_td">8989</td><td class="style_td">9</td><td class="style_td">998.78</td></tr><tr><td class="style_td">21:24:21</td><td class="style_td">76363</td><td class="style_td">9993</td><td class="style_td">10</td><td class="style_td">999.30</td></tr><tr><td class="style_td">21:24:22</td><td class="style_td">77369</td><td class="style_td">10999</td><td class="style_td">11</td><td class="style_td">999.91</td></tr><tr><td class="style_td">21:24:23</td><td class="style_td">78373</td><td class="style_td">12003</td><td class="style_td">12</td><td class="style_td">1000.25</td></tr><tr><td class="style_td">21:24:24</td><td class="style_td">79377</td><td class="style_td">13007</td><td class="style_td">13</td><td class="style_td">1000.54</td></tr><tr><td class="style_td">21:24:25</td><td class="style_td">80333</td><td class="style_td">13963</td><td class="style_td">14</td><td class="style_td">997.36</td></tr><tr><td class="style_td">21:24:26</td><td class="style_td">81337</td><td class="style_td">14967</td><td class="style_td">15</td><td class="style_td">997.80</td></tr><tr><td class="style_td">21:24:27</td><td class="style_td">82341</td><td class="style_td">15971</td><td class="style_td">16</td><td class="style_td">998.19</td></tr><tr><td class="style_td">21:24:28</td><td class="style_td">83345</td><td class="style_td">16975</td><td class="style_td">17</td><td class="style_td">998.53</td></tr><tr><td class="style_td">21:24:29</td><td class="style_td">84351</td><td class="style_td">17981</td><td class="style_td">18</td><td class="style_td">998.94</td></tr><tr><td class="style_td">21:24:30</td><td class="style_td">85355</td><td class="style_td">18985</td><td class="style_td">19</td><td class="style_td">999.21</td></tr><tr><td class="style_td">21:24:31</td><td class="style_td">86359</td><td class="style_td">19989</td><td class="style_td">20</td><td class="style_td">999.45</td></tr><tr><td class="style_td">21:24:32</td><td class="style_td">87362</td><td class="style_td">20992</td><td class="style_td">21</td><td class="style_td">999.62</td></tr><tr><td class="style_td">21:24:33</td><td class="style_td">88369</td><td class="style_td">21999</td><td class="style_td">22</td><td class="style_td">999.95</td></tr><tr><td class="style_td">21:24:34</td><td class="style_td">89373</td><td class="style_td">23003</td><td class="style_td">23</td><td class="style_td">1000.13</td></tr><tr><td class="style_td">21:24:35</td><td class="style_td">90376</td><td class="style_td">24006</td><td class="style_td">24</td><td class="style_td">1000.25</td></tr><tr><td class="style_td">21:24:36</td><td class="style_td">91380</td><td class="style_td">25010</td><td class="style_td">25</td><td class="style_td">1000.40</td></tr><tr><td class="style_td">21:24:37</td><td class="style_td">92336</td><td class="style_td">25966</td><td class="style_td">26</td><td class="style_td">998.69</td></tr><tr><td class="style_td">21:24:38</td><td class="style_td">93340</td><td class="style_td">26970</td><td class="style_td">27</td><td class="style_td">998.89</td></tr></tbody></table></div>
+<p>※増加量/秒 は小数第2位まで</p>
+
+<h3 id="DefaultVolume">デフォルトの音量</h3>
+<p><span class="basic-text smbas">BGMPLAY</span>命令・<span class="basic-text smbas">BEEP</span>命令で音量を指定しなかった場合、64を指定した時と同じ音量になる。<br />
+<span class="basic-text smbas">RECSTART</span>命令・<span class="basic-text smbas">RECSAVE</span>命令を使い、再生中の音声を配列変数に書き出して比較すると確認できる。</p>
+
+<h3 id="Comments">コメント</h3>
+<p>ページを編集するまでもないものの、もし何か一言コメントがありましたら以下へどうぞ。</p>
+<ul><li><strong>あまさとしおん</strong> : 3号と異なり4の場合は、VSYNC 60と本体時計の1秒は等しい（MILLISEC()がちょうど1000増加する）ようです。 (<span class="comment_date">2020/03/12 (木) 20:07:45</span>)</li>
+<li><strong>あまさとしおん</strong> : 追試したので書きますね (<span class="comment_date">2020/03/12 (木) 20:19:25</span>)</li></ul>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Memo" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="f7ba51124d79179d0739f98ffb59b407" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (316d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (974d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (80d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (556d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (655d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (40d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (602d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (67d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (14d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (12d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (674d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (974d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_4_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (974d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (974d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (323d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (219d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/16</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="MMLPAC-2 (3d)">MMLPAC-2</a></li>
+</ul>
+<h4>2022/01/14</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD Forward (4d)">リズミカルおもちつきHD Forward</a></li>
+</ul>
+<h4>2022/01/07</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%C2%ED%B8%BC%C2%C0%CF%BA" title="瀧玄太郎のMMLs　改 (12d)">瀧玄太郎のMMLs　改</a></li>
+</ul>
+<h4>2022/01/06</h4>
+<ul>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (12d)">OFコーナー4</a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2%20Switch%20Ver" title="リズミカルおもちつきΣ Nintendo Switch Ver. (13d)">リズミカルおもちつきΣ Nintendo Switch Ver.</a></li>
+</ul>
+<h4>2022/01/05</h4>
+<ul>
+ <li><a href="/petc4/?Demand" title="プチコン4への要望 (14d)">プチコン4への要望</a></li>
+</ul>
+<h4>2021/12/18</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A4%DF%A4%F3%A4%CA%A4%CE%A5%E9%A5%B8%A5%AA" title="みんなのラジオ！ (32d)">みんなのラジオ！</a></li>
+</ul>
+<h4>2021/12/10</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EF%A5%C3%A5%C8%A5%BD%A5%F3%A5%C7%A5%A3%A5%B9%A5%BF%A5%F3%A5%B9" title="ワットソンディスタンス (39d)">ワットソンディスタンス</a></li>
+</ul>
+<h4>2021/12/09</h4>
+<ul>
+ <li><a href="/petc4/?Bug" title="既知の不具合 (40d)">既知の不具合</a></li>
+</ul>
+<h4>2021/12/05</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%B5%A4%A4%DE%A4%B0%A4%EC%A5%E9%A5%B8%A5%AA4" title="気まぐれラジオ (45d)">気まぐれラジオ</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_4">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc4/?FAQ" title="FAQ (655d)">よくある質問集<span class="counter">(23)</span></a></li>
+ <li><a href="/petc4/?WorksLink" title="WorksLink (67d)">プチコン4 作品集<span class="counter">(11)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FPC8801_for_PETITCOM4" title="Toukou/PC8801_for_PETITCOM4 (162d)">PC8801_エミュ for プチコン４号<span class="counter">(10)</span></a></li>
+ <li><a href="/petc4/?Sample" title="Sample (602d)">サンプルプログラム集<span class="counter">(10)</span></a></li>
+ <li><a href="/petc4/?Link" title="Link (219d)">プチコン4 リンク集<span class="counter">(8)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FPetitConverter" title="Toukou/PetitConverter (287d)">プチコンバータ バージョン 0.8.3<span class="counter">(7)</span></a></li>
+ <li><span title="Memo  (556d)">プチコン4 メモ<span class="counter">(7)</span></span></li>
+ <li><a href="/petc4/?Toukou%2FMmlpac" title="Toukou/Mmlpac (3d)">MMLPAC-2<span class="counter">(7)</span></a></li>
+ <li><a href="/petc4/?Bug" title="Bug (40d)">既知の不具合<span class="counter">(7)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FUFiler" title="Toukou/UFiler (390d)">U-Filer<span class="counter">(7)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (974d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_5">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 5356 回、本日は 4 回、昨日は 3 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.038 秒  | このページの最終更新 : 2020/07/11 (土) 23:18:16  (556d) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

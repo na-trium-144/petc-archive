@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : Befungeインタプリタ - プチコンまとめWiki (初代/mkII)</title>
+	<link rel="stylesheet" href="../sys/skin/standard-3gou.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, QRコード, mkII専用, 非実用ツール, インタプリタ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+		<h2 id="header-navigation">ナビゲーション</h2>
+
+		<h3 id="header-search">ウィキ</h3>
+
+		<div id="block-topbox">
+
+			<p><strong>ウィキ メニュー</strong>
+
+				&nbsp;:&nbsp;
+				<a href="/petc/?cmd=edit&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">編集</a> -
+				<a href="/petc/?cmd=diff&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">差分</a> -
+				<a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">添付</a> -
+				<a href="/petc/?plugin=newpage&amp;refer=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">新規</a> -
+				<a href="/petc/?cmd=search">検索</a> -
+				<a href="/petc/?cmd=list">一覧</a> -
+				<a href="/petc/?RecentChanges">新着</a> -
+				<a href="/petc/?Help">ヘルプ</a>
+			</p>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc3gou/">プチコン3号</a></li>
+			<li id="active">プチコン初代/mkII</li>
+		<ul>
+	</div>
+
+
+	<div id="block-body">
+
+		<div id="block-sidemenu">
+
+			<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (129d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (38d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (534d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (573d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (189d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (325d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (129d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (129d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (6d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (11d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a>
+<ul><li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1314589236/l50" rel="nofollow">総合スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1345877567/l50" rel="nofollow">質問スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1340598492/l50" rel="nofollow">意見/要望スレッド</a></li></ul></li>
+<li><a href="/petc/?Chat" title="Chat (13d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (918d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (128d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (3d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (33d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2015/03/27</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D3%A5%C3%A5%B0%A5%D6%A5%EA%A5%C3%A5%C2%A4%CE%BB%E0%C6%AE%A1%DAMML%A1%DB" title="Toukou/ビッグブリッヂの死闘【MML】 (1d)">Toukou/ビッグブリッヂの死闘【MML】</a></li>
+ <li><a href="/petc/?Toukou%2Fvs%20%A5%AF%A5%EA%A1%BC%A5%D1%A1%BC" title="Toukou/vs クリーパー (1d)">Toukou/vs クリーパー</a></li>
+</ul>
+<h4>2015/03/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FGO%21GO%21%A5%B9%A5%A4%A5%AB%B3%E4%A4%EA" title="Toukou/GO!GO!スイカ割り (3d)">Toukou/GO!GO!スイカ割り</a></li>
+ <li><a href="/petc/?Toukou%2F%A1%DAMineCraft%A1%DBpiano2.ogg%A1%DAComposed%A1%DB" title="Toukou/【MineCraft】piano2.ogg【Composed】 (3d)">Toukou/【MineCraft】piano2.ogg【Composed】</a></li>
+</ul>
+<h4>2015/03/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3TV" title="Toukou/プチコンTV (3d)">Toukou/プチコンTV</a></li>
+ <li><a href="/petc/?SandBox" title="SandBox (3d)">SandBox</a></li>
+</ul>
+<h4>2015/03/23</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%B9%A5%DE%C2%BCDX" title="Toukou/スマ村DX (4d)">Toukou/スマ村DX</a></li>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="Toukou/連鎖シミュレーター (5d)">Toukou/連鎖シミュレーター</a></li>
+</ul>
+<h4>2015/03/22</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CA%C9%BC%B0%CC%C2%CF%A9%A5%B2%A1%BC%A5%E0" title="Toukou/壁式迷路ゲーム (6d)">Toukou/壁式迷路ゲーム</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%AB%A5%E9%A5%D5%A5%EB%A1%A6%A5%C9%A5%E9%A5%E0" title="Toukou/カラフル・ドラム (6d)">Toukou/カラフル・ドラム</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 4 人がこのサイトを見ています</p>
+
+			</div>
+
+		</div>
+
+		<div id="block-body-container" class="with-sidemenu">
+
+			<h2>投稿プログラム : Befungeインタプリタ</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">Befungeインタプリタ</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<!--  / 0.065sec. -->
+<div class="contents">
+<ul><li><a href="#s44bf99c">  概要 </a>
+<ul><li><a href="#n8247730">  初代プチコン </a></li>
+<li><a href="#p5fb4288">  仕様 </a></li>
+<li><a href="#j9ba6f65">  コードの記入の仕方 </a></li>
+<li><a href="#hfe26ffc">  どうでも良いこと </a></li></ul></li>
+<li><a href="#id492ea1">  QR コード </a></li>
+<li><a href="#uc6e8c22">  プログラムリスト </a></li>
+<li><a href="#f2f022ad">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2012年9月23日投稿
+/ 投稿者 : <a href="http://www46.atpages.jp/glace/" rel="nofollow">麿</a>
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> <a href="/petc/?cmd=taglist&amp;tag=%C8%F3%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">非実用ツール</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF">インタプリタ</a> </span>
+/ 検索用→【麿】</p>
+<h3 id="s44bf99c">概要</h3>
+<p>また<strong>難解プログラミング言語</strong>のインタプリタです。詳しくは<a href="http://ja.wikipedia.org/wiki/Befunge" rel="nofollow">Wikipedia</a>を(ry<br class="spacer" />
+難解プログラミング言語なのに、やたら速度が遅いです。最適化とかよくわからないw<br class="spacer" />
+それと、デバッグがあまりできてないので、スタックにたくさん積んだりするとエラー吐くと思います。</p>
+
+<h4 id="n8247730">初代プチコン</h4>
+<p>関数<span class="basic-text">ＬＥＦＴ＄（）　ＲＩＧＨＴ＄（）</span>と、配列<span class="basic-text">Ｓ（）</span>の大きさを変えれば対応できると思います。</p>
+
+<h4 id="p5fb4288">仕様</h4>
+<p>何かに準拠してる訳でもないです。<br class="spacer" />
+意味のない文字が来ても、無視されます。エラーにはなりません。<br class="spacer" />
+ネットで見つけたサンプルプログラムがあったのですが、このインタプリタだと動かないものもかなりあります。自分の実力不足です。ごめんなさい。<br class="spacer" />
+あと、13行目<span class="basic-text">ＣＳ＝９８００</span>…をコメントアウト、14行目<span class="basic-text">ＣＳ＝２５</span>…と24行目<span class="basic-text">ＩＦ　８０＜</span>…をアンコメントすれば、Befunge-93のようなものになります。</p>
+
+<h4 id="j9ba6f65">コードの記入の仕方</h4>
+<p>誰も使わないでしょうが、念のため書いておきます。<br class="spacer" />
+3行目からのDATA文にBefungeのソースコードを書き込んでください。<span class="basic-text">ＲＥＳＴＯＲＥ　＠ＣＯＤＥ</span>してるので、別に最初の方に書かなくてもいいです。プログラムの一番最後でもいいです。ただ、必ず<span class="basic-text">＠ＣＯＤＥ</span>より後ろに書いてください。<br class="spacer" />
+ソースコードの終わりには、15行目にある<span class="basic-text">ＥＯＦ＄＝</span>で指定した文字を書いてください。そこでソースコードの読み込みが終わります。<br class="spacer" />
+13行目にある変数<span class="basic-text">ＣＳ</span>は、ソースコードのサイズです。適度に調節してやらないと、ただでさえ遅い速度がさらに落ちることがあります。<br class="spacer" />
+また、9行目にあるように、このインタプリタでは、<span class="basic-text">”</span>の代わりに<span class="basic-text">’</span>を使います。</p>
+
+<h4 id="hfe26ffc">どうでも良いこと</h4>
+<p>インタプリタ流行ってるみたいだから、難解プログラミング言語のインタプリタ3作目作ってみるかと思った。<br class="spacer" />
+UnlambdaとかLazy-Kとかのインタプリタ作ろうとするも、ラムダ計算とかコンビネータ論理とかよくわからない上、プチコンで実装できず挫折。<br class="spacer" />
+Whitespaceも、コードの入力が面倒になり挫折。タブ文字ないからね…という言い訳。<br class="spacer" />
+ということでBefungeにしてみた。けど、バグが多くて大変。速度も遅い。</p>
+
+<h3 id="id492ea1">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="3">PRG:MAR_BEF</th></tr><tr><th class="style_th">1/3</th><th class="style_th">2/3</th><th class="style_th">3/3</th></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;openfile=qr0.png" title="qr0.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;src=qr0.png" alt="qr0.png" title="qr0.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;openfile=qr1.png" title="qr1.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;src=qr1.png" alt="qr1.png" title="qr1.png" width="210" height="210" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;openfile=qr2.png" title="qr2.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2FBefunge%A5%A4%A5%F3%A5%BF%A5%D7%A5%EA%A5%BF&amp;src=qr2.png" alt="qr2.png" title="qr2.png" width="210" height="210" /></a></td></tr></tbody></table></div>
+
+<h3 id="uc6e8c22">プログラムリスト</h3>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">200行ぐらい
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>’Ｂｅｆｕｎｇｅ　インタフ゜リタ</li>
+<li>＠ＣＯＤＥ</li>
+<li>ＤＡＴＡ”ｖ　＠＿　　　　　　　ｖ”</li>
+<li>ＤＡＴＡ”＞０’！ｄｌｒｏＷ’ｖ　”</li>
+<li>ＤＡＴＡ”ｖ　　：＃　　　　　＜　”</li>
+<li>ＤＡＴＡ”＞’　，ｏｌｌｅＨ’　ｖ”</li>
+<li>ＤＡＴＡ”　　　＾　　　　　　　＜”</li>
+<li>ＤＡＴＡ”ＥＯＦ”</li>
+<li>’ＤＡＴＡニ　カケナイノテ゛　”ノカワリニ　’ヲシヨウ</li>
+<li></li>
+<li>＠ＩＮＩＴ</li>
+<li>ＣＬＥＡＲ</li>
+<li>ＣＳ＝９８００　’ＣＯＤＥ　ＳＩＺＥ</li>
+<li>’ＣＳ＝２５　’Ｂｅｆｕｎｇｅ−９３</li>
+<li>ＥＯＦ＄＝”ＥＯＦ”　’ＥＮＤ　ＯＦ　ＦＩＬＥ</li>
+<li>Ｖ＝０　’０Ｒ　１Ｌ　２Ｄ　３Ｕ</li>
+<li>Ｆ＝０：ＦＣ＝１：ＦＳ＝２　’ＦＬＡＧ　ＣＭＴ　ＳＴＲ</li>
+<li>Ｐ＝０　’ＰＯＩＮＴＥＲ</li>
+<li>Ｘ＝０：Ｙ＝０</li>
+<li>ＤＩＭ　Ｓ（２６２１４４−ＣＳ），Ｃ＄（ＣＳ）</li>
+<li>ＲＥＳＴＯＲＥ　＠ＣＯＤＥ</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＣＳ−１</li>
+<li>　ＲＥＡＤ　Ｃ＄（Ｉ）</li>
+<li>　’ＩＦ　８０＜ＬＥＮ（Ｃ＄（Ｉ））　ＴＨＥＮ　？”ＥＲＲＯＲ”：ＥＮＤ</li>
+<li>　ＩＦ　Ｃ＄（Ｉ）＝＝ＥＯＦ＄　ＴＨＥＮ　Ｃ＄（Ｉ）＝””：Ｉ＝ＣＳ</li>
+<li>ＮＥＸＴ</li>
+<li></li>
+<li>＠ＭＡＩＮ</li>
+<li>　ＩＦ　Ｘ＞ＬＥＮ（Ｃ＄（Ｙ））−１　ＧＯＴＯ　＠ＭＳＫＩＰ</li>
+<li>　Ｔ＄＝ＭＩＤ＄（Ｃ＄（Ｙ），Ｘ，１）</li>
+<li>　ＩＦ　Ｆ＝＝１　ＴＨＥＮ　Ｆ＝Ｆ　ＸＯＲ　ＦＣ：ＧＯＴＯ　＠ＭＳＫＩＰ</li>
+<li>　ＩＦ　Ｆ　ＡＮＤ　２　ＴＨＥＮ　ＧＯＳＵＢ　＠ＭＱＯＴ：ＧＯＴＯ　＠ＭＳＫＩＰ</li>
+<li>　ＧＯＳＵＢ　＠ＭＲＵＮ</li>
+<li>＠ＭＳＫＩＰ</li>
+<li>　ＧＯＳＵＢ　＠ＭＣＨＫ</li>
+<li>　ＧＯＳＵＢ　＠ＭＦＬＲ</li>
+<li>ＧＯＴＯ　＠ＭＡＩＮ</li>
+<li></li>
+<li>＠ＭＱＯＴ</li>
+<li>ＩＦ　Ｔ＄＝＝”’”　ＴＨＥＮ　Ｆ＝０：ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ）＝ＡＳＣ（Ｔ＄）</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＭＣＨＫ　’ＭＡＩＮ　ＣＨＥＣＫ</li>
+<li>　ＩＦ　Ｖ＝＝０　ＴＨＥＮ　Ｘ＝Ｘ＋１</li>
+<li>　ＩＦ　Ｖ＝＝１　ＴＨＥＮ　Ｘ＝Ｘ−１</li>
+<li>　ＩＦ　Ｖ＝＝２　ＴＨＥＮ　Ｙ＝Ｙ＋１</li>
+<li>　ＩＦ　Ｖ＝＝３　ＴＨＥＮ　Ｙ＝Ｙ−１</li>
+<li>　ＩＦ　Ｘ＜０　ＴＨＥＮ　Ｘ＝ＬＥＮ（Ｃ＄（Ｙ））−１</li>
+<li>　ＩＦ　Ｘ＞ＬＥＮ（Ｃ＄（Ｙ））−１　ＡＮＤ　Ｖ＝＝０　ＴＨＥＮ　Ｘ＝０</li>
+<li>　ＩＦ　Ｙ＜０　ＴＨＥＮ　Ｙ＝ＣＳ−１</li>
+<li>　ＩＦ　Ｙ＞ＣＳ−１　ＴＨＥＮ　Ｙ＝０</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＭＦＬＲ</li>
+<li>　ＩＦ　Ｐ＜１　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>　ＦＯＲ　Ｉ＝０　ＴＯ　Ｐ−１</li>
+<li>　　Ｓ（Ｉ）＝ＦＬＯＯＲ（Ｓ（Ｉ））</li>
+<li>　ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＭＲＵＮ　’ＭＡＩＮ　ＲＵＮ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＞”　ＴＨＥＮ　Ｖ＝０</li>
+<li>　ＩＦ　Ｔ＄＝＝”＜”　ＴＨＥＮ　Ｖ＝１</li>
+<li>　ＩＦ　Ｔ＄＝＝”ｖ”　ＴＨＥＮ　Ｖ＝２</li>
+<li>　ＩＦ　Ｔ＄＝＝”＾”　ＴＨＥＮ　Ｖ＝３</li>
+<li>　ＩＦ　Ｔ＄＝＝”＿”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＩＦ０</li>
+<li>　ＩＦ　Ｔ＄＝＝”｜”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＩＦ１</li>
+<li>　ＩＦ　Ｔ＄＝＝”？”　ＴＨＥＮ　Ｖ＝ＲＮＤ（４）</li>
+<li>　’ＩＦ　Ｔ＄＝＝”　”　ＴＨＥＮ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＃”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＣＭＴ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＠”　ＴＨＥＮ　ＥＮＤ</li>
+<li>　ＩＦ　ＡＳＣ（Ｔ＄）＞４７　ＡＮＤ　ＡＳＣ（Ｔ＄）＜５８　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＮＵＭ</li>
+<li>　ＩＦ　Ｔ＄＝＝”’”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＱＯＴ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＆”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＩＮＮ</li>
+<li>　ＩＦ　Ｔ＄＝＝”~”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＩＮＳ</li>
+<li>　ＩＦ　Ｔ＄＝＝”．”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＯＴＮ</li>
+<li>　ＩＦ　Ｔ＄＝＝”，”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＯＴＳ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＋”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＡＤＤ</li>
+<li>　ＩＦ　Ｔ＄＝＝”−”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＳＵＢ</li>
+<li>　ＩＦ　Ｔ＄＝＝”＊”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＭＵＬ</li>
+<li>　ＩＦ　Ｔ＄＝＝”／”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＤＩＶ</li>
+<li>　ＩＦ　Ｔ＄＝＝”％”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＭＯＤ</li>
+<li>　ＩＦ　Ｔ＄＝＝”｀”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＣＭＰ</li>
+<li>　ＩＦ　Ｔ＄＝＝”！”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＮＯＴ</li>
+<li>　ＩＦ　Ｔ＄＝＝”：”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＳＴ０</li>
+<li>　ＩＦ　Ｔ＄＝＝”￥”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＳＴ１</li>
+<li>　ＩＦ　Ｔ＄＝＝”＼”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＳＴ１</li>
+<li>　ＩＦ　Ｔ＄＝＝”＄”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＳＴ２</li>
+<li>　ＩＦ　Ｔ＄＝＝”ｇ”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＲＥＤ</li>
+<li>　ＩＦ　Ｔ＄＝＝”ｐ”　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＷＲＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>＠ＰＩＦ０　’ＩＦ　０</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>ＩＦ　Ｓ（Ｐ−１）　ＴＨＥＮ　Ｖ＝１　ＥＬＳＥ　Ｖ＝０</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＩＦ１　’ＩＦ　１</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>ＩＦ　Ｓ（Ｐ−１）　ＴＨＥＮ　Ｖ＝３　ＥＬＳＥ　Ｖ＝２</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＣＭＴ　’ＣＯＭＭＥＮＴ</li>
+<li>Ｆ＝Ｆ　ＯＲ　ＦＣ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＮＵＭ　’ＮＵＭＢＥＲ</li>
+<li>’ＩＦ　Ｐ＞２６２１４３−ＣＳ　ＴＨＥＮ　？”ＥＲＲＯＲ”：ＥＮＤ</li>
+<li>Ｓ（Ｐ）＝ＡＳＣ（Ｔ＄）−４８</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＱＯＴ　’ＱＵＯＴＥ</li>
+<li>Ｆ＝Ｆ　ＸＯＲ　ＦＳ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＩＮＮ　’ＩＮＰＵＴ　　ＮＵＭＢＥＲ</li>
+<li>’ＩＦ　Ｐ＞２６２１４３−ＣＳ　ＴＨＥＮ　？”ＥＲＲＯＲ”：ＥＮＤ</li>
+<li>ＩＮＰＵＴ　Ｓ（Ｐ）</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＩＮＳ　’ＩＮＰＵＴ　　ＳＴＲＩＮＧ</li>
+<li>’ＩＦ　Ｐ＞２６２１４３−ＣＳ　ＴＨＥＮ　？”ＥＲＲＯＲ”：ＥＮＤ</li>
+<li>ＩＮＰＵＴ　Ａ＄</li>
+<li>Ｓ（Ｐ）＝ＡＳＣ（Ａ＄）</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＯＴＮ　’ＯＵＴＰＵＴ　ＮＵＭＢＥＲ</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>？Ｓ（Ｐ−１）；”　”；</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＯＴＳ　’ＯＵＴＰＵＴ　ＳＴＲＩＮＧ</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>ＩＦ　Ｓ（Ｐ−１）＞２５５　ＴＨＥＮ　Ｓ（Ｐ−１）＝０</li>
+<li>ＩＦ　Ｓ（Ｐ−１）＝＝１０　ＴＨＥＮ　？：Ｐ＝Ｐ−１：Ｓ（Ｐ）＝０：ＲＥＴＵＲＮ</li>
+<li>？ＣＨＲ＄（Ｓ（Ｐ−１））；</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＡＤＤ　’タシサ゛ン</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝Ｓ（Ｐ−２）＋Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＳＵＢ　’ヒキサ゛ン</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝Ｓ（Ｐ−２）−Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＭＵＬ　’カケサ゛ン</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝Ｓ（Ｐ−２）＊Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＤＩＶ　’ワリサ゛ン</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝Ｓ（Ｐ−２）／Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＭＯＤ　’シ゛ョウヨ</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝Ｓ（Ｐ−２）％Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＣＭＰ　’ＣＯＭＰＡＲＩＮＧ　ヒカク</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝（Ｓ（Ｐ−１）＜Ｓ（Ｐ−２））</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＮＯＴ　’ＮＯＴ</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>Ｓ（Ｐ−１）＝！Ｓ（Ｐ−１）</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＳＴ０　’ＳＴＡＣＫ０</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>’ＩＦ　Ｐ＞２６２１４３−ＣＳ　ＴＨＥＮ　？”ＥＲＲＯＲ”：ＥＮＤ</li>
+<li>Ｓ（Ｐ）＝Ｓ（Ｐ−１）</li>
+<li>Ｐ＝Ｐ＋１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＳＴ１　’ＳＴＡＣＫ１</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ａ＝Ｓ（Ｐ−１）</li>
+<li>Ｓ（Ｐ−１）＝Ｓ（Ｐ−２）</li>
+<li>Ｓ（Ｐ−２）＝Ａ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＳＴ２　’ＳＴＡＣＫ２</li>
+<li>ＩＦ　Ｐ＜１　ＴＨＥＮ　Ｐ＝１：Ｓ（０）＝０</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＲＥＤ　’ＲＥＡＤ</li>
+<li>ＩＦ　Ｐ＜２　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ａ＝Ｓ（Ｐ−１）：Ｂ＝Ｓ（Ｐ−２）</li>
+<li>ＩＦ　Ｂ＞＝ＬＥＮ（Ｃ＄（Ａ））　ＴＨＥＮ　Ｓ（Ｐ−２）＝０：Ｐ＝Ｐ−１：ＲＥＴＵＲＮ</li>
+<li>Ｓ（Ｐ−２）＝ＡＳＣ（ＭＩＤ＄（Ｃ＄（Ａ），Ｂ，１））</li>
+<li>Ｓ（Ｐ−１）＝０</li>
+<li>Ｐ＝Ｐ−１</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>＠ＰＷＲＴ　’ＷＲＩＴＥ</li>
+<li>ＩＦ　Ｐ＜３　ＴＨＥＮ　ＲＥＴＵＲＮ</li>
+<li>Ａ＝Ｓ（Ｐ−１）：Ｂ＝Ｓ（Ｐ−２）：Ｃ＝Ｓ（Ｐ−３）</li>
+<li>ＩＦ　Ｃ＞２５５　ＴＨＥＮ　Ｃ＝０</li>
+<li>ＩＦ　Ｂ＜ＬＥＮ（Ｃ＄（Ａ））　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＷＲＴ１</li>
+<li>ＩＦ　Ｂ＞＝ＬＥＮ（Ｃ＄（Ａ））　ＴＨＥＮ　ＧＯＳＵＢ　＠ＰＷＲＴ２</li>
+<li>Ｓ（Ｐ−１）＝０：Ｓ（Ｐ−２）＝０：Ｓ（Ｐ−３）＝０</li>
+<li>Ｐ＝Ｐ−３</li>
+<li>ＲＥＴＵＲＮ</li>
+<li>　＠ＰＷＲＴ１</li>
+<li>　Ｃ＄（Ａ）＝ＬＥＦＴ＄（Ｃ＄（Ａ），Ｂ）＋ＣＨＲ＄（Ｃ）＋ＲＩＧＨＴ＄（Ｃ＄（Ａ），ＬＥＮ（Ｃ＄（Ａ））−Ｂ−１）</li>
+<li>　ＲＥＴＵＲＮ</li>
+<li>　＠ＰＷＲＴ２</li>
+<li>　Ｃ＄（Ａ）＝Ｃ＄＋”　”＊（Ｂ−ＬＥＮ（Ｃ＄））＋ＣＨＲ＄（Ｃ）</li>
+<li>　ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+
+<h3 id="f2f022ad">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (944d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : とにかく麿さんらしい作品ですね。 (<span class="comment_date">2013/04/14 (日) 15:33:38</span>)</li>
+<li><strong>麿</strong> : バグばっかりだしな (<span class="comment_date">2013/09/14 (土) 20:42:55</span>)</li></ul>
+<br />
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div>
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/Befungeインタプリタ" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="5c2896da43615e1998581833b367a9d3" />
+  <label for="_p_comment_name_0">お名前: </label><input type="text" name="name" id="_p_comment_name_0" size="15" />
+
+  <input type="text"   name="msg_text" id="_p_comment_comment_0" size="70" />
+  <input type="submit" name="comment" value="コメントの挿入" />
+ </div>
+</form>
+</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about"><strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.077 秒  | このページの最終更新 : 2013/04/14 (日) 15:33:38  (712d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

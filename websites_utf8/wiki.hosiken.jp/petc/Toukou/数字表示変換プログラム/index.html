@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>投稿プログラム : 数字表示変換プログラム - プチコンまとめWiki (初代/mkII)</title>
+	<link rel="stylesheet" href="../sys/skin/standard-3gou.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, mkII専用" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+		<h2 id="header-navigation">ナビゲーション</h2>
+
+		<h3 id="header-search">ウィキ</h3>
+
+		<div id="block-topbox">
+
+			<p><strong>ウィキ メニュー</strong>
+
+				&nbsp;:&nbsp;
+				<a href="/petc/?cmd=edit&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">編集</a> -
+				<a href="/petc/?cmd=diff&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">差分</a> -
+				<a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">添付</a> -
+				<a href="/petc/?plugin=newpage&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">新規</a> -
+				<a href="/petc/?cmd=search">検索</a> -
+				<a href="/petc/?cmd=list">一覧</a> -
+				<a href="/petc/?RecentChanges">新着</a> -
+				<a href="/petc/?Help">ヘルプ</a>
+			</p>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc3gou/">プチコン3号</a></li>
+			<li id="active">プチコン初代/mkII</li>
+		<ul>
+	</div>
+
+
+	<div id="block-body">
+
+		<div id="block-sidemenu">
+
+			<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【mkII】</h3>
+<ul><li><a href="/petc/?FrontPage" title="FrontPage (129d)">トップページ</a></li>
+<li><a href="/petc/?Mame" title="Mame (38d)">まめちしき</a></li>
+<li><a href="/petc/?Memo" title="Memo (534d)">プチコンメモ</a></li>
+<li><a href="/petc/?FAQ" title="FAQ (573d)">よくある質問集</a></li>
+<li><a href="/petc/?Bug" title="Bug (189d)">既知の不具合</a></li>
+<li><a href="/petc/?Sample" title="Sample (325d)">サンプルプログラム集</a></li>
+<li><a href="/petc/?Toukou" title="Toukou (129d)">投稿プログラム</a></li>
+<li><a href="/petc/?WorksLink" title="WorksLink (129d)">プチコン作品リンク集</a></li>
+<li><a href="/petc/?Demand" title="Demand (6d)">プチコンへの要望</a></li>
+<li><a href="/petc/?OverFlow" title="OverFlow (11d)">OFコーナー</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a>
+<ul><li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1314589236/l50" rel="nofollow">総合スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1345877567/l50" rel="nofollow">質問スレッド</a></li>
+<li><a href="http://jbbs.livedoor.jp/bbs/read.cgi/computer/43199/1340598492/l50" rel="nofollow">意見/要望スレッド</a></li></ul></li>
+<li><a href="/petc/?Chat" title="Chat (13d)">チャットルーム</a></li>
+<li><a href="/petc/?Contact" title="Contact (918d)">管理人に連絡</a></li></ul>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="/petc/?Help" title="Help (128d)">ヘルプ</a></li>
+<li><a href="/petc/?SandBox" title="SandBox (3d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/qrmaker/" rel="nofollow">QR コード変換ツール</a></li>
+<li><a href="http://smileboom.com/special/ptcm2/co_konnichiwa/p01.php" rel="nofollow">公式初心者むけ講座</a></li>
+<li><a href="http://smileboom.com/special/petitcom/pochette.html" rel="nofollow">公式プログラムリスト集</a></li></ul>
+<ul><li><a href="http://smileboom.com/special/petitcom/" rel="nofollow">旧プチコン公式サイト</a></li>
+<li><a href="http://smileboom.com/special/petitcom/download.html" rel="nofollow">旧公式説明書</a></li>
+<li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
+<li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
+<ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
+<ul><li><a href="/petc/?Link" title="Link (33d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2015/03/27</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D3%A5%C3%A5%B0%A5%D6%A5%EA%A5%C3%A5%C2%A4%CE%BB%E0%C6%AE%A1%DAMML%A1%DB" title="Toukou/ビッグブリッヂの死闘【MML】 (22h)">Toukou/ビッグブリッヂの死闘【MML】</a></li>
+ <li><a href="/petc/?Toukou%2Fvs%20%A5%AF%A5%EA%A1%BC%A5%D1%A1%BC" title="Toukou/vs クリーパー (1d)">Toukou/vs クリーパー</a></li>
+</ul>
+<h4>2015/03/25</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2FGO%21GO%21%A5%B9%A5%A4%A5%AB%B3%E4%A4%EA" title="Toukou/GO!GO!スイカ割り (3d)">Toukou/GO!GO!スイカ割り</a></li>
+ <li><a href="/petc/?Toukou%2F%A1%DAMineCraft%A1%DBpiano2.ogg%A1%DAComposed%A1%DB" title="Toukou/【MineCraft】piano2.ogg【Composed】 (3d)">Toukou/【MineCraft】piano2.ogg【Composed】</a></li>
+</ul>
+<h4>2015/03/24</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%D7%A5%C1%A5%B3%A5%F3TV" title="Toukou/プチコンTV (3d)">Toukou/プチコンTV</a></li>
+ <li><a href="/petc/?SandBox" title="SandBox (3d)">SandBox</a></li>
+</ul>
+<h4>2015/03/23</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%A5%B9%A5%DE%C2%BCDX" title="Toukou/スマ村DX (4d)">Toukou/スマ村DX</a></li>
+ <li><a href="/petc/?Toukou%2F%CF%A2%BA%BF%A5%B7%A5%DF%A5%E5%A5%EC%A1%BC%A5%BF%A1%BC" title="Toukou/連鎖シミュレーター (5d)">Toukou/連鎖シミュレーター</a></li>
+</ul>
+<h4>2015/03/22</h4>
+<ul>
+ <li><a href="/petc/?Toukou%2F%CA%C9%BC%B0%CC%C2%CF%A9%A5%B2%A1%BC%A5%E0" title="Toukou/壁式迷路ゲーム (6d)">Toukou/壁式迷路ゲーム</a></li>
+ <li><a href="/petc/?Toukou%2F%A5%AB%A5%E9%A5%D5%A5%EB%A1%A6%A5%C9%A5%E9%A5%E0" title="Toukou/カラフル・ドラム (6d)">Toukou/カラフル・ドラム</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">オンライン情報</h3>
+<p>現在同時に 5 人がこのサイトを見ています</p>
+
+			</div>
+
+		</div>
+
+		<div id="block-body-container" class="with-sidemenu">
+
+			<h2>投稿プログラム : 数字表示変換プログラム</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">数字表示変換プログラム</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<!--  / 0.080sec. -->
+<div class="contents">
+<ul><li><a href="#u9f96ff0"> 内容 </a></li>
+<li><a href="#c62a41d9"> 使用例 </a></li>
+<li><a href="#md05b9e5"> 利点 </a></li>
+<li><a href="#se2e15fa">  縦長数字変換 </a>
+<ul><li><a href="#g6e96f08"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#m5a8c20e"> 使い方 </a></li></ul></li>
+<li><a href="#rfe896e5"> 横長数字変換 </a>
+<ul><li><a href="#rd202c64"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#ve91212f"> 使用プログラム </a></li>
+<li><a href="#o876adb6"> 使い方 </a></li></ul></li>
+<li><a href="#sf5c2933"> おまけ:縦持ち用フォント変換サブルーチン </a>
+<ul><li><a href="#zc52b6ef"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#x67efc1b"> 使い方 </a></li></ul></li>
+<li><a href="#l8438308"> おまけ2:太字フォント変換サブルーチン </a>
+<ul><li><a href="#rd6d6e9b"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#wa6252d5"> 使い方 </a></li></ul></li>
+<li><a href="#i8dd6edd"> おまけ3:反転フォント変換サブルーチン </a>
+<ul><li><a href="#z1ed3bbd"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#b7561f3e"> 使い方 </a></li></ul></li>
+<li><a href="#g41a6f07"> おまけ4:ダークフォント変換サブルーチン </a>
+<ul><li><a href="#ef98f50a"> QR　&amp;　スクリーンショット </a></li>
+<li><a href="#bfdc8ff7"> 使い方 </a></li></ul></li>
+<li><a href="#s47d8963"> クリックコメント (評価) </a></li>
+<li><a href="#v0ff02d6">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2013年6月28日投稿
+/ 投稿者 : 猫姫
+/ <span class="tag">タグ : <a href="/petc/?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="/petc/?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="/petc/?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="u9f96ff0">内容</h3>
+<p>表示される数字を、ちょっと変わったものに、<br />
+簡単に変換できるように、サブルーチン化しています。<br />
+ゲームスコアの飾りに、デザインをちょっと華やかにしたり<br />
+使ってもらえたら嬉しく思います。<br />
+なお、サブルーチンを利用した変換プログラムは、<a href="http://wiki.hosiken.jp/petc/?Toukou%2F%A4%AB%A4%CA%A5%D5%A5%A9%A5%F3%A5%C8PETIKANA" rel="nofollow">プチコン用ひらがなフォント「PETIKANA」</a>を参考にさせていただきました。</p>
+
+<h3 id="c62a41d9">使用例</h3>
+<p>文字サイズ変換と、フォント変換のプログラムは共存できるように作ってあります。<br />
+以下スクリーンショットは、<br />
+横長数字変換とダークフォントを共存させて、表示させてみました。<br />
+なお、文字の太さを変える、変数B=0です。<br />
+<a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=exsc.jpg" title="exsc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=exsc.jpg" alt="exsc.jpg" title="exsc.jpg" width="320" height="240" /></a><br />
+COLORは赤色で表示してみました。</p>
+
+<h3 id="md05b9e5">利点</h3>
+<p>通常、BGF:CHRファイルを用意すると、それだけで、QRコードが増えてしまいますが、<br />
+このPRGは、ほんの数十行のプログラムで処理をおこなうので、<br />
+容量、QR枚数にほとんど影響を与えずに使えると思います。<br />
+BGFパッケージ化よりも…(試したことないですが)勝っていると思います。</p>
+
+<h3 id="se2e15fa">縦長数字変換</h3>
+
+<h4 id="g6e96f08">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">QR:NHPMOJI1</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji1_qr.png" title="nhpmoji1_qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji1_qr.png" alt="nhpmoji1_qr.png" title="nhpmoji1_qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=sc.jpg" title="sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=sc.jpg" alt="sc.jpg" title="sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">プログラムリスト
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div class="basic-source"><div class="basic-list"><code><ol><li>’／／／スウシ゛　タテナカ゛　ヘンカン　ＰＲＧ</li>
+<li>ＡＣＬＳ：ＣＬＥＡＲ：ＣＨＲＩＮＩＴ　”ＢＧＦ”</li>
+<li>ＶＩＳＩＢＬＥ　０，０，０，０，０，０</li>
+<li></li>
+<li>’┌──────────────────────────┐</li>
+<li>’│サイショニ　＠Ｌ＿ＮＵＭ　ヲ　ＧＯＳＵＢシマス　　　│</li>
+<li>’│ココテ゛、タテナカ゛モシ゛ヲ　フォントテ゛−タ　ニ　│</li>
+<li>’│トウロク　シマス　　　　　　　　　　　　　　　　　　│</li>
+<li>’└──────────────────────────┘</li>
+<li>Ｂ＝０</li>
+<li>ＧＯＳＵＢ　＠Ｌ＿ＮＵＭ</li>
+<li>ＥＮＤ</li>
+<li></li>
+<li>’┌───────────────────────────┐</li>
+<li>’│ヘンカン　ル−チン　　　　　　　　　　　　　　　　　　│</li>
+<li>’│ＬＮＭ＄ニ　カクノウシタ　モシ゛ヘンスウノ　スウシ゛ヲ│</li>
+<li>’│ＬＮＭ＄　ＬＮＢ＄　ニ　タテナカ゛ヘンカン　シマス　　│</li>
+<li>’└───────────────────────────┘</li>
+<li>＠ＬＮＭ</li>
+<li>ＬＮＢ＄＝””</li>
+<li>ＦＯＲ　Ｉ＝０　ＴＯ　ＬＥＮ（ＬＮＭ＄）−１</li>
+<li>Ｉ＄＝ＭＩＤ＄（ＬＮＭ＄，Ｉ，１）</li>
+<li>ＩＦ　ＡＳＣ（Ｉ＄）＜４８　ＴＨＥＮ　ＬＮＢ＄＝ＬＮＢ＄＋”　”：ＧＯＴＯ　＠ＳＫ＿ＬＮＭ</li>
+<li>ＩＦ　ＡＳＣ（Ｉ＄）＞５７　ＴＨＥＮ　ＬＮＢ＄＝ＬＮＢ＄＋”　”：ＧＯＴＯ　＠ＳＫ＿ＬＮＭ</li>
+<li>Ｎ１＝ＡＳＣ（Ｉ＄）＋１２９−４８：Ｎ１＄＝ＣＨＲ＄（Ｎ１）</li>
+<li>Ｎ２＝ＡＳＣ（Ｉ＄）＋１３９−４８：Ｎ２＄＝ＣＨＲ＄（Ｎ２）</li>
+<li>ＬＮＭ＄＝ＳＵＢＳＴ＄（ＬＮＭ＄，Ｉ，１，Ｎ１＄）</li>
+<li>ＬＮＢ＄＝ＬＮＢ＄＋Ｎ２＄</li>
+<li>＠ＳＫ＿ＬＮＭ</li>
+<li>ＮＥＸＴ</li>
+<li>ＲＥＴＵＲＮ</li>
+<li></li>
+<li>’┌──────────────┐</li>
+<li>’│フォント　カキカエ　ル−チン│</li>
+<li>’└──────────────┘</li>
+<li>＠Ｌ＿ＮＵＭ</li>
+<li>ＶＩＳＩＢＬＥ　０，０，０，０，０，０</li>
+<li>ＦＯＲ　Ｑ＝０　ＴＯ　９</li>
+<li>ＡＣＬＳ</li>
+<li>Ｉ＝０</li>
+<li>Ｇ＄＝””</li>
+<li>ＦＯＲ　Ｒ＝０　ＴＯ　Ｂ</li>
+<li>ＧＰＵＴＣＨＲ　０＋Ｒ，０，”ＢＧＦ”，４８＋Ｑ，０，２</li>
+<li>ＮＥＸＴ　Ｒ</li>
+<li>ＦＯＲ　Ｙ＝０　ＴＯ　１５</li>
+<li>ＦＯＲ　Ｘ＝０　ＴＯ　７</li>
+<li>Ｃ＄＝ＨＥＸ＄（ＧＳＰＯＩＴ（２＊Ｘ，Ｙ））</li>
+<li>Ｇ＄＝Ｇ＄＋Ｃ＄</li>
+<li>Ｉ＝Ｉ＋１</li>
+<li>ＧＰＳＥＴ　４０＋Ｘ，４０＋Ｙ，Ｃ</li>
+<li>ＮＥＸＴ　Ｘ</li>
+<li>ＮＥＸＴ　Ｙ</li>
+<li>Ｇ２＄＝ＲＩＧＨＴ＄（Ｇ＄，６４）：Ｇ１＄＝ＬＥＦＴ＄（Ｇ＄，６４）</li>
+<li>ＣＨＲＳＥＴ　”ＢＧＦ”，１２９＋Ｑ，Ｇ１＄</li>
+<li>ＣＨＲＳＥＴ　”ＢＧＦ”，１３９＋Ｑ，Ｇ２＄</li>
+<li>ＮＥＸＴ　Ｑ</li>
+<li>ＶＩＳＩＢＬＥ　１，１，１，１，１，１</li>
+<li>ＡＣＬＳ</li>
+<li>ＲＥＴＵＲＮ</li>
+</ol></code></div></div>
+</td></tr></table>
+<p>↑なお、上記QRには、使い方の例として、日付と時間を表示させています。<br />
+@Lで囲まれた、ループ部分がそれです。</p>
+
+<h4 id="m5a8c20e">使い方</h4>
+<ul><li>利用したいプログラムに、APPEND &quot;NHPMOJI1&quot;をつかい、くっつけて使います。</li>
+<li>プログラムの初期設定の部分に、GOSUB @L-NUM　を入れてください。<br />
+このサブルーチンを通ると、フォントデータが20個描き換わります。<br /></li>
+<li>文字変数LNM$に入力した文字変数を、GOSUB @LNM　に通すと、数字上半分が変数LNM$、下半分が、LNB$に入力されて返ってきます。</li>
+<li>二つの文字列をLOCATEなどで、縦に並べるように表示してください。<br /></li>
+<li>なお、数字以外の文字が混じっていても問題ありません。数字以外は無視されます。<br /></li>
+<li>この際の数字は、文字としての数字の事ですので、注意してください。<br /></li>
+<li>最初に、変数Bの値を変えて(0…4推奨)、GOSUB @L-NUM することで、文字の太さを変えることができます。<br />
+上記スクリーンショットは、B=0での表示です。</li></ul>
+
+<h3 id="rfe896e5">横長数字変換</h3>
+
+<h4 id="rd202c64">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPMOJI2</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji2_qr.png" title="nhpmoji2_qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji2_qr.png" alt="nhpmoji2_qr.png" title="nhpmoji2_qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji2_sc.jpg" title="nhpmoji2_sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji2_sc.jpg" alt="nhpmoji2_sc.jpg" title="nhpmoji2_sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+<p>↑なお、上記PRGには、使い方の例として、日付と時間をひょうじさせています。<br />
+@Lで囲まれた、ループ部分がそれです。</p>
+
+<h4 id="ve91212f">使用プログラム</h4>
+<blockquote><p class="quotation"><span style="font-size:30px"><a href="http://wiki.hosiken.jp/petc/?Toukou%2FA%20SHOT" rel="nofollow">A SHOT</a></span></p>
+<blockquote><p class="quotation"><span style="color:#999900">スコア表示に利用してみました</span></p></blockquote></blockquote>
+
+<h4 id="o876adb6">使い方</h4>
+<ul><li>利用したいプログラムに、APPEND &quot;NHPMOJI2&quot;をつかい、くっつけて使います。<br /></li>
+<li>プログラムの初期設定のぶぶんに、GOSUB @L-NUM を入れてください。<br />
+このサブルーチンを通ると、フォントデータが20個描き換わります。<br /></li>
+<li>文字変数LNM$に入力した文字変数を、GOSUB @LNM に通すと、数字だけが横長文字になって返ってきます。<br /></li>
+<li>なお、数字以外の文字が混じっていても、問題ありません。数字以外は無視されます。<br /></li>
+<li>この際の数字とは、文字としての数字の事ですので、注意してください。<br /></li>
+<li>最初に、変数Bの値を変えて(0…4推奨)、GOSUB @L-NUM することで、文字の太さを変えることができます。<br />
+上記スクリーンショットは、B=2の表示です。</li></ul>
+
+<h3 id="sf5c2933">おまけ:縦持ち用フォント変換サブルーチン</h3>
+
+<h4 id="zc52b6ef">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPMOJI3</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji3_qr.png" title="nhpmoji3_qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji3_qr.png" alt="nhpmoji3_qr.png" title="nhpmoji3_qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji3_sc.jpg" title="nhpmoji3_sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji3_sc.jpg" alt="nhpmoji3_sc.jpg" title="nhpmoji3_sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+
+<h4 id="x67efc1b">使い方</h4>
+<ul><li>利用したいプログラムに、APPEND &quot;NHPMOJI3&quot;をつかい、くっつけて使います。<br /></li>
+<li>プログラムの初期設定の部分に、GOSUB @TATE_F を入れてください。このサブルーチンを通ると、全256のフォントすべてが、時計回りに90度回転します。<br /></li>
+<li>ただし、編集モードのリストも、すごい状態になってしまうので、基本はコメントアウトしておくと、いいと思います。<br /></li>
+<li>編集モードがカオスになって困った方は、実行モードで、CHRINIT &quot;BGF&quot; と打って、enterしてください。</li></ul>
+
+<h3 id="l8438308">おまけ2:太字フォント変換サブルーチン</h3>
+
+<h4 id="rd6d6e9b">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPMOJI4</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji4qr.png" title="nhpmoji4qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji4qr.png" alt="nhpmoji4qr.png" title="nhpmoji4qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji4sc.jpg" title="nhpmoji4sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji4sc.jpg" alt="nhpmoji4sc.jpg" title="nhpmoji4sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+
+<h4 id="wa6252d5">使い方</h4>
+<ul><li>APPEND&quot;NHPMOJI4&quot;でくっつけて利用します。<br /></li>
+<li>GOSUB @FUTOJI_F を通すと、フォント256文字が太めに描き換わります。</li></ul>
+
+<h3 id="i8dd6edd">おまけ3:反転フォント変換サブルーチン</h3>
+
+<h4 id="z1ed3bbd">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPMOJI5</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji5qr.png" title="nhpmoji5qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji5qr.png" alt="nhpmoji5qr.png" title="nhpmoji5qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji5sc.jpg" title="nhpmoji5sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji5sc.jpg" alt="nhpmoji5sc.jpg" title="nhpmoji5sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+
+<h4 id="b7561f3e">使い方</h4>
+<ul><li>APPEND&quot;NHPMOJI5&quot;でくっつけて利用します。<br /></li>
+<li>GOSUB @HANTEN_F を通すと、フォント256文字が反転フォントに描き換わります。<br /></li></ul>
+
+<h3 id="g41a6f07">おまけ4:ダークフォント変換サブルーチン</h3>
+
+<h4 id="ef98f50a">QR　&amp;　スクリーンショット</h4>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">PRG:NHPMOJI6</td><td class="style_td">スクリーンショット</td></tr><tr><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji6qr.png" title="nhpmoji6qr.png"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji6qr.png" alt="nhpmoji6qr.png" title="nhpmoji6qr.png" width="286" height="286" /></a></td><td class="style_td"><a href="/petc/?plugin=attach&amp;refer=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;openfile=nhpmoji6sc.jpg" title="nhpmoji6sc.jpg"><img src="/petc/?plugin=ref&amp;page=Toukou%2F%BF%F4%BB%FA%C9%BD%BC%A8%CA%D1%B4%B9%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0&amp;src=nhpmoji6sc.jpg" alt="nhpmoji6sc.jpg" title="nhpmoji6sc.jpg" width="320" height="240" /></a></td></tr></tbody></table></div>
+
+<h4 id="bfdc8ff7">使い方</h4>
+<ul><li>APPEND&quot;NHPMOJI6&quot; でくっつけて利用します。<br /></li>
+<li>GOSUB @DARK_F を通すと、フォントがちょっと怖いかんじに描き換わります。<br /></li></ul>
+
+<h3 id="s47d8963">クリックコメント (評価)</h3>
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/数字表示変換プログラム" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="eba366a37381d232a2a777d6b82921e0" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">★★★</td>
+   <td align="right" class="vote_td2">2&nbsp;&nbsp;
+    <input type="submit" name="vote_A1FAA1FAA1FA" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">★★☆</td>
+   <td align="right" class="vote_td1">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A1FAA1FAA1F9" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">★☆☆</td>
+   <td align="right" class="vote_td2">0&nbsp;&nbsp;
+    <input type="submit" name="vote_A1FAA1F9A1F9" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+<p>訪問者<br />
+トータル:1069人<br />
+今日:2人<br /></p>
+
+<h3 id="v0ff02d6">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="/petc/?Board" title="Board (944d)">掲示板</a>へ)</p>
+<ul><li><strong>魔神</strong> : いいね!!88888888888888 (<span class="comment_date">2014/04/27 (日) 16:24:14</span>)</li></ul>
+<br />
+<form action="/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div>
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/数字表示変換プログラム" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="eba366a37381d232a2a777d6b82921e0" />
+  <label for="_p_comment_name_0">お名前: </label><input type="text" name="name" id="_p_comment_name_0" size="15" />
+
+  <input type="text"   name="msg_text" id="_p_comment_comment_0" size="70" />
+  <input type="submit" name="comment" value="コメントの挿入" />
+ </div>
+</form>
+</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about"><strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.093 秒  | このページの最終更新 : 2014/04/27 (日) 16:24:14  (334d) | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>
