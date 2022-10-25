@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Toukou/マリオBGM の変更点 - プチコンまとめWiki (初代/mkII)</title>
+	<link rel="stylesheet" href="../sys/skin/standard-3gou.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+		<h2 id="header-navigation">ナビゲーション</h2>
+
+		<h3 id="header-search">ウィキ</h3>
+
+		<div id="block-topbox">
+
+			<p><strong>ウィキ メニュー</strong>
+
+				&nbsp;:&nbsp;
+				<a href="/petc/?cmd=edit&amp;page=Toukou%2F%A5%DE%A5%EA%A5%AABGM">編集</a> -
+				<a href="/petc/?cmd=diff&amp;page=Toukou%2F%A5%DE%A5%EA%A5%AABGM">差分</a> -
+				<a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%A5%DE%A5%EA%A5%AABGM">添付</a> -
+				<a href="/petc/?plugin=newpage&amp;refer=Toukou%2F%A5%DE%A5%EA%A5%AABGM">新規</a> -
+				<a href="/petc/?cmd=search">検索</a> -
+				<a href="/petc/?cmd=list">一覧</a> -
+				<a href="/petc/?RecentChanges">新着</a> -
+				<a href="/petc/?Help">ヘルプ</a>
+			</p>
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc3gou/">プチコン3号</a></li>
+			<li id="active">プチコン初代/mkII</li>
+		<ul>
+	</div>
+
+
+	<div id="block-body"><div id="block-body-container">
+
+		<h2>Toukou/マリオBGM の変更点</h2>
+
+		<div id="block-pankuzu-body">
+
+			<h3 id="header-pankuzu">パンくずリスト</h3>
+
+			<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM">マリオBGM</a></li>			</ul>
+
+		</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc/?Toukou%2F%A5%DE%A5%EA%A5%AABGM">Toukou/マリオBGM</a> へ行く。</li>
+<li><a href="/petc/?cmd=diff&amp;action=delete&amp;page=Toukou%2F%A5%DE%A5%EA%A5%AABGM">Toukou/マリオBGM の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(投稿プログラム : マリオBGM (mkII&amp;3号))
+#contents
+//
+//
+//あ
+//
+//
+//ページを勝手に書き換えないで！
+2014年9月22日投稿
+//------------------------------------------------------------------------------
+// ・投稿者名は、将来的に投稿プログラム一覧に表示するために使用します。
+// ・「名無しさん」のままにしておくと、匿名の方からの投稿として扱われます。
+// ↓↓↓
+/ 投稿者 : oy
+// ↑↑↑
+//------------------------------------------------------------------------------
+// ・適当にタグをつけることができます。半角のコンマ区切りで複数つけられます。
+//   タグをつけると、同じタグが付いたページを検索することができます。
+// ★次に該当するプログラムは、特定のタグを設定するようご協力お願いします。
+//   これらを設定すると、将来的に投稿プログラム一覧に目立つマークが付くようになる予定です。
+// ・短いプログラム → 「1行プログラム」「数行プログラム」「1画面プログラム」タグのいずれか1つ
+// ・初代プチコンでも動作するプログラム → 「初代対応」タグ
+// ・mkII 以降専用のプログラム → 「mkII専用」タグ
+// ・QRコードを掲載している → 「QRコード」タグ
+// ・該当するなら「ゲーム」「実用ツール」「音楽」タグのいずれか
+// ↓↓↓
+/ &amp;tag(投稿プログラム,音楽,QRコード,mkII専用,3号専用);
+// ↑↑↑
+
+//------------------------------------------------------------------------------
+// ここに概要とか書きます。
+// ・** や *** で始まる行は子見出しとなります。* の数で深さが決まります。
+// ・[#英数字] はページ内リンクに使用されるアンカーですが、
+//   書かなかったり、消したりしてもかまいません。ない場合はランダムな文字列が自動付与されます。
+#blockdiv(class:block-info)
+今日&amp;counter(today);人~
+これまで&amp;counter(total);人~
+11/7に1000人達成！！！~
+thank you!!~
+#blockdiv(end)
+最終更新日 2014/12/21/16:25
+
+
+
+* 概要 [#Summary]
+マリオのＢＧＭです。
+（増やしていく予定です。）
+(MML初心者なので大目にみてください。)~
+基本的に自由に使っていいです。一声かけてもらえるとうれしいです。~
+~
+ちなみに作者はスーパーマリオギャラクシーが一番好きです。
+
+
+3号のBGMを作っています。
+手打ちで頑張ってください。
+
+*** 内容 [#Komidashi1-1]
++今あるＢＧＭです。
+-スーパーマリオRPG　森のきのこにご用心　
+-スターダストギャラクシー
+-ドンキーコングハンマー音（neko800さんの「プチコンでゲームミュージック」を使わせて頂いています。）
+-スターのときの音
+-ヨッシーアイランド　タイトル
+-ウォーターランド
+-マリオカート６４　ヨッシーバレー　（ＮＥＷ）
+-ヨースター島
+-スーパーマリオ６４　ファイルセレクト
+-ヨッシーアイランド　地上
+/////////////////////////////////
+
+
+
+// 動作しているところを撮影した写真や動画があれば貼り付けてください。
+// ページを作成すると、画像の添付ができるようになります。(作成する前はできません)
+// 作成後のページの右上、ウィキメニューにある「添付」から画像をアップロードできます。
+// (添付ファイルはページごとに別個に管理されています。必ず作成後のページに添付してください)
+// 画像をアップロードしたら、以下の書式でページ内に貼り付けられます。
+// #ref(添付ファイル名)
+
+// 以下の書式で、YouTube やニコニコ動画を貼り付けられます。
+// #youtube(0HWX7kovgY8)
+// #nicovideo(sm13684820)
+
+/////////////////////////////////
+// QR コードがない場合は、この部分は削除してください
+
+* QR コード [#QR]
+プチコンmkII 向けの QR コードです。
+
+// 【重要】旧プチコンから mkII に転送したプログラムは、mkII で保存しなおしてから
+// QR コード化すると、枚数が半分ぐらいに減ります。ぜひお試し下さい。
+// 【重要】添付できるのは画像ファイルのみです。zip ファイルは解凍してください。
+
+// ページを作成すると、QR コードの添付ができるようになります。(作成する前はできません)
+// 作成後のページの右上、ウィキメニューにある「添付」から画像をアップロードできます。
+// (添付ファイルはページごとに別個に管理されています。必ず作成後のページに添付してください)
+// QR コードをアップロードしたら、以下の書式でページ内に貼り付けられます。
+#region(QRコード)
+#ref(qr0.png,,200%)
+↑スターダストギャラクシー (1)
+
+#ref(qr1.png,,200%)
+↑スターダストギャラクシー (2)
+
+#ref(mrt.png,,200%)
+↑森のキノコにご用心 (1)
+#ref(mrt1.png,,200%)
+↑森のキノコにご用心 (2)
+#ref(dkh.png,,200%)
+↑ドンキーコングハンマー音
+#ref(mst.png,,200%)
+↑スーパーマリオ　スター音
+#ref(myt.png,,200%)
+↑ヨッシーアイランド　タイトル
+#ref(64w1.png,,200%)
+↑ウォーターランド (1)
+#ref(64w2.png,,200%)
+↑ウォーターランド(2)
+#ref(mky1.png,,200%)
+↑マリオカート６４　ヨッシーバレー (1)
+#ref(mky2.png,,200%)
+↑マリオカート６４　ヨッシーバレー (2)
+
+#ref(mwy.png,,200%)
+↑ヨースター島
+#ref(64f.png,,200%)
+↑スーパーマリオ６４　ファイルセレクト
+
+#ref(myo.png,,200%)
+↑ヨッシーアイランド　地上　(3号可)
+
+#endregion
+// QR コードを大きくしたい場合は、倍率指定ができます。コンマは必ず 2 つ指定してください。
+// ブラウザによっては補完がかかってボケますが、それでも問題なく読み込み可能です。
+// #ref(アップロードしたファイル名,,200%)
+
+// 複数の QR コードを貼り付けるために表組みを用いる場合、&amp;ref(); を使用します。
+// (#ref() を表に埋め込んでしまうと、古い Internet Explorer でうまく表示されません)
+// |&gt;|&gt;|~PRG:FILENAME|
+// |~1/3|~2/3|~3/3|
+// |&amp;ref(qr0.png,,200%);|&amp;ref(qr1.png,,200%);|&amp;ref(qr2.png,,200%);|
+
+/////////////////////////////////
+
+//* プログラムリスト [#List]
+
+* プログラムリスト [#m2a5ba58]
+
+#region(評価が付けられます。ぜひ開いてください。)
+#region(プログラムリスト　スターダストギャラクシー)
+#basic{{
+BGMSETD 240,@BGM1
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1
+DATA &quot;:0 V80 T57 @0 L16 Q7
+DATA &quot;[@E110,0,0,50 O2
+DATA &quot;[R&lt;D#G#&lt;CDG&gt;&gt;]4
+DATA &quot;[[R&lt;D#G#&lt;CDG&gt;&gt;]6
+DATA &quot;[R&lt;D#G#&lt;CDG&gt;&gt;]2
+DATA &quot;[R&lt;D#G#&lt;CDG&gt;&gt;]4
+DATA &quot;RB&lt;EF#G#B
+DATA &quot;RC#F#G#A#&lt;C#&gt;
+DATA &quot;RD#G#A#&lt;CD#
+DATA &quot;G#GD#C&gt;G#G]2
+DATA &quot;@54&lt;
+DATA &quot;@E110,0,0,80 
+DATA &quot;[&gt;A&lt;EF#G#F#E]4
+DATA &quot;[&gt;B&lt;F#G#A#G#F#]4
+DATA &quot;[&gt;A&lt;EF#G#F#E]4
+DATA &quot;[&gt;B&lt;F#G#A#G#F#]3
+DATA &quot;@0&gt;
+
+DATA &quot;R&lt;G#F#D#C#&gt;A#
+DATA &quot;[RG#&lt;D#F&lt;CC#
+DATA &quot;&gt;&gt;RG#&lt;D#FG#&lt;C#
+DATA &quot;&gt;&gt;RA#&lt;D#FGA#
+DATA &quot;&gt;RA#&lt;D#FGA#&gt;]2
+DATA &quot;RRRRRR
+DATA &quot;RRRRRR]
+
+
+
+
+
+DATA &quot;:1 V80 @0 L16 Q7
+DATA &quot;[@E110,0,0,100 O2
+DATA &quot;[G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#]4
+DATA &quot;[[G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#]6
+DATA &quot;[F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#]2
+DATA &quot;[G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#]4
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E
+DATA &quot;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#
+DATA &quot;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#
+DATA &quot;RRRRRR]2
+DATA &quot;[RRRRRR]15
+DATA &quot;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#
+DATA &quot;&lt;[[C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#]2
+DATA &quot;[D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#]2]2
+DATA &quot;&lt;&lt;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+DATA &quot;RRRRRR]
+
+DATA &quot;:2 [V100 @54 L16 Q7
+DATA &quot;@E40,50,60,50 O5
+DATA &quot;[RRRRRR
+DATA &quot;C&amp;CRRRR]2
+
+DATA &quot;V127 @E120,0,0,80 O5
+DATA &quot;@0 RR&gt;D#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;&gt;D#&amp;D#&amp;D#&amp;D#&amp;D#R
+
+DATA &quot;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C
+
+DATA &quot;RR&gt;D#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;&gt;D#&amp;D#&amp;D#&amp;D#&amp;D#R
+
+DATA &quot;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;C#&amp;C#&amp;C#C&gt;A#&lt;C#
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C
+
+'''
+DATA &quot;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;&gt;D#&amp;D#&amp;D#&amp;D#&amp;D#R
+
+DATA &quot;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C
+
+DATA &quot;RR&gt;D#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;&gt;D#&amp;D#&amp;D#&amp;D#&amp;D#R
+
+DATA &quot;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;C#&amp;C#&amp;C#C&gt;A#&lt;C#
+DATA &quot;CRRRRR
+DATA &quot;RRRRRR
+
+'''
+DATA &quot;@45
+DATA &quot;&gt;&gt;G#G#G#RRR
+DATA &quot;&lt;RRC#&amp;C#&amp;C#&gt;B
+DATA &quot;&lt;C#C#C#RRR
+
+DATA &quot;RRE&amp;E&amp;ED#
+DATA &quot;&gt;BBBRRR
+DATA &quot;&lt;RRF#&amp;F#&amp;F#E
+DATA &quot;D#D#D#RRR
+
+DATA &quot;&gt;G#&amp;G#&amp;G#&amp;G#F#&amp;F#
+DATA &quot;G#G#G#RRR
+DATA &quot;&lt;RRC#&amp;C#&amp;C#&gt;B
+DATA &quot;&lt;C#C#C#RRR
+
+DATA &quot;RRE&amp;E&amp;ED#
+DATA &quot;&gt;BBBRRR
+DATA &quot;&lt;RRF#&amp;F#&amp;F#E
+DATA &quot;D#D#D#RRR
+DATA &quot;@0
+DATA &quot;RRC#&amp;C#&gt;A#&amp;A#
+
+DATA &quot;RRG#&amp;G#&lt;G#&amp;G#
+DATA &quot;G&amp;G&amp;GFD#C#
+DATA &quot;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+DATA &quot;&gt;A#&amp;A#&amp;A#&amp;A#&amp;A#&amp;A#
+
+DATA &quot;RRG#&amp;G#&lt;G#&amp;G#
+DATA &quot;G&amp;G&amp;GFD#C#
+DATA &quot;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+DATA &quot;RRRRRR
+
+DATA &quot;G&amp;GA#&amp;A#G&amp;G
+DATA &quot;D#&amp;D#&gt;A#&amp;A#G&amp;G]
+
+
+
+
+DATA &quot;:3 V127 @0 L16 Q7
+DATA &quot;[@E120,0,120,80 O4
+DATA &quot;[RRRRRR]20
+
+DATA &quot;T57
+DATA &quot;RRRRRR
+DATA &quot;RRRRRR
+DATA &quot;V60@54RR&lt;D#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+
+DATA &quot;&lt;C&amp;CRRRR
+DATA &quot;RRRRRR
+DATA &quot;&gt;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+
+DATA &quot;&lt;C&amp;CRRRR
+DATA &quot;RRRRRR
+DATA &quot;&gt;RRD#&amp;D#&lt;D#&amp;D#
+DATA &quot;D&amp;D&amp;DC&gt;A#G#
+
+DATA &quot;&lt;C&amp;C&gt;&gt;B&amp;B&lt;B&amp;B
+DATA &quot;G#&amp;G#&amp;G#G#FA#
+DATA &quot;G#RRRA#&amp;A#
+DATA &quot;&lt;C&amp;C&amp;C&amp;CD#&amp;D#&gt;
+
+DATA &quot;[RRRRRR]15
+DATA &quot;@0V127RRG#&amp;G#F#&amp;F#
+DATA &quot;[RRRRRR]6
+
+DATA &quot;&gt;RRF&amp;FG&amp;G
+DATA &quot;A#&amp;A#&lt;D#&amp;D#F&amp;F
+DATA &quot;D#&amp;D#G&amp;GD#&amp;D#
+DATA &quot;&gt;A#&amp;A#G&amp;GD#&amp;D#]
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+}}
+#endregion
+#vote(すばらしい[7],良い[1],普通[8],悪い[0])
+
+#region(プログラムリスト　森のキノコにご用心)
+#basic{{
+ BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V127 T94 @17 L16 Q7
+DATA &quot;@E120,0,0,125 O3
+
+'1
+'9
+DATA &quot;[[C#D#EF#G#&amp;G#&lt;C#&amp;C#
+DATA &quot;&gt;B&amp;BG#&amp;G#A#&amp;A#&amp;A#R
+DATA &quot;BRG#A#BRA#F#
+DATA &quot;D#RERD#&amp;D#&amp;D#R
+
+'5
+'13
+DATA &quot;C#D#EF#ERD#E
+DATA &quot;F#&amp;F#ED#C#&amp;C#&amp;C#R
+DATA &quot;F#RED#C#RD#E
+DATA &quot;F#REF#G#&amp;G#&amp;G#R]2
+
+'17
+DATA &quot;@82 V60&lt;&lt;D#EG#&lt;C#&gt;D#EG#&lt;C#&gt;
+DATA &quot;D#EG#&lt;C#&gt;D#EG#&lt;C#&gt;
+DATA &quot;C#DF#BC#DF#B
+DATA &quot;C#DF#BC#DF#B
+
+'21
+DATA &quot;FG#B&lt;C#&gt;FG#B&lt;C#&gt;
+DATA &quot;FG#B&lt;C#&gt;FG#B&lt;C#&gt;
+DATA &quot;FG#B&lt;C#&gt;FG#B&lt;C#&gt;
+DATA &quot;FG#B&lt;C#&gt;FG#B&lt;C#&gt;&gt;&gt;
+
+'25
+DATA &quot;V127 @17 F#G#AB&lt;C#RF#R
+DATA &quot;ERC#RD#&amp;D#&amp;D#R
+DATA &quot;ERC#D#ERD#&gt;B
+DATA &quot;G#RARG#&amp;G#&amp;G#R
+
+'29
+
+DATA &quot;F#G#ABARG#A
+DATA &quot;B&amp;BAG#F#&amp;F#&amp;F#R
+DATA &quot;BRAG#F#RG#A
+DATA &quot;BRAB&lt;C#&amp;C#&amp;C#R
+
+'33
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'37
+DATA &quot;&gt;F#G#AB&lt;C#RF#R
+DATA &quot;A&amp;AG#F#ERC#R
+DATA &quot;F#&amp;F#EDC#R&gt;BR
+DATA &quot;A&amp;AG#&amp;G#A&amp;AB&amp;B
+'41
+DATA &quot;A#&amp;A#&amp;A#&amp;A#&lt;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;&gt;RRRRRRRR]
+
+DATA &quot;:1 V100 @4 L16 Q7
+DATA &quot;@E120,0,0,123 O2
+
+'1
+'9
+DATA &quot;[[C#RG#RC#RG#R
+DATA &quot;C#RG#RF#R&lt;C#R&gt;
+DATA &quot;ERBRERBR
+DATA &quot;F#R&lt;C#R&gt;&gt;BR&lt;F#R
+
+'5
+'13
+DATA &quot;&gt;AR&lt;ER&gt;AR&lt;ER
+DATA &quot;&gt;AR&lt;ER&gt;AR&lt;ER
+DATA &quot;&gt;BR&lt;F#R&gt;BR&lt;F#R
+DATA &quot;&gt;BR&lt;F#R&gt;GR&lt;D#R]2
+
+'17
+DATA &quot;C#RG#RC#C#C#R
+DATA &quot;C#RG#RC#C#C#R
+DATA &quot;&gt;BR&lt;F#R&gt;BBBR
+DATA &quot;BR&lt;F#R&gt;BRBR&lt;
+
+'21
+DATA &quot;C#RG#RC#C#C#R
+DATA &quot;C#RG#RC#C#C#R
+DATA &quot;C#RG#RC#RG#R
+DATA &quot;C#RG#RC#RG#R
+
+'25
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;&gt;BR&lt;F#R
+DATA &quot;&gt;AR&lt;ER&gt;AR&lt;ER
+DATA &quot;&gt;BR&lt;F#RERBR
+
+'29
+DATA &quot;DRARDRAR
+DATA &quot;DRARDRAR
+DATA &quot;ERBRERBR
+DATA &quot;ERBRC#RG#R
+
+'33
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;ERBR
+DATA &quot;DRBRDRBR
+DATA &quot;C#RG#RC#RG#R
+
+'37
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;ERBR
+DATA &quot;DRBRDRBR
+DATA &quot;C#RG#RC#RG#R
+
+'41
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;F#R&lt;C#R&gt;
+DATA &quot;F#R&lt;C#R&gt;G#R&lt;D#R&gt;]
+
+DATA &quot;:2 V127 @17 L16 Q7
+DATA &quot;@E120,0,0,125 O4
+
+'1
+DATA &quot;[[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'5
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'9
+DATA &quot;V100C#D#EF#G#G#&lt;C#C#
+DATA &quot;&gt;BBG#G#A#&amp;A#&amp;A#R
+DATA &quot;BBG#A#BBA#F#
+DATA &quot;D#RERD#&amp;D#&amp;D#R
+
+'13
+DATA &quot;C#D#EF#EED#E
+DATA &quot;F#&amp;F#ED#C#&amp;C#&amp;C#R
+DATA &quot;F#F#ED#C#C#D#E
+DATA &quot;F#F#EF#G#&amp;G#&amp;G#&amp;G#V127
+
+'17
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'21
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'25
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'29
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'33
+DATA &quot;&gt;F#G#AB&lt;C#C#F#F#
+DATA &quot;A&amp;AG#F#EEC#C#
+DATA &quot;F#&amp;F#EDC#C#&gt;BB
+DATA &quot;A&amp;AG#&amp;G#A&amp;AB&amp;B
+
+'37
+DATA &quot;&lt;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;&gt;F#&amp;F#&amp;F#&amp;F#G#&amp;G#&amp;G#&amp;G#
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;AG#&amp;G#
+DATA &quot;F#&amp;F#F&amp;FF#&amp;F#G#&amp;G#
+
+'41
+DATA &quot;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;
+DATA &quot;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;
+DATA &quot;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#
+DATA &quot;[R]8]
+
+DATA &quot;:3 V60 @17 L16 Q7
+DATA &quot;@E120,0,0,125 O3
+
+'1
+DATA &quot;[[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'5
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'9
+DATA &quot;G#B&lt;C#D#ERG#R
+DATA &quot;G#RERF#&amp;F#RR
+DATA &quot;G#REF#G#RG#F#
+DATA &quot;D#RC#R&gt;B&amp;BRR
+
+'13
+DATA &quot;AB&lt;C#D#C#R&gt;BC#&lt;
+DATA &quot;D#&amp;D#C#&gt;BA&amp;ARR
+DATA &quot;BRAG#F#RG#A
+DATA &quot;BRB&lt;C#D#&amp;D#&amp;D#R
+
+'17
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'21
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;V127&gt;RRR&lt;C#&gt;BAG#F#&lt;V60
+
+'25
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'29
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'33
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'37
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+DATA &quot;[R]8
+
+'41
+DATA &quot;&gt;@82 &lt;F#G#A#B&lt;C#RF#R
+DATA &quot;&gt;F#G#A#B&lt;C#RF#R
+DATA &quot;&gt;F#G#A#B&lt;C#RF#R
+DATA &quot;&gt;F#G#A#B@17V127G#F#EC#V60&gt;]
+
+
+DATA &quot;:4 V40 @83 L16 Q7
+DATA &quot;@E120,0,0,120 O2
+
+DATA &quot;[C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;B&amp;B&amp;B&amp;BA#&amp;A#&amp;A#&amp;A#
+DATA &quot;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#
+DATA &quot;A#&amp;A#B&amp;B&lt;C#&amp;C#D#&amp;D#
+
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;F#&amp;F#&amp;F#&amp;F#&amp;F#&amp;F#E&amp;E
+DATA &quot;D#&amp;D#E&amp;ED#&amp;D#&gt;B&amp;B
+
+DATA &quot;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;
+DATA &quot;G#&amp;G#&amp;G#&amp;G#A#&amp;A#&amp;A#&amp;A#
+DATA &quot;B&amp;B&amp;B&amp;B&amp;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B
+DATA &quot;A#&amp;A#&amp;A#&amp;A#B&amp;B&amp;B&amp;B
+
+DATA &quot;A&amp;A&lt;G#&amp;G#G#&amp;G#&gt;A&amp;A
+DATA &quot;A&amp;A&lt;G#&amp;G#&gt;A&amp;AB&amp;B
+DATA &quot;&lt;D#&amp;D#&gt;B#&amp;B#B#&amp;B#&lt;D#&amp;D#
+DATA &quot;D#&amp;D#&gt;B&amp;B&lt;
+
+DATA &quot;V60C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;&gt;B&amp;B&amp;B&amp;BA&amp;A&amp;A&amp;A
+DATA &quot;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#&amp;G#
+DATA &quot;F#&amp;F#&amp;F#&amp;F#E&amp;E&amp;E&amp;E
+
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+
+DATA &quot;V40&lt;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&gt;B&amp;B&amp;B&amp;B
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A
+DATA &quot;B&amp;B&amp;B&amp;BB&amp;B&amp;B&amp;B
+
+DATA &quot;&lt;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;
+DATA &quot;E&amp;E&amp;E&amp;EC#&amp;C#&amp;C#&amp;C#&amp;
+
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#
+DATA &quot;&gt;B&amp;B&amp;B&amp;BA&amp;A&amp;A&amp;A&amp;
+DATA &quot;A&amp;A&amp;A&amp;AG#&amp;G#&amp;G#&amp;G#&amp;
+DATA &quot;G#&amp;G#&amp;G#&amp;G#A&amp;A&amp;A&amp;A&amp;
+
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A
+DATA &quot;B&amp;B&amp;B&amp;B&lt;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D#&amp;D#&amp;D#&amp;D#C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#C#&amp;C#&amp;C#&amp;C#&amp;
+
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;C#&amp;
+DATA &quot;C#&amp;C#&amp;C#&amp;C#D#&amp;D#&amp;D#&amp;D#]
+
+
+
+
+
+
+
+
+
+
+  
+
+}}
+#endregion
+
+#vote(すばらしい[10],良い[2],普通[0],悪い[0])
+
+#region(ドンキーコングハンマー音)
+#basic{{
+@SOUNDINIT
+RESTORE @DELTA:READ DELTA1$,DELTA2$:MOJI$=DELTA1$+DELTA2$
+BGMPRG 224,127,0,0,127,MOJI$
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+END
+
+@DELTA '???ﾌｧﾐｺﾝｻﾝｶｸﾊ
+DATA FFFF111122223333444455556F6F7F7F7F7F6F6F55554444333322221111FFFF
+DATA FFFFEEEEDDDDCCCCBBBBAAAA99998F8F8F8F9999AAAABBBBCCCCDDDDEEEEFFFF
+
+@BGM1 '???BGM
+DATA &quot;:0 T180 @224 V110 L16 Q7
+DATA &quot;@E126,0,0,126 O4
+DATA &quot;[CRCCRCRERCRERCR
+DATA &quot;EREERERGRERGRER]
+
+ 
+}}
+#endregion
+#vote(すばらしい[1],良い[1],普通[0],悪い[2])
+
+#region(スターのときの音)
+#basic{{
+GMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V127 T150 @0 L16 Q7
+DATA &quot;@E120,0,0,100 O3
+DATA &quot;[A&amp;AA&amp;AA&amp;AGARA&amp;AGA&amp;AA&amp;A
+DATA &quot;G&amp;GG&amp;GG&amp;GGGRG&amp;GGG&amp;GG&amp;G]
+
+DATA &quot;:1 V127 @0 L16 Q7
+DATA &quot;@E120,0,0,100 O4
+DATA &quot;[&lt;C&amp;CC&amp;CC&amp;C&gt;A&lt;CRC&amp;C&gt;A&lt;C&amp;CC&amp;C&gt;
+DATA &quot;B&amp;BB&amp;BB&amp;BGBRB&amp;BGB&amp;BB&amp;B]
+
+DATA &quot;:2 V0 @75 L16 Q7
+DATA &quot;@E120,0,0,100 O5
+DATA &quot;[R]16
+DATA &quot;[R]8G&amp;G&amp;G&amp;GG#&amp;G#&amp;G#&amp;G#
+DATA &quot;[A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&lt;E&amp;E&amp;E&amp;E&gt;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;BG&amp;G&amp;G&amp;G
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&lt;E&amp;E&amp;E&amp;E&gt;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&lt;C&amp;CC#&amp;C#
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DA&amp;A&amp;A&amp;A
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;EC&amp;C&amp;C&amp;C
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DA&amp;A&amp;A&amp;A
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;EB&amp;B&amp;B&amp;BG&amp;G&amp;G&amp;G
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;AG&amp;GF&amp;FE&amp;ED&amp;DC&amp;C
+DATA &quot;&gt;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;BG&amp;G&amp;G&amp;G]
+DATA &quot;
+
+DATA &quot;:3 V80 @75 L16 Q7 O6
+DATA &quot;[[EC&gt;GE&lt;]4
+DATA &quot;[E&gt;BAE&lt;]4]
+
+DATA &quot;:4 V127 @74 L16 Q7 O3
+DATA &quot;[R]16
+DATA &quot;[R]16
+DATA &quot;[C&amp;C&amp;CC#&amp;C#&amp;C#D&amp;DRRC&amp;CC#&amp;C#D&amp;D&gt;
+DATA &quot;G&amp;G&amp;GG#&amp;G#&amp;G#A&amp;ARRG&amp;GG#&amp;G#A&amp;A&lt;]
+
+
+
+
+
+
+}}
+#endregion
+
+/////////////////////////////////
+// コメントを募集したくないなら、ここから下は削除してください
+#vote(すばらしい[0],良い[0],普通[0],悪い[0])
+#region(ヨッシーアイランド　タイトル)
+#basic{{
+
+PRINT &quot;SUPERMARIO YOSHIISLAND TITLESCREEN&quot;
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+@BGM1 '???BGM
+DATA &quot;:0 V127 T100 @13 L16 Q7
+DATA &quot;@E120,0,0,110 O3
+DATA &quot;[G&amp;G&lt;D&gt;F&amp;F&lt;D&gt;G&lt;D&gt;B&amp;B&lt;FG&amp;GF&gt;B&lt;D&gt;]4
+DATA &quot;[[@13V127G&amp;G&lt;D&gt;F&amp;F&lt;D&gt;G&lt;D&gt;B&amp;B&lt;FG&amp;GF&gt;B&lt;D&gt;]12
+DATA &quot;[@2V100&gt;F&amp;F&amp;F&amp;FE&amp;E&amp;E&amp;ED&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;F&amp;F&amp;F&amp;FE&amp;E&amp;E&amp;ED&amp;D&amp;D&amp;D&amp;D&amp;DD&lt;D&gt;]2]
+
+DATA &quot;:1 V80 @73 L16 Q7 P0
+DATA &quot;@E127,0,0,125 O5
+
+DATA &quot;[RRRRRRRRRRRRRRRR]4
+
+DATA &quot;[D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRC&gt;B
+DATA &quot;A&amp;ABARGD&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;GD&amp;D&amp;DE&amp;E
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;&lt;D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRC&gt;B
+DATA &quot;A&amp;ABARGD&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;GD&amp;D&amp;DE&amp;E
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;&lt;D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRDE
+DATA &quot;F&amp;FEFREDCD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;&gt;B&amp;B&amp;BAR&lt;C&amp;C&gt;B&amp;B&amp;B&amp;BG&amp;G&amp;GD&amp;D
+DATA &quot;B&amp;B&amp;BAR&lt;C&gt;BG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DG&amp;G&amp;G&amp;G
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DRRRR
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DG&amp;G&amp;G&amp;G
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DRRRR]
+
+
+DATA &quot;:2 V80 @73 L16 Q7 P127
+DATA &quot;@E80,0,0,80 O5
+DATA &quot;[RRRRRRRRRRRRRRRR]4
+
+DATA &quot;[D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRC&gt;B
+DATA &quot;A&amp;ABARGD&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;GD&amp;D&amp;DE&amp;E
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;&lt;D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRC&gt;B
+DATA &quot;A&amp;ABARGD&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;GD&amp;D&amp;DE&amp;E
+DATA &quot;F&amp;F&amp;FGRBA&amp;AG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;&lt;D&amp;D&amp;DD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;DRRDE
+DATA &quot;F&amp;FEFREDCD&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;&gt;B&amp;B&amp;BAR&lt;C&amp;C&gt;B&amp;B&amp;B&amp;BG&amp;G&amp;GD&amp;D
+DATA &quot;B&amp;B&amp;BAR&lt;C&gt;BG&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DG&amp;G&amp;G&amp;G
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DRRRR
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DG&amp;G&amp;G&amp;G
+DATA &quot;F&amp;F&amp;F&amp;F&amp;FEDCD&amp;D&amp;D&amp;DRRRR]
+
+
+
+
+
+
+DATA &quot;:3 V127 @0 L16 Q7
+DATA &quot;@E120,0,0,120 O2
+
+DATA &quot;[RRRRRRRRRRRRRRRR]4
+DATA &quot;[RRRRRRRRRRRRRRRR]4
+DATA &quot;[[&gt;G&amp;G&amp;G&lt;DDDF&amp;FG&amp;G&amp;GDDDF&amp;F]8
+DATA &quot;[RRRRRRRRRRRRRRRR]4
+DATA &quot;[&gt;G&amp;G&amp;G&lt;DDDF&amp;FG&amp;G&amp;GDDDF&amp;F]4]
+
+DATA &quot;:4 V70 @128 L16 Q7
+DATA &quot;O4P20
+DATA &quot;[RRRRRRRRRRRRRRRR]2
+DATA &quot;[AAARRRRRRRRRRRRR]10
+DATA &quot;[AAAAAAAAAAAAAAAA]
+
+DATA &quot;:5 V120 @128 L16 Q7 O2 P100
+DATA &quot;[RRRRRRRRRRRRRRRR]16
+DATA &quot;[T100RRRRRRRRRRRRRE#RR]
+
+}}
+#endregion
+#vote(すばらしい[0],良い[0],普通[0],悪い[0])
+
+
+#region(ウォーターランド)
+#basic{{
+PRINT &quot;SUPER MARIO 64 WATER LAND&quot;
+@SOUNDINIT
+RESTORE @DELTA:READ DELTA1$,DELTA2$:MOJI$=DELTA1$+DELTA2$
+BGMPRG 224,127,0,0,127,MOJI$
+BGMSETD 240,@BGM1
+BGMSETD 241,@BGM2
+
+BGMPLAY 1,240,127
+BGMPLAY 2,241,0
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+END
+
+@DELTA '???ﾌｧﾐｺﾝｻﾝｶｸﾊ
+DATA FFFF111122223333444455556F6F7F7F7F7F6F6F55554444333322221111FFFF
+DATA FFFFEEEEDDDDCCCCBBBBAAAA99998F8F8F8F9999AAAABBBBCCCCDDDDEEEEFFFF
+
+@BGM1 '???BGM
+DATA &quot;:0 V127 T60 @0 L16 Q7
+DATA &quot;@E127,0,0,30 O3
+'1
+DATA &quot;[RRRA&amp;AB&amp;B&lt;D
+'2
+DATA &quot;G&amp;GR&lt;G&amp;G&amp;G&amp;G&amp;G
+'3
+DATA &quot;&gt;&gt;RRRA&amp;AB&amp;B&lt;D
+'4
+DATA &quot;G&amp;G&lt;RG&amp;G&amp;G&amp;G&amp;G
+'5
+DATA &quot;O3 RRRA&amp;AB&amp;B&lt;D
+'6
+DATA &quot;G&amp;GR&lt;G&amp;G&amp;G&amp;G&amp;G
+'7
+DATA &quot;&gt;&gt;RRRA&amp;AB&amp;B&lt;D
+'8
+DATA &quot;G&amp;G&lt;RG&amp;G&amp;G&amp;G&amp;G
+'9
+DATA &quot;O3 RRRA&amp;AA#&amp;A#&lt;D
+'10
+DATA &quot;G&amp;GR&lt;G&amp;G&amp;G&amp;G&amp;G
+'11
+DATA &quot;O3 RRRA&amp;A&lt;C&amp;CD
+'12
+DATA &quot;G&amp;GR&lt;G&amp;G&amp;G&amp;G&amp;G
+'・'13
+DATA &quot;O4 RDGAB&lt;C&gt;BA
+'14
+DATA &quot;G&amp;GD&amp;DC&amp;CG&amp;G
+'15
+DATA &quot;D&amp;D&amp;D&gt;G&amp;G&amp;G&amp;GG
+'16
+DATA &quot;O4 RRRRRC&amp;CC
+'17
+DATA &quot;&gt;B&lt;DG&amp;G&amp;G&gt;A&amp;AB
+'18
+DATA &quot;O4 RRRD&amp;DG&amp;G&amp;G
+'19
+DATA &quot;RDGAB&lt;C&gt;BA
+'20
+DATA &quot;G&amp;GD&amp;DC&amp;CG&amp;G
+'21
+DATA &quot;D&amp;D&amp;D O3 G&amp;GG&amp;GG
+'22
+DATA &quot;O4 RRRC&amp;CC&amp;CC
+'23
+DATA &quot;O3 A&lt;DG&amp;G&amp;G&gt;A&amp;AB
+'24
+DATA &quot;O3 RRRB&amp;B&amp;B&amp;B&amp;B
+'25
+DATA &quot;O4 RRRG&lt;EDCE
+'26
+DATA &quot;O5 D&amp;D&amp;D&gt;G&amp;G&amp;G&amp;G&amp;G
+'27
+DATA &quot;O4 RRRE&lt;DC&gt;B&lt;C
+'28
+DATA &quot;O4 B&amp;B&amp;BG&amp;G&amp;G&amp;G&amp;G
+'29
+DATA &quot;O4 RRRG&lt;EDCE
+'30
+DATA &quot;O5 D&amp;D&amp;D&gt;G&amp;G&amp;G&amp;G&amp;G
+'31
+DATA &quot;O5 RRRRCDC&gt;B
+'32
+DATA &quot;O4 RRG&amp;GE&amp;E&amp;E&amp;E
+'33
+DATA &quot;O4 RDGAB&lt;C&gt;BA
+'34
+DATA &quot;O4 G&amp;GD&amp;DC&amp;CG&amp;G
+'35
+DATA &quot;O4 D&amp;D&amp;DG&amp;G&amp;G&amp;GG
+'36
+DATA &quot;O4 RRRRRRRC
+'37
+DATA &quot;O3B&lt;DG&amp;G&amp;G&gt;A&amp;AB
+'38
+DATA &quot;O4 RRRD&amp;D&amp;D&amp;D&amp;D
+'39
+DATA &quot;O4 RDGAB&lt;C&gt;BA
+'40
+DATA &quot;O4 G&amp;GD&amp;DC&amp;CG&amp;G
+'41
+DATA &quot;O4 D&amp;D&amp;D&gt;G&amp;G&lt;C&amp;C&gt;A#
+'42
+DATA &quot;O4 RRRRRC&amp;CC
+'43
+DATA &quot;O3 B&lt;DG&amp;G&amp;GA&amp;AB
+'44
+DATA &quot;O4 RRRRRG&amp;G&amp;G
+'45
+DATA &quot;O4 RRRF&amp;FFFF
+'46
+DATA &quot;O4 RFFFRFFF
+'47
+DATA &quot;O4 RRRGRGRG
+'48
+DATA &quot;O4 RGGGGGGG
+'49
+DATA &quot;O4 RRRG&amp;GG&amp;GG
+'50
+DATA &quot;RA&amp;AA&amp;AA&amp;A&amp;A]
+
+
+
+
+
+DATA &quot;:2 V127 @0 L16 Q7
+DATA &quot;@E127,0,0,30
+DATA &quot;O2
+'1
+DATA &quot;[G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'2
+DATA &quot;&lt;D&amp;DR&lt;D&amp;D&amp;D&amp;D&amp;D
+'3
+DATA &quot;&gt;&gt;&gt;F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'4
+DATA &quot;&lt;D&amp;D&lt;RD&amp;D&amp;D&amp;D&amp;D
+'5
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'6
+DATA &quot;&lt;D&amp;DR&lt;D&amp;D&amp;D&amp;D&amp;D
+'7
+DATA &quot;&gt;&gt;&gt;F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'8
+DATA &quot;&lt;D&amp;D&lt;RD&amp;D&amp;D&amp;D&amp;D
+'9
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+'10
+DATA &quot;&lt;D&amp;DR&lt;D&amp;D&amp;D&amp;D&amp;D
+'11
+DATA &quot;O2 F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'12
+DATA &quot;&lt;D&amp;DR&lt;D&amp;D&amp;D&amp;D&amp;D
+'・'13
+DATA &quot;O2 G&lt;D&lt;G&amp;G&amp;G&amp;GGD
+'14
+DATA &quot;&gt;F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'15
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#D#&amp;D#
+'16
+DATA &quot;O2 F&lt;CF&amp;F&amp;F&amp;FCF
+'17
+DATA &quot;&gt;G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'18
+DATA &quot;O2 G&lt;D&lt;G&amp;G&amp;G&amp;G&amp;G&amp;G
+'19
+DATA &quot;O2 G&lt;D&lt;G&amp;G&amp;G&amp;GGD
+'20
+DATA &quot;&gt;F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'21
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#D#&amp;D#
+'22
+DATA &quot;O2 F&lt;C&amp;CF&amp;FC&amp;C&amp;C
+'23
+DATA &quot;O2 G&lt;D&amp;DG&amp;GD&amp;D&amp;D
+'24
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'25
+DATA &quot;O3 CG&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+'26
+DATA &quot;O2 B&lt;GB&amp;B&amp;BGB&amp;B
+'27
+DATA &quot;O2 A&lt;FA&amp;A&amp;A&amp;AF&amp;F
+'28
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;GD&amp;D
+'29
+DATA &quot;O3 CG&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C
+'30
+DATA &quot;O2 B&lt;GB&amp;B&amp;B&amp;BB&amp;B
+'31
+DATA &quot;O2 A#&lt;GA#&amp;A#&amp;A#&amp;A#A#&amp;A#
+'32
+DATA &quot;O2 A&lt;A&amp;A&amp;ADA&amp;A&amp;A
+'33
+DATA &quot;O2 G&lt;D&amp;D&amp;D&amp;D&amp;DGD
+'34
+DATA &quot;O2 F&lt;CF&amp;F&amp;FDF&amp;F
+'35
+DATA &quot;O2 D#A#D#&amp;D#&amp;D#&amp;D#A#&amp;A#
+'36
+DATA &quot;O2 F&lt;CF&amp;F&amp;F&amp;FC&amp;C
+'37
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;GG&amp;G
+'38
+DATA &quot;O2 G&amp;G&lt;D&amp;D&amp;D&amp;D&amp;D&amp;D
+'39
+DATA &quot;O2 G&lt;D&amp;D&amp;D&amp;D&amp;DGD
+'40
+DATA &quot;O2 F&lt;CF&amp;F&amp;FC&amp;C&amp;C
+'41
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#D#&amp;D#
+'42
+DATA &quot;O2 F&lt;CF&amp;FRRC&amp;C
+'43
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;GG&amp;G
+'44
+DATA &quot;O3 RRRRRB&amp;B&amp;B
+'45
+DATA &quot;O3 RRRA&amp;AAAA
+'46
+DATA &quot;O3 RAAARAAA
+'47
+DATA &quot;O3 RRRA#RA#RA#
+'48
+DATA &quot;O3 A#A#A#A#A#A#A#A#
+'49
+DATA &quot;O4 RRRC&amp;CC&amp;CC
+'50
+DATA &quot;O4 RC&amp;CC&amp;CC&amp;C&amp;C]
+
+
+
+
+
+
+
+
+
+
+DATA &quot;:3 V127 @0 L16 Q7
+DATA &quot;@E127,0,0,30 O2
+'1
+DATA &quot;[RRRRRRRR
+'2
+DATA &quot;G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'3
+DATA &quot;RRRRRRRR
+'4
+DATA &quot;&gt;F&lt;CF&amp;F&amp;F&amp;FC&amp;C
+'5
+DATA &quot;O2 RRRRRRRR
+'6
+DATA &quot;G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'7
+DATA &quot;RRRRRRRR
+'8
+DATA &quot;&gt;F&lt;CF&amp;F&amp;F&amp;FC&amp;C
+'9
+DATA &quot;RRRRRRRR
+'10
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+'11
+DATA &quot;RRRRRRRR
+'12
+DATA &quot;O2 F&lt;CF&amp;F&amp;F&amp;FC&amp;C
+'・'13
+DATA &quot;RRRRRRRR
+'14
+DATA &quot;RRRRRRRR
+'15
+DATA &quot;RRRRRRRR
+'16
+DATA &quot;RRRRRRRR
+'17
+DATA &quot;RRRRRRRR
+'18
+DATA &quot;RRRRRRRR
+'19
+DATA &quot;RRRRRRRR
+'20
+DATA &quot;RRRRRRRR
+'21
+DATA &quot;RRRRRRRR
+'22
+DATA &quot;RRRRRRRR
+'23
+DATA &quot;RRRRRRRR
+'24
+DATA &quot;RRRRRRRR
+'25
+DATA &quot;RRRRRRRR
+'26
+DATA &quot;RRRRRRRR
+'27
+DATA &quot;RRRRRRRR
+'28
+DATA &quot;RRRRRRRR
+'29
+DATA &quot;RRRRRRRR
+'30
+DATA &quot;RRRRRRRR
+'31
+DATA &quot;RRRRRRRR
+'32
+DATA &quot;RRRRRRRR
+'33
+DATA &quot;RRRRRRRR
+'34
+DATA &quot;RRRRRRRR
+'35
+DATA &quot;RRRRRRRR
+'36
+DATA &quot;RRRRRRRR
+'37
+DATA &quot;RRRRRRRR
+'38
+DATA &quot;RRRRRRRR
+'39
+DATA &quot;RRRRRRRR
+'40
+DATA &quot;RRRRRRRR
+'41
+DATA &quot;RRRRRRRR
+'42
+DATA &quot;RRRRRRRR
+'43
+DATA &quot;RRRRRRRR
+'44
+DATA &quot;O2 G&lt;DG&amp;G&amp;G&amp;G&amp;G&amp;G
+'45
+DATA &quot;O2 F&lt;CF&amp;F&amp;F&amp;F&amp;F&amp;F
+'46
+DATA &quot;O2 F&amp;F&amp;F&amp;F&lt;C&amp;CF&amp;F
+'47
+DATA &quot;O2 D#A#&lt;D#&amp;D#&amp;D#&amp;D#D#&amp;D#
+'48
+DATA &quot;O2 D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#&amp;D#
+'49
+DATA &quot;O2 DA&lt;D&amp;D&amp;D&amp;DD&amp;D
+'50
+DATA &quot;O2 DA&lt;D&amp;D&amp;D&amp;DD&amp;D]
+'ET
+DATA 0
+
+@BGM2
+
+DATA &quot;:0 V127 T60 @0 L16 Q7
+DATA &quot;@E127,0,0,12 O4
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B
+DATA &quot;G&amp;G&amp;G&amp;GD&amp;D&amp;D&amp;D
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;G&amp;G&amp;G&amp;GB&amp;B&amp;B&amp;B
+DATA &quot;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;
+DATA &quot;G&amp;G&amp;G&amp;G&amp;GAGF&amp;
+DATA &quot;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;&gt;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D
+DATA &quot;&gt;A#&amp;A#&amp;A#&amp;A#F&amp;F&amp;F&amp;F
+
+   
+
+}}
+#endregion
+#vote(すばらしい[1],良い[0],普通[0],悪い[0])
+
+#region(ヨッシーバレー)
+#basic{{
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V90 T148 @13 L16 Q7
+DATA &quot;@E127,0,0,125 O5
+DATA &quot;B8&amp;B16B4&amp;B16G8&amp;G16G4&amp;G16
+DATA &quot;F16F8F16E8D#8D4&amp;D16RRR
+DATA &quot;[[R1]16
+
+''5
+DATA &quot;F8F8A8&lt;C8&gt;A#A#8A#A8A8
+DATA &quot;G8G8FG8A2R
+DATA &quot;F8F8A8&lt;C8&gt;A#A#8A#A8A8
+DATA &quot;G8G8FG8A2R
+
+'6
+DATA &quot;G#A8F8G#A8F2
+DATA &quot;G#A8F8G#A8&amp;A&lt;C8C4&amp;C&gt;
+DATA &quot;G#A8F8G#A8F2
+DATA &quot;G#A8F8FA2&amp;A8
+
+'7
+DATA &quot;R&lt;D8D&gt;A#8A#8&lt;C8C8&gt;A8A8
+DATA &quot;A#8A8G8FA2R
+DATA &quot;R&lt;D8D&gt;A#8A#8&lt;C8C8&gt;A8A8
+DATA &quot;A#8A8G8FA2R
+
+'8
+DATA &quot;&lt;RD8DF8&amp;FDC8C8F8&amp;FC
+DATA &quot;&gt;A#8A#8&lt;D8&gt;A#A2R
+DATA &quot;&lt;D8D8F8&amp;FDC8C8C4
+DATA &quot;&gt;A#A#8A#8R&gt;A#D&lt;DRDRD4
+
+'9
+DATA &quot;BB8B8D&gt;BG&lt;DRDRD4]
+
+DATA &quot;:1 V90 @17 L16 Q7
+DATA &quot;@E127,0,0,125 O5
+DATA &quot;E8&amp;E16E4&amp;E16&gt;B8&amp;B16B4&amp;B16
+DATA &quot;B16B8B16&lt;C8C#8D4&amp;D16RRR
+
+
+DATA &quot;[[R1]16
+
+''5
+DATA &quot;&gt;A8A8&lt;C8E8DD8DC8C8
+DATA &quot;&gt;A#8A#8AA8&lt;C2R
+DATA &quot;&gt;A8A8&lt;C8E8DD8DC8C8
+DATA &quot;&gt;A#8A#8AA8&lt;C2R
+
+'6
+DATA &quot;&gt;B&lt;C8&gt;A8B&lt;C8&gt;A2
+DATA &quot;B&lt;C8&gt;A8B&lt;C8&amp;CC8C4&amp;C
+DATA &quot;&gt;B&lt;C8&gt;A8B&lt;C8&gt;A2
+DATA &quot;B&lt;C8&gt;A8A&lt;C2&amp;C8
+
+'7
+DATA &quot;RF8FD8D8E8E8C8C8
+DATA &quot;D8C8&gt;A#8A&lt;C2R
+DATA &quot;RF8FD8D8E8E8C8C8
+DATA &quot;D8C8&gt;A#8A&lt;C2R
+
+'8
+DATA &quot;RF8FA#8&amp;A#FF8F8A#8&amp;AF
+DATA &quot;D8D8F8DC2R
+DATA &quot;F8F8A8&amp;AFE8E8E4
+DATA &quot;DD8D8&gt;A#FDA#A#8A#4&amp;A#
+
+'9
+DATA &quot;&lt;DD8D8&gt;BGDBB8B4&amp;B]
+
+DATA &quot;:2 V127 @96 L16 Q7
+DATA &quot;@E120,0,0,120 O2
+DATA &quot;G8&amp;G16G16RRRR&gt;G8&amp;G16&lt;G16RRRR
+DATA &quot;&gt;G8&amp;G16&lt;GARA#RBRRRRRRR
+
+'1
+DATA &quot;[&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;G4D4G4D4
+
+'2
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;F4C4F4C4
+DATA &quot;G4D4G4D4
+DATA &quot;G4D4GRG8A8B8
+
+'3
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;G4D4G4D4
+
+'4
+DATA &quot;&lt;C4&gt;G4&lt;C4&gt;G4
+DATA &quot;F4C4F4C4
+DATA &quot;G4D4G4D4
+DATA &quot;&lt;C4&gt;G4CRC8D8E8
+
+''5
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4F4C4
+
+'6
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4F4C4
+DATA &quot;F4C4FRF8G8A8
+
+'7
+DATA &quot;A#4F4A4F4
+DATA &quot;G4C4FRF8G8A8
+DATA &quot;A#4F4A4&lt;D4
+DATA &quot;C4&gt;C4FRF8G8A8
+
+'8
+DATA &quot;A#4F4A4F4
+DATA &quot;G4C4FRF8G8A8
+DATA &quot;A#4F4A4F4
+DATA &quot;G8&amp;GGRRRR&gt;G8&amp;GGRRRR&lt;
+DATA &quot;G8&amp;GGRRRR&gt;G8&amp;GGRRRR]
+
+
+DATA &quot;:3 V70 @128 L16 Q7
+DATA &quot;O5 RRRRCC8&amp;CRRRRCC8&amp;C
+DATA &quot;RRRRRRRRRRC4RR
+'1
+DATA &quot;[[R1]7
+DATA &quot;RRRRRRRRRRCRC4
+DATA &quot;[R1]23
+DATA &quot;RRRRRCRC4R4R
+DATA &quot;RRRRRCRCR2]
+
+DATA &quot;:4 V80 @128 L16 Q7
+DATA &quot;R1R1O2
+DATA &quot;[RRBR]
+
+DATA &quot;:5 V80 @1 L16 Q7
+DATA &quot;@E120,0,0,120 O5
+DATA &quot;GRRGRRRRDRRDRRRR
+DATA &quot;DRRDERERFRRRRRRR
+
+'1
+DATA &quot;[[RRR&gt;GE&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;E
+DATA &quot;G&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;EG
+DATA &quot;EG&lt;C&gt;GE&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;EG&lt;C&gt;F
+DATA &quot;G&lt;C#D&gt;G&lt;C#D&gt;G&lt;C#D&gt;G&lt;C#D&gt;G&lt;C#D&gt;G
+
+'2
+DATA &quot;EG&lt;C&gt;EG&lt;C&gt;GE&lt;C&gt;GE&lt;C&gt;GE&lt;C&gt;E
+DATA &quot;F&lt;C&gt;GG#&lt;C&gt;AG#&lt;C&gt;AG#&lt;C&gt;AG#&lt;C&gt;A&lt;C&gt;
+DATA &quot;FG&lt;C&gt;FG&lt;C&gt;GF&lt;C&gt;GF&lt;C&gt;GF&lt;C&gt;G
+DATA &quot;FB&lt;D&gt;BG&lt;D&gt;BF&lt;CRRRRRRR]2
+
+''5
+DATA &quot;&gt;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;A
+DATA &quot;F&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;FA
+DATA &quot;&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;
+DATA &quot;AF&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;AF&lt;C&gt;F
+
+'6
+DATA &quot;A&lt;C&gt;AF&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;A&lt;C&gt;
+DATA &quot;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;F
+DATA &quot;A&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;AF
+DATA &quot;&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;
+
+'7
+DATA &quot;FA#&lt;D&gt;A#F&lt;D&gt;A#F&lt;C&gt;FA&lt;C&gt;AF&lt;C&gt;F
+DATA &quot;EGA#GEA#GEAFCAFCAF
+DATA &quot;DFA#F&lt;D&gt;A#FD&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;A
+DATA &quot;EGA#GEA#GEAFCAFCAF
+
+'8
+DATA &quot;DFA#F&lt;D&gt;A#FD&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;A
+DATA &quot;EGA#GEA#GEAFCAFCAF
+DATA &quot;DFA#F&lt;D&gt;A#FD&lt;C&gt;AF&lt;C&gt;FA&lt;C&gt;A
+DATA &quot;R&lt;DRDRD&gt;A#FR&lt;DRDRRRR
+
+'9
+DATA &quot;DDRDRD&gt;BG&lt;RDRDRRRR]
+
+DATA &quot;:6 V70 @41 L16 Q7
+DATA &quot;@E110,0,0,120 O5
+DATA &quot;R1R1
+
+'1
+DATA &quot;[D#E&lt;C&gt;DGG8CRCDCD#RE8&amp;
+DATA &quot;E2&amp;E4R4
+DATA &quot;D#E&lt;C&gt;DGG8CRCDCD#RRD&amp;
+DATA &quot;D2&amp;D4R4
+
+'2
+DATA &quot;D#E&lt;C&gt;DGG8CRCDRDC8&amp;C
+DATA &quot;FRFRFDRC4&amp;C8&amp;CRR
+'DATA &quot;FRRRFDRC4&amp;C8&amp;CRR
+DATA &quot;D#EGD#EGD#EGRGRGARG&amp;
+'DATA &quot;D#EGD#EGD#EGRRRGARG&amp;
+DATA &quot;G2R2
+
+'3
+DATA &quot;D#E&lt;C&gt;DGG8CRCDCD#RE8&amp;
+DATA &quot;E2&amp;E4R4
+DATA &quot;D#E&lt;C&gt;DGG8CRCDCD#RRD&amp;
+DATA &quot;D2&amp;D4R4
+
+'4
+DATA &quot;D#E&lt;C&gt;DGG8CRCDRDC8&amp;C
+DATA &quot;FFRRFDRC4&amp;C8&amp;CRR
+DATA &quot;D#EGD#EGD#EGGRF#FDRC&amp;
+DATA &quot;C2R2
+
+DATA &quot;[R1]17]
+
+DATA &quot;:7 V60 @41 L16 Q7
+DATA &quot;@E120,0,0,120 O5
+DATA &quot;R1R1
+
+'1
+DATA &quot;[RRGDD#E8&gt;GRGAG&lt;CRC8&amp;
+DATA &quot;C2&amp;C4R4
+DATA &quot;RRGDD#E8&gt;GRGAG&lt;CRR&gt;G&amp;
+DATA &quot;G2&amp;G4R4&lt;
+
+'2
+DATA &quot;RRGDD#E8&gt;GRGAGAG8&amp;G
+DATA &quot;ARARAFRF4&amp;F8&amp;FRR
+DATA &quot;A#B&lt;D&gt;A#B&lt;D&gt;A#B&lt;DRDRDDRD&amp;
+DATA &quot;D2R2
+
+'3
+DATA &quot;RRGDD#E8&gt;GRGAG&lt;CRC8&amp;
+DATA &quot;C2&amp;C4R4
+DATA &quot;RRGDD#E8&gt;GRGAG&lt;CRR&gt;G&amp;
+DATA &quot;G2&amp;G4R4
+
+'4
+DATA &quot;RR&lt;GDD#E8&gt;GRGAGAG8&amp;G
+DATA &quot;ARARAFRF4&amp;F8&amp;FRR
+DATA &quot;A#B&lt;D&gt;A#B&lt;D&gt;A#B&lt;DRRC#C&gt;GRG&amp;
+DATA &quot;G2R2
+
+DATA &quot;[R1]17]
+
+DATA &quot;:8 V127 @128 L16 Q7
+DATA &quot;R1 O3
+DATA &quot;R2R8F#8F#8F#8
+
+DATA &quot;[[R1]7
+DATA &quot;R2R8F#8F#8F#8
+DATA &quot;[R1]7
+DATA &quot;R2R8F#8F#8F#8
+
+''5
+DATA &quot;[R1]7
+DATA &quot;R2R8F#8F#8F#8
+'DATA &quot;[R1]7
+DATA &quot;V100[[RRF#F#]4]7
+
+DATA &quot;V127R2R8F#8F#8F#8
+DATA &quot;R2R8F#8F#8F#8]
+
+}}
+#endregion
+
+
+#vote(すばらしい[0],良い[1],普通[0],悪い[0])
+
+
+#region(ヨースター島)
+#basic{{
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V127 T143 @4 L16 Q7
+DATA &quot;@E120,0,0,120 O3
+
+DATA &quot;[C8&amp;CCC8&gt;E8F4E4
+DATA &quot;&lt;C8C8C8&lt;R8R2
+'DATA &quot;&lt;C8C8C8&lt;@28E8F4E4@4
+DATA &quot;&gt;D8&amp;DDD8&gt;F8G4F4
+DATA &quot;&lt;D8D8D8&lt;R8R2
+'DATA &quot;&lt;D8D8D8&lt;@28F8G4F4@4
+DATA &quot;&gt;C8&amp;CCC8&gt;E8F4E4
+DATA &quot;&lt;E8D#8D8C#8C2]
+
+DATA &quot;:1 V80 @5 L16 Q7
+DATA &quot;@E120,0,0,120 O4
+
+DATA &quot;[E8&amp;EEE8&gt;G8A4G4
+DATA &quot;&lt;E8E8E8&lt;R8R2
+'DATA &quot;&lt;E8E8E8&lt;@28G8A4G4@1
+DATA &quot;&gt;F8&amp;FFF8&gt;A8B4A4
+DATA &quot;&lt;F8F8F8&lt;R8R2
+'DATA &quot;&lt;F8F8F8&lt;@28A8B4A4@1
+DATA &quot;&gt;E8&amp;EEE8&gt;G8A4G4
+DATA &quot;&lt;C8&gt;B8A#8A8G#2]
+
+DATA &quot;:2 V127 @4 L16 Q7
+DATA &quot;@E120,0,0,120 O2
+
+DATA &quot;[C4&amp;C8G8&lt;C4&gt;G4
+DATA &quot;C8C8C8R8R4C4
+DATA &quot;D4&amp;D8A8&lt;D4&gt;A4
+DATA &quot;D8D8D8R8R4D4
+DATA &quot;C4&amp;C8G8&lt;C4&gt;G4
+DATA &quot;&lt;C8&gt;B8A#8A8G#2]
+
+DATA &quot;:3 V100 @128 L16 Q7
+DATA [[R1]5R2R4C#8R8]
+
+
+}}
+#endregion
+
+
+#vote(すばらしい[1],良い[0],普通[0],悪い[0])
+
+#region(スーパーマリオ６４　ファイルセレクト)
+#basic{{
+
+ PRINT &quot;SUPER MARIO 64 FILE SELECT&quot;
+@SOUNDINIT
+RESTORE @DELTA:READ DELTA1$,DELTA2$:MOJI$=DELTA1$+DELTA2$
+BGMPRG 224,127,0,0,127,MOJI$
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+END
+
+@DELTA '???ﾌｧﾐｺﾝｻﾝｶｸﾊ
+DATA FFFF111122223333444455556F6F7F7F7F7F6F6F55554444333322221111FFFF
+DATA FFFFEEEEDDDDCCCCBBBBAAAA99998F8F8F8F9999AAAABBBBCCCCDDDDEEEEFFFF
+
+@BGM1 '???BGM
+DATA &quot;:0 V80 T100 @73 L16 Q7
+DATA &quot;@E100,0,0,80 O4
+DATA &quot;[[G&lt;DD&gt;A&amp;A&lt;D&gt;B&amp;B&amp;
+DATA &quot;B&amp;B&amp;B&lt;D&gt;B&lt;CD&amp;D
+DATA &quot;&gt;G&lt;DD&gt;A&amp;A&lt;D&gt;B&amp;B&amp;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B]2
+DATA &quot;&lt;DCD&gt;B&amp;B&lt;DG&amp;G&amp;
+DATA &quot;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+DATA &quot;DCD&gt;B&amp;B&lt;DC&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C
+DATA &quot;DCD&gt;B&amp;B&lt;DG&amp;G&amp;
+DATA &quot;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G
+DATA &quot;AGAG&amp;GBG&amp;G&amp;
+DATA &quot;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G]
+
+DATA &quot;:1 V127 @96 L16 Q7
+DATA &quot;@E127,0,0,127 O3
+DATA &quot;[[D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;]2
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;D&amp;
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;
+DATA &quot;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;E&amp;]
+
+DATA &quot;:2 V127 @96 L16 Q7
+DATA &quot;@E127,0,0,127 O2
+DATA &quot;[[G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;
+DATA &quot;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;G&amp;
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;&gt;]2
+DATA &quot;&lt;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;
+DATA &quot;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;A&amp;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;
+DATA &quot;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;B&amp;
+DATA &quot;&lt;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;
+DATA &quot;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;C&amp;]
+
+
+
+DATA &quot;:3 V127 @128 L16 Q7
+DATA &quot;@E127,0,0,127 O3
+DATA &quot;[F#RRF#F#RRR]
+
+
+
+
+
+}}
+#endregion
+
+
+#vote(すばらしい[0],良い[0],普通[0],悪い[0])
+
+
+
+#region(ヨッシーアイランド　地上 3号可)
+↓MKII
+#basic{{
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V115 T171 @1 L8 Q7
+DATA &quot;@E117,0,0,120 O5
+
+'1
+DATA &quot;[@1V125EEEECRE&gt;A
+DATA &quot;RRRA&lt;CDRR
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRR&lt;ECDDR
+
+'2
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRRA&lt;CDRR
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRR&lt;ECDDR
+
+'3
+DATA &quot;@2V100&gt;GGG&lt;C4&gt;AGE&amp;
+DATA &quot;EGGG&amp;G&amp;GRA
+DATA &quot;G4AG4C4E&amp;
+DATA &quot;ECCC4&amp;CRR
+
+'4
+DATA &quot;GGG&lt;C4&gt;AGE&amp;
+DATA &quot;EGGG&amp;G&amp;GRA
+DATA &quot;G4AG4C4E&amp;
+DATA &quot;ECCC4&amp;CRA
+
+'5
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+
+'6
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+DATA &quot;G4AG4A4R
+DATA &quot;R1]
+
+DATA &quot;:1 V90 @17 L8 Q7
+DATA &quot;@E110,0,0,125 O4
+
+'1
+DATA &quot;[@17GGGGERGC
+DATA &quot;RRRCEFRR
+DATA &quot;GGGGERGC
+DATA &quot;RRRGEFFR
+
+'2
+DATA &quot;GGGGERGC
+DATA &quot;RRRCEFRR
+DATA &quot;GGGGERGC
+DATA &quot;RRRGEFFR
+
+'3'4
+DATA &quot;[R1]8
+
+'5
+DATA &quot;@1[E4FE4F4R
+DATA &quot;R1]4]
+
+DATA &quot;:2 V100 @0 L8 Q7
+DATA &quot;@E120,0,0,120 O2
+
+'1
+DATA &quot;[[C4CERRRE
+DATA &quot;F4FGR2]4
+
+'3
+DATA &quot;[C4CERRRE
+DATA &quot;F4FGR2
+DATA &quot;F4FERRRE
+DATA &quot;D4DCR2]2
+
+'5
+DATA &quot;[F4FERRRE
+DATA &quot;D4DCR2]4]
+
+
+
+
+
+DATA &quot;:3 V127 @17 L8 Q7
+DATA &quot;@E110,0,0,125 O4
+
+'1
+DATA &quot;[[R1]16
+
+'5'6
+DATA &quot;[R2RRRC&amp;
+DATA &quot;CD4CDERR
+DATA &quot;R2RRRC&amp;
+DATA &quot;CE4DCCRR]2]
+
+DATA &quot;:4 V87 @17 L8 Q7
+DATA &quot;@E110,0,0,125 O3
+
+'1
+DATA &quot;[[R1]16
+
+'5'6
+DATA &quot;[R2RRRE&amp;
+DATA &quot;EF4EFGRR
+DATA &quot;R2RRRE&amp;
+DATA &quot;EG4FEERR]2]
+
+DATA &quot;:5 @128 L8 Q7
+DATA &quot;O4[V90AV60A]
+DATA &quot;:6 V80 @128 L8 Q7 O3
+DATA &quot;[[R1]8
+DATA &quot;[RRG#RG#RRR
+DATA &quot;G#RRG#RRG#R]4
+DATA &quot;[RRG#RG#RRR
+DATA &quot;G#RRRRRG#R]4]
+
+
+
+}}
+↓3号
+#basic{{
+BGMSETD 240,@BGM1
+
+BGMPLAY 1,240,127
+@LOOP
+IF BUTTON()==0 GOTO @LOOP
+
+
+@BGM1 '???BGM
+DATA &quot;:0 V115 T171 @1 L8 Q7
+DATA &quot; O5
+
+'1
+DATA &quot;[@1V125EEEECRE&gt;A
+DATA &quot;RRRA&lt;CDRR
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRR&lt;ECDDR
+
+'2
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRRA&lt;CDRR
+DATA &quot;EEEECRE&gt;A
+DATA &quot;RRR&lt;ECDDR
+
+'3
+DATA &quot;@2V100&gt;GGG&lt;C4&gt;AGE&amp;
+DATA &quot;EGGG&amp;G&amp;GRA
+DATA &quot;G4AG4C4E&amp;
+DATA &quot;ECCC4&amp;CRR
+
+'4
+DATA &quot;GGG&lt;C4&gt;AGE&amp;
+DATA &quot;EGGG&amp;G&amp;GRA
+DATA &quot;G4AG4C4E&amp;
+DATA &quot;ECCC4&amp;CRA
+
+'5
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+
+'6
+DATA &quot;G4AG4A4R
+DATA &quot;RRRRRRRA
+DATA &quot;G4AG4A4R
+DATA &quot;R1]
+
+DATA &quot;:1 V90 @17 L8 Q7
+DATA &quot; O4
+
+'1
+DATA &quot;[@17GGGGERGC
+DATA &quot;RRRCEFRR
+DATA &quot;GGGGERGC
+DATA &quot;RRRGEFFR
+
+'2
+DATA &quot;GGGGERGC
+DATA &quot;RRRCEFRR
+DATA &quot;GGGGERGC
+DATA &quot;RRRGEFFR
+
+'3'4
+DATA &quot;[R1]8
+
+'5
+DATA &quot;@1[E4FE4F4R
+DATA &quot;R1]4]
+
+DATA &quot;:2 V100 @0 L8 Q7
+DATA &quot; O2
+
+'1
+DATA &quot;[[C4CERRRE
+DATA &quot;F4FGR2]4
+
+'3
+DATA &quot;[C4CERRRE
+DATA &quot;F4FGR2
+DATA &quot;F4FERRRE
+DATA &quot;D4DCR2]2
+
+'5
+DATA &quot;[F4FERRRE
+DATA &quot;D4DCR2]4]
+
+
+
+
+
+DATA &quot;:3 V127 @17 L8 Q7
+DATA &quot; O4
+
+'1
+DATA &quot;[[R1]16
+
+'5'6
+DATA &quot;[R2RRRC&amp;
+DATA &quot;CD4CDERR
+DATA &quot;R2RRRC&amp;
+DATA &quot;CE4DCCRR]2]
+
+DATA &quot;:4 V87 @17 L8 Q7
+DATA &quot; O3
+
+'1
+DATA &quot;[[R1]16
+
+'5'6
+DATA &quot;[R2RRRE&amp;
+DATA &quot;EF4EFGRR
+DATA &quot;R2RRRE&amp;
+DATA &quot;EG4FEERR]2]
+
+DATA &quot;:5 @128 L8 Q7
+DATA &quot;O4[V90AV60A]
+DATA &quot;:6 V80 @128 L8 Q7 O3
+DATA &quot;[[R1]8
+DATA &quot;[RRG#RG#RRR
+DATA &quot;G#RRG#RRG#R]4
+DATA &quot;[RRG#RG#RRR
+DATA &quot;G#RRRRRG#R]4]
+
+
+
+}}
+
+#endregion
+#vote(すばらしい[0],良い[0],普通[0],悪い[0])
+#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* CHECKER FLAG (ひとことコメント) [#Comments]
+ほしいＢＧＭがあればリクエストをどうぞ。(マリオ系のみ)（リクエストにお答えできない場合があります。）
+SIZE(20){ COLOR(#ff3333){注意!! } }リクエストする時は、「ゲーム機名」、「ゲーム名」、「ステージ名」も教えてください。
+
+
+//color(#993333){注意!!}　リクエストする時は、「ゲーム機名」、「ゲーム名」、「ステージ名」も教えてください。
+
+#region(2014/12/20まで)
+
+- ''ｘｙｚ'' : ヨッシーアイランド (&amp;new{2014/09/22 (月) 16:10:44};)
+- ''あふあふ(Noodle)'' : 投稿プログラムのページ名の先頭には Toukou/(半角英数) をつけます。この投稿の場合 Toukou/マリオ　ＢＧＭ となります。 (&amp;new{2014/09/22 (月) 16:32:05};)
+- ''名無しさん'' :  (&amp;new{2014/09/23 (火) 16:23:02};)
+- ''名無しさん'' : マリオrpgのカジオー戦 (&amp;new{2014/09/24 (水) 21:11:55};)
+- ''作成者'' : ↑とりあえずやってみます。（すごい時間かかるかも）（無理な場合は、無理といいます。） (&amp;new{2014/09/25 (木) 7:02:54};)
+- ''作成者'' : ↑楽譜がないので耳コピで良ければやります。（少しおかしい曲になるかも。） (&amp;new{2014/09/25 (木) 17:58:38};)
+- ''トット'' : マリオｒｐｇと言えば！森のキノコにご用心！頑張ってください！！ (&amp;new{2014/09/28 (日) 09:51:47};)
+- ''作成者'' : ↑やってみます。(楽譜が、あるので出来そうです。)（すごい時間かかるかも） (&amp;new{2014/09/28 (日) 11:16:02};)
+- ''作成者'' : 完成しました。変な部分があれば言ってください。 (&amp;new{2014/10/01 (水) 16:01:19};)
+- ''魔神'' : ドンキーコングのハンマー音 (&amp;new{2014/10/03 (金) 20:22:12};)
+- ''作成者'' : ↑ファミコンの音でいいですか？ (&amp;new{2014/10/03 (金) 21:04:44};)
+- ''魔神'' : それで、お願いします。 (&amp;new{2014/10/05 (日) 11:44:02};)
+- ''キャラクター製作所'' : マリカのレインボーロードお願いします！ (&amp;new{2014/10/06 (月) 17:39:11};)
+- ''作成者'' : mario kart 8 ですか？ (&amp;new{2014/10/06 (月) 22:07:17};)
+- ''詐欺者'' : スターのときの音 (&amp;new{2014/10/15 (水) 15:59:16};)
+- ''作成者'' : わかりました (&amp;new{2014/10/15 (水) 25:67:135};)
+- ''キャラクター製作所'' : SFCのマリカのレインボーロード!　あ、SFCじゃなくてもいいです!全部すきですｏ(＾-＾)ｏ (&amp;new{2014/10/19 (日) 10:13:28};)
+- ''作成者'' : わかりました (&amp;new{2014/10/20 (月) 16:32:19};)
+//- ''作成者 '' : mario kart 8のレインボーロードにします (&amp;new{2014/10/20 (月) 16:42:50};)
+- ''名無しさん'' : スーパーマリオ　スター音が、ヨッシーアイランド　タイトル のQRになってます。 (&amp;new{2014/11/03 (月) 12:28:23};)
+- ''名無しさん'' : QRずれてる??? (&amp;new{2014/11/03 (月) 12:29:21};)
+- ''作成者'' : ずれていません。QRのしたに作品名があります。 (&amp;new{2014/11/03 (月) 14:47:38};)
+- ''作成者'' : レインボーロードじゃなくてヨッシーバレーにしました。 (&amp;new{2014/11/04 (火) 16:59:19};)
+- ''名無しSUN'' : スーファミのスーパーマリオワールド、ヨースター島の音楽を...。 (&amp;new{2014/11/05 (水) 10:52:16};)
+- ''キャラクター製作所'' : ててれててれってってててってーｗよろしくでーす(o^-')b (&amp;new{2014/11/06 (木) 18:48:48};)
+- ''作成者'' : オーケー (&amp;new{2014/11/06 (木) 19:40:59};)
+- ''名無しさん'' : 増えてる！！ (&amp;new{2014/11/06 (木) 23:25:44};)
+- ''作成者'' : 誰か消したな！バックアップとっといて良かった。 (&amp;new{2014/11/07 (金) 20:25:09};)
+- ''作成者'' : 一時期ＱＲがない時がありましたが復旧しました。 (&amp;new{2014/11/08 (土) 10:28:51};)
+- ''名無しさん'' : ドクターマリオ！ (&amp;new{2014/11/11 (火) 00:18:11};)
+- ''キャラクター製作所'' : いい感じですね(^_^)/キャラクター製作所のOS、Doorsに入れてさせていっただっきます！ (&amp;new{2014/11/12 (水) 18:57:29};)
+- ''トット'' : ワオ！！ (&amp;new{2014/11/12 (水) 19:59:59};)
+- ''トット'' : 出てる！！！ (&amp;new{2014/11/12 (水) 20:00:23};)
+- ''トット'' : いい感じです！ありがとうございます！！ (&amp;new{2014/11/12 (水) 20:02:55};)
+- ''作成者'' : ぜひ使ってください！！ (&amp;new{2014/11/12 (水) 22:24:05};)
+- ''作成者'' : あと、いらない部分は各自消してください。(長いと思うんで)(作成者の作りやすさを優先したので) (&amp;new{2014/11/12 (水) 22:29:27};)
+- ''キャラクター製作所'' : おｋ！v2.0お楽しみにっ[[Toukou/「Doors」あなたのプチコンを便利にするOS]] (&amp;new{2014/11/14 (金) 23:24:00};)
+- ''キャラクター製作所'' : できました〜(ﾟ▽ﾟ)/ (&amp;new{2014/11/17 (月) 19:15:01};)
+- ''マリオＢＧＭの作成者'' : ヨッシーアイランド　地上 のテンポ　Ｔ１８０からＴ１７１にしました。 (&amp;new{2014/12/01 (月) 16:01:50};)
+- ''ライオネル'' : SFCのスーパーマリオワールド基本のてーーてーてててーてーーのやつ (&amp;new{2014/12/04 (木) 18:25:26};)
+- ''マリオＢＧＭの作成者'' : オッケー (&amp;new{2014/12/04 (木) 19:16:53};)
+- ''マリオＢＧＭの作成者'' : 3号始めました (&amp;new{2014/12/04 (木) 19:25:41};)
+- ''プチコンまとめWiki管理人'' : ゲームのBGMは3号にアップロードすると公開NGになってしまいますよ (&amp;new{2014/12/04 (木) 23:05:16};)
+- ''マリオBGMの作成者'' : NGになるまでのせます。 (&amp;new{2014/12/04 (木) 23:31:04};)
+- ''プチコンまとめWiki管理人'' : [[NGにならなければ良い、という話ではありません:https://twitter.com/notohoho/status/535259553156591616]]。プチコン3号のサーバにアップすると、サーバを運営しているスマイルブームに全責任をかぶせる形になってしまうので、くれぐれもやめてください。特に、そのままでは動かないように細工するのは「悪い」と分かっててやっている、という意思の表れであることを認識してください。 (&amp;new{2014/12/05 (金) 12:21:52};)
+- ''プチコンまとめWiki管理人'' : 3号の公開キーの仕組みは、使う人が注意書きを守ることで成り立ってるので、守らない人が出てくるとその仕組み自体の存続に関わってきます。要は公開キーの仕組みが無くなったり、より厳しくなったりする可能性があるということです。 (&amp;new{2014/12/05 (金) 12:51:56};)
+- ''プチコンまとめWiki管理人'' : なお、耳コピしたゲームの音楽をニコ動やYouTubeに動画をアップしてWikiに貼ったり、MMLを直接Wikiに載せたりするのは、このWikiは個人運営なので制限しません。このような公開キーを使わない形での投稿は受け付けていますので、ご協力をお願いします。 (&amp;new{2014/12/05 (金) 13:18:37};)
+- ''マリオBGMの作成者'' : 分かりました。 (&amp;new{2014/12/05 (金) 17:18:24};)
+- ''プチコンまとめWiki管理人'' : ご理解いただきありがとうございます。公開キーによらない形でなら3号でもOKなので、今後ともよろしくお願いします。 (&amp;new{2014/12/05 (金) 22:11:06};)
+- ''マリオBGMの作成者'' : 3号用にプログラムリストを作りたいと思います。 (&amp;new{2014/12/05 (金) 22:54:52};)
+#endregion
+- ''マリオBGMの作成者'' : ページを見やすくしました。 (&amp;new{2014/12/21 (日) 15:28:28};)
+
+#comment
+* このページや作品の感想 [#la21c3e0]
+<span class="diff_removed">#vote(いいね[7],良い[0],普通[1],だめ[10],アウト[1],著作権大丈夫なの？[1],なんでマリオだけ？[3],このページが見ずらい[2],使わせていただきます。[2],なんかヘタ[5])</span>
+<span class="diff_added"  >#vote(いいね[7],良い[0],普通[1],だめ[10],アウト[1],著作権大丈夫なの？[1],なんでマリオだけ？[3],このページが見ずらい[2],使わせていただきます。[3],なんかヘタ[5])</span>
+- ''ぬぬ'' : 初代マリオ1-1できます？ (&amp;new{2014/11/09 (日) 12:29:03};)
+- ''名無しさん'' : ↑　プチコンでゲームミュージックにありますよ。 (&amp;new{2014/11/09 (日) 12:50:11};)
+- ''作成者'' : そうだねー。 (&amp;new{2014/11/09 (日) 22:16:01};)
+- ''作成者'' : ちなみになぜマリオだけかというとゲームに「マリオ」があるものはほとんどやったことがあります。てかマリオ以外やったことないからです。 (&amp;new{2014/11/09 (日) 22:26:33};)
+- ''魔神'' : 動画で検索してみればいいじゃん (&amp;new{2014/11/10 (月) 21:24:35};)
+- ''作成者'' : だよねー。自分でもだいぶ見ずらいページだと思いました。いつか改善していきたいです。 (&amp;new{2014/11/12 (水) 22:31:39};)
+#comment
+* サンプル（使用例） [#la21c3e0]
+
+#region(実用的じゃないよー)
+#ref(64f1.png,,200%)
+#ref(64f2.png,,200%)
+#ref(64f3.png,,200%)
+↑スーパーマリオ６４のファイルセレクトみたいなやつです。
+#ref(64fc1.png,,200%)
+#ref(64fc2.png,,200%)
+#ref(64fc3.png,,200%)
+↑CHRです。
+
+#endregion
+* これから作成しようと思っているやつ [#la21c3e0]
+スーパーマリオワールド　地上 BGM~
+ヨッシーアイランド　城 BGM~
+* 関係ない雑談はこちらへ [#la21c3e0]
+#comment
+</pre>
+</div>
+
+	</div></div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about"><strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.008 秒  | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Memo の変更点 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Memo の変更点 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Memo">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Memo">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Memo">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Memo">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Memo の変更点</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Memo">Memo</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc4/?Memo">Memo</a> へ行く。</li>
+<li><a href="/petc4/?cmd=diff&amp;action=undo&amp;page=Memo">変更を無効にして元に戻す</a></li>
+<li><a href="/petc4/?cmd=diff&amp;action=delete&amp;page=Memo">Memo の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(プチコン4 メモ)
+知って得するプチコンメモ! BASIC 書きのお供にどうぞ。[[3号Wiki&gt;3号:Memo]]や[[初代/mkII Wiki&gt;mk2:Memo]]を参考に、何かありましたらどうぞ。なお、[[公式のまめちしき:https://sup4.smilebasic.com/doku.php?id=tips]]もあります。
+
+#contents
+
+* PUSHKEY 命令の特殊キー一覧 [#l0f493a6]
+PUSHKEY 命令で、引数に 65536 以上の数を与えると特殊な効果がある場合があります。その引数と効果の一覧です。
+- 65576 - ソフトキーボードの表示トグル
+- 65619 - 上書きモード、挿入モードの切り替え
+- 65621 - ソフトキーボードを表示
+- 65622 - ソフトキーボードを非表示
+- 65624 - パフォーマンスメーターの表示トグル
+- 65627 - ソフトキーボードが右に移動
+- 65628 - ソフトキーボードが下に移動
+- 65629 - ソフトキーボードが左に移動
+- 65630 - ソフトキーボードが上に移動
+
+*プチコンBIGのフォント [#ee4c0aab]
+#SYSプロジェクトの中にプチコンBIGの16ドットフォントのファイルがある。
+
+使用方法は
+#basic{{
+LOADG&quot;#SYS/BIGFONT16&quot;,5,0,1024
+}}
+
+*隠し関数・命令 [#vea56bfd]
+** UISTATE() [#mea84770]
+- 0~5の引数を渡すと数値が返ってくる。
+- それ以外の数値を渡すとOut of range
+- ソフトウェアキーボードの位置によって返値が変わる
+| 返値 | 位置 |
+| 0 | 無し |
+| 1 | 右 |
+| 17 | 下 |
+| 33 | 左 |
+| 49 | 上 |
+
+*MILLISEC()の正確さ [#xdd3f28e]
+軽く実験したので結果を乗せました。
+#youtube(F3BQ7BHM27I)
+
+- VSYNC 60とMILLISEC()の1000は等しい
+- %%TIME$()の変更周期とMILLISEC()の1000は等しくない%%
+
+MILLISECは「ミリ秒」という意味ですから、1秒にちょうど1000増加しないとおかしいのですが、%%なぜか一致しません%%。~
+時間を延ばして実験したところ1秒平均が1000に近づくことが分かったので、検証プログラムの処理時間による誤差のようです。~
+~
+再試験の結果
+|~TIME$()|~MILLISEC()|~開始からの増加量|~経過秒数|~増加量/秒|
+|21:24:11|66370|----|----|----|
+|21:24:12|67373|1003|1|1003.00|
+|21:24:13|68377|2007|2|1003.50|
+|21:24:14|69334|2964|3|988.00|
+|21:24:15|70338|3968|4|992.00|
+|21:24:16|71342|4972|5|994.40|
+|21:24:17|72345|5975|6|995.83|
+|21:24:18|73351|6981|7|997.29|
+|21:24:19|74355|7985|8|998.13|
+|21:24:20|75359|8989|9|998.78|
+|21:24:21|76363|9993|10|999.30|
+|21:24:22|77369|10999|11|999.91|
+|21:24:23|78373|12003|12|1000.25|
+|21:24:24|79377|13007|13|1000.54|
+|21:24:25|80333|13963|14|997.36|
+|21:24:26|81337|14967|15|997.80|
+|21:24:27|82341|15971|16|998.19|
+|21:24:28|83345|16975|17|998.53|
+|21:24:29|84351|17981|18|998.94|
+|21:24:30|85355|18985|19|999.21|
+|21:24:31|86359|19989|20|999.45|
+|21:24:32|87362|20992|21|999.62|
+|21:24:33|88369|21999|22|999.95|
+|21:24:34|89373|23003|23|1000.13|
+|21:24:35|90376|24006|24|1000.25|
+|21:24:36|91380|25010|25|1000.40|
+|21:24:37|92336|25966|26|998.69|
+|21:24:38|93340|26970|27|998.89|
+※増加量/秒 は小数第2位まで
+
+<span class="diff_removed">* BGMのデフォルトの音量 [#BGM_def_vol]</span>
+<span class="diff_removed">&amp;basic{BGMPLAY};命令で音量を指定しなかった場合、64を指定した時と同じ音量になる。~</span>
+<span class="diff_added"  >* デフォルトの音量 [#DefaultVolume]</span>
+<span class="diff_added"  >&amp;basic{BGMPLAY};命令・&amp;basic{BEEP};命令で音量を指定しなかった場合、64を指定した時と同じ音量になる。~</span>
+&amp;basic{RECSTART};命令・&amp;basic{RECSAVE};命令を使い、再生中の音声を配列変数に書き出して比較すると確認できる。
+
+* コメント [#Comments]
+ページを編集するまでもないものの、もし何か一言コメントがありましたら以下へどうぞ。
+- ''あまさとしおん'' : 3号と異なり4の場合は、VSYNC 60と本体時計の1秒は等しい（MILLISEC()がちょうど1000増加する）ようです。 (&amp;new{2020/03/12 (木) 20:07:45};)
+- ''あまさとしおん'' : 追試したので書きますね (&amp;new{2020/03/12 (木) 20:19:25};)
+
+#comment
+</pre>
+</div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.014 秒  | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

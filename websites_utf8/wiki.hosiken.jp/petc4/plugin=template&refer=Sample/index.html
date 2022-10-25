@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Sample をテンプレートにして作成 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Sample をテンプレートにして作成 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Sample をテンプレートにして作成</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+				</ul>
+
+			</div>
+
+<div id="body">
+<form action="/petc4/" method="post">
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div>
+  <input type="hidden" name="plugin" value="template" />
+  <input type="hidden" name="refer"  value="Sample" />
+  開始行:<br /> <select name="begin" size="10" class="template-listbox"><option value="0" selected="selected">#title(サンプルプログラム集)
+</option>
+<option value="1">
+</option>
+<option value="2">初心者にも役に立つかもしれないサンプル的、および部品的な...</option>
+<option value="3">
+</option>
+<option value="4">#contentsx(depth=1:2)
+</option>
+<option value="5">
+</option>
+<option value="6">* BASIC の基本 [#ka0b9a22]
+</option>
+<option value="7">
+</option>
+<option value="8">** こんにちは、世界 [#y1a6f30b]
+</option>
+<option value="9">最初の一歩。文字列を表示する場合はダブルクォーテーション...</option>
+<option value="10">なお、ダブルクォーテーションはコンソールに表示されません。
+</option>
+<option value="11">#basic{{
+</option>
+<option value="12">PRINT &quot;Hello, プチコン4 world!&quot;
+</option>
+<option value="13">}}
+</option>
+<option value="14">
+</option>
+<option value="15">** ダブルクォーテーションの表示 [#s0ce9da3]
+</option>
+<option value="16">ダブルクォーテーションをコンソールに表示する場合は&amp;basic{...</option>
+<option value="17">#basic{{
+</option>
+<option value="18">PRINT CHR$(34)
+</option>
+<option value="19">}}
+</option>
+<option value="20">
+</option>
+<option value="21">** 個人情報を抽出 [#s592fbdf]
+</option>
+<option value="22">プチコンが個人情報を抽出して喜ぶプログラムです。
+</option>
+<option value="23">#basic{{
+</option>
+<option value="24">INPUT &quot;あなたの なまえは&quot; ; NAME$
+</option>
+<option value="25">INPUT &quot;おとしは いくつですか&quot; ; AGE
+</option>
+<option value="26">PRINT &quot;あなたの なまえは &quot; ; NAME$ ; &quot; で&quot;
+</option>
+<option value="27">PRINT &quot;おとしは &quot; ; AGE ; &quot; さい ですね&quot;
+</option>
+<option value="28">PRINT &quot;こじんじょうほうを おいしく いただきました、 ククク&quot;
+</option>
+<option value="29">WAIT 30
+</option>
+<option value="30">}}
+</option>
+<option value="31">
+</option>
+<option value="32">* 無限ループ [#a66f9c67]
+</option>
+<option value="33">** 数え上げ [#ff61bf53]
+</option>
+<option value="34">#basic{{
+</option>
+<option value="35">A=0
+</option>
+<option value="36">@COUNT
+</option>
+<option value="37"> PRINT A
+</option>
+<option value="38"> A=A+1
+</option>
+<option value="39">GOTO@COUNT
+</option>
+<option value="40">}}
+</option>
+<option value="41">
+</option>
+<option value="42">** コンソール時計 [#cdf8b3c5]
+</option>
+<option value="43">#basic{{
+</option>
+<option value="44">CLS
+</option>
+<option value="45">@TIME
+</option>
+<option value="46"> LOCATE 0,0
+</option>
+<option value="47"> PRINT &quot;Р&quot;;TIME$
+</option>
+<option value="48"> VSYNC 60
+</option>
+<option value="49">GOTO@TIME
+</option>
+<option value="50">}}
+</option>
+<option value="51">
+</option>
+<option value="52">** BGMが終わるまで待つ [#g2fe091e]
+</option>
+<option value="53">#basic{{
+</option>
+<option value="54">@LOOP
+</option>
+<option value="55">VSVNC 1
+</option>
+<option value="56">IF BGMCHK()==0 THEN @OUT
+</option>
+<option value="57">GOTO @LOOP
+</option>
+<option value="58">@OUT
+</option>
+<option value="59">}}
+</option>
+<option value="60">
+</option>
+<option value="61">* 再帰 [#w5ce1685]
+</option>
+<option value="62">** 階乗 [#w3870aeb]
+</option>
+<option value="63">#basic{{
+</option>
+<option value="64">DEF F(N)
+</option>
+<option value="65"> IF N&lt;=0 THEN
+</option>
+<option value="66">  RETURN 1
+</option>
+<option value="67"> ELSE
+</option>
+<option value="68">  RETURN N*F(N-1)
+</option>
+<option value="69"> ENDIF
+</option>
+<option value="70">END
+</option>
+<option value="71">
+</option>
+<option value="72">PRINT F(10) '3628800
+</option>
+<option value="73">}}
+</option>
+<option value="74">
+</option>
+<option value="75">#basic{{
+</option>
+<option value="76">DEF FIB(L)
+</option>
+<option value="77"> IF L&lt;=0 THEN RETURN 1
+</option>
+<option value="78"> RETURN FIB(L-1)+FIB(L-2)
+</option>
+<option value="79">END
+</option>
+<option value="80">PRINT FIB(1) '2
+</option>
+<option value="81">}}
+</option>
+<option value="82">
+</option>
+<option value="83">* Twitter に投稿されたサンプル [#y21de6ae]
+</option>
+<option value="84">#tweet(https://twitter.com/p4petitcom/status/113413271559...</option>
+<option value="85">#tweet(https://twitter.com/kenshiro31141/status/113412411...</option>
+<option value="86">#tweet(https://twitter.com/keigame5/status/11337993517744...</option>
+<option value="87">#tweet(https://twitter.com/keigame5/status/11341350924759...</option>
+<option value="88">#tweet(https://twitter.com/SeyfertSlade/status/1133986276...</option>
+<option value="89">#tweet(https://twitter.com/Bug_taro/status/11320934994891...</option>
+<option value="90">#tweet(https://twitter.com/otemoto_stinger/status/1136599...</option>
+<option value="91">#tweet(https://twitter.com/UTUCKN/status/1137008535156301...</option>
+<option value="92">#tweet(https://twitter.com/SeyfertSlade/status/1137914927...</option>
+<option value="93">#tweet(https://twitter.com/ryumago/status/113856341638838...</option>
+<option value="94">#tweet(https://twitter.com/Ackieee/status/113859349580174...</option>
+<option value="95">#tweet(https://twitter.com/hosiken/status/113902664915906...</option>
+<option value="96">#tweet(https://twitter.com/ryumago/status/113927150000596...</option>
+<option value="97">#tweet(https://twitter.com/UTUCKN/status/1139690401051185...</option>
+<option value="98">#tweet(https://twitter.com/hosiken/status/114092798376857...</option>
+<option value="99">#tweet(https://twitter.com/UTUCKN/status/1142597307474382...</option>
+<option value="100">#tweet(https://twitter.com/hosiken/status/114269132774786...</option>
+<option value="101">
+</option>
+<option value="102">* コメント [#l6d4d804]
+</option>
+<option value="103">ページを編集するまでもないものの、もし何か一言コメントが...</option>
+<option value="104">- ''ひかり'' : んんん (&amp;new{2020/05/27 (水) 08:44:08};)
+</option>
+<option value="105">
+</option>
+<option value="106">#comment
+</option>
+</select><br /><br />
+  終了行:<br />   <select name="end"   size="10" class="template-listbox"><option value="0">#title(サンプルプログラム集)
+</option>
+<option value="1">
+</option>
+<option value="2">初心者にも役に立つかもしれないサンプル的、および部品的な...</option>
+<option value="3">
+</option>
+<option value="4">#contentsx(depth=1:2)
+</option>
+<option value="5">
+</option>
+<option value="6">* BASIC の基本 [#ka0b9a22]
+</option>
+<option value="7">
+</option>
+<option value="8">** こんにちは、世界 [#y1a6f30b]
+</option>
+<option value="9">最初の一歩。文字列を表示する場合はダブルクォーテーション...</option>
+<option value="10">なお、ダブルクォーテーションはコンソールに表示されません。
+</option>
+<option value="11">#basic{{
+</option>
+<option value="12">PRINT &quot;Hello, プチコン4 world!&quot;
+</option>
+<option value="13">}}
+</option>
+<option value="14">
+</option>
+<option value="15">** ダブルクォーテーションの表示 [#s0ce9da3]
+</option>
+<option value="16">ダブルクォーテーションをコンソールに表示する場合は&amp;basic{...</option>
+<option value="17">#basic{{
+</option>
+<option value="18">PRINT CHR$(34)
+</option>
+<option value="19">}}
+</option>
+<option value="20">
+</option>
+<option value="21">** 個人情報を抽出 [#s592fbdf]
+</option>
+<option value="22">プチコンが個人情報を抽出して喜ぶプログラムです。
+</option>
+<option value="23">#basic{{
+</option>
+<option value="24">INPUT &quot;あなたの なまえは&quot; ; NAME$
+</option>
+<option value="25">INPUT &quot;おとしは いくつですか&quot; ; AGE
+</option>
+<option value="26">PRINT &quot;あなたの なまえは &quot; ; NAME$ ; &quot; で&quot;
+</option>
+<option value="27">PRINT &quot;おとしは &quot; ; AGE ; &quot; さい ですね&quot;
+</option>
+<option value="28">PRINT &quot;こじんじょうほうを おいしく いただきました、 ククク&quot;
+</option>
+<option value="29">WAIT 30
+</option>
+<option value="30">}}
+</option>
+<option value="31">
+</option>
+<option value="32">* 無限ループ [#a66f9c67]
+</option>
+<option value="33">** 数え上げ [#ff61bf53]
+</option>
+<option value="34">#basic{{
+</option>
+<option value="35">A=0
+</option>
+<option value="36">@COUNT
+</option>
+<option value="37"> PRINT A
+</option>
+<option value="38"> A=A+1
+</option>
+<option value="39">GOTO@COUNT
+</option>
+<option value="40">}}
+</option>
+<option value="41">
+</option>
+<option value="42">** コンソール時計 [#cdf8b3c5]
+</option>
+<option value="43">#basic{{
+</option>
+<option value="44">CLS
+</option>
+<option value="45">@TIME
+</option>
+<option value="46"> LOCATE 0,0
+</option>
+<option value="47"> PRINT &quot;Р&quot;;TIME$
+</option>
+<option value="48"> VSYNC 60
+</option>
+<option value="49">GOTO@TIME
+</option>
+<option value="50">}}
+</option>
+<option value="51">
+</option>
+<option value="52">** BGMが終わるまで待つ [#g2fe091e]
+</option>
+<option value="53">#basic{{
+</option>
+<option value="54">@LOOP
+</option>
+<option value="55">VSVNC 1
+</option>
+<option value="56">IF BGMCHK()==0 THEN @OUT
+</option>
+<option value="57">GOTO @LOOP
+</option>
+<option value="58">@OUT
+</option>
+<option value="59">}}
+</option>
+<option value="60">
+</option>
+<option value="61">* 再帰 [#w5ce1685]
+</option>
+<option value="62">** 階乗 [#w3870aeb]
+</option>
+<option value="63">#basic{{
+</option>
+<option value="64">DEF F(N)
+</option>
+<option value="65"> IF N&lt;=0 THEN
+</option>
+<option value="66">  RETURN 1
+</option>
+<option value="67"> ELSE
+</option>
+<option value="68">  RETURN N*F(N-1)
+</option>
+<option value="69"> ENDIF
+</option>
+<option value="70">END
+</option>
+<option value="71">
+</option>
+<option value="72">PRINT F(10) '3628800
+</option>
+<option value="73">}}
+</option>
+<option value="74">
+</option>
+<option value="75">#basic{{
+</option>
+<option value="76">DEF FIB(L)
+</option>
+<option value="77"> IF L&lt;=0 THEN RETURN 1
+</option>
+<option value="78"> RETURN FIB(L-1)+FIB(L-2)
+</option>
+<option value="79">END
+</option>
+<option value="80">PRINT FIB(1) '2
+</option>
+<option value="81">}}
+</option>
+<option value="82">
+</option>
+<option value="83">* Twitter に投稿されたサンプル [#y21de6ae]
+</option>
+<option value="84">#tweet(https://twitter.com/p4petitcom/status/113413271559...</option>
+<option value="85">#tweet(https://twitter.com/kenshiro31141/status/113412411...</option>
+<option value="86">#tweet(https://twitter.com/keigame5/status/11337993517744...</option>
+<option value="87">#tweet(https://twitter.com/keigame5/status/11341350924759...</option>
+<option value="88">#tweet(https://twitter.com/SeyfertSlade/status/1133986276...</option>
+<option value="89">#tweet(https://twitter.com/Bug_taro/status/11320934994891...</option>
+<option value="90">#tweet(https://twitter.com/otemoto_stinger/status/1136599...</option>
+<option value="91">#tweet(https://twitter.com/UTUCKN/status/1137008535156301...</option>
+<option value="92">#tweet(https://twitter.com/SeyfertSlade/status/1137914927...</option>
+<option value="93">#tweet(https://twitter.com/ryumago/status/113856341638838...</option>
+<option value="94">#tweet(https://twitter.com/Ackieee/status/113859349580174...</option>
+<option value="95">#tweet(https://twitter.com/hosiken/status/113902664915906...</option>
+<option value="96">#tweet(https://twitter.com/ryumago/status/113927150000596...</option>
+<option value="97">#tweet(https://twitter.com/UTUCKN/status/1139690401051185...</option>
+<option value="98">#tweet(https://twitter.com/hosiken/status/114092798376857...</option>
+<option value="99">#tweet(https://twitter.com/UTUCKN/status/1142597307474382...</option>
+<option value="100">#tweet(https://twitter.com/hosiken/status/114269132774786...</option>
+<option value="101">
+</option>
+<option value="102">* コメント [#l6d4d804]
+</option>
+<option value="103">ページを編集するまでもないものの、もし何か一言コメントが...</option>
+<option value="104">- ''ひかり'' : んんん (&amp;new{2020/05/27 (水) 08:44:08};)
+</option>
+<option value="105">
+</option>
+<option value="106" selected="selected">#comment
+</option>
+</select><br /><br />
+  <label for="_p_template_refer">ページ名:</label>
+  <input type="text" name="page" id="_p_template_refer" value="Sample/複製" />
+  <input type="submit" name="submit" value="作成" /> 
+ </div>
+</form></div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.005 秒  | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

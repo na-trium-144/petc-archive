@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<title>UI〜系命令の使い方 - プチコン4 まとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="UI〜系命令の使い方 - プチコン4 まとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc4/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc4/">プチコン4 まとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc4/?cmd=edit&amp;page=Mame%2FUIFunc">このページを編集</a></li>
+				<li><a href="/petc4/?cmd=diff&amp;page=Mame%2FUIFunc">前回からの変更点</a></li>
+				<li><a href="/petc4/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FUIFunc">ファイルをアップロード</a></li>
+				<li><a href="/petc4/?plugin=newpage&amp;refer=Mame%2FUIFunc">新しいページをつくる</a></li>
+				<li><a href="/petc4/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc4/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li id="active">プチコン4</li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>UI〜系命令の使い方</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc4/">トップ</a></li>
+<li><a href="/petc4/?Mame">Mame</a></li>
+<li id="list-pankuzu-current"><a href="/petc4/?Mame%2FUIFunc">UIFunc</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.014sec. -->
+<p>UI〜系命令の使い方について、スマイルツール等から調査した内容です。よくわからない部分はそのまま写しています。</p>
+<p>調べが不十分なので加筆希望です。</p>
+<div class="contents">
+<ul><li><a href="#UISTATE">  UISTATE </a>
+<ul><li><a href="#UISTATE0">  UISTATE(0) (BASIC側からの表示制御用のビット情報) </a></li>
+<li><a href="#UISTATE1">  UISTATE(1) (キー種別、コントロール、リクエストキー種別、リクエストページ、キー種別ごとのサブ情報) </a></li>
+<li><a href="#UISTATE2">  UISTATE(2) (X座標、Y座標) </a></li>
+<li><a href="#UISTATE3">  UISTATE(3) (ダイレクトな文字点滅指定用) </a></li>
+<li><a href="#UISTATE4">  UISTATE(4) (未使用) </a></li>
+<li><a href="#UISTATE5">  UISTATE(5) (未使用) </a></li>
+<li><a href="#UISTATEW">  UISTATE 番号,ステータス </a></li></ul></li>
+<li><a href="#UIRUN_STOP">  UIRUN,UISTOP(Ver4.3.0から試験的導入) </a>
+<ul><li><a href="#f0170906">  UIRUNの引数省略形 </a></li></ul></li>
+<li><a href="#g18843d8">  UIPUSHCMPL NO </a></li>
+<li><a href="#b9e3960c">  UIGETCMPL OUT TIME,CNT,LIST$ </a></li>
+<li><a href="#mc8de6b0">  UIMASK 始点X,始点Y,終点X,終点Y </a></li>
+<li><a href="#f7bf0ad3">  UIMASK </a></li>
+<li><a href="#d3207880">  UIFOCUS X,Y,W,H </a></li>
+<li><a href="#FuncSupport">  命令の対応表 </a></li>
+<li><a href="#Comment">  コメント </a></li></ul>
+</div>
+
+<h3 id="UISTATE">UISTATE</h3>
+
+<h4 id="UISTATE0">UISTATE(0) (BASIC側からの表示制御用のビット情報)</h4>
+<ul><li>b0: ソフトキーボードの表示フラグ</li>
+<li>b1: help</li>
+<li>b2: cmpl</li>
+<li>b3: help操作禁止</li>
+<li>b4~5: キーボード配置
+<ul><li>0: 右, 1: 下, 2:左, 3:上</li></ul></li>
+<li>b6~7: 予約</li>
+<li>b8~12: mask
+<ul><li>b8: 通常キー</li>
+<li>b9: Enter</li>
+<li>b10: BS+Del+CSRLF+CSRRI</li>
+<li>b11: CSRUP,DW</li>
+<li>b12: 上記以外のキー</li></ul></li></ul>
+
+<h4 id="UISTATE1">UISTATE(1) (キー種別、コントロール、リクエストキー種別、リクエストページ、キー種別ごとのサブ情報)</h4>
+<p>ソフトキーボードのステータス?</p>
+<ul><li>b0~1: keymode</li>
+<li>b2: keyshift</li>
+<li>b3: keyctrl</li>
+<li>b4~7: reqkeymode</li>
+<li>b8~11: reqpage</li>
+<li>b12~15: keypage0</li>
+<li>b16~19: keypage1</li>
+<li>b20~23: keypage2</li>
+<li>b23~26: version</li></ul>
+
+<h4 id="UISTATE2">UISTATE(2) (X座標、Y座標)</h4>
+<p>ソフトキーボードのスプライトの座標を格納している?</p>
+<ul><li>b0~15: X座標(16bit整数?)</li>
+<li>b15~31: Y座標(16bit整数?)</li></ul>
+
+<h4 id="UISTATE3">UISTATE(3) (ダイレクトな文字点滅指定用)</h4>
+<ul><li>b0~31: 「点滅するキー」<a id="notetext_1" href="#notefoot_1" class="note_super" title="「点滅するキー」が何を指している...">*1</a>の文字コード</li></ul>
+
+<h4 id="UISTATE4">UISTATE(4) (未使用)</h4>
+
+<h4 id="UISTATE5">UISTATE(5) (未使用)</h4>
+
+<h4 id="UISTATEW">UISTATE 番号,ステータス</h4>
+<p>ステータスを上書きできる?ようです。</p>
+
+<h3 id="UIRUN_STOP">UIRUN,UISTOP(Ver4.3.0から試験的導入)</h3>
+<p>UIインタプリタでプログラムを実行できます。</p>
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/notohoho/status/1233409301500186625">ツイート</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h4 id="f0170906">UIRUNの引数省略形</h4>
+<p>引数なしの<span class="basic-text smbas">UIRUN</span>命令を実行すると、初期状態のキーボードに戻るもよう。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’同じ挙動？</span></li>
+<li><span class="smbas">ＵＩＲＵＮ</span></li>
+<li><span class="smbas">ＵＩＲＵＮ　”＃ＳＹＳ／ＳＯＦＴＫＥＹ．ＰＲＧ”</span></li>
+</ol></code></div></div>
+<p>※仕様は確定していないので将来的に挙動が変わる可能性あり</p>
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/notohoho/status/1235356079745187841">ツイート</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>なお、引数そのものを省略ではなく、空文字列を渡すのはやめた方が良い模様。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’これは危険</span></li>
+<li><span class="smbas">ＵＩＲＵＮ　””</span></li>
+</ol></code></div></div>
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/thanks_0u0/status/1235307955672813568">ツイート</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>実際にUIRUN &quot;&quot;実行後にJoy-Conの−ボタン長押しでTOPMENUに戻ると「ショートカットが消えている」「カーソルが消えて項目を選択できない」という異常状態になった。<br />
+<strong>異常状態が発生すると上述の初期キーボード読み込みは機能しない。</strong>プチコン4自体の再起動が必要。</p>
+
+<h3 id="g18843d8">UIPUSHCMPL NO</h3>
+
+<h3 id="b9e3960c">UIGETCMPL OUT TIME,CNT,LIST$</h3>
+
+<h3 id="mc8de6b0">UIMASK 始点X,始点Y,終点X,終点Y</h3>
+
+<h3 id="f7bf0ad3">UIMASK</h3>
+
+<h3 id="d3207880">UIFOCUS X,Y,W,H</h3>
+
+<h3 id="FuncSupport">命令の対応表</h3>
+<p>SmileBASICSourceのsnail_さんによって各インタプリタでの命令の対応表が作られたようです。</p>
+<p><a href="https://smilebasicsource.com/forum?fpid=30720#post_30720" rel="nofollow">https://smilebasicsource.com/forum?fpid=30720#post_30720</a></p>
+
+<h3 id="Comment">コメント</h3>
+<ul><li><strong>名無しさん</strong> : ソフトキーボードでUISTOPを実行するとキーボードが出なくなって詰む。 (<span class="comment_date">2020/12/02 (水) 20:42:54</span>)</li></ul>
+<br />
+<form action="/petc4/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/UIFunc" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="73e051057738acafeba8eb8fb522ae13" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【4】</h3>
+<ul><li><a href="/petc4/?FrontPage" title="FrontPage (42d)">トップページ</a></li>
+<li><a href="/petc4/?Toukou" title="Toukou (700d)">投稿プログラム</a></li>
+<li><a href="/petc4/?Mame" title="Mame (605d)">まめちしき</a></li>
+<li><a href="/petc4/?Memo" title="Memo (282d)">プチコン4メモ</a></li>
+<li><a href="/petc4/?FAQ" title="FAQ (380d)">よくある質問集</a></li>
+<li><a href="/petc4/?Bug" title="Bug (388d)">既知の不具合</a></li>
+<li><a href="/petc4/?Sample" title="Sample (327d)">サンプルプログラム集</a></li>
+<li><a href="/petc4/?WorksLink" title="WorksLink (34d)">プチコン4作品集</a></li>
+<li><a href="/petc4/?Demand" title="Demand (50d)">プチコン4への要望</a></li>
+<li><a href="/petc4/?OverFlow" title="OverFlow (2d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li>
+<li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li>
+<li><a href="/petc4/?Chat" title="Chat (399d)">チャットルーム</a></li>
+<li><a href="/petc4/?Contact" title="Contact (699d)">管理人に連絡</a></li></ul>
+
+<h3 id="content_4_1">過去シリーズWiki</h3>
+<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号</a></li>
+<li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">プチコン(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_2">ヘルプ</h3>
+<ul><li><a href="/petc4/?Help" title="Help (699d)">ヘルプ</a></li>
+<li><a href="/petc4/?ToukouRule" title="ToukouRule (699d)">プログラム投稿ルール</a></li>
+<li><a href="/petc4/?SandBox" title="SandBox (48d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_3">リンク</h3>
+<ul><li><a href="https://www.petc4.smilebasic.com/" rel="nofollow">プチコン4 公式サイト</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php" rel="nofollow">ユーザー向け公式情報</a></li>
+<li><a href="https://sup4.smilebasic.com/doku.php?id=reference:top" rel="nofollow">公式リファレンス</a></li></ul>
+<ul><li><a href="https://smilebasic.kurun96.com" rel="nofollow">作品一覧のハコ</a></li>
+<li><a href="https://puchi4gogo.web.fc2.com/" rel="nofollow">プチコン4 作品まとめ</a></li>
+<li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li></ul>
+<ul><li><a href="/petc4/?Link" title="Link (108d)">プチコン4 リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2021/04/19</h4>
+<ul>
+ <li><a href="/petc4/?Mame%2FTagCloud" title="タグクラウド (14h)">タグクラウド</a></li>
+</ul>
+<h4>2021/04/18</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADHD" title="リズミカルおもちつきHD MAX (1d)">リズミカルおもちつきHD MAX</a></li>
+</ul>
+<h4>2021/04/17</h4>
+<ul>
+ <li><a href="/petc4/?OverFlow" title="OFコーナー4 (2d)">OFコーナー4</a></li>
+</ul>
+<h4>2021/04/07</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FPetitConverter" title="プチコンバータ バージョン 0.8.3 (12d)">プチコンバータ バージョン 0.8.3</a></li>
+ <li><a href="/petc4/?Toukou%2FNew%A5%B9%A1%BC%A5%D1%A1%BC%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP" title="NewスーパーリズミカルおもちつきSP (12d)">NewスーパーリズミカルおもちつきSP</a></li>
+</ul>
+<h4>2021/04/06</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP_Switch" title="【公開終了】NewリズミカルおもちつきSP Switch version (13d)">【公開終了】NewリズミカルおもちつきSP Switch version</a></li>
+</ul>
+<h4>2021/04/03</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2F%BF%CD%B9%A9%CC%B5%C7%BD%A5%D7%A5%C1%C2%C0%CF%BA%20SP" title="【開発休止中】人工無能プチ太郎 SP (16d)">【開発休止中】人工無能プチ太郎 SP</a></li>
+</ul>
+<h4>2021/04/02</h4>
+<ul>
+ <li><a href="/petc4/?Toukou%2FRHYTHM%20NOVA" title="RHYTHM NOVA ver.1.10 (17d)">RHYTHM NOVA ver.1.10</a></li>
+ <li><a href="/petc4/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNTG" title="リズミカルおもちつきNTG (17d)">リズミカルおもちつきNTG</a></li>
+</ul>
+<h4>2021/03/17</h4>
+<ul>
+ <li><a href="/petc4/?MenuBar" title="MenuBar (33d)">MenuBar</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_4">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="/petc4/?Toukou%2F%A3%CC%A3%C5%A3%D6%A3%C5%A3%CC%A3%B7" title="Toukou/ＬＥＶＥＬ７ (261d)">ＬＥＶＥＬ７<span class="counter">(4)</span></a></li>
+ <li><span title="Mame/UIFunc  (138d)">UI〜系命令の使い方<span class="counter">(4)</span></span></li>
+ <li><a href="/petc4/?Mame%2Fpetitline" title="Mame/petitline (301d)">プチコン通信発行所<span class="counter">(4)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FSky%20High" title="Toukou/Sky High (680d)">フライトシミュレータ風フリーフライトデモ<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FMusics12_Pro" title="Toukou/Musics12_Pro (142d)">Musics12 Pro<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FRouge%20et%20Blanc" title="Toukou/Rouge et Blanc (674d)">はたあげゲーム<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2F%A4%B7%A4%E5%A4%C3%B5%E5" title="Toukou/しゅっ球 (471d)">Toukou/しゅっ球<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?FormattingRules" title="FormattingRules (699d)">ウィキの書式整形ルール<span class="counter">(2)</span></a></li>
+ <li><a href="/petc4/?Toukou%2FEATRUNNER" title="Toukou/EATRUNNER (255d)">ＥＡＴＲＵＮＮＥＲ<span class="counter">(1)</span></a></li>
+ <li><a href="/petc4/?Toukou%2Fjintori" title="Toukou/jintori (610d)">JINTORI（陣取り）<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="/petc4/?Hot" title="Hot (700d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_5">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1016 回、本日は 1 回、昨日は 3 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+<p id="notes">
+<a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">「点滅するキー」が何を指しているかは不明</span><br /></p>
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.018 秒  | このページの最終更新 : 2020/12/02 (水) 20:42:54  (138d) | <a href="/petc4/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2019 プチコンまとめWiki</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

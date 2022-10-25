@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Bug の変更点 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Bug の変更点 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Bug">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Bug">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Bug">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Bug">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Bug の変更点</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Bug">Bug</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc3gou/?Bug">Bug</a> へ行く。</li>
+<li><a href="/petc3gou/?cmd=diff&amp;action=undo&amp;page=Bug">変更を無効にして元に戻す</a></li>
+<li><a href="/petc3gou/?cmd=diff&amp;action=delete&amp;page=Bug">Bug の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(既知の不具合)
+
+// 既知の不具合
+
+// 項目には適切なタグを指定しておいてください。
+// 項目トップ　#xxx
+// 解決策　　　#xxx_Avoid
+// 詳細　　　　#xxx_Detail
+// バグの原因　#xxx_Cause
+
+プチコン3号およびBIGで見つかった、既知の不具合の一覧です。
+
+ソフトの性質上、またユーザーがよく訓練された人たちということもあって、「配信直後のゲームソフト」として見ればすごい勢いでバグが見つかりましたが、最新バージョンではほぼ修正されています。
+
+#blockdiv(class:block-info)
+プチコン3号やBIGで不具合を発見したときは、[[このページのコメント欄&gt;#Comments]]にコメントするか、[[このページを直接編集&gt;http://wiki.hosiken.jp/petc3gou/?cmd=edit&amp;page=Bug]]して加筆・修正してください。
+
+現在バージョン表記は ''Ver.x.x.x'' で統一しています。
+
+&amp;size(20){''Ver.3.6.0'' 以降の不具合情報が掲載されています。};
+
+最終更新: &amp;lastmod;
+#blockdiv(end)
+
+目次
+
+#contents
+
+* 参考リンク [#Link]
+
+外部リンク
+
+- [[プチコン3号 公式障害情報&gt;http://smilebasic.com/bug/]]
+
+- [[プチコンBIG 公式障害情報&gt;http://smilebasic.com/bug/big/]]
+
+- [[SmileBASIC Source バグ報告 (英語)&gt;https://smilebasicsource.com/forum?fcid=6]]
+
+
+* 強制終了やハングアップ、メモリリークなどが確認される不具合 [#Fatal]
+
+実行すると、SmileBASIC の強制終了やハングアップ、恒久的なメモリリークなど、重大な問題を引き起こす場合がある不具合をまとめています。
+
+#blockdiv(class:block-info)
+&amp;size(20){''注意''};
+
+掲載されているプログラムは危険です。実行するとハングアップ、強制終了、メモリリークするものが含まれています。&amp;br;
+これらのプログラムは検証以外の目的で実行しないでください。未保存のデータは実行する前に保存しておいてください。
+#blockdiv(end)
+
+
+** &amp;basic{FFT}; と &amp;basic{IFFT}; でフリーズが発生する [#FFTIFFTStrange]
+
+''Ver.3.6.2 で確認''
+
+下記のプログラムを実行すると変な挙動が発生します。
+#basic{{
+DIM inR[1024],inI[1024]
+DIM outR[1024],outI[1024]
+FFT outR,outI,inR,inI
+outR=SETARY(0) 'outRの配列操作
+IFFT outR,outI,inR,inI
+END
+
+DEF SETARY(F)
+DIM A%[F]
+RETURN A%
+END
+}}
+
+このプログラムを実行すると本来なら5行目でエラーが発生するはずですが、何故か発生しません。その後、DIRECTモードで、
+#basic(noline,black){{
+'警告:このコマンドを実行するとハングアップします。ただしHOMEボタンは反応します。
+?FREEMEM
+}}
+
+というように、 &amp;basic{FREEMEM}; を確認しようとすると、プログラム実行中の状態になったまま終了できなくなります。
+VIEWER から実行すると真っ黒な画面でハングアップしますが HOME ボタンは反応します。
+
+
+
+** 文字列型のシステム変数で書き込みなどをするとハングアップする [#SystemVariableHangUp]
+
+''Ver 3.6.3 で確認''
+
+Ver 3.6.3 現在でも &amp;basic{INC}; 命令において発生します。
+
+#basic(noline){{
+'警告:このプログラムを実行するとハングアップします。
+INC DATE$,&quot;B&quot;
+}}
+
+なお、&amp;basic{INC}; 命令においては空文字列を指定したときはハングアップしません。
+ほかの変数操作命令は安全です。
+
+#basic{{
+?SHIFT(DATE$)
+?POP(DATE$)
+PUSH DATE$,&quot;B&quot;
+INC DATE$,&quot;&quot;
+
+'3.6.3では正常にエラーになる
+DATE$[0]=&quot;B&quot;
+TIME$[99]=&quot;B&quot;
+}}
+
+** CONTROLLERを戻り値のない命令形で使用するとハングアップする [#CONTROLLER_HangUp]
+
+''Ver 3.6.3 で確認''
+
+本来は関数で、戻り値のない命令形での使い方は存在しません。~
+引数を±1未満の数値にするとハングアップします。（それ以外はエラーになる。）
+#basic{{
+'警告:このプログラムを実行するとハングアップします。
+CONTROLLER 0
+CONTROLLER 0.9
+}}
+
+* 明らかにおかしな挙動や不具合 [#Bug]
+
+上記の不具合には当てはまらないものの、意図した仕様とは思われない挙動をまとめています。
+** MPSTART命令で識別文字列が一致しなくても接続が成立する [#IllegalTokenCommunication]
+
+''Ver 3.6.3 で確認''
+
+たとえば、親機
+#basic(noline){{
+MPSTART 2,&quot;1000&quot;
+}}
+に対して、子機
+#basic(noline){{
+MPSTART 2,&quot;1001&quot;
+MPSTART 2,&quot;1099&quot;
+MPSTART 2,&quot;10んこ&quot;
+}}
+で接続が成立してしまう。
+具体的には、文字列長と先頭2文字が一致すればあとはどうでもいいらしい。
+
+** スマイルツールのUNDO処理の座標に漏れがある [#SBGED_UNDO_Bug]
+
+''プチコン3号 Ver.3.6.3 で確認''
+
+スマイルツールのお絵描きツール(&amp;basic{PRG:SYS/SBGED};)でUNDOを使用した時、X=511とY=511の領域だけ元に戻らない。~
+プログラム中の&amp;basic{GSAVE};命令と&amp;basic{GLOAD};命令で、幅と高さの指定が誤っていることが原因。~
+
+- Petitverse (外部リンク) &amp;br; http://petitverse.hosiken.jp/community/petitcom/diary/?read=4737
+
+** プチコンBIGのみで &amp;basic{BGLOAD}; に指定できるキャラ番号オフセットの挙動がおかしい [#BigBGLOADBug]
+
+''プチコンBIG Ver.3.5.0 で確認''
+
+&amp;basic{BGLOAD}; では、配列の後に正の数値を指定すると、配列の全要素に加算してからキャラ番号として描画します。しかし、プチコンBIGでは正しく動作しません。加算されるのではなく、絶対的にその数値に変化してしまうようです。(すなわち &amp;basic{BGFILL}; )
+
+- Petitverse (外部リンク) &amp;br; http://petitverse.hosiken.jp/community/petitcom/topic/?read=208
+
+** プチコンBIGで作成されたファイルをプチコン3号で保存した際に、PRGリソースで正常に読み込めない [#PRGBug]
+
+''プチコン3号 Ver.3.5.0 で確認''
+
+''プチコンBIG''で作成された''TXTファイル''を、''プチコン3号''に保存して''PRGファイル''として上書きすると、以下のプログラムでは正常に読み込むことができません。また、メニューからの読みこみ (SHIFT + LOADキー) も正常にできません。
+
+#basic{{
+LOAD &quot;PRG3:ファイル名&quot;,FALSE
+}}
+
+TXTリソースとして読み込むはできるようです。
+#basic{{
+LOAD &quot;TXT:ファイル名&quot;,FALSE OUT CONTENT$
+}}
+
+
+** [[インターネットブラウザー:https://www.nintendo.co.jp/hardware/wiiu/internetbrowser/]]で撮ったプチコンBIGのTV画面のスクリーンショットがおかしい [#BigBrowserBug]
+
+''確認状況不明''
+
+[[Wii Uのインターネットブラウザー:https://www.nintendo.co.jp/hardware/wiiu/internetbrowser/]]には、起動中のソフトのスクリーンショットをアップロードする機能があります。しかし、その機能を使いDIRECTモードでTVとGamePadそれぞれに異なる表示をするモードにした状態でプチコンBIGのTV画面のスクリーンショットを撮ると、おかしい画像がアップロードされてしまいます。
+
+保存した際の画像の縦横比と、表示時の縦横比が合っていないような感じの画像がアップロードされます。&amp;br;
+TV画面なので本来ならサイズは1280×720になるはずなのですが、854×480(FWVGA,GamePad画面のサイズ)になっています。&amp;br;
+EXIF情報やファイル名は正常です。
+
+派生して、全体が前回HOMEボタンを押したときのスクリーンショットで上半分がおかしい画像が撮れるようになることもあります。上半分は少しだけ透けて下半分の画像の続きが見えます。その状態になると、2画面に同じ表示をするモードでもおかしくなり、いつスクリーンショットを撮ろうとしてもその状態のスクリーンショットが撮れるようになります。
+
+
+** SPANIMでZ座標を変化させると、本来の範囲を超えて変化させられてしまう [#IllegalZOffsetSP]
+
+''Ver.3.6.3 で確認''
+
+SPANIMで、Spriteの「Z座標」を相対値で変化させる際に、本来の上限/下限を越えてしまう現象があります。
+
+検証用プログラムを用意しました。
+#ptcmid(RF3XX53,検証プログラム　KRB_3DBUG_TEST)
+
+実行すると、ワンパクとダミーとハカセが表示されます。&amp;br;
+ワンパクは本来のZ座標奥側最大値、ダミーは本来のZ座標手前側最大値を表しています。&amp;br;
+十字ボタンの上を押すごとにSPANIMを使ってハカセが奥側へ、下を押すごとに手前に動きます。LRボタンは微調整です。(ここでもSPANIMで動かしている)&amp;br;
+どちらか一方に繰り返し動かし続けると、どこかでハカセが画面から消えます。（Zクリッピングの範囲からはみ出てしまうため？）
+
+例として、
+#basic{{
+'これを一定方向に繰り返すと、Z座標が本来の範囲を超える
+'3D立体視にも影響が出る
+SPANIM 0,&quot;Z+&quot;,-8,100 '手前
+SPANIM 0,&quot;Z+&quot;,-8,-100 '奥
+}}
+などのような相対指定で奥行きを移動させ続けると、本来の範囲である奥1024〜手前-256の制限を超えてしまいます。
+
+3DS/3DSLL/New3DS/New3DSLLのような3D立体視機能のあるハードでは立体視に影響が出ます。&amp;br;
+（特に手前方向。視差が大きすぎて正常に立体感をとらえられなくなる。無理に見ようとすると目に悪影響を及ぼす危険性がありますので注意してください。）
+
+Wii U/2DS/New2DSLLでは立体視がないため3D立体視には影響が出ませんが、Z座標がある一定の値(+1536以上、-512以下)を超えたあたりでZクリッピング範囲と思われる範囲からはみ出してしまうため、2D表示にしていてもそのSPRITEが見えなくなってしまいます。
+
+
+** 引数無しの &amp;basic{OUT}; で発生するエラーの種類がおかしい [#OutWithoutArguments]
+
+''Ver.3.6.3 で確認''
+
+例えば、
+#basic{{
+DEF TEST OUT
+END
+}}
+
+のようなプログラムを実行した際、
+#basic(noline,black){{
+Out of code memory in 0:1
+}}
+
+のように表示されます。内蔵ヘルプでは
+
+&gt; 12:Out of code memory (コード領域のメモリー不足)
+
+とあります。このような場合は &amp;basic{Syntax error}; の方がエラーの意味としては正しいと思われます。
+
+
+** 作品を見る で実行中にエラーが発生すると、次に実行したプログラムがすぐに止まってしまう [#ViewerErrorBug]
+
+''Ver.3.6.3'' で確認
+
+「作品を見る」でプログラムを実行している際にエラーが発生すると、次に実行しようとしたプログラムが実行されず、すぐに戻ってしまう問題です。
+
+必ず実行されないわけではないようです。その条件は不明です。
+
+
+*** 解決策 [#ViewerErrorBug_Avoid]
+再度実行すれば問題ありません。
+
+** &amp;basic{INPUT}; および &amp;basic{LINPUT}; における &amp;basic{CONT}; 停止時の挙動に問題がある [#InputContBug]
+
+''Ver.3.6.3 で確認''
+
+&amp;basic{INPUT}; および &amp;basic{LINPUT}; で入力待ち状態にて START ボタンなどで中断したのちに &amp;basic{CONT}; で再開する場合に、想定する動作をしないというものです。&amp;br;
+具体的には、&amp;basic{INPUT}; と &amp;basic{LINPUT}; ともに入力の再開ができないのと、両命令の挙動に差異があるということです。
+
+*** 解決策 [#InputContBug_Avoid]
+- DIRECT モードでは命令を再開できない (&amp;basic{CONT}; は「プログラム」を再開する命令)
+- &amp;basic{INPUT}; での入力待ち時に中断した際は、再開時に入力できずにプログラムが続く
+- &amp;basic{LINPUT}; での入力待ち時に中断した際は、再開できない
+
+ことを留意しておく
+
+*** 詳細 [#InputContBug_Detail]
+これは、それぞれのモードで以下の命令を実行して、入力待ちの状態で中断したあと、&amp;basic{CONT}; で再開した場合の挙動をまとめたものです。
+|~実行した命令|~DIRECT で検証|~EDIT で検証|
+|~INPUT A|CENTER:Can't continue|CENTER:エラーなし|
+|~INPUT A$|CENTER:Can't continue|CENTER:エラーなし|
+|~LINPUT A$|CENTER:Can't continue|CENTER:Uninitialized variable used|
+- これらの命令に限らず基本 DIRECT モードで実行した命令は、中断しても &amp;basic{CONT}; で再開できません。
+-- これは不具合ではなく仕様だと思われます。
+- INPUT では再開してもエラーが発生せず、指定された変数は変更されないまま次の命令へ進む。
+
+#basic{{
+A=30
+INPUT A
+PRINT A
+}}
+
+数値を入力した場合はその数値が表示されるが、中断して &amp;basic{CONT}; した場合は 30 が表示される。
+
+
+
+** 整数型配列のソート結果がおかしい [#SORTIntArrayBug]
+''Ver.3.6.3 で確認''
+
+&amp;basic{SORT}; による整数型配列のソート結果がおかしいという不具合。&amp;br;
+負数が含まれる配列で、かつ絶対値が大きい値が含まれると発生しやすい。
+
+*** 詳細 [#SORTIntArrayBug_Detail]
+たとえば、このようなプログラムで発生します。
+#basic{{
+DIM ARY%[8]
+ARY%[0]=1&lt;&lt;31
+ARY%[1]=-128
+ARY%[2]=128
+ARY%[3]=NOT (1&lt;&lt;31)
+SORT ARY%
+FOR I=0 TO LEN(ARY%)-1
+ ?ARY%[I]
+NEXT
+}}
+
+また、FOR-NEXT などで括って複数回ソートさせると値によっては「順番が変わる」ことがあります。
+
+*** 解決策 [#SORTIntArrayBug_Avoid]
+なし
+
+
+
+** 特定のヌル文字列をVAL関数に渡すと不正なエラーが発生する [#IllegalNullString]
+
+''Ver.3.6.3 で確認''
+
+文字列型の引数を渡しているにもかかわらず、Type mismatchエラーが発生します。
+
+*** 詳細 [#IllegalNullString_Detail]
+このバグを引き起こす「特定のヌル文字列」は2種類存在します。
+- ヌル文字列を乗算したもの（変数に格納したものを含む）
+- DIALOG関数の文字列入力フォームで、キャンセルしたときに返されるもの
+
+#basic{{
+?VAL(&quot;&quot;*1)
+?VAL(DIALOG(&quot;&quot;,&quot;INPUT NUMBER&quot;))
+
+'乗算ヌル文字列は変数格納後も不正な状態
+A$=&quot;&quot;*1:?VAL(A$)
+}}
+
+*** 解決策 [#IllegalNullString_Avoid]
+一度、文字列を変数に格納し、長さがゼロの場合はVAL関数に渡さないように処理する。
+
+** メモリが残っているのにPUSH命令で『Out of memory』が発生する [#PUSHOutOfMemory]
+
+''Ver.3.6.3 で確認''
+
+FREEMEMが明らかに残っているにもかかわらず、整数型配列に対するPUSH命令で『Out of memory』エラーが発生することがあります。~
+（他の型での発生の有無は分かりません）
+*** 詳細 [#PUSHOutOfMemory_Detail]
+発生条件は正確には分かりませんが、PUSHする配列の要素数が多いほど場合発生しやすいと思われます。（目安として数万要素）~
+問題の発生するプログラムを、別のプロジェクトフォルダにコピーして実行すると問題が発生しなくなるなど、不可解な点があります。~
+（そのため、問題が発生するプログラムを掲載できません）~
+問題が発生した直後のFREEMEMの値には法則がありません。~
+50 キロバイト程度で発生するときもあれば約 646 キロバイト（ 646,740 バイト）で発生することもあります。
+
+* 不具合ではないが不便な挙動 [#Inconvenience]
+
+
+
+**コマンドが意図せず再補完される [#AutoCompleteCont]
+
+&amp;basic{CO}; まで打ち、入力補完の &amp;basic{CONT}; をタッチした際、すばやくタッチペンを離さないと &amp;basic{CONTROLLER(}; と入力されてしまう。~
+
+
+
+* 修正された不具合 [#Fixed]
+
+
+** &amp;basic{BEEP}; を32回以上一気に実行するとハングアップすることがある (Ver.3.6.3 で修正) [#BEEPHangUp]
+
+''Ver 3.6.2 で確認。Ver 3.6.3 で修正。''
+
+&amp;basic{BEEP}; の添え字に関係なく発症します。
+HOME ボタンを含めた全てのボタンが反応しなくなります。
+また、その状態でスリープモードにすると画面が真っ黒になったまま戻りません。
+絶対に発生するわけではなく、
+モードや &amp;basic{BEEP}; の回数によっても発症したりしなかったりするようです。
+#region(起こらない例)
+どちらもEDITモードで、
+#basic{{
+FOR I=0 TO 31
+BEEP
+NEXT
+}}
+#basic{{
+FOR I=0TO 31BEEP NEXT
+}}
+#endregion
+#region(起こる例)
+DIRECTモードで、
+#basic{{
+FOR I=0TO 31BEEP NEXT
+}}
+EDITモードで、
+#basic{{
+FOR I=0TO 32BEEP NEXT
+}}
+#endregion
+
+
+
+** すべての数値変数が実数として扱われる (Ver.3.5.2 で修正) [#AllVariablesFloat]
+
+''Ver.3.5.1 で確認。Ver.3.5.2 で修正''
+
+&amp;basic(online){A=100:PRINT A}; とすると、&amp;basic(online){100.00000000};と表示される
+
+*** 解決策 [#AllVariablesFloat_Avoid]
+&amp;basic{FORMAT$()}; などの文字列関数を使用して表示する
+
+*** 原因 [#AllVariablesFloat_Cause]
+プチコンBIGから仕様を引っ張ってきたために起きてしまった不具合のようです。
+
+
+
+** 引数無しの &amp;basic{OPTION}; を記述するとコンパイル時に強制終了する (Ver.3.6.0 で修正) [#OptionWithoutArguments]
+
+''Ver.3.6.0 で修正''
+
+コンパイル時に強制終了なので、例えすぐに実行されなくても瞬時に強制終了します。
+#basic{{
+WAIT 120
+OPTION
+}}
+
+
+
+* コメント [#Comments]
+
+次の内容はこちらでお願いします。
+
+- このページに示されていない SmileBASIC の不具合報告
+- あるいはページに対するご意見、ご指摘
+- その他の SmileBASIC 不具合に関する情報
+- このページの内容を一部削除、あるいは大きく改変した場合の報告
+-- 荒らしと誤解を避けるため報告することが望ましい
+
+SmileBASIC の不具合またはこのページそのものに関係のないコメントはこの場所ではせず、[[掲示板&gt;Board]]でお願いします。
+''荒らしはしないでください。''
+
+-''名無しさん'' : SPANIM &quot;I&quot; で原点変更されるのはSPDEFを正しく読み取った結果だから不具合とするのはおかしいのでは (&amp;new{2018/01/26 (金) 21:11:26};)
+- ''名無しさん'' : うん、SPANIM &quot;I&quot; 別に問題ないね (&amp;new{2018/01/26 (金) 22:49:26};)
+- ''Ryou Tanpo'' : 遅くなりましたが、SPANIM &quot;I&quot; の情報を削除しておきました (削除したのはだいぶ前) (&amp;new{2018/02/17 (土) 19:30:49};)
+- ''初心者'' : 質問する場所を間違えてるかもですが、 (&amp;new{2018/03/22 (木) 14:41:27};)
+- ''初心者'' : ごめんなさい！ほんとに質問する場所間違えてました！ (&amp;new{2018/03/22 (木) 14:49:38};)
+- ''Ryou Tanpo'' : 誰か (&amp;new{2018/03/23 (金) 20:34:46};)
+- ''Ryou Tanpo'' : OPTION の不具合編集してくださってありがとうございます (&amp;new{2018/03/23 (金) 20:35:09};)
+- ''名無しさん'' : プチコンBIGで、USBキーボードで入力していると入力行が時々勝手に消えるのは仕様でしょうか？ (&amp;new{2018/04/09 (月) 14:18:36};)
+- ''アナログの人'' : 3号から。  スマイルツールから「お絵描き」→COPYで範囲選択→この状態で上下/左右反転、R90を選択すると、COPYした範囲が下画面左上に表示され(半透明の状態)、スライドパッドや十字キーを押してもくっついてくる。一旦スマイルツール画面に戻ると直るし、致命的でもないけど、直しといたほうがいいのでは。 (&amp;new{2018/05/16 (水) 15:24:47};)
+- ''天郷思音'' : スマイルツールといえば透明色バグが健在なのですごくダメ (&amp;new{2018/05/16 (水) 15:50:58};)
+- ''天郷思音'' : （スマイルツール、バージョンが古いままなんだよね、だからバグが健在なのよね） (&amp;new{2018/05/16 (水) 16:46:20};)
+- ''名無しさん'' : CONTの件ですが、実際は正しく補完されています。但しCONTが入力された瞬間に「CONTで始まる語」が候補に表示されてしまうので、すぐにタッチパネルからペンを離さないと、たまたま同じ場所に表示された「CONTで始まる語」が入力されてしまいます。 (&amp;new{2018/05/20 (日) 00:07:08};)
+- ''天郷思音'' : なるほどぅ　後でもう一回挙動確かめておきます　バグじゃなくて不便点として社長さんにお伝えするかな。（連続で補完する挙動ってへんなので） (&amp;new{2018/05/20 (日) 17:48:18};)
+- ''天郷思音'' : 直前に編集された方にご質問ですが、バグ情報が1項目削除されていますが、当該項目が誤情報or虚偽であると検証された結果でしょうか？荒らしと紛らわしいので一報お願いします。 (&amp;new{2018/07/19 (木) 16:46:50};)
+- ''('' : 文字列の透明色バグが直らない; (&amp;new{2018/07/27 (金) 11:51:05};)
+- ''天郷思音'' : うーん、何そのバグ（詳しく聞きたい） (&amp;new{2018/07/27 (金) 19:15:31};)
+- ''天郷思音'' : 『最新バージョン 3.6.1 ではほぼ修正されています。』っていちいち修正するのは面倒なので、具体値なしで『最新バージョンでは〜』と書けば良いのではないか？ (&amp;new{2018/08/04 (土) 21:39:03};)
+- ''カービィ★KIRBY'' : 3D立体視のZ座標の件は最新Ver（V3.6.2）でも健在のようです　一応ﾉﾄﾎﾎ社長に報告はしたけど仕様なのかバグなのか……… (&amp;new{2018/10/11 (木) 18:03:23};)
+- ''名無しさん'' : v3.6.2でMMLの内部変数がおかしい。(ような気がする)  サンプルの公開キー RT3NVNV　ちょっと不便? (&amp;new{2018/11/04 (日) 18:37:51};)
+- ''kai'' : 至急です！プチコン3号を起動しようとすると、真っ暗ながめんになって、エラーが発生しました。任天堂サービスセンターに電話してください。みたいなことが表示されて、強制終了するはめになります。（最初から） (&amp;new{2018/11/10 (土) 00:33:57};)
+- ''はる'' : http://img17.shop-pro.jp/PA01148/723/product/63132997.jpg このような画面ですか?でしたら、それはソフトウェア側の問題ではなくハードウェア側の問題です。 (&amp;new{2018/11/10 (土) 07:23:47};)
+- ''いぶいぶ'' : RGBで色指定しても白にしかならないんですが… (&amp;new{2018/11/23 (金) 22:59:57};)
+- ''はる'' : 3号のVer.3.6.3が配信されたので内容を変更しました。 (&amp;new{2018/12/07 (金) 20:22:26};)
+- ''あまさとしおん'' : 3.6.3ですが、ソートバグ、ヌル文字列バグは健在ですorz (&amp;new{2018/12/29 (土) 19:45:12};)
+- ''あまさとしおん'' : システム変数の書き換えハングですが、添字指定については修正済みを確認しました (&amp;new{2018/12/29 (土) 19:53:10};)
+- ''あまさとしおん'' : ソートバグについて補足を加えました。負数が含まれない配列では発生は確認されていません。正数のみの配列で発生した場合はここに一報いただけると助かります。 (&amp;new{2018/12/29 (土) 19:56:27};)
+- ''あまさとしおん'' : 連投失礼します。内容を消したりした場合（荒らしと紛らわしいので）、コメントに報告を推奨する旨を追加しました。 (&amp;new{2018/12/29 (土) 20:04:47};)
+- ''塩昆布'' : プログラム作成中、Lボタンを押しながら下画面のLOADを押すと、ファイルを選んでロードできるが、ファイル選択中にSTARTボタンを押すと下画面がおかしくなる (&amp;new{2019/01/01 (火) 09:04:07};)
+- ''はる'' : 3号ですね。&amp;basic{SAVE}; でも発生しますね。 (&amp;new{2019/01/01 (火) 10:45:39};)
+- ''名無しさん'' : GYROAのヘルプではPitch,Roll,Yawの順だと書いてありますが、EX8TECHDEMO(3076行目)ではYaw,Pitch,Rollの順に取得しています。 (&amp;new{2019/01/27 (日) 12:23:44};)
+- ''たっくん'' : ver.3.6.3で ラベルの入力に何も文字列が入っていない文字列引数を使うと Internal Error(内部エラー)を吐きます(本来であればIllegal symbol stringを吐くはず) (&amp;new{2019/04/13 (土) 14:56:09};)
+- ''はる'' : それについては既に[[Mame/Errormsg#err1ex1]]に書かれていますね。バグかどうかの判断は難しいですが。 (&amp;new{2019/04/13 (土) 15:59:00};)
+- ''Na'' : プチコン3号ver3.6.3でBGMPLAY&quot;N$0N$0N$0…(N$0が7回以上)でInternalErrorが発生します。 またBGMPLAY&quot;N$0N$0N$0…(N$0が20回以上)でプチコンが強制終了します。 (&amp;new{2019/06/16 (日) 17:53:16};)
+- ''F-4 Phantom'' : 3号でスマイルツールのお絵描きでスライドパットで画面横スクロール中、上画面の赤枠を縦方向に動かすと赤枠がフレーム毎に切り替わらなくなり、RED ZONEができる。「プチコンテクニック(???)」 (&amp;new{2019/08/17 (土) 21:30:56};)
+- ''Na'' : EXEC→COMMON DEF→GOSUB(スロット指定)→RETURNがなくプログラムの終わりに到達→EXECの後が実行される→そこにRETURNがある→RETURN Without GOSUBにならずハングアップします。(説明だるい) (&amp;new{2019/08/19 (月) 16:54:32};)
+- ''あまさとしおん'' : うーん、微妙に分からないのでコードの例をはってもらえれば確かめられるんですけど… (&amp;new{2019/08/19 (月) 18:51:56};)
+- ''Na'' : スロット0に&amp;br; EXEC 1&amp;br; RETURN&amp;br; COMMON DEF AAA&amp;br; GOSUB &quot;0:@BBB&quot;&amp;br; END&amp;br; @BBB&amp;br;  スロット1に&amp;br; AAA&amp;br;  と書いて実行します。 (&amp;new{2019/08/19 (月) 19:17:03};)
+- ''Na'' : BGMPLAY &quot;N&quot;と書くとUnknown errorと出ます。(Missing numberが正しいかと。) (&amp;new{2019/08/25 (日) 20:16:07};)
+- ''名無しさん'' : おもちつきをテストプレイするとたまにフリーズしたりします。原因不明です。 (&amp;new{2019/09/07 (土) 16:27:00};)
+- ''Na'' : 公開キーでダウンロードした、他人のNNIDのついたファイルを上書きしてもNNIDの表示が変わりません。 (&amp;new{2019/09/12 (木) 22:13:36};)
+- ''名無しさん'' : プチコンのバグではなくここのWikiのバグですが、iOSからファイルをアップロードすると、「○○(ページ名)に同じファイル名が存在します」と出ます。 (&amp;new{2019/09/14 (土) 15:29:15};)
+- ''☆Tatsukin★'' : 致命的なバグ（Petitverseの方にもあげたもの）。 PRGGET$で取得したものと一致してるのに、一致してないことになります。&amp;ref(HNI_0050_JPG.JPG); (&amp;new{2019/09/14 (土) 15:41:40};)
+- ''はる'' : &amp;basic{PRGGET$()};の出力には、 改行が含まれます。なので、バグではありませんし、 一致していません。 (&amp;new{2019/09/14 (土) 16:14:00};)
+- ''☆Tatsukin★'' : ↑できました！ありがとうございました！ (&amp;new{2019/09/14 (土) 17:45:34};)
+- ''Na'' : Petitverseの[[トピック&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1282&amp;ukey=0]]にもありますが、長いMMLのループでOut of rangeが発生することがあります。かなり致命的なので、SmileBoomに報告していただけると助かります。 (&amp;new{2019/09/14 (土) 17:50:18};)
+- ''はる'' : Twitterで報告しました。
+#tweet(//twitter.com/0/status/1173030920749637632) (&amp;new{2019/09/15 (日) 09:31:00};)
+- ''はる'' : ''☆Tatsukin★''さん どういたしまして。 (&amp;new{2019/09/15 (日) 09:32:05};)
+- ''Na'' : &gt;はるさん ありがとうございます。 (&amp;new{2019/09/15 (日) 17:57:44};)
+- ''名無し'' : プログラムをセーブする時、完了の確認表示されている間にスタートボタンを押すと下画面が変になり、とっぷ (&amp;new{2019/10/19 (土) 22:36:18};)
+- ''名無し'' : メニューに行こうとすると「エラーが発生しました」と表示され、強制的にソフトが終了します。 (&amp;new{2019/10/19 (土) 22:39:06};)
+- ''Na'' : petitverseだとどこかに行ってしまうのでここにも貼っておきます。&amp;br;[[GRPをDATでロードするときの仕様?&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1314&amp;ukey=0]]&amp;br;[[MMLマクロ内で変数が使えない&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1306&amp;ukey=0]]&amp;br; (&amp;new{2019/10/19 (土) 22:56:04};)
+- ''名無しさん'' : RUNするとたまにフリーズします。電源を切る以外の操作が効かなくなります。今の所、SAVEしてないときにのみ起こっています。このバグが起こったときは絶望的です。(今も起こってる最中) (&amp;new{2019/10/20 (日) 13:29:36};)
+- ''名無しさん'' : スタートボタンもホームボタンも効きません。3Dボリュームも効きません。音量調節はできます。 (&amp;new{2019/10/20 (日) 13:31:24};)
+- ''名無しさん'' : 今の所は、100行〜500行くらい編集してSAVEしてない時にのみ起こっています。少ない行の編集や、こまめにSAVEしている時には起こっていません。 (&amp;new{2019/10/20 (日) 13:33:09};)
+- ''名無しさん'' : 全部おもちつきの時です。 (&amp;new{2019/10/20 (日) 13:33:53};)
+- ''名無しさん'' : プログラムをLOADしたときにも起こりました。 (&amp;new{2019/10/31 (木) 17:22:36};)
+- ''Na'' : ↑3DSが壊れているのでは (&amp;new{2019/10/31 (木) 18:47:48};)
+- ''名無しさん'' : LOADしたのもおもちつきでした。SPGEDの後におもちつきをLOADした際に起こりました。 (&amp;new{2019/10/31 (木) 21:15:30};)
+- ''名無しさん'' : おもちつきが原因なのかも(押し付け) (&amp;new{2019/10/31 (木) 21:16:10};)
+- ''Na'' : ちなみにどのおもちつきですか? (&amp;new{2019/10/31 (木) 21:43:44};)
+- ''すず'' : おもちSZつくってるときに完全に操作不能(無理矢理電源を切ることは可能)になったことあります (&amp;new{2019/10/31 (木) 21:45:49};)
+- ''Na'' : あとSPGEDって何だろう (&amp;new{2019/10/31 (木) 22:26:22};)
+- ''名無しさん'' : すずさんと同じ状況です。 (&amp;new{2019/11/01 (金) 07:37:53};)
+- ''あまさとしおん'' : おもちつき編集した後に起きる現象、「編集」したのは譜面とかそういうデータだったりしますか？ (&amp;new{2019/11/01 (金) 15:44:47};)
+- ''あまさとしおん'' : バグが起きる前に「編集」したのは譜面とかそういうデータだったりしますか？ (&amp;new{2019/11/01 (金) 15:47:20};)
+- ''名無しさん'' : あまり覚えてはいませんが、譜面ではなく、主に大きな機能の追加などをしたときです。 (&amp;new{2019/11/01 (金) 16:06:45};)
+- ''名無しさん'' : FREEMEMのところですが、FREEMEMで表示されるのはKB単位なので、50KBではなく50MBでは？(他のところも同じ) (&amp;new{2019/11/01 (金) 16:43:43};)
+- ''名無しさん'' : ソース→[[命令表&gt;http://smilebasic.com/reference/]] 非公式だがこっちのほうがわかりやすいかも→[[システム予約変数&gt;http://petitcom.net/manual/_systemvar]] (&amp;new{2019/11/01 (金) 16:49:54};)
+- ''名無しさん'' : ちなみにFREEMEM 50KBだと、要素数残り50しか使えないことになります。(そりゃあOut of memory起こる) (&amp;new{2019/11/01 (金) 16:53:09};)
+- ''Na'' : FREEMEMといえばプチコンの起動時に表示される〜bytes freeという表示もkbytesの間違いですよね (&amp;new{2019/11/01 (金) 18:29:53};)
+- ''名無しさん'' : [[これ&gt;http://petitverse.hosiken.jp/community/petitcom/diary/?read=3566&amp;ukey=0]]ってどうなんですかね…？ (&amp;new{2019/11/11 (月) 17:18:07};)
+- ''Na'' : エディタの置き換えでプログラム末尾の改行コードを違う文字に置き換えると、いろいろ不具合が起きます。 (&amp;new{2019/11/24 (日) 20:33:02};)
+- ''あまさとしおん'' : 改行文字が置換できるのって知ってる人は知ってるのですが、うまく使うと便利なので、それ自体が禁止されないでほしいなぁと思ったり。 (&amp;new{2019/11/26 (火) 18:22:40};)
+- ''あまさとしおん'' : たとえば　(改行)　→　(改行)(スペース)　というような置換をすると、行頭にスペースを一括で挿入できるんですよね (&amp;new{2019/11/26 (火) 18:23:51};)
+- ''Na'' : 間違って置き換えしたときに戻すのが大変なので、Undo1回で置き換えた文字が全部戻るようにしてほしいです。 (&amp;new{2019/11/26 (火) 18:28:30};)
+- ''名無しさん'' : ↑それな (&amp;new{2019/11/26 (火) 18:53:13};)
+- ''Na'' : [[DEF内でGOSUBのRETURNが戻り値を要求する&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1355&amp;ukey=0]]&amp;br;[[旧3DSでMMLがスロー再生になる&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1362&amp;ukey=0]]&amp;br; (&amp;new{2019/12/07 (土) 21:39:04};)
+- ''Na'' : [[READで変数が定義されない?&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1417&amp;ukey=0]]&amp;br;たぶん関係ないと思いますが最近(プチコンのDirectモードで)スリープから復帰できずに3DSが落ちることがありました。&amp;br;(あとこのコメント欄にhttpで直接書いてたURLをリンクに変えました。) (&amp;new{2020/02/17 (月) 22:57:48};)
+- ''Na'' : XSCREEN 4を使ったプログラムを実行中にSTOPやSTARTボタンでプログラムを止め、Directモードで何か操作をした後CONTで戻ると下画面のコンソールが使えなくなります。(GRPやスプライトは正常) (&amp;new{2020/02/22 (土) 17:04:06};)
+- ''Na'' : 53番のエラーは[[命令表&gt;http://smilebasic.com/reference/]]には「END without CALL」と載っていますが、ヘルプでは「without CALL」になっています (&amp;new{2020/03/01 (日) 22:17:43};)
+- ''アオタク'' : 結構前に見た+既にたくさんの方がご存知かもしれませんが、文字列が長すぎるエラーでリファレンスには「String too long」と書いてあるのに実際は「String is too long」と出るのでどちらかが間違っているのかも(細かいことだが) (&amp;new{2020/03/02 (月) 17:18:18};)
+- ''Na'' : [[EXECでハングアップ&gt;http://petitverse.hosiken.jp/community/petitcom/topic/?read=1429&amp;ukey=0]]することがあります。詳しい発生条件は分かりませんが... (&amp;new{2020/03/04 (水) 18:38:47};)
+- ''Na'' : ↑2 実際に「String too long」が出ました。(ver3.3.2) (&amp;new{2020/03/05 (木) 21:42:59};)
+- ''アオタク'' : ↑　現在のバージョンだとisがあるので変わったんですね (&amp;new{2020/03/05 (木) 22:35:33};)
+- ''Na'' : ver3.6.3に戻したらisが付きました (&amp;new{2020/03/05 (木) 22:45:49};)
+- ''Na'' : [[エラーメッセージ&gt;Mame/ErrorMsg]]に両方書いておきました。 (&amp;new{2020/03/05 (木) 22:47:41};)
+- ''Na'' : リンクミスった [[エラーメッセージ&gt;Mame/Errormsg]] (&amp;new{2020/03/05 (木) 22:48:07};)
+- ''Na'' : 3号で&amp;basic{CONTROLLER 0};でハングします。(SBSにあったコメント) (&amp;new{2020/04/05 (日) 19:56:33};)
+- ''Na'' : XSCREEN 4でCOLORやATTRをいじるとACLSでも戻せません。不便。 (&amp;new{2020/04/05 (日) 20:01:33};)
+- ''あまさとしおん'' : C&amp;#8203;O&amp;#8203;N&amp;#8203;T&amp;#8203;R&amp;#8203;O&amp;#8203;L&amp;#8203;L&amp;#8203;E&amp;#8203;R、マジだ…最新版3.6.3でもアウトだったので書き足しました。 (&amp;new{2020/04/05 (日) 20:25:02};)
+- ''Na'' : CONTROLLERの命令形、一応&amp;basic{CONTROLLER trm OUT var};というのが[[プチコン.NET&gt;https://petitcom.net/manual/controller]]のほうに載っています。 (&amp;new{2020/04/05 (日) 20:28:18};)
+- ''あまさとしおん'' : あー　関数をOUT構文で書くこともできるか、表現を修正しますね (&amp;new{2020/04/05 (日) 20:41:14};)
+- ''名無しさん'' : 逆に説明書にはOUTしかなくても因数ひとつだけのやつはA=KANSU()みたいな形でも行ける (&amp;new{2020/04/09 (木) 21:03:10};)
+<span class="diff_removed">- ''あまさ&amp;color(teal){と};しおん'' : 今でもバグが見つかってるのに修正アップデートが来ないのはどうなんだろう、と不満を感じている。 (&amp;new{2021/08/09 (月) 14:33:49};)</span>
+<span class="diff_added"  >- ''あまさ&amp;color(teal){と};しおん'' : 今でもバグが見つかってるのに修正アップデートが来ないのはどうなんだろう、と感じている。 (&amp;new{2021/08/09 (月) 14:33:49};)</span>
+
+#comment()
+</pre>
+</div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.007 秒  | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

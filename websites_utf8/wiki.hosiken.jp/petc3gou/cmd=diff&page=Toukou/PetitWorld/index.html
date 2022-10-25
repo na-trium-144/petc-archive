@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Toukou/PetitWorld の変更点 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Toukou/PetitWorld の変更点 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc3gou/?cmd=edit&amp;page=Toukou%2FPetitWorld">このページを編集</a></li>
+				<li><a href="/petc3gou/?cmd=diff&amp;page=Toukou%2FPetitWorld">前回からの変更点</a></li>
+				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPetitWorld">ファイルをアップロード</a></li>
+				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Toukou%2FPetitWorld">新しいページをつくる</a></li>
+				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="/petc/">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Toukou/PetitWorld の変更点</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<li><a href="/petc3gou/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FPetitWorld">PetitWorld</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc3gou/?Toukou%2FPetitWorld">Toukou/PetitWorld</a> へ行く。</li>
+<li><a href="/petc3gou/?cmd=diff&amp;action=undo&amp;page=Toukou%2FPetitWorld">変更を無効にして元に戻す</a></li>
+<li><a href="/petc3gou/?cmd=diff&amp;action=delete&amp;page=Toukou%2FPetitWorld">Toukou/PetitWorld の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(投稿プログラム : PetitWorld ver1.3)
+#contents
+// ↑↑↑↑ この2行は削除しないでください。 ↑↑↑↑
+//
+// ←このように「//」で始まる行はコメントです。ページ本文には反映されません。
+//------------------------------------------------------------------------------
+// ・投稿年月日は、このページを投稿しようとしている今日の日付を半角数字で入力してください。
+//   この日付は、投稿プログラムを自動的に年月日順に並べる際に使用されます。
+// ↓↓↓
+2015年3月22日投稿
+// ↑↑↑
+//------------------------------------------------------------------------------
+// ・投稿者名は、将来的に投稿プログラム一覧に表示するために使用します。
+// ・「名無しさん」のままにしておくと、匿名の方からの投稿として扱われます。
+// ↓↓↓
+/ 投稿者 : Pocky
+// ↑↑↑
+//------------------------------------------------------------------------------
+// ・適当にタグをつけることができます。半角のコンマ区切りで複数つけられます。
+//   タグをつけると、同じタグが付いたページを検索することができます。
+// ★次に該当するプログラムは、特定のタグを設定するようご協力お願いします。
+//   これらを設定すると、将来的に投稿プログラム一覧に目立つマークが付くようになる予定です。
+// ・短いプログラム → 「1行プログラム」「数行プログラム」「1画面プログラム」タグのいずれか1つ
+// ・該当するなら「ゲーム」「実用ツール」「音楽」タグのいずれか
+// ↓↓↓
+/ &amp;tag(投稿プログラム,ゲーム,PetitWorld);
+// ↑↑↑
+
+//------------------------------------------------------------------------------
+// ここに概要とか書きます。
+// ・** や *** で始まる行は子見出しとなります。* の数で深さが決まります。
+// ・[#英数字] はページ内リンクに使用されるキーワードとなりますが、
+//   消してもかまいません。ない場合はランダムな文字列が自動付与されます。
+//   逆に、[#英数字] して同じものを増やしてしまった場合、目次からのリンクがちょっとおかしくなります。
+*アクセスカウンタ [#mbd7a443]
+|今日来てくれた人|&amp;counter(today);人|
+|今までに来てくれた人|&amp;counter(total);人|
+* 概要 [#b0ff7ed4]
+2D横スクロールサンドボックスゲームです。
+クリエイティブモードで自分の好きな様に建築したり、サバイバルモードでサバイバル生活をしたり冒険したりモンスター達と戦ったり…
+&amp;br;
+&amp;size(40){Ver1.32};
+COLOR(red):&amp;size(100){H};
+COLOR(orange):&amp;size(100){e};
+COLOR(yellow):&amp;size(100){l};
+COLOR(green):&amp;size(100){l};
+COLOR(blue):&amp;size(100){o};
+COLOR(indigo):&amp;size(100){P};
+COLOR(purple):&amp;size(100){e};
+COLOR(red):&amp;size(100){t};
+COLOR(orange):&amp;size(100){i};
+COLOR(yellow):&amp;size(100){t};
+COLOR(green):&amp;size(100){W};
+COLOR(blue):&amp;size(100){o};
+COLOR(indigo):&amp;size(100){r};
+COLOR(purple):&amp;size(100){l};
+COLOR(red):&amp;size(100){d};
+
+*説明 [#abbd61bb]
+
+COLOR(red):このゲームはプチコンがver3.1.0以上でない場合エラーになり、プレイできません！
+**操作方法 [#r48004c4]
+***ボタン [#k9169be3]
+|操作|動作|
+|Aボタン|ジャンプ|
+|スライドパッド|移動|
+|Bボタン&amp;スライドパッド|ダッシュで移動|
+|Lボタン|ブロックを破壊|
+|Rボタン|ブロックを設置|
+|L+Rボタン|攻撃|
+|Xボタン|イベントリを開く|
+|十字キー|カーソル移動|
+|Yボタン|レイヤー変更|
+※OPTIONで変更可能です。
+**データについて [#vc9fc1e0]
+***ワールドデータ [#k61296d1]
+ワールドデータは&quot;ワールド名.SAV&quot;に保存されています。
+***スキンの作り方 [#ua8c0590]
+#ref(how-skin.jpg)
+左上に3コマ分のキャラをかいて下さい。
+
+(スーさんのキャラチップをお借りしました。)
+#ref(how-skin1.jpg)
+&quot;スキン名.SKN&quot;に保存して下さい。
+#ref(how-skin2.jpg)
+スキンを使用するにはオプションから設定して下さい。
+***テクスチャの作り方 [#m3f57eeb]
+テクスチャデータは&quot;テクスチャ名.TEX&quot;に保存して下さい。
+スキンと同様、オプションから設定して下さい。
+**レシピ本 [#v6c0ab04]
+#ref(RecipeBook.jpg)
+右下の本のマークを押すと開ける。
+**コマンド [#v416b932]
+メッセージ入力画面で、「/コマンド」のように入力すれば実行できる。
+
+一覧は/help 1で出る。また、helpが収まらない場合は/help 2で2ページ目を見る。
+***コマンドModの作り方 [#j9f0a6ef]
+TEMPLATE.MODを基にして作ればいい。ファイル名は&quot;MOD名.MOD&quot;で保存。
+
+TEMPLATE.MOD見ればなんとなくわかる。
+
+ModAPIのリストは&quot;MODAPILIST.TXT&quot;
+/////////////////////////////////
+* スクリーンショット・動画 [#x05e5678]
+// 動作しているところを撮影した写真や動画があれば貼り付けてください。
+// ページを作成すると、画像の添付ができるようになります。(作成する前はできません)
+// 作成後のページの右上、ウィキメニューにある「添付」から画像をアップロードできます。
+// (添付ファイルはページごとに別個に管理されています。必ず作成後のページに添付してください)
+// 画像をアップロードしたら、以下の書式でページ内に貼り付けられます。
+***タイトル [#x99c47f5]
+#ref(TITLE_ver1.0.JPG)
+***地上 [#z9e43d2a]
+#ref(地上.JPG)
+***洞窟 [#g473a86f]
+#ref(洞窟.JPG)
+***フラットワールド [#ta4d61a8]
+#ref(フラット.JPG)
+***Pockyの家 [#dc109928]
+#ref(Pockyの家.JPG)
+***レシピ [#j14419dc]
+#ref(Recipe1.JPG)
+#ref(Recipe2.JPG)
+魔法の杖
+// 以下の書式で、YouTube やニコニコ動画を貼り付けられます。
+// #youtube(0HWX7kovgY8)
+// #nicovideo(sm13684820)
+
+
+* 公開キー [#m7121513]
+プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。
+#ptcmid(C2NVX3QJ)
+*Changelog [#r37e765a]
+**ver1.32 [#z641de9f]
+-Modファイルが複数あった際に最後のmodがUSE 3されない問題を修正。
+-コマンドが増えた。
+-Mod作成用のテンプレートファイルと、APIのリストを追加。
+-木の成長が早すぎた問題を修正。
+-Modからのメッセージ表示の際にメッセージの色が変更できるように。
+**ver1.31 [#i386aa2e]
+-羊肉の追加
+-バグ修正
+**ver1.3 [#d42a11bb]
+-満腹ゲージや関連システムの実装。 
+-コマンドmodの追加。
+-死んでしまった際に、アイテムを落とすように。
+**ver1.2 [#q8fbbffe]
+-バケツと水バケツを追加
+-水に被せてブロックを置くと水が消えるように。
+-水源を消すと、水の流れが消えるように。
+-バグ修正。
+**ver1.12 [#a30ca6ae]
+-バグ修正。
+-多言語化(英語に対応)。タイトルが表示されるまでL+Rを押すと、言語選択が可能。
+**ver1.11 [#te10f7b1]
+-ドアバグ修正。
+-看板バグ修正。
+-スピードアップ状態で右端まで行くとエラーになるバグを修正。
+-チェストにLボタンを押しながらでないと入れられないバグを修正。
+-ゴミ箱を撤去すると、作業台が手に入るバグを修正。
+-クリエイティブで何もアイテムがないのに個数が表示されるバグを多分修正。
+-魔法の杖を使用した際にMPゲージがおかしくなるバグを修正。
+-時間と暗さが一致しないバグ(暗いのにベッドで寝れないなど)を多分修正。
+**ver1.1 [#zf5c2255]
+-キーコンフィグのバグを修正。複数の操作に同じボタンを割り当てると機能しませんが。
+-クラフティングバグを修正。増殖など。
+-ダイヤモンドバグ修正。
+-Newワールドでエラーになるバグを修正。
+-レシピ本の追加。
+**ver1.0 [#c96765fd]
+やっと公開。
+// *バグ情報 [#ed552e56]
+// *Miiverse [#w600d401]
+// #miiverse(AYIHAAAEAACHVRTrgf6LNQ)
+// ↑の公開キーは古いものです。
+// コメントを募集したくないなら、ここから下は削除してください
+
+* CHECKER FLAG (ひとことコメント) [#m64f0e97]
+この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は[[掲示板&gt;Board]]へ
+#region(古いコメント)
+- ''PetitPocky'' : 荒らし対応ついでに、スッキリ (&amp;new{2016/10/18 (火) 23:15:56};)
+- ''Kensew'' : カバンとかって追加できますか? (&amp;new{2016/10/19 (水) 15:03:57};)
+- ''滝や'' : できたらでいいので防具(ヘルメットなど)を追加してください。 (&amp;new{2016/10/20 (木) 18:04:23};)
+- ''きもい美人'' : クエストとかNPCも!! (&amp;new{2016/10/22 (土) 13:52:30};)
+- ''きもい美人'' : MODの作り方が分かりません...。???.MODでしょう。作者書いたし...後なんかコマンドが分かりません (&amp;new{2016/10/22 (土) 14:45:01};)
+- ''きもい美人'' : このゲームの名前プチ・ワールドでしょ．．． (&amp;new{2016/10/22 (土) 18:37:53};)
+- ''きもい美人'' : なんか全然見てくれへんな 追加して欲しいこと クエスト,NPC,MOD,MODの作り方,空飛ぶ羽,宇宙,宇宙人 (&amp;new{2016/10/23 (日) 11:13:04};)
+- ''
+- ''サグピ'' : このコメントが消えてましたので直しときました (&amp;new{2017/01/07 (土) 10:04:03};)
+- ''サグピ'' : アップデートはまだですか?後、1.11とかですが1.1.1がいいですよ! (&amp;new{2017/01/07 (土) 10:22:20};)
+- ''PetitPocky'' : 只今、猛烈に忙しいので当分の間はプチコンできません。 (&amp;new{2017/01/08 (日) 21:27:50};)
+- ''こうすけ'' : コマンドMODの作り方をおしえてくださいやり方を見たんですがなにもおきませんしかもコマンドをONにしようとしたりワールド始めようとしたり作ろうとするとロード中にエラーがでます。作り方を知っている方できればくわしく教えてください (&amp;new{2017/01/09 (月) 17:49:29};)
+- ''名無しさん'' : 古いバージョンだとエラーになるらしいよ。 (&amp;new{2017/01/09 (月) 23:05:54};)
+- ''こうすけ'' : ありがとうございます！ (&amp;new{2017/01/10 (火) 14:01:49};)
+- ''データ'' : データ消えた (&amp;new{2017/02/02 (木) 17:13:44};)
+- ''はる'' : 人のmodも導入したい。。お願いします (&amp;new{2017/03/04 (土) 12:40:52};)
+サグピ:1時中断かもしれないですね...
+- ''名無しさん'' : ハローワーク (&amp;new{2017/04/19 (水) 16:42:36};)
+- ''ケイタ'' : ハローワーク (&amp;new{2017/04/19 (水) 16:42:56};)
+- ''名無しさん'' : ハローワーク？ (&amp;new{2017/04/19 (水) 20:24:12};)
+- ''Dzシャドウ'' : スキンを作ってもなぜかできない (&amp;new{2017/05/27 (土) 01:40:08};)
+- ''名無しさん'' : 具体的にどうできないの？ (&amp;new{2017/05/27 (土) 23:33:55};)
+// #endregion
+- ''DONだー'' : ローカルでマルチプレイとか追加してほしいっす (&amp;new{2017/06/09 (金) 20:55:26};)
+- ''サグピ'' : Dzシャドウさんへ&gt;回答します。スキンですが スキンの「XXXXX.SKN」で保存です。&amp;br;それかこちらのPetit Worldのファイルに入れていないことも原因の一部です。&amp;br;それでも無理な場合　他の方や作者に聞いて見てください。&amp;br;その前に拡張子「（名前）.SKN」をお忘れないでしょうか？ (&amp;new{2017/06/10 (土) 15:32:54};)
+- ''Kensew'' : チート版が公開されてるww(公開キー:4KENQ33M) (&amp;new{2017/06/10 (土) 17:58:46};)
+- ''サグピ'' : スキン作ってみてできたら良いですね (&amp;new{2017/06/11 (日) 07:20:28};)
+- ''エリック'' : 銃MODは作れますかね？ (&amp;new{2017/06/27 (火) 21:15:56};)
+#region(さぐぴによる長文)
+- ''Sagupi(サグピ)'' : つくれないと思います。MODは基本的に改造と言う意味でありますがこのゲームではコマンド系のModしかまだ分かっていないので一様つくれると言えば作れますがプログラムが中級な方が良いと思います。&amp;br;TEMPLATE.MODを開きます。MODのファイル名:xxx.MODと書きセーブします。コマンド追加と書かれてます。addModCommand &quot;&quot;,&quot;&quot;がありますが&quot;&quot;,&quot;&quot;には&quot;MODコマンド&quot;,&quot;MODコマンド(右のコマンドだけ普通のコマンド名では無くしましょう。自由ですが...)&quot;&amp;br;COMMON　DEF　CMD＿（ここには早急の右に書いたコマンドです。）C$ &amp;br;VAR　C=VAL(C$) (&amp;new{2017/07/27 (木) 11:21:33};)
+- ''Sagupi'' : ここには作りたいコマンド&amp;br;END&amp;br;&amp;br;&amp;br;&amp;br;MODの内容(VAR　C=VAL(C$)〜ENDまで)&amp;br;addMessage&quot;&quot;←文字表示&amp;br;setMessageColor　x　&amp;br;中級:後ACLS,CLSなども使える&amp;br;これを工夫してつくる。 (&amp;new{2017/07/27 (木) 11:26:55};)
+#endregion
+
+- ''ｓｓｓ'' : くらふとできん (&amp;new{2017/08/22 (火) 17:54:33};)
+- ''名無しさん'' : さぐぴによる長文って誰がやったwww (&amp;new{2017/08/22 (火) 18:23:54};)
+- ''のーむ(GX-5)'' : ↑長いからね〜w　　　後やってないから (&amp;new{2017/08/23 (水) 16:50:32};)
+- ''名無しさん'' : APIもっと拡充して欲しい…(例えば敵のリストなど) (&amp;new{2017/08/23 (水) 22:53:36};)
+- ''きもい美人'' : やっとつくれる (&amp;new{2017/08/25 (金) 13:10:09};)
+//- ''wqhlti'' : MsMFHrzYaEAuSHCGD (&amp;new{2017/09/01 (金) 04:50:55};)
+- there was one comment which was comment outed
+- ''名無しさん'' : 嵐 (&amp;new{2017/09/01 (金) 18:53:40};)
+- ''iz猫'' : どうやったらセーブ出来ますか？ (&amp;new{2017/09/03 (日) 11:23:50};)
+- ''名無しさん'' : Quit to titleからゲームを終了すれば保存されますよ (&amp;new{2017/09/03 (日) 19:20:10};)
+- ''きもい美人'' : 作者へ『PetitPockyさんたまには見てますか?...』 (&amp;new{2017/09/04 (月) 19:42:52};)
+- ''きもい美人'' : 1.33(1.3.3)を期待するしかない...Minecraft(マインクラフト)2D(面積風)版というかテラリアというか...wテラリアには似てないけどちょっと行けています。wwプチコン3号としてなかなかいいと思いますw。 (&amp;new{2017/09/04 (月) 19:47:20};)
+- ''名無しさん'' : 何言ってるかわかんない (&amp;new{2017/09/05 (火) 18:27:39};)
+- ''名無しEX'' : ↑それなww (&amp;new{2017/09/05 (火) 20:54:34};)
+- ''名無しEX'' : 『1.33早く☆来て欲しい☆』 は分かる。PetitPockyさんは最近いない。ミーバースの方法 (&amp;new{2017/09/08 (金) 21:04:49};)
+- ''名無しEX'' : ミーバーズの方は動いてましたよ (&amp;new{2017/09/08 (金) 21:05:33};)
+- ''Co'' : comment ngng (&amp;new{2017/10/28 (土) 11:25:14};)
+- ''Nagupi(偽サグピ)'' : ふぁww (&amp;new{2017/10/28 (土) 11:29:21};)
+- ''名無しさん'' : 面白いです (&amp;new{2017/10/28 (土) 12:19:32};)
+- ''ゆっくりリロト'' : スゴく楽しいですありがとうございます！ (&amp;new{2017/10/28 (土) 12:20:08};)
+- ''シャム'' : ゲーム説明プログラムに誤字　×現われる　○現れる (&amp;new{2017/11/11 (土) 16:02:10};)
+#endregion
+- ''naoya1018'' : 懐かしいな、PETITWORLD。Modのほうも公開する人が出てきたし、Modで遊んでみるとするか。 (&amp;new{2017/12/02 (土) 20:13:11};)
+- ''PetitPocky'' : 遠い昔の作品さ..自分でも、もう読めない。  (&amp;new{2018/01/24 (水) 00:14:04};)
+- ''PetitPocky'' : 最近はたまにWikiを見に来るくらいだからね..  (&amp;new{2018/01/24 (水) 00:17:11};)
+- ''みどり'' : テ○リアとマ○○ラが合体したような作品ですね。ちなみに、自分のワールドの配布ってできますか？ (&amp;new{2018/02/03 (土) 11:06:16};)
+- ''PetitPocky'' : 配布okです(*^ω^)&quot;ワールド名. SAV&quot;がワールドデータです (&amp;new{2018/02/03 (土) 12:18:33};)
+- ''みどり'' : キャラデータも一緒に配布しないといけないですかね？(仕様的な意味で) (&amp;new{2018/02/04 (日) 12:58:54};)
+- ''PetitPocky'' : テクスチャ変更をしているのであれば、&quot;テクスチャ名. TEX&quot;として配布してください。スキンデータは&quot;スキン名. SKN&quot;です。 (&amp;new{2018/02/04 (日) 19:47:57};)
+- ''みどり'' : というか、サバイバルで死亡した時にエラーがでるんですが… (&amp;new{2018/02/07 (水) 20:36:31};)
+- ''れん'' : 僕も同じく死亡したらエラーがでます (&amp;new{2018/02/25 (日) 12:21:06};)
+- ''みどり'' : あ、れんさんもなんですね。ちなみに死因は空腹です。 (&amp;new{2018/02/26 (月) 18:54:27};)
+- ''れん'' : 僕も死因は空腹、他のサバイバルワールド死ぬとエラーは出ない(たまーに出る)エラーがでるデータは頻繁にエラーが出ます (&amp;new{2018/02/26 (月) 19:11:42};)
+- ''みどり'' : 仕様ですかね？ (&amp;new{2018/03/04 (日) 10:12:49};)
+- ''スネーク'' : 死ぬとエラーが起こり終了するからいつか治してくださいお願いします (&amp;new{2018/03/18 (日) 18:29:22};)
+- ''(`´)'' : ウンコウンコウンコウンコウンコウンコウンコウンコ (&amp;new{2018/03/18 (日) 18:30:39};)
+- ''みどり'' : (`´)さん荒さないでください。 (&amp;new{2018/03/20 (火) 13:15:25};)
+- ''名無しさん'' : スネーク＝(‘’) (&amp;new{2018/03/20 (火) 22:19:58};)
+- ''名無しの旅人'' : MOD入れた？ (&amp;new{2018/03/24 (土) 08:42:36};)
+- ''Pn-D'' : ジャンプできなくなるバグあった・・・(サバイバルで{正確にはジャンプのSEはあるけどジャンプできてない感じ}) (&amp;new{2018/04/15 (日) 13:27:22};)
+- ''サグピ'' : 次のアプデに期待ってないか(自分で改造しろよ(できない)) (&amp;new{2018/06/02 (土) 21:58:42};)
+- ''名無しさん'' : また変な奴沸いてるな (&amp;new{2018/06/03 (日) 15:11:02};)
+- ''名無しさん'' : それだけすごい作品ということ (&amp;new{2018/08/25 (土) 02:17:01};)
+- ''あいうえお'' : いくつかバグ(？)の様なものを発見したのでお伝えします ・チェストの中にアイテム入れてあるのに破壊でき、中のアイテムが帰ってこない ・アイテムがいつの間にか増えている (ダイヤのピッケル1が3になった) ・チェストのアイテムをタッチするとドラッグしているところにそのアイテムが表示される (&amp;new{2018/08/25 (土) 07:10:09};)
+- ''名無しさん'' : New・ワールドを使うと　Type mismatch in 　というエラーが出ます (&amp;new{2018/09/15 (土) 10:18:54};)
+- ''亜露EX'' : プチコンの方でマイクラ楽しませてもろてます、コマンドが使えないんですがどうすれば良いんですかね？こういうのって　後、自分ヨウツベのうp主です (&amp;new{2018/11/03 (土) 23:09:12};)
+- ''亜露EX'' : クリエイティブモードで浮ける様にして下さいw (&amp;new{2018/11/04 (日) 12:21:01};)
+- ''Aang'' : at addItemToBag and addItemToInventory replace all +M&gt;64 with +M&gt;=64 for the dying crash bug (&amp;new{2019/04/09 (火) 10:37:12};)&amp;br;
+'''(訳:addItemToBagとaddItemToInventoryで、すべての+ M&gt; 64を+ M&gt; = 64に置き換えて、死にゆくクラッシュのバグを修正しました。)'''
+- ''バナナさん 3DS'' : これは神ゲーだ☆ (&amp;new{2019/09/01 (日) 20:16:32};)
+- ''半田もりもり'' : プチコン買うことにしました。(プログラムをいじりたい) (&amp;new{2019/12/14 (土) 08:15:29};)
+- ''半田もりもり'' : プチコン買うことにしました。(プログラムをいじりたい) (&amp;new{2019/12/14 (土) 08:51:55};)
+- ''みどり'' : 結構厳しいレシピが多い… (&amp;new{2019/12/14 (土) 10:10:58};)
+//- ''dzxkygjok'' : owKzuSogQDJ (&amp;new{2020/10/27 (火) 16:18:28};)
+|&amp;size(5){&amp;color(gray){荒らしと判断したコメントがあったため後の2件含む3件を削除しました。by Header};};|
+- ''Header'' : 荒らしは絶対許さない(正義感 (&amp;new{2020/10/27 (火) 16:28:52};)
+- ''Header'' : 次は管理人行きね&amp;#9825; (&amp;new{2020/10/29 (木) 22:23:35};)
+- ''名無しさん'' : Kazusoftかな？ (&amp;new{2020/10/30 (金) 08:46:23};)
+- ''Header'' : たぶん (&amp;new{2020/11/03 (火) 22:51:10};)
+- ''だいこん'' : スキンの作り方を詳しく教えてください (&amp;new{2020/11/23 (月) 18:15:08};)
+- ''だいこん'' : どこでスキン描くんですか？ (&amp;new{2020/11/23 (月) 18:17:29};)
+- ''Header'' : だいこんさん＞たぶんSmileToolでかけますよ (&amp;new{2020/11/25 (水) 02:55:56};)
+<span class="diff_added"  >- ''Header'' : http://wiki.hosiken.jp/petc3gou/?Toukou%2FPetitWorld#ua8c0590 &amp;br;これ見る限りはSmileToolで書いてるみたいですし。 (&amp;new{2020/11/25 (水) 02:56:37};)</span>
+
+#comment
+</pre>
+</div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.015 秒  | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

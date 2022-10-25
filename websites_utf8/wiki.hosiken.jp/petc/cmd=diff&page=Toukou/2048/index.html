@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Toukou/2048 の変更点 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Toukou/2048 の変更点 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2F2048">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2F2048">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F2048">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2F2048">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Toukou/2048 の変更点</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2F2048">2048</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc/?Toukou%2F2048">Toukou/2048</a> へ行く。</li>
+<li><a href="/petc/?cmd=diff&amp;action=undo&amp;page=Toukou%2F2048">変更を無効にして元に戻す</a></li>
+<li><a href="/petc/?cmd=diff&amp;action=delete&amp;page=Toukou%2F2048">Toukou/2048 の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(投稿プログラム : 2048)
+#contents
+2014年3月31日投稿 / 投稿者 : OBONO / &amp;tag(投稿プログラム,mkII専用,パズル,QRコード);&amp;br;
+
+* 概要 [#Summary]
+ここ半月ばかりネット上で話題になっているパズル [[2048:http://gabrielecirulli.github.io/2048/]] のプチコン移植版。&amp;br;
+数字のタイルが次々に出てくるので、うまく移動させて大きい数字のタイルを作っていく。
+
+* 遊び方 [#Rule]
+-十字キーを押すと、画面内の全てのタイルがその方向に移動する。
+-同じ数字のタイルがくっつくと、大きな数字のタイルに変化する。
+-どの方向に動かしてもパネルが動かせなくなったらゲーム終了。
+-Bボタンでいつでもやり直し。
+
+* スクリーンショット [#ScreenShots]
+#ref(2048_shot.jpg)
+
+* QR コード [#QR]
+プチコンmkII 向けのQRコードです。
+#ref(2048_qr.png)
+
+* プログラムリスト [#List]
+#region(&amp;basic{ＬＯＡＤ”２０４８”};)
+#basic{{
+ＡＣＬＳ：ＧＣＬＳ　３４ＧＦＩＬＬ　２３，０，２１４，１９１，８３ＧＰＡＧＥ　１ＦＯＲ　Ｃ＝１ＴＯ　１３ＲＥＡＤ　Ｃ＄Л
+ＣＯＬＳＥＴ”ＳＰ”，Ｃ，Ｃ＄ＧＦＩＬＬ　０，０，２２，２２，ＣЛ
+Ｚ＝ＰＯＷ（２，Ｃ）Ｌ＝（Ｃ−１−（Ｃ＞１２））／３ＯＲ　０Ｘ＝８＋Ｌ＊３ＦＯＲ　Ｉ＝０ＴＯ　ＬЛ
+ＧＰＵＴＣＨＲ　Ｘ，８，”ＢＧＦ”，Ｚ％１０＋４８，０，１Ｘ＝Ｘ−６Ｚ＝Ｚ／１０ＮＥＸＴЛ
+ＦＯＲ　Ｉ＝０ＴＯ　３ＦＯＲ　Ｊ＝０ＴＯ　３Ｃ＄＝””ＦＯＲ　Ｋ＝０ＴＯ　６３Ｃ＄＝Ｃ＄＋ＨＥＸ＄（ＧＳＰＯＩＴ（Ｊ＊８＋Ｋ％８，Ｉ＊８＋Ｋ／８））ＮＥＸＴЛ
+ＣＨＲＳＥＴ”ＳＰＵ”，Ｃ＊１６＋Ｉ＊４＋Ｊ，Ｃ＄ＮＥＸＴ：ＮＥＸＴ：ＮＥＸＴЛ
+＠ＩЛ
+ＣＬＥＡＲ：ＳＰＣＬＲ：ＣＬＳ：ＣＯＬＯＲ　８？”　”＊２７；”ＳＣＯＲＥЛ
+ＤＩＭ　Ｆ（６，６），Ｃ（１８）ＦＯＲ　Ｉ＝０ＴＯ　５Ｆ（０，Ｉ）＝１Ｆ（５，Ｉ）＝１Ｆ（Ｉ，０）＝１Ｆ（Ｉ，５）＝１ＮＥＸＴЛ
+Ｃ（１）＝−１ＧＯＳＵＢ＠Ａ：ＧＯＳＵＢ＠ＡЛ
+＠ＬЛ
+Ｂ＝ＢＴＲＩＧ（）ＩＦ　Ｂ＝＝３２ＴＨＥＮ＠ＩЛ
+Ｖ＝（Ｂ＝＝８）−（Ｂ＝＝４）Ｗ＝（Ｂ＝＝２）−（Ｂ＝＝１）ＩＦ！Ｖ＊！Ｗ　ＴＨＥＮ＠ＬЛ
+Ｐ＝（Ｖ−Ｗ＞０）＊３＋１Ｑ＝（Ｖ＋Ｗ＞０）＊３＋１Ｕ＝０ＦＯＲ　Ｉ＝０ＴＯ　１５Ｆ＝Ｆ（Ｐ，Ｑ）Ｃ＝Ｃ（Ｆ）Ｆ（Ｐ，Ｑ）＝０Ｘ＝Ｐ：Ｙ＝ＱЛ
+＠ＭЛ
+Ｘ＝Ｘ＋Ｖ：Ｙ＝Ｙ＋Ｗ：Ｅ＝Ｆ（Ｘ，Ｙ）Ｚ＝Ｃ（Ｅ）ＩＦ！Ｅ　ＴＨＥＮ＠Ｍ　ＥＬＳＥ　ＩＦ　Ｃ＝＝Ｚ　ＴＨＥＮ　Ｃ（Ｆ）＝Ｃ＋．５Ｃ（Ｅ）＝０ＥＬＳＥ　Ｘ＝Ｘ−Ｖ：Ｙ＝Ｙ−ＷЛ
+ＩＦ　Ｆ　ＴＨＥＮ　Ｚ＝ＡＢＳ（Ｐ＋Ｑ−Ｘ−Ｙ）ＳＰＯＦＳ　Ｆ，Ｘ＊４８，Ｙ＊４８−２３，Ｚ＊４Ｕ＝Ｕ＋（Ｚ＞Ｕ）＊（Ｚ−Ｕ）Ｆ（Ｘ，Ｙ）＝ＦЛ
+Ｚ＝Ｉ％４＝＝３Ｐ＝Ｐ−Ｖ＋Ｚ＊（Ｖ＊４＋Ｗ）Ｑ＝Ｑ−Ｗ＋Ｚ＊（Ｗ＊４−Ｖ）ＮＥＸＴ：ＩＦ！Ｕ　ＴＨＥＮ＠ＬЛ
+ＷＡＩＴ　Ｕ＊３ＦＯＲ　Ｉ＝２ＴＯ　１７Ｃ＝Ｃ（Ｉ）ＩＦ！Ｃ　ＴＨＥＮ　ＳＰＣＬＲ　ＩЛ
+ＩＦ　Ｃ％１ＴＨＥＮ　Ｃ＝Ｃ＋．５Ｃ（Ｉ）＝Ｃ：Ｎ＝Ｎ＋ＰＯＷ（２，Ｃ）ＳＰＣＨＲ　Ｉ，Ｃ＊４ＳＰＳＣＡＬＥ　Ｉ，１００ＳＰＳＣＡＬＥ　Ｉ，２００，８Л
+ＮＥＸＴ：ＧＯＳＵＢ＠ＡЛ
+ＧＯＴＯ＠ＬЛ
+＠ＡЛ
+Ｘ＝ＲＮＤ（４）＋１Ｙ＝ＲＮＤ（４）＋１ＩＦ　Ｃ（Ｆ（Ｘ，Ｙ））ＴＨＥＮ＠ＡЛ
+＠ＳЛ
+Ｓ＝Ｓ％１７＋１ＩＦ　Ｃ（Ｓ）ＴＨＥＮ＠ＳЛ
+Ｃ＝！ＲＮＤ（１６）＋１Ｃ（Ｓ）＝Ｃ：Ｆ（Ｘ，Ｙ）＝Ｓ：ＬＯＣＡＴＥ　２７，１？ＮЛ
+ＳＰＳＥＴ　Ｓ，Ｃ＊４，０，０，０，１，３２，３２ＳＰＨＯＭＥ　Ｓ，１２，１２ＳＰＯＦＳ　Ｓ，Ｘ＊４８，Ｙ＊４８−２３ＳＰＳＣＡＬＥ　Ｓ，０ＳＰＳＣＡＬＥ　Ｓ，２００，８ＷＡＩＴ　８ＲＥＴＵＲＮЛ
+ＤＡＴＡ　ＢＦＢＦＢＦ，ＤＦＢＦ９Ｆ，ＦＦＢＦ７Ｆ，ＦＦ９Ｆ６Ｆ，ＦＦ７Ｆ５Ｆ，ＦＦ５Ｆ３Ｆ，ＦＦＣＦ７Ｆ，ＦＦＣ７６Ｆ，ＦＦＢＦ５Ｆ，ＦＦＢ７３Ｆ，ＦＦＡＦ１Ｆ，ＣＦＤ７００，９ＦＦＦ００Л
+}}
+#endregion
+
+* 改良ポイント [#Improve]
+-グラフィックを変更する
+--パネルの角を丸くする
+--文字をもっとクールな感じにする
+-音楽／効果音をつける
+--できる数字パネルの種類によって異なる効果音を鳴らす
+--パネルが埋まってくるなどの状況に応じてBGMを変化させる
+-ゲームオーバーの判定をする
+-一手戻し機能をつける
+
+* 実績報告 [#Vote]
+自慢をしたければご自由に。
+<span class="diff_removed">#vote(2048作れた![20],4096作れた!![4],8192作れた!!![2],16384作ったらバグった[75])</span>
+<span class="diff_added"  >#vote(2048作れた![20],4096作れた!![4],8192作れた!!![3],16384作ったらバグった[75])</span>
+
+* CHECKER FLAG (ひとことコメント) [#Comments]
+※要望は一切受け付けません。頑張って自分で改良してみましょう。
+- ''OBONO'' : 作者はケチで貧乏なので、どうしても要望があるのであれば、このWikiの住人の優しい人にでも頼みこんでくださいな。 (&amp;new{2014/03/31 (月) 22:00:00};)
+- ''三毛乱ジェロ'' : 待ってました。自分で作ろうかどうしようか悩んでましたので。ゲームオーバーですが、「全部のパネルが埋まった時に縦横隣同士のパネルが同じヤツがあるかチェックして、無ければゲームオーバー」でいいと思います。てか私がそうしようと考えてました。 (&amp;new{2014/03/31 (月) 23:48:02};)
+- ''ｔｍ'' : 32768作れた!(嘘 (&amp;new{2014/04/01 (火) 15:02:26};)
+- ''よこやん'' : ↑エイプリルフール？ (&amp;new{2014/04/01 (火) 20:46:43};)
+- ''名無しさん'' : 524288までいったらOverflowになった (&amp;new{2014/04/01 (火) 23:51:38};)
+- ''かつみ'' : 个 (&amp;new{2014/04/02 (水) 16:15:54};)
+- ''かつみ'' : 524287までがプチコンの限界だから仕方ない (&amp;new{2014/04/02 (水) 16:17:47};)
+- ''/Tachesci'' : 結構面白いですよね、これ。 (&amp;new{2014/04/03 (木) 09:30:07};)
+- ''/Tachesci'' : プチコン3号が出たらジャイロセンサーで動かせますね。 (&amp;new{2014/04/03 (木) 21:46:35};)
+- ''名無しさん'' : 512と1024の間にﾃﾗ深い溝がある･･･案外ムズゲーだった (&amp;new{2014/04/26 (土) 07:58:05};)
+- ''Citrine'' : とうとうプチコンにまで移植されたか...w (&amp;new{2014/05/20 (火) 17:26:41};)
+// - ''名無しさん'' : もし、アップしてるなら、こーど教えてください (&amp;new{2015/07/19 (日) 09:46:26};)
+// - ''tkzfxbgbvj'' : hLJErmKBtvptvPRVD (&amp;new{2015/12/21 (月) 09:27:57};)
+// - ''hqcwnq'' : LumTXVvIQgZNOS (&amp;new{2016/01/05 (火) 21:13:03};)
+// - ''gebreswaoq'' : JwiEpRKPLIoUFZrOL (&amp;new{2016/01/07 (木) 02:46:26};)
+// - ''afxgimyzfwp'' : JYPMYZMw (&amp;new{2016/01/20 (水) 23:22:43};)
+
+#comment
+</pre>
+</div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.005 秒  | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>

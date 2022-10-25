@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	<title>Toukou/ML-Timer の変更点 - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="Toukou/ML-Timer の変更点 - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li><a href="./?plugin=search">検索</a></li>
+		<li><a href="./?Help">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="/petc/?cmd=edit&amp;page=Toukou%2FML-Timer">このページを編集</a></li>
+				<li><a href="/petc/?cmd=diff&amp;page=Toukou%2FML-Timer">前回からの変更点</a></li>
+				<li><a href="/petc/?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FML-Timer">ファイルをアップロード</a></li>
+				<li><a href="/petc/?plugin=newpage&amp;refer=Toukou%2FML-Timer">新しいページをつくる</a></li>
+				<li><a href="/petc/?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="/petc/?RecentChanges">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="/petc3gou/">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
+	</div>
+
+
+	<div class="pure-u-1">
+		<div id="block-body"><div id="block-body-container">
+
+			<h2>Toukou/ML-Timer の変更点</h2>
+
+			<div id="block-pankuzu-body">
+
+				<h3 id="header-pankuzu">パンくずリスト</h3>
+
+				<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
+<li><a href="/petc/?Toukou">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FML-Timer">ML-Timer</a></li>				</ul>
+
+			</div>
+
+<div id="body">
+<ul>
+<li>追加された行は<span class="diff_added">この色</span>です。</li>
+<li>削除された行は<span class="diff_removed">この色</span>です。</li>
+ <li><a href="/petc/?Toukou%2FML-Timer">Toukou/ML-Timer</a> へ行く。</li>
+<li><a href="/petc/?cmd=diff&amp;action=undo&amp;page=Toukou%2FML-Timer">変更を無効にして元に戻す</a></li>
+<li><a href="/petc/?cmd=diff&amp;action=delete&amp;page=Toukou%2FML-Timer">Toukou/ML-Timer の差分を削除</a></li>
+</ul>
+<hr class="full_hr" /><pre>#title(投稿プログラム : ML-Timer)
+#contents
+2012年11月29日投稿
+/ 投稿者 : バイカウントメルビル
+/ &amp;tag(投稿プログラム,実用ツール,QRコード,mkII専用,ストップウォッチ,勉強);
+/ 検索用→【メルビル】
+
+//------------------------------------------------------------------------------
+
+** 概要 [#Summary]
+勉強支援ツールです。~
+「国語」「数学」「理科」「社会」「英語」「読書」「運動」「娯楽」~
+の8項目の時間を個別に測定することができます。~
+
+<span class="diff_removed">ちなみにこれ私の記念すべき20回目の投稿です！(殴</span>
+<span class="diff_removed"></span>
+*** スクリーンショットとQRコード [#i413c1e2]
+|&amp;ref(SS0.png);|&amp;ref(qr.png);|
+|&amp;ref(SS1.PNG);|~|
+
+** 使い方 [#n8102e72]
++起動したら測りたい項目のところをタッチします。
++すると測り始めます。
++測るのを終了する場合は、「STOP」を押してください
+
+-音がうるさい時は、サウンドマークをタッチしてください
+-「×」で、プログラムを終了します。
+
+** Attention! [#Komidashi1]
+-勉強時間の保存はできません。だれかが土台を作ってくれたら作るかもしれn（蹴
+-スリープモードだと時間が加算されません！
+-右上の「×」ボタンをタッチすると容赦なく強制終了するので注意！
+
+/////////////////////////////////
+
+** プログラムリスト [#List]
+#region(217行)
+#basic{{
+'┌────────────┬─────────────┐&lt;COLOR&gt;(#00baff){Л}
+'│ML-Timer 1.0│(C)2012 メルヒ゛ル│&lt;COLOR&gt;(#00baff){Л}
+'└────────────┴─────────────┘&lt;COLOR&gt;(#00baff){Л}
+ACLS:CLEAR:PNLTYPE &quot;OFF&quot;:GPAGE 1&lt;COLOR&gt;(#00baff){Л}
+GOSUB @DRAW&lt;COLOR&gt;(#00baff){Л}
+SEF= 1&lt;COLOR&gt;(#00baff){Л}
+FLG=-1&lt;COLOR&gt;(#00baff){Л}
+@MAINLOOP&lt;COLOR&gt;(#00baff){Л}
+OLDFLG=FLG&lt;COLOR&gt;(#00baff){Л}
+IF TCHST THEN GOSUB @TCH&lt;COLOR&gt;(#00baff){Л}
+IF FLG!=OLDFLG THEN GOSUB @CNG&lt;COLOR&gt;(#00baff){Л}
+IF FLG+1 THEN GOSUB @TIMEPULS&lt;COLOR&gt;(#00baff){Л}
+VSYNC 1&lt;COLOR&gt;(#00baff){Л}
+GOTO @MAINLOOP&lt;COLOR&gt;(#00baff){Л}
+ &lt;COLOR&gt;(#00baff){Л}
+ @TCH&lt;COLOR&gt;(#00baff){Л}
+ TY=TCHY&lt;COLOR&gt;(#00baff){Л}
+ IF             TY&lt; 32 THEN GOSUB @CHKTCHX&lt;COLOR&gt;(#00baff){Л}
+ IF TY&gt;= 48 AND TY&lt;112 THEN FLG=FLOOR(TCHX/32)&lt;COLOR&gt;(#00baff){Л}
+ IF TY&gt;=160            THEN FLG=-1&lt;COLOR&gt;(#00baff){Л}
+ RETURN&lt;COLOR&gt;(#00baff){Л}
+ &lt;COLOR&gt;(#00baff){Л}
+  @CHKTCHX&lt;COLOR&gt;(#00baff){Л}
+  TX=FLOOR(TCHX/32)&lt;COLOR&gt;(#00baff){Л}
+  IF TX==6 THEN GOSUB @SE&lt;COLOR&gt;(#00baff){Л}
+  IF TX==7 THEN GOSUB @END&lt;COLOR&gt;(#00baff){Л}
+  RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @SE&lt;COLOR&gt;(#00baff){Л}
+   IF TCHTIME!=1 THEN RETURN&lt;COLOR&gt;(#00baff){Л}
+   SEF=!SEF&lt;COLOR&gt;(#00baff){Л}
+   GFILL 211,8,218,23&lt;COLOR&gt;(#00baff){Л}
+   IF SEF THEN GOSUB @SETSEF ELSE GOSUB @RSTSEF&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+    &lt;COLOR&gt;(#00baff){Л}
+    @SETSEF&lt;COLOR&gt;(#00baff){Л}
+    GCIRCLE 203,16,14,15,330,30&lt;COLOR&gt;(#00baff){Л}
+    GCIRCLE 203,16,10,15,330,30&lt;COLOR&gt;(#00baff){Л}
+    RETURN&lt;COLOR&gt;(#00baff){Л}
+    &lt;COLOR&gt;(#00baff){Л}
+    @RSTSEF&lt;COLOR&gt;(#00baff){Л}
+    GLINE 211,13,216,18,15&lt;COLOR&gt;(#00baff){Л}
+    GLINE 216,13,211,18,15&lt;COLOR&gt;(#00baff){Л}
+    RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @END&lt;COLOR&gt;(#00baff){Л}
+   ACLS:END&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+ @CNG&lt;COLOR&gt;(#00baff){Л}
+ GBOX OLDFLG*32+1, 48,OLDFLG*32+30,111,15&lt;COLOR&gt;(#00baff){Л}
+ GBOX OLDFLG*32+1,128,OLDFLG*32+30,143,15&lt;COLOR&gt;(#00baff){Л}
+ GBOX FLG*32+1, 48,FLG*32+30,111,8&lt;COLOR&gt;(#00baff){Л}
+ GBOX FLG*32+1,128,FLG*32+30,143,8&lt;COLOR&gt;(#00baff){Л}
+ RETURN&lt;COLOR&gt;(#00baff){Л}
+ &lt;COLOR&gt;(#00baff){Л}
+ @TIMEPULS&lt;COLOR&gt;(#00baff){Л}
+ FRM(FLG)=FRM(FLG)+1&lt;COLOR&gt;(#00baff){Л}
+ IF FRM(FLG)&gt;=60 THEN FRM(FLG)=0:SEC(FLG)=SEC(FLG)+1 IF SEF THEN BEEP 49&lt;COLOR&gt;(#00baff){Л}
+ IF SEC(FLG)&gt;=60 THEN SEC(FLG)=0:MIN(FLG)=MIN(FLG)+1&lt;COLOR&gt;(#00baff){Л}
+ IF MIN(FLG)&gt;=60 THEN MIN(FLG)=0:_HR(FLG)=_HR(FLG)+1&lt;COLOR&gt;(#00baff){Л}
+ GOSUB @NUMPUT&lt;COLOR&gt;(#00baff){Л}
+ RETURN&lt;COLOR&gt;(#00baff){Л}
+  &lt;COLOR&gt;(#00baff){Л}
+  @NUMPUT&lt;COLOR&gt;(#00baff){Л}
+  H$=STR$(_HR(FLG))&lt;COLOR&gt;(#00baff){Л}
+  M$=STR$(MIN(FLG))&lt;COLOR&gt;(#00baff){Л}
+  S$=STR$(SEC(FLG))&lt;COLOR&gt;(#00baff){Л}
+  T$=&quot;0&quot;*(2-LEN(H$))+H$+&quot;0&quot;*(2-LEN(M$))+M$+&quot;0&quot;*(2-LEN(S$))+S$&lt;COLOR&gt;(#00baff){Л}
+  GFILL FLG*32+2,129,FLG*32+29,142,0&lt;COLOR&gt;(#00baff){Л}
+  FOR I=0 TO 5&lt;COLOR&gt;(#00baff){Л}
+   X=FLG*32+I*4+4+I/2&lt;COLOR&gt;(#00baff){Л}
+   ON VAL(MID$(T$,I,1)) GOSUB @0,@1,@2,@3,@4,@5,@6,@7,@8,@9&lt;COLOR&gt;(#00baff){Л}
+  NEXT&lt;COLOR&gt;(#00baff){Л}
+  RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @0&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @1&lt;COLOR&gt;(#00baff){Л}
+   GPSET X,132,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X+1,132,X+1,139,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @2&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,133,X+2,138,0&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @3&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,133,X,138,0&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,135,X+1,135,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @4&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,132,X,136,2&lt;COLOR&gt;(#00baff){Л}
+   GPSET X+1,136,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X+2,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @5&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,138,X+2,133,0&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @6&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X+2,133,X+2,134,0&lt;COLOR&gt;(#00baff){Л}
+   GPSET X+1,135,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @7&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,136,X+1,139,0&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @8&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GPSET X+1,135,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+   @9&lt;COLOR&gt;(#00baff){Л}
+   GBOX X,132,X+2,139,2&lt;COLOR&gt;(#00baff){Л}
+   GLINE X,137,X,138,0&lt;COLOR&gt;(#00baff){Л}
+   GPSET X+1,136,2&lt;COLOR&gt;(#00baff){Л}
+   RETURN&lt;COLOR&gt;(#00baff){Л}
+   &lt;COLOR&gt;(#00baff){Л}
+@DRAW&lt;COLOR&gt;(#00baff){Л}
+GBOX 193,1,222,30,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 225,1,254,30,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 200,11,203,20,15&lt;COLOR&gt;(#00baff){Л}
+GCIRCLE 203,16,14,15,330,30&lt;COLOR&gt;(#00baff){Л}
+GCIRCLE 203,16,10,15,330,30&lt;COLOR&gt;(#00baff){Л}
+GLINE 204,12,208,8,15&lt;COLOR&gt;(#00baff){Л}
+GLINE 204,19,208,23,15&lt;COLOR&gt;(#00baff){Л}
+GLINE 209,8,209,23,15&lt;COLOR&gt;(#00baff){Л}
+FOR FLG=0 TO 7&lt;COLOR&gt;(#00baff){Л}
+ GBOX FLG*32+1,128,FLG*32+30,143,15&lt;COLOR&gt;(#00baff){Л}
+ GOSUB @NUMPUT&lt;COLOR&gt;(#00baff){Л}
+NEXT&lt;COLOR&gt;(#00baff){Л}
+GBOX 1,161,254,190,15&lt;COLOR&gt;(#00baff){Л}
+FOR I=0 TO 16&lt;COLOR&gt;(#00baff){Л}
+ READ SX,SY,EX,EY&lt;COLOR&gt;(#00baff){Л}
+ GLINE SX,SY,EX,EY,2&lt;COLOR&gt;(#00baff){Л}
+NEXT&lt;COLOR&gt;(#00baff){Л}
+PNLSTR 3,1,&quot;┌──────────────┐ &quot;&lt;COLOR&gt;(#00baff){Л}
+PNLSTR 3,2,&quot;│              │з&quot;&lt;COLOR&gt;(#00baff){Л}
+PNLSTR 3,3,&quot;└──────────────┘з&quot;&lt;COLOR&gt;(#00baff){Л}
+PNLSTR 3,4,&quot; жжжжжжжжжжжжжжж &quot;&lt;COLOR&gt;(#00baff){Л}
+&lt;COLOR&gt;(#00baff){Л}
+FOR I=0 TO 7&lt;COLOR&gt;(#00baff){Л}
+ FOR J=0 TO 180 STEP 30&lt;COLOR&gt;(#00baff){Л}
+  GBOX I*32+16-COS(RAD(J))*14,48,I*32+15+COS(RAD(J))*14,111,15&lt;COLOR&gt;(#00baff){Л}
+  VSYNC 1&lt;COLOR&gt;(#00baff){Л}
+  GFILL I*32+1,48,I*32+30,111,0&lt;COLOR&gt;(#00baff){Л}
+ NEXT&lt;COLOR&gt;(#00baff){Л}
+ IF I!=7 THEN BEEP 48,I*(2048*7/6)-8192&lt;COLOR&gt;(#00baff){Л}
+ GBOX I*32+1, 48,I*32+30,111,15&lt;COLOR&gt;(#00baff){Л}
+NEXT&lt;COLOR&gt;(#00baff){Л}
+&lt;COLOR&gt;(#00baff){Л}
+BEEP 42&lt;COLOR&gt;(#00baff){Л}
+LOCATE 0,6&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; │  ││   ─┬─                   &quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; ├┐┌┤│    │ Р                  &quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; │└┘││ ── │                    &quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; │  ││    │ │├┬┐┌─┐├─┐         &quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; │  ││    │ ││││├─┘│           &quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; │  │└─   │ ││││└──│    Ver 1.0&quot;&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot; ──────────────────────────────&quot;&lt;COLOR&gt;(#00baff){Л}
+LOCATE 6,22&lt;COLOR&gt;(#00baff){Л}
+PRINT &quot;(C)2012 Viscount Melville&quot;&lt;COLOR&gt;(#00baff){Л}
+&lt;COLOR&gt;(#00baff){Л}
+PNLSTR 4,2,&quot;ML-Timer   1.0&quot;&lt;COLOR&gt;(#00baff){Л}
+GBOX 7,54,24,76,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 7,99,12,105,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 15,99,24,105,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 80,54,88,64,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 169,99,182,105,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 206,62,216,68,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 199,91,205,97,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 241,54,248,59,15&lt;COLOR&gt;(#00baff){Л}
+GBOX 235,84,244,94,15&lt;COLOR&gt;(#00baff){Л}
+GPSET 240,83,15&lt;COLOR&gt;(#00baff){Л}
+FOR I=0 TO 141&lt;COLOR&gt;(#00baff){Л}
+ READ SX,SY,EX,EY&lt;COLOR&gt;(#00baff){Л}
+ GLINE SX,SY,EX,EY,15&lt;COLOR&gt;(#00baff){Л}
+NEXT&lt;COLOR&gt;(#00baff){Л}
+GCOPY 7,83,24,105,135,83,0&lt;COLOR&gt;(#00baff){Л}
+GCOPY 7,83,12,105,167,54,0&lt;COLOR&gt;(#00baff){Л}
+RETURN&lt;COLOR&gt;(#00baff){Л}
+&lt;COLOR&gt;(#00baff){Л}
+DATA 232,8,247,23,247,8,232,23,41,168,71,168,41,175,70,175,40,183,70,183,40,169,40,174,71,176,71&lt;COLOR&gt;(#00baff){Л}
+DATA 182,88,168,119,168,104,169,104,183,137,168,166,168,137,183,166,183,136,169,136,182,167,169,167&lt;COLOR&gt;(#00baff){Л}
+DATA 182,188,168,214,168,188,175,214,175,188,168,188,183,215,169,215,174&lt;COLOR&gt;(#00baff){Л}
+&lt;COLOR&gt;(#00baff){Л}
+DATA 12,58,19,58,16,59,16,71,13,64,18,64,11,72,20,72,20,67,20,69,7,83,11,83,7,87,12,87,7,91,11,91,7&lt;COLOR&gt;(#00baff){Л}
+DATA 95,11,95,15,83,24,83,15,89,24,89,24,89,24,94,19,84,19,94,15,95,24,95,39,54,39,56,45,54,45,56&lt;COLOR&gt;(#00baff){Л}
+DATA 39,59,45,59,42,54,42,64,39,62,39,64,45,62,45,64,39,67,39,74,40,74,44,74,40,69,47,69,45,70,45&lt;COLOR&gt;(#00baff){Л}
+DATA 76,48,54,48,59,49,56,54,56,54,57,54,75,51,76,54,76,50,69,56,69,42,83,42,86,48,83,48,86,53,83&lt;COLOR&gt;(#00baff){Л}
+DATA 53,86,39,87,39,91,40,87,56,87,56,88,56,91,42,91,53,91,53,92,53,93,48,93,48,105,47,105,45,105&lt;COLOR&gt;(#00baff){Л}
+DATA 39,95,56,95,71,54,77,54,74,55,74,75,71,64,77,64,71,76,77,76,81,59,87,59,84,55,84,75,80,70,88&lt;COLOR&gt;(#00baff){Л}
+DATA 70,80,76,88,76,71,83,77,83,74,84,74,105,71,91,77,91,72,92,72,105,75,95,77,95,80,83,82,83,80,91&lt;COLOR&gt;(#00baff){Л}
+DATA 82,91,80,99,88,99,86,83,86,105,106,54,106,58,103,59,109,59,109,60,109,64,103,64,108,64,106,65&lt;COLOR&gt;(#00baff){Л}
+DATA 106,76,107,70,109,70,112,62,120,62,116,54,116,75,112,76,120,76,103,83,103,89,104,83,120,83,120&lt;COLOR&gt;(#00baff){Л}
+DATA 84,120,89,107,89,116,89,103,95,120,95,106,96,106,105,107,105,120,105,120,101,120,104,135,57&lt;COLOR&gt;(#00baff){Л}
+DATA 152,57,139,54,139,60,148,54,148,60,137,64,150,64,144,62,144,69,138,64,149,64,135,70,152,70,139&lt;COLOR&gt;(#00baff){Л}
+DATA 71,139,76,148,71,148,76,137,64,137,69,150,64,150,69,176,56,184,56,180,54,180,59,177,60,184,60&lt;COLOR&gt;(#00baff){Л}
+DATA 176,64,176,66,177,64,184,64,184,65,184,66,178,68,178,76,182,68,182,76,183,76,184,76,168,85,183&lt;COLOR&gt;(#00baff){Л}
+DATA 85,167,88,184,88,168,91,183,91,168,94,183,94,167,97,184,97,175,83,175,96,183,86,183,90,170,102&lt;COLOR&gt;(#00baff){Л}
+DATA 181,102,199,54,202,54,199,59,202,59,202,60,202,75,199,76,216,76,206,54,216,54,206,55,206,56&lt;COLOR&gt;(#00baff){Л}
+DATA 216,55,216,56,206,59,216,59,207,65,215,65,206,71,216,71,211,55,211,74,199,83,205,83,199,87,205&lt;COLOR&gt;(#00baff){Л}
+DATA 87,200,94,204,94,199,101,205,101,199,105,205,105,202,84,202,104,210,83,210,105,208,87,216,87&lt;COLOR&gt;(#00baff){Л}
+DATA 216,88,216,105,215,105,213,105,231,54,231,72,232,58,237,58,232,72,237,72,235,59,235,76,239,58&lt;COLOR&gt;(#00baff){Л}
+DATA 239,64,240,64,248,64,248,65,248,68,239,69,248,69,239,72,239,76,248,72,248,76,231,84,232,84,231&lt;COLOR&gt;(#00baff){Л}
+DATA 94,232,94,236,89,243,89,247,84,248,84,247,94,248,94,231,99,248,99,240,95,240,105,233,100,233&lt;COLOR&gt;(#00baff){Л}
+DATA 105,246,100,246,105&lt;COLOR&gt;(#00baff){Л}
+}}
+#endregion
+
+/////////////////////////////////
+
+* CHECKER FLAG (ひとことコメント) [#Comments]
+この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は[[掲示板&gt;Board]]へ)
+- ''minecrafter郎'' : うぽつです　めっちゃスゲーっす (&amp;new{2012/11/29 (木) 20:38:09};)
+- ''メルビル'' : ありがとうございます！ (&amp;new{2012/11/29 (木) 20:41:20};)
+- ''ウイング'' : 使わせてもらいます (&amp;new{2012/11/29 (木) 20:47:22};)
+- ''ウイング'' : あと２０回投稿おめでとうございます (&amp;new{2012/11/29 (木) 20:48:04};)
+- ''メルビル'' : こんな作品ですが、よかったら是非活用してあげてください (&amp;new{2012/11/29 (木) 20:50:00};)
+- ''燻製'' : すげえっ、ssで出ガチだった (&amp;new{2012/11/29 (木) 20:52:30};)
+- ''ろRどろS'' : すごい使えそう (&amp;new{2012/11/29 (木) 20:53:03};)
+- ''名無しさん'' : スリープ時にもタイマーが動作するように改造してみた (&amp;new{2012/11/29 (木) 20:58:07};)
+- ''メルビル'' : 私もそうしたかったのですがMAINCNTLが145分に一度リセットされる所でめんどくさくなってしまいました (&amp;new{2012/11/29 (木) 21:05:55};)
+- ''名無しさん'' : MAINCNTLのカウントはスリープ時には停止するよ (&amp;new{2012/11/29 (木) 21:12:04};)
+- ''メルビル'' : あ、そういえばそうでした(汗) (&amp;new{2012/11/29 (木) 21:14:14};)
+- ''メルビル'' : ・・・！なるほど私も後で改造してこよう (&amp;new{2012/11/29 (木) 21:14:48};)
+- ''名無しさん'' : スリープ復帰時はTIME$から取得？ (&amp;new{2012/11/29 (木) 22:53:12};)
+- ''名無しさん'' : 漢字のフォントすき　DATA文がすごいけどｗ (&amp;new{2012/11/29 (木) 23:19:05};)
+- ''ベルック'' : 今、テスト期間なので使ってみよう。その前に勉強するかな？w (&amp;new{2012/11/30 (金) 00:00:55};)
+- ''名無しさん'' : ↑3 MAINCNTLと併用すれば1フレーム単位で取得できる (&amp;new{2012/11/30 (金) 00:07:34};)
+- ''名無しさん'' : TIME$って秒単位だから、最高で59フレームの差が出るのでは？　細かい話だけど。 (&amp;new{2012/11/30 (金) 12:09:33};)
+- ''烏天'' : 最初のぴらぴらぁって並ぶ感じが好き(*´ω｀*) (&amp;new{2012/11/30 (金) 16:25:27};)
+- ''名無しさん'' : ｓｏ ｇｏｏｄ！ (&amp;new{2012/12/01 (土) 15:54:39};)
+- ''天郷思音'' : 「社会」の「会」が読みにくい。 (&amp;new{2012/12/01 (土) 16:31:45};)
+- ''名無しさん'' : 社会が社宅に見える (&amp;new{2012/12/01 (土) 16:50:34};)
+- ''あいうえお'' : ↑名前つけるの忘れた (&amp;new{2012/12/01 (土) 16:51:00};)
+- ''メルビル'' : ううむ・・・どうすればいいだろう (&amp;new{2012/12/01 (土) 18:08:29};)
+- ''名無しさん'' : 何を悩んでるの？　タイマー？　社宅？ (&amp;new{2012/12/01 (土) 19:04:53};)
+- ''.EXE'' : テスト勉強しよ。あとday 5 (&amp;new{2012/12/01 (土) 19:49:24};)
+- ''メルビル'' : 社宅ですね。どうすれば社会に見えるかなあ・・・ (&amp;new{2012/12/01 (土) 20:18:45};)
+- ''名無しさん'' : DATAの座標をGLINEで結んでいるなら斜めに線を引くしか。 (&amp;new{2012/12/01 (土) 20:21:25};)
+- ''燻製'' : ↑わざと斜め使ってないんじゃないの？階段みたいな斜めにするとか (&amp;new{2012/12/01 (土) 21:11:38};)
+- ''名無しさん'' : でもサウンドマークには斜めを使ってるんだよね。他も使っていいと思う。 (&amp;new{2012/12/01 (土) 21:18:09};)
+- ''メルビル'' : サウンドマークはサウンドマークという自分ﾙｰﾙが (&amp;new{2012/12/01 (土) 21:52:05};)
+- ''.EXE'' : テスト関連のものを作ろうかな？ (&amp;new{2012/12/01 (土) 22:33:51};)
+
+#comment
+</pre>
+</div>
+
+		</div></div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.006 秒  | <a href="/petc/?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+</html>
