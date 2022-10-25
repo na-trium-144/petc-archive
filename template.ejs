@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
 <head>
-	<title><%= pagetitle %> - <%= wikititle %></title>
+	<title><%= pageTitle %> - <%= wikiTitle %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
@@ -15,7 +15,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script>
 	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script>
-		<!-- <meta name="twitter:title" content="<%= pagetitle %> - <%= wikititle %>" /> -->
+		<!-- <meta name="twitter:title" content="<%= pageTitle %> - <%= wikiTitle %>" /> -->
 	<!-- <meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" /> -->
 	<!-- <meta name="twitter:card" content="summary" /> -->
 	<!-- <meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" /> -->
@@ -33,7 +33,7 @@
 
 	<div id="block-header">
 
-		<h1><a href="/"><%= wikititle %></a></h1>
+		<h1><a href="/"><%= wikiTitle %></a></h1>
 
 	<div id="block-topbox">
 		<div id="headermenu">
@@ -82,18 +82,20 @@
 
 			<div id="block-body-container">
 
-				<h2><%= pagetitle %></h2>
+				<h2><%= pageTitle %></h2>
 
-				<!-- <div id="block-pankuzu-body">
+				<div id="block-pankuzu-body">
 
 					<h3 id="header-pankuzu">パンくずリスト</h3>
 
 					<ul id="list-pankuzu">
-<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
+<!-- <li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
 <li><a href="/petc3gou/?Toukou">Toukou</a></li>
-<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP">NewリズミカルおもちつきSP</a></li>					</ul>
+<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP">NewリズミカルおもちつきSP</a></li>					</ul> -->
 
-				</div> -->
+						<li id="list-pankuzu-home"><%= lastUpdate %></li>
+					</ul>
+				</div>
 
 				<div id="body">
 				<%- body %>

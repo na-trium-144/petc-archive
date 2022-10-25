@@ -23,11 +23,11 @@ function queryToBuffer(q) {
 }
 
 function pageExists(page) {
-  if(!page.startsWith("/")){
+  if (!page.startsWith("/")) {
     return true;
   }
   page = page.replace("?", "");
-  if(page.indexOf("#") >= 0){
+  if (page.indexOf("#") >= 0) {
     page = page.slice(0, page.indexOf("#"));
   }
   page = iconv.decode(queryToBuffer(page), "eucjp");
@@ -36,15 +36,14 @@ function pageExists(page) {
 
 app.get("/petc(3gou)?4?/", (request, response) => {
   let page = request.originalUrl;
-  if(page.indexOf("#") >= 0){
+  if (page.indexOf("#") >= 0) {
     page = page.slice(0, page.indexOf("#"));
   }
-  if(pageExists(page)){
+  if (pageExists(page)) {
     page = page.replace("?", "");
     page = iconv.decode(queryToBuffer(page), "eucjp");
     const $ = cheerio.load(iconv.decode(fs.readFileSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html"), "eucjp"));
-    for (let a of $("a").get()){
-      console.log(a)
+    for (let a of $("a").get()) {
       let href = $(a).attr('href');
       let title = $(a).attr('title');
       let content = $(a).html();
@@ -61,22 +60,27 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     const bodyHtml = $("#body").html();
     const notesHtml = $("#notes").html();
     const pageTitle = $("#block-body-container > h2").text();
+    const about = $("#pukiwiki-about").text();
+    const lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("このページの最終更新 : ") + 36);
+
     const template = fs.readFileSync("template.ejs", "utf-8");
     const html = ejs.render(template, {
-      wikititle: "プチコンまとめArchive",
-      pagetitle: pageTitle,
+      wikiTitle: "プチコンまとめArchive",
+      pageTitle: pageTitle,
       base: request.path,
       body: bodyHtml,
+      lastUpdate: lastUpdate,
       notes: notesHtml
     });
     response.send(html);
-  } else{
+  } else {
     const template = fs.readFileSync("template.ejs", "utf-8");
     const html = ejs.render(template, {
-      wikititle: "プチコンまとめArchive",
-      pagetitle: "ページが見つかりません",
+      wikiTitle: "プチコンまとめArchive",
+      pageTitle: "ページが見つかりません",
       base: request.path,
       body: `<p>ページ ${iconv.decode(queryToBuffer(page), "eucjp")} は プチコンまとめArchive に存在しません。</p>`,
+      lastUpdate: "",
       notes: ""
     });
     response.send(html);
@@ -86,10 +90,11 @@ app.get("/petc(3gou)?4?/", (request, response) => {
 app.get("/", (request, response) => {
   const template = fs.readFileSync("template.ejs", "utf-8");
   const html = ejs.render(template, {
-    wikititle: "プチコンまとめArchive",
-    pagetitle: "プチコンまとめArchive トップページ",
+    wikiTitle: "プチコンまとめArchive",
+    pageTitle: "プチコンまとめArchive トップページ",
     base: request.path,
     body: fs.readFileSync("index.html", "utf-8"),
+    lastUpdate: "",
     notes: ""
   });
   response.send(html);
