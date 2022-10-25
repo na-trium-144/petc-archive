@@ -1,0 +1,1233 @@
+@charset "shift-jis";
+
+/* -------------------------------------
+  基本的な定義
+------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+* html body dl.list-s dd div {
+	font-family: sans-serif !important;
+	display: inline-block;
+}
+
+body {
+	color: #000000;
+	background-color: #ECF3F9;
+}
+
+textarea {
+	font-family: monospace;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #0040ff;
+}
+
+a:visited {
+	color: #0000ff;
+}
+
+a:hover {
+	color: #ff8000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ff0000;
+}
+
+u {
+	text-decoration: underline;
+}
+
+s, del {
+	text-decoration: line-through;
+}
+
+#block-body p, #block-body ul, #block-body ol, #block-body dl, #block-body .paragraph {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#block-body ul ul, #block-body ul ol, #block-body ol ul, #block-body ol ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+	padding-top: 0em;
+	margin-left: 2em;
+	padding-bottom: 0em;
+}
+
+dt {
+	margin-top: 0.25em;
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 2em;
+	margin-bottom: 0.25em;
+}
+
+blockquote {
+	color: #6c9fd2;
+	background-color: #f8fcfc;
+	margin-top: 1em;
+	border-top-width: 1px;
+	border-style: solid;
+	border-color: #C1DBF0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-left-width: 0.5em;
+	border-right-width: 1px;
+	margin-bottom: 1em;
+	border-bottom-width: 1px;
+}
+
+.clear {
+	display: block;
+}
+
+dl.list-ss, dl.list-s, dl.list-m {
+}
+
+dl.list-ss dt, dl.list-s dt, dl.list-m dt,
+dl.list-ss dd, dl.list-s dd, dl.list-m dd {
+	margin-top: 0em;
+	margin-bottom: 0.2em;
+}
+
+dl.list-ss dt {
+   width: 3em;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0;
+}
+
+dl.list-ss dd {
+   margin-left: 3.5em;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0.15em;
+}
+
+dl.list-s dt {
+   width: 5em;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0;
+}
+
+dl.list-s dd {
+   margin-left: 5.5em;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0.15em;
+}
+
+dl.list-m dt {
+   width: 7em;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-right: 0;
+}
+
+dl.list-feature dd {
+   margin-left: 7.5em;
+   padding-top: 0.15em;
+   padding-bottom: 0.15em;
+   padding-right: 0.15em;
+}
+
+dl.list-feature dt {
+	color: #13799B;
+	margin-top: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C1DBF0;
+}
+
+dl.list-feature dd {
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+}
+
+/* -------------------------------------
+  コンテナ
+------------------------------------- */
+div#block-container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	max-width: 70rem;
+	zoom: 100%;
+}
+
+/* -------------------------------------
+  ヘッダ
+------------------------------------- */
+div#block-header {
+	padding-top: 0.75em;
+	padding-bottom: 0.25em;
+	color: #000000;
+	zoom: 100%;
+}
+
+#block-topbox {
+	vertical-align: middle;
+	float: right;
+	margin-bottom: 0.5em;
+}
+
+input#form-sitesearch-edit {
+	width: 10em;
+}
+
+#block-topbox p {
+	color: #467DA6;
+	font-size: 75%;
+	line-height: 1.25em;
+}
+
+#block-topbox a {
+	text-decoration: none !important;
+}
+
+#block-topbox a:hover {
+	text-decoration: underline;
+}
+
+/* -------------------------------------
+  メニュー
+------------------------------------- */
+div#block-topmenu {
+	zoom: 100%;
+}
+
+ul#list-topmenu {
+
+}
+
+ul#list-topmenu li {
+	display: inline;
+}
+
+ul#list-topmenu a {
+	color: #009CBD;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	margin-right: 0.25em;
+	display: block;
+    border-top-right-radius: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	text-decoration: none;
+}
+
+ul#list-topmenu a:hover {
+	color: #ffffff;
+	background-color: #94B8D6;
+}
+
+li#list-topmenu-current a {
+	color: #ffffff;
+	background-color: #78A6CB;
+	text-decoration: none;
+}
+
+/* -------------------------------------
+  本文
+------------------------------------- */
+div#block-body {
+	background-color: #ffffff;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #78A6CB;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #78A6CB;
+}
+
+div#block-body-container {
+	padding-top: 1.5em;
+	padding-left: 2.5em;
+	padding-right: 2em;
+	padding-bottom: 1.5em;
+}
+
+div#block-body-container * {
+	line-height: 1.5em;
+}
+
+div#block-submenu li {
+	background-image: none !important;
+}
+
+div#block-body-container ul li {
+	list-style-type: none;
+	margin-left: -1em;
+	padding-left: 1em;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	background-image: url(resources/listmark-b.png);
+	background-position: left 0.5em;
+	background-repeat: no-repeat;
+}
+
+div#block-body-container ol li {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+div#block-extra-navi {
+	font-size: 75%;
+	color: #78A6CB;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #78A6CB;
+	clear: both;
+	zoom: 100%;
+}
+
+div#block-extra-navi ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#block-extra-navi ul li {
+	display: inline-block;
+	line-height: 100%;
+}
+
+div#block-extra-navi ul li a, div#block-extra-navi ul li#active {
+	display: inline-block;
+	color: #78A6CB;
+	line-height: 100%;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #78A6CB;
+	padding: 0.5em;
+	margin-right: 0.2em;
+	border-radius: 0.5em 0.5em 0 0;
+	text-decoration: none;
+}
+
+div#block-extra-navi ul li#active {
+	background-color: #78A6CB;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div#block-extra-navi ul li a:hover {
+	background-color: #78A6CB;
+	color: #ffffff;
+}
+
+/* -------------------------------------
+  パンくずリスト
+------------------------------------- */
+div#block-pankuzu-body {
+	list-style: none;
+	font-size: 75%;
+	color: #78A6CB;
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	margin-left: -1em;
+	margin-top: -1.2em;
+	padding-bottom: 0;
+}
+
+div#block-pankuzu {
+	font-size: 75%;
+	color: #78A6CB;
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #78A6CB;
+	padding-bottom: 0.75em;
+	clear: both;
+	zoom: 100%;
+}
+
+ul#list-pankuzu li, div#block-pankuzu-body li {
+	background-image: url(resources/pankuzu-simple.png) !important;
+	background-position: left center !important;
+	background-repeat: no-repeat !important;
+	margin: 0 !important;
+	margin-left: 0 !important;
+	padding-left: 12px !important;
+	display: inline !important;
+}
+
+ul#list-pankuzu li#list-pankuzu-home, div#block-pankuzu-body li#list-pankuzu-home {
+	padding-left: 0 !important;
+	background-image: none !important;
+}
+
+div#block-pankuzu a, div#block-footer a, div#block-pankuzu-body a {
+	color: #467DA6;
+	text-decoration: none;
+}
+
+div#block-pankuzu a:hover, div#block-footer a:hover, div#block-pankuzu-body a:hover {
+	text-decoration: underline;
+}
+
+div#block-pankuzu a, div#block-pankuzu-body a
+{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+div#block-pankuzu li#list-pankuzu-home a, div#block-pankuzu-body li#list-pankuzu-home a
+{
+	margin-left: 0em;
+	margin-right: 0.5em;
+}
+
+li#list-pankuzu-current
+{
+	font-weight: bold;
+}
+
+/* -------------------------------------
+  フッタ
+------------------------------------- */
+div#block-footer {
+	padding: 0.75em;
+	color: #ffffff;
+	text-align: right;
+	background-color: #78A6CB;
+	background-image: url(resources/footer-back.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #78A6CB;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #78A6CB;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #78A6CB;
+	margin-bottom: 2em;
+	zoom: 100%;
+}
+
+div#block-footer.footer-with-ad {
+	margin-bottom: 0em;
+}
+
+div#block-footer-ad {
+	font-size: 0.6em;
+	text-align: right;
+	margin-top: 0.8333em;
+	margin-bottom: 1.666em;
+}
+
+div#block-footer-ad h2 {
+	font-size: 100%;
+	color: #80a0d0;
+	display: inline;
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 1em;
+}
+
+div#block-footer-ad ul {
+	font-size: 100%;
+	line-height: 1em;
+	color: #80a0d0;
+	display: inline;
+}
+
+div#block-footer-ad ul li {
+	display: inline;
+}
+
+div#block-footer-ad a {
+	color: #80a0d0;
+}
+
+/* -------------------------------------
+  見出し
+------------------------------------- */
+#header-navigation, #header-search, #header-menu, #header-pankuzu, #header-toppage {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	line-height: 150%;
+}
+
+h1 { font-size: 1.5em; display: inline-block; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.25em; }
+h4, h5 { font-size: 1.0em; }
+h6 { font-size: 1.0em; font-weight: normal; }
+
+h1 {
+	color: #467DA6;
+}
+
+.header-title * {
+	display: none;
+}
+
+h2 {
+	color: #ffffff;
+	background-color: #89BEE2;
+	background-image: url(resources/h2-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	margin-top: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #467DA6;
+	padding-top: 0.25em;
+	margin-left: -0.5em;
+	padding-left: 0.5em;
+	margin-right: -0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 1em;
+	padding-bottom: 0.25em;
+}
+
+h2.header-multicol {
+	font-size: 115%;
+	border: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	color: #13799b;
+	background-color: #f6fbff;
+	background-image: url(resources/h3-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	margin-top: 1.0em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #8abfe2;
+	padding-top: 0.25em;
+	margin-left: -0.5em;
+	padding-left: 0.5em;
+	margin-right: -0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 1em;
+	padding-bottom: 0.25em;
+}
+
+h4 {
+	color: #13799B;
+	background-image: url(resources/h4-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #8abfe2;
+	padding-bottom: 0.25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+}
+
+h5 {
+	font-weight: bold;
+	color: #74B6CF;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h6 {
+	font-weight: normal;
+	color: #75a4b3;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* -------------------------------------
+  サイドメニュー
+------------------------------------- */
+#header-sidemenu {
+	display: none;
+}
+
+div.with-sidemenu {
+}
+
+div#block-sidemenu {
+	padding-left: 0.5em;
+}
+
+div#block-sidemenu-container {
+	font-size: 85%;
+	padding-top: 1.5em;
+	padding-right: 2.5em;
+	padding-left: 0em;
+	padding-bottom: 1.5em;
+}
+
+div#block-sidemenu-container h3 {
+}
+
+div#block-sidemenu-container p {
+	line-height: 140%;
+}
+
+div#block-sidemenu-container li {
+	line-height: 140%;
+}
+
+div#block-sidemenu-container h3 {
+	font-size: 125%;
+	color: #13799b;
+	background-color: transparent;
+	background-image: url(resources/h4-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	margin-top: 1em;
+	border-top-style: none;
+	padding-top: 0px;
+	margin-left: -0.5em;
+	border-left-style: none;
+	padding-left: 0.5em;
+	margin-right: -0.5em;
+	border-right-style: none;
+	padding-right: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #8abfe2;
+	padding-bottom: 0.25em;
+}
+
+div#block-sidemenu-container h4 {
+	font-size: 110%;
+	color: #13799b;
+	background-color: transparent;
+	background-image: none;
+	margin-top: 0.5em;
+	border-style: none;
+	padding-top: 0px;
+	margin-left: -0.5em;
+	padding-left: 0.5em;
+	margin-right: -0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0em;
+}
+
+div#block-sidemenu-container h5 {
+	font-weight: normal;
+	color: #75a4b3;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-top: 0px;
+	padding-bottom: 0em;
+}
+
+div#block-sidemenu-container ul li {
+	list-style-type: none;
+	margin-left: -1em;
+	padding-left: 1em;
+	background-image: url(resources/listmark-m.png);
+	background-position: left 0.5em;
+	background-repeat: no-repeat;
+}
+
+/* -------------------------------------
+  トップページ
+------------------------------------- */
+#block-title-image {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-image: url(resources/title.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 180px;
+}
+
+#block-title-image * {
+	display: none;
+}
+
+#block-body ul, #block-body ol {
+	padding-left: 0px;
+	margin-left: 1.5em;
+	margin-right: 1em;
+}
+
+div#block-toppage-new {
+	width: 50%;
+}
+
+p#toppage-new-prev {
+	text-align: right;
+}
+
+div#block-toppage-info {
+	margin-right: 50%;
+}
+
+div#block-toppage-new-box {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+div#block-toppage-info-box {
+	margin-top: 1em;
+	margin-right: 1em;
+}
+
+div#block-toppage-new-box p, div#block-toppage-new-box dl, div#block-toppage-new-box ul, div#block-toppage-new-box ol,
+div#block-toppage-info-box p, div#block-toppage-info-box dl, div#block-toppage-info-box ul, div#block-toppage-info-box ol {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#toppage-banners {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: -0.25em;
+}
+
+#toppage-accesscounter a img {
+	margin-left: 6px;
+}
+
+/* ------------------ */
+
+table, table.border, table.border-center {
+	font-size: 100%;
+	line-height: 100%;
+}
+
+td, th {
+	text-align: left;
+	line-height: 1.25em;
+	vertical-align: top;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+th {
+	text-align: center;
+}
+
+img {
+	border: 0;
+}
+
+table.border, table.border-center {
+	border-width: 2px;
+	border-style: double;
+	border-color: #8ABFE2;
+	margin: 0.5em;
+	border-collapse: collapse;
+}
+
+
+table.center, table.border-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.border td, table.border th, table.border-center td, table.border-center th {
+	vertical-align: middle;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D9E9F6;
+}
+
+table.border th, table.border-center th {
+	color: #467da6;
+	background-color: #eff7fc;
+}
+
+th.nowrap {
+	white-space: normal;
+}
+
+.block-info {
+	color: #2e84c2;
+	background-image: url(resources/h4-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C1DBF0;
+}
+
+div.block-info{
+	padding-top: 0;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	padding-bottom: 0;
+}
+
+
+p.block-info, div.block-info-noparagraph {
+	padding: 0.75em;
+}
+
+/* -------------------------------------
+  セカンドメニュー
+------------------------------------- */
+ul#list-secondmenu, ul.secondmenu {
+	margin-left: 0;
+	padding: 0;
+}
+
+ul#list-secondmenu li, ul.secondmenu li {
+	background-image: none !important;
+	display: inline;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#list-secondmenu a, ul.secondmenu a {
+	color: #009cbd;
+	background-color: #ECF3F9;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-left: 0.75em;
+	margin-right: 0.25em;
+	padding-right: 0.75em;
+	padding-bottom: 0.25em;
+	display: block;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+
+ul#list-secondmenu a:hover, ul.secondmenu a:hover {
+	color: #ffffff;
+	background-color: #94B8D6;
+}
+
+li#list-secondmenu-current a, li.secondmenu-current a {
+	color: #ffffff;
+	background-color: #78A6CB;
+}
+
+div.secondmenu-clear {
+
+}
+
+/* -------------------------------------
+  掲示板
+------------------------------------- */
+div.bbs-thread {
+	padding: 1em;
+}
+
+h3.bbs-thread-title {
+	font-size: 125%;
+	color: #13799b;
+	background-color: #e6ffe6;
+	margin-top: 0;
+	border-top-width: 1px;
+	border-style: solid;
+	border-color: #87cbb5;
+	margin-left: -0.75em;
+	border-left-width: 0.25em;
+	margin-right: -0.75em;
+	border-right-width: 1px;
+	margin-bottom: 0.1em;
+	border-bottom-width: 1px;
+}
+
+div.bbs-thread-detail {
+	color: #13799b;
+	margin-top: 0;
+	padding-top: 0.1em;
+	margin-left: -0.5em;
+	padding-left: 0.5em;
+	margin-right: -0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 0em;
+}
+
+p.bbs-thread-message {
+}
+
+h4.bbs-thread-res-title {
+	font-size: 100%;
+	color: #13799b;
+	background-color: #e6ffe6;
+	margin-top: 0;
+	margin-left: -0.5em;
+	border-left-width: 0.25em;
+	border-left-style: solid;
+	border-left-color: #87cbb5;
+	padding-left: 0.25em;
+	margin-right: -0.5em;
+	margin-bottom: 0;
+	padding-bottom: 0.1em;
+}
+
+div.bbs-thread-res-detail {
+	color: #13799b;
+}
+
+div.bbs-thread-res-article {
+	margin-top: 1em;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #87CBB5;
+	padding-top: 1em;
+	padding-left: 2em;
+}
+
+p.bbs-thread-res-message {
+}
+
+hr.dummy {
+	display: none;
+}
+
+/* -------------------------------------
+  セクションメニュー
+------------------------------------- */
+dl.section-menu dt {
+	margin-top: 1em;
+	background-image: url(resources/h4-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C1DBF0;
+	padding-bottom: 0.25em;
+}
+
+dl.section-menu dt a {
+	font-size: 120%;
+}
+
+dl.section-menu dt img {
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+dl.section-menu dd {
+	padding-top: 0.25em;
+}
+
+/* -------------------------------------
+  ソフトウェアメニュー
+------------------------------------- */
+dl.software-menu dt {
+	margin-top: 1em;
+	background-image: url(resources/h4-back.png);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C1DBF0;
+	padding-bottom: 0.1em;
+}
+
+dl.software-menu dt img {
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+dl.software-menu dd {
+	padding-top: 0.25em;
+}
+
+/* -------------------------------------
+  ソーシャルブックマーク
+------------------------------------- */
+dl.sbmlist {
+	display: inline;
+	font-size: 75%;
+	margin: 0;
+	padding: 0;
+}
+
+dl.sbmlist dd, dl.sbmlist dt {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+dl.sbmlist dd img, dl.sbmlist dt img {
+	vertical-align: middle;
+}
+
+.sbmlist-name, .sbmlist-count-caption {
+	display: none;
+}
+
+/* -------------------------------------
+  お知らせ
+------------------------------------- */
+.block-info-color {
+	padding-top: 0;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	padding-bottom: 0;
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C1DBF0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="text"]
+{
+	max-width: 100%;
+}
+
+select
+{
+	max-width: 80%;
+}
+
+@media screen and (max-width:47.999em) {
+	div#block-container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	h1 {
+		font-size: 1.2em;
+	}
+	div#block-sidemenu-container {
+		font-size: 80%;
+	}
+	div#block-body-container {
+		font-size: 90%;
+	}
+	.basic-list * {
+		font-size: 0.8rem !important;
+	}
+	.pure-menu-item a {
+		padding: 0.4em;
+	}
+}
+	
+/* -------------------------------------
+  レスポンシブ (スマホ幅)
+------------------------------------- */
+@media screen and (max-width:35.499em) {
+	div#block-container {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	.pure-menu {
+		margin-bottom: 0.5em;
+	}
+	div#block-body-container {
+		background-color: white;
+		padding-top: 0.5em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-bottom: 0.5em;
+		font-size: 90%;
+		overflow: hidden;
+	}
+	div#block-sidemenu {
+		background-color: white;
+		padding: 0.5em;
+	}
+	div#block-sidemenu-container {
+		padding-top: 0.5em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-bottom: 1em;
+		margin: 0.5em;
+		font-size: 100%;
+		border: 1px solid #8abfe2;
+		box-shadow: 0 0 10px 0px rgba(138,191,226,0.4);
+	}
+	div#block-sidemenu-container ul li {
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
+	}
+	#block-body ul, #block-body ol {
+		margin-left: 1em;
+		margin-right: 0;
+	}
+	dd {
+		margin-left: 1em;
+	}
+	th, td {
+		font-size: 80%;
+	}
+	.block-info {
+		min-width: 80% !important;
+	}
+	.basic-list * {
+		font-size: 0.6rem !important;
+	}
+	.basic-list code ol {
+		margin-right: 1em !important;
+	}
+	.basic-noline, .basic-noline-bw, .basic-noline-bk, .basic-noline-clear {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding: 0.5em !important;
+	}
+	.basic-source, .basic-source-bw, .basic-source-bk, .basic-source-clear {
+		margin: 0.5em 0 0.5em 0 !important;
+		padding-left: 1.5em !important;
+	}
+	input[type="submit"]
+	{
+		padding: 0.35em;
+	}
+	input[type="text"]
+	{
+		width: 100%;
+	}
+	select
+	{
+		width: 80%;
+	}
+	.ptcmid .key
+	{
+		font-size: 1.5em;
+	}
+	pre {
+		white-space: pre-wrap;
+	}
+	table.border {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#to-pagetop-button {
+		color: white !important;
+		text-decoration: none !important;
+		background: #659CC4;
+		border-radius: 0.5em;
+		display: block;
+		text-align: center;
+		padding: 0.5em;
+	}
+	#to-pagetop-button:hover {
+		background: #7EB4DB;
+	}
+	.htmltagcloud {
+		line-height: 120% !important;
+	}
+
+	/* http://design.webclips.jp/youtube-movie-size/ */
+	.movie-wrap, .soundcloud {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.movie-wrap iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* CSS for pulldown menu v1.3 */
+/* Copyright(C) ASH (http://ash.jp/) */
+ul.menu { position: relative; }
+ul.menu li { position: relative; }
+ul.menu a { position: relative; color: #467DA6; font-size: 90%; }
+ul.menu ul { position: relative; display: none; list-style: none; margin: 0; padding: 0; z-index: 100; border: 1px solid #467DA6; box-shadow: 0 2px 4px 0px rgba(0,0,0,0.2); }
+ul.menu > li li { clear: left; width: 100%; }
+ul.menu > li li { position: relative; display: inline-block; font-size: 14px; line-height: 32px; white-space: nowrap; float: left; color: #467DA6; background: #eeeeee; border: none; margin: 0; padding: 0; }
+ul.menu > li li a { display: block; text-decoration: none; font-size: 14px; line-height: 32px; color: #467DA6; background: #eeeeee; margin: 0; padding: 0px 10px; }
+ul.menu > li li a { background: #ffffff; }
+ul.menu li li.active a { background: #dddddd; }
+ul.menu > li li a:hover { color: #ffffff; background: #467DA6; }
+ul.menu > li:hover > a { color: #ffffff !important; background: #467DA6; border-radius: 0 0 6px 6px; }
+ul.menu li:hover > ul { display: inline-block; position: absolute; top: 100%; }
+ul.menu li:not(.last):hover > ul { left: 0; }
+ul.menu li.last:hover > ul { right: 0; }
+ul.menu > li > a:hover { color: #ffffff; background: #333366; }
+ul.menu li li:hover ul { top: 0px; left: 100%; }
+ul.menu > li.active { background: #f4f4f4; border-radius: 6px; }
+ul.menu > li.highlight { background: #ffffff; border-radius: 6px; }
+
+#headermenu {
+	margin-top: 0px;
+	float: right;
+}
+
+#headermenu > ul {
+}
+
+#headermenu > ul > li {
+	list-style-type: none;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+#headermenu > ul > li > a {
+	color: #467DA6;
+	text-decoration: none;
+	padding: 8px;
+	line-height: 100%;
+	display: inline-block;
+	border-radius: 6px;
+	*display: inline;
+	*zoom: 1;
+}
+#headermenu > ul > li.parent > a { border-radius: 6px 6px 0 0; }
+
+#headermenu > ul > li > a:hover {
+	color: #ffffff;
+	background: #467DA6;
+}
+
+@media screen and (min-width:35.5em) {
+	#headermenu > ul > li#menu-button, #to-pagetop-button {
+		display: none;
+	}
+}

@@ -1,0 +1,299 @@
+/* Tag Cloud */
+
+#body .htmltagcloud {
+    font-size: 12px;
+    line-height: 340%;
+}
+
+.menubar .htmltagcloud {
+    font-size: 6px;
+    line-height: 340%;
+}
+
+.menubar .htmltagcloud span {
+    display: block;
+}
+
+.img_margin img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_margin {
+    margin: 1em;
+    overflow: auto;
+}
+
+.table-wrapper {
+    overflow: auto;
+}
+
+pre.aa {
+    font-size: 100%;
+    line-height: 120% !important;
+    font-family: Mona, IPAMonaPGothic, 'IPA モナー Pゴシック', 'MS PGothic AA', 'MS PGothic', 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+iframe.nicovideo {
+    border: solid 1px #CCC;
+}
+
+.tagcloud0 {
+    font-size: 80%;
+}
+
+.tagcloud1 {
+    font-size: 85%;
+}
+
+.tagcloud2 {
+    font-size: 90%;
+}
+
+.tagcloud3 {
+    font-size: 95%;
+}
+
+.tagcloud4 {
+    font-size: 100%;
+}
+
+.tagcloud5 {
+    font-size: 105%;
+}
+
+.tagcloud6 {
+    font-size: 110%;
+}
+
+.tagcloud7 {
+    font-size: 115%;
+}
+
+.tagcloud8 {
+    font-size: 120%;
+}
+
+.tagcloud9 {
+    font-size: 125%;
+}
+
+.tagcloud10 {
+    font-size: 130%;
+}
+
+.tagcloud11 {
+    font-size: 135%;
+}
+
+.tagcloud12 {
+    font-size: 140%;
+}
+
+.tagcloud13 {
+    font-size: 145%;
+}
+
+.tagcloud14 {
+    font-size: 150%;
+}
+
+.tagcloud15 {
+    font-size: 155%;
+}
+
+.tagcloud16 {
+    font-size: 160%;
+}
+
+.tagcloud17 {
+    font-size: 165%;
+}
+
+.tagcloud18 {
+    font-size: 170%;
+}
+
+.tagcloud19 {
+    font-size: 175%;
+}
+
+.tagcloud20 {
+    font-size: 180%;
+}
+
+.tagcloud21 {
+    font-size: 185%;
+}
+
+.tagcloud22 {
+    font-size: 190%;
+}
+
+.tagcloud23 {
+    font-size: 195%;
+}
+
+.tagcloud24 {
+    font-size: 200%;
+}
+
+
+/*--------------------
+吹き出しを作る
+http://moriawase.net/kaiwa-text
+--------------------*/
+
+
+/* 全体のスタイル */
+
+.kaiwa {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/* 左画像 */
+
+.kaiwa-img-left {
+    margin: 0;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* 右画像 */
+
+.kaiwa-img-right {
+    margin: 0;
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.kaiwa div img {
+    margin: 0;
+}
+
+
+/* 画像の下のテキスト */
+
+.kaiwa-img-description {
+    padding: 5px 0 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* 左からの吹き出しテキスト */
+
+.kaiwa-text-right {
+    position: relative;
+    margin-left: 60px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+
+/* 右からの吹き出しテキスト */
+
+.kaiwa-text-left {
+    position: relative;
+    margin-right: 60px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+div.kaiwa-text-left p,
+div.kaiwa-text-right p {
+    margin: 0 0 0.1em 0.1em !important;
+}
+
+div.kaiwa-text-left p:last-child,
+div.kaiwa-text-right p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 左の三角形を作る */
+
+.kaiwa-text-right:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #aaa;
+    top: 12px;
+    left: -20px;
+}
+
+.kaiwa-text-right:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #f4f4f4;
+    top: 12px;
+    left: -19px;
+}
+
+
+/* 右の三角形を作る */
+
+.kaiwa-text-left:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #aaa;
+    top: 12px;
+    right: -20px;
+}
+
+.kaiwa-text-left:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #f4f4f4;
+    top: 12px;
+    right: -19px;
+}
+/* 回り込み解除 */
+.kaiwa:after,.kaiwa:before {
+      /* clear: both; */
+      content: "";
+      display: block;
+}
+  
+.ptcmid {
+	display: inline-block;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #78a6cb;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: center;
+}
+
+.ptcmid .key {
+	line-height: 100%;
+	color: #78a6cb;
+	background-color: #ffffff;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	border-radius: 0.5em;
+	text-align: center;
+	font-size: 2em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="text"], select
+{
+	max-width: 100%;
+}

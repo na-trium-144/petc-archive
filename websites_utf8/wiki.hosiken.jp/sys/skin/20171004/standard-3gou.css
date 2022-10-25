@@ -1,0 +1,133 @@
+@charset "Shift_JIS";
+@import "standard-common.css";
+@import "standard/style-simple.css";
+@import "code.css";
+
+textarea {
+	width: 100%;
+}
+
+h1, h1 a:link, h1 a:visited, h1 a:active {
+	color: #467DA6;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	text-decoration: underline;
+}
+
+h2 a, h2 a:link, h2 a:visited, h2 a:active {
+	color: #ffffff;
+}
+
+pre {
+	margin: 1em;
+	color: #2e84c2;
+	font-size: 85%;
+	padding: 0.5em;
+	background-color: #F6FCFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CFEAFA;
+	overflow: auto;
+}
+
+table {
+	border-width: 2px;
+	border-style: double;
+	border-color: #8ABFE2;
+	margin: 0.5em;
+	border-collapse: collapse;
+}
+
+td, th {
+	vertical-align: middle;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D9E9F6;
+}
+
+th {
+	color: #467da6;
+	background-color: #eff7fc;
+}
+
+table.splitbody {
+	border-width: 0;
+	border-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+table.splitbody td {
+	border-width: 0;
+	border-style: none;
+	margin: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+}
+
+.form-top-search-text {
+	width: 10em;
+}
+
+.form-top-search-submit {
+}
+
+#block-pukiwiki-info {
+	color: #467DA6;
+	font-size: 75%;
+	padding-top: 0.75em;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #78A6CB;
+	margin-bottom: 1.5em;
+	line-height: 140%;
+	zoom: 100%;
+	text-decoration: none;
+}
+
+#block-pukiwiki-info a {
+	color: #467DA6;
+}
+
+#pukiwiki-about {
+	text-align: right;
+}
+
+#block-pukiwiki-info p {
+	line-height: 140%;
+}
+
+#block-pukiwiki-info img {
+	vertical-align: middle;
+}
+
+#block-pukiwiki-info p {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+.note_hr {
+	display: none;
+}
+
+#toolbar {
+	text-align: right;
+}
+
+.diff_added {
+	background-color: #ff6666;
+	color: #ffffff;
+}
+
+.diff_removed {
+	background-color: #6666ff;
+	color: #ffffff;
+}
+
+.template-listbox {
+	width: 100%;
+}

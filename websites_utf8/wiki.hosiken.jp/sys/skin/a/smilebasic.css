@@ -1,0 +1,69 @@
+.basic-source, .basic-noline {
+	color: #000000;
+	background-color: #f2f1e6;
+	border-top-width: 1px;
+	border-style: solid;
+	border-color: #C5C08D;
+	border-left-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	margin: 1em;
+	overflow: auto;
+	font-size: 16px;
+}
+
+.basic-source-bw, .basic-noline-bw {
+	color: #ffffff;
+	background-color: #283000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #283000;
+	margin: 1em;
+	font-size: 16px;
+}
+
+.basic-source-bk, .basic-noline-bk {
+	color: #ffffff;
+	background-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	margin: 1em;
+	font-size: 16px;
+}
+
+.basic-source-clear, .basic-noline-clear {
+	margin: 1em;
+	font-size: 16px;
+}
+
+.basic-source, .basic-source-bw, .basic-source-bk, .basic-source-clear {
+	padding-left: 2em;
+}
+
+.basic-noline, .basic-noline-bw, .basic-noline-bk, .basic-noline-clear {
+	padding: 0.75em;
+}
+
+.basic-source ol, .basic-source-bw ol, .basic-source-bk ol, .basic-source-clear ol { margin: auto; padding: auto; margin-left: 2em; list-style-type: decimal-leading-zero; }
+.basic-source ol, .basic-source-bw li, .basic-source-bk li, .basic-source-clear li { margin: auto; padding: auto; list-style-position: outside; list-style-type: decimal-leading-zero; }
+.basic-noline ol, .basic-noline-bw ol, .basic-noline-bk ol, .basic-noline-clear ol { margin: 0 !important; padding: 0 !important; list-style-type: none; }
+.basic-noline ol, .basic-noline-bw li, .basic-noline-bk li, .basic-noline-clear li { margin: 0 !important; padding: 0 !important; list-style-position: outside; list-style-type: none; }
+
+.basic-source code, .basic-list li, .basic-text {
+	font-family: petitcomfont; font-weight: normal; word-break: break-all;
+	text-shadow:001px rgba(0,0,0,.1); /* chrome antialias hack */
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	line-height: 1em !important;
+}
+
+@font-face {
+	font-family: 'petitcomfont';
+	src: url('standard-petc/resources/petc.eot');
+}
+
+@font-face {
+	font-family: 'petitcomfont';
+	src: url('standard-petc/resources/petc.ttf') format("truetype");
+}
