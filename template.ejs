@@ -33,7 +33,7 @@
 
 	<div id="block-header">
 
-		<h1><a href="/petc3gou/"><%= wikititle %></a></h1>
+		<h1><a href="/"><%= wikititle %></a></h1>
 
 	<div id="block-topbox">
 		<div id="headermenu">
@@ -58,17 +58,27 @@
 
 	<div id="block-extra-navi">
 		<ul>
-			<li><a href="/petc4/">プチコン4</a></li>
-			<li id="active">3号/BIG</li>
-			<li><a href="/petc/">初代/mkII</a></li>
-</ul>
+			<% if (base === "/petc4/") { %>
+				<li id="active">プチコン4</li>
+			<% } else { %>
+				<li><a href="/petc4/">プチコン4</a></li>
+			<% } %>
+			<% if (base === "/petc3gou/") { %>
+				<li id="active">3号/BIG</li>
+			<% } else { %>
+				<li><a href="/petc3gou/">3号/BIG</a></li>
+			<% } %>
+			<% if (base === "/petc/") { %>
+				<li id="active">初代/mkII</li>
+			<% } else { %>
+				<li><a href="/petc/">初代/mkII</a></li>
+			<% } %>
 	</div>
 
 
 	<div id="block-body" class="pure-g">
 
-		<!-- <div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1"> -->
-		<div class="with-sidemenu pure-u-1">
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
 
 			<div id="block-body-container">
 
@@ -93,7 +103,7 @@
 
 		</div>
 
-		<!-- <div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
 
 			<a name="global-menu"></a>
 
@@ -101,11 +111,65 @@
 
 				<div id="block-sidemenu-container">
 
+					<h3 id="b8d544fa">メニュー 【4】</h3>
+					<ul><li><a href="/petc4/?FrontPage" title="FrontPage">トップページ</a></li>
+					<li><a href="/petc4/?Toukou" title="Toukou">投稿プログラム</a></li>
+					<li><a href="/petc4/?Mame" title="Mame">まめちしき</a></li>
+					<li><a href="/petc4/?Memo" title="Memo">プチコン4メモ</a></li>
+					<li><a href="/petc4/?FAQ" title="FAQ">よくある質問集</a></li>
+					<li><a href="/petc4/?Bug" title="Bug">既知の不具合</a></li>
+					<li><a href="/petc4/?Sample" title="Sample">サンプルプログラム集</a></li>
+					<li><a href="/petc4/?WorksLink" title="WorksLink">プチコン4作品集</a></li>
+					<li><a href="/petc4/?Demand" title="Demand">プチコン4への要望</a></li>
+					<li><a href="/petc4/?OverFlow" title="OverFlow">OFコーナー</a></li>
+					<!-- <li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(掲示板)</a></li> -->
+					<!-- <li><a href="http://zawazawa.jp/petc/" rel="nofollow">まとめWiki用掲示板</a></li> -->
+					<!-- <li><a href="/petc4/?Chat" title="Chat">チャットルーム</a></li> -->
+					<!-- <li><a href="/petc4/?Contact" title="Contact">管理人に連絡</a></li></ul> -->
+					<li><a href="/petc4/?Link" title="Link">プチコン4 リンク集</a></li>
+</ul>
+					<h3 id="content_11_0">メニュー 【3号】</h3>
+					<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage">トップページ</a></li>
+					<li><a href="/petc3gou/?Beginner" title="Beginner">非公式初心者講座</a></li>
+					<li><a href="/petc3gou/?Toukou" title="Toukou">投稿プログラム</a></li>
+					<li><a href="/petc3gou/?Mame" title="Mame">まめちしき</a></li>
+					<li><a href="/petc3gou/?Memo" title="Memo">プチコン3号メモ</a></li>
+					<li><a href="/petc3gou/?FAQ" title="FAQ">よくある質問集</a></li>
+					<li><a href="/petc3gou/?Bug" title="Bug">既知の不具合</a></li>
+					<li><a href="/petc3gou/?Sample" title="Sample">サンプルプログラム集</a></li>
+					<li><a href="/petc3gou/?WorksLink" title="WorksLink">プチコン3号作品集</a></li>
+					<li><a href="/petc3gou/?Demand" title="Demand">プチコン3号への要望</a></li>
+					<li><a href="/petc3gou/?OverFlow" title="OverFlow">OFコーナー</a></li>
+					<!-- <li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li> -->
+					<!-- <li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li> -->
+					<!-- <li><a href="/petc3gou/?Chat" title="Chat (1049d)">チャットルーム</a></li> -->
+					<!-- <li><a href="/petc3gou/?Contact" title="Contact (2166d)">管理人に連絡</a></li></ul> -->
+					<!-- <ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul> -->
+					<li><a href="/petc3gou/?Link" title="Link">プチコン3号リンク集</a></li>
+					</ul>
+
+					<h3 id="content_6_0">メニュー 【mkII】</h3>
+					<ul><li><a href="/petc/?FrontPage" title="FrontPage">トップページ</a></li>
+					<li><a href="/petc/?Mame" title="Mame">まめちしき</a></li>
+					<li><a href="/petc/?Memo" title="Memo">プチコンメモ</a></li>
+					<li><a href="/petc/?FAQ" title="FAQ">よくある質問集</a></li>
+					<li><a href="/petc/?Bug" title="Bug">既知の不具合</a></li>
+					<li><a href="/petc/?Sample" title="Sample">サンプルプログラム集</a></li>
+					<li><a href="/petc/?Toukou" title="Toukou">投稿プログラム</a></li>
+					<li><a href="/petc/?WorksLink" title="WorksLink">プチコン作品リンク集</a></li>
+					<li><a href="/petc/?Demand" title="Demand">プチコンへの要望</a></li>
+					<li><a href="/petc/?OverFlow" title="OverFlow">OFコーナー</a></li>
+					<!-- <li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li> -->
+					<!-- <li><a href="/petc/?Chat" title="Chat">チャットルーム</a></li> -->
+					<!-- <li><a href="/petc/?Contact" title="Contact">管理人に連絡</a></li></ul> -->
+					<!-- <ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul> -->
+					<li><a href="/petc/?Link" title="Link">プチコンリンク集</a></li>
+</ul>
 				</div>
 
 			</div>
 
-		</div> -->
+		</div>
 
 	</div>
 
