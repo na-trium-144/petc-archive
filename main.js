@@ -31,7 +31,13 @@ function pageExists(page) {
     page = page.slice(0, page.indexOf("#"));
   }
   page = iconv.decode(queryToBuffer(page), "eucjp");
-  return fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html");
+  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
+    return true;
+  }
+  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
+    return true;
+  }
+  return false;
 }
 
 app.get("/petc(3gou)?4?/", (request, response) => {
@@ -39,9 +45,9 @@ app.get("/petc(3gou)?4?/", (request, response) => {
   if (page.indexOf("#") >= 0) {
     page = page.slice(0, page.indexOf("#"));
   }
-  if (pageExists(page)) {
-    page = page.replace("?", "");
-    page = iconv.decode(queryToBuffer(page), "eucjp");
+  page = page.replace("?", "");
+  page = iconv.decode(queryToBuffer(page), "eucjp");
+  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
     const $ = cheerio.load(iconv.decode(fs.readFileSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html"), "eucjp"));
     for (let a of $("a").get()) {
       let href = $(a).attr('href');
@@ -73,6 +79,8 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       notes: notesHtml
     });
     response.send(html);
+  } else if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
+    response.sendFile(__dirname + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1));
   } else {
     const template = fs.readFileSync("template.ejs", "utf-8");
     const html = ejs.render(template, {
