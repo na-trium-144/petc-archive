@@ -53,12 +53,34 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       let title = $(a).attr('title');
       let content = $(a).html();
       if (href) {
-        if (href.startsWith("http://wiki.hosiken.jp/")) {
-          href = href.replace("http://wiki.hosiken.jp/", "/");
-          $(a).replaceWith(`<a href="${href}" title="${title}">${content}</a>`);
+        let url = new URL(href, `https://${request.hostname}/`);
+        if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+          if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref"){
+            $(a).replaceWith(`<a href="/ref/${url.searchParams.get('page')}/${url.searchParams.get('src')}" title="${title}">${content}</a>`);
+          } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach"){
+            $(a).replaceWith(`<a href="/ref/${url.searchParams.get('refer')}/${url.searchParams.get('openfile')}" title="${title}">${content}</a>`);
+          }else if (pageExists(url.pathname + url.search)) {
+            $(a).replaceWith(`<a href="${url.pathname + url.search}" title="${title}">${content}</a>`);
+          }else{
+            $(a).replaceWith(`<a style="color: red;" href="${url.href}" title="${title}">${content}</a>`)
+          }
         }
-        if (!pageExists(href)) {
-          $(a).replaceWith(`<a style="color: red;" href="${href}" title="${title}">${content}</a>`)
+      }
+    }
+    for (let a of $("img").get()) {
+      let href = $(a).attr('src');
+      let alt = $(a).attr('alt');
+      let title = $(a).attr('title');
+      let w = $(a).attr('width');
+      let h = $(a).attr('height');
+      if (href) {
+        let url = new URL(href, `https://${request.hostname}/`);
+        if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+          if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref"){
+            $(a).replaceWith(`<img src="/ref/${url.searchParams.get('page')}/${url.searchParams.get('src')}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+          } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach"){
+            $(a).replaceWith(`<a href="/ref/${url.searchParams.get('refer')}/${url.searchParams.get('openfile')}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+          }
         }
       }
     }
