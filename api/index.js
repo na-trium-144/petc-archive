@@ -47,6 +47,13 @@ function checkBase(url) {
   }
   return 0;
 }
+function getSearchParamQuoted(search, key){
+  let param = search.slice(search.indexOf(key + "=") + key.length + 1);
+  if (param.indexOf("&") >= 0){
+    param = param.slice(0, param.indexOf("&"));
+  }
+  return param;
+}
 app.get("/petc(3gou)?4?/", (request, response) => {
   let page = request.originalUrl;
   if (page.indexOf("#") >= 0) {
@@ -63,17 +70,21 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       if (href && !href.startsWith("#")) {
         let url = new URL(href, `https://${request.hostname}/`);
         if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+          //url.searchは%エンコードされたまま
+          //url.searchParamsは勝手にデコードされてて無能
           if(url.searchParams.has("cmd") && url.searchParams.get("cmd") === "read"){
-            let hrefPage = url.search.slice(url.search.indexOf("page=") + 5);
-            if (hrefPage.indexOf("&") >= 0){
-              hrefPage = hrefPage.slice(0, hrefPage.indexOf("&"));
-            }
-            url = new URL(url.pathname + "?" + hrefPage + url.hash, `https://${request.hostname}/`);
+            //元のエンコードを保持する
+            url = new URL(url.pathname + "?" + getSearchParamQuoted(url.search, "page") + url.hash, `https://${request.hostname}/`);
           }
+          //画像はpublic公開のurlなのでutf-8に変換する
           if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
-            $(a).replaceWith(`<a href="/ref${request.path}/${url.searchParams.get('page')}/${url.searchParams.get('src')}" title="${title}">${content}</a>`);
+            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
+            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
+            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
           } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
-            $(a).replaceWith(`<a href="/ref${request.path}/${url.searchParams.get('refer')}/${url.searchParams.get('openfile')}" title="${title}">${content}</a>`);
+            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
+            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
+            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
           } else if (pageExists(url.pathname + url.search)) {
             $(a).replaceWith(`<a href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`);
           } else {
@@ -92,9 +103,13 @@ app.get("/petc(3gou)?4?/", (request, response) => {
         let url = new URL(href, `https://${request.hostname}/`);
         if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
           if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
-            $(a).replaceWith(`<img src="/ref${request.path}/${url.searchParams.get('page')}/${url.searchParams.get('src')}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
+            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
+            $(a).replaceWith(`<img src="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
           } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
-            $(a).replaceWith(`<a href="/ref${request.path}/${url.searchParams.get('refer')}/${url.searchParams.get('openfile')}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
+            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
+            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
           }
         }
       }
