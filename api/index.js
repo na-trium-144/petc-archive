@@ -5,6 +5,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const iconv = require("iconv-lite");
 
+const path = __dirname;
 function queryToBuffer(q) {
   let i = 0;
   let a = [];
@@ -29,10 +30,10 @@ function pageExists(page) {
     page = page.slice(0, page.indexOf("#"));
   }
   page = iconv.decode(queryToBuffer(page), "eucjp");
-  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
+  if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
     return true;
   }
-  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
+  if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
     return true;
   }
   return false;
@@ -45,8 +46,8 @@ app.get("/petc(3gou)?4?/", (request, response) => {
   }
   page = page.replace("?", "");
   page = iconv.decode(queryToBuffer(page), "eucjp");
-  if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
-    const $ = cheerio.load(iconv.decode(fs.readFileSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html"), "eucjp"));
+  if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
+    const $ = cheerio.load(iconv.decode(fs.readFileSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html"), "eucjp"));
     for (let a of $("a").get()) {
       let href = $(a).attr('href');
       let title = $(a).attr('title');
@@ -67,7 +68,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     const about = $("#pukiwiki-about").text();
     const lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("このページの最終更新 : ") + 36);
 
-    const template = fs.readFileSync("template.ejs", "utf-8");
+    const template = fs.readFileSync(path + "/template.ejs", "utf-8");
     const html = ejs.render(template, {
       wikiTitle: "プチコンまとめArchive",
       pageTitle: pageTitle,
@@ -77,8 +78,8 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       notes: notesHtml
     });
     response.send(html);
-  } else if (fs.existsSync("websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
-    response.sendFile(__dirname + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1));
+  } else if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
+    response.sendFile(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1));
   } else {
     const template = fs.readFileSync("template.ejs", "utf-8");
     const html = ejs.render(template, {
@@ -94,12 +95,12 @@ app.get("/petc(3gou)?4?/", (request, response) => {
 });
 
 app.get("/", (request, response) => {
-  const template = fs.readFileSync("template.ejs", "utf-8");
+  const template = fs.readFileSync(path + "/template.ejs", "utf-8");
   const html = ejs.render(template, {
     wikiTitle: "プチコンまとめArchive",
     pageTitle: "プチコンまとめArchive トップページ",
     base: request.path,
-    body: fs.readFileSync("index.html", "utf-8"),
+    body: fs.readFileSync(path + "/index.html", "utf-8"),
     lastUpdate: "",
     notes: ""
   });
