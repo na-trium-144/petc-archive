@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const iconv = require("iconv-lite");
 
-const path = __dirname;
+const path = __dirname + "/..";
 function queryToBuffer(q) {
   let i = 0;
   let a = [];
