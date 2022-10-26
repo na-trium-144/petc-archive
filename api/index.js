@@ -37,6 +37,16 @@ function pageExists(page) {
   return false;
 }
 
+function checkBase(url) {
+  if (url.startsWith("/petc4")) {
+    return 4;
+  } else if (url.startsWith("/petc3gou")) {
+    return 3;
+  } else if (url.startsWith("/petc")) {
+    return 2;
+  }
+  return 0;
+}
 app.get("/petc(3gou)?4?/", (request, response) => {
   let page = request.originalUrl;
   if (page.indexOf("#") >= 0) {
@@ -83,16 +93,28 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       }
     }
     const bodyHtml = $("#body").html();
+    const base = checkBase(request.path);
+    let pankuzuHtml = $("#list-pankuzu").html();
+    if (base === 4) {
+      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン4トップ");
+    }
+    if (base === 3) {
+      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン3号&BIGトップ");
+    }
+    if (base === 2) {
+      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン初代/mkIIトップ");
+    }
     const notesHtml = $("#notes").html();
     const pageTitle = $("#block-body-container > h2").text();
     const about = $("#pukiwiki-about").text();
-    const lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("このページの最終更新 : ") + 36);
+    const lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("  (", about.indexOf("このページの最終更新 : ")));
 
     const html = ejs.render(pageTemplate(), {
       wikiTitle: "プチコンまとめArchive",
       pageTitle: pageTitle,
-      base: request.path,
+      base: base,
       body: bodyHtml,
+      pankuzu: pankuzuHtml,
       lastUpdate: lastUpdate,
       notes: notesHtml
     });
@@ -101,13 +123,11 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     response.sendFile(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1));
   } else {
     const decodedAry = Encoding.urlDecode(request.originalUrl);
-    console.log(decodedAry);
     const encoding = Encoding.detect(decodedAry);
     const decodedStr = Encoding.codeToString(Encoding.convert(decodedAry, {
       from: encoding,
       to: "UNICODE"
     }));
-    console.log(decodedStr);
     let eucEncode = Encoding.urlEncode(Encoding.convert(decodedAry, {
       from: encoding,
       to: "EUC-JP"
@@ -118,9 +138,10 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     const html = ejs.render(pageTemplate(), {
       wikiTitle: "プチコンまとめArchive",
       pageTitle: "ページが見つかりません",
-      base: request.path,
+      base: checkBase(request.path),
       body: `<p>ページ ${eucToStr(Encoding.urlDecode(request.originalUrl))} は プチコンまとめArchive に存在しません。</p>` +
         (eucEncode ? `<p>ページ名はEUC-JPで指定する必要があります。もしかして: <a href="${eucEncode}">${decodedStr}</a></p>` : ""),
+      pankuzu: "",
       lastUpdate: "",
       notes: ""
     });
@@ -132,8 +153,9 @@ app.get("/", (request, response) => {
   const html = ejs.render(pageTemplate(), {
     wikiTitle: "プチコンまとめArchive",
     pageTitle: "プチコンまとめArchive トップページ",
-    base: request.path,
+    base: checkBase(request.path),
     body: fs.readFileSync(path + "/index.html", "utf-8"),
+    pankuzu: "",
     lastUpdate: "",
     notes: ""
   });
@@ -144,8 +166,9 @@ app.use((request, response) => {
   const html = ejs.render(pageTemplate(), {
     wikiTitle: "プチコンまとめArchive",
     pageTitle: "ページが見つかりません",
-    base: request.path,
+    base: checkBase(request.path),
     body: request.method === "POST" ? `<p>編集やコメントの投稿は無効です。</p>` : `<p>URLが正しくありません。</p>`,
+    pankuzu: "",
     lastUpdate: "",
     notes: ""
   });

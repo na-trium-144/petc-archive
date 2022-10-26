@@ -58,17 +58,17 @@
 
 	<div id="block-extra-navi">
 		<ul>
-			<% if (base === "/petc4/" || base === "/petc4") { %>
+			<% if (base === 4) { %>
 				<li id="active">プチコン4</li>
 			<% } else { %>
 				<li><a href="/petc4/">プチコン4</a></li>
 			<% } %>
-			<% if (base === "/petc3gou/" || base === "/petc3gou") { %>
+			<% if (base === 3) { %>
 				<li id="active">3号/BIG</li>
 			<% } else { %>
 				<li><a href="/petc3gou/">3号/BIG</a></li>
 			<% } %>
-			<% if (base === "/petc/" || base === "/petc") { %>
+			<% if (base === 2) { %>
 				<li id="active">初代/mkII</li>
 			<% } else { %>
 				<li><a href="/petc/">初代/mkII</a></li>
@@ -89,12 +89,9 @@
 					<h3 id="header-pankuzu">パンくずリスト</h3>
 
 					<ul id="list-pankuzu">
-<!-- <li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
-<li><a href="/petc3gou/?Toukou">Toukou</a></li>
-<li id="list-pankuzu-current"><a href="/petc3gou/?Toukou%2FNew%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADSP">NewリズミカルおもちつきSP</a></li>					</ul> -->
-
-						<li id="list-pankuzu-home"><%= lastUpdate %></li>
+						<%- pankuzu %>
 					</ul>
+					<div style="margin-left: 1.5em; margin-top: -0.5em; color: #808080;"><%= lastUpdate %></div>
 				</div>
 
 				<div id="body">
