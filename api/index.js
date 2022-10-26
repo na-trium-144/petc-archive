@@ -12,9 +12,13 @@ function pageTemplate() {
   return fs.readFileSync(path + "/template.ejs", "utf-8");
 }
 
-function eucToStr(b){
-  return Encoding.codeToString(Encoding.convert(b, {from: "EUC-JP", to: "UNICODE"}));
+function eucToStr(b) {
+  return Encoding.codeToString(Encoding.convert(b, {
+    from: "EUC-JP",
+    to: "UNICODE"
+  }));
 }
+
 function pageExists(page) {
   if (!page.startsWith("/")) {
     return true;
@@ -46,7 +50,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       let href = $(a).attr('href');
       let title = $(a).attr('title');
       let content = $(a).html();
-      if (href) {
+      if (href && !href.startsWith("#")) {
         let url = new URL(href, `https://${request.hostname}/`);
         if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
           if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
@@ -54,7 +58,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
           } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
             $(a).replaceWith(`<a href="/ref${request.path}/${url.searchParams.get('refer')}/${url.searchParams.get('openfile')}" title="${title}">${content}</a>`);
           } else if (pageExists(url.pathname + url.search)) {
-            $(a).replaceWith(`<a href="${url.pathname + url.search}" title="${title}">${content}</a>`);
+            $(a).replaceWith(`<a href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`);
           } else {
             $(a).replaceWith(`<a style="color: red;" href="${url.href}" title="${title}">${content}</a>`)
           }
@@ -99,10 +103,16 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     const decodedAry = Encoding.urlDecode(request.originalUrl);
     console.log(decodedAry);
     const encoding = Encoding.detect(decodedAry);
-    const decodedStr = Encoding.codeToString(Encoding.convert(decodedAry, {from:encoding, to:"UNICODE"}));
+    const decodedStr = Encoding.codeToString(Encoding.convert(decodedAry, {
+      from: encoding,
+      to: "UNICODE"
+    }));
     console.log(decodedStr);
-    let eucEncode = Encoding.urlEncode(Encoding.convert(decodedAry, {from:encoding, to:"EUC-JP"})).replaceAll("%2F", "/").replace("%3F", "?");
-    if(!pageExists(eucEncode)){
+    let eucEncode = Encoding.urlEncode(Encoding.convert(decodedAry, {
+      from: encoding,
+      to: "EUC-JP"
+    })).replaceAll("%2F", "/").replace("%3F", "?");
+    if (!pageExists(eucEncode)) {
       eucEncode = "";
     }
     const html = ejs.render(pageTemplate(), {
