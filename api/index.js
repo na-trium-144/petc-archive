@@ -63,6 +63,13 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       if (href && !href.startsWith("#")) {
         let url = new URL(href, `https://${request.hostname}/`);
         if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+          if(url.searchParams.has("cmd") && url.searchParams.get("cmd") === "read"){
+            let hrefPage = url.search.slice(url.search.indexOf("page=") + 5);
+            if (hrefPage.indexOf("&") >= 0){
+              hrefPage = hrefPage.slice(0, hrefPage.indexOf("&"));
+            }
+            url = new URL(url.pathname + "?" + hrefPage + url.hash, `https://${request.hostname}/`);
+          }
           if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
             $(a).replaceWith(`<a href="/ref${request.path}/${url.searchParams.get('page')}/${url.searchParams.get('src')}" title="${title}">${content}</a>`);
           } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
@@ -70,7 +77,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
           } else if (pageExists(url.pathname + url.search)) {
             $(a).replaceWith(`<a href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`);
           } else {
-            $(a).replaceWith(`<a style="color: red;" href="${url.href}" title="${title}">${content}</a>`)
+            $(a).replaceWith(`<a style="color: red;" href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`)
           }
         }
       }
