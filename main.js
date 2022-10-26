@@ -5,8 +5,6 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const iconv = require("iconv-lite");
 
-app.use(express.static("static"));
-
 function queryToBuffer(q) {
   let i = 0;
   let a = [];
@@ -107,4 +105,5 @@ app.get("/", (request, response) => {
   });
   response.send(html);
 });
-app.listen(3000);
+
+module.exports = app;
