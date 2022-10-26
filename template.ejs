@@ -6,15 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
-		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<link rel="stylesheet" href="/sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="/sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="/sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="/sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="/sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="/sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script>
-	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="/sys/skin/standard-petc/wordbreak.js"></script>
+	<script type="text/javascript" src="/sys/skin/standard-petc/jquery.colorbox-min.js"></script>
 		<!-- <meta name="twitter:title" content="<%= pageTitle %> - <%= wikiTitle %>" /> -->
 	<!-- <meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" /> -->
 	<!-- <meta name="twitter:card" content="summary" /> -->
@@ -58,17 +58,17 @@
 
 	<div id="block-extra-navi">
 		<ul>
-			<% if (base === "/petc4/") { %>
+			<% if (base === "/petc4/" || base === "/petc4") { %>
 				<li id="active">プチコン4</li>
 			<% } else { %>
 				<li><a href="/petc4/">プチコン4</a></li>
 			<% } %>
-			<% if (base === "/petc3gou/") { %>
+			<% if (base === "/petc3gou/" || base === "/petc3gou") { %>
 				<li id="active">3号/BIG</li>
 			<% } else { %>
 				<li><a href="/petc3gou/">3号/BIG</a></li>
 			<% } %>
-			<% if (base === "/petc/") { %>
+			<% if (base === "/petc/" || base === "/petc") { %>
 				<li id="active">初代/mkII</li>
 			<% } else { %>
 				<li><a href="/petc/">初代/mkII</a></li>
