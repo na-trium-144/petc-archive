@@ -20,7 +20,6 @@
     "cheerio": "^1.0.0-rc.12",
     "ejs": "^3.1.8",
     "encoding-japanese": "^2.0.0",
-    "express": "^4.18.2",
-    "vercel": "^28.4.12"
+    "express": "^4.18.2"
   }
 }
