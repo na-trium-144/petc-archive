@@ -4,7 +4,6 @@ const app = express();
 const cheerio = require('cheerio');
 const fs = require('fs');
 const Encoding = require('encoding-japanese');
-
 const path = __dirname + "/..";
 app.use(express.static("public"));
 
@@ -47,9 +46,10 @@ function checkBase(url) {
   }
   return 0;
 }
-function getSearchParamQuoted(search, key){
+
+function getSearchParamQuoted(search, key) {
   let param = search.slice(search.indexOf(key + "=") + key.length + 1);
-  if (param.indexOf("&") >= 0){
+  if (param.indexOf("&") >= 0) {
     param = param.slice(0, param.indexOf("&"));
   }
   return param;
@@ -63,74 +63,82 @@ app.get("/petc(3gou)?4?/", (request, response) => {
   page = eucToStr(Encoding.urlDecode(page));
   if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
     const $ = cheerio.load(eucToStr(fs.readFileSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html")));
-    for (let a of $("a").get()) {
-      let href = $(a).attr('href');
-      let title = $(a).attr('title');
-      let content = $(a).html();
-      if (href && !href.startsWith("#")) {
-        let url = new URL(href, `https://${request.hostname}/`);
-        if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
-          //url.searchは%エンコードされたまま
-          //url.searchParamsは勝手にデコードされてて無能
-          if(url.searchParams.has("cmd") && url.searchParams.get("cmd") === "read"){
-            //元のエンコードを保持する
-            url = new URL(url.pathname + "?" + getSearchParamQuoted(url.search, "page") + url.hash, `https://${request.hostname}/`);
-          }
-          //画像はpublic公開のurlなのでutf-8に変換する
-          if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
-            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
-            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
-            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
-          } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
-            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
-            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
-            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
-          } else if (pageExists(url.pathname + url.search)) {
-            $(a).replaceWith(`<a href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`);
-          } else {
-            $(a).replaceWith(`<a style="color: red;" href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`)
-          }
-        }
-      }
-    }
-    for (let a of $("img").get()) {
-      let href = $(a).attr('src');
-      let alt = $(a).attr('alt');
-      let title = $(a).attr('title');
-      let w = $(a).attr('width');
-      let h = $(a).attr('height');
-      if (href) {
-        let url = new URL(href, `https://${request.hostname}/`);
-        if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
-          if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
-            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
-            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
-            $(a).replaceWith(`<img src="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
-          } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
-            let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
-            let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
-            $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
-          }
-        }
-      }
-    }
-    const bodyHtml = $("#body").html();
+    const orginalTitle = $("title").text();
+    let bodyHtml;
+    let lastUpdate = "";
     const base = checkBase(request.path);
     let pankuzuHtml = $("#list-pankuzu").html();
-    if (base === 4) {
-      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン4トップ");
-    }
-    if (base === 3) {
-      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン3号&BIGトップ");
-    }
-    if (base === 2) {
-      pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン初代/mkIIトップ");
+    if (orginalTitle.indexOf("プチコンまとめArchive") >= 0) {
+      bodyHtml = $("#body").html();
+      lastUpdate = $("#block-pankuzu-body > div").text();
+    } else {
+      // 変換前のhtmlのみ処理
+      for (let a of $("a").get()) {
+        let href = $(a).attr('href');
+        let title = $(a).attr('title');
+        let content = $(a).html();
+        if (href && !href.startsWith("#")) {
+          let url = new URL(href, `https://${request.hostname}/`);
+          if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+            //url.searchは%エンコードされたまま
+            //url.searchParamsは勝手にデコードされてて無能
+            if (url.searchParams.has("cmd") && url.searchParams.get("cmd") === "read") {
+              //元のエンコードを保持する
+              url = new URL(url.pathname + "?" + getSearchParamQuoted(url.search, "page") + url.hash, `https://${request.hostname}/`);
+            }
+            //画像はpublic公開のurlなのでutf-8に変換する
+            if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
+              let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
+              let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
+              $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
+            } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
+              let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
+              let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
+              $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`);
+            } else if (pageExists(url.pathname + url.search)) {
+              $(a).replaceWith(`<a href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`);
+            } else {
+              $(a).replaceWith(`<a style="color: red;" href="${url.pathname + url.search + url.hash}" title="${title}">${content}</a>`)
+            }
+          }
+        }
+      }
+      for (let a of $("img").get()) {
+        let href = $(a).attr('src');
+        let alt = $(a).attr('alt');
+        let title = $(a).attr('title');
+        let w = $(a).attr('width');
+        let h = $(a).attr('height');
+        if (href) {
+          let url = new URL(href, `https://${request.hostname}/`);
+          if (url.host === "wiki.hosiken.jp" || url.host === request.hostname) {
+            if (url.searchParams.has("plugin") && url.searchParams.get("plugin") === "ref") {
+              let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "page"))));
+              let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "src"))));
+              $(a).replaceWith(`<img src="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+            } else if (url.searchParams.has("plugin") && url.searchParams.has("refer") && url.searchParams.get("plugin") === "attach") {
+              let sPage = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "refer"))));
+              let sSrc = Encoding.urlEncode(eucToStr(Encoding.urlDecode(getSearchParamQuoted(url.search, "openfile"))));
+              $(a).replaceWith(`<a href="/ref${request.path}/${sPage}/${sSrc}" alt="${alt}" title="${title}" width=${w} height=${h} />`);
+            }
+          }
+        }
+      }
+      if (base === 4) {
+        pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン4トップ");
+      }
+      if (base === 3) {
+        pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン3号&BIGトップ");
+      }
+      if (base === 2) {
+        pankuzuHtml = pankuzuHtml.replace("トップ", "プチコン初代/mkIIトップ");
+      }
+      const about = $("#pukiwiki-about").text();
+      lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("  (", about.indexOf("このページの最終更新 : ")));
+      bodyHtml = $("#body").html();
     }
     const notesHtml = $("#notes").html();
     const pageTitle = $("#block-body-container > h2").text();
-    const about = $("#pukiwiki-about").text();
-    const lastUpdate = about.slice(about.indexOf("このページの最終更新 : "), about.indexOf("  (", about.indexOf("このページの最終更新 : ")));
-
     const html = ejs.render(pageTemplate(), {
       wikiTitle: "プチコンまとめArchive",
       pageTitle: pageTitle,
@@ -161,8 +169,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       wikiTitle: "プチコンまとめArchive",
       pageTitle: "ページが見つかりません",
       base: checkBase(request.path),
-      body: `<p>ページ ${eucToStr(Encoding.urlDecode(request.originalUrl))} は プチコンまとめArchive に存在しません。</p>` +
-        (eucEncode ? `<p>ページ名はEUC-JPで指定する必要があります。もしかして: <a href="${eucEncode}">${decodedStr}</a></p>` : ""),
+      body: `<p>ページ ${eucToStr(Encoding.urlDecode(request.originalUrl))} は プチコンまとめArchive に存在しません。</p>` + (eucEncode ? `<p>ページ名はEUC-JPで指定する必要があります。もしかして: <a href="${eucEncode}">${decodedStr}</a></p>` : ""),
       pankuzu: "",
       lastUpdate: "",
       notes: ""
@@ -170,7 +177,6 @@ app.get("/petc(3gou)?4?/", (request, response) => {
     response.status(404).send(html);
   }
 });
-
 app.get("/", (request, response) => {
   const html = ejs.render(pageTemplate(), {
     wikiTitle: "プチコンまとめArchive",
@@ -183,7 +189,6 @@ app.get("/", (request, response) => {
   });
   response.send(html);
 });
-
 app.use((request, response) => {
   const html = ejs.render(pageTemplate(), {
     wikiTitle: "プチコンまとめArchive",
@@ -196,5 +201,4 @@ app.use((request, response) => {
   });
   response.status(404).send(html);
 });
-
 module.exports = app;
