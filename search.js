@@ -12,13 +12,17 @@ exports.search = (word) => {
     fs.readFileSync(__dirname + "/searchIndex.json", "utf-8")
   );
   const words = kanaToHira(word.normalize("NFKD").toLowerCase()).split(" ");
-  return idx.filter(
-    (p) =>
-      words.filter(
-        (w) =>
-          p.page.includes(w) ||
-          p.pageTitle.includes(w) ||
-          p.pageText.includes(w)
-      ).length > 0
-  ).map((p) => p.page);
+  return idx
+    .filter(
+      (p) =>
+        words.filter(
+          (w) =>
+            !(
+              p.page.includes(w) ||
+              p.pageTitle.includes(w) ||
+              p.pageText.includes(w)
+            )
+        ).length == 0
+    )
+    .map((p) => p.page);
 };

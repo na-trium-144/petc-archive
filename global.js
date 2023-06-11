@@ -1,7 +1,6 @@
 const Encoding = require("encoding-japanese");
 const fs = require("fs");
 
-
 const path = __dirname + "/.";
 
 const eucToStr = (b) => {
@@ -13,6 +12,15 @@ const eucToStr = (b) => {
   );
 };
 exports.eucToStr = eucToStr;
+
+const strToEuc = (s) =>
+  Encoding.urlEncode(
+    Encoding.convert(Encoding.stringToCode(s), {
+      from: "UNICODE",
+      to: "EUC-JP",
+    })
+  );
+exports.strToEuc = strToEuc;
 
 const getSearchParamQuoted = (search, key) => {
   let param = search.slice(search.indexOf(key + "=") + key.length + 1);
@@ -75,9 +83,9 @@ exports.pageExists = pageExists;
 
 // https://qiita.com/mimoe/items/855c112625d39b066c9a
 function kanaToHira(str) {
-    return str.replace(/[\u30a1-\u30f6]/g, function(match) {
-        var chr = match.charCodeAt(0) - 0x60;
-        return String.fromCharCode(chr);
-    });
+  return str.replace(/[\u30a1-\u30f6]/g, function (match) {
+    var chr = match.charCodeAt(0) - 0x60;
+    return String.fromCharCode(chr);
+  });
 }
 exports.kanaToHira = kanaToHira;

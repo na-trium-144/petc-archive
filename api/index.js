@@ -11,6 +11,7 @@ const {
   getSearchParamQuoted,
   checkBase,
   pageExists,
+  strToEuc,
 } = require("../global");
 const { search } = require("../search");
 
@@ -295,11 +296,12 @@ app.get("/search_result", (request, response) => {
   body += "<ul>";
   body += result.map((p) => {
     const base = checkBase(p);
-    let baseStr = ["", "", "初代/mkII", "3号/BIG", "プチコン4"][base];
+    const basePath = ["", "", "petc", "petc3gou", "petc4"][base];
+    const baseStr = ["", "", "初代/mkII", "3号/BIG", "プチコン4"][base];
     return (
       `<li>` +
       `<span style="font-size: small; padding-right: 10px;">(${baseStr})</span>` +
-      `<a href="/${p}">${p.slice(p.indexOf("/") + 1)}</a>` +
+      `<a href="/${basePath}/?${strToEuc(p.slice(basePath.length + 1))}">${p.slice(p.indexOf("/") + 1)}</a>` +
       `</li>`
     );
   }).join("\n");
