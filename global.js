@@ -72,3 +72,12 @@ const pageExists = (page) => {
   return false;
 };
 exports.pageExists = pageExists;
+
+// https://qiita.com/mimoe/items/855c112625d39b066c9a
+function kanaToHira(str) {
+    return str.replace(/[\u30a1-\u30f6]/g, function(match) {
+        var chr = match.charCodeAt(0) - 0x60;
+        return String.fromCharCode(chr);
+    });
+}
+exports.kanaToHira = kanaToHira;

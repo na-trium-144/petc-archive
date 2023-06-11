@@ -7,11 +7,12 @@ const {
   getSearchParamQuoted,
   checkBase,
   pageExists,
+  kanaToHira,
 } = require("./global");
-const lunr = require("lunr");
-require("lunr-languages/lunr.stemmer.support")(lunr);
-require("lunr-languages/tinyseg")(lunr);
-require("lunr-languages/lunr.ja")(lunr);
+// const lunr = require("lunr");
+// require("lunr-languages/lunr.stemmer.support")(lunr);
+// require("lunr-languages/tinyseg")(lunr);
+// require("lunr-languages/lunr.ja")(lunr);
 
 const convert = (page) => {
   const $ = cheerio.load(
@@ -35,48 +36,62 @@ const convert = (page) => {
       about.indexOf("  (", about.indexOf("このページの最終更新 : "))
     );
   }
-  const pageText = $("html *")
+  const pageText = kanaToHira(
+    $("#body *")
     .contents()
     .map(function () {
       return this.type === "text" ? $(this).text() + " " : "";
     })
     .get()
-    .join(" ");
-  const pageTitle = $("#block-body-container > h2").text();
+    .join(" ")
+    .normalize("NFKD")
+    .toLowerCase()
+    );
+  const pageTitle = kanaToHira(
+    $("#block-body-container > h2")
+    .text()
+    .normalize("NFKD")
+    .toLowerCase()
+    );
   return {
     page: page,
     pageTitle: pageTitle,
     pageText: pageText,
-    base: base,
-    lastUpdate: lastUpdate,
+    // base: base,
+    // lastUpdate: lastUpdate,
   };
 };
 
-let idx = lunr(function () {
-  // this.use(lunr.ja);
-  this.ref("page");
-  this.field("page");
-  this.field("pageTitle");
-  this.field("pageText");
+// let idx = lunr(function () {
+// this.use(lunr.ja);
+// this.ref("page");
+// this.field("page");
+// this.field("pageTitle");
+// this.field("pageText");
 
-  const g = new Glob("websites_utf8/**/*.html", { withFileTypes: false });
-  for (const file of g) {
-    // console.log(file);
-    const page = file.slice(
-      "websites_utf8/wiki.hosiken.jp/".length,
-      -"/index.html".length
-    );
-    // console.log(page);
-    try {
-      // output.push(convert(page));
-      if(!page.includes("cmd=") && !page.includes("plugin=") && !page.includes("ptcmcon/")){
-        this.add(convert(page));
-      }
-    } catch (err) {
-      console.error(page);
-      console.error(err.message);
+const idx = [];
+const g = new Glob("websites_utf8/**/*.html", { withFileTypes: false });
+for (const file of g) {
+  // console.log(file);
+  const page = file.slice(
+    "websites_utf8/wiki.hosiken.jp/".length,
+    -"/index.html".length
+  );
+  // console.log(page);
+  try {
+    // output.push(convert(page));
+    if (
+      !page.includes("cmd=") &&
+      !page.includes("plugin=") &&
+      !page.includes("ptcmcon/")
+    ) {
+      // this.add(convert(page));
+      idx.push(convert(page));
     }
+  } catch (err) {
+    console.error(page);
+    console.error(err.message);
   }
-});
-// fs.writeFileSync("websites.json", JSON.stringify(output), "utf-8");
+}
+// });
 fs.writeFileSync("searchIndex.json", JSON.stringify(idx), "utf-8");
