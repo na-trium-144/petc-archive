@@ -12,17 +12,23 @@ exports.search = (word) => {
     fs.readFileSync(__dirname + "/searchIndex.json", "utf-8")
   );
   const words = kanaToHira(word.normalize("NFKD").toLowerCase()).split(" ");
-  return idx
-    .filter(
-      (p) =>
-        words.filter(
-          (w) =>
-            !(
-              p.page.includes(w) ||
-              p.pageTitle.includes(w) ||
-              p.pageText.includes(w)
-            )
-        ).length == 0
-    )
-    .map((p) => p.page);
+  const result = [];
+  // 検索文字列の出現回数を調べ多い順に並べる
+  for (const p of idx) {
+    let count = words.map(
+      (w) =>
+        p.page.split(w).length +
+        p.pageTitle.split(w).length +
+        p.pageText.split(w).length -
+        3
+    );
+    if (!count.includes(0)) {
+      result.push({
+        page: p.page,
+        count: count.reduce((prev, c) => prev + c, 0),
+      });
+    }
+  }
+  result.sort((a, b) => b.count - a.count);
+  return result.map((r) => r.page);
 };

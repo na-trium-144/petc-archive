@@ -36,6 +36,7 @@ const convert = (page) => {
       about.indexOf("  (", about.indexOf("このページの最終更新 : "))
     );
   }
+  // 全角半角の正規化、ひらがな化、小文字化
   const pageText = kanaToHira(
     $("#body *")
     .contents()
