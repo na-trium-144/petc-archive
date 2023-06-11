@@ -2,9 +2,16 @@ const { glob, globSync, globStream, globStreamSync, Glob } = require("glob");
 const fs = require("fs");
 const cheerio = require("cheerio");
 const Encoding = require("encoding-japanese");
-const { eucToStr, getSearchParamQuoted, checkBase, pageExists } = require("./global");
-
-const hostname = "petc-archive.vercel.app";
+const {
+  eucToStr,
+  getSearchParamQuoted,
+  checkBase,
+  pageExists,
+} = require("./global");
+const lunr = require("lunr");
+require("lunr-languages/lunr.stemmer.support")(lunr);
+require("lunr-languages/tinyseg")(lunr);
+require("lunr-languages/lunr.ja")(lunr);
 
 const convert = (page) => {
   const $ = cheerio.load(
@@ -28,9 +35,13 @@ const convert = (page) => {
       about.indexOf("  (", about.indexOf("このページの最終更新 : "))
     );
   }
-  const pageText = $('html *').contents().map(function() {
-    return (this.type === 'text') ? $(this).text()+' ' : '';
-  }).get().join(' ');
+  const pageText = $("html *")
+    .contents()
+    .map(function () {
+      return this.type === "text" ? $(this).text() + " " : "";
+    })
+    .get()
+    .join(" ");
   const pageTitle = $("#block-body-container > h2").text();
   return {
     page: page,
@@ -38,11 +49,15 @@ const convert = (page) => {
     pageText: pageText,
     base: base,
     lastUpdate: lastUpdate,
-  }
+  };
 };
 
-const main = () => {
-  output = [];
+let idx = lunr(function () {
+  // this.use(lunr.ja);
+  this.ref("page");
+  this.field("pageTitle");
+  this.field("pageText");
+
   const g = new Glob("websites_utf8/**/*.html", { withFileTypes: false });
   for (const file of g) {
     // console.log(file);
@@ -51,14 +66,14 @@ const main = () => {
       -"/index.html".length
     );
     // console.log(page);
-    try{
-      output.push(convert(page));
-    }catch(err){
+    try {
+      // output.push(convert(page));
+      this.add(convert(page));
+    } catch (err) {
       console.error(page);
       console.error(err.message);
     }
   }
-  fs.writeFileSync("websites.json", JSON.stringify(output), "utf-8");
-};
-
-main();
+});
+// fs.writeFileSync("websites.json", JSON.stringify(output), "utf-8");
+fs.writeFileSync("searchIndex.json", JSON.stringify(idx), "utf-8");
