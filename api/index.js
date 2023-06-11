@@ -6,54 +6,12 @@ const fs = require('fs');
 const Encoding = require('encoding-japanese');
 const path = __dirname + "/..";
 app.use(express.static("public"));
+const { eucToStr, getSearchParamQuoted, checkBase, pageExists } = require("../global");
 
 function pageTemplate() {
   return fs.readFileSync(path + "/template.ejs", "utf-8");
 }
 
-function eucToStr(b) {
-  return Encoding.codeToString(Encoding.convert(b, {
-    from: "EUC-JP",
-    to: "UNICODE"
-  }));
-}
-
-function pageExists(page) {
-  if (!page.startsWith("/")) {
-    return true;
-  }
-  page = page.replace("?", "");
-  if (page.indexOf("#") >= 0) {
-    page = page.slice(0, page.indexOf("#"));
-  }
-  page = eucToStr(Encoding.urlDecode(page));
-  if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html")) {
-    return true;
-  }
-  if (fs.existsSync(path + "/websites_utf8/wiki.hosiken.jp/" + page + "/" + page.slice(page.lastIndexOf("=") + 1))) {
-    return true;
-  }
-  return false;
-}
-
-function checkBase(url) {
-  if (url.startsWith("/petc4")) {
-    return 4;
-  } else if (url.startsWith("/petc3gou")) {
-    return 3;
-  } else if (url.startsWith("/petc")) {
-    return 2;
-  }
-  return 0;
-}
-
-function getSearchParamQuoted(search, key) {
-  let param = search.slice(search.indexOf(key + "=") + key.length + 1);
-  if (param.indexOf("&") >= 0) {
-    param = param.slice(0, param.indexOf("&"));
-  }
-  return param;
-}
 app.get("/petc(3gou)?4?/", (request, response) => {
   let page = request.originalUrl;
   if (page.indexOf("#") >= 0) {
