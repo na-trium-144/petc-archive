@@ -55,6 +55,7 @@ const convert = (page) => {
 let idx = lunr(function () {
   // this.use(lunr.ja);
   this.ref("page");
+  this.field("page");
   this.field("pageTitle");
   this.field("pageText");
 
@@ -68,7 +69,9 @@ let idx = lunr(function () {
     // console.log(page);
     try {
       // output.push(convert(page));
-      this.add(convert(page));
+      if(!page.includes("cmd=") && !page.includes("plugin=") && !page.includes("ptcmcon/")){
+        this.add(convert(page));
+      }
     } catch (err) {
       console.error(page);
       console.error(err.message);
