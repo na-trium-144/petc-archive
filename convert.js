@@ -39,23 +39,26 @@ const convert = (page) => {
   // 全角半角の正規化、ひらがな化、小文字化
   const pageText = kanaToHira(
     $("#body *")
-    .contents()
-    .map(function () {
-      return this.type === "text" ? $(this).text() + " " : "";
-    })
-    .get()
-    .join(" ")
-    .normalize("NFKD")
-    .toLowerCase()
-    );
+      .contents()
+      .map(function () {
+        return this.type === "text" ? $(this).text() + " " : "";
+      })
+      .get()
+      .join(" ")
+      .normalize("NFKD")
+      .toLowerCase()
+  );
   const pageTitle = kanaToHira(
-    $("#block-body-container > h2")
-    .text()
-    .normalize("NFKD")
-    .toLowerCase()
-    );
+    $("#block-body-container > h2").text().normalize("NFKD").toLowerCase()
+  );
+  if (pageTitle.endsWith("の編集")) {
+    // 存在しないページ
+    fs.unlinkSync("websites_utf8/wiki.hosiken.jp/" + page + "/index.html");
+    return null;
+  }
   return {
     page: page,
+    pageNormalized: kanaToHira(page.normalize("NFKD").toLowerCase()),
     pageTitle: pageTitle,
     pageText: pageText,
     // base: base,
@@ -86,8 +89,11 @@ for (const file of g) {
       !page.includes("plugin=") &&
       !page.includes("ptcmcon/")
     ) {
-      // this.add(convert(page));
-      idx.push(convert(page));
+      const i = convert(page);
+      if (i != null) {
+        // this.add(i);
+        idx.push(i);
+      }
     }
   } catch (err) {
     console.error(page);
