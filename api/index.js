@@ -18,6 +18,9 @@ const { search } = require("../search");
 function pageTemplate() {
   return fs.readFileSync(path + "/template.ejs", "utf-8");
 }
+function searchTemplate() {
+  return fs.readFileSync(path + "/search.ejs", "utf-8");
+}
 
 const wikiTitle = "プチコンまとめArchive";
 app.get("/petc(3gou)?4?/", (request, response) => {
@@ -274,7 +277,12 @@ app.get("/search", (request, response) => {
     wikiTitle,
     pageTitle: "検索",
     base: 0,
-    body: fs.readFileSync(path + "/search.html", "utf-8"),
+    body: ejs.render(searchTemplate(), {
+      word: "",
+      base4: true,
+      base3: true,
+      base2: true,
+    }),
     pankuzu: "",
     lastUpdate: "",
     notes: "",
@@ -283,35 +291,50 @@ app.get("/search", (request, response) => {
 });
 app.get("/search_result", (request, response) => {
   let result = search(request.query.word);
+  let baseStrTitle = ["プチコン4", "3号/BIG", "初代/mkII"];
   if (!request.query.base4) {
     result = result.filter((p) => !p.startsWith("petc4/"));
+    baseStrTitle[0] = "";
   }
   if (!request.query.base3) {
     result = result.filter((p) => !p.startsWith("petc3gou/"));
+    baseStrTitle[1] = "";
   }
   if (!request.query.base2) {
     result = result.filter((p) => !p.startsWith("petc/"));
+    baseStrTitle[2] = "";
   }
   let body = `<p>${result.length} 件見つかりました</p>\n`;
   body += "<ul>";
-  body += result.map((p) => {
-    const base = checkBase(p);
-    const basePath = ["", "", "petc", "petc3gou", "petc4"][base];
-    const baseStr = ["", "", "初代/mkII", "3号/BIG", "プチコン4"][base];
-    return (
-      `<li>` +
-      `<span style="font-size: small; padding-right: 10px;">(${baseStr})</span>` +
-      `<a href="/${basePath}/?${strToEuc(p.slice(basePath.length + 1))}">${p.slice(p.indexOf("/") + 1)}</a>` +
-      `</li>`
-    );
-  }).join("\n");
+  body += result
+    .map((p) => {
+      const base = checkBase(p);
+      const basePath = ["", "", "petc", "petc3gou", "petc4"][base];
+      const baseStr = ["", "", "初代/mkII", "3号/BIG", "プチコン4"][base];
+      return (
+        `<li>` +
+        `<span style="font-size: small; padding-right: 10px;">(${baseStr})</span>` +
+        `<a href="/${basePath}/?${strToEuc(
+          p.slice(basePath.length + 1)
+        )}">${p.slice(p.indexOf("/") + 1)}</a>` +
+        `</li>`
+      );
+    })
+    .join("\n");
   body += "</ul>";
 
   const html = ejs.render(pageTemplate(), {
     wikiTitle,
-    pageTitle: `${request.query.word} の検索結果`,
+    pageTitle: `${request.query.word} の検索結果 (${baseStrTitle.filter((a) => a).join(", ")})`,
     base: 0,
-    body: body + fs.readFileSync(path + "/search.html", "utf-8"),
+    body:
+      body +
+      ejs.render(searchTemplate(), {
+        word: request.query.word,
+        base4: !!request.query.base4,
+        base3: !!request.query.base3,
+        base2: !!request.query.base2,
+      }),
     pankuzu: "",
     lastUpdate: "",
     notes: "",
