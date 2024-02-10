@@ -30,6 +30,9 @@ app.get("/petc(3gou)?4?/", (request, response) => {
   }
   page = page.replace("?", "");
   page = eucToStr(Encoding.urlDecode(page));
+  if (page.endsWith("=")) {
+    page = page.slice(0, -1);
+  }
   if (
     fs.existsSync(
       path + "/websites_utf8/wiki.hosiken.jp/" + page + "/index.html"
@@ -325,7 +328,9 @@ app.get("/search_result", (request, response) => {
 
   const html = ejs.render(pageTemplate(), {
     wikiTitle,
-    pageTitle: `${request.query.word} の検索結果 (${baseStrTitle.filter((a) => a).join(", ")})`,
+    pageTitle: `${request.query.word} の検索結果 (${baseStrTitle
+      .filter((a) => a)
+      .join(", ")})`,
     base: 0,
     body:
       body +
