@@ -12,6 +12,7 @@ const {
   checkBase,
   pageExists,
   strToEuc,
+  officialEncode,
 } = require("../global");
 const { search } = require("../search");
 
@@ -207,6 +208,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       pankuzu: pankuzuHtml,
       lastUpdate: lastUpdate,
       notes: notesHtml,
+      officialEncode: officialEncode(page),
     });
     response.send(html);
   } else if (
@@ -259,6 +261,7 @@ app.get("/petc(3gou)?4?/", (request, response) => {
       pankuzu: "",
       lastUpdate: "",
       notes: "",
+      officialEncode: officialEncode(page),
     });
     response.status(404).send(html);
   }
@@ -272,6 +275,7 @@ app.get("/", (request, response) => {
     pankuzu: "",
     lastUpdate: "",
     notes: "",
+    officialEncode: null,
   });
   response.send(html);
 });
@@ -289,6 +293,7 @@ app.get("/search", (request, response) => {
     pankuzu: "",
     lastUpdate: "",
     notes: "",
+    officialEncode: null,
   });
   response.send(html);
 });
@@ -343,6 +348,7 @@ app.get("/search_result", (request, response) => {
     pankuzu: "",
     lastUpdate: "",
     notes: "",
+    officialEncode: null,
   });
   response.send(html);
 });
@@ -358,6 +364,7 @@ app.use((request, response) => {
     pankuzu: "",
     lastUpdate: "",
     notes: "",
+    officialEncode: null,
   });
   response.status(404).send(html);
 });

@@ -94,6 +94,15 @@
 					<div style="margin-left: 1.5em; margin-top: -0.5em; color: #808080;"><%= lastUpdate %></div>
 				</div>
 
+				<% if(officialEncode) { %>
+				<div class="block-info" style="margin-top: 1em; margin-bottom: 1em; padding: 10px;">
+					公式アーカイブのリンク:
+					<a href="http://wiki.hosiken.jp<%= officialEncode %>.html">
+						http://wiki.hosiken.jp<%= officialEncode %>.html
+					</a>
+				</div>
+				<% } %>
+
 				<div id="body">
 				<%- body %>
 				</div>

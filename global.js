@@ -22,6 +22,26 @@ const strToEuc = (s) =>
   );
 exports.strToEuc = strToEuc;
 
+const officialEncode = (s) => {
+  const eucCode = Encoding.convert(Encoding.stringToCode(s), {
+    from: "UNICODE",
+    to: "EUC-JP",
+  });
+  let encoded = "";
+  for (const c of eucCode) {
+    if (c < 128) {
+      encoded += String.fromCharCode(c);
+    } else {
+      encoded += c.toString(16).toUpperCase() + "-";
+    }
+  }
+  return encoded
+    .replace("petc/", "petc/html/")
+    .replace("petc3gou/", "petc3gou/html/")
+    .replace("petc4/", "petc4/html/");
+};
+exports.officialEncode = officialEncode;
+
 const getSearchParamQuoted = (search, key) => {
   let param = search.slice(search.indexOf(key + "=") + key.length + 1);
   if (param.indexOf("&") >= 0) {
