@@ -29,7 +29,7 @@ const officialEncode = (s) => {
   });
   let encoded = "";
   for (const c of eucCode) {
-    if (c >= 48 && c < 57 || c >= 65 && c <= 90 || c == 95 || c >= 97 && c <= 122) {
+    if (c == 46 || c == 47 || c >= 48 && c < 57 || c >= 65 && c <= 90 || c == 95 || c >= 97 && c <= 122) {
       encoded += String.fromCharCode(c);
     } else {
       encoded += c.toString(16).toUpperCase() + "-";
