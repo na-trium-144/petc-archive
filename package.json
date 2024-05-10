@@ -18,7 +18,7 @@
   "homepage": "https://github.com/na-trium-144/petc_archive#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "ejs": "^3.1.8",
+    "ejs": "^3.1.10",
     "encoding-japanese": "^2.0.0",
     "express": "^4.19.2",
     "glob": "^10.2.7"
