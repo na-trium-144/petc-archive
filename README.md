@@ -1,5 +1,5 @@
 # petc-archive
-wiki.hosiken.jp の一時的な代替 https://petc-archive.vercel.app
+wiki.hosiken.jp の一時的な代替 https://petc.natrium144.org
 
 ローカルで動かすときは`node main.js`
 
@@ -7,5 +7,5 @@ wiki.hosiken.jp の一時的な代替 https://petc-archive.vercel.app
 * htmlファイル→ `websites_utf8/wiki.hosiken.jp/petc(3gou)?4?/ページ名/index.html`
   * ディレクトリ名にutf8とあるがそれは嘘で、内容はeuc-jpで記述すること
   * ファイル名はそのまま日本語(utf8)でok
-* html内のリンクは基本的に元のままでもvercel.appのurlに置き換えられていても良い
+* html内のリンクは基本的に元のままでもarchiveのurlに置き換えられていても良い
   * api/index.jsが適切に変換して返す(はず)
