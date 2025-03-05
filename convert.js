@@ -74,6 +74,7 @@ const convert = (page) => {
 // this.field("pageText");
 
 const idx = [];
+const pages = [];
 const g = new Glob("websites_utf8/**/*.html", { withFileTypes: false });
 for (const file of g) {
   // console.log(file);
@@ -93,6 +94,7 @@ for (const file of g) {
       if (i != null) {
         // this.add(i);
         idx.push(i);
+        pages.push(i.page);
       }
     }
   } catch (err) {
@@ -102,3 +104,4 @@ for (const file of g) {
 }
 // });
 fs.writeFileSync("searchIndex.json", JSON.stringify(idx), "utf-8");
+fs.writeFileSync("pageIndex.json", JSON.stringify(pages), "utf-8");

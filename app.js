@@ -15,10 +15,16 @@ import { pageTemplate } from "./template.jsx";
 
 const wikiTitle = "プチコンまとめArchive";
 
+async function fetchPageIndex(c) {
+  return JSON.parse(
+    await (await fetch(env(c).FILES_PREFIX + "/pageIndex.json")).text()
+  );
+}
 const app = new Hono({ strict: false });
 
 app
   .get("/:route{petc(3gou)?4?.*}", async (c) => {
+    const pageIndex = await fetchPageIndex(c);
     const origin = new URL(c.req.url).origin;
     let page = c.req.url;
     page = page.slice(8); // https://
@@ -112,7 +118,9 @@ app
                 $(a).replaceWith(
                   `<a href="/ref${c.req.path}/${sPage}/${sSrc}" title="${title}">${content}</a>`
                 );
-              } else if (await pageExists(c, url.pathname + url.search)) {
+              } else if (
+                await pageExists(c, url.pathname + url.search, pageIndex)
+              ) {
                 $(a).replaceWith(
                   `<a href="${
                     url.pathname + url.search + url.hash
@@ -225,7 +233,10 @@ app
           "Content-Type": res2.headers.get("Content-Type"),
         });
       } else {
-        const decodedAry = Encoding.urlDecode(c.req.url);
+        let page = c.req.url;
+        page = page.slice(8); // https://
+        page = page.slice(page.indexOf("/")); // origin
+        const decodedAry = Encoding.urlDecode(page);
         const encoding = Encoding.detect(decodedAry);
         const decodedStr = Encoding.codeToString(
           Encoding.convert(decodedAry, {
@@ -241,7 +252,7 @@ app
         )
           .replaceAll("%2F", "/")
           .replace("%3F", "?");
-        if (!(await pageExists(c, eucEncode))) {
+        if (!(await pageExists(c, eucEncode, pageIndex))) {
           eucEncode = "";
         }
         const html = pageTemplate({

@@ -1,4 +1,4 @@
-import { env } from 'hono/adapter'
+import { env } from "hono/adapter";
 import Encoding from "encoding-japanese";
 
 export const eucToStr = (b) => {
@@ -70,8 +70,8 @@ export const checkBase = (url) => {
   return 0;
 };
 
-export const pageExists = async (c, page) => {
-  if (!page.startsWith("/")) {
+export const pageExists = async (c, page, pageIndex) => {
+  if (page.startsWith("http")) {
     return true;
   }
   page = page.replace("?", "");
@@ -79,18 +79,17 @@ export const pageExists = async (c, page) => {
     page = page.slice(0, page.indexOf("#"));
   }
   page = eucToStr(Encoding.urlDecode(page));
-  if (
-    (
-      await fetch(
-        env(c).FILES_PREFIX +
-          "/websites_utf8/wiki.hosiken.jp/" +
-          page +
-          "/index.html"
-      )
-    ).ok
-  ) {
+  if (page.startsWith("/")) {
+    page = page.slice(1);
+  }
+  if (page === "petc/" || page === "petc3gou/" || page === "petc4/") {
     return true;
   }
+  if (pageIndex.includes(page)) {
+    return true;
+  }
+  /*
+  これなに?
   if (
     (
       await fetch(
@@ -103,7 +102,7 @@ export const pageExists = async (c, page) => {
     ).ok
   ) {
     return true;
-  }
+  }*/
   return false;
 };
 
@@ -114,3 +113,4 @@ export function kanaToHira(str) {
     return String.fromCharCode(chr);
   });
 }
+
