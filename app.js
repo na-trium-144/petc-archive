@@ -282,7 +282,7 @@ app
       wikiTitle,
       pageTitle: "プチコンまとめArchive トップページ",
       base: checkBase(c.req.path),
-      body: await (await fetch(env(c).FILES_PREFIX + "/index.html")).text(),
+      body: await (await fetch(env(c).FILES_PREFIX + "/toppage.html")).text(),
       pankuzu: "",
       lastUpdate: "",
       notes: "",
