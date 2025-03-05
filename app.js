@@ -1,6 +1,5 @@
 import { env } from "hono/adapter";
 import { Hono } from "hono";
-import ejs from "ejs";
 import cheerio from "cheerio";
 import Encoding from "encoding-japanese";
 import {
@@ -11,16 +10,8 @@ import {
   strToEuc,
   officialEncode,
 } from "./global.js";
-import { search } from "./search.js";
-
-async function pageTemplate(c) {
-  // return fs.readFileSync(path + "/template.ejs", "utf-8");
-  return await (await fetch(env(c).FILES_PREFIX + "/template.ejs")).text();
-}
-async function searchTemplate(c) {
-  // return fs.readFileSync(path + "/search.ejs", "utf-8");
-  return await (await fetch(env(c).FILES_PREFIX + "/search.ejs")).text();
-}
+import { search, searchTemplate } from "./search.js";
+import { pageTemplate } from "./template.jsx";
 
 const wikiTitle = "プチコンまとめArchive";
 
@@ -210,7 +201,7 @@ app
       }
       const notesHtml = $("#notes").html();
       const pageTitle = $("#block-body-container > h2").text();
-      const html = ejs.render(await pageTemplate(c), {
+      const html = pageTemplate({
         wikiTitle: "プチコンまとめArchive",
         pageTitle: pageTitle,
         base: base,
@@ -220,7 +211,7 @@ app
         notes: notesHtml,
         officialEncode: officialEncode(page),
       });
-      return c.text(html, 200, { "Content-Type": "text/html; charset=utf-8" });
+      return c.html(html);
     } else {
       const res2 = await fetch(
         env(c).FILES_PREFIX +
@@ -253,7 +244,7 @@ app
         if (!(await pageExists(c, eucEncode))) {
           eucEncode = "";
         }
-        const html = ejs.render(await pageTemplate(c), {
+        const html = pageTemplate({
           wikiTitle,
           pageTitle: "ページが見つかりません",
           base: checkBase(c.req.path),
@@ -269,14 +260,12 @@ app
           notes: "",
           officialEncode: officialEncode(page),
         });
-        return c.text(html, 404, {
-          "Content-Type": "text/html; charset=utf-8",
-        });
+        return c.html(html, 404);
       }
     }
   })
   .get("/", async (c) => {
-    const html = ejs.render(await pageTemplate(c), {
+    const html = pageTemplate({
       wikiTitle,
       pageTitle: "プチコンまとめArchive トップページ",
       base: checkBase(c.req.path),
@@ -286,14 +275,14 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.text(html, 200, { "Content-Type": "text/html; charset=utf-8" });
+    return c.html(html);
   })
   .get("/search", async (c) => {
-    const html = ejs.render(await pageTemplate(), {
+    const html = pageTemplate({
       wikiTitle,
       pageTitle: "検索",
       base: 0,
-      body: ejs.render(await searchTemplate(), {
+      body: searchTemplate({
         word: "",
         base4: true,
         base3: true,
@@ -304,7 +293,7 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.text(html, 200, { "Content-Type": "text/html; charset=utf-8" });
+    return c.html(html);
   })
   .get("/search_result", async (c) => {
     let result = await search(c, c.req.query("word"));
@@ -340,7 +329,7 @@ app
       .join("\n");
     body += "</ul>";
 
-    const html = ejs.render(await pageTemplate(c), {
+    const html = pageTemplate({
       wikiTitle,
       pageTitle: `${c.req.query("word")} の検索結果 (${baseStrTitle
         .filter((a) => a)
@@ -348,7 +337,7 @@ app
       base: 0,
       body:
         body +
-        ejs.render(await searchTemplate(c), {
+        searchTemplate({
           word: c.req.query("word"),
           base4: !!c.req.query("base4"),
           base3: !!c.req.query("base3"),
@@ -359,11 +348,11 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.text(html, 200, { "Content-Type": "text/html; charset=utf-8" });
+    return c.html(html);
   })
   .notFound(async (c) => {
     console.error("404 Not Found: " + c.req.url);
-    const html = ejs.render(await pageTemplate(c), {
+    const html = pageTemplate({
       wikiTitle,
       pageTitle: "ページが見つかりません",
       base: checkBase(c.req.path),
@@ -376,7 +365,7 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.text(html, 404, { "Content-Type": "text/html; charset=utf-8" });
+    return c.html(html, 404);
   });
 
 export default app;

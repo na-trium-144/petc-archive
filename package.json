@@ -4,8 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
+    "dev": "tsx watch index-node.js"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20250214.0",
@@ -13,11 +12,10 @@
     "@types/node": "^20.11.17",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.4.7",
-    "ejs": "^3.1.10",
     "encoding-japanese": "^2.0.0",
-    "express": "^4.21.2",
     "glob": "^10.2.7",
     "hono": "^4.7.4",
+    "tsx": "^4.19.3",
     "wrangler": "^3.109.2"
   }
 }
