@@ -361,6 +361,12 @@ app
     });
     return c.html(html);
   })
+  .on("GET", ["/ref/*", "/sys/*"], async (c) => {
+    const res = await fetch(env(c).FILES_PREFIX + "/public" + c.req.path);
+    return c.body(res.body, res.status, {
+      "Content-Type": res.headers.get("Content-Type"),
+    });
+  })
   .notFound(async (c) => {
     console.error("404 Not Found: " + c.req.url);
     const html = pageTemplate({
