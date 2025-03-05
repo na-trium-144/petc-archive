@@ -85,15 +85,13 @@ for (const file of g) {
   // console.log(page);
   try {
     // output.push(convert(page));
-    if (
-      !page.includes("cmd=") &&
-      !page.includes("plugin=") &&
-      !page.includes("ptcmcon/")
-    ) {
+    if (!page.includes("ptcmcon/")) {
       const i = convert(page);
       if (i != null) {
-        // this.add(i);
-        idx.push(i);
+        if (!page.includes("cmd=") && !page.includes("plugin=")) {
+          // this.add(i);
+          idx.push(i);
+        }
         pages.push(i.page);
       }
     }
