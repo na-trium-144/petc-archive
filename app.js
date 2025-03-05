@@ -365,6 +365,19 @@ app
   })
   .on("GET", ["/ref/*", "/sys/*"], async (c) => {
     const res = await fetch(env(c).FILES_PREFIX + "/public" + c.req.path);
+    if (res.status === 404) {
+      const html = pageTemplate({
+        wikiTitle,
+        pageTitle: "ページが見つかりません",
+        base: checkBase(c.req.path),
+        body: "指定したファイルはプチコンまとめArchiveに存在しません。",
+        pankuzu: "",
+        lastUpdate: "",
+        notes: "",
+        officialEncode: null,
+      });
+      return c.html(html, 404, { "Cache-Control": cache });
+    }
     return c.body(res.body, res.status, {
       "Content-Type": res.headers.get("Content-Type"),
       "Cache-Control": cache,
