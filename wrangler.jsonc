@@ -3,12 +3,10 @@
   "name": "petc-cf",
   "main": "app.js",
   "compatibility_date": "2025-03-05",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  // "vars": {
-  //   "MY_VAR": "my-variable"
-  // },
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "FILES_PREFIX": "https://cloudflare.petc-static.pages.dev"
+  },
   // "kv_namespaces": [
   //   {
   //     "binding": "MY_KV_NAMESPACE",
@@ -31,8 +29,9 @@
   // "ai": {
   //   "binding": "AI"
   // },
-  // "observability": {
-  //   "enabled": true,
-  //   "head_sampling_rate": 1
-  // }
+  "observability": {
+    "logs": {
+      "enabled": true
+    }
+  }
 }
