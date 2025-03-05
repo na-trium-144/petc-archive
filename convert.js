@@ -1,14 +1,14 @@
-const { glob, globSync, globStream, globStreamSync, Glob } = require("glob");
-const fs = require("fs");
-const cheerio = require("cheerio");
-const Encoding = require("encoding-japanese");
-const {
+import { glob, globSync, globStream, globStreamSync, Glob } from "glob";
+import fs from "fs";
+import cheerio from "cheerio";
+import Encoding from "encoding-japanese";
+import {
   eucToStr,
   getSearchParamQuoted,
   checkBase,
   pageExists,
   kanaToHira,
-} = require("./global");
+} from "./global.js";
 // const lunr = require("lunr");
 // require("lunr-languages/lunr.stemmer.support")(lunr);
 // require("lunr-languages/tinyseg")(lunr);

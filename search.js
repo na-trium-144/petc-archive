@@ -1,15 +1,15 @@
+import { env } from 'hono/adapter'
 // const lunr = require("lunr");
 // require("lunr-languages/lunr.stemmer.support")(lunr);
 // require("lunr-languages/tinyseg")(lunr);
 // require("lunr-languages/lunr.ja")(lunr);
-const fs = require("fs");
-const { kanaToHira } = require("./global");
+import { kanaToHira } from "./global.js";
 
-exports.search = (word) => {
+export const search = async (c, word) => {
   // const idx = lunr.Index.load(JSON.parse(fs.readFileSync(__dirname + "/searchIndex.json", "utf-8")));
   // return idx.search(word).map((p) => p.ref);
   const idx = JSON.parse(
-    fs.readFileSync(__dirname + "/searchIndex.json", "utf-8")
+    await (await fetch(env(c).FILES_PREFIX + "/searchIndex.json")).text()
   );
   const words = kanaToHira(word.normalize("NFKD").toLowerCase()).split(" ");
   const result = [];

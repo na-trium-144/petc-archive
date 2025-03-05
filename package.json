@@ -1,26 +1,23 @@
 {
   "name": "petc_archive",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/na-trium-144/petc_archive.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/na-trium-144/petc_archive/issues"
-  },
-  "homepage": "https://github.com/na-trium-144/petc_archive#readme",
   "dependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@hono/node-server": "^1.13.8",
+    "@types/node": "^20.11.17",
     "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "encoding-japanese": "^2.0.0",
     "express": "^4.21.2",
-    "glob": "^10.2.7"
+    "glob": "^10.2.7",
+    "hono": "^4.7.4",
+    "wrangler": "^3.109.2"
   }
 }
