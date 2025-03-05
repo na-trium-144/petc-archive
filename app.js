@@ -221,7 +221,7 @@ app
         officialEncode: officialEncode(page),
       });
       return c.html(html, 200, { "Cache-Control": cache });
-    } else {
+      /*} else {
       const res2 = await fetch(
         env(c).FILES_PREFIX +
           "/websites_utf8/wiki.hosiken.jp/" +
@@ -233,48 +233,44 @@ app
         return c.body(res2.body, 200, {
           "Content-Type": res2.headers.get("Content-Type"),
           "Cache-Control": cache,
-        });
-      } else {
-        let page = c.req.url;
-        page = page.slice(8); // https://
-        page = page.slice(page.indexOf("/")); // origin
-        const decodedAry = Encoding.urlDecode(page);
-        const encoding = Encoding.detect(decodedAry);
-        const decodedStr = Encoding.codeToString(
-          Encoding.convert(decodedAry, {
-            from: encoding,
-            to: "UNICODE",
-          })
-        );
-        let eucEncode = Encoding.urlEncode(
-          Encoding.convert(decodedAry, {
-            from: encoding,
-            to: "EUC-JP",
-          })
-        )
-          .replaceAll("%2F", "/")
-          .replace("%3F", "?");
-        if (!(await pageExists(c, eucEncode, pageIndex))) {
-          eucEncode = "";
-        }
-        const html = pageTemplate({
-          wikiTitle,
-          pageTitle: "ページが見つかりません",
-          base: checkBase(c.req.path),
-          body:
-            `<p>ページ ${eucToStr(
-              Encoding.urlDecode(c.req.url)
-            )} は プチコンまとめArchive に存在しません。</p>` +
-            (eucEncode
-              ? `<p>ページ名はEUC-JPで指定する必要があります。もしかして: <a href="${eucEncode}">${decodedStr}</a></p>`
-              : ""),
-          pankuzu: "",
-          lastUpdate: "",
-          notes: "",
-          officialEncode: officialEncode(page),
-        });
-        return c.html(html, 404, { "Cache-Control": cache });
+        });*/
+    } else {
+      const decodedAry = Encoding.urlDecode(page);
+      const encoding = Encoding.detect(decodedAry);
+      const decodedStr = Encoding.codeToString(
+        Encoding.convert(decodedAry, {
+          from: encoding,
+          to: "UNICODE",
+        })
+      );
+      let eucEncode = Encoding.urlEncode(
+        Encoding.convert(decodedAry, {
+          from: encoding,
+          to: "EUC-JP",
+        })
+      )
+        .replaceAll("%2F", "/")
+        .replace("%3F", "?");
+      if (!(await pageExists(c, eucEncode, pageIndex))) {
+        eucEncode = "";
       }
+      const html = pageTemplate({
+        wikiTitle,
+        pageTitle: "ページが見つかりません",
+        base: checkBase(c.req.path),
+        body:
+          `<p>ページ ${eucToStr(
+            Encoding.urlDecode(c.req.url)
+          )} は プチコンまとめArchive に存在しません。</p>` +
+          (eucEncode
+            ? `<p>ページ名はEUC-JPで指定する必要があります。もしかして: <a href="${eucEncode}">${decodedStr}</a></p>`
+            : ""),
+        pankuzu: "",
+        lastUpdate: "",
+        notes: "",
+        officialEncode: officialEncode(page),
+      });
+      return c.html(html, 404, { "Cache-Control": cache });
     }
   })
   .get("/", async (c) => {
