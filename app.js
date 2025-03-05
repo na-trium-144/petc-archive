@@ -14,6 +14,7 @@ import { search, searchTemplate } from "./search.js";
 import { pageTemplate } from "./template.jsx";
 
 const wikiTitle = "プチコンまとめArchive";
+const cache = "max-age=86400";
 
 async function fetchPageIndex(c) {
   return JSON.parse(
@@ -219,7 +220,7 @@ app
         notes: notesHtml,
         officialEncode: officialEncode(page),
       });
-      return c.html(html);
+      return c.html(html, 200, { "Cache-Control": cache });
     } else {
       const res2 = await fetch(
         env(c).FILES_PREFIX +
@@ -231,6 +232,7 @@ app
       if (res2.ok) {
         return c.body(res2.body, 200, {
           "Content-Type": res2.headers.get("Content-Type"),
+          "Cache-Control": cache,
         });
       } else {
         let page = c.req.url;
@@ -271,7 +273,7 @@ app
           notes: "",
           officialEncode: officialEncode(page),
         });
-        return c.html(html, 404);
+        return c.html(html, 404, { "Cache-Control": cache });
       }
     }
   })
@@ -286,7 +288,7 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.html(html);
+    return c.html(html, 200, { "Cache-Control": cache });
   })
   .get("/search", async (c) => {
     const html = pageTemplate({
@@ -304,7 +306,7 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.html(html);
+    return c.html(html, 200, { "Cache-Control": cache });
   })
   .get("/search_result", async (c) => {
     let result = await search(c, c.req.query("word"));
@@ -359,12 +361,13 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.html(html);
+    return c.html(html, 200, { "Cache-Control": cache });
   })
   .on("GET", ["/ref/*", "/sys/*"], async (c) => {
     const res = await fetch(env(c).FILES_PREFIX + "/public" + c.req.path);
     return c.body(res.body, res.status, {
       "Content-Type": res.headers.get("Content-Type"),
+      "Cache-Control": cache,
     });
   })
   .notFound(async (c) => {
@@ -382,7 +385,7 @@ app
       notes: "",
       officialEncode: null,
     });
-    return c.html(html, 404);
+    return c.html(html, 404, { "Cache-Control": cache });
   });
 
 export default app;
