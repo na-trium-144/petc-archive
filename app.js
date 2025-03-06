@@ -125,7 +125,8 @@ app
                     newPath = newPath
                       .replace("/petc/img/", "/ref/petc/")
                       .replace("/petc3gou/img/", "/ref/petc3gou/")
-                      .replace("/petc4/img/", "/ref/petc4/");
+                      .replace("/petc4/img/", "/ref/petc4/")
+                      .replace("/ref/sys", "/sys");
                     url = new URL(newPath, origin);
                   }
                 }
@@ -242,7 +243,8 @@ app
                 newPath = newPath
                   .replace("/petc/img/", "/ref/petc/")
                   .replace("/petc3gou/img/", "/ref/petc3gou/")
-                  .replace("/petc4/img/", "/ref/petc4/");
+                  .replace("/petc4/img/", "/ref/petc4/")
+                  .replace("/ref/sys", "/sys");
                 $(a).replaceWith(
                   `<img src="${newPath}" alt="${alt}" title="${title}" width=${w} height=${h} />`
                 );

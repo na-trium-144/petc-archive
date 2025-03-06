@@ -179,7 +179,7 @@ export function pageTemplate({
                 {officialEncode && (
                   <div
                     class="block-info"
-                    style="margin-top: 1em; margin-bottom: 1em; padding: 10px;"
+                    style="margin-top: 1em; margin-bottom: 1em; padding: 10px; font-size: 0.75em;"
                   >
                     公式アーカイブのリンク:
                     <a href={`http://wiki.hosiken.jp${officialEncode}.html`}>
@@ -209,6 +209,14 @@ export function pageTemplate({
 
                   <h4>外部リンク</h4>
                   <ul>
+                    <li>
+                      <a
+                        href="http://wiki.hosiken.jp/"
+                        target="_blank"
+                      >
+                        プチコンまとめWiki(メンテナンス中)
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="http://petitverse.hosiken.jp/community/petitcom/"
