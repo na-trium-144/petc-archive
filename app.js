@@ -63,7 +63,73 @@ app
           let content = $(a).html();
           if (href && !href.startsWith("#")) {
             let url = new URL(href, origin);
+            // hostが wiki.hosiken.jp のとき、アーカイブのドメインになっているとき、ドメインがないとき
             if (url.host === "wiki.hosiken.jp" || url.origin === origin) {
+              if (!href.startsWith("/") && !href.startsWith("http")) {
+                // 公式アーカイブの相対パス
+                if (/^(\.\.\/)*index[^.]*\.html\?/.test(href)) {
+                  url = new URL(
+                    ["", "", "petc", "petc3gou", "petc4"][base] +
+                      "/" +
+                      url.search,
+                    origin
+                  );
+                } else {
+                  let newPath = href;
+                  if (newPath.endsWith(".html")) {
+                    while (newPath.includes("-")) {
+                      const i = newPath.indexOf("-");
+                      // AB- → %AB
+                      newPath =
+                        newPath.slice(0, i - 2) +
+                        "%" +
+                        newPath.slice(i - 2, i) +
+                        newPath.slice(i + 1);
+                    }
+                    newPath = newPath.slice(0, newPath.lastIndexOf("."));
+                    // Toukou.html → Toukou/index.html に変更したので1段ずれる
+                    console.log(newPath, page);
+                    if (newPath.startsWith("/")) {
+                      newPath = ".." + newPath;
+                    } else {
+                      newPath = "../" + newPath;
+                    }
+                    url = new URL(newPath, origin + page + "/");
+                  } else {
+                    let newPath = href;
+                    // 画像はなんか仕様が違う -AB → %AB
+                    newPath = newPath.replaceAll("-", "%");
+                    try {
+                      newPath = new URL(
+                        newPath.slice(newPath.indexOf("img/") + 4),
+                        origin +
+                          "/ref/" +
+                          ["", "", "petc", "petc3gou", "petc4"][base] +
+                          "/"
+                      ).pathname;
+                    } catch {
+                      // ただのハイフンが混じっていて%に置き換えてしまった場合
+                      // なぜ記号をハイフンでエスケープしてハイフンはハイフンのままなのか
+                      newPath = new URL(
+                        newPath
+                          .slice(newPath.indexOf("img/") + 4)
+                          .replaceAll("%", "-"),
+                        origin +
+                          "/ref/" +
+                          ["", "", "petc", "petc3gou", "petc4"][base] +
+                          "/"
+                      ).pathname;
+                    }
+                    //画像はpublic公開のurlなのでutf-8に変換する
+                    newPath = eucToStr(Encoding.urlDecode(newPath));
+                    newPath = newPath
+                      .replace("/petc/img/", "/ref/petc/")
+                      .replace("/petc3gou/img/", "/ref/petc3gou/")
+                      .replace("/petc4/img/", "/ref/petc4/");
+                    url = new URL(newPath, origin);
+                  }
+                }
+              }
               //url.searchは%エンコードされたまま
               //url.searchParamsは勝手にデコードされてて無能
               if (
@@ -146,6 +212,41 @@ app
           if (href) {
             let url = new URL(href, origin);
             if (url.host === "wiki.hosiken.jp" || url.origin === origin) {
+              if (!href.startsWith("/") && !href.startsWith("http")) {
+                // 公式アーカイブの相対パス
+                let newPath = href;
+                newPath = newPath.replaceAll("-", "%");
+                try {
+                  newPath = new URL(
+                    newPath.slice(newPath.indexOf("img/") + 4),
+                    origin +
+                      "/ref/" +
+                      ["", "", "petc", "petc3gou", "petc4"][base] +
+                      "/"
+                  ).pathname;
+                } catch {
+                  // ただのハイフンが混じっていて%に置き換えてしまった場合
+                  // なぜ記号をハイフンでエスケープしてハイフンはハイフンのままなのか
+                  newPath = new URL(
+                    newPath
+                      .slice(newPath.indexOf("img/") + 4)
+                      .replaceAll("%", "-"),
+                    origin +
+                      "/ref/" +
+                      ["", "", "petc", "petc3gou", "petc4"][base] +
+                      "/"
+                  ).pathname;
+                }
+                //画像はpublic公開のurlなのでutf-8に変換する
+                newPath = eucToStr(Encoding.urlDecode(newPath));
+                newPath = newPath
+                  .replace("/petc/img/", "/ref/petc/")
+                  .replace("/petc3gou/img/", "/ref/petc3gou/")
+                  .replace("/petc4/img/", "/ref/petc4/");
+                $(a).replaceWith(
+                  `<img src="${newPath}" alt="${alt}" title="${title}" width=${w} height=${h} />`
+                );
+              }
               if (
                 url.searchParams.has("plugin") &&
                 url.searchParams.get("plugin") === "ref"
