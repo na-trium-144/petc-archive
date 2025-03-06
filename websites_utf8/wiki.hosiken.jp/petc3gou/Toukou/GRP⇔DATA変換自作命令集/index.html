@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/GRPA2-CE-DATACA-D1-B4-B9-BC-AB-BA-EE-CC-BF-CE-E1-BD-B8-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:52:33 GMT -->
+<head>
+	<title>投稿プログラム : GRP⇔DATA変換自作命令集 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : GRP⇔DATA変換自作命令集 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 自作命令集, 実用ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="GRPA2-CE-DATACA-D1-B4-B9-BC-AB-BA-EE-CC-BF-CE-E1-BD-B8-a0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../indexa553.html?cmd=edit&amp;page=Toukou%2FGRP%A2%CEDATA%CA%D1%B4%B9%BC%AB%BA%EE%CC%BF%CE%E1%BD%B8">このページを編集</a></li>
+				<li><a href="../../indexb41d.html?cmd=diff&amp;page=Toukou%2FGRP%A2%CEDATA%CA%D1%B4%B9%BC%AB%BA%EE%CC%BF%CE%E1%BD%B8">前回からの変更点</a></li>
+				<li><a href="../../index7dc7.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FGRP%A2%CEDATA%CA%D1%B4%B9%BC%AB%BA%EE%CC%BF%CE%E1%BD%B8">ファイルをアップロード</a></li>
+				<li><a href="../../index344c.html?plugin=newpage&amp;refer=Toukou%2FGRP%A2%CEDATA%CA%D1%B4%B9%BC%AB%BA%EE%CC%BF%CE%E1%BD%B8">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : GRP⇔DATA変換自作命令集</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">GRP⇔DATA変換自作命令集</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.082sec. -->
+<div class="contents">
+<ul><li><a href="#j9a3594a">  概要 </a>
+<ul><li><a href="#g0d8c9cd">  使い方 </a>
+<ul><li><a href="#na281e4e">  GRP_TEXT(GRPをDATAにし、プログラムに埋め込めるようにする) </a></li>
+<li><a href="#ud2c7ba1">  TEXT_GRP(GRP_TEXTでDATAにしたものをGRPに描画する) </a></li></ul></li></ul></li>
+<li><a href="#p97898da">  公開キー </a>
+<ul><li><a href="#efe8e817"> Ver1.02 </a></li>
+<li><a href="#z4a074f5"> Ver1.01 </a></li>
+<li><a href="#i9be3a1e"> Ver1.00 </a></li></ul></li>
+<li><a href="#nb6e8e01">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2017年10月23日投稿 / 2017年11月8日更新
+/ 投稿者 : Soybeanman/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../index2856.html?cmd=taglist&amp;tag=%BC%AB%BA%EE%CC%BF%CE%E1%BD%B8">自作命令集</a> <a href="../../indexf49f.html?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> </span></p>
+<h3 id="j9a3594a">概要</h3>
+<p>初投稿です。おかしな点があるかもしれませんが大目にみてやってください。</p>
+<p>このページは、いままでに2602人が閲覧しました。</p>
+<p>1. GRPからDATA文でプログラム内に埋め込めるように変換してGRPに戻せる命令が入っています。</p>
+<p>2. ちなみにDEFSP.GRPを変換して何文字になるかを調べたところ、150343文字でした。1pxあたり0.57文字(小数点第3位以下切り捨て)です。</p>
+
+<h4 id="g0d8c9cd">使い方</h4>
+<ul><li>EXECで読み込むか、DEFをコピーして使ってください。</li></ul>
+
+<h5 id="na281e4e">GRP_TEXT(GRPをDATAにし、プログラムに埋め込めるようにする)</h5>
+<ul><li>書式</li></ul>
+<p>GRP_TEXT 出力スロット,変換する範囲(X,Y,幅,高さ),犠牲にする色</p>
+<ul><li>説明</li></ul>
+<p>出力スロットには0~3で入力してください(おすすめは3)</p>
+<p>X,Y,幅,高さでDATAにしたい範囲を入力してください。</p>
+<p>犠牲にする色には、RGB(0,0,0,0)になってしまってもいい色を選択してください。</p>
+
+<h5 id="ud2c7ba1">TEXT_GRP(GRP_TEXTでDATAにしたものをGRPに描画する)</h5>
+<ul><li>書式</li></ul>
+<p>TEXT_GRP @ラベル</p>
+<ul><li>説明</li></ul>
+<p>@ラベルの後に書かれたDATAを読み込みます。</p>
+<p>GRP_TEXTで出力されたDATAが参照されるようにしてください。</p>
+
+<h3 id="p97898da">公開キー</h3>
+<p>プチコン3号/Big用の公開キーです。</p>
+<p>トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることが出来ます。</p>
+
+<h4 id="efe8e817">Ver1.02</h4>
+<ul><li>使い物にならないバグの修正</li></ul>
+<p>をしたバージョンです。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">NDQ3P43D</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="z4a074f5">Ver1.01</h4>
+<ul><li>バグの修正</li></ul>
+<p>をしたバージョンです。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">8JDXS394(公開してません)</span>
+</div>
+</div>
+
+</div>
+
+
+<h4 id="i9be3a1e">Ver1.00</h4>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">CZD4439J(公開してません)</span>
+</div>
+</div>
+
+</div>
+
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/GRP⇔DATA変換自作命令集" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="dd4db1d1af578a81437e9cb4bcbdf454" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダウンロードしたよ</td>
+   <td align="right" class="vote_td2">24&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B7A4BFA4E8" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">ダウンロードする気が起きない</td>
+   <td align="right" class="vote_td1">2&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B9A4EBB5A4A4ACB5AFA4ADA4CAA4A4" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ヌベヂョンヌゾジョンベルミッティスモゲロンボョｗｗｗｗｗｗ</td>
+   <td align="right" class="vote_td2">11&nbsp;&nbsp;
+    <input type="submit" name="vote_A5CCA5D9A5C2A5E7A5F3A5CCA5BEA5B8A5E7A5F3A5D9A5EBA5DFA5C3A5C6A5A3A5B9A5E2A5B2A5EDA5F3A5DCA5E7A3F7A3F7A3F7A3F7A3F7A3F7" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="nb6e8e01">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>Soybeanman</strong> : うまく投稿できました。初投稿なのでどうかと思いましたが一安心です。 (<span class="comment_date">2017/10/23 (月) 15:14:31</span>)</li>
+<li><strong>Soybeanman</strong> : 更新しました。Miiverseの部分を消して、代わりに投票の選択肢を増やしときました。 (<span class="comment_date">2017/11/08 (水) 17:40:00</span>)</li>
+<li><strong>Soybeanman</strong> : いつの間にか閲覧人数760人越えになっていました！！みなさん本当にありがとうございます！ (<span class="comment_date">2018/07/19 (木) 18:23:16</span>)</li>
+<li><strong>Soybeanman</strong> : 更新しました。公開していないのも混じっていたので明記しました。 (<span class="comment_date">2018/09/29 (土) 19:38:48</span>)</li>
+<li><strong>takumi</strong> : どうもー！　掲示板のtakumiですー！　スクショ見せて欲しいですね。 (<span class="comment_date">2018/09/29 (土) 22:53:19</span>)</li>
+<li><strong>Soybeanman</strong> : takumiさん&gt;&gt;何のスクショを見せてほしいのか教えて下さい。 (<span class="comment_date">2018/09/30 (日) 07:29:51</span>)</li>
+<li><strong>Soybeanman</strong> : このDEFを使ったプログラムって他の人のであるんですかね…?使いやすい命令だと思うんですが(自画自賛) (<span class="comment_date">2018/10/27 (土) 19:15:14</span>)</li>
+<li><strong>はる</strong> : なんか寂しそうなので<a href="Smartphone_Mock.html" title="Toukou/Smartphone_Mock (565d)">Smartphone Mock</a>のアップデータで使わせていただきます。 (<span class="comment_date">2018/10/28 (日) 07:09:54</span>)</li>
+<li><strong>Soybeanman</strong> : わざわざお気遣いありがとうございます… (<span class="comment_date">2018/10/28 (日) 08:04:42</span>)</li>
+<li><strong>はる</strong> : 気遣いという程でもありません。丁度使う機会があったので使わせていただきました。 (<span class="comment_date">2018/10/28 (日) 08:35:27</span>)</li>
+<li><strong>Soybeanman</strong> : 説明が分かりにくい部分があったので編集しました。 (<span class="comment_date">2018/10/28 (日) 18:42:01</span>)</li>
+<li><strong>R.Y.Miserable</strong> : プチコン初心者です。ダウンロードしましたが、使い方がよく分かりません。 (<span class="comment_date">2018/11/10 (土) 13:39:40</span>)</li>
+<li><strong>Soybeanman</strong> : 返信遅れました。すみません。R.Y.Miserableさんコメントありがとうございます。基本的に使う命令は、GRP_TEXT(GRPをDATAにし、プログラムに埋め込めるようにする)、TEXT_GRP(GRP_TEXTでDATAにしたものをGRPに描画する)の2つです。その2つの使い方、説明を概要の方に書いておきます。 (<span class="comment_date">2018/11/14 (水) 20:26:26</span>)</li>
+<li><strong>Soybeanman</strong> : 編集しました。命令の説明を追加しました。 (<span class="comment_date">2018/11/14 (水) 20:49:22</span>)</li>
+<li><strong>Soybeanman</strong> : ウオーッ！？閲覧人数1330人越えになってました！本当にありがとうございます！ (<span class="comment_date">2019/07/29 (月) 17:53:11</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/GRP⇔DATA変換自作命令集" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="dd4db1d1af578a81437e9cb4bcbdf454" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="DEAD_HEAT_RACING.html" title="Toukou/DEAD_HEAT_RACING (565d)">DEAD HEAT RACING<span class="counter">(1)</span></a></li>
+ <li><a href="DEFENSE20-LINE.html" title="Toukou/DEFENSE LINE (565d)">DEFENSE LINE<span class="counter">(1)</span></a></li>
+ <li><a href="DENTAKU.html" title="Toukou/DENTAKU (565d)">ピカチュウ2世の電卓<span class="counter">(1)</span></a></li>
+ <li><a href="DOGFIGHT.html" title="Toukou/DOGFIGHT (565d)">DOGFIGHT<span class="counter">(1)</span></a></li>
+ <li><a href="DIALOGCD-D1-B4-C1-BB-FA-A5-C4-A1-BC-A5-EB-.html" title="Toukou/DIALOG用漢字ツール (565d)">DIALOG用漢字ツール<span class="counter">(1)</span></a></li>
+ <li><a href="DATA5-D5-A5-A1-A5-A4-A5-EB-A4-CE-A5-D8-A5-C3-A5-C0-B3-CE-C7-A7-A5-C6-A5-B9-A5-C8-.html" title="Toukou/DATファイルのヘッダ確認テスト (565d)">DATファイルのヘッダ確認テスト<span class="counter">(1)</span></a></li>
+ <li><a href="DATDUMP20-Ver1.00.html" title="Toukou/DATDUMP Ver1.00 (565d)">DATDUMP Ver1.00<span class="counter">(1)</span></a></li>
+ <li><a href="CrossOverCrusade.html" title="Toukou/CrossOverCrusade (565d)">CrossOverCrusade[簡易戦略SLG]<span class="counter">(1)</span></a></li>
+ <li><a href="Countdown.html" title="Toukou/Countdown (565d)">【公開終了】2019年へのカウントダウン<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 2602 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.108 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:05  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/GRPA2-CE-DATACA-D1-B4-B9-BC-AB-BA-EE-CC-BF-CE-E1-BD-B8-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:52:35 GMT -->
+</html>

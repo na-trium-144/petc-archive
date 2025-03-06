@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/SmileBasic32D-CustomCompiler.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:00:22 GMT -->
+<head>
+	<title>投稿プログラム : Smile Basic Custom Compiler - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : Smile Basic Custom Compiler - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, カスタムコンパイラ, プログラム作成支援, ライブラリ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="SmileBasic32D-CustomCompilera0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../index1a73.html?cmd=edit&amp;page=Toukou%2FSmileBasic3-CustomCompiler">このページを編集</a></li>
+				<li><a href="../../index1c24.html?cmd=diff&amp;page=Toukou%2FSmileBasic3-CustomCompiler">前回からの変更点</a></li>
+				<li><a href="../../indexff88.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FSmileBasic3-CustomCompiler">ファイルをアップロード</a></li>
+				<li><a href="../../index425a.html?plugin=newpage&amp;refer=Toukou%2FSmileBasic3-CustomCompiler">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : Smile Basic Custom Compiler</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">SmileBasic3-CustomCompiler</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.097sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#Komidashi1">  使用方法 </a></li>
+<li><a href="#Komidashi2-1">  機能一覧 </a>
+<ul><li><a href="#Komidashi2-2">  「#INCLUDE」による外部ソース自動結合 </a></li>
+<li><a href="#Komidashi2-2">  モジュール機能によるプログラムの完全モジュール化 </a></li>
+<li><a href="#Komidashi2-3">  モジュール間の要素指定 </a></li></ul></li>
+<li><a href="#dacbcd60">  追加命令一覧 </a></li></ul></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#Comments">  コメント </a></li></ul>
+</div>
+
+<p>2015年3月8日投稿
+/ 投稿者 : 涼季 遊
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../indexf49f.html?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="../../index0c82.html?cmd=taglist&amp;tag=%A5%AB%A5%B9%A5%BF%A5%E0%A5%B3%A5%F3%A5%D1%A5%A4%A5%E9">カスタムコンパイラ</a> <a href="../../index5924.html?cmd=taglist&amp;tag=%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%BA%EE%C0%AE%BB%D9%B1%E7">プログラム作成支援</a> <a href="../../indexc801.html?cmd=taglist&amp;tag=%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ライブラリ</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>このプログラムは、プチコン３号で作られたライブラリプログラムを便利に使用するためのプログラム作成支援ツールです。<br />
+プチコン３号のプログラムに「include」「module」などの追加書式をサポートさせます<br /></p>
+<p>プログラムの自由度が広がり、たいていのことはできるようになったプチコン３号ですが、ある程度規模の大きい作品には<br />
+公開されているライブラリを使っていきたいところです。<br /></p>
+<p>しかし３号でも変わらず、ライブラリを使うには変数や関数の名前がかぶらないように変数名を長くせざるを得ないなど、<br />
+ライブラリを作る方も使う方もちょっと不便です。<br />
+あまつさえMk2まであった「APPEND」が無くなったため、「いったいどうやってソース結合すればいいんだぁ？」と思った人もいるかもしれません(コピペすればいいんですが)<br /></p>
+<p>そんなこんなでプチコンの抱えるライブラリ云々の不満を解決するためのツールです。<br /></p>
+
+<h4 id="Komidashi1">使用方法</h4>
+<p>１．プチコンのプログラムソースに対して、SmileBasic3CustomCompilerがサポートする命令や書式を記述します<br />
+　　(※この段階のプログラムはプチコン3号では実行できません、手順4まで進みコンパイルする必要があります)<br />
+２．SmileBasic3CustomCompilerを実行し、自分の作ったプログラム名を指定します。<br />
+３．コンパイルが始まるので待ちます<br />
+４．書式にエラーがなければ処理が完了し、プチコン3号で実行可能なプログラムが保存されます<br /></p>
+
+<h4 id="Komidashi2-1">機能一覧</h4>
+<p>　SmileBasic3CustomCompilerがサポートする機能の一覧です<br /></p>
+
+<h5 id="Komidashi2-2">「#INCLUDE」による外部ソース自動結合</h5>
+<p>ライブラリとして作った外部プログラムを結合します。<br /></p>
+<p>ライブラリを埋め込みたい箇所に<br /></p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＃ＩＮＣＬＵＤＥ　［ＰＲＧＮＡＭＥ］</span></li>
+</ol></code></div></div>
+<p>のように記述します。<br />
+コンパイル後、この命令を記述した行に指定したプログラムが埋め込まれます。<br /></p>
+<p>以下記述例<br /></p>
+<ul><li>ライブラリを使用するプログラム
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">ＡＢＣ＝ＦＵＮＣ１（）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＃ＩＮＣＬＵＤＥ　ＬＩＢ１</span></li>
+</ol></code></div></div></li></ul>
+<ul><li>ライブラリプログラム(プログラム名：LIB1)
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＦＵＮＣ１（）</span></li>
+<li><span class="smbas">　ＲＲＥＴＵＲＮ　５１２</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div></li></ul>
+<ul><li>コンパイル後
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">ＡＢＣ＝ＦＵＮＣ１（）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＦＵＮＣ１（）</span></li>
+<li><span class="smbas">　ＲＲＥＴＵＲＮ　５１２</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas">’ＩＮＣＬＵＤＥＤ：ＬＩＢ１</span></li>
+</ol></code></div></div></li></ul>
+
+<h5 id="Komidashi2-2">モジュール機能によるプログラムの完全モジュール化</h5>
+<p>プログラムの一部をモジュール化し、変数や関数などの要素をメインプログラムから隠蔽します</p>
+<p>プログラム中のモジュール化したい箇所を<br />
+「#MODULE」~「#GLOBAL」で囲うことによってその箇所をモジュールとして扱います</p>
+<p>「#INCLUDE」を「#MODULE」~「#GLOBAL」で囲えばライブラリを丸ごとモジュール指定することになります</p>
+<p>「#MODULE」~「#GLOBAL」で囲われた領域の変数や関数は、<br />
+コンパイル時に自動変換され、「#MODULE」の引数に指定したモジュール名特有の名称になります</p>
+<p>※モジュール変数は必ず「DIM」で宣言する必要があります宣言しない場合、モジュール変数として扱われません</p>
+<p>記述例<br /></p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">ＤＥＦ　ＳＥＴＡＢＣ　ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　ＡＢＣ＝ＶＡＬＵＥ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＃ＧＬＯＢＡＬ</span></li>
+</ol></code></div></div>
+<p>コンパイル後</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＩＭ　ＴＥＳＴＭＯＤＵＬＥ＿ＡＢＣ</span></li>
+<li><span class="smbas">ＤＥＦ　ＴＥＳＴＭＯＤＵＬＥ＿ＳＥＴＡＢＣ　ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　ＴＥＳＴＭＯＤＵＬＥ＿ＡＢＣ＝ＶＡＬＵＥ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">’＃ＧＬＯＢＡＬ</span></li>
+</ol></code></div></div>
+<p>また、モジュールは階層型にネストすることが可能で<br />
+「#MODULE」~「#GLOBAL」で囲われた領域をさらに「#MODULE」~「#GLOBAL」で囲うことにより、ネストします</p>
+<p>記述例<br /></p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ２</span></li>
+<li><span class="smbas">　ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">　＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ１</span></li>
+<li><span class="smbas">　　ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">　　ＤＥＦ　ＳＥＴＡＢＣ　ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　　ＡＢＣ＝ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　ＥＮＤ</span></li>
+<li><span class="smbas">　＃ＧＬＯＢＡＬ</span></li>
+<li><span class="smbas">＃ＧＬＯＢＡＬ</span></li>
+</ol></code></div></div>
+<p>コンパイル後</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ２</span></li>
+<li><span class="smbas">　ＤＩＭ　ＴＥＳＴＭＯＤＵＬＥ２＿ＡＢＣ</span></li>
+<li><span class="smbas">’＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ１</span></li>
+<li><span class="smbas">　　ＤＩＭ　ＴＥＳＴＭＯＤＵＬＥ２＿ＴＥＳＴＭＯＤＵＬＥ１＿ＡＢＣ</span></li>
+<li><span class="smbas">　　ＤＥＦ　ＴＥＳＴＭＯＤＵＬＥ２＿ＴＥＳＴＭＯＤＵＬＥ１＿ＳＥＴＡＢＣ　ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　　ＴＥＳＴＭＯＤＵＬＥ２＿ＴＥＳＴＭＯＤＵＬＥ１＿ＡＢＣ＝ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　ＥＮＤ</span></li>
+<li><span class="smbas">’＃ＧＬＯＢＡＬ</span></li>
+<li><span class="smbas">’＃ＧＬＯＢＡＬ</span></li>
+</ol></code></div></div>
+
+<h5 id="Komidashi2-3">モジュール間の要素指定</h5>
+<p>モジュール化された要素に外部からアクセスするには<br />
+　[モジュール名].[変数名]<br />
+のようにモジュール名を指定して記述します。<br /></p>
+<p>またネストした下位モジュールから親モジュールへアクセスするには<br />
+　SUPER.[変数名]<br />
+のように記述します、また、親の親にアクセスするには<br />
+　SUPER.SUPER.[変数名]<br />
+のように記述します</p>
+<p>モジュール中から非モジュール空間の要素へアクセスするには<br />
+　G.[変数名]<br />
+のように「G.」の後に記述します<br /></p>
+<p>モジュールがネストしている場合は、モジュール名を[.]で区切って階層指定します</p>
+<p>モジュール中で非モジュール空間の要素を宣言したい場合は</p>
+<p>#PUBLIC [DIM等の宣言式]<br />
+と記述します</p>
+<p>以下記述例</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＩＭ　ＸＸＸ</span></li>
+<li><span class="smbas">ＸＸＸ＝１２３</span></li>
+<li><span class="smbas">ＧＯＳＵＢ＠ＴＥＳＴＭＯＤＵＬＥ２．ＩＮＩＴ</span></li>
+<li><span class="smbas">ＧＯＳＵＢ＠ＴＥＳＴＭＯＤＵＬＥ２．ＴＥＳＴＭＯＤＵＬＥ１．ＩＮＩＴ</span></li>
+<li><span class="smbas">ＧＯＳＵＢ＠ＴＥＳＴＭＯＤＵＬＥ３．ＩＮＩＴ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＴＥＳＴＭＯＤＵＬＥ２．ＳＥＴＡＢＣ</span></li>
+<li><span class="smbas">ＴＥＳＴＭＯＤＵＬＥ２．ＴＥＳＴＭＯＤＵＬＥ１．ＳＥＴＡＢＣ（ＴＥＳＴＭＯＤＵＬＥ２．ＧＥＴＡＢＣ（））</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">？ＴＥＳＴＭＯＤＵＬＥ２．ＴＥＳＴＭＯＤＵＬＥ１．ＧＥＴＡＢＣ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ２</span></li>
+<li><span class="smbas">　＠ＩＮＩＴ</span></li>
+<li><span class="smbas">　　ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">　ＤＥＦ　ＳＥＴＡＢＣ</span></li>
+<li><span class="smbas">　　ＡＢＣ＝Ｇ．ＸＸＸ</span></li>
+<li><span class="smbas">　ＥＮＤ</span></li>
+<li><span class="smbas">　ＤＥＦ　ＧＥＴＡＢＣ（）</span></li>
+<li><span class="smbas">　　ＲＥＴＵＲＮ　ＡＢＣ</span></li>
+<li><span class="smbas">　ＥＮＤ</span></li>
+<li><span class="smbas">　＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ１</span></li>
+<li><span class="smbas">　　＠ＩＮＩＴ</span></li>
+<li><span class="smbas">　　　ＤＩＭ　ＡＢＣ</span></li>
+<li><span class="smbas">　　ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">　　ＤＥＦ　ＳＥＴＡＢＣ　ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　　ＡＢＣ＝ＶＡＬＵＥ</span></li>
+<li><span class="smbas">　　ＥＮＤ</span></li>
+<li><span class="smbas">　　ＤＥＦ　ＧＥＴＡＢＣ（）</span></li>
+<li><span class="smbas">　　　ＲＥＴＵＲＮ　ＳＵＰＥＲ．ＡＢＣ　＋　Ｇ．ＴＥＳＴＭＯＤＵＬＥ３．ＺＺＺ</span></li>
+<li><span class="smbas">　　ＥＮＤ</span></li>
+<li><span class="smbas">　＃ＧＬＯＢＡＬ</span></li>
+<li><span class="smbas">＃ＧＬＯＢＡＬ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">＃ＭＯＤＵＬＥ　ＴＥＳＴＭＯＤＵＬＥ３</span></li>
+<li><span class="smbas">　＠ＩＮＩＴ</span></li>
+<li><span class="smbas">　　ＤＩＭ　ＺＺＺ</span></li>
+<li><span class="smbas">　　ＺＺＺ＝１０２４</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ</span></li>
+<li><span class="smbas">＃ＧＬＯＢＡＬ</span></li>
+</ol></code></div></div>
+
+<h4 id="dacbcd60">追加命令一覧</h4>
+<p>「#」から始まる追加命令の一覧です</p>
+<ul><li>#INCLUDE [ファイル名]<br />
+引数に指定した外部プログラムを結合します<br />
+指定するファイルはコンパイラと同じプロジェクトである必要があります</li></ul>
+<ul><li>#OUTPUT [保存ファイル名]<br />
+コンパイル後のプログラムのファイル名を指定します<br />
+コンパイル完了後、[保存ファイル名]で指定された名前のファイルが保存されます</li></ul>
+<ul><li>#MODULE [モジュール名]<br />
+モジュール空間の開始を宣言します<br />
+「#MODULE」~「#GLOBAL」で囲われた領域はモジュール空間となり、外部プログラムから隠蔽されます</li></ul>
+<ul><li>#GLOBAL<br />
+モジュール空間の終了を宣言します</li></ul>
+<ul><li>#PUBLIC [宣言式]<br />
+非モジュール空間の要素を宣言します<br />
+以下のように引数として宣言式を記述して使用します<br />
+<p>#PUBLIC DEF FUNTION1(PARAM1)</p></li></ul>
+
+<h3 id="QR">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">4KS5D443</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="Comments">コメント</h3>
+<p>この作品に対する感想や要望、バグ報告などがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : HSPに似てる (<span class="comment_date">2015/03/08 (日) 19:08:42</span>)</li>
+<li><strong>涼季 遊</strong> : というかモロにパクりました (<span class="comment_date">2015/03/09 (月) 00:00:59</span>)</li>
+<li><strong>名無しさん</strong> : 行を分解する所でコメントとカンマを間違えてる。他にも要素の比較をする所で2箇所間違いがあった (<span class="comment_date">2015/06/09 (火) 11:38:15</span>)</li>
+<li><strong>最凶プログラマー</strong> : HSP... (<span class="comment_date">2017/12/08 (金) 07:30:49</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/SmileBasic3-CustomCompiler" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="c699759438cc62cc59050e1e9520de7a" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="JUMP20-RUNNER.html" title="Toukou/JUMP RUNNER (565d)">JUMP RUNNER<span class="counter">(1)</span></a></li>
+ <li><a href="JR2D-CF-A9-C0-FE-.html" title="Toukou/JR-路線 (565d)">JR停車駅表示プログラム<span class="counter">(1)</span></a></li>
+ <li><a href="JPHA5-E9-A5-B8-A5-AA-player.html" title="Toukou/JPHラジオplayer (565d)">JPHラジオplayer<span class="counter">(1)</span></a></li>
+ <li><a href="JUMP20-and20-SHOTA1-AA-.html" title="Toukou/JUMP and SHOT！ (565d)">JUMP&amp;SHOT！<span class="counter">(1)</span></a></li>
+ <li><a href="Jellyfish.html" title="Toukou/Jellyfish (565d)">Jellyfish<span class="counter">(1)</span></a></li>
+ <li><a href="KEY20-OS.html" title="Toukou/KEY OS (565d)">KEY OS<span class="counter">(1)</span></a></li>
+ <li><a href="KENSHO2D-RND.html" title="Toukou/KENSHO-RND (565d)">KENSHO-RND<span class="counter">(1)</span></a></li>
+ <li><a href="KARATE.html" title="Toukou/KARATE (565d)">KARATE<span class="counter">(1)</span></a></li>
+ <li><a href="Inkeyex.html" title="Toukou/Inkeyex (565d)">拡張キーボード命令 Inkey_ex<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1907 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.128 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:51  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/SmileBasic32D-CustomCompiler.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:00:23 GMT -->
+</html>

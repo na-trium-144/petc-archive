@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/PTCLIB/Reference.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:55:30 GMT -->
+<head>
+	<title>PTCLIB: リファレンス - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="PTCLIB: リファレンス - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="Referencea0e2.html?plugin=search">検索</a></li>
+		<li><a href="../../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../../indexfb2a.html?cmd=edit&amp;page=Toukou%2FPTCLIB%2FReference">このページを編集</a></li>
+				<li><a href="../../../indexc696.html?cmd=diff&amp;page=Toukou%2FPTCLIB%2FReference">前回からの変更点</a></li>
+				<li><a href="../../../index0a90.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FPTCLIB%2FReference">ファイルをアップロード</a></li>
+				<li><a href="../../../index9f5d.html?plugin=newpage&amp;refer=Toukou%2FPTCLIB%2FReference">新しいページをつくる</a></li>
+				<li><a href="../../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>PTCLIB: リファレンス</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../../index.html">トップ</a></li>
+<li><a href="../../Toukou.html">Toukou</a></li>
+<li><a href="../PTCLIB.html">PTCLIB</a></li>
+<li id="list-pankuzu-current"><a href="#">Reference</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.034sec. -->
+<div class="contents">
+<ul><li><a href="#oe5ae287">  命令 </a>
+<ul><li><a href="#func_talkv2">  TALKV2 </a></li>
+<li><a href="#func_usleep">  USLEEP </a></li>
+<li><a href="#func_gchr">  GCHR </a></li>
+<li><a href="#lcbba81c">  SETFUNCKEY$ </a></li>
+<li><a href="#ldcaa0c5">  FUNCRESET </a></li>
+<li><a href="#k9a76310">  GETUPTIME_MC </a></li></ul></li>
+<li><a href="#idd08dc3">  関数 </a>
+<ul><li><a href="#e58cca3c">  GETBASICVER() </a></li>
+<li><a href="#z411b86d">  FREEARY </a></li>
+<li><a href="#m758ce2d">  RND2 </a></li>
+<li><a href="#z6056e39">  GETKEYSTRALL$ </a></li>
+<li><a href="#d7139d7b">  KTKN2KN </a></li>
+<li><a href="#d01f4422">  SMINT </a></li></ul></li></ul>
+</div>
+
+<ul><li>リファレンス作成にご協力ください。</li></ul>
+<h3 id="oe5ae287">命令</h3>
+
+<h4 id="func_talkv2">TALKV2</h4>
+<p>TALKV2 &quot;<strong>しゃべらせたい文字列</strong>&quot;</p>
+<ul><li>通常のTALK命令よりも、より自然っぽくしゃべらせることができます。</li>
+<li>あまり長いと、512文字以上でなくてもエラーになるかもしれません。</li></ul>
+
+<h4 id="func_usleep">USLEEP</h4>
+<p>USLEEP <strong>待機する時間(ミリ秒)</strong></p>
+<ul><li>指定したミリ秒だけ待機します。</li>
+<li>1秒は1000ミリ秒です。</li></ul>
+
+<h4 id="func_gchr">GCHR</h4>
+<p>GCHR <strong>位置X</strong>,<strong>位置Y</strong>,<strong>表示文字列</strong>,<strong>サイズX</strong>,<strong>サイズY</strong>,<strong>カラーコード</strong>,<strong>間隔(px)</strong></p>
+<ul><li>GPUTCHRの拡張版で、文字の間隔を変えられるのが特徴です。</li></ul>
+
+<h4 id="lcbba81c">SETFUNCKEY$</h4>
+<p>SETFUNCKEY$ &quot;<strong>表示させる文字列</strong>&quot;<br /></p>
+<ul><li>ファンクションキーを利用して文字列を表示します。</li>
+<li>文字列は35文字まで受け付けます。36文字以降はカットされます。</li></ul>
+
+<h4 id="ldcaa0c5">FUNCRESET</h4>
+<p>FUNCRESET <strong>ファンクションキーID(1~5)</strong></p>
+<ul><li>指定したファンクションキーをリセットします。(初期状態に戻します)</li>
+<li>ファンクションキーIDに-1を指定すると全てリセットします。</li></ul>
+
+<h4 id="k9a76310">GETUPTIME_MC</h4>
+<p>GETUPTIME_MC OUT <strong>起動時間H</strong>,<strong>起動時間M</strong>,<strong>起動時間S</strong><br /></p>
+<ul><li>プチコンを起動してから経った時間を、<strong>MAINCNT</strong>から取得します。</li>
+<li>フレーム数から計算するので、後述のGETUPTIME_MSと誤差が出ます。</li></ul>
+
+<h3 id="idd08dc3">関数</h3>
+
+<h4 id="e58cca3c">GETBASICVER()</h4>
+<p>PRINT GETBASICVER()</p>
+<ul><li>プチコンのバージョンを取得します。</li></ul>
+
+<h4 id="z411b86d">FREEARY</h4>
+<p>INTARRAY = FREEARY()</p>
+<ul><li>配列を初期化します。初期化できるのは数値配列のみとなり、添字は0になります。</li>
+<li>この関数を利用してメモリ削減に使うこともできます。</li></ul>
+
+<h4 id="m758ce2d">RND2</h4>
+<p>RND2(<strong>乱数最低値</strong>,<strong>乱数最大値</strong>)<br /></p>
+<ul><li>RND()関数を拡張して、指定範囲内の乱数を発生させることができます。</li>
+<li>乱数最低値にマイナスを指定すると0が返ります（例外）。</li></ul>
+
+<h4 id="z6056e39">GETKEYSTRALL$</h4>
+<p>PRINT GETKEYSTRALL$()</p>
+<ul><li>ファンクションキーの５つに設定された文字列を結合して返します。</li></ul>
+
+<h4 id="d7139d7b">KTKN2KN</h4>
+<p>PRINT KTKN2KN(&quot;アイウエオ&quot;)<br /></p>
+<ul><li>カタカナをひらがなに変換します。</li>
+<li>「~」「...」などの記号は変換されません。</li></ul>
+
+<h4 id="d01f4422">SMINT</h4>
+<p><strong>数値変数</strong> = SMINT(<strong>数値変数</strong>,<strong>目標値</strong>,<strong>スピード</strong>)</p>
+<ul><li>数値変数の値を滑らかに変化させます。</li>
+<li>スピードは10を指定すると、目標値の1/10ずつ増えていきます。</li>
+<li>普通の直線移動と違い、最後には変化が遅くなります。(「目標値 - 現在値」の差をスピードで割った値を加算しています)</li>
+<li>途中で目標値が変わっても対応できます。</li>
+<li>この関数を1回実行する毎に加算されていくので、ループを使わなければなりません。</li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="../Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="../DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="../PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="../Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="../TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="../B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../GravityLabo.html" title="Toukou/GravityLabo (565d)">GravityLabo<span class="counter">(1)</span></a></li>
+ <li><a href="../Gravity20-OS.html" title="Toukou/Gravity OS (565d)">【公開終了】Gravity OS<span class="counter">(1)</span></a></li>
+ <li><a href="../GravityLabo2.html" title="Toukou/GravityLabo2 (565d)">GravityLabo2<span class="counter">(1)</span></a></li>
+ <li><a href="../GravityLabo3.html" title="Toukou/GravityLabo3 (565d)">GravityLabo3<span class="counter">(1)</span></a></li>
+ <li><a href="../H4A5-EC-A1-BC-A5-B9-.html" title="Toukou/H4レース (565d)">H4レース<span class="counter">(1)</span></a></li>
+ <li><a href="../H.C.Escape.html" title="Toukou/H.C.Escape (565d)">H.C.Escape<span class="counter">(1)</span></a></li>
+ <li><a href="../GA5-EA-A5-B5-A5-A4-A5-BA-.html" title="Toukou/Gリサイズ (565d)">Gリサイズ<span class="counter">(1)</span></a></li>
+ <li><a href="../Ghost.html" title="Toukou/Ghost (565d)">Ghost<span class="counter">(1)</span></a></li>
+ <li><a href="../GUNMAN28-BD-E9-BF-B4-BC-D4-A4-AC-BC-AB-CE-CF-A4-C7-BA-EE-A4-C3-A4-BF-29-.html" title="Toukou/GUNMAN(初心者が自力で作った) (565d)">GUNMAN<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 684 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.062 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:00  (565d) | <a href="../../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/PTCLIB/Reference.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:55:31 GMT -->
+</html>

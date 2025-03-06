@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/m40-cro.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:47:51 GMT -->
+<head>
+	<title>投稿プログラム : 実行時マクロライブラリ &quot;M@CRO&quot; - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 実行時マクロライブラリ &quot;M@CRO&quot; - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ライブラリ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="m40-croa0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../indexf065.html?cmd=edit&amp;page=Toukou%2Fm%40cro">このページを編集</a></li>
+				<li><a href="../../index0508.html?cmd=diff&amp;page=Toukou%2Fm%40cro">前回からの変更点</a></li>
+				<li><a href="../../indexad46.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2Fm%40cro">ファイルをアップロード</a></li>
+				<li><a href="../../index1ff6.html?plugin=newpage&amp;refer=Toukou%2Fm%40cro">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 実行時マクロライブラリ &quot;M@CRO&quot;</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">m@cro</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.090sec. -->
+<div class="contents">
+<ul><li><a href="#d9815a86">  概要 </a></li>
+<li><a href="#w4ece4bf">  公開キー </a></li>
+<li><a href="#q08a3c5e">  使い方 </a>
+<ul><li><a href="#k1ced45d">  準備 </a></li>
+<li><a href="#df93dbe5">  初期化 </a></li>
+<li><a href="#q52d683b">  マクロの表記 </a>
+<ul><li><a href="#l8207569">  式として使う場合(式マクロ) </a></li>
+<li><a href="#q2abcda8">  文として使う場合(文マクロ) </a></li></ul></li>
+<li><a href="#vab1f10a">  制約 </a></li>
+<li><a href="#l7da218a">  マクロを自作する </a></li>
+<li><a href="#g666b431">  例 </a></li></ul></li>
+<li><a href="#h99097e3">  リファレンス </a>
+<ul><li><a href="#p2859df1">  関数・命令 </a>
+<ul><li><a href="#q6a67d0a">  MCR_INIT LABEL$ </a></li>
+<li><a href="#jcb92973">  MCR_SLOT() </a></li>
+<li><a href="#a6d7a24a">  MCR_GETTYPE(VALUE$) </a></li>
+<li><a href="#z52788c0">  MCR_GETVALUE(VALUE$) </a></li></ul></li>
+<li><a href="#l37c4320">  マクロ </a>
+<ul><li><a href="#a6686130">  ?@MCR_END </a></li>
+<li><a href="#i414180e">  ?@MCR_SKIP[LINE%] </a></li></ul></li></ul></li>
+<li><a href="#tef725d1">  UTILのリファレンス </a>
+<ul><li><a href="#ed766dae">  FOREACH系 </a>
+<ul><li><a href="#qb29b75b">  ?@FOREACH_INIT[NUM%=1] </a></li>
+<li><a href="#w0ace890">  ?@FOREACH[ITEM,LIST,N%=0] </a></li>
+<li><a href="#la61ec06">  ?@FOREACH_NEXT </a></li></ul></li>
+<li><a href="#a0cd2fc3">  式操作系 </a>
+<ul><li><a href="#ee7bc299">  @EXPR[EXPR,……] </a></li></ul></li></ul></li>
+<li><a href="#kb8bf5aa">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2018年2月15日投稿
+/ 投稿者 : とすけ
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../indexc801.html?cmd=taglist&amp;tag=%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ライブラリ</a> </span></p>
+<h3 id="d9815a86">概要</h3>
+<p>プチコンにマクロを追加するライブラリです。</p>
+<p>マクロを使うことで、プチコンのソースコードを簡単に書きかえることができるようになります。
+しかも書きかえは実行時に行われるので、一定の規則を守っていれば普通にプチコンのプログラムを書いている感覚でマクロを使ったプログラムを書くことができます。</p>
+
+<h3 id="w4ece4bf">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">AK5XEK4E</span>
+</div>
+</div>
+
+</div>
+
+
+<h3 id="q08a3c5e">使い方</h3>
+
+<h4 id="k1ced45d">準備</h4>
+<p>ファイル:MACROを開き、<span class="basic-text smbas">START LIBRARY</span>と書かれた行以下をあなたのプログラムリストの下に貼り付けてください。</p>
+
+<h4 id="df93dbe5">初期化</h4>
+<p>マクロを使う前に、ライブラリの初期化をする必要があります。
+このように初期化します。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＭＣＲ＿ＩＮＩＴ　＠ＭＣＲ＿ＤＥＦ　’使用するマクロが定義されたＤＡＴＡ文へのラベル</span></li>
+<li><span class="smbas">ＧＯＳＵＢ　＠ＭＣＲ＿ＥＮＴＲＹ</span></li>
+<li><span class="smbas">＠ＭＣＲ＿ＤＥＦ</span></li>
+<li><span class="smbas">ＤＡＴＡ　”（使用するマクロの名前）”，……，””</span></li>
+</ol></code></div></div>
+
+<h4 id="q52d683b">マクロの表記</h4>
+
+<h5 id="l8207569">式として使う場合(式マクロ)</h5>
+<p><span class="basic-text smbas">@(名前)[引数,……]</span>の形で表記します。引数がない場合は大括弧を省略します。</p>
+
+<h5 id="q2abcda8">文として使う場合(文マクロ)</h5>
+<p><span class="basic-text smbas">?@(名前)[引数,……]</span>の形で表記します。表記以外は式マクロの場合と同様です。</p>
+
+<h4 id="vab1f10a">制約</h4>
+<p>実行前にプログラムは必ず保存されている必要があります。</p>
+
+<h4 id="l7da218a">マクロを自作する</h4>
+<p>マクロはマクロと同名のパラメータを文字列配列として受け取り文字列を返す関数として定義されます。
+パラメータから値を取り出すために<span class="basic-text smbas">MCR_GETTYPE</span>や<span class="basic-text smbas">MCR_GETVALUE</span>などの関数があります。</p>
+
+<h4 id="g666b431">例</h4>
+<p>ファイル:MACROの先頭に例が書かれているので、それを読んでください。</p>
+
+<h3 id="h99097e3">リファレンス</h3>
+
+<h4 id="p2859df1">関数・命令</h4>
+
+<h5 id="q6a67d0a"><span class="basic-text smbas">MCR_INIT LABEL$</span></h5>
+<p>ライブラリを初期化します。
+<span class="basic-text smbas">LABEL$</span>に渡されたラベル文字列の先にあるDATA文を参照し、そこに書かれた文字列をマクロとして登録します。</p>
+
+<h5 id="jcb92973"><span class="basic-text smbas">MCR_SLOT()</span></h5>
+<p>現在のスロットの番号を取得します。</p>
+
+<h5 id="a6d7a24a"><span class="basic-text smbas">MCR_GETTYPE(VALUE$)</span></h5>
+<p><span class="basic-text smbas">VALUE$</span>の値の種類を判定します。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">値</td><td class="style_td">種類</td></tr><tr><td class="style_td">0</td><td class="style_td">整数</td></tr><tr><td class="style_td">1</td><td class="style_td">実数</td></tr><tr><td class="style_td">2</td><td class="style_td">文字列</td></tr><tr><td class="style_td">3</td><td class="style_td">変数</td></tr><tr><td class="style_td">4</td><td class="style_td">その他の式</td></tr></tbody></table></div>
+
+<h5 id="z52788c0"><span class="basic-text smbas">MCR_GETVALUE(VALUE$)</span></h5>
+<p><span class="basic-text smbas">VALUE$</span>から値を取り出します。(取り出せないこともあります。その場合は値がそのまま返ります。)</p>
+
+<h4 id="l37c4320">マクロ</h4>
+<p>最初からマクロの適用処理を制御するためのマクロが組み込まれています。
+上手に使うことで処理の無駄を省き、高速化に繋げることができます。</p>
+
+<h5 id="a6686130"><span class="basic-text smbas">?@MCR_END</span></h5>
+<p>マクロの適用処理を終了します。
+これより下のマクロは適用されません。</p>
+
+<h5 id="i414180e"><span class="basic-text smbas">?@MCR_SKIP[LINE%]</span></h5>
+<p>マクロの適用処理を<span class="basic-text smbas">LINE%</span>行飛ばします。
+飛ばされた行のマクロは適用されません。</p>
+
+<h3 id="tef725d1">UTILのリファレンス</h3>
+<p>ファイル:UTILSには便利なマクロのサンプルが入っています。</p>
+
+<h4 id="ed766dae">FOREACH系</h4>
+
+<h5 id="qb29b75b"><span class="basic-text smbas">?@FOREACH_INIT[NUM%=1]</span></h5>
+<p>FOREACHを初期化します。<span class="basic-text smbas">NUM%</span>回ネストできるので、必要な数だけ渡してください。(省略した場合は1が入ります。)</p>
+
+<h5 id="w0ace890"><span class="basic-text smbas">?@FOREACH[ITEM,LIST,N%=0]</span></h5>
+<p><span class="basic-text smbas">LIST</span>の要素を列挙し、1ループごとに<span class="basic-text smbas">ITEM</span>に入れます。(様々な言語にあるforeachなどの構文と似た機能を提供します。)
+<span class="basic-text smbas">?@FOREACH</span>がネストする場合、<span class="basic-text smbas">N%</span>に親の<span class="basic-text smbas">?@FOREACH</span>のものより1大きな値を渡します。（省略した場合は0が入ります。)</p>
+
+<h5 id="la61ec06"><span class="basic-text smbas">?@FOREACH_NEXT</span></h5>
+<p><span class="basic-text smbas">?@FOREACH</span>に対応する<span class="basic-text smbas">NEXT</span>です。</p>
+
+<h4 id="a0cd2fc3">式操作系</h4>
+
+<h5 id="ee7bc299"><span class="basic-text smbas">@EXPR[EXPR,……]</span></h5>
+<p><span class="basic-text smbas">EXPR</span>を評価し、<span class="basic-text smbas">,</span>で繋げます。</p>
+
+<h3 id="kb8bf5aa">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : Public Key does not work (<span class="comment_date">2018/02/17 (土) 07:59:35</span>)</li>
+<li><strong>Ryou Tanpo</strong> : 公開キー AK5XEK4A が有効ではないようです。<a href="https://mobile.twitter.com/_tosuke_/status/963806135089184768" rel="nofollow">Twitter</a> では 43H34ERD となっています。 (<span class="comment_date">2018/02/17 (土) 08:46:45</span>)</li>
+<li><strong>とすけ</strong> : AK5XEK4Eでした。申し訳ない…… (<span class="comment_date">2018/02/17 (土) 14:00:47</span>)</li>
+<li><strong>とすけ</strong> : AK5XEK4Eでした。申し訳ない…… (<span class="comment_date">2018/02/17 (土) 14:16:15</span>)</li>
+<li><strong>名無しさん</strong> : Thank you for the updated key. I will check it out and see if I learn more from this example. (<span class="comment_date">2018/02/17 (土) 14:42:15</span>)</li>
+<li><strong>Ryou Tanpo</strong> : 公開キーの修正ありがとうございます。 (<span class="comment_date">2018/02/17 (土) 19:33:06</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/m@cro" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="0bf274e9f93e725185f3b4bbefe44696" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="MONA27-S20-ADVENTURE20-2.html" title="Toukou/MONA'S ADVENTURE 2 (565d)">MONA'S ADVENTURE 2<span class="counter">(1)</span></a></li>
+ <li><a href="MONA27-S20-ADVENTURE.html" title="Toukou/MONA'S ADVENTURE (565d)">MONA'S ADVENTURE<span class="counter">(1)</span></a></li>
+ <li><a href="MON2D-OS/C0-A9-BA-EE-BC-D4-/B4-CA-B0-D7-B7-C7-BC-A8-C8-C4-.html" title="Toukou/MON-OS/制作者/簡易掲示板 (565d)">M/MSOFT/簡易掲示板<span class="counter">(1)</span></a></li>
+ <li><a href="MON2D-OS/C0-A9-BA-EE-BC-D4-.html" title="Toukou/MON-OS/制作者 (565d)">M/MSOFT<span class="counter">(1)</span></a></li>
+ <li><a href="MONA27-S20-ADVENTURE20-3.html" title="Toukou/MONA'S ADVENTURE 3 (565d)">MONA'S ADVENTURE 3<span class="counter">(1)</span></a></li>
+ <li><a href="MONA27-S20-FLYING.html" title="Toukou/MONA'S FLYING (565d)">MONA'S FLYING<span class="counter">(1)</span></a></li>
+ <li><a href="MUSIC20-BOX.html" title="Toukou/MUSIC BOX (565d)">[作業用BGM集]MUSIC BOX<span class="counter">(1)</span></a></li>
+ <li><a href="MURC7-AD-A5-B7-A5-E5-A1-BC-A5-C6-A5-A3-A5-F3-A5-B0-.html" title="Toukou/MUR猫シューティング (565d)">MUR猫シューティング<span class="counter">(1)</span></a></li>
+ <li><a href="MPlay1.html" title="Toukou/MPlay1 (565d)">【公開終了】全フォーマットMMLプレイヤー MPlay1<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1656 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.118 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:40  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/m40-cro.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:47:53 GMT -->
+</html>

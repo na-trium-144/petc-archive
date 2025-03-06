@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="EUC-JP" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/MathInfNan.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:33:35 GMT -->
 <head>
 	<title>浮動小数点演算におけるInf/NaNの取り扱い - プチコン3号＆BIGまとめWiki</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
-		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
 		<meta name="twitter:title" content="浮動小数点演算におけるInf/NaNの取り扱い - プチコン3号＆BIGまとめWiki" />
 	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
 	<meta name="twitter:site" content="@hosiken" />
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
 		$(document).ready(function(){
 			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
 		});
@@ -32,21 +34,21 @@
 
 	<div id="block-header">
 
-		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
 
 	<div id="block-topbox">
 		<div id="headermenu">
 	<ul class="menu">
 		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
-		<li><a href="./?plugin=search">検索</a></li>
-		<li><a href="./?Help">ヘルプ</a></li>
+		<li><a href="MathInfNana0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
 		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
-				<li><a href="/petc3gou/?cmd=edit&amp;page=Mame%2FMathInfNan">このページを編集</a></li>
-				<li><a href="/petc3gou/?cmd=diff&amp;page=Mame%2FMathInfNan">前回からの変更点</a></li>
-				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FMathInfNan">ファイルをアップロード</a></li>
-				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Mame%2FMathInfNan">新しいページをつくる</a></li>
-				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
-				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+				<li><a href="../../indexd785.html?cmd=edit&amp;page=Mame%2FMathInfNan">このページを編集</a></li>
+				<li><a href="../../indexc003.html?cmd=diff&amp;page=Mame%2FMathInfNan">前回からの変更点</a></li>
+				<li><a href="../../index3e29.html?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FMathInfNan">ファイルをアップロード</a></li>
+				<li><a href="../../index855a.html?plugin=newpage&amp;refer=Mame%2FMathInfNan">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
 
 </ul></li>
 </ul>
@@ -57,9 +59,9 @@
 
 	<div id="block-extra-navi">
 		<ul>
-			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
 			<li id="active">3号/BIG</li>
-			<li><a href="/petc/">初代/mkII</a></li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
 </ul>
 	</div>
 
@@ -77,14 +79,14 @@
 					<h3 id="header-pankuzu">パンくずリスト</h3>
 
 					<ul id="list-pankuzu">
-<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
-<li><a href="/petc3gou/?Mame">Mame</a></li>
-<li id="list-pankuzu-current"><a href="/petc3gou/?Mame%2FMathInfNan">MathInfNan</a></li>					</ul>
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Mame.html">Mame</a></li>
+<li id="list-pankuzu-current"><a href="#">MathInfNan</a></li>					</ul>
 
 				</div>
 					
 <div id="body">
-<!--  / 0.015sec. -->
+<!--  / 0.040sec. -->
 <p>人類の歴史は浮動小数点演算例外との戦いの歴史でもあります。もっとも、マニア以外は普通これを気にする必要は有りません。</p>
 <div class="contents">
 <ul><li><a href="#se4e8f3c">  Inf / NaN について </a></li>
@@ -100,7 +102,7 @@
 <p>Inf / NaN は演算の値が通常の有理数で表わせないときに使用される特別な値です。</p>
 <p>Inf は、いわゆる無限大です。</p>
 <p>NaN は、結果が決定できないときに使われる値で、 Not A Number の略です。Windowsの電卓で 0/ を計算すると &quot;結果が定義されていません&quot; と急に日本語が出てくるアレです。</p>
-<p><a href="/petc3gou/?plugin=attach&amp;refer=Mame%2FMathInfNan&amp;openfile=SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" title="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png"><img src="/petc3gou/?plugin=ref&amp;page=Mame%2FMathInfNan&amp;src=SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" alt="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" title="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" width="204" height="115" /></a></p>
+<p><a href="../img/Mame/MathInfNan/SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" title="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png"><img src="../img/Mame/MathInfNan/SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" alt="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" title="SnapCrab_NoName_2015-2-28_16-13-27_No-00.png" /></a></p>
 
 <h4 id="s283f3ed">プチコンでの処理</h4>
 <p>プチコンでは、無限大は&quot;<span class="basic-text smbas">inf</span>&quot;、NaNは&quot;<span class="basic-text smbas">nan</span>&quot;と表示されます。なので、<span class="basic-text smbas">FORMAT$</span>等の出力が数値と小数点、符号だけだと思っているとビックリする危険が有ります。</p>
@@ -140,27 +142,27 @@
 				<div id="block-sidemenu-container">
 
 <h3 id="content_4_0">メニュー 【3号】</h3>
-<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (972d)">トップページ</a></li>
-<li><a href="/petc3gou/?Beginner" title="Beginner (889d)">非公式初心者講座</a></li>
-<li><a href="/petc3gou/?Toukou" title="Toukou (2326d)">投稿プログラム</a></li>
-<li><a href="/petc3gou/?Mame" title="Mame (917d)">まめちしき</a></li>
-<li><a href="/petc3gou/?Memo" title="Memo (363d)">プチコン3号メモ</a></li>
-<li><a href="/petc3gou/?FAQ" title="FAQ (967d)">よくある質問集</a></li>
-<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
-<li><a href="/petc3gou/?Sample" title="Sample (1096d)">サンプルプログラム集</a></li>
-<li><a href="/petc3gou/?WorksLink" title="WorksLink (308d)">プチコン3号作品集</a></li>
-<li><a href="/petc3gou/?Demand" title="Demand (592d)">プチコン3号への要望</a></li>
-<li><a href="/petc3gou/?OverFlow" title="OverFlow (1d)">OFコーナー</a></li>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
 <li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
 <li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
-<li><a href="/petc3gou/?Chat" title="Chat (1032d)">チャットルーム</a></li>
-<li><a href="/petc3gou/?Contact" title="Contact (2150d)">管理人に連絡</a></li></ul>
-<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
 
 <h3 id="content_4_1">ヘルプ</h3>
-<ul><li><a href="/petc3gou/?Help" title="Help (1563d)">ヘルプ</a></li>
-<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (544d)">プログラム投稿ルール</a></li>
-<li><a href="/petc3gou/?SandBox" title="SandBox (14h)">編集の練習用ページ</a></li></ul>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
 
 <h3 id="content_4_2">リンク</h3>
 <ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
@@ -170,68 +172,68 @@
 <li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
 <ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
 <li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
-<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (441d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
 <ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
 <li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
 <li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
 <li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
 <li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
-<ul><li><a href="/petc3gou/?Link" title="Link (151d)">プチコン3号リンク集</a></li></ul>
-<h3>最近の更新</h3><!-- 10 --><div><h4>2022/01/18</h4>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
 <ul>
- <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (1d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
 </ul>
-<h4>2022/01/17</h4>
+<h4>2022/09/16</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2F%B8%E6%BB%D2%BF%C0%A5%C4%A5%A4%A5%F3%A5%A8%A5%C7%A5%A3%A5%BF%A1%BC" title="御子神ツインエディター (2d)">御子神ツインエディター</a></li>
+ <li><a href="../Toukou/DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
 </ul>
-<h4>2022/01/16</h4>
+<h4>2022/09/12</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADTGNEO" title="リズミカルおもちつきTG NEO (3d)">リズミカルおもちつきTG NEO</a></li>
+ <li><a href="../Toukou/PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../Toukou/A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
 </ul>
-<h4>2022/01/11</h4>
+<h4>2022/09/11</h4>
 <ul>
- <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%B8%E6%BB%D2%BF%C0%A5%C4%A5%A4%A5%F3%A5%A8%A5%C7%A5%A3%A5%BF%A1%BC" title="コメント/Toukou/御子神ツインエディター (7d)">コメント/Toukou/御子神ツインエディター</a></li>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
 </ul>
-<h4>2022/01/05</h4>
+<h4>2022/09/06</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%AD%A6%B2" title="リズミカルおもちつきΣ (13d)">リズミカルおもちつきΣ</a></li>
- <li><a href="/petc3gou/?Toukou%2FPCPD_Code3" title="PCPD -code3- (14d)">PCPD -code3-</a></li>
+ <li><a href="../Toukou/Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
 </ul>
-<h4>2022/01/03</h4>
+<h4>2022/09/04</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2FTAS%A5%BD%A5%D5%A5%C8%2F%A5%D4%A5%AF%A5%C8%A5%C1%A5%E3%A5%C3%A5%C82" title="ピクトチャット2 (16d)">ピクトチャット2</a></li>
+ <li><a href="../Toukou/TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
 </ul>
-<h4>2021/12/31</h4>
+<h4>2022/09/01</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2FTAGeLorix%20Sounds" title="TAGeLorix Sounds (19d)">TAGeLorix Sounds</a></li>
- <li><a href="/petc3gou/?Toukou%2FMKsoft%20CHAOS" title="MKsoft CHAOS V2.0 (19d)">MKsoft CHAOS V2.0</a></li>
+ <li><a href="../Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
 </ul>
-<h4>2021/12/26</h4>
+<h4>2022/08/30</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2F%B8%B8%C1%DB%B3%DA%CD%B7%B5%BA" title="幻想楽遊戯 (24d)">幻想楽遊戯</a></li>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
 </ul>
 </div>
 
 <h3 id="content_4_3">最近の人気ページ</h3>
 <div><ul>
- <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (363d)">ユニコードについて<span class="counter">(11)</span></a></li>
- <li><a href="/petc3gou/?Link" title="Link (151d)">リンク集<span class="counter">(10)</span></a></li>
- <li><a href="/petc3gou/?Mame%2FKoneta" title="Mame/Koneta (37d)">tips(小ネタ集)<span class="counter">(10)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2Falpha%20os" title="Toukou/alpha os (926d)">alpha os Version 4.0<span class="counter">(8)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2FPC8001EMU" title="Toukou/PC8001EMU (255d)">PC8001EMU<span class="counter">(8)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2F%C6%E6%A4%CE%B3%CA%C6%AE%A5%B2%A1%BC%A5%E0%A1%CA%C2%CE%B8%B3%C8%C7%A1%CB" title="Toukou/謎の格闘ゲーム（体験版） (47d)">謎の格闘ゲーム（体験版）<span class="counter">(8)</span></a></li>
- <li><a href="/petc3gou/?Mame%2FErrormsg" title="Mame/Errormsg (393d)">エラーメッセージ<span class="counter">(8)</span></a></li>
- <li><a href="/petc3gou/?Sample" title="Sample (1096d)">サンプルプログラム集<span class="counter">(7)</span></a></li>
- <li><span title="Mame/MathInfNan  (1189d)">浮動小数点演算におけるInf/NaNの取り扱い<span class="counter">(7)</span></span></li>
- <li><a href="/petc3gou/?Toukou%2F%C0%B5%B5%AC%C9%BD%B8%BD%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA" title="Toukou/正規表現ライブラリ (1122d)">正規表現ライブラリ<span class="counter">(7)</span></a></li>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4A4-C4-A4-CE-A5-EC-A1-BC-A5-F3-A4-CE-B2-BB-A5-B2-A1-BC-.html" title="Toukou/4つのレーンの音ゲー (565d)">4REN MUSIC GAME(4つのレーンの音ゲー)<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4BF-CD-C2-C7-A4-C1-CB-E3-BF-FD-A5-B2-A1-BC-A5-E0-A1-D8-A4-DE-A1-BC-A4-B8-A4-E3-A4-F3-A4-CE-A4-E8-A4-A6-A4-CA-A4-E2-A4-CE-A1-A3-A1-D9-.html" title="Toukou/4人打ち麻雀ゲーム『まーじゃんのようなもの。』 (565d)">四人打ち麻雀ゲーム『まーじゃんのようなもの。』<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4w1h.html" title="Toukou/4w1h (565d)">いつどこで誰が何をどうしたジェネレータ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PUZZLE.html" title="Toukou/47PUZZLE (565d)">47PUZZLE<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/42B-7.html" title="Toukou/4+7 (565d)">4+7<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PARTY.html" title="Toukou/47PARTY (565d)">47PARTY<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/50OS20-BETA.html" title="Toukou/50OS BETA (565d)">50OS BETA<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/7A1-F9-Ris.html" title="Toukou/7☆Ris (565d)">7☆Ris<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/ALPHA20-OS20-X.html" title="Toukou/ALPHA OS X (565d)">ALPHA OS X<span class="counter">(1)</span></a></li>
 </ul>
 </div>
-<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1597d)">人気ページをもっと見る</a></div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
 
 <h3 id="content_4_4">オンライン情報</h3>
-<ul><li>現在同時に 3 人がこのサイトを見ています</li>
-<li>このページはこれまでに 4243 回、本日は 6 回、昨日は 1 回閲覧されました</li></ul>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 4827 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
 <p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
 
 				</div>
@@ -245,9 +247,9 @@
 	<div id="block-pukiwiki-info">
 
 
-		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
 		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
-		ページの処理時間 : 0.020 秒  | このページの最終更新 : 2018/10/18 (木) 01:12:52  (1189d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		ページの処理時間 : 0.070 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:54  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
 		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
 
 	</div>
@@ -270,4 +272,6 @@
 
 </body>
 
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/MathInfNan.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:33:38 GMT -->
 </html>

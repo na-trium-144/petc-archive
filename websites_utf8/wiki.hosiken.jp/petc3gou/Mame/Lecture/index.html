@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/Lecture.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:34:20 GMT -->
+<head>
+	<title>SmileBASIC 講座 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="SmileBASIC 講座 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="Lecturea0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../indexedab.html?cmd=edit&amp;page=Mame%2FLecture">このページを編集</a></li>
+				<li><a href="../../index8597-2.html?cmd=diff&amp;page=Mame%2FLecture">前回からの変更点</a></li>
+				<li><a href="../../indexa220.html?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FLecture">ファイルをアップロード</a></li>
+				<li><a href="../../indexef44.html?plugin=newpage&amp;refer=Mame%2FLecture">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>SmileBASIC 講座</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Mame.html">Mame</a></li>
+<li id="list-pankuzu-current"><a href="#">Lecture</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.065sec. -->
+<div class="contents">
+<ul><li><a href="#w432b484">  はじめに </a></li>
+<li><a href="#chapter1">  第1章 はじめての SmileBASIC </a>
+<ul><li><a href="#chapter1_boot">  1.1 プチコン3号を起動すると...? </a></li>
+<li><a href="#chapter1_firstprogram">  1.2 はじめてのプログラム </a></li>
+<li><a href="#chapter1_execute">  1.3 いよいよ実行の時 </a></li>
+<li><a href="#chapter1_error">  1.4 失敗したときは.... </a></li></ul></li>
+<li><a href="#comment">  コメント </a></li></ul>
+</div>
+
+<p>投稿者: Ryou Tanpo</p>
+<div class="spacer">&nbsp;</div>
+<p><strong>この講座は作成中です。これからも内容をドンドン増やしていくので、よろしくお願いします! コメントをぜひお願いします!!</strong></p>
+<p>のべ 892 人にお越しいただきました。ありがとうございます!!</p>
+<h3 id="w432b484">はじめに</h3>
+<p>これは、プチコン3号/BIG 初心者に贈る講座。
+この講座では、最初の前置きをできる限り少なくして、実践的な解説をしたいと思います。</p>
+
+<h3 id="chapter1">第1章 はじめての SmileBASIC</h3>
+<p>ここからは、プチコン3号の画面で説明しよう! でも、特別な記述がないときは、プチコンBIGでも同じように操作すれば大丈夫! 気持ちをあせらずに、楽しくやっていこう!!</p>
+
+<h4 id="chapter1_boot">1.1 プチコン3号を起動すると...?</h4>
+<p>プチコン3号を起動すると、下画面はこうなっているはず!</p>
+<p><img src="../img/Beginner/Chapter1/screenshot_menu.jpg" alt="screenshot_menu.jpg" title="screenshot_menu.jpg" width="320" height="240" /></p>
+<p>まずは、とても簡単なプログラムを打ってみよう!
+ってわけで、さっそく右下の <strong>SmileBASIC でプログラムを作る</strong> をタッチしてみよう。</p>
+<p><img src="../img/Beginner/Chapter1/screenshot_boot.jpg" alt="screenshot_boot.jpg" title="screenshot_boot.jpg" width="400" height="240" /></p>
+<p>すると下画面はキーボードに、上画面は知る人ぞ知る真っ黒いコンソールのような画面に!! でもあせらないで! 今は下画面の左下に注目しよう。</p>
+<p><img src="../img/Beginner/Chapter1/screenshot_editkey.jpg" alt="screenshot_editkey.jpg" title="screenshot_editkey.jpg" /></p>
+<p><strong>EDIT 0</strong> と書かれたボタンがあるから、タッチしてみよう。</p>
+<p><img src="../img/Beginner/Chapter1/screenshot_edit.jpg" alt="screenshot_edit.jpg" title="screenshot_edit.jpg" width="400" height="240" /></p>
+<p>左上に 000001 と書いてあるが、これは行番号。この右にプログラムが表示される。最初は戸惑うかもしれないけど、慣れれば平気になる! まずは早速、簡単なプログラムを入力して、実行して見ることにしよう。</p>
+
+<h4 id="chapter1_firstprogram">1.2 はじめてのプログラム</h4>
+<p>まずはシンプルに、文章を表示するプログラムを作る。次のプログラムだ。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＰＲＩＮＴ　”わたしはプチコン３ごうです”</span></li>
+</ol></code></div></div>
+<p>下画面のキーボードで打ち込んでみよう! ひらがなやカタカナ、記号も含まれている。この機会にプチコンのキーボードに慣れよう。</p>
+<div class="block-info">
+<p><span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px"><em>メモ</em></span></p>
+<p>プチコン3号/BIG では JIS 第一水準の漢字が表示できるが、簡単に入力する方法は提供されていない。プチコン3号/BIG は漢字変換ソフトを搭載しているわけではないのだ。</p>
+<p>入力する方法もあるが、難しく面倒なので、今はひらがなとカタカナで我慢しよう。</p>
+</div>
+<p>ダブルクォーテーション (<span class="basic-text smbas">��</span>) というカッコの中身は表示する文字列だから変えても構わないけど、<span class="basic-text smbas">PRINT</span> の文字が水色になることを、そしてカッコの中身は灰色になることを確認しよう。</p>
+<p>ダブルクォーテーションはこんな感じのキーで入力できる。</p>
+<p><img src="../img/Beginner/Chapter1/key_quot.png" alt="key_quot.png" title="key_quot.png" /></p>
+<div class="block-info">
+<p><span style="font-size:20px;display:inline-block;line-height:130%;text-indent:0px"><em>メモ</em></span></p>
+<p>プログラムの中で文字の色を変えて見やすくするテキストエディタの機能を<strong>シンタックスハイライト</strong>という。この色は変えることができる。上に書いた色はデフォルトのものだ。もし違うようなら置き換えて読むか、わかりづらいなら<strong>設定を初期化</strong>するといい。</p>
+</div>
+
+<h4 id="chapter1_execute">1.3 いよいよ実行の時</h4>
+<p>このプログラムを動かすとどうなるか。<strong>実行</strong>してみよう! 3DS の START ボタン、 Wii U の + ボタンを押してみよう!</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">わたしはプチコン３ごうです</span></li>
+</ol></code></div></div>
+<p>カッコの中に書いた文章が表示されたかな? これじゃつまらないかもしれないが、これは基本の基本を覚えられた、ということだ! はじめてのプログラミング、おめでとう!!
+成功した人、また、文章が表示されなかった人もいるだろう。次の「失敗したときは....」も読んでおこう。大事なことだから、成功した人も目を通しておいてね!</p>
+
+<h4 id="chapter1_error">1.4 失敗したときは....</h4>
+<p>もしピッと音がなって文章が表示されなかったなら、それは<strong>エラー</strong>といってプログラムが実行できなかった、ということだ。もしそうなったら、あせらずに、原因を確かめて修正しないといけない。その作業を<strong>デバッグ</strong>という。
+プログラムを見直して、間違いが無いか確認してみよう!</p>
+<p>例えばもし、上に書いたように <span class="basic-text smbas">PRINT</span> の文字が水色になっていないときは、<span class="basic-text smbas">PRINT</span> のスペルを間違えたかもしれない。まあキーボードに慣れている人なら5文字で間違える人はそんなにいないかもしれないが、プログラムは1文字間違えるエラーになってしまうから、覚えておこう!</p>
+<p><a href="#chapter1_firstprogram">戻ってプログラムを確認する</a></p>
+
+<h3 id="comment">コメント</h3>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Mame/Lecture" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="0" />
+  <input type="hidden" name="digest" value="da97badf7cfad9bfdb1be33cf834e3ef" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+<div class="spacer">&nbsp;</div>
+<hr class="short_line" />
+<p><span style="font-size:10px;display:inline-block;line-height:130%;text-indent:0px">最終更新: 2022/09/20 (火) 12:49:36</span></p>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="../Toukou/Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="../Toukou/DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="../Toukou/PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../Toukou/A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="../Toukou/Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="../Toukou/TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="../Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4A4-C4-A4-CE-A5-EC-A1-BC-A5-F3-A4-CE-B2-BB-A5-B2-A1-BC-.html" title="Toukou/4つのレーンの音ゲー (565d)">4REN MUSIC GAME(4つのレーンの音ゲー)<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4BF-CD-C2-C7-A4-C1-CB-E3-BF-FD-A5-B2-A1-BC-A5-E0-A1-D8-A4-DE-A1-BC-A4-B8-A4-E3-A4-F3-A4-CE-A4-E8-A4-A6-A4-CA-A4-E2-A4-CE-A1-A3-A1-D9-.html" title="Toukou/4人打ち麻雀ゲーム『まーじゃんのようなもの。』 (565d)">四人打ち麻雀ゲーム『まーじゃんのようなもの。』<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4w1h.html" title="Toukou/4w1h (565d)">いつどこで誰が何をどうしたジェネレータ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PUZZLE.html" title="Toukou/47PUZZLE (565d)">47PUZZLE<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/42B-7.html" title="Toukou/4+7 (565d)">4+7<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PARTY.html" title="Toukou/47PARTY (565d)">47PARTY<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/50OS20-BETA.html" title="Toukou/50OS BETA (565d)">50OS BETA<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/7A1-F9-Ris.html" title="Toukou/7☆Ris (565d)">7☆Ris<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/AIRPG.html" title="Toukou/AIRPG (565d)">AIRPG<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 892 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.087 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:36  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/Lecture.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:34:22 GMT -->
+</html>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/3D.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:33:31 GMT -->
+<head>
+	<title>3D表現の注意事項 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="3D表現の注意事項 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="3Da0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../indexccc9.html?cmd=edit&amp;page=Mame%2F3D">このページを編集</a></li>
+				<li><a href="../../index15d3.html?cmd=diff&amp;page=Mame%2F3D">前回からの変更点</a></li>
+				<li><a href="../../index0507-2.html?plugin=attach&amp;pcmd=upload&amp;page=Mame%2F3D">ファイルをアップロード</a></li>
+				<li><a href="../../index4422.html?plugin=newpage&amp;refer=Mame%2F3D">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>3D表現の注意事項</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Mame.html">Mame</a></li>
+<li id="list-pankuzu-current"><a href="#">3D</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.094sec. -->
+<p>プチコン3号で、ついにBASICは立体視の時代へ。注意事項を意識して疲れにくい3Dプログラムを。</p>
+<div class="contents">
+<ul><li><a href="#o1fdc9b5">  マニュアル31: 立体視 </a></li>
+<li><a href="#n74a112f">  3D映像の仕組み </a></li>
+<li><a href="#v073ee33">  &quot;保護者による使用制限機能&quot;による制限 </a></li>
+<li><a href="#z6a01002">  3D位置は&quot;なめらか&quot;には変化しない </a></li>
+<li><a href="#s60b5255">  &quot;飛び出す&quot;オブジェクトのウインドウ違反に注意する </a></li>
+<li><a href="#b2c7d968">  クロストークが目立つ表現を避ける </a></li>
+<li><a href="#cab082c6">  最小限の3D </a></li></ul>
+</div>
+
+<h4 id="o1fdc9b5">マニュアル31: 立体視</h4>
+<p>公式マニュアルの注意事項も参照してください。</p>
+<ul><li><a href="http://smilebasic.com/e-manual/manual31" rel="nofollow">31.立体視 &#8211; SmileBasic</a></li></ul>
+
+<h4 id="n74a112f">3D映像の仕組み</h4>
+<p>一般に、3D映像は、&quot;右目と左目に別々の映像を見せる&quot;ことで実現されています。</p>
+<ul><li><a href="http://www.sharp.co.jp/products/device/about/lcd/3d/" rel="nofollow">http://www.sharp.co.jp/products/device/about/lcd/3d/</a></li></ul>
+<p>左右の目に別々の映像を見せるために、3DSは視差バリア方式の液晶を採用しています。</p>
+<p>3Dをサポートした画面モードを使用している間は、プチコンは右目用と左目用の両方のグラフィックを生成します。右目用/左目用のグラフィックでは、Z座標と3Dボリュームの値に応じて、オブジェクトX座標が&quot;ズレ&quot;て描画されることになります。</p>
+<ul><li>3Dボリュームがゼロ(OFF)となっている間は、&quot;ズレ&quot;の量もゼロになり、右目/左目のグラフィックは一致することになります。</li>
+<li>Z座標がゼロの場合は&quot;ズレ&quot;の量もゼロになります。</li>
+<li>&quot;ズレ&quot;の量は整数に丸められます(→ 3D位置は&quot;なめらか&quot;には変化しない)</li>
+<li>&quot;ズレ&quot;によって、右目または左目のどちらかにしか表示されないオブジェクトが出ることが有ります(→ &quot;飛び出す&quot;オブジェクトのウインドウ違反に注意する)</li></ul>
+
+<h4 id="v073ee33">&quot;保護者による使用制限機能&quot;による制限</h4>
+<ul><li><a href="http://www.nintendo.co.jp/support/parental_control/3ds/index.html" rel="nofollow">http://www.nintendo.co.jp/support/parental_control/3ds/index.html</a></li></ul>
+<p>3DSの立体視機能は、&quot;保護者による使用制限機能&quot;(いわゆるペアレンタルコントロール機能)によりOFFにされている可能性が有ります。</p>
+
+<h4 id="z6a01002">3D位置は&quot;なめらか&quot;には変化しない</h4>
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/shisyamo_wizwiz/status/540146109838917632">ツイート</a></blockquote>
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>また、3Dボリュームの位置によって表現できる段階がより少なくなっている可能性が有るので、この段階が存在することを前提としたプログラムを書くのは望ましくありません。</p>
+<p>逆に、3D表示と同時に表示優先度を制御する目的でZ座標を使用している場合は、3Dボリュームを全開にして意図しない視差が発生していないかチェックする方が良いでしょう。</p>
+<p>(2D表現しか必要としない場合は2D表示の画面モードをXSCREENで選択します。2D表示は視差バリアを生成しないため光量の面で有利です。)</p>
+
+<h4 id="s60b5255">&quot;飛び出す&quot;オブジェクトのウインドウ違反に注意する</h4>
+<ul><li><a href="http://digrajapan.org/?wpdmact=process&amp;did=MTcuaG90bGluaw" rel="nofollow">http://digrajapan.org/?wpdmact=process&amp;did=MTcuaG90bGluaw</a></li></ul>
+<p>ウインドウ違反とは、画面から飛び出す(プチコンのZ座標でマイナス値)オブジェクトが右目または左目のどちらかにしか表れない状況を指します。これは自然界では絶対に発生しない現象であるため、それなりに不快な見えかたになってしまいます。マイナスのZ座標を持つオブジェクトを画面端に配置することは避けてください。</p>
+<p>以下のようなコードでウインドウ違反を起こした状況を体験できます。</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＣＬＳ</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　０，０，−２５６</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　”ＨＯＧＥ”</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　２５，１０，−２５６</span></li>
+<li><span class="smbas">ＰＲＩＮＴ　”ＨＯＧＥ”</span></li>
+<li><span class="smbas">ＬＯＣＡＴＥ　０，１１，０</span></li>
+</ol></code></div></div>
+<p>プログラムは左上端と中央に&quot;HOGE&quot;を表示します。3Dボリュームを全開にすると、左上のHOGEは中央のHOGEよりも格段にみづらくなることが判ると思います。また、3Dボリュームをゼロ(OFF)にすることで、左上のHOGEが中央のHOGEと同様に見えることが観察できます。</p>
+<p>プレイヤーキャラクタを飛び出す方向に配置する場合は特に注意が必要です。そのような物体は注視されている可能性が高いためです。逆に、エフェクトやパーティクル等短時間しか発生しないものや背景はそれほど違和感が無いかもしれません。</p>
+<p>画面よりも奥側にある(プチコンのZ座標についてプラス方向)のオブジェクトが右目または左目のどちらかにしか見えない状況は自然界でも発生します(窓を通して外の景色を見ている状況を考えます)。このため、奥側のオブジェクトの配置については特に注意する必要は有りません。</p>
+
+<h4 id="b2c7d968">クロストークが目立つ表現を避ける</h4>
+<p>3DSのディスプレイはHMDやバーチャルボーイのような独立した画面を持つデバイスと異なり、クロストークが発生することに注意が必要です。3D映像におけるクロストークとは、右目用の映像が左目に見えたり、または、その逆を指します。</p>
+<p>例えば、黒背景より手前に白いオブジェクトを置く等するとクロストークが目立つ結果になります。</p>
+<p>特に、スコア表示等を画面奥や手前に配置する際には注意が必要です。Zがゼロの場所に配置することで、クロストークを防ぐことができます。Zがゼロの場合は視差が発生しないので、右目と左目で表示内容が一致するためです。</p>
+
+<h4 id="cab082c6">最小限の3D</h4>
+<p>EDIT画面でのカーソルなど、よく見ると1ドットだけ視差がついて飛び出しているものがあります。これはZ座標で言えばテキストがZ=0、カーソルがZ=-2になっています。Z=+2にすると逆に引っ込む方向に1ドットの視差を得ることができます。</p>
+<p>なお、Z=-2と+2を比較すると-2のほうがクロストークが目立ちません。</p>
+<ul><li>当初-2と+2としましたが、3Dボリュームを最小（ゼロではない）にしても画面全体で破綻がないようにするには-36以下と+42以上が必要のようでした。（旧3DS+Ver3.0.2+LOCATEで確認）</li></ul>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="../Toukou/Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="../Toukou/DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="../Toukou/PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../Toukou/A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="../Toukou/Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="../Toukou/TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="../Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PARTY.html" title="Toukou/47PARTY (565d)">47PARTY<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/47PUZZLE.html" title="Toukou/47PUZZLE (565d)">47PUZZLE<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/42B-7.html" title="Toukou/4+7 (565d)">4+7<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/3B9-E6-C5-FD-B0-EC-B7-D7-B2-E8-A1-C1-A5-D7-A5-C1-A5-B3-A5-F3-A4-CE-B4-ED-B5-A1-A1-C1-.html" title="Toukou/3号統一計画~プチコンの危機~ (565d)">3号統一計画~プチコンの危機~<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/3DC5-AA-A4-CA-A5-DE-A5-C3-A5-D7-.html" title="Toukou/3D的なマップ (565d)">3Dっぽい何か<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/3dsbsodfntlib.html" title="Toukou/3dsbsodfntlib (565d)">ニンテンドー3DSのBSoDで出るフォントライブラリ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4w1h.html" title="Toukou/4w1h (565d)">いつどこで誰が何をどうしたジェネレータ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4A4-C4-A4-CE-A5-EC-A1-BC-A5-F3-A4-CE-B2-BB-A5-B2-A1-BC-.html" title="Toukou/4つのレーンの音ゲー (565d)">4REN MUSIC GAME(4つのレーンの音ゲー)<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/40-MONSTER20-RPG.html" title="Toukou/@MONSTER RPG (565d)">【復刻版】MONSTER RPG<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3289 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.157 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:45  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/3D.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:33:32 GMT -->
+</html>

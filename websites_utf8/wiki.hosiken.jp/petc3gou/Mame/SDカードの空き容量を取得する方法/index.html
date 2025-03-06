@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/SDA5-AB-A1-BC-A5-C9-A4-CE-B6-F5-A4-AD-CD-C6-CE-CC-A4-F2-BC-E8-C6-C0-A4-B9-A4-EB-CA-FD-CB-A1-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:34:41 GMT -->
+<head>
+	<title>SDカードの空き容量を取得する方法 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="SDカードの空き容量を取得する方法 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="SDA5-AB-A1-BC-A5-C9-A4-CE-B6-F5-A4-AD-CD-C6-CE-CC-A4-F2-BC-E8-C6-C0-A4-B9-A4-EB-CA-FD-CB-A1-a0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../index36a0.html?cmd=edit&amp;page=Mame%2FSD%A5%AB%A1%BC%A5%C9%A4%CE%B6%F5%A4%AD%CD%C6%CE%CC%A4%F2%BC%E8%C6%C0%A4%B9%A4%EB%CA%FD%CB%A1">このページを編集</a></li>
+				<li><a href="../../index5233.html?cmd=diff&amp;page=Mame%2FSD%A5%AB%A1%BC%A5%C9%A4%CE%B6%F5%A4%AD%CD%C6%CE%CC%A4%F2%BC%E8%C6%C0%A4%B9%A4%EB%CA%FD%CB%A1">前回からの変更点</a></li>
+				<li><a href="../../index1ccb.html?plugin=attach&amp;pcmd=upload&amp;page=Mame%2FSD%A5%AB%A1%BC%A5%C9%A4%CE%B6%F5%A4%AD%CD%C6%CE%CC%A4%F2%BC%E8%C6%C0%A4%B9%A4%EB%CA%FD%CB%A1">ファイルをアップロード</a></li>
+				<li><a href="../../indexce63.html?plugin=newpage&amp;refer=Mame%2FSD%A5%AB%A1%BC%A5%C9%A4%CE%B6%F5%A4%AD%CD%C6%CE%CC%A4%F2%BC%E8%C6%C0%A4%B9%A4%EB%CA%FD%CB%A1">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>SDカードの空き容量を取得する方法</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Mame.html">Mame</a></li>
+<li id="list-pankuzu-current"><a href="#">SDカードの空き容量を取得する方法</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.083sec. -->
+<div class="contents">
+<ul><li><a href="#c139ff02"> どのように取得するのか </a></li>
+<li><a href="#a3cdb722"> 本題 </a></li>
+<li><a href="#s0b5812e"> プログラムリスト </a></li>
+<li><a href="#o99e4ebd"> 単位変換 </a></li>
+<li><a href="#b1eda3ce"> コメント </a></li></ul>
+</div>
+
+<h3 id="c139ff02">どのように取得するのか</h3>
+<p><span class="basic-text smbas">FREEMEM</span>が空き容量だと勘違いしてる人が多いですが、<span class="basic-text smbas">FREEMEM</span>はSDカードの空き容量ではなく、<span style="color:red"><strong>プチコン内部のメモリ容量(RAM)です。</strong></span></p>
+<p>では、どのように取得するのかというと、<span class="basic-text smbas">FILES</span>を使用します。
+<span class="basic-text smbas">FILES</span>でSDカードの空き容量を調べられると聞いたことがある人が、その方法がわからないという人もいると思います。</p>
+
+<h3 id="a3cdb722">本題</h3>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＦＩＬＥＳ</span></li>
+</ol></code></div></div>
+<p>このように入力するとそのプロジェクトにあるファイルが出ます。</p>
+<div class="spacer">&nbsp;</div>
+<p>そして最後に、</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">−−　１２３４５６　Ｋｂｙｔｅｓ　ｆｒｅｅ　−−</span></li>
+</ol></code></div></div>
+<p>このようなのが出ます。これを利用します。</p>
+<div class="spacer">&nbsp;</div>
+<p>ただ、<span class="basic-text smbas">FILES</span>単独だと、</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">＝＝　Ｐｒｅｓｓ　ＥＮＴＥＲ　＝＝</span></li>
+</ol></code></div></div>
+<p>このようなものが表示され、Aボタンを連打する羽目になることがあります。</p>
+<div class="spacer">&nbsp;</div>
+<p>これを防ぐため、</p>
+<div class="basic-noline-bk"><div class="basic-list"><code><ol><li><span class="smbas">ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”</span></li>
+</ol></code></div></div>
+<p>を使用します。これだと、必ず1画面に収まります。</p>
+
+<h3 id="s0b5812e">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＣＨＫＳＤＲＯＭ（）</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｆ［１２］</span></li>
+<li><span class="smbas">　ＤＩＭ　ＦＬ＄［０］</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｆ＄</span></li>
+<li><span class="smbas">　ＣＬＳ</span></li>
+<li><span class="smbas">　ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”，ＦＬ＄</span></li>
+<li><span class="smbas">　ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ＝０　ＴＯ　１１</span></li>
+<li><span class="smbas">　　Ｆ［Ｉ］＝ＣＨＫＣＨＲ（３＋Ｉ，１＋ＬＥＮ（ＦＬ＄））</span></li>
+<li><span class="smbas">　　ＩＦ　Ｆ［Ｉ］＝＝３２　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ＝０　ＴＯ　１１</span></li>
+<li><span class="smbas">　　ＩＦ　Ｆ［Ｉ］＝＝３２　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　Ｆ＄＝Ｆ＄＋ＣＨＲ＄（Ｆ［Ｉ］）</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＣＬＳ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　ＶＡＬ（Ｆ＄）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+
+<h3 id="o99e4ebd">単位変換</h3>
+<p>上のプログラムリストだと、KB単位の容量が取得できます。KB以外を使いたい場合もあるかもしれません。
+例えば、MB単位にしたい場合は</p>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">Ｒ＿ＫＢ＝ＣＨＫＳＤＲＯＭ（）</span></li>
+<li><span class="smbas">Ｒ＿ＭＢ＝Ｒ＿ＫＢ／１０２４</span></li>
+</ol></code></div></div>
+<p>このようにすればいけます。</p>
+<p>以下に対応表を載せておきます。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">単位</th><th class="style_th">KBからの倍率</th></tr><tr><td class="style_td">MB</td><td class="style_td">KB/1024</td></tr><tr><td class="style_td">GB</td><td class="style_td">KB/1024/1024</td></tr><tr><td class="style_td">ブロック<a id="notetext_1" href="#notefoot_1" class="note_super" title="3DSの本体設定で出るもの">*1</a></td><td class="style_td">KB/128</td></tr></tbody></table></div>
+
+<h3 id="b1eda3ce">コメント</h3>
+<ul><li><strong>Na</strong> : <span class="basic-text smbas">WIDTH 16</span>だと<span class="basic-text smbas">FILES”SYS”</span>でも1画面に収まらないので<span class="basic-text smbas">FILES”DAT:SYS”</span>が確実だと思います (<span class="comment_date">2020/05/05 (火) 16:40:59</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : 修正しました。 (<span class="comment_date">2020/05/05 (火) 16:47:45</span>)</li>
+<li><strong>あまさとしおん</strong> : なんでわざわざSYSプロジェクト指定なのかと思ったけど、新規に保存できないSYSなら表示件数が増えて画面外にはみ出る事故が起きないからなのね (<span class="comment_date">2020/05/05 (火) 18:06:00</span>)</li>
+<li><strong>あまさとしおん</strong> : プログラムリストを取り込んで実行したところ、1行目と12行目がシンタックスエラーですね。 (<span class="comment_date">2020/05/05 (火) 18:16:21</span>)</li>
+<li><strong>あまさとしおん</strong> : 1行目は<span class="basic-text smbas">R=</span>がいらない。12行目は括弧の数がおかしいようです。 (<span class="comment_date">2020/05/05 (火) 18:17:25</span>)</li>
+<li><strong>あまさとしおん</strong> : 面倒だったので根本修正版を作成。独立ページ作るんだったらちゃんと動作確認してから載せてほしい。　<a href="http://petitverse.hosiken.jp/community/petitcom/diary/?read=4142" rel="nofollow">http://petitverse.hosiken.jp/community/petitcom/diary/?read=4142</a> (<span class="comment_date">2020/05/05 (火) 18:32:01</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : 直しました。 (<span class="comment_date">2020/05/05 (火) 19:06:38</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : もとのプログラムは<span class="basic-text smbas">DEF</span>に入れてなかったので、無理やり<span class="basic-text smbas">DEF</span>にしたことによるミスです。 (<span class="comment_date">2020/05/05 (火) 19:08:56</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : (ついでに言うと、もとのプログラムはFILESもSYS指定じゃなくて、普通にFILESだけでした。) (<span class="comment_date">2020/05/05 (火) 19:13:25</span>)</li>
+<li><strong>Na</strong> : いちいち<span class="basic-text smbas">CHKCHR</span>の結果を配列変数に入れてから取り出してる理由がよくわかんないです (<span class="comment_date">2020/05/06 (水) 13:24:18</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : ↑配列に1桁目、2桁目…みたいな感じで入れています。むしろ配列に入れずに取り出すとか(自分の技術じゃ)出来ないと思います。 (<span class="comment_date">2020/05/06 (水) 14:15:14</span>)</li>
+<li><strong>Na</strong> : FORループを1回にすれば?<br class="spacer" /><span class="basic-text smbas">FOR I=0 TO 11</span><br class="spacer" /><span class="basic-text smbas">　C=CHKCHR(3+I,1+LEN(FL$))</span><br class="spacer" /><span class="basic-text smbas">　IF C==32 THEN BREAK</span><br class="spacer" /><span class="basic-text smbas">　F$=F$+CHR$(C)</span><br class="spacer" /><span class="basic-text smbas">NEXT</span> (<span class="comment_date">2020/05/06 (水) 14:24:46</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : FOR1回にしたらBREAKでバグる気が…() (<span class="comment_date">2020/05/06 (水) 16:47:09</span>)</li>
+<li><strong><span class="basic-text">ｕｇｌｙ７７７</span></strong> : FL$ではなくCSRYを使えば良いのでは? (<span class="comment_date">2020/05/06 (水) 17:26:58</span>)</li>
+<li><strong>Na</strong> : ↑2 BREAKでバグるとは? (<span class="comment_date">2020/05/06 (水) 17:46:58</span>)</li>
+<li><strong>Na</strong> : 確かに<span class="basic-text smbas">CSRY</span>の方がよさそう (<span class="comment_date">2020/05/06 (水) 17:50:35</span>)</li>
+<li><strong>takkunplay</strong> : CSRYやWHILEを使って行数をかなり減らせます
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＦＲＥＥＲＯＭ（）</span></li>
+<li><span class="smbas">　ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”</span></li>
+<li><span class="smbas">　ＶＡＲ　ＲＯＭ＄，Ｘ＝３，Ｙ＝ＣＳＲＹ</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＣＨＲ＄（ＣＨＫＣＨＲ（Ｘ，Ｙ））</span></li>
+<li><span class="smbas">　　ＲＯＭ＄＝ＲＯＭ＄＋ＣＨＲ＄（ＣＨＫＣＨＲ（Ｘ，Ｙ））</span></li>
+<li><span class="smbas">　　ＩＮＣ　Ｘ</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＣＬＳ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　ＶＡＬ（ＲＯＭ＄）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+(<span class="comment_date">2020/05/06 (水) 21:36:56</span>)</li>
+<li><strong><span class="basic-text">ｕｇｌｙ７７７</span></strong> : 今気付きましたがROMではないですね。<br />
+(自分もある時指摘されるまで勘違いしていた) (<span class="comment_date">2020/05/06 (水) 21:42:56</span>)</li>
+<li><strong><span class="basic-text">ｕｇｌｙ７７７</span></strong> : 作ってみた<br />
+BIGでは容量が表示されないので-1を返すおまけ付き
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＦＲＥＥＳＤ（）’某ＯＳに似てる！</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｓ＄，Ｘ，Ｃ</span></li>
+<li><span class="smbas">　ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｘ＝３　ＴＯ　Ｘ＋１</span></li>
+<li><span class="smbas">　　Ｃ＝ＣＨＫＣＨＲ（Ｘ，ＣＳＲＹ−１）</span></li>
+<li><span class="smbas">　　ＩＦ　４８＜＝Ｃ　＆＆　Ｃ＜＝５７　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｓ＄＝Ｓ＄＋ＣＨＲ＄（Ｃ）</span></li>
+<li><span class="smbas">　　ＥＬＳＥ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＣＬＳ</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　ＶＡＬ（Ｓ＄）−（ＨＡＲＤＷＡＲＥ＝＝２）</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+(<span class="comment_date">2020/05/06 (水) 22:31:20</span>)</li>
+<li><strong>Na</strong> : 変なやり方してみました<br class="spacer" /><span class="basic-text smbas">DEF FREESD()</span><br class="spacer" /> <span class="basic-text smbas">　IF HARDWARE==2 THEN RETURN -1</span><br class="spacer" /> <span class="basic-text smbas">　FILES ”DAT:SYS”</span><br class="spacer" /> <span class="basic-text smbas">　VAR X%,F%,C%</span><br class="spacer" /> <span class="basic-text smbas">　FOR X%=3 TO X%+C%</span><br class="spacer" /> <span class="basic-text smbas">　　F%=F%*10+C%</span><br class="spacer" /> <span class="basic-text smbas">　　C%=CHKCHR(X%,CSRY-1)-48</span><br class="spacer" /> <span class="basic-text smbas">　NEXT</span><br class="spacer" /> <span class="basic-text smbas">　CLS</span><br class="spacer" /> <span class="basic-text smbas">　RETURN F%</span><br class="spacer" /> <span class="basic-text smbas">END</span><br class="spacer" />X%+C%は無限ループにしつつC%&lt;0なら終了するという意味です (<span class="comment_date">2020/05/06 (水) 23:10:22</span>)</li>
+<li><strong>Na</strong> : ↑4 <span class="basic-text smbas">WHILE 文字列</span>は無限ループになります (<span class="comment_date">2020/05/06 (水) 23:17:04</span>)</li>
+<li><strong>Na</strong> : ↑4 SDカードはフラッシュメモリですがフラッシュEEPROMともいうらしいのでROMでも間違いではないと思います (<span class="comment_date">2020/05/06 (水) 23:24:12</span>)</li>
+<li><strong>takkunplay</strong> : 訂正　WHILE CHR(CHKCHR(X,Y))!=&quot; &quot; (<span class="comment_date">2020/05/07 (木) 07:22:20</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : <span class="basic-text smbas">FILES ”DAT:SYS”</span>だけだったら容量表示されない気が() (<span class="comment_date">2020/05/07 (木) 07:24:10</span>)</li>
+<li><strong>takkunplay</strong> : 4行目が間違ってました　これで無限ループにはならないと思います (<span class="comment_date">2020/05/07 (木) 07:24:29</span>)</li>
+<li><strong>takkunplay</strong> : ついでにB,MB,GB,ブロックに変換できる機能つけた版
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">ＤＥＦ　ＦＲＥＥＳＤ（ＭＯＤＥ）</span></li>
+<li><span class="smbas">　ＦＩＬＥＳ　”ＤＡＴ：ＳＹＳ”</span></li>
+<li><span class="smbas">　ＶＡＲ　ＲＯＭ＄，ＲＯＭ，Ｘ＝３，Ｙ＝ＣＳＲＹ−１</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＣＨＲ＄（ＣＨＫＣＨＲ（Ｘ，Ｙ））！＝”　”</span></li>
+<li><span class="smbas">　　ＲＯＭ＄＝ＲＯＭ＄＋ＣＨＲ＄（ＣＨＫＣＨＲ（Ｘ，Ｙ））</span></li>
+<li><span class="smbas">　　ＩＮＣ　Ｘ</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＣＬＳ</span></li>
+<li><span class="smbas">　ＩＦ　ＭＯＤＥ＝＝０　ＴＨＥＮ　ＲＯＭ＝ＶＡＬ（ＲＯＭ＄）＊１０２４</span></li>
+<li><span class="smbas">　ＩＦ　ＭＯＤＥ＝＝１　ＴＨＥＮ　ＲＯＭ＝ＶＡＬ（ＲＯＭ＄）</span></li>
+<li><span class="smbas">　ＩＦ　ＭＯＤＥ＝＝２　ＴＨＥＮ　ＲＯＭ＝ＶＡＬ（ＲＯＭ＄）／１０２４</span></li>
+<li><span class="smbas">　ＩＦ　ＭＯＤＥ＝＝３　ＴＨＥＮ　ＲＯＭ＝ＶＡＬ（ＲＯＭ＄）／１０２４／１０２４</span></li>
+<li><span class="smbas">　ＩＦ　ＭＯＤＥ＝＝４　ＴＨＥＮ　ＲＯＭ＝ＶＡＬ（ＲＯＭ＄）／１２８</span></li>
+<li><span class="smbas">　ＲＥＴＵＲＮ　ＲＯＭ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+(<span class="comment_date">2020/05/07 (木) 07:33:59</span>)</li>
+<li><strong>Na</strong> : ↑3 投稿者さんはここのコメント欄に書かれたコードを全部試したうえでコメントしてますか? (<span class="comment_date">2020/05/07 (木) 10:04:13</span>)</li>
+<li><strong>名無しさん(投稿者)</strong> : ↑試してません。<span class="basic-text smbas">FILES ”DAT:SYS”</span>の件は勘違いでした。 (<span class="comment_date">2020/05/07 (木) 10:54:31</span>)</li>
+<li><strong>名無しさん</strong> : takkunplayはTAFUO5さんみたくプログラムできない人だと思ってた(おもちつきで変な曲、譜面ばかり作るので) (<span class="comment_date">2020/06/22 (月) 10:54:13</span>)</li>
+<li><strong>名無しさん</strong> : ↑そういう偏見を何故わざわざ書くのか (<span class="comment_date">2020/06/22 (月) 11:45:07</span>)</li>
+<li><strong>名無しさん</strong> : takkunplay、おもちつきの譜面はまともに作れないくせに、プログラミングはできるのムカつくわ() (<span class="comment_date">2020/10/06 (火) 08:02:00</span>)</li>
+<li><strong>Gold dish</strong> : 比較してるのおかしすぎだろ (<span class="comment_date">2020/10/06 (火) 16:19:40</span>)</li>
+<li><strong>名無しさん</strong> : ↑誰だよ (<span class="comment_date">2020/10/06 (火) 18:30:30</span>)</li>
+<li><strong>名無しさん</strong> : ↑2<br class="spacer" /><span class="basic-text smbas">?Gold_dish==Kazusoft</span><br class="spacer" /><span class="basic-text smbas">1</span><br class="spacer" /><span class="basic-text smbas">OK</span> (<span class="comment_date">2020/10/06 (火) 18:35:30</span>)</li></ul>
+<p>※コメント欄は閉鎖しました。</p>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="../Toukou/Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="../Toukou/DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="../Toukou/PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../Toukou/A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="../Toukou/Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="../Toukou/TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="../Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/7A5-BB-A5-B0-C9-BD-BC-A8-DEF.html" title="Toukou/7セグ表示DEF (565d)">7セグ表示DEF<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/40-MONSTER20-RPG.html" title="Toukou/@MONSTER RPG (565d)">【復刻版】MONSTER RPG<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/7A1-F9-Ris.html" title="Toukou/7☆Ris (565d)">7☆Ris<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/50OS20-BETA.html" title="Toukou/50OS BETA (565d)">50OS BETA<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4A4-C4-A4-CE-A5-EC-A1-BC-A5-F3-A4-CE-B2-BB-A5-B2-A1-BC-.html" title="Toukou/4つのレーンの音ゲー (565d)">4REN MUSIC GAME(4つのレーンの音ゲー)<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/4BF-CD-C2-C7-A4-C1-CB-E3-BF-FD-A5-B2-A1-BC-A5-E0-A1-D8-A4-DE-A1-BC-A4-B8-A4-E3-A4-F3-A4-CE-A4-E8-A4-A6-A4-CA-A4-E2-A4-CE-A1-A3-A1-D9-.html" title="Toukou/4人打ち麻雀ゲーム『まーじゃんのようなもの。』 (565d)">四人打ち麻雀ゲーム『まーじゃんのようなもの。』<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/AAEditor.html" title="Toukou/AAEditor (565d)">AAEditor<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/ACTION.html" title="Toukou/ACTION (565d)">ACTION<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/ARYOPEX2.html" title="Toukou/ARYOPEX2 (565d)">ARYOPEX2 ver 0.1.0<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 826 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+<p id="notes">
+<a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">3DSの本体設定で出るもの</span><br /></p>
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.106 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:49  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Mame/SDA5-AB-A1-BC-A5-C9-A4-CE-B6-F5-A4-AD-CD-C6-CE-CC-A4-F2-BC-E8-C6-C0-A4-B9-A4-EB-CA-FD-CB-A1-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 15:34:42 GMT -->
+</html>
