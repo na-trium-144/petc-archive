@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/A5-D5-A5-A1-A5-A4-A5-EB-B0-C5-B9-E6-B2-BD-A5-D7-A5-ED-A5-B0-A5-E9-A5-E0-20-A1-D6-PhoenixA1-D7-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:43:08 GMT -->
+<head>
+	<title>投稿プログラム : ファイル暗号化プログラム「Phoenix」 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : ファイル暗号化プログラム「Phoenix」 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, 実用ツール, 暗号, ファイル" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="A5-D5-A5-A1-A5-A4-A5-EB-B0-C5-B9-E6-B2-BD-A5-D7-A5-ED-A5-B0-A5-E9-A5-E0-20-A1-D6-PhoenixA1-D7-a0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../index2425.html?cmd=edit&amp;page=Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%B0%C5%B9%E6%B2%BD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%20%A1%D6Phoenix%A1%D7">このページを編集</a></li>
+				<li><a href="../../index3c17.html?cmd=diff&amp;page=Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%B0%C5%B9%E6%B2%BD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%20%A1%D6Phoenix%A1%D7">前回からの変更点</a></li>
+				<li><a href="../../index4b4f.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%B0%C5%B9%E6%B2%BD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%20%A1%D6Phoenix%A1%D7">ファイルをアップロード</a></li>
+				<li><a href="../../index4a5b.html?plugin=newpage&amp;refer=Toukou%2F%A5%D5%A5%A1%A5%A4%A5%EB%B0%C5%B9%E6%B2%BD%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0%20%A1%D6Phoenix%A1%D7">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : ファイル暗号化プログラム「Phoenix」</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">ファイル暗号化プログラム 「Phoenix」</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.107sec. -->
+<div class="contents">
+<ul><li><a href="#f7e56f05">  概要 </a></li>
+<li><a href="#je9d9776">  事の始まり </a></li>
+<li><a href="#h3663bca"> 更新情報 (ver1.1)</a>
+<ul><li><a href="#c79b9780"> 内容 </a></li>
+<li><a href="#z26aab47"> 進捗状況 </a></li>
+<li><a href="#e1e6f7e7"> 鍵の保証範囲 </a></li></ul></li>
+<li><a href="#ub7e19c1"> 投票コーナー </a></li>
+<li><a href="#m4b2061d">  公開キー </a></li>
+<li><a href="#uc6379ff">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2018年8月12日投稿
+/ 投稿者 : 上溝私設総合研究所
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../indexf49f.html?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> <a href="../../indexa4be.html?cmd=taglist&amp;tag=%B0%C5%B9%E6">暗号</a> <a href="../../indexe8b1.html?cmd=taglist&amp;tag=%A5%D5%A5%A1%A5%A4%A5%EB">ファイル</a> </span></p>
+<h3 id="f7e56f05">概要</h3>
+<p>これは最近ふと思い付いて作成したプログラムです。<br class="spacer" />
+これを使えば大事な情報を保護することができます。</p>
+
+<h3 id="je9d9776">事の始まり</h3>
+<p>最初はBIN$という2進数の文字列に変換するプログラムを作成して<br class="spacer" />
+遊んでいたら、2進数で文字列を暗号化できないか、<br class="spacer" />
+と思い立ったのがきっかけでした。<br class="spacer" />
+その後2進数では10進数に変換するのが不可能とわかり、<br class="spacer" />
+16進数ではどうかと模索していたところ、ふと思い付いたのです。<br class="spacer" /><br class="spacer" />
+文字をASCで数値して足し算をしてCHR$で文字に変換したら行けるかも...と。<br class="spacer" /><br class="spacer" />
+そこからこのシステムの研究を開始しました。<br class="spacer" />
+一文字ずつ暗号化して、一行できたらPRGSET$で入れ替えて<br class="spacer" />
+それを繰り返す事で完成しました。</p>
+
+<h3 id="h3663bca">更新情報 (ver1.1)</h3>
+<p>ただいま新バージョン(ver1.1)の開発を行っています。<br class="spacer" />
+概要は以下の通りです。<br class="spacer" /></p>
+
+<h4 id="c79b9780">内容</h4>
+<p>・4つの鍵と<del>6種類</del>の計算モードの採用<br class="spacer" />
+　→20種類に変更(2018年8月18日)<br class="spacer" />
+・ストリーム暗号を採用した暗号化方式の開発<br class="spacer" />
+　＝計算された数値はRANDOMIZEに代入されて<br class="spacer" />
+　　乱数によりシフトする数は100以内に抑えられています。<br class="spacer" />
+・off by oneエラーの解消<br class="spacer" />
+・ボタンによるファイル選択の実装<br class="spacer" />
+・エラートラップの実装(2018年8月18日追加)<br class="spacer" /><br class="spacer" />
+これらの内容を組み込んで、出来次第ver1.1を公開します。</p>
+
+<h4 id="z26aab47">進捗状況</h4>
+<p>進捗状況を報告致します。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td">4つの鍵の開発</td><td class="style_td">製作完了</td></tr><tr><td class="style_td">20種類の計算モードの開発</td><td class="style_td">製作中</td></tr><tr><td class="style_td">ストリーム暗号化方式の開発</td><td class="style_td">製作完了</td></tr><tr><td class="style_td">off by oneエラーの解消</td><td class="style_td">解消完了</td></tr><tr><td class="style_td">ボタンによるファイル選択の実装</td><td class="style_td">製作中</td></tr><tr><td class="style_td">エラートラップの実装</td><td class="style_td">実装完了</td></tr></tbody></table></div>
+
+<h4 id="e1e6f7e7">鍵の保証範囲</h4>
+<p>鍵の保証範囲は −139000000 ~ ＋139000000 までです。<br class="spacer" />
+(0は鍵に設定出来ません。(設定すると0による除算のエラートラップが発動します。))<br class="spacer" /></p>
+
+<h3 id="ub7e19c1">投票コーナー</h3>
+<p>もしよろしければDLした方は投票していただけるとありがたいです。<br class="spacer" /></p>
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/ファイル暗号化プログラム 「Phoenix」" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="4b829b8e52662e090c04a81c059970e7" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">DLしました!</td>
+   <td align="right" class="vote_td2">13&nbsp;&nbsp;
+    <input type="submit" name="vote_444CA4B7A4DEA4B7A4BF21" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="m4b2061d">公開キー</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+ver1.0の公開キー<br />
+<div class="key">
+<span class="smbas">7R7EX3A4</span>
+</div>
+</div>
+
+</div>
+
+<p>ぜひともこの暗号化システムを役立てて、皆様のお力になれたら光栄です。<br class="spacer" />
+もし、よろしければコメントをお願い致します。</p>
+
+<h3 id="uc6379ff">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>しょうご</strong> : これは凄いですね。ぜひ自作ゲーム等に活用させていただいてもよろしいでしょうか？ (<span class="comment_date">2018/08/13 (月) 15:14:16</span>)</li>
+<li><strong>KPCL</strong> : 活用してもらって構いません (<span class="comment_date">2018/08/13 (月) 15:28:31</span>)</li>
+<li><strong>KPCL</strong> : こちらとしても嬉しいです (<span class="comment_date">2018/08/13 (月) 15:28:45</span>)</li>
+<li><strong>しょうご</strong> : ありがとうございます！ (<span class="comment_date">2018/08/13 (月) 17:20:58</span>)</li>
+<li><strong>天郷思音</strong> : ようするにシーザー暗号かな？ (<span class="comment_date">2018/08/13 (月) 18:29:42</span>)</li>
+<li><strong>天郷思音</strong> : まず1文字ごとに同じ計算をしてるので端的に言って弱い。あとファイル名を上画面に表示するならボタン操作で選べるほうが良いのでは？ (<span class="comment_date">2018/08/13 (月) 18:40:10</span>)</li>
+<li><strong>天郷思音</strong> : あと127行目でFOR J=0 TO Lというのは典型的なOff-by-oneエラーでしょうか？？ (<span class="comment_date">2018/08/13 (月) 18:46:18</span>)</li>
+<li><strong>天郷思音</strong> : さらに致命的な欠陥があってね、鍵が衝突<a id="notetext_1" href="#notefoot_1" class="note_super" title="違う鍵で同じ暗号文ができること">*1</a>しまくる。 (<span class="comment_date">2018/08/14 (火) 14:00:17</span>)</li>
+<li><strong>天郷思音</strong> : 鍵は3要素の実数型配列変数なので<strong>見かけ上</strong>64×3=192bitの鍵に見えるんだけど (<span class="comment_date">2018/08/14 (火) 14:01:40</span>)</li>
+<li><strong>天郷思音</strong> : たとえば、8,10,1919と10,8,1919と40,25,999と25,40,999では同じ鍵になる。もちろん逆算すればいくらでもある。 (<span class="comment_date">2018/08/14 (火) 14:03:49</span>)</li>
+<li><strong>天郷思音</strong> : したがって実質的な強度は192bitよりもはるかに弱い。これだけの問題があるにもかかわらず、しょうごさんは本気で「採用」と言っているのだろうか？ (<span class="comment_date">2018/08/14 (火) 14:05:50</span>)</li>
+<li><strong>天郷思音</strong> : そもそも、プチコン3号の文字コードは0から65535までしかない。たとえば、999999みたいな大きな数を足したところであふれた分は無視される。1文字1文字に同じ数を足す現在の設計では、鍵をどんなに長くしたところで16bitを越える強度は実現不可能。 (<span class="comment_date">2018/08/14 (火) 14:16:16</span>)</li>
+<li><strong>しょうご</strong> : そこまで問題があったんですね。 (<span class="comment_date">2018/08/14 (火) 14:23:00</span>)</li>
+<li><strong>しょうご</strong> : SmileBASIC自体も意外と制約が多いんですよね。 (<span class="comment_date">2018/08/14 (火) 14:23:33</span>)</li>
+<li><strong>天郷思音</strong> : 問題点ばかり書いてきたけど、プログラムの書き方としてはOPTION STRICTやインデントを用いてるなど評価点もあるし、改良されれば実用ツールになれる可能性はあるね。 (<span class="comment_date">2018/08/14 (火) 14:57:59</span>)</li>
+<li><strong>名無しさん</strong> : 全く関係ないけど天郷思音さんのたとえばの数値が汚い (<span class="comment_date">2018/08/14 (火) 22:44:48</span>)</li>
+<li><strong>KPCL</strong> : 遅くなってしまって申し訳ございません。このプログラムの主です。このプログラムは64*3するのではなく、ASCIIコード+((DAT[0]*DAT[1])+DAT[2])としているので、実質ASCIIコード+計算された数値、になります。誤解するようなプログラムを書いてしまって申し訳ございません。 (<span class="comment_date">2018/08/15 (水) 14:38:14</span>)</li>
+<li><strong>KPCL</strong> : 新バージョンの開発を始めました。詳しくはページ中程の「更新情報」をご覧ください。 (<span class="comment_date">2018/08/17 (金) 14:34:42</span>)</li>
+<li><strong>クロマリオ</strong> : ものすげえボロクソ書くやんｗ (<span class="comment_date">2018/08/17 (金) 15:31:04</span>)</li>
+<li><strong>名無しさん</strong> : ちゃんと指摘されたところ直そうとしててえらヨ (<span class="comment_date">2018/08/17 (金) 17:19:00</span>)</li>
+<li><strong>KPCL</strong> : 「更新情報」の欄を更新しました。詳しくは更新情報をご覧ください。 (<span class="comment_date">2018/08/18 (土) 13:45:58</span>)</li>
+<li><strong>KPCL</strong> : 更新情報の名称が変更されました。新しい名称は「更新情報(ver1.1)」です。 (<span class="comment_date">2018/08/18 (土) 14:03:08</span>)</li>
+<li><strong>KPCL</strong> : 投票コーナーを新設しました。よろしければ投票をお願い致します。 (<span class="comment_date">2018/08/18 (土) 14:25:14</span>)</li>
+<li><strong>KPCL</strong> : 更新情報 (ver1.1)に進捗状況を追加しました。詳しくはそちらをご覧下さい。 (<span class="comment_date">2018/09/09 (日) 12:58:33</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/ファイル暗号化プログラム 「Phoenix」" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="4b829b8e52662e090c04a81c059970e7" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="RouteMaster28-C5-C5-B7-E2-A5-A4-A5-E9-A5-A4-A5-E9-CB-C0-C9-F7-A5-B2-A1-BC-A5-E0-29-.html" title="Toukou/RouteMaster(電撃イライラ棒風ゲーム) (565d)">RouteMaster(電撃イライラ棒風アクション)<span class="counter">(1)</span></a></li>
+ <li><a href="S.T.G.C3-E6-C6-C7-.html" title="Toukou/S.T.G.中毒 (565d)">S.T.G.中毒<span class="counter">(1)</span></a></li>
+ <li><a href="Rio20-de20-Julho.html" title="Toukou/Rio de Julho (565d)">大統領救出作戦<span class="counter">(1)</span></a></li>
+ <li><a href="Reversi.html" title="Toukou/Reversi (565d)">Reversi (最弱リバーシ)<span class="counter">(1)</span></a></li>
+ <li><a href="Remain.html" title="Toukou/Remain (565d)">Remain<span class="counter">(1)</span></a></li>
+ <li><a href="Reveris2.html" title="Toukou/Reveris2 (565d)">Reveris2 ver0.2.0<span class="counter">(1)</span></a></li>
+ <li><a href="SAKURAOS.html" title="Toukou/SAKURAOS (565d)">【制作終了】 SAKURAOS ver.3<span class="counter">(1)</span></a></li>
+ <li><a href="SANMAGO_2015.html" title="Toukou/SANMAGO_2015 (565d)">サンタのまご娘 ローサのおてつだい 2015<span class="counter">(1)</span></a></li>
+ <li><a href="SIMPLE20-SQUASH.html" title="Toukou/SIMPLE SQUASH (565d)">SIMPLE SQUASH<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1261 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+<p id="notes">
+<a id="notefoot_1" href="#notetext_1" class="note_super">*1</a>
+<span class="small">違う鍵で同じ暗号文ができること</span><br /></p>
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.135 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:46  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/A5-D5-A5-A1-A5-A4-A5-EB-B0-C5-B9-E6-B2-BD-A5-D7-A5-ED-A5-B0-A5-E9-A5-E0-20-A1-D6-PhoenixA1-D7-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:43:09 GMT -->
+</html>

@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="EUC-JP" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Beginner/Chapter11.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:26:43 GMT -->
 <head>
 	<title>プチコン3号&amp;BIG 非公式初心者講座 : 第11章 ビット演算 - プチコン3号＆BIGまとめWiki</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-	<link rel="stylesheet" href="../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
-		<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
 		<meta name="twitter:title" content="プチコン3号&amp;BIG 非公式初心者講座 : 第11章 ビット演算 - プチコン3号＆BIGまとめWiki" />
 	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
 	<meta name="twitter:site" content="@hosiken" />
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" />	<script language="JavaScript">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" />	<script language="JavaScript">
 		$(document).ready(function(){
 			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
 		});
@@ -32,21 +34,21 @@
 
 	<div id="block-header">
 
-		<h1><a href="/petc3gou/">プチコン3号＆BIGまとめWiki</a></h1>
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
 
 	<div id="block-topbox">
 		<div id="headermenu">
 	<ul class="menu">
 		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
-		<li><a href="./?plugin=search">検索</a></li>
-		<li><a href="./?Help">ヘルプ</a></li>
+		<li><a href="Chapter11a0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
 		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
-				<li><a href="/petc3gou/?cmd=edit&amp;page=Beginner%2FChapter11">このページを編集</a></li>
-				<li><a href="/petc3gou/?cmd=diff&amp;page=Beginner%2FChapter11">前回からの変更点</a></li>
-				<li><a href="/petc3gou/?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter11">ファイルをアップロード</a></li>
-				<li><a href="/petc3gou/?plugin=newpage&amp;refer=Beginner%2FChapter11">新しいページをつくる</a></li>
-				<li><a href="/petc3gou/?cmd=list">すべてのページの一覧</a></li>
-				<li><a href="/petc3gou/?RecentChanges">最近更新されたページ</a></li>
+				<li><a href="../../index71e5.html?cmd=edit&amp;page=Beginner%2FChapter11">このページを編集</a></li>
+				<li><a href="../../index959a.html?cmd=diff&amp;page=Beginner%2FChapter11">前回からの変更点</a></li>
+				<li><a href="../../index4f0e-2.html?plugin=attach&amp;pcmd=upload&amp;page=Beginner%2FChapter11">ファイルをアップロード</a></li>
+				<li><a href="../../indexdf75.html?plugin=newpage&amp;refer=Beginner%2FChapter11">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
 
 </ul></li>
 </ul>
@@ -57,9 +59,9 @@
 
 	<div id="block-extra-navi">
 		<ul>
-			<li><a href="/petc4/">プチコン4</a></li>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
 			<li id="active">3号/BIG</li>
-			<li><a href="/petc/">初代/mkII</a></li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
 </ul>
 	</div>
 
@@ -77,20 +79,20 @@
 					<h3 id="header-pankuzu">パンくずリスト</h3>
 
 					<ul id="list-pankuzu">
-<li id="list-pankuzu-home"><a href="/petc3gou/">トップ</a></li>
-<li><a href="/petc3gou/?Beginner">Beginner</a></li>
-<li id="list-pankuzu-current"><a href="/petc3gou/?Beginner%2FChapter11">Chapter11</a></li>					</ul>
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Beginner.html">Beginner</a></li>
+<li id="list-pankuzu-current"><a href="#">Chapter11</a></li>					</ul>
 
 				</div>
 					
 <div id="body">
-<!--  / 0.725sec. -->
+<!--  / 0.508sec. -->
 <div style="margin-bottom:2em;">
-<div style="text-align:center">[ <a href="/petc3gou/?Beginner%2FChapter10" title="Beginner/Chapter10 (561d)">← 第10章へ</a>
+<div style="text-align:center">[ <a href="Chapter10.html" title="Beginner/Chapter10 (565d)">← 第10章へ</a>
 |
-<a href="/petc3gou/?Beginner#beginner-contents" title="Beginner (564d)">もくじに戻る</a>
+<a href="../Beginner.html#beginner-contents" title="Beginner (565d)">もくじに戻る</a>
 |
-<a href="/petc3gou/?Beginner%2FChapter12" title="Beginner/Chapter12 (1690d)">第12章へ → </a> ]</div>
+<a href="Chapter12.html" title="Beginner/Chapter12 (565d)">第12章へ → </a> ]</div>
 </div>
 <div class="block-info" style="width:60%;margin:auto;padding-left:2em;padding-right:2em;padding-bottom:2em;">
 <h3 id="fcbdaf0d">プログラマーからひとこと</h3>
@@ -141,7 +143,7 @@
 <h3 id="p3680ed3">２進数</h3>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>いいかげんにしろ！　あれだけムズかしいとかスグには役に立たねェとか言われたアトじゃ、そうそうヤル気は起きねーぞ……</p>
 
@@ -149,7 +151,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ではビット演算のキソから始めようか！　ワクワクするよね！</p>
 
@@ -157,7 +159,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>コ……コイツ、ものすげえタフか、それともオレのハナシをきいてねェのか……。</p>
 
@@ -165,7 +167,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>まあ、ここはスナオに話にのっておこうか。</p>
 
@@ -173,7 +175,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ビット演算をリカイするには、その前に「２進数」のことを知らないといけないね。</p>
 
@@ -181,7 +183,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>２進数？</p>
 
@@ -189,7 +191,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ボクらがふだんイシキせずに使ってる数字は、「10進数」でできているんだ。これがコンピューターだと、２進数になるんだね。</p>
 
@@ -197,7 +199,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>それにしちゃ、今までBASICでフツーに数字を使ってなかったか？　アレも２進数ってやつなのか？</p>
 
@@ -205,7 +207,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>BASICではふつう、ボクらにもわかりやすいように10進数しか出てこないんだ。ボクらの目に見えないだけで、コンピューターの中では２進数で動いているんだよ。</p>
 
@@ -213,7 +215,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>そうか……わざわざオボエなくていいっていうのは、そういうトコロなのかあ。10進数と２進数はどう違うの？</p>
 
@@ -221,7 +223,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ボクらの10進数では、０・１・２・３・４・５・６・７・８・９の10コの数字の組み合わせで数をつくるよね。これが２進数だと、「０」と「１」の２コの数字しか使わないんだ。</p>
 
@@ -229,7 +231,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>エ、……ハァ!?　それじゃモノを数えられねェだろ！</p>
 
@@ -237,7 +239,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そうでもないんだな。<br />
 ここからは、区別しやすいよう２進数には線を引いておくよ。<br />
@@ -248,7 +250,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ジ、10だと!?</p>
 
@@ -256,7 +258,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>２進数だと<span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span>と書いて「イチゼロ」とか読む方がいいんだけど……</p>
 
@@ -264,7 +266,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>うーん……急にチシキをつめこまれてる気がしないでもないぞ。</p>
 
@@ -272,7 +274,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>もうちょっとユックリいこうか。<br />
 10進数では、使える10コの数字の中で一番大きいのは「９」だよね。９より大きい数を書くときはどうするかな？</p>
@@ -281,7 +283,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>そりゃトウゼン、１ケタ位 (くらい) が上がって「１０」だゼ！　……ン？ １０？</p>
 
@@ -289,7 +291,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そう、２進数も同じようなものなのさ。</p>
 
@@ -297,7 +299,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ええと、２進数だと使える２コの数字の中で一番大きいのは「<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>」。それより大きい数を書くときは……</p>
 
@@ -305,7 +307,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>位が上がって、「<span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span>」になるワケか！</p>
 
@@ -313,7 +315,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そういうコト。このルールだけオボエれば、２進数はカンペキさ。</p>
 
@@ -321,7 +323,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ホント!?　うーん、<span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span>の次は１ケタ目が上がるから、<span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span>。その次は、もう上げられる位が残ってないから、位上がりして<span style="text-decoration:underline;"><span class="basic-text smbas">１００</span></span>……。</p>
 
@@ -329,7 +331,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>オイオイ、とんでもねえハイペースでケタが上がってるぞ！　ホントにコレで合ってるのか？</p>
 
@@ -337,10 +339,10 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
-<p>バッチリだよ！　０〜10までを数えた表がコレになるね。</p>
+<p>バッチリだよ！　０~10までを数えた表がコレになるね。</p>
 <div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">10進数</th><th class="style_th">２進数</th></tr><tr><td class="style_td" style="background-color:white;">０</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">０</span></span></td></tr><tr><td class="style_td" style="background-color:white;">１</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">２</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０</span></span></td></tr><tr><td class="style_td" style="background-color:white;">３</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">４</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">５</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">６</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１０</span></span></td></tr><tr><td class="style_td" style="background-color:white;">７</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１１１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">８</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０００</span></span></td></tr><tr><td class="style_td" style="background-color:white;">９</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１００１</span></span></td></tr><tr><td class="style_td" style="background-color:white;">１０</td><td class="style_td" style="background-color:white;"><span style="text-decoration:underline;"><span class="basic-text smbas">１０１０</span></span></td></tr></tbody></table></div>
 <p>こんなカンジで、どんどんケタが上がるから、<span style="text-decoration:underline;"><span class="basic-text smbas">１０１０</span></span>と書いて「イチマルイチマル」とか読むんだね。</p>
 
@@ -349,7 +351,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>フーム……じゃあ10進数で「1976」は、２進数だとどうなるんだ？</p>
 
@@ -357,7 +359,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>……。</p>
 
@@ -365,7 +367,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>……。</p>
 
@@ -373,7 +375,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>プチコンに聞いてみようか！</p>
 
@@ -381,7 +383,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>さては、わかんネェんだな！</p>
 
@@ -389,7 +391,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>まあ、２進数をいちいち手で計算するのはタイヘンだからね。コンピューターに聞くのがフツウなのさ。<br />
@@ -404,7 +406,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>「1976 = <span style="text-decoration:underline;"><span class="basic-text smbas">１１１１０１１１０００</span></span>」か……。ニンゲンサマがわからんものも、プチコンならばイッシュンなんだな、カンゼンにオレたちの敗北だぜ。</p>
 
@@ -412,7 +414,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>逆に、２進数を10進数に変換することはできるの？</p>
 
@@ -420,7 +422,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>もちろん。２進数の頭に<span style="text-decoration:underline;"><span class="basic-text smbas">＆Ｂ</span></span>をつけると、プチコンはそれを10進数の数値に変換してあつかってくれるのさ。</p>
@@ -435,7 +437,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ホウ、くわしくハナシを聞かせてもらおうじゃネェか！</p>
 
@@ -443,7 +445,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>それじゃあ、<a href="http://www.google.co.jp/search?ie=utf8&amp;oe=utf8&amp;q=1976%E3%82%922%E9%80%B2%E6%95%B0%E3%81%A7&amp;lr=lang_ja&amp;hl=ja" title="Google.jp:1976を2進数で" rel="nofollow">Google検索</a>してみよう！</p>
 
@@ -451,7 +453,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ナンだソレ！　ググんのかよ！</p>
 
@@ -459,7 +461,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>しかも、本当にそれで答が出るんだ！</p>
 
@@ -467,7 +469,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ググった答えは「1976 = <span style="text-decoration:underline;"><span class="basic-text smbas">０ｂ１１１１０１１１０００</span></span>」か……。この「<span style="text-decoration:underline;"><span class="basic-text smbas">０ｂ</span></span>」ってのはナンだ？</p>
 
@@ -475,7 +477,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>さっきの<span style="text-decoration:underline;"><span class="basic-text smbas">＆Ｂ</span></span>みたいに、10進数と区別するための記号だね。1976をただ２進数で言えば<span style="text-decoration:underline;"><span class="basic-text smbas">１１１１０１１１０００</span></span>だけど、これだと10進数の「111億1千11万1千」にも見えるから、アタマに<span style="text-decoration:underline;"><span class="basic-text smbas">０ｂ</span></span>と付けるのがマナーってことかな。<span style="text-decoration:underline;"><span class="basic-text smbas">＆Ｂ</span></span>よりも広く使われているんだ。</p>
 
@@ -483,7 +485,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p><span style="text-decoration:underline;"><span class="basic-text smbas">＆Ｂ</span></span>をつけるプチコンは少数派なんだね。</p>
 
@@ -491,7 +493,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>BASICでは<span style="text-decoration:underline;"><span class="basic-text smbas">＆Ｂ</span></span>がフキュウしてるんだ。いいかえると、BASIC以外ではほとんど使わないね。</p>
 
@@ -499,7 +501,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>だいたいわかってきたけど、それにしてもメンドくさい数え方だね……。</p>
 
@@ -507,7 +509,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>もともとコンピューターはスイッチがON (オン) かOFF (オフ) かの組み合わせで作られたからねえ。この２つの組み合わせを「ビット」と言うんだ。</p>
 
@@ -515,7 +517,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ん……ビット？</p>
 
@@ -523,7 +525,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ワスれるトコだったぜ、アブねえ！　「ビット演算」のハナシはドコ行ったんだ？</p>
 
@@ -533,7 +535,7 @@
 <h3 id="uac84aa0">初歩のビット演算</h3>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>それじゃあ、プチコンで使うビット演算のサンプルを見てもらおうか。</p>
@@ -547,7 +549,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ハ、ハァ!?</p>
 
@@ -559,7 +561,7 @@
 </ol></code></div></div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ANDっていうから、てっきり5＋3みたいなコトかと思ったけど……</p>
 
@@ -567,7 +569,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p><span class="basic-text smbas">５　ＡＮＤ　３</span>はそういう計算とはちがうモノだってオボエておこうね。<br class="spacer" />
@@ -579,7 +581,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>えーと……</p>
 
@@ -587,7 +589,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>なんだコレ！　ワカるフンイキがまったくねェぞ！　<span class="basic-text smbas">５　ＡＮＤ　３</span>のドコからこの式になるってんだ！</p>
 
@@ -595,7 +597,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>いやいや、たぶん２進数がここで出てくるんだよね……。</p>
 
@@ -603,7 +605,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そのとおり。<span class="basic-text smbas">５</span>を２進数にすると<span style="text-decoration:underline;"><span class="basic-text smbas">１０１</span></span>。<span class="basic-text smbas">３</span>を２進数にすると<span style="text-decoration:underline;"><span class="basic-text smbas">０１１</span></span>になるね。</p>
 
@@ -611,7 +613,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>……<span class="basic-text smbas">３</span>を２進数にすると<span style="text-decoration:underline;"><span class="basic-text smbas">１１</span></span>じゃなかったか？</p>
 
@@ -619,7 +621,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>アタマにつけるゼロは、いくらつけてもいいんだ。<span style="text-decoration:underline;"><span class="basic-text smbas">１０１</span></span>と位をそろえるために、１コつけておいたよ。</p>
 
@@ -627,7 +629,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right">
 <p>ウーム……つまり、<span class="basic-text smbas">５　ＡＮＤ　３</span>を２進数にすると、</p>
@@ -639,7 +641,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>習ったことのない計算だから、そう思うのもトウゼンだね。<br />
 ビット演算の「AND」では、「両方とも<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になっている位だけ<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になる」とオボエると……カンタン……かなあ？</p>
@@ -648,7 +650,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>……かなあ？</p>
 
@@ -656,7 +658,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ダレもナットクいってねェじゃねえか！</p>
 
@@ -664,7 +666,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right">
 <p>うーん。「位」がポイントなんだよね。たとえば１ケタ目は……</p>
@@ -678,7 +680,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>いいよ！　そこまでワカれば、あともカンタンなハズ！</p>
 
@@ -686,7 +688,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right">
 <p>つまり２ケタ目も、こういうコトか？</p>
@@ -700,7 +702,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>そのとおり！　３ケタ目はもうわかるよね。<br />
@@ -713,7 +715,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>その<span style="text-decoration:underline;"><span class="basic-text smbas">００１</span></span>は２進数だから、10進数に直すと……</p>
 
@@ -721,7 +723,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p><span class="basic-text smbas">１</span>が変数<span class="basic-text smbas">Ａ</span>に入るってコトか。</p>
 
@@ -729,7 +731,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>計算のしかたさえワカれば、あんがいラクだろう。たとえば<span class="basic-text smbas">Ｂ＝７　ＡＮＤ　１１</span>だとどうなるかな？</p>
 
@@ -737,7 +739,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right">
 <p>ツギツギに出してきやがって！　まあヤリ方はワカッてるぜ。まず２進数に変えるんだろ？<br class="spacer" />
@@ -749,7 +751,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right">
 <p>で、「両方とも<span style="text-decoration:underline;"><span class="basic-text smbas">１</span></span>になっている位」をさがすと……</p>
@@ -761,7 +763,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>答はこうなるね。</p>
@@ -772,7 +774,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p><span style="text-decoration:underline;"><span class="basic-text smbas">００１１</span></span>、つまり10進数で言いかえると<span class="basic-text smbas">３</span>が変数<span class="basic-text smbas">Ｂ</span>に入ることになるね。どうだい、思ったよりはカンタンだろう？</p>
 
@@ -780,7 +782,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>やり方ドオリにやれば、まあデキねえコトはねェが……トンデモなくメンドくせェぜ！</p>
 
@@ -788,7 +790,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ANDのほかにも、「OR」や「XOR」の計算もあるんだけど……</p>
 
@@ -796,7 +798,7 @@
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ウオォー！　メンドくせェー!!</p>
 
@@ -807,7 +809,7 @@
 <h4 id="x0649f77">ORとXOR、NOTのビット演算</h4>
 <div class="kaiwa">
  <div class="kaiwa-img-right">
-   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+   <img src="../../../sys/skin/face/hakase-rev.png" alt="ハカセ">
  </div>
  <div class="kaiwa-text-left"><p>ワンパク君、すっかり<span class="basic-text smbas">Ｏｖｅｒｆｌｏｗ</span>エラーというトコロじゃな。<br />
 などとBASICネタもクールに使いこなすワシじゃ、ハカセじゃ。ビット演算の「OR」も「XOR」も「AND」とあまり変わらんぞい。ものはためしじゃ、ジッサイの計算式を見てもらおうかの。</p>
@@ -829,7 +831,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 <h3 id="j0a4e4dc">ビット演算の実例</h3>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ゼェ、ゼェ……。アタマがワレそうだぜ……。</p>
 
@@ -837,7 +839,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ひととおりオボエたけれど、けっきょくコレって何につかうの？</p>
 
@@ -845,7 +847,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>たしかに、何の役に立つのかわからないとハリアイがないよね。<br class="spacer" />
@@ -862,16 +864,16 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
- <div class="kaiwa-text-right"><p>たしか<a href="/petc3gou/?Beginner%2FChapter7" title="Beginner/Chapter7 (1694d)">サンプルプログラム３</a>で出てきたね。<br />
+ <div class="kaiwa-text-right"><p>たしか<a href="Chapter7.html" title="Beginner/Chapter7 (565d)">サンプルプログラム３</a>で出てきたね。<br />
 <span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令と<span class="basic-text smbas">ＩＦ</span>文の組み合わせで、十字ボタンの押された方向を調べるんだったっけ。</p>
 
  </div>
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>「<span class="basic-text smbas">ＩＦ　Ｂ　ＡＮＤ　１</span>」と書くと、「<span class="basic-text smbas">Ｂ</span>の中に<span class="basic-text smbas">１</span>がまじっている」というイミになると習ったよね。</p>
 
@@ -879,7 +881,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>十字ボタンの右上が押されたら、<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令で変数<span class="basic-text smbas">Ｂ</span>のナカミには１（上）＋８（右）の<span class="basic-text smbas">９</span>が入る……。<br />
 で、<span class="basic-text smbas">Ｂ</span>のナカミが<span class="basic-text smbas">９</span>でもなぜか「<span class="basic-text smbas">ＩＦ　Ｂ　ＡＮＤ　１</span>」や「<span class="basic-text smbas">ＩＦ　Ｂ　ＡＮＤ　８</span>」と書くとアタリになる、って話だったな……。<br />
@@ -889,7 +891,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>あれ、だけどこの<span class="basic-text smbas">Ｂ　ＡＮＤ　１</span>って、ビット演算の書き方じゃないかな？</p>
 
@@ -897,7 +899,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そのとおり！　もう１度、この<span class="basic-text smbas">ＩＦ</span>文をビット演算の考え方で見てみると、イミがわかってくると思うよ。</p>
 
@@ -905,7 +907,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>チクショウ、またビット演算すんのかよ！<br />
 まず右上が押されて変数<span class="basic-text smbas">Ｂ</span>に<span class="basic-text smbas">９</span>が入ったとするだろ……で、56行目が<span class="basic-text smbas">ＩＦ　Ｂ　ＡＮＤ　１　ＴＨＥＮ</span>……。<br />
@@ -915,7 +917,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right">
 <p><span class="basic-text smbas">９　ＡＮＤ　１</span>は、こう計算するんだったよね。</p>
@@ -927,7 +929,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right">
 <p>じゃあ次の57行は……<span class="basic-text smbas">ＩＦ　Ｂ　ＡＮＤ　２　ＴＨＥＮ</span>だから、<span class="basic-text smbas">９　ＡＮＤ　２</span>をビット演算すると……</p>
@@ -939,7 +941,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right">
 <p>だんだんカラクリが見えてきたね。「<span class="basic-text smbas">Ｂ　ＡＮＤ　４</span>」を調べる58行だと、</p>
@@ -954,7 +956,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>下方向（<span class="basic-text smbas">ＡＮＤ　２</span>）も左方向（<span class="basic-text smbas">ＡＮＤ　４</span>）もビット演算のケッカはゼロ……。上（<span class="basic-text smbas">ＡＮＤ　１</span>）や右（<span class="basic-text smbas">ＡＮＤ　８</span>）だと、ゼロにはならねェんだな。</p>
 
@@ -962,7 +964,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>ソコだね！<br />
 ちょっと話がそれるようだけど、<span class="basic-text smbas">ＩＦ</span>　（変数）　<span class="basic-text smbas">ＴＨＥＮ</span>というカタチのIF文は、「変数がゼロじゃなければ」というイミになるんだよ。<br />
@@ -972,7 +974,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>ってコトは……56行と59行のIF文の中にあるビット演算のケッカがゼロじゃないから……</p>
 
@@ -980,7 +982,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>……THENのサキの命令がジッコウされるってワケか！</p>
 
@@ -988,7 +990,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そういうコト！<br />
 <span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令で変数に入る数字には、はじめからビット演算しやすい数字が選ばれているんだよ。</p>
@@ -997,7 +999,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>フムフム。たしかに変数<span class="basic-text smbas">Ｂ</span>に<span class="basic-text smbas">８</span>（右ボタン）が入った時は、<span class="basic-text smbas">Ｂ　ＡＮＤ　８</span>以外ではゼロになるね。</p>
 
@@ -1005,7 +1007,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>それ以外のどの数でも、ちゃんとウマく動くようにできてるよ。なかなかベンリだろう。</p>
 
@@ -1013,7 +1015,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ナルホド……サンプルプログラム３のころのギモンが、やっとトケたってカンジだぜ。<br />
 しかしよォ……</p>
@@ -1022,7 +1024,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>どうしたのワンパク君。スッキリしないカオじゃないか。</p>
 
@@ -1030,7 +1032,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p><span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令はもともとコレのために作られてるけどよォ、こんなコトをイチから作るのってムズカシくねえか？</p>
 
@@ -1038,7 +1040,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>たしかに、頭で考えてココまで作るのはタイヘンそうだよね。</p>
 
@@ -1046,7 +1048,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>うん、サスガになにもかも２進数で考えてプログラムに組むのはムズカシいだろうね。だけどビット演算にはいくつか必勝法になるパターンがあるんだ。<span class="basic-text smbas">ＢＵＴＴＯＮ（）</span>命令で使ってる数の組み合わせもそのひとつだよ。</p>
 
@@ -1054,7 +1056,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>つまり……その必勝パターンと使い方をオボエれば、ウマくプログラムに使えるってのか？</p>
 
@@ -1062,7 +1064,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>そういうコトなんだけど……</p>
 
@@ -1070,7 +1072,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/kanzaki.png" alt="神崎">
+   <img src="../../../sys/skin/face/kanzaki.png" alt="神崎">
  </div>
  <div class="kaiwa-text-right"><p>？</p>
 
@@ -1078,7 +1080,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/intelli.png" alt="インテリくん">
+   <img src="../../../sys/skin/face/intelli.png" alt="インテリくん">
  </div>
  <div class="kaiwa-text-right"><p>その話をするともっと長くなっちゃうから、また今度にしよう！</p>
 
@@ -1086,7 +1088,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-left">
-   <img src="../sys/skin/face/wanpaku.png" alt="ワンパクくん">
+   <img src="../../../sys/skin/face/wanpaku.png" alt="ワンパクくん">
  </div>
  <div class="kaiwa-text-right"><p>ウォオー!!　今回の話がオレのプラスになったのかどうか、サッパリわからねー!!</p>
 
@@ -1094,7 +1096,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 </div>
 <div class="kaiwa">
  <div class="kaiwa-img-right">
-   <img src="../sys/skin/face/hakase-rev.png" alt="ハカセ">
+   <img src="../../../sys/skin/face/hakase-rev.png" alt="ハカセ">
  </div>
  <div class="kaiwa-text-left"><p>なかなかタイヘンじゃったようじゃのう。しかしワンパク君、ここでオボエたコトはけっしてムダにはならんぞい。ツギのサンプルプログラムでもビット演算がさっそく出てくるくらいじゃ。</p>
 
@@ -1129,7 +1131,7 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 <dd><div class="table-wrapper"><table class="border"><tbody><tr><td class="style_td" style="text-align:right;">NOT</td><td class="style_td"><span style="text-decoration:underline;"><span class="basic-text smbas">１１０１</span></span></td></tr><tr><td class="style_td" style="text-align:right;">=</td><td class="style_td"><span style="text-decoration:underline;"><span class="basic-text smbas">００１０</span></span></td></tr></tbody></table></div>
 ２つの数をくらべずに、ただ０と１がひっくり返るのがNOTを使ったビット演算です。</dd></dl>
 </div>
-<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><strong><a href="/petc3gou/?Beginner%2FChapter12" title="Beginner/Chapter12 (1690d)">次のページへ</a></strong></span></div>
+<div style="text-align:center"><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0px"><strong><a href="Chapter12.html" title="Beginner/Chapter12 (565d)">次のページへ</a></strong></span></div>
 </div>
 
 			</div>
@@ -1145,27 +1147,27 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 				<div id="block-sidemenu-container">
 
 <h3 id="content_109_0">メニュー 【3号】</h3>
-<ul><li><a href="/petc3gou/?FrontPage" title="FrontPage (648d)">トップページ</a></li>
-<li><a href="/petc3gou/?Beginner" title="Beginner (564d)">非公式初心者講座</a></li>
-<li><a href="/petc3gou/?Toukou" title="Toukou (2001d)">投稿プログラム</a></li>
-<li><a href="/petc3gou/?Mame" title="Mame (593d)">まめちしき</a></li>
-<li><a href="/petc3gou/?Memo" title="Memo (38d)">プチコン3号メモ</a></li>
-<li><a href="/petc3gou/?FAQ" title="FAQ (643d)">よくある質問集</a></li>
-<li><a href="/petc3gou/?Bug" title="Bug (163d)">既知の不具合</a></li>
-<li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集</a></li>
-<li><a href="/petc3gou/?WorksLink" title="WorksLink (869d)">プチコン3号作品集</a></li>
-<li><a href="/petc3gou/?Demand" title="Demand (267d)">プチコン3号への要望</a></li>
-<li><a href="/petc3gou/?OverFlow" title="OverFlow (8h)">OFコーナー</a></li>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
 <li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
 <li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
-<li><a href="/petc3gou/?Chat" title="Chat (708d)">チャットルーム</a></li>
-<li><a href="/petc3gou/?Contact" title="Contact (1825d)">管理人に連絡</a></li></ul>
-<ul><li><a href="http://wiki.hosiken.jp/petc/" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
 
 <h3 id="content_109_1">ヘルプ</h3>
-<ul><li><a href="/petc3gou/?Help" title="Help (1239d)">ヘルプ</a></li>
-<li><a href="/petc3gou/?ToukouRule" title="ToukouRule (219d)">プログラム投稿ルール</a></li>
-<li><a href="/petc3gou/?SandBox" title="SandBox (2h)">編集の練習用ページ</a></li></ul>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
 
 <h3 id="content_109_2">リンク</h3>
 <ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
@@ -1175,62 +1177,68 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 <li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
 <ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
 <li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
-<ul><li><a href="/petc3gou/?Mame%2FMiiverse" title="Mame/Miiverse (116d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
 <ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
 <li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
 <li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
 <li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
 <li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
-<ul><li><a href="/petc3gou/?Link" title="Link (26d)">プチコン3号リンク集</a></li></ul>
-<h3>最近の更新</h3><!-- 10 --><div><h4>2021/03/01</h4>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
 <ul>
- <li><a href="/petc3gou/?SandBox" title="編集の練習用ページ (7h)">編集の練習用ページ</a></li>
+ <li><a href="../Toukou/Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
 </ul>
-<h4>2021/02/28</h4>
+<h4>2022/09/16</h4>
 <ul>
- <li><a href="/petc3gou/?OverFlow" title="OFコーナー3号 (8h)">OFコーナー3号</a></li>
- <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表</a></li>
+ <li><a href="../Toukou/DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
 </ul>
-<h4>2021/02/27</h4>
+<h4>2022/09/12</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="リズミカルおもちつきMC (1d)">リズミカルおもちつきMC</a></li>
- <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="nikuラジオ (1d)">nikuラジオ</a></li>
+ <li><a href="../Toukou/PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="../Toukou/A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
 </ul>
-<h4>2021/02/26</h4>
+<h4>2022/09/11</h4>
 <ul>
- <li><a href="/petc3gou/?%A5%B3%A5%E1%A5%F3%A5%C8%2FToukou%2F%C5%EC%CA%FD%CA%F8%B7%EB%CF%BF" title="コメント/Toukou/東方崩結録 (2d)">コメント/Toukou/東方崩結録</a></li>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="../Toukou/PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
 </ul>
-<h4>2021/02/25</h4>
+<h4>2022/09/06</h4>
 <ul>
- <li><a href="/petc3gou/?RecentDeleted" title="RecentDeleted (3d)">RecentDeleted</a></li>
+ <li><a href="../Toukou/Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
 </ul>
-<h4>2021/02/23</h4>
+<h4>2022/09/04</h4>
 <ul>
- <li><a href="/petc3gou/?Toukou%2FJPH%A5%E9%A5%B8%A5%AAplayer" title="JPHラジオplayer (5d)">JPHラジオplayer</a></li>
- <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADNT" title="リズミカルおもちつきNT (5d)">リズミカルおもちつきNT</a></li>
- <li><a href="/petc3gou/?%A5%C8%A5%EC%A5%A4%A5%F3%A5%D3%A5%B8%A5%E7%A5%F3%A5%E1%A1%BC%A5%AB%A1%BCfor3DS" title="トレインビジョンメーカーfor3DS (6d)">トレインビジョンメーカーfor3DS</a></li>
+ <li><a href="../Toukou/TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="../Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
 </ul>
 </div>
 
 <h3 id="content_109_3">最近の人気ページ</h3>
 <div><ul>
- <li><a href="/petc3gou/?Toukou%2FNintendo%C1%B4%B5%AD%B9%E6Unicode%B0%EC%CD%F7%C9%BD" title="Toukou/Nintendo全記号Unicode一覧表 (1d)">Nintendo全記号Unicode一覧表<span class="counter">(18)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2Fniku%A5%E9%A5%B8%A5%AA" title="Toukou/nikuラジオ (1d)">nikuラジオ<span class="counter">(15)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2FSmileToolLauncher" title="Toukou/SmileToolLauncher (14d)">スマイルツール・ランチャ<span class="counter">(9)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2F%A5%EA%A5%BA%A5%DF%A5%AB%A5%EB%A4%AA%A4%E2%A4%C1%A4%C4%A4%ADMC" title="Toukou/リズミカルおもちつきMC (1d)">リズミカルおもちつきMC<span class="counter">(7)</span></a></li>
- <li><a href="/petc3gou/?Sample" title="Sample (772d)">サンプルプログラム集<span class="counter">(7)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2FHERO2" title="Toukou/HERO2 (797d)">HERO2 一台で二人同時プレイ<span class="counter">(7)</span></a></li>
- <li><a href="/petc3gou/?Mame%2FUnicode" title="Mame/Unicode (38d)">ユニコードについて<span class="counter">(7)</span></a></li>
- <li><a href="/petc3gou/?Beginner%2FChapter1" title="Beginner/Chapter1 (1690d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(6)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2F%C2%C0%B8%DDPractice" title="Toukou/太鼓Practice (65d)">【公開終了】弾幕音遊戯<span class="counter">(6)</span></a></li>
- <li><a href="/petc3gou/?Toukou%2FHERO" title="Toukou/HERO (763d)">HERO -君は、愛する人を守り抜くことが出来るか？<span class="counter">(5)</span></a></li>
+ <li><a href="Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/2kake4.html" title="Toukou/2kake4 (565d)">2掛4(nikakeyo)<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/1983PC20-2018.html" title="Toukou/1983PC 2018 (565d)">PC2018<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/16A5-D3-A5-C3-A5-C8-CA-D1-B4-B9-A5-D7-A5-ED-A5-B0-A5-E9-A5-E0-.html" title="Toukou/16ビット変換プログラム (565d)">16ビット変換プログラム<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/100BF-CD-A4-CB-CA-B9-A4-A4-A4-C6-A4-DF-A4-E8-A4-A6-.html" title="Toukou/100人に聞いてみよう (565d)">100人に聞いてみよう<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/16xA5-D5-A5-A9-A5-F3-A5-C8-16BF-CA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="Toukou/16xフォント16進エディタ (565d)">16xフォント16進エディタ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/2BD-C5-BF-B6-A4-EA-BB-D2-.html" title="Toukou/2重振り子 (565d)">2重振り子<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/2BF-CA-BF-F4-A4-F2-10BF-CA-BF-F4-A4-CB-CA-D1-B4-B9-.html" title="Toukou/2進数を10進数に変換 (565d)">2進数を10進数に変換する<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/3dsbsodfntlib.html" title="Toukou/3dsbsodfntlib (565d)">ニンテンドー3DSのBSoDで出るフォントライブラリ<span class="counter">(1)</span></a></li>
+ <li><a href="../Toukou/3DC5-AA-A4-CA-A5-DE-A5-C3-A5-D7-.html" title="Toukou/3D的なマップ (565d)">3Dっぽい何か<span class="counter">(1)</span></a></li>
 </ul>
 </div>
-<div style="text-align:right"><a href="/petc3gou/?Hot" title="Hot (1273d)">人気ページをもっと見る</a></div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
 
 <h3 id="content_109_4">オンライン情報</h3>
-<ul><li>現在同時に 3 人がこのサイトを見ています</li>
-<li>このページはこれまでに 2680 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 3000 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
 <p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
 
 				</div>
@@ -1244,9 +1252,9 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 	<div id="block-pukiwiki-info">
 
 
-		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="./setskin.php?mode=pc">クラシック表示</a> ]<br />
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
 		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
-		ページの処理時間 : 0.750 秒  | このページの最終更新 : 2017/04/17 (月) 15:45:56  (1413d) | <a href="/petc3gou/?plugin=login">ログイン</a><br />
+		ページの処理時間 : 0.544 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:33  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
 		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
 
 	</div>
@@ -1269,4 +1277,6 @@ NOT (ノット) はちょっとトクシュじゃな。２つの数をくらべたりせず、ただ<span style
 
 </body>
 
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Beginner/Chapter11.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:26:45 GMT -->
 </html>

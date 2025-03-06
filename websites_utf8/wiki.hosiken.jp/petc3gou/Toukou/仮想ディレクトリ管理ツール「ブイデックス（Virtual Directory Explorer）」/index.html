@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/B2-BE-C1-DB-A5-C7-A5-A3-A5-EC-A5-AF-A5-C8-A5-EA-B4-C9-CD-FD-A5-C4-A1-BC-A5-EB-A1-D6-A5-D6-A5-A4-A5-C7-A5-C3-A5-AF-A5-B9-A1-CA-Virtual20-Directory20-ExplorerA1-CB-A1-D7-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:40:59 GMT -->
+<head>
+	<title>投稿プログラム : 仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」 - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」 - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ツール, 実用ツール" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="B2-BE-C1-DB-A5-C7-A5-A3-A5-EC-A5-AF-A5-C8-A5-EA-B4-C9-CD-FD-A5-C4-A1-BC-A5-EB-A1-D6-A5-D6-A5-A4-A5-C7-A5-C3-A5-AF-A5-B9-A1-CA-Virtual20-Directory20-ExplorerA1-CB-A1-D7-.1bcaa0e2.delay?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../index9040.html?cmd=edit&amp;page=Toukou%2F%B2%BE%C1%DB%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8%A5%EA%B4%C9%CD%FD%A5%C4%A1%BC%A5%EB%A1%D6%A5%D6%A5%A4%A5%C7%A5%C3%A5%AF%A5%B9%A1%CAVirtual%20Directory%20Explorer%A1%CB%A1%D7">このページを編集</a></li>
+				<li><a href="../../index8f60.html?cmd=diff&amp;page=Toukou%2F%B2%BE%C1%DB%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8%A5%EA%B4%C9%CD%FD%A5%C4%A1%BC%A5%EB%A1%D6%A5%D6%A5%A4%A5%C7%A5%C3%A5%AF%A5%B9%A1%CAVirtual%20Directory%20Explorer%A1%CB%A1%D7">前回からの変更点</a></li>
+				<li><a href="../../indexf430.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%B2%BE%C1%DB%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8%A5%EA%B4%C9%CD%FD%A5%C4%A1%BC%A5%EB%A1%D6%A5%D6%A5%A4%A5%C7%A5%C3%A5%AF%A5%B9%A1%CAVirtual%20Directory%20Explorer%A1%CB%A1%D7">ファイルをアップロード</a></li>
+				<li><a href="../../indexb752.html?plugin=newpage&amp;refer=Toukou%2F%B2%BE%C1%DB%A5%C7%A5%A3%A5%EC%A5%AF%A5%C8%A5%EA%B4%C9%CD%FD%A5%C4%A1%BC%A5%EB%A1%D6%A5%D6%A5%A4%A5%C7%A5%C3%A5%AF%A5%B9%A1%CAVirtual%20Directory%20Explorer%A1%CB%A1%D7">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.118sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#HowToPlay">  起動方法</a></li>
+<li><a href="#w8d52fec">  機能概要 </a></li>
+<li><a href="#HowTo2">  操作方法 </a>
+<ul><li><a href="#n3e9da2f">  パネル操作の種類 </a></li>
+<li><a href="#pc492550">  目的別操作方法 </a></li></ul></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  公開キー＆更新履歴 </a></li>
+<li><a href="#yf3cf4e7">  制作者メモ </a></li>
+<li><a href="#k50e9c07"> アンケート </a>
+<ul><li><a href="#u538c661"> ダウンロードしたら教えてもらえるとうれしいです。 </a></li></ul></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2018年11月3日投稿
+/ 投稿者 : SatoshiMcCloud
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../index6062.html?cmd=taglist&amp;tag=%A5%C4%A1%BC%A5%EB">ツール</a> <a href="../../indexf49f.html?cmd=taglist&amp;tag=%BC%C2%CD%D1%A5%C4%A1%BC%A5%EB">実用ツール</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>#ref(): File not found: &quot;SCREENSHOT_1.png&quot; at page &quot;Toukou/仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」&quot;</p>
+
+<p>もしもプチコンのプロジェクトフォルダが階層管理できるようになったら…。
+増えすぎたフォルダを整理したいな。ツールはツールフォルダに、ゲームはゲームフォルダに。
+大喜利ゲームは大喜利フォルダに分けておきたいな。作者ごとにフォルダを作って分けるのもいいかも？</p>
+<p>このソフトは、そんな願いをヴァーチャルに叶えます。</p>
+
+<h4 id="HowToPlay">起動方法</h4>
+<p>公開キーにてアプリのプロジェクトフォルダをダウンロードし、MAINを実行してください。
+ツールボタンから起動すると、ファイルオープンに関する機能が有効になります。</p>
+
+<h4 id="w8d52fec">機能概要</h4>
+<p>ブイデックスでは、仮想フォルダを作ってプロジェクトを整理することが出来ます。
+以下、フォルダなどの説明です。</p>
+<ul><li>フォルダ：中に別の要素を入れることが出来る。
+<ul><li>プロジェクトフォルダ（実在フォルダ）：プチコン本体に実在しているプロジェクトフォルダに対応。ファイル（TXT、DAT）が入る。フォルダ（仮想、実在どちらも）は入らない。</li>
+<li>仮想フォルダ：プチコン本体には実在せず、TXT:VIRTUAL_DISKというファイルに内容が保存される。フォルダ（仮想、実在どちらも）が入る。ファイル（TXT、DAT）は入らない（ファイルを含んだ実在フォルダを置くことはできる）。</li></ul></li>
+<li>ファイル：データ本体。別の要素を入れることは出来ない。実在フォルダ上にしか存在しない。
+<ul><li>TXTファイル：プチコン本体に実在しているTXTファイル。スマイルボタンから実行している時は、ヴイデックスからテキストファイルをプログラムとして実行可能になる。</li>
+<li>DATファイル：プチコン本体に実在しているDATファイル。整数配列なのか実数配列なのか、はたまた画像形式なのかは判断不可。</li></ul></li></ul>
+
+<h4 id="HowTo2">操作方法</h4>
+<p>基本的にはタッチパネルだけを使用します（一部、ボタン操作が必要な場面があります。その場合は画面の指示に従ってください。）<br class="spacer" />
+なるべく画面を見ただけで使い方が分かるよう努力はしておりますが、それでも使い方が分からない、もしくは使い方を詳しく知りたい方はこちらをご覧ください。</p>
+
+<h5 id="n3e9da2f">パネル操作の種類</h5>
+<ul><li>タップ：画面をペンでちょんとタッチすること。</li>
+<li>ロングタップ：画面をペンで長くタッチすること。タッチしている間はペンを動かさない。</li>
+<li>フリック：画面にタッチしたら、すぐにペンをタッチしたまま動かす。</li></ul>
+
+<h5 id="pc492550">目的別操作方法</h5>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">目的別操作方法
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<ul><li>フォルダ操作関連
+<ul><li>フォルダの表示先（カレントディレクトリ）を移動させたい。
+<ul><li>下画面に表示されているフォルダから、移動先フォルダをタップしてください。</li>
+<li>上のフォルダに移動する場合は、左上の「↑」ボタンをタップしてください。</li></ul></li>
+<li>フォルダ/ファイルを選択したい。
+<ul><li>フォルダアイコンをロングタップしてください。</li></ul></li>
+<li>仮想フォルダを新規作成したい。
+<ul><li>フォルダを作りたい場所へ移動してください。その後、右下のメニューボタンをタップし、「新しいフォルダ」をタップしてください。名前を入力して「決定」をタップすると、フォルダが作成されます。</li>
+<li>実在フォルダの中にフォルダを作ることは出来ません。フォルダの新規作成が出来るのは仮想フォルダの中だけです。</li></ul></li>
+<li>フォルダを別のフォルダへ移動させたい。
+<ul><li>移動させたいフォルダを選択し、右下メニューをタップし「切り取り」をタップしてください。</li>
+<li>移動先のフォルダへカレントディレクトリを移動し、右下メニューボタンをタップ→「貼り付け」をタップしてください。</li></ul></li>
+<li>仮想フォルダを削除したい。
+<ul><li>仮想フォルダを選択し、</li></ul></li></ul></li>
+<li>実行関連
+<ul><li>TXTファイルをプログラムとして実行したい。
+<ul><li>まずブイデックスをスマイルボタンから起動してください。（もしくは、スマイルボタンに登録したツールからSLOT4で起動してください）</li>
+<li>画面に表示されているTXTファイルのアイコンをタップしてください。</li></ul></li>
+<li>TXTファイルを指定したスロットでプログラムとして実行したい。
+<ul><li>画面に表示されているTXTファイルのアイコンをロングタップで選択した後、右下のメニューボタンをタップして、「SLOT指定実行」をタップしてください。後は画面の指示に従って、SLOTを選択し、実行してください。</li></ul></li>
+<li>TXTファイルをプログラムとして実行するとき、先にACLSとBGMSTOPをさせるorさせないようにする。
+<ul><li>設定画面を開き、該当機能のON/OFFを設定してください。</li></ul></li></ul></li>
+<li>設定関連
+<ul><li>設定画面を開きたい。
+<ul><li>右下メニューボタンをタップして「設定」をタップすると、設定画面が開きます。</li></ul></li>
+<li>スキンを変更したい。
+<ul><li>設定画面から変更してください。
+</td></tr></table></li></ul></li></ul></li></ul>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="https://pbs.twimg.com/media/Dqhr7EuUcAAyw_2.jpg" title="Dqhr7EuUcAAyw_2.jpg"><img src="https://pbs.twimg.com/media/Dqhr7EuUcAAyw_2.jpg" alt="Dqhr7EuUcAAyw_2.jpg" title="Dqhr7EuUcAAyw_2.jpg" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="https://pbs.twimg.com/media/DoLtD42UcAAFqKE.jpg" title="DoLtD42UcAAFqKE.jpg"><img src="https://pbs.twimg.com/media/DoLtD42UcAAFqKE.jpg" alt="DoLtD42UcAAFqKE.jpg" title="DoLtD42UcAAFqKE.jpg" /></a></div>
+
+<div class="img_margin" style="text-align:left"><a href="https://pbs.twimg.com/media/DoLtB0nVAAANlHm.jpg" title="DoLtB0nVAAANlHm.jpg"><img src="https://pbs.twimg.com/media/DoLtB0nVAAANlHm.jpg" alt="DoLtB0nVAAANlHm.jpg" title="DoLtB0nVAAANlHm.jpg" /></a></div>
+
+
+<h3 id="QR">公開キー＆更新履歴</h3>
+<p>プチコン3号用の公開キーです。トップメニューの「作品公開とダウンロード」から公開キーを入力すると、作品をダウンロードすることができます。</p>
+<div>
+<div class="ptcmid">
+VERSION1.2.0<br />
+<div class="key">
+<span class="smbas">4KQ54XRD</span>
+</div>
+</div>
+
+</div>
+
+<ul><li>設定画面を追加しました。
+<ul><li>スキンの選択が出来るようになりました。</li>
+<li>TXTファイルのプログラム実行時、ACLSとBGMSTOPを行うか選択できるようになりました。</li></ul></li>
+<li>TXTファイルのプログラム実行時、スロットを選べるようになりました。</li>
+<li>外観をちょっとだけ更新しました。
+<ul><li>右下メニューがなめらかに出現するようになりました。</li>
+<li>ディレクトリ操作の処理中、上画面の右下に処理中アイコンが表示されるようになりました。</li></ul></li>
+<li>ブイデックス起動時の初期化処理の内容を変更しました。
+<ul><li>BGMSTOPを追加しました。</li>
+<li>ACLSを削除し、代わりにACLSからGCLSを取り去った処理に変更しました。関連して、ブイデックスが処理に利用するGPAGEを2と3に変更しました。これにより、GPAGEの0,1,4,5はブイデックス起動前後で内容が保持されます。</li></ul></li></ul>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button2" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary2').style.display!='none'){
+		document.getElementById('rgn_summary2').style.display='none';
+		document.getElementById('rgn_content2').style.display='block';
+		document.getElementById('rgn_bracket2').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button2').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary2').style.display='block';
+		document.getElementById('rgn_content2').style.display='none';
+		document.getElementById('rgn_bracket2').style.borderStyle='none';
+		document.getElementById('rgn_button2').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket2" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary2" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">過去バージョン
+</td><td valign="top" id="rgn_content2" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<div>
+<div class="ptcmid">
+VERSION1.1.1<br />
+<div class="key">
+<span class="smbas">Q32KQ4N6</span>
+</div>
+</div>
+
+</div>
+
+<ul><li>一度に大量のファイルorフォルダを表示しようとすると画面がちらつく不具合を修正しました。
+<div>
+<div class="ptcmid">
+VERSION1.1.0<br />
+<div class="key">
+<span class="smbas">43Y3X4DD</span>
+</div>
+</div>
+
+</div>
+</li>
+<li>旧式3DSにて起動した場合、画面がちらついて正常に動作しない不具合を修正しました。
+<div>
+<div class="ptcmid">
+VERSION1.0.0<br />
+<div class="key">
+<span class="smbas">Q3KNVPL6</span>
+</div>
+</div>
+
+</div>
+</li>
+<li>初版です。
+</td></tr></table></li></ul>
+
+<h3 id="yf3cf4e7">制作者メモ</h3>
+<ul><li>フォルダorファイル名表示用の4x8フォント
+<ul><li>以前制作した<a href="GRP20-GALLERY.html" title="Toukou/GRP GALLERY (565d)">GRP GALLERY</a>のときに自作したフォントを流用し、足りない分は追加した。</li>
+<li>スプライトを使って表示している。スプライト数を節約するため、1つのスプライトで2文字分表示している。これを実現するために、スプライトに割り当てられているGPAGEにはすべての文字の組み合わせたグラフィックが書き込まれている。
+<ul><li>組み合わせ方を工夫したら、GPAGE中のフォントが占有する範囲を減らせるかも…今後の課題。</li></ul></li></ul></li>
+<li>右下メニュー表示用の16x16フォント
+<ul><li>フォントそのものはプチコンBIGで使われているものを使用。</li>
+<li>バージョン1.1.1まではスキン画像ファイルに書き込んで用意していた。しかし、今後メニューが増えたときにスキン画像に収まらなくなりそうなことを予想して、GPUTCHR16に変わる命令を自作。プログラム中にDATA文でフォントデータを記載した。ただし、ブイデックスで使用する文字だけに限定。使える文字が限定され、また拡大・縮小機能もないためLimitedのLを末尾に付けてGPUTCHR16_Lという名前にした。
+<ul><li>っていうか、さ。GPUTCHR16ってなんでプチコンBIG専用なの？別に3号でも使えても問題なくない？メモリ量の関係？</li>
+<li>そもそもの話でいえば、スマイルブームにはプチコン3号/BIGのプロジェクトフォルダを階層構造で作って欲しかったなぁ…PiSTARTERでは階層構造が採用されている（らしい）ので、プチコン4でも採用されるといいな。</li></ul></li></ul></li>
+<li>プログラム実行時にACLSとBGMSTOPするかを設定で選べるようにした件
+<ul><li>この機能はユーザーさんの提案を取り入れたものです。</li>
+<li>最初は要望を出されたときに、「普通はプログラム作ったら最初にACLSくらい入れるだろう…他の人に使ってもらうプログラムなら尚更」と思ってました。</li>
+<li>ところが、あったんですね。表示が重要なプログラムで最初にACLSしてないプログラム。「STAFFROLL」というプログラムで、作ったのはSmileBoomです。す、スマブうぅぅぅぅぅぅぅぅぅ</li>
+<li>あまり受け入れたくはなかったですが、きっとそういうプログラムもあるだろうと方針転換して、ACLSとBGMSTOPの選択機能を追加した次第です。</li></ul></li></ul>
+
+<h3 id="k50e9c07">アンケート</h3>
+
+<h4 id="u538c661">ダウンロードしたら教えてもらえるとうれしいです。</h4>
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="537f6c35afa7658d8c0a0dd1be8d4843" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ダウンロードしました！</td>
+   <td align="right" class="vote_td2">17&nbsp;&nbsp;
+    <input type="submit" name="vote_A5C0A5A6A5F3A5EDA1BCA5C9A4B7A4DEA4B7A4BFA1AA" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>More10</strong> : この恐竜くんの名前が気になる (<span class="comment_date">2018/11/05 (月) 19:28:20</span>)</li>
+<li><strong>SatoshiMcCloud</strong> : 名前はまだない。です。 (<span class="comment_date">2018/11/06 (火) 19:45:16</span>)</li>
+<li><strong>キック今日中</strong> : 使いやすい (<span class="comment_date">2018/11/10 (土) 17:39:00</span>)</li>
+<li><strong>SatoshiMcCloud</strong> : わーい嬉しいなー！ (<span class="comment_date">2018/11/11 (日) 01:04:08</span>)</li>
+<li><strong>かずき24 PTCM3 ウィキ</strong> : ホッホー　そre (<span class="comment_date">2018/11/28 (水) 15:59:07</span>)</li>
+<li><strong>HUCU</strong> : かみそふと (<span class="comment_date">2018/12/01 (土) 13:36:10</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/仮想ディレクトリ管理ツール「ブイデックス（Virtual Directory Explorer）」" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="537f6c35afa7658d8c0a0dd1be8d4843" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_6_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_6_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_6_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_6_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="SHIN_OS.html" title="Toukou/SHIN_OS (565d)">SHIN_OS<span class="counter">(1)</span></a></li>
+ <li><a href="SHOOTING_OCEAN.html" title="Toukou/SHOOTING_OCEAN (565d)">SHOOTING OCEAN<span class="counter">(1)</span></a></li>
+ <li><a href="SHDEF.html" title="Toukou/SHDEF (565d)">いろいろライブラリ with SB4 Polyfill<span class="counter">(1)</span></a></li>
+ <li><a href="SEARCHER.html" title="Toukou/SEARCHER (565d)">SEARCHER（サーチャー：ファイル検索） 1.2<span class="counter">(1)</span></a></li>
+ <li><a href="SAKURAOS.html" title="Toukou/SAKURAOS (565d)">【制作終了】 SAKURAOS ver.3<span class="counter">(1)</span></a></li>
+ <li><a href="SANMAGO_2015.html" title="Toukou/SANMAGO_2015 (565d)">サンタのまご娘 ローサのおてつだい 2015<span class="counter">(1)</span></a></li>
+ <li><a href="SHSENDER.html" title="Toukou/SHSENDER (565d)">SHSENDER<span class="counter">(1)</span></a></li>
+ <li><a href="SIMPLE20-SQUASH.html" title="Toukou/SIMPLE SQUASH (565d)">SIMPLE SQUASH<span class="counter">(1)</span></a></li>
+ <li><a href="SOFT2D-X.html" title="Toukou/SOFT-X (565d)">SOFT-X<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_6_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1601 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.147 秒  | このページの最終更新 : 2022/09/20 (火) 12:49:22  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/B2-BE-C1-DB-A5-C7-A5-A3-A5-EC-A5-AF-A5-C8-A5-EA-B4-C9-CD-FD-A5-C4-A1-BC-A5-EB-A1-D6-A5-D6-A5-A4-A5-C7-A5-C3-A5-AF-A5-B9-A1-CA-Virtual20-Directory20-ExplorerA1-CB-A1-D7-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 13:40:59 GMT -->
+</html>

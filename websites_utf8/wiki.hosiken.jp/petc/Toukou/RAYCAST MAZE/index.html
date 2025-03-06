@@ -1,88 +1,332 @@
 <?xml version="1.0" encoding="EUC-JP" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc/html/Toukou/RAYCAST20-MAZE.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 12:50:20 GMT -->
 <head>
-	<meta name="robots" content="NOINDEX,NOFOLLOW" />
-	<title>有効なWikiNameではありません - プチコンまとめWiki (初代/mkII)</title>
-	<link rel="stylesheet" href="../sys/skin/standard-3gou.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<link rel="stylesheet" href="../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
-	<!--[if IE]><link rel="stylesheet" href="../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<title>投稿プログラム : RAYCAST MAZE (3D迷路) - プチコンまとめWiki (初代/mkII)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/wordbreak.js"></script> 
-	<script type="text/javascript" src="../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="/petc/?cmd=rss" />	<script language="JavaScript">
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : RAYCAST MAZE (3D迷路) - プチコンまとめWiki (初代/mkII)" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, QRコード, mkII専用" />
+	<script language="JavaScript">
 		$(document).ready(function(){
 			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
 		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
 	</script>
-</head>
-
 <body>
 
 <div id="block-container">
 
 	<div id="block-header">
 
-		<h1><a href="/petc/">プチコンまとめWiki (初代/mkII)</a></h1>
+		<h1><a href="../../index.html">プチコンまとめWiki (初代/mkII)</a></h1>
 
-		<h2 id="header-navigation">ナビゲーション</h2>
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="RAYCAST20-MAZEa0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../indexafe7.html?cmd=edit&amp;page=Toukou%2FRAYCAST%20MAZE">このページを編集</a></li>
+				<li><a href="../../index85f6.html?cmd=diff&amp;page=Toukou%2FRAYCAST%20MAZE">前回からの変更点</a></li>
+				<li><a href="../../index556e.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2FRAYCAST%20MAZE">ファイルをアップロード</a></li>
+				<li><a href="../../indexc705.html?plugin=newpage&amp;refer=Toukou%2FRAYCAST%20MAZE">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
 
-		<h3 id="header-search">ウィキ</h3>
-
-		<div id="block-topbox">
-
-			<p><strong>ウィキ メニュー</strong>
-
-				&nbsp;:&nbsp;
-				<a href="/petc/?plugin=newpage&amp;refer=Toukou%2FRAYCAST%20MAZE%2F">新規</a> -
-				<a href="/petc/?cmd=search">検索</a> -
-				<a href="/petc/?cmd=list">一覧</a> -
-				<a href="/petc/?RecentChanges">新着</a> -
-				<a href="/petc/?Help">ヘルプ</a>
-			</p>
-
-		</div>
-
-		<div class="clear"></div>
+</ul></li>
+</ul>
+</div>
+</div>
 
 	</div>
 
 	<div id="block-extra-navi">
 		<ul>
-			<li><a href="/petc3gou/">プチコン3号</a></li>
-			<li id="active">プチコン初代/mkII</li>
-		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li><a href="../../../petc3gou/index.html">3号/BIG</a></li>
+			<li id="active">初代/mkII</li>
+</ul>
 	</div>
 
 
-	<div id="block-body">
+	<div id="block-body" class="pure-g">
 
-		<div id="block-sidemenu">
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
 
-			<div id="block-sidemenu-container">
+			<div id="block-body-container">
 
-<h3 id="content_2_0">メニュー 【mkII】</h3>
-<ul><li><a href="/petc/?FrontPage" title="FrontPage (270d)">トップページ</a></li>
-<li><a href="/petc/?Mame" title="Mame (209d)">まめちしき</a></li>
-<li><a href="/petc/?Memo" title="Memo (1152d)">プチコンメモ</a></li>
-<li><a href="/petc/?FAQ" title="FAQ (84d)">よくある質問集</a></li>
-<li><a href="/petc/?Bug" title="Bug (95d)">既知の不具合</a></li>
-<li><a href="/petc/?Sample" title="Sample (546d)">サンプルプログラム集</a></li>
-<li><a href="/petc/?Toukou" title="Toukou (747d)">投稿プログラム</a></li>
-<li><a href="/petc/?WorksLink" title="WorksLink (317d)">プチコン作品リンク集</a></li>
-<li><a href="/petc/?Demand" title="Demand (611d)">プチコンへの要望</a></li>
-<li><a href="/petc/?OverFlow" title="OverFlow (62d)">OFコーナー</a></li>
+				<h2>投稿プログラム : RAYCAST MAZE (3D迷路)</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">RAYCAST MAZE</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.145sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a>
+<ul><li><a href="#Control">  操作方法 </a></li>
+<li><a href="#Rule">  ルール紹介 </a>
+<ul><li><a href="#k815b863">  ゲームモード１　迷路 </a></li>
+<li><a href="#ia02947b">  ゲームモード２　レース </a></li></ul></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  QR コード </a></li>
+<li><a href="#Algorithm">  アルゴリズム解説 </a></li>
+<li><a href="#Vote">  投票 </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2012年9月17日投稿
+/ 投稿者 : Hepebell
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../indexa302.html?cmd=taglist&amp;tag=%A5%B2%A1%BC%A5%E0">ゲーム</a> <a href="../../indexf836.html?cmd=taglist&amp;tag=QR%A5%B3%A1%BC%A5%C9">QRコード</a> <a href="../../index23c1.html?cmd=taglist&amp;tag=mkII%C0%EC%CD%D1">mkII専用</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>3D迷路です<br class="spacer" />
+ルールが異なる２つのゲームモードを用意しました</p>
+<ul><li>Game1：鍵を回収して脱出する、迷路風のゲームモード</li>
+<li>Game2：短い時間でゴールを目指す、レース風のゲームモード</li></ul>
+<p>3D描画にDOOMやPC88のSeeNaなどで有名になった、
+レイキャストアルゴリズムいう手法を使ってます</p>
+<p>プチコンでは処理が重たかったので、
+色々と誤魔化しテクニックを使ってそれっぽく見せてます(^_^;</p>
+
+<h4 id="Control">操作方法</h4>
+<ul><li>共通
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ボタン</th><th class="style_th">説明</th></tr><tr><td class="style_td">←→キー</td><td class="style_td">ハンドル</td></tr><tr><td class="style_td">Aボタン</td><td class="style_td">アクセル</td></tr><tr><td class="style_td">Bボタン</td><td class="style_td">ブレーキ<br class="spacer" />時速０でさらに押し続けるとバックします</td></tr></tbody></table></div></li></ul>
+<ul><li>ゲームモード１のみ
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ボタン</th><th class="style_th">説明</th></tr><tr><td class="style_td">Xボタン</td><td class="style_td">マップの見える範囲拡大</td></tr></tbody></table></div></li></ul>
+<ul><li>ゲームモード２のみ
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">ボタン</th><th class="style_th">説明</th></tr><tr><td class="style_td">Yボタン</td><td class="style_td">リトライ<br class="spacer" />ギブアップして同じ面を最初からやり直します</td></tr></tbody></table></div></li></ul>
+
+<h4 id="Rule">ルール紹介</h4>
+
+<h5 id="k815b863">ゲームモード１　迷路</h5>
+<p>迷路内に散らばる０~１０個の鍵を全て回収してゴールを目指します<br class="spacer" />
+爆弾に火が到達するかエネルギー(E)が０になるとゲームオーバーです<br class="spacer" />
+全２０面です</p>
+<ul><li>壁の色にそれぞれ意味があります
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">色</th><th class="style_th">意味</th><th class="style_th">補足</th></tr><tr><td class="style_td">黄</td><td class="style_td">壁</td><td class="style_td">普通の壁です</td></tr><tr><td class="style_td">ピンク</td><td class="style_td">ゴール</td><td class="style_td">目的地です</td></tr><tr><td class="style_td">緑</td><td class="style_td">鍵</td><td class="style_td">回収するとKEYの値が減って画面上に鍵が表示されます</td></tr><tr><td class="style_td">青</td><td class="style_td">エネルギー</td><td class="style_td">エネルギー(E)を少し回復</td></tr><tr><td class="style_td">茶</td><td class="style_td">壊れる壁</td><td class="style_td">スピードメータ(S)が赤のときにぶつかると壊れます<br class="spacer" />壊すとレベル(LV)が＋１されて燃費が良くなっていきます</td></tr><tr><td class="style_td">紫</td><td class="style_td">ワープ</td><td class="style_td">迷路内のどこかにランダムに飛びます<br class="spacer" />下画面のマップには表示されません</td></tr><tr><td class="style_td">灰</td><td class="style_td">モンスター</td><td class="style_td">当たるとエネルギー(E)を吸われます</td></tr></tbody></table></div></li></ul>
+<ul><li>特徴
+<ul><li>下画面には自分を中心としたマップが表示されてます<br class="spacer" />ただし、ワープだけは表示されません</li>
+<li>見える範囲が限られてますが、Xボタンで範囲を広げることができます<br class="spacer" />エネルギーを少し消費しますのでご利用は計画的に！</li>
+<li>爆弾に火が到達するまでの時間はゆる~くなってます</li>
+<li>残り時間が少なくなってくるとBGMが変わります</li>
+<li>スピード出した時のエネルギー消費（燃費）がかなり厳しいです！</li>
+<li>面構成(鍵の数や配置など)はランダムです<br class="spacer" />コンティニュー時は同じ面構成で再開します</li>
+<li>茶色の壁を壊すとレベルが上がり燃費が良くなっていきます<br class="spacer" />クリア目標レベルは50~100です</li>
+<li>エネルギーを切らさないよう注意しながら鍵を回収して、<br class="spacer" />ゴールを目指すことがゲームの攻略ポイントとなります！！</li></ul></li></ul>
+
+<h5 id="ia02947b">ゲームモード２　レース</h5>
+<p>ゴールまでのルートを見つけ出し、短い時間でゴールを目指します<br class="spacer" />
+爆弾に火が到達するかエネルギー(E)が０になるとゲームオーバーです<br class="spacer" />
+全１０面です</p>
+<ul><li>壁の色にそれぞれ意味があります
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th">色</th><th class="style_th">意味</th><th class="style_th">補足</th></tr><tr><td class="style_td">黄</td><td class="style_td">壁</td><td class="style_td">普通の壁です</td></tr><tr><td class="style_td">ピンク</td><td class="style_td">ゴール</td><td class="style_td">目的地です</td></tr><tr><td class="style_td">青</td><td class="style_td">スピードUp</td><td class="style_td">一定時間スピードアップ</td></tr><tr><td class="style_td">緑</td><td class="style_td">スイッチ</td><td class="style_td">どこかの壁が出たり消えたりします</td></tr><tr><td class="style_td">紫</td><td class="style_td">ワープ</td><td class="style_td">迷路内の決まった飛び先にワープします</td></tr></tbody></table></div></li></ul>
+<ul><li>特徴
+<ul><li>下画面にはマップ全体が表示されてます<br class="spacer" />見える範囲の制限はありません<br class="spacer" />ワープも見える状態になってます</li>
+<li>自分は車のキャラになってます</li>
+<li>自分が通った跡が表示されます<br class="spacer" />特に意味はありませんが、コースの確認などに利用してください</li>
+<li>爆弾に火が到達するまでの時間がかなり厳しくなってます！</li>
+<li>スピード出した時のエネルギー消費（燃費）はゆる~くなってます。（ゲームモード１のレベル120相当）</li>
+<li>面構成は固定です<br class="spacer" />スイッチで変化する場所や、ワープの飛び先なども固定です</li>
+<li>一見するとゴールにたどり着けない面も、スイッチやワープを使ってクリアできます<br class="spacer" />もし、クリアできない状態になったら、Yボタンでリトライできます</li>
+<li>面のギミックを解き、最短ルートを見つけ出して、<br class="spacer" />時間内にゴールを目指すことがゲームの攻略ポイントとなります！！</li></ul></li></ul>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<p><a href="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss002.html" title="raycast_maze_ss002.jpg"><img src="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss002.html" alt="raycast_maze_ss002.jpg" title="raycast_maze_ss002.jpg" /></a>
+<a href="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss009.html" title="raycast_maze_ss009.jpg"><img src="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss009.html" alt="raycast_maze_ss009.jpg" title="raycast_maze_ss009.jpg" /></a>
+<a href="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss101.html" title="raycast_maze_ss101.jpg"><img src="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss101.html" alt="raycast_maze_ss101.jpg" title="raycast_maze_ss101.jpg" /></a>
+<a href="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss103.html" title="raycast_maze_ss103.jpg"><img src="../img/Toukou/RAYCAST-20MAZE/raycast_maze_ss103.html" alt="raycast_maze_ss103.jpg" title="raycast_maze_ss103.jpg" /></a></p>
+<p>こちらに、動画と他のスクリーンショットがあるので参照してください<br class="spacer" />
+<a href="https://www.dropbox.com/sh/tl6bf4wszogwrvp/GEj_wsbasX" rel="nofollow">https://www.dropbox.com/sh/tl6bf4wszogwrvp/GEj_wsbasX</a></p>
+
+<h3 id="QR">QR コード</h3>
+<p>プチコンmkII 向けの QR コードです。</p>
+<div class="table-wrapper"><table class="border"><tbody><tr><th class="style_th" colspan="3">PRG:RAYCAST</th></tr><tr><th class="style_th">1/15</th><th class="style_th">2/15</th><th class="style_th">3/15</th></tr><tr><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr0.html" title="qr0.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr0.html" alt="qr0.png" title="qr0.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr1.html" title="qr1.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr1.html" alt="qr1.png" title="qr1.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr2.html" title="qr2.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr2.html" alt="qr2.png" title="qr2.png" /></a></td></tr><tr><th class="style_th">4/15</th><th class="style_th">5/15</th><th class="style_th">6/15</th></tr><tr><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr3.html" title="qr3.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr3.html" alt="qr3.png" title="qr3.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr4.html" title="qr4.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr4.html" alt="qr4.png" title="qr4.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr5.html" title="qr5.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr5.html" alt="qr5.png" title="qr5.png" /></a></td></tr><tr><th class="style_th">7/15</th><th class="style_th">8/15</th><th class="style_th">9/15</th></tr><tr><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr6.html" title="qr6.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr6.html" alt="qr6.png" title="qr6.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr7.html" title="qr7.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr7.html" alt="qr7.png" title="qr7.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr8.html" title="qr8.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr8.html" alt="qr8.png" title="qr8.png" /></a></td></tr><tr><th class="style_th">10/15</th><th class="style_th">11/15</th><th class="style_th">12/15</th></tr><tr><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr9.html" title="qr9.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr9.html" alt="qr9.png" title="qr9.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr10.html" title="qr10.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr10.html" alt="qr10.png" title="qr10.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr11.html" title="qr11.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr11.html" alt="qr11.png" title="qr11.png" /></a></td></tr><tr><th class="style_th">13/15</th><th class="style_th">14/15</th><th class="style_th">15/15</th></tr><tr><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr12.html" title="qr12.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr12.html" alt="qr12.png" title="qr12.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr13.html" title="qr13.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr13.html" alt="qr13.png" title="qr13.png" /></a></td><td class="style_td"><a href="../img/Toukou/RAYCAST-20MAZE/qr14.html" title="qr14.png"><img src="../img/Toukou/RAYCAST-20MAZE/qr14.html" alt="qr14.png" title="qr14.png" /></a></td></tr></tbody></table></div>
+
+<h3 id="Algorithm">アルゴリズム解説</h3>
+<p>レイキャストアルゴリズムについて基本的な考え方の説明です<br class="spacer" />
+何かの参考にしてもらえると嬉しいです</p>
+<table class="region-table" style="margin-left: -0.5em; border-style:none;"><tr>
+<td valign="top" style="vertical-align: top; border-style:none;">
+	<span id="rgn_button1" style="cursor:pointer;border:gray 1px solid;padding-left:0.35em;padding-right:0.35em;"
+	onclick="
+	if(document.getElementById('rgn_summary1').style.display!='none'){
+		document.getElementById('rgn_summary1').style.display='none';
+		document.getElementById('rgn_content1').style.display='block';
+		document.getElementById('rgn_bracket1').style.borderStyle='solid none solid solid';
+		document.getElementById('rgn_button1').innerHTML='-';
+	}else{
+		document.getElementById('rgn_summary1').style.display='block';
+		document.getElementById('rgn_content1').style.display='none';
+		document.getElementById('rgn_bracket1').style.borderStyle='none';
+		document.getElementById('rgn_button1').innerHTML='+';
+	}
+	">+</span>
+</td><td id="rgn_bracket1" style="font-size:1pt ;border:#aaaaaa 1px; width:4px; padding:0; border-style:none;">&nbsp;</td><td id="rgn_summary1" style="color:#aaaaaa ;border:#aaaaaa 1px solid; display:block;">アルゴリズム解説
+</td><td valign="top" id="rgn_content1" style="border-style:none; margin-bottom: -1.5em; position:relative; top: -0.75em; display:none;">
+<p>視点から光の線を飛ばし（ray=光線, cast=投げる）、壁に当たるまでの距離を求めます<br class="spacer" />
+距離が遠い(1)と壁のY軸を小さく、近い(2)と壁のY軸を大きくします<br class="spacer" />
+これを視野角（正面を角度０として±60度の計120度）に対して処理して描画します<br class="spacer" />
+描画するときは中央から上下にY軸の値を足します<br class="spacer" />
+プログラムで書くとこんな感じ<br class="spacer" /></p>
+<pre>FOR R=-60 TO 60
+ D=壁までの距離を求める
+ Y=Dの値が大きいと小さく、Dの値が小さいと大きくする
+ X=256/2+R:YM=192/2
+ GLINE X,YM-Y, X,YM+Y, 15
+NEXT</pre>
+<p>あとはこれの応用で、当たった壁の種類によって色を変えたり、<br class="spacer" />
+線を模様(テクスチャ)に変えたりするとDOOMみたいな見栄えになっていきます<br class="spacer" />
+<br class="spacer" />
+<br class="spacer" />
+<a href="../img/Toukou/RAYCAST-20MAZE/kaisetsu.html" title="kaisetsu.png"><img src="../img/Toukou/RAYCAST-20MAZE/kaisetsu.html" alt="kaisetsu.png" title="kaisetsu.png" /></a></p>
+</td></tr></table>
+
+<h3 id="Vote">投票</h3>
+<form action="http://wiki.hosiken.jp/petc/" method="post"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <table cellspacing="0" cellpadding="2" class="style_table" summary="vote">
+  <tr>
+   <td align="left" class="vote_label" style="padding-left:1em;padding-right:1em"><strong>選択肢</strong>
+    <input type="hidden" name="plugin"  value="vote" />
+    <input type="hidden" name="refer"   value="Toukou/RAYCAST MAZE" />
+    <input type="hidden" name="vote_no" value="0" />
+    <input type="hidden" name="digest"  value="640f0a7857c667b0a7599b21abe08044" />
+   </td>
+   <td align="center" class="vote_label"><strong>投票</strong></td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">どっちもよかった</td>
+   <td align="right" class="vote_td2">23&nbsp;&nbsp;
+    <input type="submit" name="vote_A4C9A4C3A4C1A4E2A4E8A4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">Game1がよかった</td>
+   <td align="right" class="vote_td1">2&nbsp;&nbsp;
+    <input type="submit" name="vote_47616D6531A4ACA4E8A4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">Game2がよかった</td>
+   <td align="right" class="vote_td2">5&nbsp;&nbsp;
+    <input type="submit" name="vote_47616D6532A4ACA4E8A4ABA4C3A4BF" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td1" style="padding-left:1em;padding-right:1em;">努力はみとめる</td>
+   <td align="right" class="vote_td1">4&nbsp;&nbsp;
+    <input type="submit" name="vote_C5D8CECFA4CFA4DFA4C8A4E1A4EB" value="投票" class="submit" />
+   </td>
+  </tr>
+  <tr>
+   <td align="left"  class="vote_td2" style="padding-left:1em;padding-right:1em;">ぜんぜんダメ</td>
+   <td align="right" class="vote_td2">1&nbsp;&nbsp;
+    <input type="submit" name="vote_A4BCA4F3A4BCA4F3A5C0A5E1" value="投票" class="submit" />
+   </td>
+  </tr>
+ </table>
+</form>
+
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>名無しさん</strong> : 下画面だけでも全然良かったw (<span class="comment_date">2012/09/17 (月) 14:01:48</span>)</li>
+<li><strong>燻製</strong> : すげえええ (<span class="comment_date">2012/09/17 (月) 14:16:08</span>)</li>
+<li><strong>燻製</strong> : でも少し上画面のコースが見えにくい (<span class="comment_date">2012/09/17 (月) 14:16:43</span>)</li>
+<li><strong>名無しさん</strong> : sugeeeeee！すごい！すごい！凄い！ (<span class="comment_date">2012/09/17 (月) 20:42:27</span>)</li>
+<li><strong>Germ</strong> : Incredible! So much effort put into it! (<span class="comment_date">2012/09/18 (火) 04:56:00</span>)</li>
+<li><strong>Hepebell</strong> : ↑*3 壁の色あいだったら、@WALLCOLORのパレット値で変えれます (<span class="comment_date">2012/09/18 (火) 08:58:16</span>)</li>
+<li><strong>ゆう</strong> : 作品も良いですが、アルゴリズム解説が大変勉強になりました。 (<span class="comment_date">2012/09/18 (火) 10:51:33</span>)</li>
+<li><strong>Hepebell</strong> : 拙い解説で公開ためらったけど、お役に立てて嬉しいです (<span class="comment_date">2012/09/18 (火) 22:18:17</span>)</li>
+<li><strong>Joven</strong> : Amazing work! (<span class="comment_date">2012/09/19 (水) 16:12:41</span>)</li>
+<li><strong>Hepebell</strong> : I'm so happy to hear such compliments! (<span class="comment_date">2012/09/19 (水) 20:07:32</span>)</li>
+<li><strong>燻製</strong> : ↑３解説も十分すごいしそもそもプチコンでここまで3Dができるって相当すごいですよ (<span class="comment_date">2012/09/19 (水) 20:21:21</span>)</li>
+<li><strong>名無しさん</strong> : やっぱり,こういう３Dものは、アメリカ人にウケるんだな。 (<span class="comment_date">2012/09/19 (水) 22:34:48</span>)</li>
+<li><strong>トマト聖神</strong> : 最後のを取ってる時に戻るを押しちゃったｗｗ (<span class="comment_date">2012/10/08 (月) 19:53:24</span>)</li>
+<li><strong>とめいとう</strong> : 面白っ! (<span class="comment_date">2012/10/08 (月) 20:04:45</span>)</li>
+<li><strong>メルビル</strong> : 勉強になりますm(__)m (<span class="comment_date">2012/10/08 (月) 20:20:54</span>)</li>
+<li><strong>otyaken</strong> : なるほど (<span class="comment_date">2012/10/14 (日) 19:53:22</span>)</li>
+<li><strong>ｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆｆ</strong> : すすすすすすすすすすすすすすすすすすすすすすすすすすすすす煤煤煤煤煤煤煤煤午後午後午後午後午後午後午後午後午後午後午後午後午後午後午後午後午後ごごごごごごごーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーいいいいいいいいいいいいいいいいいいいいいいいいいい (<span class="comment_date">2013/05/31 (金) 14:48:59</span>)</li>
+<li><strong>名無しさん</strong> : win98のhoverみたいだな (<span class="comment_date">2014/10/26 (日) 15:33:59</span>)</li>
+<li><strong>名無しさん</strong> : HOVER懐かしいなぁ。 (<span class="comment_date">2014/10/30 (木) 19:27:04</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/RAYCAST MAZE" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="640f0a7857c667b0a7599b21abe08044" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_5_0">メニュー 【mkII】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコンメモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン作品リンク集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコンへの要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
 <li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン掲示板</a></li>
-<li><a href="/petc/?Chat" title="Chat (539d)">チャットルーム</a></li>
-<li><a href="/petc/?Contact" title="Contact (278d)">管理人に連絡</a></li></ul>
-<ul><li><a href="http://wiki.hosiken.jp/petc3gou/" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc3gou/index.html" rel="nofollow">プチコン3号 まとめWiki</a></li></ul>
 
-<h3 id="content_2_1">ヘルプ</h3>
-<ul><li><a href="/petc/?Help" title="Help (746d)">ヘルプ</a></li>
-<li><a href="/petc/?SandBox" title="SandBox (5h)">編集の練習用ページ</a></li></ul>
+<h3 id="content_5_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
 
-<h3 id="content_2_2">リンク</h3>
+<h3 id="content_5_2">リンク</h3>
 <ul><li><a href="http://smileboom.com/special/ptcm2/" rel="nofollow">プチコンmkII 公式サイト</a></li>
 <li><a href="http://smileboom.com/special/ptcm2/html_reference.php" rel="nofollow">mkII公式コマンド一覧</a></li>
 <li><a href="http://smileboom.com/special/ptcm2/co_manual/p01.php" rel="nofollow">mkII公式説明書</a></li>
@@ -94,77 +338,52 @@
 <li><a href="http://smileboom.com/special/petitcom/command.html" rel="nofollow">旧公式コマンド一覧</a></li>
 <li><a href="http://smileboom.com/special/petitcom/konnichiwa.html" rel="nofollow">旧公式初心者むけ講座</a></li></ul>
 <ul><li><a href="http://petitcomputer.wikia.com/wiki/Petit_Computer_Wiki" rel="nofollow">Petit Computer Wiki</a></li></ul>
-<ul><li><a href="/petc/?Link" title="Link (109d)">プチコンリンク集</a></li></ul>
-<h3>最近の更新</h3><!-- 10 --><div><h4>2016/12/03</h4>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコンリンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/08/29</h4>
 <ul>
- <li><a href="/petc/?Toukou%2F%C2%C0%B8%DD%A4%CE%A1%FB%BF%CD" title="Toukou/太鼓の○人 (1d)">Toukou/太鼓の○人</a></li>
- <li><a href="/petc/?Toukou%2FBALLOON%20FLUTTER" title="Toukou/BALLOON FLUTTER (2d)">Toukou/BALLOON FLUTTER</a></li>
+ <li><a href="A4-E6-A4-EB-A5-AD-A5-E5-A1-BC-A5-D6-.html" title="ゆるキューブ (587d)">ゆるキューブ</a></li>
 </ul>
-<h4>2016/11/20</h4>
+<h4>2022/07/29</h4>
 <ul>
- <li><a href="/petc/?Toukou%2FARROWsNEXT%20OS" title="Toukou/ARROWsNEXT OS (15d)">Toukou/ARROWsNEXT OS</a></li>
+ <li><a href="A5-D7-A5-C1-A5-B3-A5-F3-TV.html" title="プチコンTV (618d)">プチコンTV</a></li>
+ <li><a href="PA1-FB-4A4-CE-A5-DB-A1-BC-A5-E0-B2-E8-CC-CC-A4-E2-A4-C9-A4-AD-.html" title="P○4のホーム画面もどき (618d)">P○4のホーム画面もどき</a></li>
+ <li><a href="BB-B3-B3-D9-B4-D1-B8-F7-A5-BD-A5-D5-A5-C8-.html" title="山岳観光ソフト (618d)">山岳観光ソフト</a></li>
 </ul>
-<h4>2016/11/01</h4>
+<h4>2022/05/18</h4>
 <ul>
- <li><a href="/petc/?Toukou%2FPetit%20Tunnel" title="Toukou/Petit Tunnel (33d)">Toukou/Petit Tunnel</a></li>
+ <li><a href="A5-D7-A5-C1-A5-B3-A4-C1-A4-E3-A4-F3-A4-C8-CC-EE-B5-E5-B7-FD-A1-A6-A5-EA-A5-DF-A5-C6-A5-C3-A5-C9-C8-C7-.html" title="プチコちゃんと野球拳・リミテッド版 (690d)">プチコちゃんと野球拳・リミテッド版</a></li>
 </ul>
-<h4>2016/10/22</h4>
+<h4>2022/05/01</h4>
 <ul>
- <li><a href="/petc/?Toukou%2F%A5%E9%A5%A4%A5%F3%A5%A2%A1%BC%A5%C8" title="Toukou/ラインアート (43d)">Toukou/ラインアート</a></li>
+ <li><a href="../OverFlow.html" title="OFコーナー (707d)">OFコーナー</a></li>
 </ul>
-<h4>2016/10/14</h4>
+<h4>2022/03/18</h4>
 <ul>
- <li><a href="/petc/?iPhone" title="iPhone (51d)">iPhone</a></li>
-</ul>
-<h4>2016/10/13</h4>
-<ul>
- <li><a href="/petc/?SandBox" title="SandBox (52d)">SandBox</a></li>
- <li><a href="/petc/?%A4%DE%A4%A2%A4%DE%A4%A2%A5%DA%A5%A4%A5%F3%A5%C8" title="まあまあペイント (52d)">まあまあペイント</a></li>
-</ul>
-<h4>2016/10/03</h4>
-<ul>
- <li><a href="/petc/?Toukou%2FSHEEP" title="Toukou/SHEEP (62d)">Toukou/SHEEP</a></li>
- <li><a href="/petc/?Toukou%2FDosankoOSX" title="Toukou/DosankoOSX (62d)">Toukou/DosankoOSX</a></li>
+ <li><a href="../Contact.html" title="管理人へ連絡 (751d)">管理人へ連絡</a></li>
+ <li><a href="C2-C0-B8-DD-A4-CE-A1-FB-BF-CD-.html" title="太鼓の○人 (751d)">太鼓の○人</a></li>
+ <li><a href="Drop2D-m.html" title="Drop-m(リズムゲーム) (751d)">Drop-m(リズムゲーム)</a></li>
+ <li><a href="Drop2D-e.html" title="Drop-e(リズムゲーム) (751d)">Drop-e(リズムゲーム)</a></li>
 </ul>
 </div>
 
-<h3 id="content_2_3">オンライン情報</h3>
-<p>現在同時に 4 人がこのサイトを見ています</p>
+<h3 id="content_5_3">オンライン情報</h3>
+<p>現在同時に 1 人がこのサイトを見ています</p>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
 
+				</div>
+			
 			</div>
 
 		</div>
-
-		<div id="block-body-container" class="with-sidemenu">
-
-			<h2>有効なWikiNameではありません</h2>
-
-			<div id="block-pankuzu-body">
-
-				<h3 id="header-pankuzu">パンくずリスト</h3>
-
-				<ul id="list-pankuzu">
-<li id="list-pankuzu-home"><a href="/petc/">トップ</a></li>
-<li><a href="/petc/?Toukou">Toukou</a></li>
-<li><a href="/petc/?Toukou%2FRAYCAST%20MAZE">RAYCAST MAZE</a></li>
-<li id="list-pankuzu-current"><a href="/petc/?Toukou%2FRAYCAST%20MAZE%2F"></a></li>				</ul>
-
-			</div>
-
-<div id="body">
-Toukou/RAYCAST MAZE/ は有効な WikiName ではありません。</div>
-
-		</div>
-
-		<div class="clear"></div>
 
 	</div>
 
 	<div id="block-pukiwiki-info">
 
 
-		<p id="pukiwiki-about"><strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
-		ページの処理時間 : 0.005 秒  | <a href="/petc/?plugin=login">ログイン</a><br />
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.178 秒  | このページの最終更新 : 2022/09/20 (火) 12:44:01  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
 		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
 
 	</div>
@@ -187,4 +406,6 @@ Toukou/RAYCAST MAZE/ は有効な WikiName ではありません。</div>
 
 </body>
 
+
+<!-- Mirrored from wiki.hosiken.jp/petc/html/Toukou/RAYCAST20-MAZE.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 12:50:42 GMT -->
 </html>

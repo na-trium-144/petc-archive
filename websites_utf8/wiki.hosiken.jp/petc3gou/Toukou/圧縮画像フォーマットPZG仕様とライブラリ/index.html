@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/B0-B5-BD-CC-B2-E8-C1-FC-A5-D5-A5-A9-A1-BC-A5-DE-A5-C3-A5-C8-PZGBB-C5-CD-CD-A4-C8-A5-E9-A5-A4-A5-D6-A5-E9-A5-EA-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 14:56:53 GMT -->
+<head>
+	<title>投稿プログラム : 圧縮画像フォーマットPZG仕様とライブラリ - プチコン3号＆BIGまとめWiki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">	
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<link rel="stylesheet" href="../../../sys/skin/pure/forms.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/pure/buttons.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-3gou-pure.css" type="text/css" media="screen" charset="Shift_JIS" />
+		<link rel="stylesheet" href="../../../sys/skin/smilebasic.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<link rel="stylesheet" href="../../../sys/skin/standard-petc/colorbox.css" type="text/css" media="screen" charset="Shift_JIS" />
+	<!--[if IE]><link rel="stylesheet" href="../../../sys/skin/smilebasic-ie.css" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/wordbreak.js"></script> 
+	<script type="text/javascript" src="../../../sys/skin/standard-petc/jquery.colorbox-min.js"></script> 
+		<meta name="twitter:title" content="投稿プログラム : 圧縮画像フォーマットPZG仕様とライブラリ - プチコン3号＆BIGまとめWiki" />
+	<meta name="twitter:description" content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="http://wiki.hosiken.jp/sys/skin/face/hakase-cry-rev.png" />
+	<meta name="twitter:site" content="@hosiken" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../../indexfebd.html?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ライブラリ" />
+	<script language="JavaScript">
+		$(document).ready(function(){
+			$(".ColorBoxYouTube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+		});
+		(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+	</script>
+<body>
+
+<div id="block-container">
+
+	<div id="block-header">
+
+		<h1><a href="../../index.html">プチコン3号＆BIGまとめWiki</a></h1>
+
+	<div id="block-topbox">
+		<div id="headermenu">
+	<ul class="menu">
+		<li id="menu-button"><a href="#global-menu">メニュー</a></li>
+		<li><a href="B0-B5-BD-CC-B2-E8-C1-FC-A5-D5-A5-A9-A1-BC-A5-DE-A5-C3-A5-C8-PZGBB-C5-CD-CD-A4-C8-A5-E9-A5-A4-A5-D6-A5-E9-A5-EA-a0e2.html?plugin=search">検索</a></li>
+		<li><a href="../Help.html">ヘルプ</a></li>
+		<li class="parent last highlight"><a href="javascript:void(0);">Wikiの機能</a><ul>
+				<li><a href="../../index1305.html?cmd=edit&amp;page=Toukou%2F%B0%B5%BD%CC%B2%E8%C1%FC%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8PZG%BB%C5%CD%CD%A4%C8%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">このページを編集</a></li>
+				<li><a href="../../index9af8.html?cmd=diff&amp;page=Toukou%2F%B0%B5%BD%CC%B2%E8%C1%FC%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8PZG%BB%C5%CD%CD%A4%C8%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">前回からの変更点</a></li>
+				<li><a href="../../indexf5f9.html?plugin=attach&amp;pcmd=upload&amp;page=Toukou%2F%B0%B5%BD%CC%B2%E8%C1%FC%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8PZG%BB%C5%CD%CD%A4%C8%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ファイルをアップロード</a></li>
+				<li><a href="../../index5d4a.html?plugin=newpage&amp;refer=Toukou%2F%B0%B5%BD%CC%B2%E8%C1%FC%A5%D5%A5%A9%A1%BC%A5%DE%A5%C3%A5%C8PZG%BB%C5%CD%CD%A4%C8%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">新しいページをつくる</a></li>
+				<li><a href="../../index63fc.html?cmd=list">すべてのページの一覧</a></li>
+				<li><a href="../RecentChanges.html">最近更新されたページ</a></li>
+
+</ul></li>
+</ul>
+</div>
+</div>
+
+	</div>
+
+	<div id="block-extra-navi">
+		<ul>
+			<li><a href="../../../petc4/index.html">プチコン4</a></li>
+			<li id="active">3号/BIG</li>
+			<li><a href="../../../petc/index.html">初代/mkII</a></li>
+</ul>
+	</div>
+
+
+	<div id="block-body" class="pure-g">
+
+		<div class="with-sidemenu pure-u-lg-19-24 pure-u-md-18-24 pure-u-sm-17-24 pure-u-1">
+
+			<div id="block-body-container">
+
+				<h2>投稿プログラム : 圧縮画像フォーマットPZG仕様とライブラリ</h2>
+
+				<div id="block-pankuzu-body">
+
+					<h3 id="header-pankuzu">パンくずリスト</h3>
+
+					<ul id="list-pankuzu">
+<li id="list-pankuzu-home"><a href="../../index.html">トップ</a></li>
+<li><a href="../Toukou.html">Toukou</a></li>
+<li id="list-pankuzu-current"><a href="#">圧縮画像フォーマットPZG仕様とライブラリ</a></li>					</ul>
+
+				</div>
+					
+<div id="body">
+<!--  / 0.101sec. -->
+<div class="contents">
+<ul><li><a href="#Summary">  概要 </a></li>
+<li><a href="#l7a174b5">  目的 </a></li>
+<li><a href="#zeba813e">  フォーマット </a>
+<ul><li><a href="#x1ff9914"> 概要 </a></li>
+<li><a href="#d7ea0138"> LZSSデータストリーム </a></li></ul></li>
+<li><a href="#hae8eddb">  ライブラリ </a>
+<ul><li><a href="#mf9410a7">  SAVELZIMAGE </a></li>
+<li><a href="#ff97757b">  LOADLZIMAGE </a></li>
+<li><a href="#j83eb89a">  LZIMAGE </a></li>
+<li><a href="#occ493d6">  UNLZIMAGE </a></li>
+<li><a href="#q5c1974a">  LZ </a></li>
+<li><a href="#e6797b44">  UNLZ </a></li></ul></li>
+<li><a href="#ScreenShots">  スクリーンショット・動画 </a></li>
+<li><a href="#QR">  公開キー </a></li>
+<li><a href="#List">  プログラムリスト </a></li>
+<li><a href="#Comments">  CHECKER FLAG (ひとことコメント) </a></li></ul>
+</div>
+
+<p>2015年3月29日投稿
+/ 投稿者 : れい
+/ <span class="tag">タグ : <a href="../../index9fde.html?cmd=taglist&amp;tag=%C5%EA%B9%C6%A5%D7%A5%ED%A5%B0%A5%E9%A5%E0">投稿プログラム</a> <a href="../../indexc801.html?cmd=taglist&amp;tag=%A5%E9%A5%A4%A5%D6%A5%E9%A5%EA">ライブラリ</a> </span></p>
+<h3 id="Summary">概要</h3>
+<p>プチコン3号で利用することを前提に考えた画像フォーマットの仕様およびこれを利用するためのライブラリです。</p>
+
+<h3 id="l7a174b5">目的</h3>
+<p>プチコン3号はSDを利用している比較的大きなストレージを持ち、またGRPも1枚当たり500kByteと比較的大きいサイズになっています。
+しかし公式サイトでのプログラムの配布は1プロジェクトあたりおおよそ4MByteに制限されており、
+高画質、高音質、内容の多いコンテンツを作成する際に問題になる可能性があります。</p>
+<p>PC用の圧縮・展開ルーチンはプチコン3号には負荷が高く、実用に耐える展開速度、コード量ではありません。</p>
+<p>そこで、プチコン3号上でも十分高速に圧縮・展開でき、標準関数であるGLOAD/GSAVE等と相性の良い画像フォーマットを考案し、
+それを用いる為のライブラリを作成しました。</p>
+
+<h3 id="zeba813e">フォーマット</h3>
+
+<h4 id="x1ff9914">概要</h4>
+<p>プチコン3号の数値配列の1要素(4オクテット)の単位を1レコードとし、
+配列の先頭から下記のようなレコード構造とします。</p>
+<ul><li>ヘッダー
+<ul><li>1 識別ID(&amp;H505A473A「PZG:」)</li>
+<li>2 版(現在は1のみ)</li>
+<li>3 画像サイズ
+<ul><li>0-15bit: 高さ</li>
+<li>16-31bit: 幅</li></ul></li>
+<li>4 LZSS圧縮パラメーター
+<ul><li>0-7bit: ウィンドウサイズのビット数</li>
+<li>8-15bit: 一致長のビット数</li>
+<li>16-31bit: 未使用</li></ul></li></ul></li>
+<li>データ
+<ul><li>5- LZSSデータストリーム。リトルエンディアン。</li></ul></li></ul>
+
+<h4 id="d7ea0138">LZSSデータストリーム</h4>
+<p>物理コード指定した際、GLOAD/GSAVEで得られる配列の各要素は16bitの範囲に収まっています。
+この16bit配列をリトルエンディアンでバイトストリームとして解釈し、
+バイト単位でLZSS圧縮を行ったものをデータストリームとします。
+圧縮時の詳細は、ライブラリソースを仕様とします。</p>
+
+<h3 id="hae8eddb">ライブラリ</h3>
+<p>ライブラリの内容の説明です。</p>
+<p>以下では、下記の単語を用います。</p>
+<ul><li>GLOAD配列: 物理コード指定でGLOAD/GSAVEを呼ぶときに用いられる形式の配列と呼ぶ</li>
+<li>PZG配列: GLOAD配列に画像サイズ情報を追加し圧縮した、この仕様で延べられるフォーマットに従った配列</li>
+<li>PZGファイル: PZG配列をDATリソースとして記録したファイル</li></ul>
+
+<h4 id="mf9410a7">SAVELZIMAGE</h4>
+<p>GLOAD配列をPZGファイルに保存する関数です。</p>
+<p>GLOAD配列、その幅、高さを引数に取ります。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h4 id="ff97757b">LOADLZIMAGE</h4>
+<p>PZGファイルからGLOAD配列を読み込む関数です。</p>
+<p>ファイル名と出力配列を引数に取り、幅、高さを返します。
+データは出力配列に追加される為、要素の無い配列を指定してください。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h4 id="j83eb89a">LZIMAGE</h4>
+<p>GLOAD配列をPZG配列に圧縮する関数です。</p>
+<p>GLOAD配列、出力配列、幅、高さを引数に取ります。
+データは出力配列に追加される為、要素の無い配列を指定してください。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h4 id="occ493d6">UNLZIMAGE</h4>
+<p>PZG配列をGLOAD配列に展開する関数です。</p>
+<p>PZG配列と出力配列を引数に取り、幅、高さを返します。
+データは出力配列に追加される為、要素の無い配列を指定してください。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h4 id="q5c1974a">LZ</h4>
+<p>任意の配列を圧縮する関数です。</p>
+<p>入力配列、出力配列、ウィンドウサイズのビット数、一致長のビット数、最小一致量を引数にとります。
+データに応じてウィンドウサイズは8〜12、一致長は3〜7、最小一致量は3〜5を用いてください。
+展開時には同じウィンドウサイズ、一致長を指定する必要があります。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h4 id="e6797b44">UNLZ</h4>
+<p>LZで圧縮された配列を展開する関数です。</p>
+<p>入力配列、開始オフセット、出力配列、ウィンドウサイズのビット数、一致長のビット数を引数にとります。
+圧縮時に用いたものと同じウィンドウサイズ、一致長を指定する必要があります。
+進捗を表示する場合はPROG%にTRUEを指定します。</p>
+
+<h3 id="ScreenShots">スクリーンショット・動画</h3>
+<div class="img_margin" style="text-align:left"><a href="../img/Toukou/-B0-B5-BD-CC-B2-E8-C1-FC-A5-D5-A5-A9-A1-BC-A5-DE-A5-C3-A5-C8PZG-BB-C5-CD-CD-A4-C8-A5-E9-A5-A4-A5-D6-A5-E9-A5-EA/zlCfzTKwEgM1x1_YnP.jpg" title="zlCfzTKwEgM1x1_YnP.jpg"><img src="../img/Toukou/-B0-B5-BD-CC-B2-E8-C1-FC-A5-D5-A5-A9-A1-BC-A5-DE-A5-C3-A5-C8PZG-BB-C5-CD-CD-A4-C8-A5-E9-A5-A4-A5-D6-A5-E9-A5-EA/zlCfzTKwEgM1x1_YnP.jpg" alt="zlCfzTKwEgM1x1_YnP.jpg" title="zlCfzTKwEgM1x1_YnP.jpg" width="400" height="240" /></a></div>
+
+
+<h3 id="QR">公開キー</h3>
+<div>
+<div class="ptcmid">
+プチコン3号/BIG 公開キー<br />
+<div class="key">
+<span class="smbas">R584E83E</span>
+</div>
+</div>
+
+</div>
+
+<p>公開数制限があるため、他のプログラムに同梱しています。</p>
+
+<h3 id="List">プログラムリスト</h3>
+<div class="basic-source"><div class="basic-list"><code><ol><li><span class="smbas">’−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−</span></li>
+<li><span class="smbas">’　　　　　　　　　　　　　　　　　ＬＺＳＳ　ＬＩＢＲＡＲＹ　ＦＯＲ　ＰＥＴＩＴＣＯＭ</span></li>
+<li><span class="smbas">’　　　　　　　　　　　　　　　　　　　　　　　２０１５／４／１７　Ｖｅｒ．１．０．１</span></li>
+<li><span class="smbas">’　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Ｒｅｉ　Ｓｏｆｔｗａｒｅ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＦＵＮＣＴＩＯＮＳ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＳＡＶＥＬＺＩＭＡＧＥ　−　ＳＡＶＥ　ＬＺＩＭＡＧＥ　ＦＯＲＭＡＴ　ＦＩＬＥ</span></li>
+<li><span class="smbas">’　ＦＩＬＥＮＡＭＥ＄：ＦＩＬＥＮＡＭＥ　ＴＯ　ＳＡＶＥ</span></li>
+<li><span class="smbas">’　ＩＮ％［］：ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　Ｗ％：ＩＭＡＧＥ　ＷＩＤＴＨ</span></li>
+<li><span class="smbas">’　Ｈ％：ＩＭＡＧＥ　ＨＥＩＧＨＴ</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＬＯＡＤＬＺＩＭＡＧＥ　−　ＬＯＡＤ　ＬＺＩＭＡＧＥ　ＦＯＲＭＡＴ　ＦＩＬＥ</span></li>
+<li><span class="smbas">’　ＦＩＬＥＮＡＭＥ＄：ＦＩＬＥＮＡＭＥ　ＴＯ　ＬＯＡＤ</span></li>
+<li><span class="smbas">’　ＯＵＴ％［］：ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’　［ＯＵＴ］　Ｗ％：ＩＭＡＧＥ　ＷＩＤＴＨ</span></li>
+<li><span class="smbas">’　［ＯＵＴ］　Ｈ％：ＩＭＡＧＥ　ＨＥＩＧＨＴ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＬＺＩＭＡＧＥ　−　ＣＯＭＰＲＥＳＳ　ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＩＮ％［］：ＳＯＵＲＣＥ　ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＯＵＴ％［］：ＣＯＭＰＲＥＳＳＥＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　Ｗ％：ＩＭＡＧＥ　ＷＩＤＴＨ</span></li>
+<li><span class="smbas">’　Ｈ％：ＩＭＡＧＥ　ＨＥＩＧＨＴ</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＵＮＬＺＩＭＡＧＥ　−　ＤＥＣＯＭＰＲＥＳＳ　ＴＯ　ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＩＮ％［］：ＳＯＵＲＣＥ　ＣＯＭＰＲＥＳＳＥＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＯＵＴ％［］：ＧＬＯＡＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’　［ＯＵＴ］　Ｗ％：ＩＭＡＧＥ　ＷＩＤＴＨ</span></li>
+<li><span class="smbas">’　［ＯＵＴ］　Ｈ％：ＩＭＡＧＥ　ＨＥＩＧＨＴ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＬＺ　−　ＣＯＭＰＲＥＳＳ　ＮＵＭＢＥＲ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＩＮ％［］：ＳＯＵＲＣＥ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＯＵＴ％［］：ＣＯＭＰＲＥＳＳＥＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＷＬＢ％：ＷＩＮＤＯＷＳＩＺＥ　ＩＮ　ＢＩＴ　（ＲＥＣＯＭＭＥＮＤ　１０）</span></li>
+<li><span class="smbas">’　ＭＬＢ％：ＭＡＸ　ＲＥＰＥＴＩＴＩＯＮ　ＩＮ　ＢＩＴ　（ＲＥＣＯＭＭＥＮＤ　５）</span></li>
+<li><span class="smbas">’　ＬＬＢ％：ＭＩＮ　ＲＥＰＥＴＩＴＩＯＮ　ＩＮ　ＢＹＴＥ　（ＲＥＣＯＭＭＥＮＤ　３）</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">’ＵＮＬＺ　−　ＤＥＣＯＭＰＲＥＳＳ　ＮＵＭＢＥＲ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＩＮ％［］：ＳＯＵＲＣＥ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＩＮＯＦＳ％：ＳＴＡＲＴ　ＩＮＤＥＸ　ＯＦ　ＳＯＵＲＣＥ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＯＵＴ％［］：ＤＥＣＯＭＰＲＥＳＳＥＤ　ＡＲＲＡＹ</span></li>
+<li><span class="smbas">’　ＷＬＢ％：ＷＩＮＤＯＷＳＩＺＥ　ＩＮ　ＢＩＴ</span></li>
+<li><span class="smbas">’　ＭＬＢ％：ＭＡＸ　ＲＥＰＥＴＩＴＩＯＮ　ＩＮ　ＢＩＴ</span></li>
+<li><span class="smbas">’　ＰＲＯＧ：ＤＩＳＰＬＡＹ　ＰＲＯＧＲＥＳＳ</span></li>
+<li><span class="smbas">’</span></li>
+<li><span class="smbas">ＤＥＦ　ＳＡＶＥＬＺＩＭＡＧＥ　ＦＩＬＥＮＡＭＥ＄，ＩＮ％［］，Ｗ％，Ｈ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｐ％［０］，Ｖ％</span></li>
+<li><span class="smbas">　ＬＺＩＭＡＧＥ　ＩＮ％，Ｐ％，Ｗ％，Ｈ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＳＡＶＥ　”ＤＡＴ：”＋ＦＩＬＥＮＡＭＥ＄，Ｐ％</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（Ｐ％）＞０：Ｖ％＝ＰＯＰ（Ｐ％）：ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＬＯＡＤＬＺＩＭＡＧＥ　ＦＩＬＥＮＡＭＥ＄，ＯＵＴ％［］，ＰＲＯＧ％　ＯＵＴ　Ｗ％，Ｈ％</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｐ％［０］，Ｖ％</span></li>
+<li><span class="smbas">　ＬＯＡＤ　”ＤＡＴ：”＋ＦＩＬＥＮＡＭＥ＄，Ｐ％，ＦＡＬＳＥ</span></li>
+<li><span class="smbas">　ＵＮＬＺＩＭＡＧＥ　Ｐ％，ＯＵＴ％，ＰＲＯＧ％　ＯＵＴ　Ｗ％，Ｈ％</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（Ｐ％）＞０：Ｖ％＝ＰＯＰ（Ｐ％）：ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＬＺＩＭＡＧＥ　ＩＮ％［］，ＯＵＴ％［］，Ｗ％，Ｈ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＷＬＢ％＝１０，ＭＬＢ％＝５，ＭＭ％＝３</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｐ％［０］</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｉ％，Ｖ％，ＤＤ％</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ％＝０　ＴＯ　ＬＥＮ（ＩＮ％）−２　ＳＴＥＰ　２</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　Ｐ％，ＩＮ％［Ｉ％］　ＯＲ　（ＩＮ％［Ｉ％＋１］＜＜１６）</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＩＦ　Ｉ％＝＝ＬＥＮ（ＩＮ％）−１　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　Ｐ％，ＩＮ％［Ｉ％］</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（ＯＵＴ％）＞０：ＤＤ％＝ＰＯＰ（ＯＵＴ％）：ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＰＵＳＨ　ＯＵＴ％，＆Ｈ５０５Ａ４７３Ａ’ＰＺＧ：</span></li>
+<li><span class="smbas">　ＰＵＳＨ　ＯＵＴ％，１’ＶＥＲＳＩＯＮ１</span></li>
+<li><span class="smbas">　ＰＵＳＨ　ＯＵＴ％，（Ｗ％＜＜１６）　ＯＲ　Ｈ％’ＷＩＤＴＨ＆ＨＥＩＧＨＴ</span></li>
+<li><span class="smbas">　ＰＵＳＨ　ＯＵＴ％，ＷＬＢ％　ＯＲ　（ＭＬＢ％＜＜８）’ＬＺ　ＰＡＲＡＭ</span></li>
+<li><span class="smbas">　ＬＺ　Ｐ％，ＯＵＴ％，ＷＬＢ％，ＭＬＢ％，ＭＭ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（Ｐ％）＞０：Ｖ％＝ＰＯＰ（Ｐ％）：ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＵＮＬＺＩＭＡＧＥ　ＩＮ％［］，ＯＵＴ％［］，ＰＲＯＧ％　ＯＵＴ　Ｗ％，Ｈ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＷＬＢ％，ＭＬＢ％</span></li>
+<li><span class="smbas">　ＤＩＭ　Ｐ％［０］</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｖ％，ＤＤ％</span></li>
+<li><span class="smbas">　ＩＦ　ＩＮ％［０］！＝＆Ｈ５０５Ａ４７３Ａ　ＴＨＥＮ　ＰＲＩＮＴ　”ＩＮＶＡＬＩＤ　ＤＡＴＡ”：ＳＴＯＰ</span></li>
+<li><span class="smbas">　ＩＦ　ＩＮ％［１］！＝１　ＴＨＥＮ　ＰＲＩＮＴ　”ＵＮＳＵＰＰＯＲＴＥＤ　ＶＥＲＳＩＯＮ”：ＳＴＯＰ</span></li>
+<li><span class="smbas">　Ｗ％　　＝（ＩＮ％［２］＞＞１６）ＡＮＤ　＆ＨＦＦＦＦ</span></li>
+<li><span class="smbas">　Ｈ％　　＝　ＩＮ％［２］　　　　　ＡＮＤ　＆ＨＦＦＦＦ</span></li>
+<li><span class="smbas">　ＷＬＢ％＝　ＩＮ％［３］　　　　　ＡＮＤ　＆ＨＦＦ</span></li>
+<li><span class="smbas">　ＭＬＢ％＝（ＩＮ％［３］＞＞８　）ＡＮＤ　＆ＨＦＦ</span></li>
+<li><span class="smbas">　ＵＮＬＺ　ＩＮ％，４，Ｐ％，ＷＬＢ％，ＭＬＢ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（ＯＵＴ％）＞０：ＤＤ％＝ＰＯＰ（ＯＵＴ％）：ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（Ｐ％）＞０</span></li>
+<li><span class="smbas">　　Ｖ％＝ＳＨＩＦＴ（Ｐ％）</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　ＯＵＴ％，Ｖ％　　　　　　ＡＮＤ　＆ＨＦＦＦＦ</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　ＯＵＴ％，（Ｖ％＞＞１６）ＡＮＤ　＆ＨＦＦＦＦ</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＬＥＮ（ＯＵＴ％）＞Ｗ％＊Ｈ％</span></li>
+<li><span class="smbas">　　ＤＤ％＝ＰＯＰ（ＯＵＴ％）</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＵＮＬＺ　ＩＮ％［］，ＩＮＯＦＳ％，ＯＵＴ％［］，ＷＬＢ％，ＭＬＢ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＪＨ％＝ＩＮＯＦＳ％，ＪＬ％＝０，Ｃ％，Ｌ％，Ｄ％，Ｂ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＯＬ％＝０，Ｏ％＝０，Ｋ％，Ｉ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＷＬ％＝（１＜＜ＷＬＢ％）−１</span></li>
+<li><span class="smbas">　ＶＡＲ　ＭＬ％＝（１＜＜ＭＬＢ％）−１</span></li>
+<li><span class="smbas">　ＶＡＲ　ＬＥＮ＿ＩＮ％＝ＬＥＮ（ＩＮ％）</span></li>
+<li><span class="smbas">　ＶＡＲ　ＣＮＴ％＝０，ＰＲＧ１％</span></li>
+<li><span class="smbas">　ＤＩＭ　ＢＢ％［ＷＬ％＋１］</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＰＲＧ１％＝ＪＨ％＊４０／ＬＥＮ＿ＩＮ％</span></li>
+<li><span class="smbas">　　ＰＲＩＮＴ　”＊”＊ＰＲＧ１％＋”−”＊（４０−ＰＲＧ１％）</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　ＪＨ％＜ＬＥＮ＿ＩＮ％</span></li>
+<li><span class="smbas">　　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＣＮＴ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＣＮＴ％＞１６　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＣＮＴ％＝０</span></li>
+<li><span class="smbas">　　　　ＰＲＧ１％＝ＪＨ％＊４０／ＬＥＮ＿ＩＮ％</span></li>
+<li><span class="smbas">　　　　ＬＯＣＡＴＥ　０，ＣＳＲＹ−１</span></li>
+<li><span class="smbas">　　　　ＰＲＩＮＴ　”＊”＊ＰＲＧ１％＋”−”＊（４０−ＰＲＧ１％）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　Ｃ％＝（（ＩＮ％［ＪＨ％］＞＞ＪＬ％）ＡＮＤ　１）</span></li>
+<li><span class="smbas">　　ＩＮＣ　ＪＬ％</span></li>
+<li><span class="smbas">　　ＩＦ　ＪＬ％＞＝３２　ＴＨＥＮ　ＩＮＣ　ＪＨ％：ＤＥＣ　ＪＬ％，３２</span></li>
+<li><span class="smbas">　　ＩＦ　ＪＨ％＞＝ＬＥＮ＿ＩＮ％　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　ＩＦ　Ｃ％＝＝０　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　Ｂ％＝（ＩＮ％［ＪＨ％］＞＞ＪＬ％）　ＡＮＤ　２５５</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＪＬ％，８</span></li>
+<li><span class="smbas">　　　ＩＦ　ＪＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＩＮＣ　ＪＨ％：ＤＥＣ　ＪＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｂ％＝　Ｂ％　ＡＮＤ　（（１＜＜（８−ＪＬ％））−１）</span></li>
+<li><span class="smbas">　　　　ＩＦ　ＪＨ％＜ＬＥＮ＿ＩＮ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　　Ｂ％＝（Ｂ％　ＯＲ　　（ＩＮ％［ＪＨ％］＜＜（８−ＪＬ％）））　ＡＮＤ　２５５</span></li>
+<li><span class="smbas">　　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｏ％＝Ｏ％　ＯＲ　（Ｂ％＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＰＵＳＨ　ＢＢ％，Ｂ％：Ｂ％＝ＳＨＩＦＴ（ＢＢ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％，８</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ　ＰＵＳＨ　ＯＵＴ％，Ｏ％：ＯＬ％＝０：Ｏ％＝０</span></li>
+<li><span class="smbas">　　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　　Ｄ％＝（ＩＮ％［ＪＨ％］＞＞ＪＬ％　ＡＮＤ　ＷＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＪＬ％，ＷＬＢ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＪＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＩＮＣ　ＪＨ％：ＤＥＣ　ＪＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｄ％＝　Ｄ％　ＡＮＤ　（（１＜＜（ＷＬＢ％−ＪＬ％））−１）</span></li>
+<li><span class="smbas">　　　　Ｄ％＝（Ｄ％　ＯＲ　（ＩＮ％［ＪＨ％］＜＜（ＷＬＢ％−ＪＬ％）））ＡＮＤ　ＷＬ％</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｌ％＝（ＩＮ％［ＪＨ％］＞＞ＪＬ％　ＡＮＤ　ＭＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＪＬ％，ＭＬＢ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＪＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＩＮＣ　ＪＨ％：ＤＥＣ　ＪＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｌ％＝　Ｌ％　ＡＮＤ　（（１＜＜（ＭＬＢ％−ＪＬ％））−１）</span></li>
+<li><span class="smbas">　　　　ＩＦ　ＪＨ％＜ＬＥＮ＿ＩＮ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　　Ｌ％＝（Ｌ％　ＯＲ　（ＩＮ％［ＪＨ％］＜＜（ＭＬＢ％−ＪＬ％）））ＡＮＤ　ＭＬ％</span></li>
+<li><span class="smbas">　　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｌ％＝Ｌ％＋１</span></li>
+<li><span class="smbas">　　　Ｋ％＝ＷＬ％−Ｄ％</span></li>
+<li><span class="smbas">　　　ＦＯＲ　Ｉ％＝１　ＴＯ　Ｌ％</span></li>
+<li><span class="smbas">　　　　Ｂ％＝ＢＢ％［Ｋ％］</span></li>
+<li><span class="smbas">　　　　Ｏ％＝Ｏ％　ＯＲ　（Ｂ％＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＢＢ％，Ｂ％：Ｂ％＝ＳＨＩＦＴ（ＢＢ％）</span></li>
+<li><span class="smbas">　　　　ＩＮＣ　ＯＬ％，８</span></li>
+<li><span class="smbas">　　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ　ＰＵＳＨ　ＯＵＴ％，Ｏ％：ＯＬ％＝０：Ｏ％＝０</span></li>
+<li><span class="smbas">　　　ＮＥＸＴ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ　ＬＯＣＡＴＥ　０，ＣＳＲＹ−１：ＰＲＩＮＴ　”＊”＊４０</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+<li><span class="smbas"></span></li>
+<li><span class="smbas">ＤＥＦ　ＬＺ　ＩＮ％［］，ＯＵＴ％［］，ＷＬＢ％，ＭＬＢ％，ＭＭ％，ＰＲＯＧ％</span></li>
+<li><span class="smbas">　ＷＬＢ％＝ＭＩＮ（ＭＡＸ（ＷＬＢ％，７），１６）</span></li>
+<li><span class="smbas">　ＭＬＢ％＝ＭＩＮ（ＭＡＸ（ＭＬＢ％，３），８）</span></li>
+<li><span class="smbas">　ＭＭ％＝ＭＩＮ（ＭＡＸ（ＭＭ％，３），１０）</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＶＡＲ　ＷＬ％＝（１＜＜ＷＬＢ％）</span></li>
+<li><span class="smbas">　ＶＡＲ　ＭＬ％＝（１＜＜ＭＬＢ％）−１</span></li>
+<li><span class="smbas">　ＶＡＲ　ＰＨ％，ＰＬ％，Ｐ％，Ｐ２％，ＯＬ％，Ｏ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＭＤ％，ＭＰ％，ＭＬＬ％，Ｄ％，Ｌ％，Ｂ％，Ｉ％，ＤＤ％</span></li>
+<li><span class="smbas">　ＶＡＲ　ＬＥＮ＿ＩＮ％＝ＬＥＮ（ＩＮ％）</span></li>
+<li><span class="smbas">　ＶＡＲ　ＬＥＮ＿ＩＮ＿４Ｐ％＝ＬＥＮ（ＩＮ％）＊４＋ＭＬ％</span></li>
+<li><span class="smbas">　ＤＩＭ　ＢＢ％［ＷＬ％］</span></li>
+<li><span class="smbas">　ＤＩＭ　ＨＳ％［２５６］，ＨＬ％［０］</span></li>
+<li><span class="smbas">　ＶＡＲ　Ｈ１％，Ｈ２％，ＨＯ％＝０</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＶＡＲ　ＣＮＴ％＝０，ＰＲＧ１％</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ％＝０　ＴＯ　２５５：ＨＳ％［Ｉ％］＝−１：ＮＥＸＴ</span></li>
+<li><span class="smbas">　ＰＨ％＝０：ＰＬ％＝０：Ｐ％＝ＭＬ％</span></li>
+<li><span class="smbas">　ＦＯＲ　Ｉ％＝０　ＴＯ　ＭＬ％</span></li>
+<li><span class="smbas">　　Ｂ％＝（ＩＮ％［ＰＨ％］＞＞ＰＬ％）　ＡＮＤ　２５５</span></li>
+<li><span class="smbas">　　ＰＵＳＨ　ＢＢ％，Ｂ％</span></li>
+<li><span class="smbas">　　ＩＮＣ　ＰＬ％，８：ＩＦ　ＰＬ％＞＝３２　ＴＨＥＮ　ＩＮＣ　ＰＨ％：ＰＬ％＝０</span></li>
+<li><span class="smbas">　ＮＥＸＴ</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　ＰＲＧ１％＝Ｐ％＊４０／ＬＥＮ＿ＩＮ＿４Ｐ％</span></li>
+<li><span class="smbas">　　ＰＲＩＮＴ　”＊”＊ＰＲＧ１％＋”−”＊（４０−ＰＲＧ１％）</span></li>
+<li><span class="smbas">　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　</span></li>
+<li><span class="smbas">　ＷＨＩＬＥ　Ｐ％＜ＬＥＮ＿ＩＮ＿４Ｐ％</span></li>
+<li><span class="smbas">　　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＣＮＴ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＣＮＴ％＞１６　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＣＮＴ％＝０</span></li>
+<li><span class="smbas">　　　　ＰＲＧ１％＝Ｐ％＊４０／ＬＥＮ＿ＩＮ＿４Ｐ％</span></li>
+<li><span class="smbas">　　　　ＬＯＣＡＴＥ　０，ＣＳＲＹ−１</span></li>
+<li><span class="smbas">　　　　ＰＲＩＮＴ　”＊”＊ＰＲＧ１％＋”−”＊（４０−ＰＲＧ１％）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　Ｈ１％＝ＢＢ％［ＷＬ％］ＸＯＲ　ＢＢ％［ＷＬ％＋１］ＸＯＲ　ＢＢ％［ＷＬ％＋２］</span></li>
+<li><span class="smbas">　　ＭＬＬ％＝−１</span></li>
+<li><span class="smbas">　　Ｈ２％＝ＨＳ％［Ｈ１％］</span></li>
+<li><span class="smbas">　　ＷＨＩＬＥ　Ｈ２％＞＝０</span></li>
+<li><span class="smbas">　　　Ｄ％＝（Ｐ％−ＭＬ％）−Ｈ２％</span></li>
+<li><span class="smbas">　　　ＩＦ　Ｄ％＞ＷＬ％　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　　Ｌ％＝１：Ｐ２％＝ＷＬ％−Ｄ％</span></li>
+<li><span class="smbas">　　　ＷＨＩＬＥ　Ｐ％＋Ｌ％＜ＬＥＮ＿ＩＮ＿４Ｐ％</span></li>
+<li><span class="smbas">　　　　ＩＦ　ＢＢ％［Ｐ２％＋Ｌ％］！＝ＢＢ％［ＷＬ％＋Ｌ％］　ＴＨＥＮ　ＢＲＥＡＫ</span></li>
+<li><span class="smbas">　　　　ＩＮＣ　Ｌ％</span></li>
+<li><span class="smbas">　　　　ＩＦ　Ｌ％＞ＭＬ％　ＴＨＥＮ　ＭＤ％＝Ｄ％：ＭＬＬ％＝Ｌ％：ＧＯＴＯ　＠ＬＺ１</span></li>
+<li><span class="smbas">　　　ＷＥＮＤ</span></li>
+<li><span class="smbas">　　　ＩＦ　Ｌ％＞ＭＬＬ％　ＴＨＥＮ　ＭＤ％＝Ｄ％：ＭＬＬ％＝Ｌ％</span></li>
+<li><span class="smbas">　　　ＤＥＣ　Ｈ２％，ＨＬ％［Ｈ２％−ＨＯ％］</span></li>
+<li><span class="smbas">　　ＷＥＮＤ</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　＠ＬＺ１</span></li>
+<li><span class="smbas">　　ＩＦ　ＭＬＬ％＜ＭＭ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　ＭＬＬ％＝１</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＯＵＴ％，Ｏ％：Ｏ％＝０：ＯＬ％＝０</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｂ％＝ＢＢ％［ＷＬ％］</span></li>
+<li><span class="smbas">　　　Ｏ％＝Ｏ％　ＯＲ　（Ｂ％＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％，８</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＯＵＴ％，Ｏ％：ＤＥＣ　ＯＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｏ％＝Ｂ％＞＞（８−ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　　Ｏ％＝Ｏ％　ＯＲ　（１＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＯＵＴ％，Ｏ％：Ｏ％＝０：ＯＬ％＝０</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｂ％＝ＭＤ％−１</span></li>
+<li><span class="smbas">　　　Ｏ％＝Ｏ％　ＯＲ　（Ｂ％＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％，ＷＬＢ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＯＵＴ％，Ｏ％：ＤＥＣ　ＯＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｏ％＝Ｂ％＞＞（ＷＬＢ％−ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　Ｂ％＝ＭＬＬ％−１</span></li>
+<li><span class="smbas">　　　Ｏ％＝Ｏ％　ＯＲ　（Ｂ％＜＜ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＯＬ％，ＭＬＢ％</span></li>
+<li><span class="smbas">　　　ＩＦ　ＯＬ％＞＝３２　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　ＰＵＳＨ　ＯＵＴ％，Ｏ％：ＤＥＣ　ＯＬ％，３２</span></li>
+<li><span class="smbas">　　　　Ｏ％＝Ｂ％＞＞（ＭＬＢ％−ＯＬ％）</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　</span></li>
+<li><span class="smbas">　　ＦＯＲ　Ｉ％＝０　ＴＯ　ＭＬＬ％−１</span></li>
+<li><span class="smbas">　　　Ｈ１％＝ＢＢ％［ＷＬ％］ＸＯＲ　ＢＢ％［ＷＬ％＋１］ＸＯＲ　ＢＢ％［ＷＬ％＋２］</span></li>
+<li><span class="smbas">　　　Ｈ２％＝ＨＳ％［Ｈ１％］</span></li>
+<li><span class="smbas">　　　ＨＳ％［Ｈ１％］＝Ｐ％−ＭＬ％</span></li>
+<li><span class="smbas">　　　ＰＵＳＨ　ＨＬ％，ＬＥＮ（ＨＬ％）＋ＨＯ％−Ｈ２％</span></li>
+<li><span class="smbas">　　　</span></li>
+<li><span class="smbas">　　　ＩＦ　ＰＨ％＜ＬＥＮ＿ＩＮ％　ＴＨＥＮ</span></li>
+<li><span class="smbas">　　　　Ｂ％＝（ＩＮ％［ＰＨ％］＞＞ＰＬ％）　ＡＮＤ　２５５</span></li>
+<li><span class="smbas">　　　ＥＬＳＥ</span></li>
+<li><span class="smbas">　　　　Ｂ％＝０</span></li>
+<li><span class="smbas">　　　ＥＮＤＩＦ</span></li>
+<li><span class="smbas">　　　ＰＵＳＨ　ＢＢ％，Ｂ％：Ｂ％＝ＳＨＩＦＴ（ＢＢ％）</span></li>
+<li><span class="smbas">　　　　</span></li>
+<li><span class="smbas">　　　ＩＮＣ　Ｐ％</span></li>
+<li><span class="smbas">　　　ＩＮＣ　ＰＬ％，８：ＩＦ　ＰＬ％＞＝３２　ＴＨＥＮ　ＩＮＣ　ＰＨ％：ＰＬ％＝０</span></li>
+<li><span class="smbas">　　ＮＥＸＴ</span></li>
+<li><span class="smbas">　　ＷＨＩＬＥ　ＬＥＮ（ＨＬ％）＞ＷＬ％</span></li>
+<li><span class="smbas">　　　ＤＤ％＝ＳＨＩＦＴ（ＨＬ％）：ＩＮＣ　ＨＯ％</span></li>
+<li><span class="smbas">　　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＷＥＮＤ</span></li>
+<li><span class="smbas">　ＩＦ　ＯＬ％＞０　ＴＨＥＮ　ＰＵＳＨ　ＯＵＴ％，Ｏ％</span></li>
+<li><span class="smbas">　ＩＦ　ＰＲＯＧ％　ＴＨＥＮ　ＬＯＣＡＴＥ　０，ＣＳＲＹ−１：ＰＲＩＮＴ　”＊”＊４０</span></li>
+<li><span class="smbas">ＥＮＤ</span></li>
+</ol></code></div></div>
+
+<h3 id="Comments">CHECKER FLAG (ひとことコメント)</h3>
+<p>この作品に対するコメントがあれば一言どうぞ。(作品に直接関係ない質問や雑談は<a href="../Board.html" title="Board (565d)">掲示板</a>へ)</p>
+<ul><li><strong>れい</strong> : ごみごみ (<span class="comment_date">2015/03/29 (日) 07:29:05</span>)</li>
+<li><strong>天郷思音</strong> : やけに%ばっかりのプログラムだなぁと思ったら3号では変数の型が選べたんだった。というか全ての数値変数に%がついてる？それならOPTION DEFINTした方がすっきりするよ。 (<span class="comment_date">2015/03/29 (日) 14:49:24</span>)</li>
+<li><strong>れい</strong> : ライブラリなので組み込むこと前提にしてるんでOPTION使えんのよ (<span class="comment_date">2015/03/29 (日) 23:56:54</span>)</li>
+<li><strong>3D梨</strong> : 画質は問題ナシだが...このコードただのデブだぞ (<span class="comment_date">2015/04/15 (水) 02:04:24</span>)</li>
+<li><strong>名無しさん</strong> : ただのデブ? (<span class="comment_date">2015/04/15 (水) 17:07:02</span>)</li>
+<li><strong>名無しさん</strong> : 配列を文字列にして格納したい (<span class="comment_date">2015/04/15 (水) 18:42:20</span>)</li>
+<li><strong>天郷思音</strong> : なるほど (<span class="comment_date">2015/04/15 (水) 18:55:19</span>)</li>
+<li><strong>名無しさん</strong> : 文字列にするとUTF8になって容量が増えそう (<span class="comment_date">2015/04/15 (水) 21:27:56</span>)</li>
+<li><strong>れい</strong> : 一部問題あったんで更新した。 (<span class="comment_date">2015/04/17 (金) 04:46:09</span>)</li></ul>
+<br />
+<form action="http://wiki.hosiken.jp/petc3gou/" method="post" class="pure-form"> 
+<div><input type="hidden" name="encode_hint" value="ぷ" /></div>
+ <div class="pure-g">
+  <input type="hidden" name="plugin" value="comment" />
+  <input type="hidden" name="refer"  value="Toukou/圧縮画像フォーマットPZG仕様とライブラリ" />
+  <input type="hidden" name="comment_no" value="0" />
+  <input type="hidden" name="nodate" value="0" />
+  <input type="hidden" name="above"  value="1" />
+  <input type="hidden" name="digest" value="9fb63d2f379368f507d3f4a70895dc13" />
+  <label for="_p_comment_name_0" style="display: none;">お名前: </label><span class="pure-u-1 pure-u-sm-6-24 pure-u-md-5-24"><input type="text" name="name" id="_p_comment_name_0" size="15" value="" placeholder="お名前" class="pure-u-1" /></span>
+
+  
+  <span class="pure-u-1 pure-u-sm-14-24 pure-u-md-16-24"><input type="text" name="msg_text" id="_p_comment_comment_0" size="70" placeholder="コメント" class="pure-u-1" /></span>
+  <span class="pure-u-1 pure-u-sm-4-24 pure-u-md-3-24"><input type="submit" name="comment" value="投稿" class="pure-u-1" /></span>
+ </div>
+</form>
+</div>
+
+			</div>
+
+		</div>
+
+		<div class="pure-u-lg-5-24 pure-u-md-6-24 pure-u-sm-7-24 pure-u-1">
+
+			<a name="global-menu"></a>
+
+			<div id="block-sidemenu">
+
+				<div id="block-sidemenu-container">
+
+<h3 id="content_4_0">メニュー 【3号】</h3>
+<ul><li><a href="../../index.html" title="FrontPage (565d)">トップページ</a></li>
+<li><a href="../Beginner.html" title="Beginner (565d)">非公式初心者講座</a></li>
+<li><a href="../Toukou.html" title="Toukou (565d)">投稿プログラム</a></li>
+<li><a href="../Mame.html" title="Mame (565d)">まめちしき</a></li>
+<li><a href="../Memo.html" title="Memo (565d)">プチコン3号メモ</a></li>
+<li><a href="../FAQ.html" title="FAQ (565d)">よくある質問集</a></li>
+<li><a href="../Bug.html" title="Bug (565d)">既知の不具合</a></li>
+<li><a href="../Sample.html" title="Sample (565d)">サンプルプログラム集</a></li>
+<li><a href="../WorksLink.html" title="WorksLink (565d)">プチコン3号作品集</a></li>
+<li><a href="../Demand.html" title="Demand (565d)">プチコン3号への要望</a></li>
+<li><a href="../OverFlow.html" title="OverFlow (565d)">OFコーナー</a></li>
+<li><a href="http://petitverse.hosiken.jp/community/petitcom/" rel="nofollow">Petitverse(新掲示板)</a></li>
+<li><a href="http://jbbs.livedoor.jp/computer/43199/" rel="nofollow">プチコン旧掲示板</a></li>
+<li><a href="../Chat.html" title="Chat (565d)">チャットルーム</a></li>
+<li><a href="../Contact.html" title="Contact (565d)">管理人に連絡</a></li></ul>
+<ul><li><a href="../../../petc/index.html" rel="nofollow">旧プチコンまとめWiki<br class="spacer" />(初代/mkII)</a></li></ul>
+
+<h3 id="content_4_1">ヘルプ</h3>
+<ul><li><a href="../Help.html" title="Help (565d)">ヘルプ</a></li>
+<li><a href="../ToukouRule.html" title="ToukouRule (565d)">プログラム投稿ルール</a></li>
+<li><a href="../SandBox.html" title="SandBox (565d)">編集の練習用ページ</a></li></ul>
+
+<h3 id="content_4_2">リンク</h3>
+<ul><li><a href="http://smilebasic.com/" rel="nofollow">プチコン3号公式サイト</a></li>
+<li><a href="http://smilebasic.com/reference/" rel="nofollow">公式マニュアル</a></li>
+<li><a href="http://smilebasic.com/user/" rel="nofollow">公式ユーザー作品紹介</a></li>
+<li><a href="http://smilebasic.com/academy/" rel="nofollow">公式 SmileBASIC 講座</a></li>
+<li><a href="http://www.itmedia.co.jp/keywords/puticom3.html" rel="nofollow">日刊!プチコン3号</a></li></ul>
+<ul><li><a href="http://petitcom.net/" rel="nofollow">非公式マニュアル</a></li>
+<li><a href="http://ysaam.sakura.ne.jp/puticon/" rel="nofollow">非公式命令表</a></li></ul>
+<ul><li><a href="../Mame/Miiverse.html" title="Mame/Miiverse (565d)">Miiverseの避難先まとめ</a></li></ul>
+<ul><li><a href="https://discord.gg/uwzXNmj" rel="nofollow">Discordコミュニティ</a></li>
+<li><a href="https://web.lobi.co/group/31b5d2b497e0154dd0034a016bc8cbd6bbe00011" rel="nofollow">Lobiコミュニティ</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1ihBdTe0w3GRSE-NgzqTo7i0XtMvLKqWTZ6xuVmsHiJ4" rel="nofollow">プチコン3号作品DB</a></li>
+<li><a href="https://smilebasicsource.com/" rel="nofollow">SmileBASIC Source</a></li>
+<li><a href="http://petitcomputer.wikia.com/wiki/SmileBASIC_(Petit_Computer_3)" rel="nofollow">SmileBASIC Wiki</a></li></ul>
+<ul><li><a href="../Link.html" title="Link (565d)">プチコン3号リンク集</a></li></ul>
+<h3>最近の更新</h3><!-- 10 --><div><h4>2022/09/18</h4>
+<ul>
+ <li><a href="Musics4/Integrated20-site.html" title="Musics総合サイト ('21/06/23更新) (567d)">Musics総合サイト ('21/06/23更新)</a></li>
+</ul>
+<h4>2022/09/16</h4>
+<ul>
+ <li><a href="DAT20-VIEWER2B-.html" title="DAT VIEWER+ (569d)">DAT VIEWER+</a></li>
+</ul>
+<h4>2022/09/12</h4>
+<ul>
+ <li><a href="PCM20-SLOW20-PLAYER.html" title="PCM SLOW PLAYER (573d)">PCM SLOW PLAYER</a></li>
+ <li><a href="A4-D0-A4-A4-A4-CA-A4-EA-A5-A8-A5-C7-A5-A3-A5-BF-.html" title="ばいなりエディタ (573d)">ばいなりエディタ</a></li>
+</ul>
+<h4>2022/09/11</h4>
+<ul>
+ <li><a href="../OverFlow.html" title="OFコーナー3号 (574d)">OFコーナー3号</a></li>
+ <li><a href="PETITCOMM.html" title="PC→プチコン3号 通信ソフト「PetitComm」 (574d)">PC→プチコン3号 通信ソフト「PetitComm」</a></li>
+</ul>
+<h4>2022/09/06</h4>
+<ul>
+ <li><a href="Simple_Archived_Text_library.html" title="Simple Archived Text library (579d)">Simple Archived Text library</a></li>
+</ul>
+<h4>2022/09/04</h4>
+<ul>
+ <li><a href="TASBB-FE-B7-D7-.html" title="【公開停止】 TAS時計 (582d)">【公開停止】 TAS時計</a></li>
+</ul>
+<h4>2022/09/01</h4>
+<ul>
+ <li><a href="B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="御子神ツインエディター (584d)">御子神ツインエディター</a></li>
+</ul>
+<h4>2022/08/30</h4>
+<ul>
+ <li><a href="../A5-B3-A5-E1-A5-F3-A5-C8-/Toukou/B8-E6-BB-D2-BF-C0-A5-C4-A5-A4-A5-F3-A5-A8-A5-C7-A5-A3-A5-BF-A1-BC-.html" title="コメント/Toukou/御子神ツインエディター (586d)">コメント/Toukou/御子神ツインエディター</a></li>
+</ul>
+</div>
+
+<h3 id="content_4_3">最近の人気ページ</h3>
+<div><ul>
+ <li><a href="../Beginner/Chapter1.html" title="Beginner/Chapter1 (565d)">初心者講座 :  第1章 はじめてのBASIC<span class="counter">(1)</span></a></li>
+ <li><a href="SHIN_OS.html" title="Toukou/SHIN_OS (565d)">SHIN_OS<span class="counter">(1)</span></a></li>
+ <li><a href="SHOOTING_OCEAN.html" title="Toukou/SHOOTING_OCEAN (565d)">SHOOTING OCEAN<span class="counter">(1)</span></a></li>
+ <li><a href="SHDEF.html" title="Toukou/SHDEF (565d)">いろいろライブラリ with SB4 Polyfill<span class="counter">(1)</span></a></li>
+ <li><a href="SEARCHER.html" title="Toukou/SEARCHER (565d)">SEARCHER（サーチャー：ファイル検索） 1.2<span class="counter">(1)</span></a></li>
+ <li><a href="SAKURAOS.html" title="Toukou/SAKURAOS (565d)">【制作終了】 SAKURAOS ver.3<span class="counter">(1)</span></a></li>
+ <li><a href="SANMAGO_2015.html" title="Toukou/SANMAGO_2015 (565d)">サンタのまご娘 ローサのおてつだい 2015<span class="counter">(1)</span></a></li>
+ <li><a href="SHSENDER.html" title="Toukou/SHSENDER (565d)">SHSENDER<span class="counter">(1)</span></a></li>
+ <li><a href="SIMPLE20-SQUASH.html" title="Toukou/SIMPLE SQUASH (565d)">SIMPLE SQUASH<span class="counter">(1)</span></a></li>
+ <li><a href="SOFT2D-X.html" title="Toukou/SOFT-X (565d)">SOFT-X<span class="counter">(1)</span></a></li>
+</ul>
+</div>
+<div style="text-align:right"><a href="../Hot.html" title="Hot (565d)">人気ページをもっと見る</a></div>
+
+<h3 id="content_4_4">オンライン情報</h3>
+<ul><li>現在同時に 1 人がこのサイトを見ています</li>
+<li>このページはこれまでに 1739 回、本日は 1 回、昨日は 0 回閲覧されました</li></ul>
+<p><a id="to-pagetop-button" href="#">ページの先頭に戻る</a></p>
+
+				</div>
+			
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="block-pukiwiki-info">
+
+
+		<p id="pukiwiki-about">表示モード : [ <strong>スマホ・3DS対応表示</strong> | <a href="../mode3D-pc.html">クラシック表示</a> ]<br />
+		<strong>PukiWiki 1.4.7</strong> Copyright &copy; 2001-2006 <a href="http://pukiwiki.sourceforge.jp/">PukiWiki Developers Team</a>. License is <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>. Based on "PukiWiki" 1.3 by <a href="http://factage.com/yu-ji/">yu-ji</a><br />
+		ページの処理時間 : 0.131 秒  | このページの最終更新 : 2022/09/20 (火) 12:48:44  (565d) | <a href="../../index511f.html?plugin=login">ログイン</a><br />
+		Copyright(C) 2011-2014 プチコンまとめWiki ◆1sxkymI8ji30</p>
+
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2091180-9']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+
+</body>
+
+
+<!-- Mirrored from wiki.hosiken.jp/petc3gou/html/Toukou/B0-B5-BD-CC-B2-E8-C1-FC-A5-D5-A5-A9-A1-BC-A5-DE-A5-C3-A5-C8-PZGBB-C5-CD-CD-A4-C8-A5-E9-A5-A4-A5-D6-A5-E9-A5-EA-.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 14:56:55 GMT -->
+</html>
