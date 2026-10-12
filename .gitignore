@@ -4,3 +4,4 @@ node_modules
 /pageIndex.json
 .env
 .wrangler
+/public/sitemap.xml

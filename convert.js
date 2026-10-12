@@ -1,6 +1,6 @@
 import { glob, globSync, globStream, globStreamSync, Glob } from "glob";
 import fs from "fs";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 import Encoding from "encoding-japanese";
 import {
   eucToStr,
@@ -13,6 +13,15 @@ import {
 // require("lunr-languages/lunr.stemmer.support")(lunr);
 // require("lunr-languages/tinyseg")(lunr);
 // require("lunr-languages/lunr.ja")(lunr);
+
+import { SitemapStream } from "sitemap";
+import { Readable } from "node:stream";
+import { text } from "node:stream/consumers";
+
+const sitemapItems = [
+  { url: "/", priority: 1 },
+  { url: "/search" },
+];
 
 const convert = (page) => {
   const $ = cheerio.load(
@@ -91,6 +100,8 @@ for (const file of g) {
         if (!page.includes("cmd=") && !page.includes("plugin=")) {
           // this.add(i);
           idx.push(i);
+          const si = i.page.indexOf("/");
+          sitemapItems.push({url: `/${i.page.slice(0, si)}?${i.page.slice(si+1)}`});
         }
         pages.push(i.page);
       }
@@ -103,3 +114,10 @@ for (const file of g) {
 // });
 fs.writeFileSync("searchIndex.json", JSON.stringify(idx), "utf-8");
 fs.writeFileSync("pageIndex.json", JSON.stringify(pages), "utf-8");
+
+const smStream = new SitemapStream({
+  hostname: "https://petc.natrium144.org/",
+});
+Readable.from(sitemapItems).pipe(smStream);
+// smStream.end();
+fs.writeFileSync("public/sitemap.xml", await text(smStream), "utf-8");

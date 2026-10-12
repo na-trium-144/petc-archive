@@ -2,6 +2,8 @@ import React from "hono/jsx";
 import { html, raw } from "hono/html";
 
 export function pageTemplate({
+  canonicalUrl,
+  description,
   pageTitle,
   wikiTitle,
   base,
@@ -14,9 +16,6 @@ export function pageTemplate({
   return (
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
       <head>
-        <title>
-          {pageTitle} - {wikiTitle}
-        </title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
@@ -82,18 +81,6 @@ export function pageTemplate({
           type="text/javascript"
           src="/sys/skin/standard-petc/jquery.colorbox-min.js"
         ></script>
-        <meta name="twitter:title" content={`${pageTitle} - ${wikiTitle}`} />
-        <meta
-          name="twitter:description"
-          content="たぶんわかる! たぶん飛び出す! プログラムが組めそうな気がするWiki"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:image"
-          content="https://petc.natrium144.org/sys/skin/face/hakase-cry-rev.png"
-        />
-        <meta name="twitter:site" content="@hosiken" />
-        {/*<!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/petc3gou/?cmd=rss" /> <meta name="keywords" content="投稿プログラム, ゲーム, 音楽, リズムゲーム, 音ゲー, リズミカルおもちつき" /> -->*/}
         {html`<script language="JavaScript">
           $(document).ready(function () {
             $(".ColorBoxYouTube").colorbox({
@@ -108,6 +95,22 @@ export function pageTemplate({
             for (i in s) l.addEventListener(i, s);
           })(document); // sticky hover fix in iOS
         </script>`}
+        <title>{pageTitle} - {wikiTitle}</title>
+        <meta name="twitter:title" content={`${pageTitle} - ${wikiTitle}`} />
+        <meta name="description" content={description || `プチコンまとめWikiの ${pageTitle} のアーカイブです。`} />
+        <meta
+          name="twitter:description"
+          content={description || `プチコンまとめWikiの ${pageTitle} のアーカイブです。`}
+        />
+        <meta name="twitter:card" content="summary" />
+        {canonicalUrl ? 
+          <>
+            <link rel="canonical" href={canonicalUrl} />
+            {officialEncode && <link rel="alternate" href={`http://wiki.hosiken.jp${officialEncode}.html`} />}
+          </>
+        :
+          <meta name="robots" content="noindex" />
+        }
       </head>
       <body>
         <div id="block-container">

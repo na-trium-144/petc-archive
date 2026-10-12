@@ -1,7 +1,18 @@
 # petc-archive
 wiki.hosiken.jp の一時的な代替 https://petc.natrium144.org
 
-ローカルで動かすときは`node main.js`
+ローカルで動かすときは
+```
+FILES_PREFIX=http://localhost:3000
+```
+を.envに書き、
+```
+node ./convert.js
+```
+でpageIndexを生成し、
+```
+pnpm run dev
+```
 
 * attachファイル→ `public/ref/petc(3gou)?4?/ページ名/ファイル名`
 * htmlファイル→ `websites_utf8/wiki.hosiken.jp/petc(3gou)?4?/ページ名/index.html`

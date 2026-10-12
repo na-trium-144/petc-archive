@@ -9,7 +9,12 @@ app.use(
     root: "./",
     rewriteRequestPath: (path) => path.replace(/^\/static\//, "/"),
   })
-);
+).use(
+  "/*",
+  serveStatic({
+    root: "./",
+  })
+)
 
 serve(
   {

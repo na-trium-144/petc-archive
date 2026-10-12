@@ -1,6 +1,6 @@
 import { env } from "hono/adapter";
 import { Hono } from "hono";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 import Encoding from "encoding-japanese";
 import {
   eucToStr,
@@ -39,10 +39,10 @@ app
       page = page.slice(0, -1);
     }
     const res = await fetch(
-      env(c).FILES_PREFIX +
+      (env(c).FILES_PREFIX +
         "/websites_utf8/wiki.hosiken.jp/" +
         page +
-        "/index.html"
+        "/index.html").replaceAll("//", "/")
     );
     if (res.ok) {
       const originalHtml = eucToStr(await res.bytes());
@@ -314,6 +314,7 @@ app
       const notesHtml = $("#notes").html();
       const pageTitle = $("#block-body-container > h2").text();
       const html = pageTemplate({
+        canonicalUrl: `${origin}/${page.split("/")[1]}?${page.split("/").slice(2).join("/")}`,
         wikiTitle: "プチコンまとめArchive",
         pageTitle: pageTitle,
         base: base,
@@ -378,8 +379,10 @@ app
   })
   .get("/", async (c) => {
     const html = pageTemplate({
+      canonicalUrl: new URL(c.req.url).origin,
       wikiTitle,
       pageTitle: "プチコンまとめArchive トップページ",
+      description: `プチコンまとめArchive は、 プチコンまとめWiki のアーカイブです。ページの閲覧はできますが編集やコメントの投稿機能はありません。URLはほぼ元のままの形式にしています。`,
       base: checkBase(c.req.path),
       body: await (await fetch(env(c).FILES_PREFIX + "/toppage.html")).text(),
       pankuzu: "",
@@ -391,8 +394,10 @@ app
   })
   .get("/search", async (c) => {
     const html = pageTemplate({
+      canonicalUrl: `${new URL(c.req.url).origin}/search`,
       wikiTitle,
       pageTitle: "検索",
+      description: `プチコンまとめArchive内のすべてのページから検索します。大文字小文字、ひらがなカタカナは区別されません。スペースで区切るとAND検索になります`,
       base: 0,
       body: searchTemplate({
         word: "",
