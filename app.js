@@ -28,12 +28,12 @@ app
     const pageIndex = await fetchPageIndex(c);
     const origin = new URL(c.req.url).origin;
     let page = c.req.url;
-    page = page.slice(8); // https://
+    page = page.slice(page.indexOf("//")+2); // https:// or http://
     page = page.slice(page.indexOf("/")); // origin
     if (page.indexOf("#") >= 0) {
       page = page.slice(0, page.indexOf("#"));
     }
-    page = page.replace("?", "");
+    page = page.replaceAll("?", "");
     page = eucToStr(Encoding.urlDecode(page));
     if (page.endsWith("=")) {
       page = page.slice(0, -1);
@@ -314,7 +314,7 @@ app
       const notesHtml = $("#notes").html();
       const pageTitle = $("#block-body-container > h2").text();
       const html = pageTemplate({
-        canonicalUrl: `${origin}/${page.split("/")[1]}?${page.split("/").slice(2).join("/")}`,
+        canonicalUrl: `${origin}/${page.split("/")[1]}/?${strToEuc(page.split("/").slice(2).join("/"))}`,
         wikiTitle: "プチコンまとめArchive",
         pageTitle: pageTitle,
         base: base,
@@ -467,7 +467,7 @@ app
     });
     return c.html(html, 200, { "Cache-Control": cache });
   })
-  .on("GET", ["/ref/*", "/sys/*"], async (c) => {
+  .on("GET", ["/ref/*", "/sys/*", "/sitemap.xml"], async (c) => {
     const res = await fetch(env(c).FILES_PREFIX + "/public" + c.req.path);
     if (res.status === 404) {
       const html = pageTemplate({

@@ -4,6 +4,7 @@ import * as cheerio from "cheerio";
 import Encoding from "encoding-japanese";
 import {
   eucToStr,
+  strToEuc,
   getSearchParamQuoted,
   checkBase,
   pageExists,
@@ -94,14 +95,18 @@ for (const file of g) {
   // console.log(page);
   try {
     // output.push(convert(page));
-    if (!page.includes("ptcmcon/")) {
+    if (!page.includes("ptcmcon")) {
       const i = convert(page);
       if (i != null) {
-        if (!page.includes("cmd=") && !page.includes("plugin=")) {
+        if (page && !page.includes("cmd=") && !page.includes("plugin=")) {
           // this.add(i);
           idx.push(i);
           const si = i.page.indexOf("/");
-          sitemapItems.push({url: `/${i.page.slice(0, si)}?${i.page.slice(si+1)}`});
+          if(si === -1){
+            sitemapItems.push({ url: `/${i.page}`});
+          }else{
+            sitemapItems.push({ url: `/${i.page.slice(0, si)}/?${strToEuc(i.page.slice(si + 1))}` });
+          }
         }
         pages.push(i.page);
       }
