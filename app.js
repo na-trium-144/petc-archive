@@ -88,7 +88,7 @@ app
                     }
                     newPath = newPath.slice(0, newPath.lastIndexOf("."));
                     // Toukou.html → Toukou/index.html に変更したので1段ずれる
-                    console.log(newPath, page);
+                    //console.log(newPath, page);
                     if (newPath.startsWith("/")) {
                       newPath = ".." + newPath;
                     } else {
